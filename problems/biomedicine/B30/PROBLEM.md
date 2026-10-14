@@ -73,7 +73,7 @@ QM/MM 动力学（DFT 层级）；多参考方法与 EOM-CC 激发态；Marcus/�
 - R1 [A QM/MM Investigation of Thymine Dimer Repair by DNA Photolyase](https://infoscience.epfl.ch/items/c63e1a49-583c-4532-907a-6404db42ce4b)（2009），期刊论文；ChemPhysChem 10, 400；读取范围：search_excerpt。QM/MM 动力学：电子注入后环丁烷异步协同开环，数皮秒内完成。
 - R2 [Electron Tunneling Pathways and Role of Adenine in Repair of Cyclobutane Pyrimidine Dimer by DNA Photolyase](https://pmc.ncbi.nlm.nih.gov/articles/PMC3354007)（2012），期刊论文；JACS 134, 8104；读取范围：abstract。飞秒光谱：黄素辅因子中的腺嘌呤通过超交换介导电子转移。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

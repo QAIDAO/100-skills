@@ -56,7 +56,7 @@ QM/MM 加多参考方法的势能面；MCTDH/ML-MCTDH、张量网络、面跳跃
 
 #### 已有文献与证据边界
 
-经典侧：有效模型研究了稳态激发下的量子产率；轨迹模拟指出三种模式的相位匹配。量子侧：离子阱已直接模拟锥形交叉附近的几何相位干涉，但模型是通用锥形交叉，不是视黄醛。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：两态两模加热浴的有效模型（Redfield 主方程、1000 个体系的系综）发现稳态量子产率与超出交叉点的过剩能量正相关，但对系统—环境耦合的强度和形式同样敏感，说明需要考虑模式间的部分热化；该文引述的轨迹研究指出三个关键模式的相位匹配与高产率相关。量子侧：离子阱已用 5 个离子模拟 Jahn–Teller 型锥形交叉并观测到几何相位干涉，但模型是通用锥形交叉，不是视黄醛。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：量子模型演示不等于完整视觉机制已被量子计算解决；有效哈密顿量的参数化质量决定上限。
 
@@ -70,10 +70,10 @@ QM/MM 加多参考方法的势能面；MCTDH/ML-MCTDH、张量网络、面跳跃
 
 #### 文献与读取范围
 
-- R1 [Steady State Photoisomerization Quantum Yield of Model Rhodopsin: Insights from Wavepacket Dynamics?](https://arxiv.org/abs/2202.00533)（2022），预印本；读取范围：abstract。两态两模加热浴的视紫红质模型，研究稳态非相干激发下的异构化量子产率。
-- Q1 [Quantum simulation of conical intersections using trapped ions](https://scholars.duke.edu/publication/1594869)（2023），期刊论文；Nature Chemistry 15, 1509；读取范围：search_excerpt。离子阱用内态与运动态模拟锥形交叉并观测几何相位；通用模型，不是视黄醛。
+- R1 [Steady State Photoisomerization Quantum Yield of Model Rhodopsin: Insights from Wavepacket Dynamics?](https://arxiv.org/abs/2202.00533)（2022），预印本；读取范围：full_text。两态两模加 Ohmic 热浴、Redfield 主方程、1000 个体系系综：稳态量子产率与过剩能量正相关，同时受系统—环境耦合显著影响，纯波包图像不足。
+- Q1 [Quantum simulation of conical intersections using trapped ions](https://arxiv.org/abs/2211.07319)（2023），预印本；期刊版 Nature Chemistry 15, 1509；读取范围：full_text。5 个 ¹⁷¹Yb⁺ 离子：一个离子的自旋作电子态、两个运动模作核坐标，Trotter 化绝热演化后观测到几何相位干涉形成的新月形分布；通用模型，不是视黄醛。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

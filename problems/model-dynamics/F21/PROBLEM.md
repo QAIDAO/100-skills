@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-经典侧：莫尔 Hubbard 模型相图已给出 Wigner 晶体与整数、分数填充的陈绝缘体；变分映射在 2/3、3/5 空穴填充下重现精确对角化谱。量子侧：冷原子扭转双层光势的方案已提出。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：莫尔 Hubbard 模型的 Hartree–Fock 平均场相图给出分数填充的广义 Wigner 晶体与相互作用诱导的陈绝缘体（整数填充主要由在位排斥驱动），这是平均场结论；tMoTe₂ 上的变分映射在 2/3、3/5 空穴填充下定量重现精确对角化的分数陈绝缘体谱。量子侧：冷原子在态依赖光晶格中模拟扭转双层的方案已提出，主要分析单粒子能带变窄，尚未直接处理相互作用拓扑相。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：可经典计算的非相互作用陈能带不能算作量子任务；只有真正的相互作用多体问题才在范围内。
 
@@ -70,11 +70,11 @@
 
 #### 文献与读取范围
 
-- R1 [Quantum Phase Diagram of a Moiré-Hubbard Model](https://arxiv.org/abs/2008.08998)（2020），预印本；期刊版 Phys. Rev. B 102, 201104；读取范围：abstract。广义 Hubbard 模型相图：分数填充的 Wigner 晶体与整数、分数填充的陈绝缘体。
-- R2 [Variational Mapping of Chern Bands to Landau Levels: Application to Fractional Chern Insulators in Twisted MoTe2](https://arxiv.org/abs/2405.20307)（2024），预印本；读取范围：search_excerpt。变分波函数在 2/3、3/5 空穴填充下重现精确对角化谱。
-- Q1 [Cold atoms in twisted bilayer optical potentials](https://arxiv.org/abs/1907.06126)（2019），预印本；读取范围：search_excerpt。用态依赖光晶格模拟扭转双层物理的冷原子方案。
+- R1 [Quantum Phase Diagram of a Moiré-Hubbard Model](https://arxiv.org/abs/2008.08998)（2020），预印本；期刊版 Phys. Rev. B 102, 201104；读取范围：full_text。自洽 Hartree–Fock 平均场：分数填充的广义 Wigner 晶体与相互作用诱导的陈绝缘体，单粒子莫尔带本身拓扑平庸。
+- R2 [Variational Mapping of Chern Bands to Landau Levels: Application to Fractional Chern Insulators in Twisted MoTe2](https://arxiv.org/abs/2405.20307)（2024），预印本；读取范围：full_text。变分波函数在 νh=2/3、3/5 定量重现精确对角化的分数陈绝缘体谱。
+- Q1 [Cold atoms in twisted bilayer optical potentials](https://arxiv.org/abs/1907.06126)（2019），预印本；读取范围：full_text。态依赖光晶格模拟扭转双层的方案，主要分析正方几何与单粒子能带变窄；未直接模拟相互作用拓扑相。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

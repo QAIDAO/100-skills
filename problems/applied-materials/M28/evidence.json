@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/M28-defect-spin-phonon-decoherence/README.md",
-      "sha256": "963605d82c6489765a429ab38f2d7cfd19e957a3f50b0a7230ed469e435b3677"
+      "sha256": "7beb4d5af65254ec6af4f449ca07c0a41e043618c92900b6fc590bbddbf1404b"
     }
   ]
 }

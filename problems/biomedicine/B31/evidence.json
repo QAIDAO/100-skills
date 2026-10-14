@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/B31-cytochrome-c-oxidase/README.md",
-      "sha256": "8329848c48f92776ce03c193453a012884e242f535ea906e11abd66fa05ae345"
+      "sha256": "33c6cd727f200701bc7d9314a164e71c5168a2cda976793ecd8dd6460ba37e84"
     }
   ]
 }

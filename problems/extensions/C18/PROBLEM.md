@@ -56,7 +56,7 @@ COGEF 与 EFEI 力修正势能面；CC 层级、DMRG、选定 CI；结合 ASE �
 
 #### 已有文献与证据边界
 
-经典侧：研究比较了 COGEF 与 EFEI 力修正势能面，发现前者在某些开环反应中缺少连接产物的最低能量路径；断键点理论指出势垒消失处 Hessian 有零本征向量。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：硕士论文比较 COGEF 与 EFEI 两种力修正势能面，在环丁烯开环中前者给出顺旋路径、后者给出与实验一致的对旋路径，前者缺少通往对旋产物的最低能量路径，作者认为 EFEI 更适合，并指出外力使过渡态向反应物移动而降低势垒；开源工具 OpenMechanochem 配合 ASE 实现了 FMPES、EFEI 与 EGO。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：弹性力学、裂纹全场与工程强度不属于量子任务；力修正方法本身的选择会影响结论。
 
@@ -70,10 +70,10 @@ COGEF 与 EFEI 力修正势能面；CC 层级、DMRG、选定 CI；结合 ASE �
 
 #### 文献与读取范围
 
-- R1 [Quantum Chemical Simulations of the Mechanical Activation of Pericyclic Reactions](https://queensu.scholaris.ca/items/c16e1d44-c5a3-474d-9c1b-69ae7a30679a)，学位论文；Queen's University；读取范围：search_excerpt。比较 COGEF 与 EFEI 力修正势能面：前者在环丁烯开环中缺少通往对旋产物的最低能量路径。
-- R2 [OpenMechanochem](https://pypi.org/project/OpenMechanochem)，软件；读取范围：search_excerpt。与 ASE 配合的力化学计算工具，可接各种量子化学计算器做几何优化与 NEB。
+- R1 [Quantum Chemical Simulations of the Mechanical Activation of Pericyclic Reactions](https://queensu.scholaris.ca/items/c16e1d44-c5a3-474d-9c1b-69ae7a30679a)（2011），学位论文；Queen's University MSc（Kochhar）；读取范围：abstract。COGEF 给顺旋、EFEI 给与实验一致的对旋路径；COGEF 面缺少通往对旋产物的最低能量路径；外力使过渡态向反应物移动（仓库页摘要，PDF 未能读取）。
+- R2 [OpenMechanochem](https://pypi.org/project/OpenMechanochem)（2021），软件；v1.0.1，GNU 许可；读取范围：full_text。配合 ASE 实现 FMPES、EFEI、EGO，可接各种量子化学计算器做几何优化与 NEB。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

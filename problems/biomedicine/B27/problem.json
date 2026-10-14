@@ -10,9 +10,9 @@
   "scale": "单金属中心加 2–4 个配体的簇模型，外加显式第一溶剂层；活性空间规模待经典预筛确定",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "DFT-MD 加 Blue Moon 热力学积分得到铂药水合自由能曲线，报告势垒精度约 1 kcal/mol",
+      "supports": "PBE/DZP、63 个水分子、310 K：顺铂 ΔG‡=25.3±0.4 kcal/mol（实验约 23–24），单功能衍生物低约 1 kcal/mol；Pt 作氢键受体的「逆水合」是到达过渡态的前提；精度表述前后不一致（结论称约 1 kcal/mol，正文称不足以讨论 1 kcal/mol 以下差异）",
       "title": "Blue moon ensemble simulation of aquation free energy profiles applied to mono and bifunctional platinum anticancer drugs",
       "type": "预印本",
       "url": "https://arxiv.org/abs/2003.01418",
@@ -21,16 +21,16 @@
     {
       "access_level": "search_excerpt",
       "id": "R2",
-      "supports": "Car–Parrinello 分子动力学加元动力学的顺铂两步水合自由能景观",
+      "supports": "Car–Parrinello 分子动力学加元动力学的顺铂两步水合自由能景观（仓库无开放全文）",
       "title": "Hydrolysis of cisplatin—a first-principles metadynamics study",
       "type": "期刊论文；PCCP 12, 10348",
       "url": "https://dare.uva.nl/id/91cc4009-a213-4c93-9237-591c6ecebb50",
       "year": 2010
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "Q1",
-      "supports": "VQE 处理 Pt–CO 键离解，模拟器与误差缓解后的真机能量相差约 ±2 kcal/mol；方法先例，不是顺铂",
+      "supports": "PtCO 的 VQE：CAS(2e,2o)、2 个量子比特、4 参数拟设；ibm_canberra 只算 1.846 Å 与 3.0 Å 两点，与 CASCI 相差在 ±0.003 Ha（约 ±2 kcal/mol）内；〈S²〉 可清楚区分单重态与三重态；不含自旋轨道耦合。方法先例，不是顺铂",
       "title": "Computational analysis of chemical reactions using a variational quantum eigensolver algorithm without specifying spin multiplicity",
       "type": "预印本；期刊版 ACS Omega 8(22) 19917",
       "url": "https://arxiv.org/abs/2303.05065",

@@ -10,27 +10,27 @@
   "scale": "ED 受限于约数十个莫尔位点；DMRG 受限于圆柱宽度；分数化相需较大体系判断",
   "sources": [
     {
-      "access_level": "abstract",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "广义 Hubbard 模型相图：分数填充的 Wigner 晶体与整数、分数填充的陈绝缘体",
+      "supports": "自洽 Hartree–Fock 平均场：分数填充的广义 Wigner 晶体与相互作用诱导的陈绝缘体，单粒子莫尔带本身拓扑平庸",
       "title": "Quantum Phase Diagram of a Moiré-Hubbard Model",
       "type": "预印本；期刊版 Phys. Rev. B 102, 201104",
       "url": "https://arxiv.org/abs/2008.08998",
       "year": 2020
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R2",
-      "supports": "变分波函数在 2/3、3/5 空穴填充下重现精确对角化谱",
+      "supports": "变分波函数在 νh=2/3、3/5 定量重现精确对角化的分数陈绝缘体谱",
       "title": "Variational Mapping of Chern Bands to Landau Levels: Application to Fractional Chern Insulators in Twisted MoTe2",
       "type": "预印本",
       "url": "https://arxiv.org/abs/2405.20307",
       "year": 2024
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "Q1",
-      "supports": "用态依赖光晶格模拟扭转双层物理的冷原子方案",
+      "supports": "态依赖光晶格模拟扭转双层的方案，主要分析正方几何与单粒子能带变窄；未直接模拟相互作用拓扑相",
       "title": "Cold atoms in twisted bilayer optical potentials",
       "type": "预印本",
       "url": "https://arxiv.org/abs/1907.06126",

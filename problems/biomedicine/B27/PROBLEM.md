@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-经典侧已有溶液自由能曲线：元动力学研究给出两步水合的自由能景观，Blue Moon 研究报告势垒精度约 1 kcal/mol。量子侧只检得用 VQE 处理 Pt–CO 键离解的方法研究。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：Blue Moon 热力学积分（PBE、63 个显式水分子、310 K）给出顺铂第一步水合 ΔG‡ = 25.3 ± 0.4 kcal/mol，实验共识约 23–24 kcal/mol；该文结论称势垒精度约 1 kcal/mol，正文又说精度不足以讨论 1 kcal/mol 以下的差异，两处表述不一致。元动力学研究给出两步水合的自由能景观。量子侧只检得用 VQE 处理 Pt–CO 键离解的方法研究：CAS(2e,2o)、2 个量子比特，真机只算两个键长，与同活性空间 CASCI 相差在 ±2 kcal/mol 内，未达化学精度，也不含自旋轨道耦合。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：氯离子离解离不开溶剂化，量子活性空间只能提供电子能修正；Pt 的相对论效应要一致处理；细胞摄取、分布与毒性不是电子结构的直接输出。
 
@@ -70,11 +70,11 @@
 
 #### 文献与读取范围
 
-- R1 [Blue moon ensemble simulation of aquation free energy profiles applied to mono and bifunctional platinum anticancer drugs](https://arxiv.org/abs/2003.01418)（2020），预印本；读取范围：search_excerpt。DFT-MD 加 Blue Moon 热力学积分得到铂药水合自由能曲线，报告势垒精度约 1 kcal/mol。
-- R2 [Hydrolysis of cisplatin—a first-principles metadynamics study](https://dare.uva.nl/id/91cc4009-a213-4c93-9237-591c6ecebb50)（2010），期刊论文；PCCP 12, 10348；读取范围：search_excerpt。Car–Parrinello 分子动力学加元动力学的顺铂两步水合自由能景观。
-- Q1 [Computational analysis of chemical reactions using a variational quantum eigensolver algorithm without specifying spin multiplicity](https://arxiv.org/abs/2303.05065)（2023），预印本；期刊版 ACS Omega 8(22) 19917；读取范围：search_excerpt。VQE 处理 Pt–CO 键离解，模拟器与误差缓解后的真机能量相差约 ±2 kcal/mol；方法先例，不是顺铂。
+- R1 [Blue moon ensemble simulation of aquation free energy profiles applied to mono and bifunctional platinum anticancer drugs](https://arxiv.org/abs/2003.01418)（2020），预印本；读取范围：full_text。PBE/DZP、63 个水分子、310 K：顺铂 ΔG‡=25.3±0.4 kcal/mol（实验约 23–24），单功能衍生物低约 1 kcal/mol；Pt 作氢键受体的「逆水合」是到达过渡态的前提；精度表述前后不一致（结论称约 1 kcal/mol，正文称不足以讨论 1 kcal/mol 以下差异）。
+- R2 [Hydrolysis of cisplatin—a first-principles metadynamics study](https://dare.uva.nl/id/91cc4009-a213-4c93-9237-591c6ecebb50)（2010），期刊论文；PCCP 12, 10348；读取范围：search_excerpt。Car–Parrinello 分子动力学加元动力学的顺铂两步水合自由能景观（仓库无开放全文）。
+- Q1 [Computational analysis of chemical reactions using a variational quantum eigensolver algorithm without specifying spin multiplicity](https://arxiv.org/abs/2303.05065)（2023），预印本；期刊版 ACS Omega 8(22) 19917；读取范围：full_text。PtCO 的 VQE：CAS(2e,2o)、2 个量子比特、4 参数拟设；ibm_canberra 只算 1.846 Å 与 3.0 Å 两点，与 CASCI 相差在 ±0.003 Ha（约 ±2 kcal/mol）内；〈S²〉 可清楚区分单重态与三重态；不含自旋轨道耦合。方法先例，不是顺铂。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

@@ -10,27 +10,27 @@
   "scale": "核自旋浴可达数百至数千自旋；自旋—声子需全声子谱；量子求解只针对多模浴或强关联的子问题",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "综述固态自旋退相干的计算方法，包括簇方法及其验证",
+      "supports": "自旋—声子弛豫进展与簇关联展开处理核自旋浴退相干，强调用实验验证（相关章节精读）",
       "title": "Decoherence of solid-state spin qubits: a computational perspective",
-      "type": "预印本",
+      "type": "预印本（Colloquium）",
       "url": "https://arxiv.org/abs/2405.18535",
       "year": 2024
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R2",
-      "supports": "第一性原理指出低频两声子对零场分裂的调制主导自旋弛豫与退相干",
+      "supports": "NV⁻ 与 V_B⁻：定量重现 T₁、T₂ 温度依赖，低频两声子调制零场分裂为主导，无高温 Orbach 过程，T⁵ 律不严格成立",
       "title": "Spin-phonon decoherence in solid-state paramagnetic defects from first principles",
       "type": "预印本；期刊版 npj Computational Materials (2023)",
       "url": "https://arxiv.org/abs/2212.11705",
       "year": 2022
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R3",
-      "supports": "硅空位自旋与声子耦合的门与模拟方案，基于数值模拟的提案",
+      "supports": "金刚石 SiV：连续动态解耦使声子介导门误差降低两个数量级以上、不保真度可低于约 1e-4；量子器件方案，与本题为间接关联",
       "title": "Toward high-fidelity quantum information processing and quantum simulation with spin qubits and phonons",
       "type": "预印本",
       "url": "https://arxiv.org/abs/2402.16960",
@@ -38,7 +38,7 @@
     }
   ],
   "subdomain": "量子材料 / 缺陷自旋",
-  "system": "hBN 中 V_B⁻、金刚石 IV 族空位、SiC 缺陷等固态自旋，与核自旋浴及晶格声子的耦合",
+  "system": "金刚石 NV⁻ 与硅空位（SiV）、hBN 中 V_B⁻ 等固态自旋，与核自旋浴及晶格声子的耦合",
   "tags": [
     "自旋量子比特",
     "退相干",

@@ -44,7 +44,7 @@
 
 - 研究体系：苯磺酰咔唑类热激活延迟荧光（TADF）分子，以及含重原子的磷光发光体
 - 可观测量：S₁–T₁ 能隙 ΔE_ST、跃迁偶极与自旋轨道耦合矩阵元
-- 规模：已有演示只用 HOMO/LUMO 双轨道活性空间与双 ζ 基组；实用筛选需要更大活性空间与环境效应
+- 规模：已有演示只用 HOMO/LUMO 双轨道活性空间（约化后 2 个量子比特）与 STO-3G、双 ζ 基组；实用筛选需要更大活性空间与环境效应
 
 #### 量子—经典工作流（建议，未运行）
 
@@ -56,7 +56,7 @@ TDDFT、EOM-CC、ADC、多参考方法；与发光谱和延迟荧光动力学实
 
 #### 已有文献与证据边界
 
-2021 年研究用 qEOM-VQE 与 VQD 计算 TADF 分子的 S₁、T₁：模拟器上 ΔE_ST 与实验吻合；真机未缓解时误差 17–88 mHa，经态层析缓解后降至 4 mHa 以内。仍是小活性空间的原理验证。
+2021 年研究用 qEOM-VQE 与 VQD 计算 PSPCz、2F-PSPCz、4F-PSPCz 三个 TADF 分子的 S₁、T₁：活性空间只有 HOMO 与 LUMO，约化后 2 个量子比特；模拟器上 ΔE_ST 与实验吻合；IBM 真机未做误差缓解时与精确值相差约 16–17 mHa（qEOM-VQE）和 88 mHa（VQD），经 2 比特态层析纯化后降至 3–4 mHa 以内（预印本与期刊版数值略有差异）。这是极小活性空间上的原理验证，态层析式的误差缓解不能直接扩展。
 
 局限：小 ΔE_ST 不自动等于高发光效率；环境与非辐射通道需另行计算；双轨道活性空间远小于实际需要。
 
@@ -70,9 +70,9 @@ TDDFT、EOM-CC、ADC、多参考方法；与发光谱和延迟荧光动力学实
 
 #### 文献与读取范围
 
-- Q1 [Applications of quantum computing for investigations of electronic transitions in phenylsulfonyl-carbazole TADF emitters](https://doi.org/10.1038/s41524-021-00540-6)（2021），期刊论文；npj Computational Materials；读取范围：search_excerpt。qEOM-VQE 与 VQD 在模拟器和真机上计算 S₁、T₁；模拟器 ΔE_ST 与实验吻合，真机经态层析缓解后误差 4 mHa 以内。
+- Q1 [Applications of quantum computing for investigations of electronic transitions in phenylsulfonyl-carbazole TADF emitters](https://doi.org/10.1038/s41524-021-00540-6)（2021），期刊论文；npj Computational Materials；期刊页需登录跳转，读取 arXiv 2007.15795 预印本全文；读取范围：full_text。qEOM-VQE 与 VQD，HOMO–LUMO 活性空间（2 个量子比特），ibmq_boeblingen 与 ibmq_singapore：未缓解误差 16/88 mHa（预印本；期刊版摘录为 17/88），态层析后最多 3 mHa（期刊版 4 mHa）。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

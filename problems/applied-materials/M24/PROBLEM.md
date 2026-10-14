@@ -56,9 +56,9 @@
 
 #### 已有文献与证据边界
 
-经典侧：原子赝势计算的双激子与三激子俄歇速率与实验吻合；后续工作指出电子—空穴关联决定纳米结构中的俄歇复合。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：原子级经验赝势计算给出 CdSe 量子点双激子俄歇寿命约 5 ps（Cd₂₃₂Se₂₃₅）与 24 ps（Cd₅₃₄Se₅₂₇），与实验的 6 ps、22 ps 吻合；把 BSE 电子—空穴关联计入双激子初态后，俄歇寿命随体积的标度从非相互作用的 V^1.69 变为 V^0.99，首次从理论上重现实验的普适体积标度律；不计关联会使寿命长 1–2 个数量级，且偏差在直径约 2.5 nm 时就已出现。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
-局限：纳米结构、表面化学与环境模型的误差须单独验证；单激子有效质量模型可经典处理，量子只针对强关联多激子部分。
+局限：纳米结构、表面化学与环境模型的误差须单独验证；现有关联方法假设激子相干散射，激子扩散限速的体系不在适用范围；单激子有效质量模型可经典处理，量子只针对强关联多激子部分。
 
 #### 与已有题目的区别
 
@@ -70,10 +70,10 @@
 
 #### 文献与读取范围
 
-- R1 [Electron-hole correlations govern Auger recombination in nanostructures](https://arxiv.org/abs/1808.10404)（2018），预印本；读取范围：search_excerpt。指出电子—空穴关联决定纳米结构中的俄歇复合。
-- R2 [Theory of Fast Quantum Control of Exciton Dynamics in Semiconductor Quantum Dots](https://arxiv.org/abs/cond-mat/0109252)（2001），预印本；读取范围：search_excerpt。量子点激子动力学的量子控制理论，数值模拟中包含计算子空间外的多激子能级。
+- R1 [Electron-hole correlations govern Auger recombination in nanostructures](https://arxiv.org/abs/1808.10404)（2018），预印本；读取范围：full_text。半经验赝势 + BSE + 费米黄金规则，17 个 CdSe 量子点（1.2–5.3 nm）与纳米棒：计入关联后 τ∝V^0.99，非相互作用 V^1.69 且寿命长 1–2 个数量级。
+- R2 [Pseudopotential theory of Auger processes in CdSe quantum dots](https://eprints.whiterose.ac.uk/75645/)（2003），期刊论文；Phys. Rev. Lett. 91, 056404；White Rose 仓库全文；读取范围：full_text。经验赝势加近简并时的组态相互作用：双激子俄歇寿命 5 ps 与 24 ps（实验 6 与 22 ps），τ(2→1)/τ(3→2)≈2.4（实验 2.1），双激子复合主要来自表面贡献。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

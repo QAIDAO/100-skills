@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-经典侧：第一性原理计算 LaH₁₀ 的同位素效应指数约 0.465，与约 150 GPa 下的实验值吻合；氢光学模贡献了大部分耦合。量子侧：已有在通用量子计算机上表示电子—声子系统的算法，以及在 IBM 真机上模拟电子—声子动力学的演示，但对象是模型哈密顿量，不是氢化物。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：第一性原理计算指出 300 GPa 下 LaH₁₀ 的狄拉克节线态在费米能附近形成 van Hove 奇点，这些电子态与氢的高频声子强耦合，从而给出高 Tc。量子侧：已有把声子编码到量子比特的算法，在模拟器上用量子相位估计求 Holstein 极化子并与精确对角化一致；IBM 真机上的两格点电子—声子动力学需要近似电路重编译，弱耦合结果准确、强耦合只部分准确。对象都是模型哈密顿量，不是氢化物。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：不等于预测高 Tc；常规 Eliashberg 框架已很强，必须逐例比较；量子演示只到小模型。
 
@@ -70,11 +70,11 @@
 
 #### 文献与读取范围
 
-- R1 [Origin of High-Temperature Superconductivity in Compressed LaH10](https://arxiv.org/abs/1811.08548)（2018），预印本；读取范围：search_excerpt。第一性原理：费米能附近的大量电子态与氢衍生的高频声子强耦合。
-- Q1 [Electron-Phonon Systems on a Universal Quantum Computer](https://arxiv.org/abs/1802.07347)（2018），预印本；期刊版 Phys. Rev. Lett. 121, 110504；读取范围：search_excerpt。把低能声子态编码到量子比特，额外比特数随体系线性增长；Holstein 极化子模拟与精确对角化一致。
-- Q2 [Recompilation-enhanced simulation of electron-phonon dynamics on IBM Quantum computers](https://arxiv.org/abs/2202.08270)（2022），预印本；读取范围：search_excerpt。在 IBM 量子计算机上模拟电子—声子动力学。
+- R1 [Origin of High-Temperature Superconductivity in Compressed LaH10](https://arxiv.org/abs/1811.08548)（2018），预印本；读取范围：full_text。300 GPa 下 LaH₁₀ 的拓扑狄拉克节线态在费米能附近形成 van Hove 奇点，La f 与 H s 强杂化，这些电子态与氢高频声子强耦合给出高 Tc。
+- Q1 [Electron-Phonon Systems on a Universal Quantum Computer](https://arxiv.org/abs/1802.07347)（2018），预印本；期刊版 Phys. Rev. Lett. 121, 110504；读取范围：full_text。声子低能子空间编码到量子比特，额外比特随体系线性增长；Holstein 极化子在 Atos QLM 模拟器上用 QPE 求解，与精确对角化一致（非真机）。
+- Q2 [Recompilation-enhanced simulation of electron-phonon dynamics on IBM Quantum computers](https://arxiv.org/abs/2202.08270)（2022），预印本；读取范围：full_text。两格点电子—声子模型：不做近似电路重编译时真机结果不准确，重编译后弱耦合高度准确、强耦合部分准确。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

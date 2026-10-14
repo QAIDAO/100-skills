@@ -8,7 +8,7 @@
 
 | 环节 | 内容 |
 |---|---|
-| 研究体系 | hBN 中 V_B⁻、金刚石 IV 族空位、SiC 缺陷等固态自旋，与核自旋浴及晶格声子的耦合 |
+| 研究体系 | 金刚石 NV⁻ 与硅空位（SiV）、hBN 中 V_B⁻ 等固态自旋，与核自旋浴及晶格声子的耦合 |
 | 可观测量 | T₁ 与 T₂ 相干时间、零场分裂的声子调制、噪声谱 |
 | 经典基线 | 簇关联展开（PyCCE 等）处理核自旋浴；第一性原理自旋—声子弛豫；HEOM、TEMPO/过程张量、Lindblad 与随机轨道 |
 | 量子方法的角色 | 把系统—浴模型编码到量子线路，用量子通道或扩张方法模拟非马尔可夫开放动力学，作为经典簇方法之外的离线求解器（提案） |
@@ -18,7 +18,7 @@
 
 一份解法满足以下五点即可提交审核。负结果同样接受，只要过程可复现、结论有依据。
 
-1. **模型对应**：说明所用模型或数据如何对应「hBN 中 V_B⁻、金刚石 IV 族空位、SiC 缺陷等固态自旋，与核自旋浴及晶格声子的耦合」，列出简化与近似。
+1. **模型对应**：说明所用模型或数据如何对应「金刚石 NV⁻ 与硅空位（SiV）、hBN 中 V_B⁻ 等固态自旋，与核自旋浴及晶格声子的耦合」，列出简化与近似。
 2. **可观测量**：报告「T₁ 与 T₂ 相干时间、零场分裂的声子调制、噪声谱」，附单位与不确定度。
 3. **经典对照**：在同一模型或数据上，与「簇关联展开（PyCCE 等）处理核自旋浴；第一性原理自旋—声子弛豫；HEOM、TEMPO/过程张量、Lindblad 与随机轨道」中至少一种方法比较。
 4. **可复现**：提供代码、环境、随机种子、输入来源与哈希，以及计算资源和成本；用到 QPU 时注明设备与 shots。
@@ -42,7 +42,7 @@
 
 #### 模型与可观测量
 
-- 研究体系：hBN 中 V_B⁻、金刚石 IV 族空位、SiC 缺陷等固态自旋，与核自旋浴及晶格声子的耦合
+- 研究体系：金刚石 NV⁻ 与硅空位（SiV）、hBN 中 V_B⁻ 等固态自旋，与核自旋浴及晶格声子的耦合
 - 可观测量：T₁ 与 T₂ 相干时间、零场分裂的声子调制、噪声谱
 - 规模：核自旋浴可达数百至数千自旋；自旋—声子需全声子谱；量子求解只针对多模浴或强关联的子问题
 
@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-经典侧：簇关联展开已用于 hBN 中 V_B⁻ 的退相干；第一性原理研究指出低频两声子过程主导自旋弛豫；综述讨论计算方法与验证。另有工作研究自旋量子比特与声子耦合的高保真量子信息处理。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：第一性原理自旋动力学定量重现了 NV⁻ 与 V_B⁻ 的 T₁、T₂ 温度依赖，指出零场分裂受低频声子二阶调制的两声子过程主导，高温下没有单声子 Orbach 过程，经典的 T⁵ 标度并不严格成立；综述讨论了自旋—声子弛豫与用簇关联展开处理核自旋浴，并强调实验验证。另有工作用连续动态解耦把 SiV 的声子介导门误差降低两个数量级以上，但那是构建量子器件的方案，不是离线求解退相干。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：量子传感测量本身不是量子计算，本题指离线模型求解；经典簇方法已很强，必须逐例比较。
 
@@ -70,11 +70,11 @@
 
 #### 文献与读取范围
 
-- R1 [Decoherence of solid-state spin qubits: a computational perspective](https://arxiv.org/abs/2405.18535)（2024），预印本；读取范围：search_excerpt。综述固态自旋退相干的计算方法，包括簇方法及其验证。
-- R2 [Spin-phonon decoherence in solid-state paramagnetic defects from first principles](https://arxiv.org/abs/2212.11705)（2022），预印本；期刊版 npj Computational Materials (2023)；读取范围：search_excerpt。第一性原理指出低频两声子对零场分裂的调制主导自旋弛豫与退相干。
-- R3 [Toward high-fidelity quantum information processing and quantum simulation with spin qubits and phonons](https://arxiv.org/abs/2402.16960)（2024），预印本；读取范围：search_excerpt。硅空位自旋与声子耦合的门与模拟方案，基于数值模拟的提案。
+- R1 [Decoherence of solid-state spin qubits: a computational perspective](https://arxiv.org/abs/2405.18535)（2024），预印本（Colloquium）；读取范围：full_text。自旋—声子弛豫进展与簇关联展开处理核自旋浴退相干，强调用实验验证（相关章节精读）。
+- R2 [Spin-phonon decoherence in solid-state paramagnetic defects from first principles](https://arxiv.org/abs/2212.11705)（2022），预印本；期刊版 npj Computational Materials (2023)；读取范围：full_text。NV⁻ 与 V_B⁻：定量重现 T₁、T₂ 温度依赖，低频两声子调制零场分裂为主导，无高温 Orbach 过程，T⁵ 律不严格成立。
+- R3 [Toward high-fidelity quantum information processing and quantum simulation with spin qubits and phonons](https://arxiv.org/abs/2402.16960)（2024），预印本；读取范围：full_text。金刚石 SiV：连续动态解耦使声子介导门误差降低两个数量级以上、不保真度可低于约 1e-4；量子器件方案，与本题为间接关联。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 
