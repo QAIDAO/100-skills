@@ -1,0 +1,62 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "同Hamiltonian主方程/HEOM；有结构振电模型的MCTDH；编译一致的无噪声线路",
+  "decision": "判断二维谱交叉峰和线形变化源于直接耦合、共同环境还是人口转移，以选择有效材料动力学模型。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F18",
+  "observable": "三阶R(t₃,t₂,t₁)、二维谱交叉峰、等待时间依赖、谱扩散",
+  "quantum_role": "量子候选电路实现多次光场作用、环境辅助演化与多时关联；经典端合并路径并生成频率谱。",
+  "scale": "2024二聚体示例2系统+2赝模+1响应辅助+1碰撞辅助=6比特电路模拟；2026独立12比特链硬件",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.1021/acs.jctc.4c01204",
+      "id": "R1",
+      "supports": "激子二聚体、赝模碰撞模型、6比特寄存器与Qiskit Aer模拟；JCTC20,10588–10601",
+      "title": "Simulating Non-Markovian Dynamics in Multidimensional Electronic Spectroscopy via Quantum Algorithm",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2409.05548v1",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.48550/arXiv.2604.16164",
+      "id": "R2",
+      "supports": "IBM12比特XXZ四/五阶响应、经验包络后处理；直接/间接耦合二维谱模型示范需与硬件部分区分",
+      "title": "A unified framework for efficient quantum simulation of nonlinear spectroscopy",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2604.16164v1",
+      "year": 2026
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.1021/acs.jctc.2c01059",
+      "id": "R3",
+      "supports": "独立经典基线：芘S₂→S₁振电模型、MCTDH三阶响应与近似线形比较",
+      "title": "Nonlinear Molecular Electronic Spectroscopy via MCTDH Quantum Dynamics: From Exact to Approximate Expressions",
+      "type": "期刊论文",
+      "url": "https://mukamel.ps.uci.edu/publications/pdfs/1040.pdf",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.22331/q-2025-08-07-1822",
+      "id": "R4",
+      "supports": "独立容错算法路线将相位估计推广到非线性响应，不能当作近端硬件效果",
+      "title": "Nonlinear Spectroscopy via Generalized Quantum Phase Estimation",
+      "type": "期刊论文",
+      "url": "https://quantum-journal.org/papers/q-2025-08-07-1822/",
+      "year": 2025
+    }
+  ],
+  "subdomain": "多维光谱与光功能材料",
+  "system": "两个色团激子模型及有限记忆赝模环境；独立XXZ硬件响应作为方法旁证",
+  "tags": [
+    "二维光谱",
+    "非线性响应",
+    "环境记忆",
+    "第二轮扩展"
+  ],
+  "title": "非线性二维光谱：用多时响应区分耦合、记忆与人口转移"
+}

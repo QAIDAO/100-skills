@@ -1,0 +1,48 @@
+{
+  "id": "M22",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "native-three-state-v2/results.json",
+      "goal": "native-three-state-v2/GOAL.md",
+      "manifest_sha256": "4890969f487491bc6cf218f1b719055461361d92c9d70c4d4bfe75d218dff318",
+      "original_target_status": "incomplete",
+      "previous_pointer": {
+        "current_results": "results.json",
+        "goal": "GOAL.md",
+        "original_target_status": "incomplete",
+        "research": "RESEARCH.md"
+      },
+      "research": "native-three-state-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M22-cavity-polaritonic-states/execution/native-three-state-v2/saved-summary.pdf",
+    "tasks/M22-cavity-polaritonic-states/execution/native-three-state-v2/saved-summary.png",
+    "tasks/_execution/2026-10-04/materials/m22-three-state-audit-v2/audit-results.json",
+    "tasks/_execution/2026-10-04/materials/m22-three-state-delivery-draft-v2/results-draft.json",
+    "tasks/_execution/2026-10-04/materials/m22-three-state-delivery-v2/plot.py",
+    "tasks/_execution/2026-10-04/materials/m22-three-state-v2",
+    "tasks/_execution/2026-10-04/validation/m22-round28-parent.json",
+    "tasks/_execution/2026-10-04/validation/m22-round28-production-intake.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M22-cavity-polaritonic-states/README.md",
+      "sha256": "6636f5f1be7678fa722cad97f2b28ad71b6422155b529b213b41879d67c1d350"
+    },
+    {
+      "path": "tasks/M22-cavity-polaritonic-states/execution/LATEST.json",
+      "sha256": "3502e5a2bbf8b800deca119ee6d3993e30d8437b7b4ce73e714fb186c0dfc76f"
+    },
+    {
+      "path": "tasks/M22-cavity-polaritonic-states/execution/native-three-state-v2/RESEARCH.md",
+      "sha256": "e19e7e2fa0fcb562ccf3445374edd0735dbd81e7fef34f71a53ffa85aff73032"
+    }
+  ]
+}

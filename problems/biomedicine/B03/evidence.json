@@ -1,0 +1,45 @@
+{
+  "id": "B03",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "revision-5-input-closure/results.json",
+      "goal": "revision-5-input-closure/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/round6-input-promotion.json",
+      "research": "revision-5-input-closure/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B03-p450nor-electrostatics/mechanism.png",
+    "tasks/B03-p450nor-electrostatics/visualization.json",
+    "tasks/B03-p450nor-electrostatics/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B03-p450nor-electrostatics/README.md",
+      "sha256": "01c91894f9e48a1ea44e53ddd229edd10e22c78e02f2da75540218f9c81d4778"
+    },
+    {
+      "path": "tasks/B03-p450nor-electrostatics/mechanism.svg",
+      "sha256": "07d5211d9ade8a31265da9a00159ed6ef4af1b856280d724577073b209e67dbe"
+    },
+    {
+      "path": "tasks/B03-p450nor-electrostatics/workflow.svg",
+      "sha256": "bf21dad2f3d1f4b769e51a5cb9152c84f9359ee6ae03258ffbd93718fe3ae629"
+    },
+    {
+      "path": "tasks/B03-p450nor-electrostatics/execution/LATEST.json",
+      "sha256": "c9dfa1a63a0e6f469434ef39433d9442de1b1424785fbf0697bc42a23da4d779"
+    },
+    {
+      "path": "tasks/B03-p450nor-electrostatics/execution/revision-5-input-closure/RESEARCH.md",
+      "sha256": "68daff12561a9098cbdbf6d5fdcfe249c4b52c6b15d434da008da3d4f7b5b1d8"
+    }
+  ]
+}

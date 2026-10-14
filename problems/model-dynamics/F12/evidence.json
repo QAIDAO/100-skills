@@ -1,0 +1,56 @@
+{
+  "id": "F12",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "orbital-shadow-ratio-diagnostics-r142/results.json",
+      "current_revision": "orbital-shadow-ratio-diagnostics-r142",
+      "goal": "orbital-shadow-ratio-diagnostics-r142/GOAL.md",
+      "id": "F12",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f12-r142/delivery-review/REVIEW.json",
+      "independent_review_sha256": "1e6743f16ac72cb5f6d1a7901069d0f9d02ca56b0a24673ab5fc986a6530abf4",
+      "manifest": "orbital-shadow-ratio-diagnostics-r142/manifest.json",
+      "manifest_sha256": "c6cf26c4099ca875c6048ace3d85f99d4e39097475608cde3f42fcc6a77371fb",
+      "original_target_status": "incomplete",
+      "research": "orbital-shadow-ratio-diagnostics-r142/REPORT.md",
+      "revision": "r142",
+      "updated_utc": "2026-10-09T01:48:36.222612+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F12-quantum-assisted-afqmc/execution/orbital-shadow-ratio-diagnostics-r142/NEXT.md",
+    "tasks/F12-quantum-assisted-afqmc/execution/orbital-shadow-ratio-diagnostics-r142/RAW-DATA.md",
+    "tasks/F12-quantum-assisted-afqmc/execution/orbital-shadow-ratio-diagnostics-r142/checks.csv",
+    "tasks/F12-quantum-assisted-afqmc/execution/orbital-shadow-ratio-diagnostics-r142/results.json",
+    "tasks/F12-quantum-assisted-afqmc/mechanism.png",
+    "tasks/F12-quantum-assisted-afqmc/visualization.json",
+    "tasks/F12-quantum-assisted-afqmc/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F12-quantum-assisted-afqmc/README.md",
+      "sha256": "63544efaad5007ca14b32fbaf5869da683040ef4df902258592e7e14b8273a8d"
+    },
+    {
+      "path": "tasks/F12-quantum-assisted-afqmc/mechanism.svg",
+      "sha256": "0299f93b56050ec46569fd49b130e3dbe1dd5297af126b2e02cd8d532ea19785"
+    },
+    {
+      "path": "tasks/F12-quantum-assisted-afqmc/workflow.svg",
+      "sha256": "5f7b2883b85e1ba66176176a3e8e2b93477a32fec0b2f96085195c933675929d"
+    },
+    {
+      "path": "tasks/F12-quantum-assisted-afqmc/execution/LATEST.json",
+      "sha256": "3ae59f1ae9e533d076ccc4081241d448626a7e023c61efe6100e22f2b6add5b7"
+    },
+    {
+      "path": "tasks/F12-quantum-assisted-afqmc/execution/orbital-shadow-ratio-diagnostics-r142/REPORT.md",
+      "sha256": "e4ff40d5ac69817b50182782e366381dcf6e360d2cdbbdd84cea9783d42e225b"
+    }
+  ]
+}

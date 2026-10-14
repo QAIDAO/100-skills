@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "DFT溶剂化/反应网络、耦合簇或多参考能量校正、经典基组收敛",
+  "decision": "判断溶剂/添加剂的竞争电子反应是否值得高层校正，以及未来硬件的实际吞吐能否承担筛选。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M15",
+  "observable": "还原/电离相关能差、候选断键势垒；最终SEI与循环性能须另建模型",
+  "quantum_role": "双因子化QPE电子能核，结合纠错、魔法态工厂与架构并行成本",
+  "scale": "原文包含全部电子（含芯），非小活性空间；不同高斯基组到逻辑电路和光子fusion-based架构逐级预算",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "电解液分子容错资源与光子架构；期刊2022，预印本2021/修订2023",
+      "title": "Fault-tolerant resource estimate for quantum chemical simulations: Case study on Li-ion battery electrolyte molecules",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/html/2104.10653v2",
+      "year": 2022
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "Li2FeSiO4电压、迁移、热稳定性与第一量子化资源；PRA106,032428",
+      "title": "Simulating key properties of lithium-ion batteries with a fault-tolerant quantum computer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2204.11890",
+      "year": 2022
+    }
+  ],
+  "subdomain": "电解液与界面反应",
+  "system": "EC、FEC、PF₆⁻及其含Li变体LEC、LFEC、LiPF₆、LREC",
+  "tags": [
+    "电解液与界面反应",
+    "资源估算",
+    "重点储备"
+  ],
+  "title": "锂电电解液分子：还原稳定性与 SEI 初始反应的容错规划"
+}

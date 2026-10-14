@@ -1,0 +1,46 @@
+{
+  "id": "C11",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "stability-r53/results.json",
+      "goal": "stability-r53/GOAL.md",
+      "original_target_status": "incomplete",
+      "previous_pointer": "stability-r53/previous-LATEST.json",
+      "reader_scope_note": "固定公开UMAP分群稳定性已独立验证；8192shot对RBF差−.028263，条件95%区间含零，收益门失败。非作者电路复现、临床验证或量子优势。",
+      "research": "stability-r53/RESULTS.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C11-metabric-omics-kernels/execution/stability-r53/figures/evaluation-pairs.csv",
+    "tasks/C11-metabric-omics-kernels/execution/stability-r53/figures/stability.png",
+    "tasks/_execution/2026-10-04/ROUND53-GOAL.md",
+    "tasks/_execution/2026-10-04/cross/c11-source-r53/SOURCE-REVIEW.md",
+    "tasks/_execution/2026-10-04/cross/c11-stability-audit-r53/oracle.py",
+    "tasks/_execution/2026-10-04/cross/c11-stability-audit-r53/production-v2/out/results.json",
+    "tasks/_execution/2026-10-04/cross/c11-stability-r53/producer.py",
+    "tasks/_execution/2026-10-04/cross/c11-stability-r53/production/contract.json",
+    "tasks/_execution/2026-10-04/cross/c11-stability-r53/production/data/result.json",
+    "tasks/_execution/2026-10-04/validation/c11-r53-audit-parent.json",
+    "tasks/_execution/2026-10-04/validation/c11-r53-production-parent.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C11-metabric-omics-kernels/README.md",
+      "sha256": "6d94c03f289a1f5489574b19b719cd52211d5c17ae70d1c9946e31169d0adb10"
+    },
+    {
+      "path": "tasks/C11-metabric-omics-kernels/execution/LATEST.json",
+      "sha256": "e7178ab05476eb9094a30e0b153fac94a0be937d920bf6cc8d4a0b22714da594"
+    },
+    {
+      "path": "tasks/C11-metabric-omics-kernels/execution/stability-r53/RESULTS.md",
+      "sha256": "1f4c1c1a73e05b627a7d956b8120c57340bf39372691ff6d92b433105bdd8a79"
+    }
+  ]
+}

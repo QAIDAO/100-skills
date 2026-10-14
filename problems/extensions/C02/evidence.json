@@ -1,0 +1,51 @@
+{
+  "id": "C02",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "public-source-v3/manifest.json",
+      "current_results": "public-source-v3/results.json",
+      "current_revision": "public-source-v3",
+      "goal": "public-source-v3/GOAL.md",
+      "hardware_run": false,
+      "id": "C02",
+      "original_target_status": "incomplete",
+      "parent_validation": "tasks/_execution/2026-10-04/validation/round7-input-parent-audit.json",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": false,
+      "research": "public-source-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C02-euv-tin-photoresist/mechanism.png",
+    "tasks/C02-euv-tin-photoresist/visualization.json",
+    "tasks/C02-euv-tin-photoresist/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C02-euv-tin-photoresist/README.md",
+      "sha256": "5329665607e05746e245b497793dd9626c6d867059145cd77c65533e10506bf9"
+    },
+    {
+      "path": "tasks/C02-euv-tin-photoresist/mechanism.svg",
+      "sha256": "061845120dbda9f72f36b8ea904ca24d26f010d1d5e4a0b7e0d3925b79a2e860"
+    },
+    {
+      "path": "tasks/C02-euv-tin-photoresist/workflow.svg",
+      "sha256": "3e2583ac1e45807478029bb727a275958ad867af895b7431fc4a0ead08b6fed3"
+    },
+    {
+      "path": "tasks/C02-euv-tin-photoresist/execution/LATEST.json",
+      "sha256": "16e7b893bfc29a98fc5f54b7e18e787570821b30ff50c82cf9d0555bb16b2aa2"
+    },
+    {
+      "path": "tasks/C02-euv-tin-photoresist/execution/public-source-v3/RESEARCH.md",
+      "sha256": "c4764bd8eb1eaefcf080bf44299a967ae66bfce989773e6afd75b56edd9d7fbb"
+    }
+  ]
+}

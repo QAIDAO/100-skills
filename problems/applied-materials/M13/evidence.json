@@ -1,0 +1,27 @@
+{
+  "id": "M13",
+  "latest": null,
+  "omitted": [
+    "tasks/M13-logical-chiral-catalysis/mechanism.png",
+    "tasks/M13-logical-chiral-catalysis/visualization.json",
+    "tasks/M13-logical-chiral-catalysis/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M13-logical-chiral-catalysis/README.md",
+      "sha256": "9afa910c41cffba8b8fe71eeb45b7dcd02b7a699ab1aa1cb3817695556d3fddd"
+    },
+    {
+      "path": "tasks/M13-logical-chiral-catalysis/mechanism.svg",
+      "sha256": "da57646b4afc61c4568780c89ba59dfaeb3122d3131dbf15d0f20a6b8834de70"
+    },
+    {
+      "path": "tasks/M13-logical-chiral-catalysis/workflow.svg",
+      "sha256": "2bf8875bb1f5998a0dc008450c76fb348594cbaf10c4c9a62b5f4802521b1679"
+    }
+  ]
+}

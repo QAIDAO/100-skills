@@ -1,0 +1,48 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同积分精确对角化及扩大空间多参考嵌入；光谱层另用经典振电子方法",
+  "decision": "确认单重/三重态顺序及扰动下的能级分裂，支撑缺陷光学模型选择。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M08",
+  "observable": "³A₂、¹E、¹A₁、³E的能隙、〈S²〉、简并子空间投影与扰动响应",
+  "quantum_role": "嵌入有效哈密顿量上的VQE+QSE/多态变分，约束粒子数并做噪声缓解",
+  "scale": "docs DEF-NV最小(4e,3o)为6比特、固定N维度15；完整晶体并未装入寄存器",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "NV负色心及4H-SiC双空位VQE/QSE硬件；PRX Quantum 3,010339",
+      "title": "Simulating the electronic structure of spin defects on quantum computers",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2112.04435",
+      "year": 2022
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "经典嵌入多参考光学计算对照；不是量子硬件成果",
+      "title": "Optical properties of a diamond NV color center from capped embedded multiconfigurational correlated wavefunction theory",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1038/s41524-026-01987-1",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "固体缺陷局域有效哈密顿量和经典/量子嵌入验证",
+      "title": "Quantum simulations of materials on near-term quantum computers",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2002.11173",
+      "year": 2020
+    }
+  ],
+  "subdomain": "缺陷与量子器件材料",
+  "system": "金刚石NV⁻；4H-SiC双空位为同类扩展",
+  "tags": [
+    "缺陷与量子器件材料",
+    "硬件演示",
+    "近期验证"
+  ],
+  "title": "NV⁻ 与 SiC 双空位：可验证的缺陷多重态和光学能级"
+}

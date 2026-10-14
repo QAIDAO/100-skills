@@ -1,0 +1,51 @@
+{
+  "id": "B14",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "global-prefix-verified-v3.1/results.json",
+      "full_baseline_preserved": "literal-open-channel-v2.1/results.json",
+      "goal": "global-prefix-verified-v3.1/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b14-round26-global-v3.1-parent.json",
+      "research": "global-prefix-verified-v3.1/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B14-photosynthetic-exciton/execution/literal-open-channel-v2.1/RESEARCH.md",
+    "tasks/B14-photosynthetic-exciton/mechanism.png",
+    "tasks/B14-photosynthetic-exciton/visualization.json",
+    "tasks/B14-photosynthetic-exciton/workflow.png",
+    "tasks/_execution/2026-10-04/bio/b14-global-synthesis-v3.1/protocol.json",
+    "tasks/_execution/2026-10-04/bio/b14-global-terminal-v3.1/result.json",
+    "tasks/_execution/2026-10-04/figures/round26/b14_precision.png",
+    "tasks/_execution/2026-10-04/validation/b14-round26-global-v3.1-parent.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B14-photosynthetic-exciton/README.md",
+      "sha256": "9e9b450e4635bc0c108a5dc5e7fd967c5174cdb4df48be8a5a5f1686c9d0e84e"
+    },
+    {
+      "path": "tasks/B14-photosynthetic-exciton/mechanism.svg",
+      "sha256": "3fcd398340d31efbe711ed3ddd380f0c381973b01922106d03ba603c58c9938d"
+    },
+    {
+      "path": "tasks/B14-photosynthetic-exciton/workflow.svg",
+      "sha256": "ffeb9bea11a83e61877f65666817eaf3f9f8b66a633f220ffda3fb4b6d050e7a"
+    },
+    {
+      "path": "tasks/B14-photosynthetic-exciton/execution/LATEST.json",
+      "sha256": "7675054c72ab21b7af477cd81e6ecae3d1958bddefc942886ff468efdec9b9f0"
+    },
+    {
+      "path": "tasks/B14-photosynthetic-exciton/execution/global-prefix-verified-v3.1/RESEARCH.md",
+      "sha256": "1a27dfe583386bd5fe0b6790b43590c31b35f0e44c0d5a95802d5e6a47a71346"
+    }
+  ]
+}

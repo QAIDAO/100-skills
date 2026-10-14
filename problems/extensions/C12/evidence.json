@@ -1,0 +1,45 @@
+{
+  "id": "C12",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "fixed-prediction-sensitivity-v3/results.json",
+      "goal": "fixed-prediction-sensitivity-v3/GOAL.md",
+      "manifest_sha256": "550af8c746e7bde4dab275e4ba93dc0ee089fefa840fc0513dec5a4676276625",
+      "original_target_status": "incomplete",
+      "previous_pointer": {
+        "current_results": "revision-2/results.json",
+        "note": "Read the current_results path; root results may be a preserved superseded run.",
+        "original_target_status": "incomplete",
+        "research": "RESEARCH.md"
+      },
+      "research": "fixed-prediction-sensitivity-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C12-breast-ultrasound-quanvolution/execution/RESEARCH.md",
+    "tasks/_execution/2026-10-04/cross/c12-duplicate-sensitivity-v3/protocol.json",
+    "tasks/_execution/2026-10-04/cross/c12-duplicate-sensitivity-v3/replicates.npz",
+    "tasks/_execution/2026-10-04/cross/c12-duplicate-sensitivity-v3/result.json",
+    "tasks/_execution/2026-10-04/cross/c12-terminal-review-v3/result.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C12-breast-ultrasound-quanvolution/README.md",
+      "sha256": "c7dc2b76334974f1d6c9a1d27ef4ad7b19e5bba8fde1981eed110dfca31ce7fc"
+    },
+    {
+      "path": "tasks/C12-breast-ultrasound-quanvolution/execution/LATEST.json",
+      "sha256": "d2121e0d540587b5b7459f9c13b90b97cb9c380ed4864f5b13c67fd72238c1d1"
+    },
+    {
+      "path": "tasks/C12-breast-ultrasound-quanvolution/execution/fixed-prediction-sensitivity-v3/RESEARCH.md",
+      "sha256": "9f55ff535ccab3e0b70610b3202e56b7027ca372b11c082dbce866d84aeb8498"
+    }
+  ]
+}

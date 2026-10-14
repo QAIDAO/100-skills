@@ -1,0 +1,64 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "CPLEX、同QUBO模拟退火SA、贪心局部解；应用层另对照GCMC/3D-RISM水位点预测，使用相同距离阈值",
+  "decision": "在设计配体取代基前，识别可能桥接蛋白和配体的水位点，为保水/排水假设提供结构输入。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B20",
+  "observable": "离散目标函数、最优样本概率、晶体水覆盖、位置偏差和每个晶体水对应的预测水簇大小",
+  "quantum_role": "经典3D-RISM→高斯密度拟合QUBO→门式量子优化→经典解码氧位置与晶体水比较",
+  "scale": "常规测试41–116变量；另含123变量实例；运行于IBM Heron设备。更大如900变量分析使用经典SA，不能算作量子执行。",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "表1/2的结构和变量规模、116/123变量的SA比较、900变量经典放大、晶体水指标定义。",
+      "title": "Practical protein-pocket hydration-site prediction for drug discovery on a quantum computer",
+      "type": "预印本作者全文",
+      "url": "https://arxiv.org/html/2512.08390v1",
+      "work_id": "hydration-2512.08390",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "中性原子水位点方法前驱；不据摘要扩大硬件系统或全三维精度结论。",
+      "title": "Leveraging analog quantum computing with neutral atoms for solvent configuration prediction in drug discovery",
+      "type": "期刊论文",
+      "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.043020",
+      "work_id": "10.1103/PhysRevResearch.6.043020",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "id": "R3",
+      "supports": "108个复合物的经典GCMC水位点基准及评价阈值敏感性，支持应用价值与强基线。",
+      "title": "Water Networks in Complexes between Proteins and FDA-Approved Drugs",
+      "type": "期刊论文；2022在线，2023卷期",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9832485/",
+      "work_id": "10.1021/acs.jcim.2c01225",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R4",
+      "supports": "正式版2026-09-21发表于PRResearch 8,033344，DOI 10.1103/gyqr-mv1h；与R1同一工作。已核查正式摘要，具体表格数值以读到的作者v1为准。",
+      "title": "Practical protein-pocket hydration-site prediction for drug discovery on a quantum computer",
+      "type": "期刊正式版",
+      "url": "https://journals.aps.org/prresearch/abstract/10.1103/gyqr-mv1h",
+      "work_id": "hydration-2512.08390",
+      "year": 2026
+    }
+  ],
+  "subdomain": "溶剂构型与先导优化",
+  "system": "五个药物—蛋白复合物及同一蛋白的apo补充结构；水的候选氧位置，不是完整水分子量子动力学",
+  "tags": [
+    "结合水",
+    "3D-RISM",
+    "QUBO",
+    "123 qubits",
+    "先导优化",
+    "第二轮扩展"
+  ],
+  "title": "蛋白口袋水合位点：决定保留还是置换结合水"
+}

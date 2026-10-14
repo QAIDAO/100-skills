@@ -1,0 +1,46 @@
+{
+  "id": "B04",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "original40q-MPS-SQD-v4/results.json",
+      "goal": "original40q-MPS-SQD-v4/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b04-parent-promotion.json",
+      "research": "original40q-MPS-SQD-v4/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B04-iron-sulfur-sqd/execution/original40q-MPS-SQD-v4/b04-evidence.png",
+    "tasks/B04-iron-sulfur-sqd/mechanism.png",
+    "tasks/B04-iron-sulfur-sqd/visualization.json",
+    "tasks/B04-iron-sulfur-sqd/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B04-iron-sulfur-sqd/README.md",
+      "sha256": "8a5137a93ab9a49c366fca73b7b890a70429a1e1e6d5ff87d52006902caaaca4"
+    },
+    {
+      "path": "tasks/B04-iron-sulfur-sqd/mechanism.svg",
+      "sha256": "6721bf410b272c865fbcbdf398de97ad327f5280b4b0b34bccb8a534f904c349"
+    },
+    {
+      "path": "tasks/B04-iron-sulfur-sqd/workflow.svg",
+      "sha256": "c5fa4a0a3feb1fd4d4aae8247b41240ff54a7f8a37ba34ca6c30279ea8d4dac7"
+    },
+    {
+      "path": "tasks/B04-iron-sulfur-sqd/execution/LATEST.json",
+      "sha256": "af353fa2d8c3a2d3d0e876b882248894ae40176355b9c28e63722b34f31dd2d0"
+    },
+    {
+      "path": "tasks/B04-iron-sulfur-sqd/execution/original40q-MPS-SQD-v4/RESEARCH.md",
+      "sha256": "885fabd5f85b09e8def581a2ba965834e637b5064eee8ad19e16147af853be70"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "C04",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "native-cost-r58/results.json",
+      "delivery_review": "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/DELIVERY-REVIEW.json",
+      "delivery_review_sha256": "33a66bcc7c7f6571b4faf3ab5266903044832f42063b366fb9c0467b2536ca5e",
+      "goal": "native-cost-r58/GOAL.md",
+      "manifest_sha256": "1e27dd3b4c08a04068521992c0d54c409669be511d03bdc0ab6e2d94723362ef",
+      "note": "Full11R native preparation/readout cost and error evidence independently verified; composition precision, finite-count RMS and inherited inverse science failures retained. Fixed C04 route closed with negative scientific outcome.",
+      "original_target_status": "incomplete",
+      "research": "native-cost-r58/RESULTS.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C04-formaldehyde-spectral-inverse/mechanism.png",
+    "tasks/C04-formaldehyde-spectral-inverse/visualization.json",
+    "tasks/C04-formaldehyde-spectral-inverse/workflow.png",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/DELIVERY-VISUAL-INSPECTION.json",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/REQUIREMENT-AND-COST-AUDIT.md",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/RESOURCE-SUMMARY.json",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/audit-production-v2/out/result.json",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/all-budget-rms.csv",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/by-R-summary.csv",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/complete-cost-and-fixed-budget-rms.pdf",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/complete-cost-and-fixed-budget-rms.png",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/complete-native-cost.csv",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/original-vector-gates.csv",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/physical-bias.csv",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/precision-and-observable-bias.pdf",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/precision-and-observable-bias.png",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/presentation-summary.json",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/presentation/whole-library-budget-summary.csv",
+    "tasks/_execution/2026-10-04/cross/c04-native-cost-r58/production/out/result.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C04-formaldehyde-spectral-inverse/README.md",
+      "sha256": "7d4d148be829b3bc7a54334d2b7c948145abeb5ddb017223458d16120f4cc2b9"
+    },
+    {
+      "path": "tasks/C04-formaldehyde-spectral-inverse/mechanism.svg",
+      "sha256": "e91bf50686c06ef1c89919c2bd429606a971f53325c37e712d0043ea41ac0c2d"
+    },
+    {
+      "path": "tasks/C04-formaldehyde-spectral-inverse/workflow.svg",
+      "sha256": "233304f280378790ac30df955ced3caebe64c81e923700053a193f97686f6353"
+    },
+    {
+      "path": "tasks/C04-formaldehyde-spectral-inverse/execution/LATEST.json",
+      "sha256": "36c41c08dcd0bcc7c40dcb3a9a5f2d05115de8be2c8663a02b59666129db325e"
+    },
+    {
+      "path": "tasks/C04-formaldehyde-spectral-inverse/execution/native-cost-r58/RESULTS.md",
+      "sha256": "f80f92fe2513e6aaf0e9ed0171fb1af50bf0af8c1f4b9c34ef26e3e99dfd5c19"
+    }
+  ]
+}

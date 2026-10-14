@@ -1,0 +1,41 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "相同二站杂质 ED、经典二站DMFT与增加浴数的求解",
+  "decision": "验证带噪声的杂质响应能否稳定驱动自洽，而不是只求解固定 Hamiltonian。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "F13",
+  "observable": "局域格林函数、谱函数、自洽混成 V",
+  "quantum_role": "五比特 NMR 中四数据比特表示自旋轨道，一探针比特辅助测量响应。",
+  "scale": "1杂质+1浴=4数据自旋轨道；加1探针共5个NMR比特",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "五比特NMR、单浴Bethe自洽、U=0/1/2与附录算法；PRL133,140602",
+      "title": "Self-Consistent Determination of Single-Impurity Anderson Model Using Hybrid Quantum-Classical Approach on a Spin Quantum Simulator",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2410.07808v1",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "量子杂质求解器与经典自洽的理论框架，不是R1独立复现",
+      "title": "Hybrid Quantum-Classical Approach to Correlated Materials",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1103/PhysRevX.6.031045",
+      "year": 2016
+    }
+  ],
+  "subdomain": "强关联嵌入与自洽",
+  "system": "半填充、无限配位 Bethe 晶格 Hubbard 模型的一杂质一浴近似",
+  "tags": [
+    "Bethe",
+    "SIAM",
+    "DMFT",
+    "NMR",
+    "自洽"
+  ],
+  "title": "Bethe 晶格自洽 SIAM：五比特 NMR 验证 DMFT 反馈闭环"
+}

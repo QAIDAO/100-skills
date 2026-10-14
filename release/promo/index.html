@@ -1,0 +1,433 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100-skills 开放题</title>
+<meta name="description" content="84 道还开放着的量子计算与科学计算研究题：固氮、碳捕集、PFAS 治理、电池、药物、高温超导。挑一道，提交你的解法。">
+<style>
+@font-face{font-family:"Subscripts";src:local("PingFangSC-Regular"),local("Helvetica Neue"),local("Arial");unicode-range:U+2070-209F}
+:root{
+  --canvas:#f6f2f9;--surface:#fffcfe;--ink:#271b38;--muted:#665877;--faint:#968aa6;
+  --rule:#e2d9ec;--rule-strong:#cdbfdc;--accent:#7442c4;--accent-ink:#5a2fa3;--accent-soft:#efe6fb;
+  --deep:#1b1229;--deep-2:#241838;--on-deep:#f1ebf7;--on-deep-muted:#b6a8c8;--on-deep-faint:#7f7192;
+  --bio:#7442c4;--mat:#a8732a;--dyn:#4b6699;--ext:#ad4f7d;
+  --bio-n:#c6a6f7;--mat-n:#e6c48f;--dyn-n:#a6badf;--ext-n:#eba9c9;
+  --grain-opacity:.05;
+  --serif:"Subscripts","Songti SC","STSong","Noto Serif SC","Source Han Serif SC",ui-serif,Georgia,serif;
+  --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
+  --mono:ui-monospace,"SF Mono",SFMono-Regular,Menlo,Consolas,monospace;
+  --r-chip:4px;--r-control:8px;--r-panel:16px;
+  --ease:cubic-bezier(.16,1,.3,1);
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --canvas:#110c18;--surface:rgba(255,255,255,.035);--ink:#ece6f4;--muted:#a898bb;--faint:#7d6f8f;
+  --rule:rgba(255,255,255,.08);--rule-strong:rgba(255,255,255,.14);--accent:#c3a3f5;--accent-ink:#d6c0fa;--accent-soft:rgba(195,163,245,.12);
+  --deep:#0a0710;--deep-2:#140e1e;--bio:#c6a6f7;--mat:#e6c48f;--dyn:#a6badf;--ext:#eba9c9;--grain-opacity:.07}}
+:root[data-theme="dark"]{
+  --canvas:#110c18;--surface:rgba(255,255,255,.035);--ink:#ece6f4;--muted:#a898bb;--faint:#7d6f8f;
+  --rule:rgba(255,255,255,.08);--rule-strong:rgba(255,255,255,.14);--accent:#c3a3f5;--accent-ink:#d6c0fa;--accent-soft:rgba(195,163,245,.12);
+  --deep:#0a0710;--deep-2:#140e1e;--bio:#c6a6f7;--mat:#e6c48f;--dyn:#a6badf;--ext:#eba9c9;--grain-opacity:.07}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{margin:0;background:var(--canvas);color:var(--ink);font:16px/1.75 var(--sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;z-index:50;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:var(--grain-opacity);mix-blend-mode:multiply}
+a{color:inherit}button,input{font:inherit;color:inherit}button{cursor:pointer;touch-action:manipulation}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3,p,ol,ul,dl,dd{margin:0}ol,ul{padding:0;list-style:none}
+main *{min-width:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+.kicker{font:500 12px/1.4 var(--mono);letter-spacing:.08em;color:var(--accent-ink);text-transform:uppercase}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums}
+.skip{position:absolute;left:12px;top:-60px;background:var(--deep);color:var(--on-deep);padding:8px 12px;border-radius:var(--r-control);z-index:60}.skip:focus{top:12px}
+.d-bio{--d:var(--bio);--dn:var(--bio-n)}.d-mat{--d:var(--mat);--dn:var(--mat-n)}.d-dyn{--d:var(--dyn);--dn:var(--dyn-n)}.d-ext{--d:var(--ext);--dn:var(--ext-n)}
+
+header{position:sticky;top:0;z-index:20;background:var(--canvas);border-bottom:1px solid var(--rule)}
+.nav{height:60px;display:flex;align-items:center;gap:28px}
+.brand{font:600 17px/1 var(--mono);text-decoration:none;letter-spacing:-.01em}.brand b{color:var(--accent);font-weight:600}
+.navlinks{display:flex;gap:24px;font-size:14px;margin-left:auto}.navlinks a{text-decoration:none;color:var(--muted)}
+.nav .contribute{font-size:14px;text-decoration:none;color:var(--accent-ink);font-weight:600}
+@media (hover:hover){.navlinks a:hover{color:var(--ink)}.nav .contribute:hover{text-decoration:underline}}
+
+.btn{display:inline-flex;align-items:center;gap:10px;padding:12px 22px;border-radius:var(--r-control);background:var(--ink);color:var(--canvas);text-decoration:none;font-size:15px;font-weight:600;border:0;transition:transform 120ms var(--ease)}
+.btn:active{transform:scale(.97)}
+.btn svg{width:16px;height:16px;transition:transform 160ms var(--ease)}
+@media (hover:hover){.btn:hover svg{transform:translateX(3px)}}
+.textlink{font-size:15px;color:var(--accent-ink);text-decoration:none;font-weight:600}
+@media (hover:hover){.textlink:hover{text-decoration:underline}}
+
+/* 首屏：标题 + 84 格题板 */
+.hero{padding:72px 0 88px;border-bottom:1px solid var(--rule)}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:64px;align-items:center}
+.hero h1{font:600 clamp(38px,4.8vw,62px)/1.16 var(--serif);margin:18px 0 24px}
+.hero h1 .num{font-weight:600;color:var(--accent)}
+.lead{font-size:17px;color:var(--muted);max-width:32em}
+.lead strong{color:var(--ink);font-weight:600}
+.cta-row{display:flex;align-items:center;gap:24px;margin-top:32px;flex-wrap:wrap}
+.figures{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;margin-top:44px;border-top:1px solid var(--rule)}
+.figures div{padding:16px 28px 0 0;margin-right:28px;border-right:1px solid var(--rule)}
+.figures div:last-child{border-right:0;margin-right:0}
+.figures b{display:block;font:600 30px/1.1 var(--mono);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.figures span{display:block;font-size:13px;color:var(--muted);margin-top:6px}
+
+.board{position:relative;background:var(--deep);border:1px solid rgba(255,255,255,.07);color:var(--on-deep);border-radius:var(--r-panel);padding:28px 28px 24px;overflow:hidden;box-shadow:0 1px 0 rgba(255,255,255,.06) inset,0 24px 60px rgba(27,18,41,.28)}
+.board:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.18;mix-blend-mode:screen;pointer-events:none}
+.board-head{position:relative;display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:18px}
+.board-head b{font:600 16px/1.4 var(--serif)}
+.board-head span{font:500 12px/1 var(--mono);color:var(--on-deep-muted)}
+.cells{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:5px}
+.cell{aspect-ratio:1;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--dn) 55%,transparent);background:color-mix(in srgb,var(--dn) 7%,transparent);border-radius:5px;padding:0;font:600 10px/1 var(--mono);color:color-mix(in srgb,var(--dn) 88%,white);letter-spacing:-.02em;transition:transform 140ms var(--ease),background-color 140ms var(--ease);animation:rise .6s var(--ease) both;animation-delay:calc(var(--i) * 7ms)}
+.cell:active{transform:scale(.92)}
+@media (hover:hover){.cell:hover{transform:scale(1.12);background:color-mix(in srgb,var(--dn) 30%,transparent);position:relative;z-index:1}}
+@keyframes rise{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.legend{position:relative;display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;font-size:12px;color:var(--on-deep-muted)}
+.legend span{display:inline-flex;align-items:center;gap:7px}
+.legend i{width:9px;height:9px;border-radius:2px;background:var(--dn)}
+.board-foot{position:relative;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:14px;color:var(--on-deep-muted)}
+.board-foot b{color:var(--on-deep);font-weight:600}
+
+section{padding:96px 0 104px;scroll-margin-top:60px;border-bottom:1px solid var(--rule)}
+.section-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:48px;align-items:end;margin-bottom:44px}
+.section-head h2{font:600 clamp(28px,3.4vw,42px)/1.2 var(--serif);margin-top:12px}
+.section-head p{color:var(--muted);max-width:36em}
+
+/* 为什么值得做 */
+.stakes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));border-top:1px solid var(--rule-strong)}
+.stake{display:flex;flex-direction:column;gap:12px;padding:26px 28px 28px 0;border-bottom:1px solid var(--rule);text-align:left;background:transparent;border-left:0;border-right:0;border-top:0;transition:transform 120ms var(--ease)}
+.stake:active{transform:scale(.985)}
+.stake:nth-child(3n+2),.stake:nth-child(3n+3){padding-left:28px;border-left:1px solid var(--rule)}
+.stake .theme{font:600 30px/1.2 var(--serif);color:var(--d)}
+.stake .why{font-size:16px;line-height:1.75}
+.stake .src{margin-top:auto;display:flex;gap:10px;align-items:baseline;font-size:13px;color:var(--muted)}
+.stake .src .num{color:var(--d);font-weight:600}
+.stake .go{font-size:13px;font-weight:600;color:var(--accent-ink)}
+@media (hover:hover){.stake:hover .go{text-decoration:underline}}
+
+/* 一道题长什么样 */
+.anatomy{display:grid;grid-template-columns:minmax(0,.85fr) minmax(0,1.15fr);gap:64px;align-items:start}
+.anatomy ol li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:4px 12px;padding:14px 0;border-top:1px solid var(--rule)}
+.anatomy ol li:last-child{border-bottom:1px solid var(--rule)}
+.anatomy ol .num{grid-column:1;grid-row:1/3;font-size:13px;color:var(--accent);font-weight:600;padding-top:3px}
+.anatomy ol b{grid-column:2;grid-row:1;font-weight:600}.anatomy ol span:not(.num){grid-column:2;grid-row:2;font-size:14px;color:var(--muted)}
+.anatomy .after{margin-top:22px;font-size:15px;color:var(--muted)}
+.specimen{background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-panel);padding:26px 28px 22px;box-shadow:0 1px 2px rgba(39,27,56,.05),0 18px 40px rgba(39,27,56,.07)}
+.specimen-head{display:flex;justify-content:space-between;align-items:baseline;gap:16px;padding-bottom:14px;border-bottom:1px solid var(--rule)}
+.specimen-head h3{font:600 19px/1.45 var(--serif)}
+.specimen-head h3 .num{color:var(--accent)}
+.tag-open{flex:none;font:600 11px/1 var(--mono);letter-spacing:.06em;color:var(--accent-ink);background:var(--accent-soft);padding:6px 8px;border-radius:var(--r-chip)}
+
+.ledger{display:grid}
+.part{display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;padding:12px 0;border-bottom:1px solid var(--rule)}
+.part:last-child{border-bottom:0}
+.part dt{display:flex;gap:8px;align-items:baseline}
+.part dt .idx,.versus .idx,.pline .idx{font:600 12px/1.2 var(--mono);color:var(--accent)}
+.part dt .name,.versus .name{font-size:14px;font-weight:600}
+.part dd{font-size:15px;line-height:1.7}
+.versus-cap{font:500 11px/1 var(--mono);letter-spacing:.08em;color:var(--faint);padding-top:14px;text-transform:uppercase}
+.versus{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);border-bottom:1px solid var(--rule)}
+.versus .side{padding:12px 0}
+.versus .side:first-child{padding-right:20px}
+.versus .side+.side{padding-left:20px;border-left:1px solid var(--rule)}
+.versus .label{display:flex;flex-wrap:wrap;column-gap:8px;align-items:baseline;margin-bottom:4px}
+.versus .label .name{white-space:nowrap}
+.versus .label .hint{font-size:12px;color:var(--faint)}
+.versus p{font-size:15px;line-height:1.7}
+
+/* 题库 */
+.toolbar{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;padding-bottom:16px;border-bottom:1px solid var(--rule-strong)}
+.filters{display:flex;gap:4px;flex-wrap:wrap}
+.filters button{display:inline-flex;align-items:center;gap:7px;border:0;background:transparent;padding:8px 12px;border-radius:var(--r-control);font-size:14px;color:var(--muted);transition:transform 120ms var(--ease)}
+.filters button:active{transform:scale(.97)}
+.filters button i{width:8px;height:8px;border-radius:2px;background:var(--d)}
+.filters button .num{font-size:12px;color:var(--faint)}
+.filters button[aria-pressed="true"]{background:var(--ink);color:var(--canvas)}
+.filters button[aria-pressed="true"] .num{color:inherit;opacity:.7}
+@media (hover:hover){.filters button[aria-pressed="false"]:hover{color:var(--ink);background:var(--accent-soft)}}
+.search{display:flex;align-items:center;gap:8px;min-width:300px;border:1px solid var(--rule-strong);border-radius:var(--r-control);padding:7px 12px;background:var(--surface)}
+.search input{border:0;background:transparent;outline:none;width:100%;font-size:14px}
+.search svg{flex:none;width:16px;height:16px;color:var(--faint)}
+.count{font-size:13px;color:var(--muted);padding:14px 0 6px}
+.problem{border-bottom:1px solid var(--rule);scroll-margin-top:72px}
+.phead{display:grid;grid-template-columns:64px minmax(0,1fr) auto 20px;gap:20px;align-items:start;width:100%;text-align:left;background:transparent;border:0;padding:22px 0;transition:transform 120ms var(--ease)}
+.phead:active{transform:scale(.995)}
+.pid{font:600 15px/1.6 var(--mono);color:var(--d);padding-top:2px}
+.ptitle{display:block;font:600 19px/1.5 var(--serif)}
+.pmeta{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--faint);margin-top:2px}
+.pmeta i{width:7px;height:7px;border-radius:2px;background:var(--d)}
+.pline{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:baseline;margin-top:8px;font-size:15px}
+.pline .idx{background:var(--accent-soft);padding:2px 6px;border-radius:var(--r-chip);font-size:11px;white-space:nowrap}
+.pline.why{color:var(--muted)}
+.pstate{padding-top:4px}
+.pstate .ref{font-size:12px;color:var(--muted);white-space:nowrap}
+.chev{width:20px;height:20px;margin-top:4px;color:var(--faint);transition:transform 200ms var(--ease)}
+.problem.open .chev{transform:rotate(180deg);color:var(--accent)}
+@media (hover:hover){.phead:hover .ptitle{color:var(--accent-ink)}.phead:hover .chev{color:var(--accent)}}
+.pbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows 240ms var(--ease)}
+.problem.open .pbody{grid-template-rows:1fr}
+.pinner{overflow:hidden}
+.pcontent{margin:0 0 26px 84px;padding:4px 24px 18px;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-panel)}
+.pactions{display:flex;gap:24px;flex-wrap:wrap;align-items:center;padding-top:14px;font-size:14px}
+.pactions a{color:var(--accent-ink);font-weight:600;text-decoration:none}
+@media (hover:hover){.pactions a:hover{text-decoration:underline}}
+.pactions span{color:var(--muted);margin-right:auto}
+.problem.flash .phead{animation:flash 1.2s var(--ease)}
+@keyframes flash{from{background:var(--accent-soft)}to{background:transparent}}
+.more{display:inline-flex;margin:28px 0 0;padding:11px 22px;border:1px solid var(--rule-strong);background:transparent;border-radius:var(--r-control);font-size:14px;font-weight:600;transition:transform 120ms var(--ease)}
+.more:active{transform:scale(.97)}
+.empty{padding:40px 0;color:var(--muted)}
+
+/* 现有参照 */
+.split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:start}
+.story h3{font:600 28px/1.4 var(--serif);margin:12px 0 16px}
+.story p{color:var(--muted);max-width:34em}.story p+p{margin-top:12px}
+.facts li{position:relative;padding:14px 0 14px 22px;border-top:1px solid var(--rule);font-size:15px}
+.facts li:last-child{border-bottom:1px solid var(--rule)}
+.facts li:before{content:"";position:absolute;left:2px;top:25px;width:7px;height:7px;border-radius:50%;background:var(--accent)}
+
+/* 你的贡献会去哪里 */
+.join{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:40px}
+.join li{border-top:1px solid var(--rule-strong);padding-top:18px}
+.join .num{display:block;font-size:13px;color:var(--accent);font-weight:600}
+.join h3{font:600 21px/1.4 var(--serif);margin:8px 0 8px}
+.join p{font-size:15px;color:var(--muted)}
+code{font:13px var(--mono);background:var(--accent-soft);padding:1px 6px;border-radius:var(--r-chip);overflow-wrap:anywhere}
+pre{margin:40px 0 0;background:var(--deep);color:var(--on-deep);border-radius:var(--r-control);padding:16px 20px;overflow-x:auto;font-size:14px}
+pre code{background:none;padding:0;color:inherit}
+.pipeline{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));position:relative;margin-top:64px}
+.pipeline:before{content:"";position:absolute;left:6px;right:6px;top:6px;height:1px;background:var(--rule-strong)}
+.pipeline li{position:relative;padding:28px 16px 0 0}
+.pipeline li:before{content:"";position:absolute;left:0;top:0;width:13px;height:13px;border-radius:50%;background:var(--canvas);border:1px solid var(--rule-strong)}
+.pipeline li:last-child:before{background:var(--accent);border-color:var(--accent);box-shadow:0 0 0 5px var(--accent-soft)}
+.pipeline b{display:block;font:600 18px/1.4 var(--serif)}
+.pipeline li:last-child b{color:var(--accent-ink);font-family:var(--mono)}
+.pipeline span{display:block;font-size:14px;color:var(--muted);margin-top:4px}
+.credit{margin-top:48px;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:0 48px}
+.credit li{padding:14px 0;border-top:1px solid var(--rule);font-size:15px;color:var(--muted)}
+.credit li b{color:var(--ink);font-weight:600}
+
+/* 收尾 */
+.closing{position:relative;background:var(--deep);color:var(--on-deep);padding:96px 0 72px;overflow:hidden}
+.closing:before{content:"";position:absolute;inset:0;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .55 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");opacity:.16;mix-blend-mode:screen;pointer-events:none}
+.closing .wrap{position:relative}
+.closing h2{font:600 clamp(32px,4.2vw,52px)/1.2 var(--serif);max-width:15em}
+.closing .lead{color:var(--on-deep-muted);margin-top:20px}
+.closing .btn{background:var(--on-deep);color:var(--deep);margin-top:32px}
+.closing .fine{margin-top:64px;padding-top:24px;border-top:1px solid rgba(255,255,255,.1);font-size:13px;color:var(--on-deep-faint);max-width:52em}
+.closing .fine p+p{margin-top:8px}.closing .fine a{color:var(--on-deep-muted)}
+
+[hidden]{display:none!important}
+@media (max-width:980px){
+  .wrap{padding:0 28px}.hero-grid,.anatomy{grid-template-columns:1fr;gap:48px}
+  .section-head{grid-template-columns:1fr;gap:12px}.split{grid-template-columns:1fr;gap:40px}
+  .stakes{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .stake:nth-child(n){padding:24px 24px 26px 0;border-left:0}
+  .stake:nth-child(2n){padding-left:24px;border-left:1px solid var(--rule)}
+  .pipeline{grid-template-columns:1fr}.pipeline:before{right:auto;bottom:6px;width:1px;height:auto}
+  .pipeline li{padding:0 0 22px 32px}.credit{grid-template-columns:1fr}
+  .pcontent{margin-left:0}
+}
+@media (max-width:640px){
+  .wrap{padding:0 16px}.navlinks{display:none}.nav .contribute{margin-left:auto}
+  .hero{padding:44px 0 60px}.lead{font-size:16px}
+  .board{padding:20px 16px 18px}.cells{gap:3px}.cell{font-size:8px;border-radius:3px}
+  .figures{grid-template-columns:repeat(3,minmax(0,1fr))}.figures div{margin-right:0;padding:14px 10px 0 0;border-right:0}.figures b{font-size:24px}
+  section{padding:64px 0 72px}
+  .stakes{grid-template-columns:1fr}.stake:nth-child(n){padding:22px 0;border-left:0}.stake .theme{font-size:26px}
+  .specimen{padding:20px 18px 18px}
+  .part{grid-template-columns:1fr;gap:4px}
+  .versus{grid-template-columns:1fr}.versus .side+.side{padding-left:0;border-left:0;border-top:1px dashed var(--rule)}.versus .side:first-child{padding-right:0}
+  .search{min-width:0;width:100%}
+  .phead{grid-template-columns:minmax(0,1fr) 20px;gap:6px 12px}
+  .pid{grid-column:1;padding-top:0}.phead .pmain{grid-column:1/-1;grid-row:2}.pstate{grid-column:1;grid-row:3;padding-top:0}
+  .chev{grid-column:2;grid-row:1}
+  .pcontent{padding:2px 16px 16px}
+  .join{grid-template-columns:1fr;gap:28px}
+  .closing{padding:64px 0 56px}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<a class="skip" href="#problems">跳到题库</a>
+<header><div class="wrap nav">
+<a class="brand" href="#top">100<b>-</b>skills</a>
+<nav class="navlinks" aria-label="页面导航"><a href="#why">为什么值得做</a><a href="#problems">题库</a><a href="#reference">现有参照</a><a href="#join">怎么参与</a></nav>
+<a class="contribute" href="../../CONTRIBUTING.md">参与贡献</a>
+</div></header>
+<main id="top">
+<div class="hero"><div class="wrap hero-grid">
+<div>
+<p class="kicker">Open problems · v0.1.0</p>
+<h1><span class="num">84</span> 道还开放着的科学计算题</h1>
+<p class="lead">固氮、碳捕集、PFAS 治理、电池、药物、高温超导……每一道题都卡在一个<strong>真实的研发判断</strong>上：经典方法做到了哪一步，量子方法能不能补上。挑一道，提交你的解法；被采纳的解法会记入这道题的参照，并在沉淀出的 skill 里署名。</p>
+<div class="cta-row"><a class="btn" href="#problems">挑一道题<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="textlink" href="#why">先看看为什么值得做</a></div>
+<div class="figures">
+<div><b>84</b><span>道开放题</span></div>
+<div><b>4</b><span>个领域</span></div>
+<div><b>80</b><span>道有参照记录</span></div>
+</div>
+</div>
+<div class="board" aria-label="题板：84 道开放题">
+<div class="board-head"><b>84 道题，全部开放</b><span>点亮 0 / 84</span></div>
+<div class="cells"><button type="button" class="cell d-bio" style="--i:0" data-open="B01" title="B01 氮化酶 FeMoco：固氮机理与多金属电子关联" aria-label="B01 氮化酶 FeMoco：固氮机理与多金属电子关联">B01</button><button type="button" class="cell d-bio" style="--i:1" data-open="B02" title="B02 P450：药物代谢自旋态与活性空间选择" aria-label="B02 P450：药物代谢自旋态与活性空间选择">B02</button><button type="button" class="cell d-bio" style="--i:2" data-open="B03" title="B03 P450nor：直接估计活性中心与环境的静电相互作用" aria-label="B03 P450nor：直接估计活性中心与环境的静电相互作用">B03</button><button type="button" class="cell d-bio" style="--i:3" data-open="B04" title="B04 铁硫簇：SQD与生物电子传递中心" aria-label="B04 铁硫簇：SQD与生物电子传递中心">B04</button><button type="button" class="cell d-bio" style="--i:4" data-open="B05" title="B05 碳酸酐酶：量子硬件参与真实酶反应能量曲线" aria-label="B05 碳酸酐酶：量子硬件参与真实酶反应能量曲线">B05</button><button type="button" class="cell d-bio" style="--i:5" data-open="B06" title="B06 Thermolysin：量子修正相对结合自由能" aria-label="B06 Thermolysin：量子修正相对结合自由能">B06</button><button type="button" class="cell d-bio" style="--i:6" data-open="B07" title="B07 蛋白—配体嵌入：万原子规模与凝血酶分片" aria-label="B07 蛋白—配体嵌入：万原子规模与凝血酶分片">B07</button><button type="button" class="cell d-bio" style="--i:7" data-open="B08" title="B08 共价抑制剂：BTK反应势垒与磺酰氟反应性" aria-label="B08 共价抑制剂：BTK反应势垒与磺酰氟反应性">B08</button><button type="button" class="cell d-bio" style="--i:8" data-open="B09" title="B09 KRAS：量子生成模型连接合成与活性测试" aria-label="B09 KRAS：量子生成模型连接合成与活性测试">B09</button><button type="button" class="cell d-bio" style="--i:9" data-open="B10" title="B10 短肽构象：量子优化的正例与负例" aria-label="B10 短肽构象：量子优化的正例与负例">B10</button><button type="button" class="cell d-bio" style="--i:10" data-open="B11" title="B11 分子对接：光量子采样加权团搜索" aria-label="B11 分子对接：光量子采样加权团搜索">B11</button><button type="button" class="cell d-bio" style="--i:11" data-open="B12" title="B12 药物性质与活性：QML必须跨过强经典基线" aria-label="B12 药物性质与活性：QML必须跨过强经典基线">B12</button><button type="button" class="cell d-bio" style="--i:12" data-open="B13" title="B13 脂氧合酶：PCET、氢隧穿与同位素效应" aria-label="B13 脂氧合酶：PCET、氢隧穿与同位素效应">B13</button><button type="button" class="cell d-bio" style="--i:13" data-open="B14" title="B14 光合能量传递：色素网络与环境辅助输运" aria-label="B14 光合能量传递：色素网络与环境辅助输运">B14</button><button type="button" class="cell d-bio" style="--i:14" data-open="B15" title="B15 凝血酶五配体：DMET/VQE结合能分解" aria-label="B15 凝血酶五配体：DMET/VQE结合能分解">B15</button><button type="button" class="cell d-bio" style="--i:15" data-open="B16" title="B16 β-拉帕醌前药：碳碳断键与溶剂化自由能" aria-label="B16 β-拉帕醌前药：碳碳断键与溶剂化自由能">B16</button><button type="button" class="cell d-bio" style="--i:16" data-open="B17" title="B17 磺酰氟共价药：哈密顿量动力学作为反应性特征" aria-label="B17 磺酰氟共价药：哈密顿量动力学作为反应性特征">B17</button><button type="button" class="cell d-bio" style="--i:17" data-open="B18" title="B18 丙二醛：电子—质子动力学与NEO线路编译" aria-label="B18 丙二醛：电子—质子动力学与NEO线路编译">B18</button><button type="button" class="cell d-bio" style="--i:18" data-open="B19" title="B19 药物样分子：选轨基准及能量定义审计" aria-label="B19 药物样分子：选轨基准及能量定义审计">B19</button><button type="button" class="cell d-bio" style="--i:19" data-open="B20" title="B20 蛋白口袋水合位点：决定保留还是置换结合水" aria-label="B20 蛋白口袋水合位点：决定保留还是置换结合水">B20</button><button type="button" class="cell d-bio" style="--i:20" data-open="B21" title="B21 BPTI 罕见构象转变：在构象网络上采样反应路径" aria-label="B21 BPTI 罕见构象转变：在构象网络上采样反应路径">B21</button><button type="button" class="cell d-bio" style="--i:21" data-open="B22" title="B22 BODIPY 光敏剂：用态特异激发能辅助光谱筛选" aria-label="B22 BODIPY 光敏剂：用态特异激发能辅助光谱筛选">B22</button><button type="button" class="cell d-bio" style="--i:22" data-open="B23" title="B23 治疗性肽与抗体：序列空间的多目标候选搜索" aria-label="B23 治疗性肽与抗体：序列空间的多目标候选搜索">B23</button><button type="button" class="cell d-bio" style="--i:23" data-open="B24" title="B24 mRNA 同义密码子：固定蛋白序列的多约束优化" aria-label="B24 mRNA 同义密码子：固定蛋白序列的多约束优化">B24</button><button type="button" class="cell d-bio" style="--i:24" data-open="B25" title="B25 单铁氢化酶：氢活化路径的嵌入式VQE" aria-label="B25 单铁氢化酶：氢活化路径的嵌入式VQE">B25</button><button type="button" class="cell d-bio" style="--i:25" data-open="B26" title="B26 PSII释氧中心：低能自旋阶梯的量子模拟框架" aria-label="B26 PSII释氧中心：低能自旋阶梯的量子模拟框架">B26</button><button type="button" class="cell d-mat" style="--i:26" data-open="M01" title="M01 Ru–Triphos 催化 CO₂ 制甲醇：把量子资源投向决定机理的驻点" aria-label="M01 Ru–Triphos 催化 CO₂ 制甲醇：把量子资源投向决定机理的驻点">M01</button><button type="button" class="cell d-mat" style="--i:27" data-open="M02" title="M02 Diels–Alder 环加成势垒：把静态与动态关联接入合成路线判断" aria-label="M02 Diels–Alder 环加成势垒：把静态与动态关联接入合成路线判断">M02</button><button type="button" class="cell d-mat" style="--i:28" data-open="M03" title="M03 Pt/Pt–Co 燃料电池催化：氧分子解离的嵌入量子化学" aria-label="M03 Pt/Pt–Co 燃料电池催化：氧分子解离的嵌入量子化学">M03</button><button type="button" class="cell d-mat" style="--i:29" data-open="M04" title="M04 富锂正极 XAS：用氧 K 边指纹区分氧化还原与结构退化" aria-label="M04 富锂正极 XAS：用氧 K 边指纹区分氧化还原与结构退化">M04</button><button type="button" class="cell d-mat" style="--i:30" data-open="M05" title="M05 Li₂MnO₃ 的 EELS：解析纳米尺度氧化还原与界面异质性" aria-label="M05 Li₂MnO₃ 的 EELS：解析纳米尺度氧化还原与界面异质性">M05</button><button type="button" class="cell d-mat" style="--i:31" data-open="M06" title="M06 磷酸铁锂的电离子占据：量子退火搜索低能充电构型" aria-label="M06 磷酸铁锂的电离子占据：量子退火搜索低能充电构型">M06</button><button type="button" class="cell d-mat" style="--i:32" data-open="M07" title="M07 Li₂FeSiO₄ 正极：电压、离子迁移与热稳定性的容错成本" aria-label="M07 Li₂FeSiO₄ 正极：电压、离子迁移与热稳定性的容错成本">M07</button><button type="button" class="cell d-mat" style="--i:33" data-open="M08" title="M08 NV⁻ 与 SiC 双空位：可验证的缺陷多重态和光学能级" aria-label="M08 NV⁻ 与 SiC 双空位：可验证的缺陷多重态和光学能级">M08</button><button type="button" class="cell d-mat" style="--i:34" data-open="M09" title="M09 金刚石 IV 族空位中心：筛选可光学操控的强关联缺陷" aria-label="M09 金刚石 IV 族空位中心：筛选可光学操控的强关联缺陷">M09</button><button type="button" class="cell d-mat" style="--i:35" data-open="M10" title="M10 Mg 水界面与 Nb 合金氧化：腐蚀机制的量子工作流成本" aria-label="M10 Mg 水界面与 Nb 合金氧化：腐蚀机制的量子工作流成本">M10</button><button type="button" class="cell d-mat" style="--i:36" data-open="M11" title="M11 聚变包层 FLiBe：氚结合能与分片误差的严格拆分" aria-label="M11 聚变包层 FLiBe：氚结合能与分片误差的严格拆分">M11</button><button type="button" class="cell d-mat" style="--i:37" data-open="M12" title="M12 半 Möbius 分子：把量子子空间计算接到真实分子表征" aria-label="M12 半 Möbius 分子：把量子子空间计算接到真实分子表征">M12</button><button type="button" class="cell d-mat" style="--i:38" data-open="M13" title="M13 手性铁催化的 HPC＋逻辑比特流程：识别值得量子计算的少数构型" aria-label="M13 手性铁催化的 HPC＋逻辑比特流程：识别值得量子计算的少数构型">M13</button><button type="button" class="cell d-mat" style="--i:39" data-open="M14" title="M14 有机光伏单重态裂分与界面电荷转移：高维振电动力学" aria-label="M14 有机光伏单重态裂分与界面电荷转移：高维振电动力学">M14</button><button type="button" class="cell d-mat" style="--i:40" data-open="M15" title="M15 锂电电解液分子：还原稳定性与 SEI 初始反应的容错规划" aria-label="M15 锂电电解液分子：还原稳定性与 SEI 初始反应的容错规划">M15</button><button type="button" class="cell d-mat" style="--i:41" data-open="M16" title="M16 hBN 负硼空位：直接面向亮态与辐射发射率的容错算法" aria-label="M16 hBN 负硼空位：直接面向亮态与辐射发射率的容错算法">M16</button><button type="button" class="cell d-mat" style="--i:42" data-open="M17" title="M17 MOF 碳捕集：从开放金属位结合能到吸附剂筛选" aria-label="M17 MOF 碳捕集：从开放金属位结合能到吸附剂筛选">M17</button><button type="button" class="cell d-mat" style="--i:43" data-open="M18" title="M18 活性共聚动力学：保留单体序列的分子量分布模拟" aria-label="M18 活性共聚动力学：保留单体序列的分子量分布模拟">M18</button><button type="button" class="cell d-mat" style="--i:44" data-open="M19" title="M19 合成固氮到氰酸根：钼钳形配合物的竞争自旋与反应能" aria-label="M19 合成固氮到氰酸根：钼钳形配合物的竞争自旋与反应能">M19</button><button type="button" class="cell d-mat" style="--i:45" data-open="M20" title="M20 富勒烯限域环状臭氧：分子稳定性与容错计算可行性" aria-label="M20 富勒烯限域环状臭氧：分子稳定性与容错计算可行性">M20</button><button type="button" class="cell d-mat" style="--i:46" data-open="M21" title="M21 PFAS 脱氟：C–F 断裂曲线与治理机理的电子结构接口" aria-label="M21 PFAS 脱氟：C–F 断裂曲线与治理机理的电子结构接口">M21</button><button type="button" class="cell d-mat" style="--i:47" data-open="M22" title="M22 腔内极化激元：电子—光子关联态与编码选择" aria-label="M22 腔内极化激元：电子—光子关联态与编码选择">M22</button><button type="button" class="cell d-mat" style="--i:48" data-open="M23" title="M23 锂硫产物断键：能量与偶极矩的量子算法基准" aria-label="M23 锂硫产物断键：能量与偶极矩的量子算法基准">M23</button><button type="button" class="cell d-mat" style="--i:49" data-open="M30" title="M30 钛基聚合催化剂 CGC：轨道分解后的量子资源与总成本" aria-label="M30 钛基聚合催化剂 CGC：轨道分解后的量子资源与总成本">M30</button><button type="button" class="cell d-dyn" style="--i:50" data-open="F01" title="F01 二维 Hubbard 反铁磁关联：为铜氧化物机制提供可控基准" aria-label="F01 二维 Hubbard 反铁磁关联：为铜氧化物机制提供可控基准">F01</button><button type="button" class="cell d-dyn" style="--i:51" data-open="F02" title="F02 掺杂 Hubbard 赝能隙：热力学与谱学联合检验" aria-label="F02 掺杂 Hubbard 赝能隙：热力学与谱学联合检验">F02</button><button type="button" class="cell d-dyn" style="--i:52" data-open="F03" title="F03 三维 Hubbard 反铁磁相变：宏观均匀格点的临界行为" aria-label="F03 三维 Hubbard 反铁磁相变：宏观均匀格点的临界行为">F03</button><button type="button" class="cell d-dyn" style="--i:53" data-open="F04" title="F04 受挫磁性与自旋液体：用弦算符及拓扑响应辨识量子态" aria-label="F04 受挫磁性与自旋液体：用弦算符及拓扑响应辨识量子态">F04</button><button type="button" class="cell d-dyn" style="--i:54" data-open="F05" title="F05 非平衡自旋输运：检验扩散、超扩散与初态依赖" aria-label="F05 非平衡自旋输运：检验扩散、超扩散与初态依赖">F05</button><button type="button" class="cell d-dyn" style="--i:55" data-open="F06" title="F06 电子—声子竞争与 Peierls 电荷序：混合求解和开放器件提案" aria-label="F06 电子—声子竞争与 Peierls 电荷序：混合求解和开放器件提案">F06</button><button type="button" class="cell d-dyn" style="--i:56" data-open="F07" title="F07 锥形交叉与分子光化学：几何相位及参数化非绝热动力学" aria-label="F07 锥形交叉与分子光化学：几何相位及参数化非绝热动力学">F07</button><button type="button" class="cell d-dyn" style="--i:57" data-open="F08" title="F08 工程化耗散下的电荷与激子转移：多振动通道的非微扰效应" aria-label="F08 工程化耗散下的电荷与激子转移：多振动通道的非微扰效应">F08</button><button type="button" class="cell d-dyn" style="--i:58" data-open="F09" title="F09 NMR 多体回波反演分子几何：把量子信号接回实验结构" aria-label="F09 NMR 多体回波反演分子几何：把量子信号接回实验结构">F09</button><button type="button" class="cell d-dyn" style="--i:59" data-open="F10" title="F10 分子振电子光谱：玻色采样示范与经典可解边界" aria-label="F10 分子振电子光谱：玻色采样示范与经典可解边界">F10</button><button type="button" class="cell d-dyn" style="--i:60" data-open="F11" title="F11 Ca₂CuO₂Cl₂ 真实晶体的量子 DMFT：杂质谱与 ARPES 对照" aria-label="F11 Ca₂CuO₂Cl₂ 真实晶体的量子 DMFT：杂质谱与 ARPES 对照">F11</button><button type="button" class="cell d-dyn" style="--i:61" data-open="F12" title="F12 量子辅助 AFQMC：用小量子试探态减少大基组约束偏差" aria-label="F12 量子辅助 AFQMC：用小量子试探态减少大基组约束偏差">F12</button><button type="button" class="cell d-dyn" style="--i:62" data-open="F13" title="F13 Bethe 晶格自洽 SIAM：五比特 NMR 验证 DMFT 反馈闭环" aria-label="F13 Bethe 晶格自洽 SIAM：五比特 NMR 验证 DMFT 反馈闭环">F13</button><button type="button" class="cell d-dyn" style="--i:63" data-open="F14" title="F14 粒子—空穴对称 SIAM 的 VQE 态密度：能量与响应双重验收" aria-label="F14 粒子—空穴对称 SIAM 的 VQE 态密度：能量与响应双重验收">F14</button><button type="button" class="cell d-dyn" style="--i:64" data-open="F15" title="F15 SKQD 杂质格林函数：从基态采样子空间扩展到粒子响应" aria-label="F15 SKQD 杂质格林函数：从基态采样子空间扩展到粒子响应">F15</button><button type="button" class="cell d-dyn" style="--i:65" data-open="F16" title="F16 态到态反应散射：H＋H₂ 交换概率与碰撞能量分辨" aria-label="F16 态到态反应散射：H＋H₂ 交换概率与碰撞能量分辨">F16</button><button type="button" class="cell d-dyn" style="--i:66" data-open="F17" title="F17 电子—分子碰撞：R矩阵内区谱与等离子体截面接口" aria-label="F17 电子—分子碰撞：R矩阵内区谱与等离子体截面接口">F17</button><button type="button" class="cell d-dyn" style="--i:67" data-open="F18" title="F18 非线性二维光谱：用多时响应区分耦合、记忆与人口转移" aria-label="F18 非线性二维光谱：用多时响应区分耦合、记忆与人口转移">F18</button><button type="button" class="cell d-dyn" style="--i:68" data-open="F19" title="F19 BCS 非平衡配对：腔中原子模拟淬火相图与两种能隙" aria-label="F19 BCS 非平衡配对：腔中原子模拟淬火相图与两种能隙">F19</button><button type="button" class="cell d-ext" style="--i:69" data-open="C01" title="C01 Li₂O₄ 重排：电池局部反应曲线与跨几何态跟踪" aria-label="C01 Li₂O₄ 重排：电池局部反应曲线与跨几何态跟踪">C01</button><button type="button" class="cell d-ext" style="--i:70" data-open="C02" title="C02 有机锡 EUV 光刻胶：电离后断键通道与多态势能面" aria-label="C02 有机锡 EUV 光刻胶：电离后断键通道与多态势能面">C02</button><button type="button" class="cell d-ext" style="--i:71" data-open="C03" title="C03 联噻吩二聚体：堆叠与振动如何改变激子迁移" aria-label="C03 联噻吩二聚体：堆叠与振动如何改变激子迁移">C03</button><button type="button" class="cell d-ext" style="--i:72" data-open="C04" title="C04 甲醛电子谱与键长反演：可验收的光谱求解器原型" aria-label="C04 甲醛电子谱与键长反演：可验收的光谱求解器原型">C04</button><button type="button" class="cell d-ext" style="--i:73" data-open="C05" title="C05 温稠密物质阻止本领：聚变靶材的能量沉积" aria-label="C05 温稠密物质阻止本领：聚变靶材的能量沉积">C05</button><button type="button" class="cell d-ext" style="--i:74" data-open="C06" title="C06 共享质子波包与非谐振动谱：核量子效应的硬件原型" aria-label="C06 共享质子波包与非谐振动谱：核量子效应的硬件原型">C06</button><button type="button" class="cell d-ext" style="--i:75" data-open="C07" title="C07 自由基对自旋化学：磁场方向与化学产率的模型连接" aria-label="C07 自由基对自旋化学：磁场方向与化学产率的模型连接">C07</button><button type="button" class="cell d-ext" style="--i:76" data-open="C08" title="C08 RNA 二级结构与假结：退火编码的成功与规模失效" aria-label="C08 RNA 二级结构与假结：退火编码的成功与规模失效">C08</button><button type="button" class="cell d-ext" style="--i:77" data-open="C09" title="C09 晶体结构与粒子数联合搜索：多体势的退火编码" aria-label="C09 晶体结构与粒子数联合搜索：多体势的退火编码">C09</button><button type="button" class="cell d-ext" style="--i:78" data-open="C10" title="C10 USPTO反应网络：采购与反应组合的最低成本路线" aria-label="C10 USPTO反应网络：采购与反应组合的最低成本路线">C10</button><button type="button" class="cell d-ext" style="--i:79" data-open="C11" title="C11 METABRIC多组学：四维压缩后的乳腺癌分群" aria-label="C11 METABRIC多组学：四维压缩后的乳腺癌分群">C11</button><button type="button" class="cell d-ext" style="--i:80" data-open="C12" title="C12 BreastMNIST超声影像：量子卷积的模拟器边界" aria-label="C12 BreastMNIST超声影像：量子卷积的模拟器边界">C12</button><button type="button" class="cell d-ext" style="--i:81" data-open="C13" title="C13 制造柔性作业车间：混合退火排程的可行性" aria-label="C13 制造柔性作业车间：混合退火排程的可行性">C13</button><button type="button" class="cell d-ext" style="--i:82" data-open="C14" title="C14 两区域辐射输运：为振幅估计构造可逆轨迹预言机" aria-label="C14 两区域辐射输运：为振幅估计构造可逆轨迹预言机">C14</button><button type="button" class="cell d-ext" style="--i:83" data-open="C15" title="C15 一二维热传导：离散拉普拉斯的量子线性求解" aria-label="C15 一二维热传导：离散拉普拉斯的量子线性求解">C15</button></div>
+<div class="legend"><span class="d-bio"><i></i>生物医药</span><span class="d-mat"><i></i>应用材料</span><span class="d-dyn"><i></i>材料模型与动力学</span><span class="d-ext"><i></i>交叉方向与算法</span></div>
+<p class="board-foot">每一格是一道题，点一格直接打开它。<b>第一份被采纳的解法，会是这里亮起的第一格。</b></p>
+</div>
+</div></div>
+
+<section id="why"><div class="wrap">
+<div class="section-head"><div><p class="kicker">Why it matters</p><h2>每道题背后，是一个等着被做出的判断</h2></div>
+<p>下面是其中 6 道题的「研发决策」原文。算对了，就能少走一条错的研发路线；算出来行不通，同样是有价值的答案。</p></div>
+<div class="stakes"><button type="button" class="stake d-bio" data-open="B01"><span class="theme">固氮</span><span class="why">决定哪些中间体和自旋态值得投入高精度计算，为仿生固氮催化剂排除错误机制。</span><span class="src"><span class="num">B01</span><span>氮化酶 FeMoco：固氮机理与多金属电子关联</span></span><span class="go">看这道题</span></button><button type="button" class="stake d-mat" data-open="M17"><span class="theme">碳捕集</span><span class="why">识别值得进入湿气选择性和再生能耗验证的金属位点与配体方案。</span><span class="src"><span class="num">M17</span><span>MOF 碳捕集：从开放金属位结合能到吸附剂筛选</span></span><span class="go">看这道题</span></button><button type="button" class="stake d-mat" data-open="M21"><span class="theme">PFAS 治理</span><span class="why">判断PFAS降解候选通道的电子相关校正是否改变断键顺序或路径优先级。</span><span class="src"><span class="num">M21</span><span>PFAS 脱氟：C–F 断裂曲线与治理机理的电子结构接口</span></span><span class="go">看这道题</span></button><button type="button" class="stake d-mat" data-open="M15"><span class="theme">电池电解液</span><span class="why">判断溶剂/添加剂的竞争电子反应是否值得高层校正，以及未来硬件的实际吞吐能否承担筛选。</span><span class="src"><span class="num">M15</span><span>锂电电解液分子：还原稳定性与 SEI 初始反应的容错规划</span></span><span class="go">看这道题</span></button><button type="button" class="stake d-bio" data-open="B12"><span class="theme">药物筛选</span><span class="why">在有限实验标签下选择可靠的活性或血脑屏障预测器，并控制漏掉优质候选的风险。</span><span class="src"><span class="num">B12</span><span>药物性质与活性：QML必须跨过强经典基线</span></span><span class="go">看这道题</span></button><button type="button" class="stake d-dyn" data-open="F01"><span class="theme">高温超导</span><span class="why">判定某组 U/t、温度、掺杂是否保留强磁关联，筛选值得投入的多体理论。</span><span class="src"><span class="num">F01</span><span>二维 Hubbard 反铁磁关联：为铜氧化物机制提供可控基准</span></span><span class="go">看这道题</span></button></div>
+</div></section>
+
+<section id="anatomy"><div class="wrap anatomy">
+<div><p class="kicker">Problem anatomy</p>
+<div class="section-head" style="display:block;margin-bottom:28px"><h2>一道题长什么样</h2></div>
+<ol><li><span class="num">01</span><b>研究体系</b><span>算的是什么</span></li><li><span class="num">02</span><b>可观测量</b><span>用什么数回答</span></li><li><span class="num">03</span><b>经典基线</b><span>经典能做到哪</span></li><li><span class="num">04</span><b>量子方法的角色</b><span>量子放在哪一步</span></li><li><span class="num">05</span><b>研发决策</b><span>支撑什么判断</span></li></ol>
+<p class="after">每道题还给出五条「什么算解」：模型对应、可观测量与不确定度、同模型经典对照、可复现性与成本、对研发决策的支撑。负结果同样接受。</p>
+</div>
+<article class="specimen" aria-label="例题 M01">
+<div class="specimen-head"><h3><span class="num">M01</span> Ru–Triphos 催化 CO₂ 制甲醇：把量子资源投向决定机理的驻点</h3><span class="tag-open">开放</span></div>
+<dl class="ledger"><div class="part"><dt><span class="idx">01</span><span class="name">研究体系</span></dt><dd>Ru–Triphos均相CO₂加氢循环中的关键中间体和过渡态</dd></div><div class="part"><dt><span class="idx">02</span><span class="name">可观测量</span></dt><dd>相对电子能、ΔE‡、反应能与误差传播后的路径排序</dd></div></dl>
+<p class="versus-cap">同一问题，两种做法</p><div class="versus"><div class="side"><div class="label"><span class="idx">03</span><span class="name">经典基线</span><span class="hint">经典能做到哪</span></div><p>DFT多泛函、CCSD(T)适用区、DMRG/选定CI及动态关联修正</p></div><div class="side"><div class="label"><span class="idx">04</span><span class="name">量子方法的角色</span><span class="hint">量子放在哪一步</span></div><p>双因子化哈密顿量结合qubitization/QPE求驻点电子能</p></div></div>
+<dl class="ledger"><div class="part"><dt><span class="idx">05</span><span class="name">研发决策</span></dt><dd>确定影响甲醇选择性与周转的竞争路径，再判断哪些驻点值得高精度校正。</dd></div></dl>
+</article>
+</div></section>
+
+<section id="problems"><div class="wrap">
+<div class="section-head"><div><p class="kicker">Problem set</p><h2>题库</h2></div>
+<p>每一行告诉你这道题算什么、为了什么；点开看经典基线与量子方法的对照。完整题面、验收标准和现有参照在每道题的题面文件里。</p></div>
+<div class="toolbar"><div class="filters" role="group" aria-label="按领域筛选"><button type="button" data-domain="all" aria-pressed="true">全部<span class="num">84</span></button><button type="button" class="d-bio" data-domain="biomedicine" aria-pressed="false"><i></i>生物医药<span class="num">26</span></button><button type="button" class="d-mat" data-domain="applied-materials" aria-pressed="false"><i></i>应用材料<span class="num">24</span></button><button type="button" class="d-dyn" data-domain="model-dynamics" aria-pressed="false"><i></i>材料模型与动力学<span class="num">19</span></button><button type="button" class="d-ext" data-domain="extensions" aria-pressed="false"><i></i>交叉方向与算法<span class="num">15</span></button></div>
+<label class="search"><svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.6" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg><input id="q" type="search" placeholder="搜索题号、体系或方法：Hubbard、VQE、退火" aria-label="搜索题目"></label></div>
+<p class="count" id="count" aria-live="polite"></p>
+<ol class="plist" id="plist"></ol>
+<button type="button" class="more" id="more">显示全部 84 题</button>
+</div></section>
+
+<section id="reference"><div class="wrap">
+<div class="section-head"><div><p class="kicker">Reference runs</p><h2>你不是从零开始</h2></div>
+<p>84 道题中有 80 道附有我们已完成的计算与模拟记录，成功和失败都摆出来。参照不代表最优解，它告诉你从哪里接着做、哪条路已经试过。</p></div>
+<div class="split">
+<div class="story"><p class="kicker">C08 · RNA 二级结构与假结</p><h3>能量最低的解，不一定是对的解</h3>
+<p>在一个真实的 33 核苷酸适配体上，最低目标分的解确实能找到，但它比真实结构多出两对不存在的配对；真实结构也在可行空间里，得分却低得多。</p>
+<p>问题出在能量模型本身，换更强的求解器也解决不了。这样的负结果同样写进参照，能帮后来者少走弯路。</p></div>
+<ul class="facts">
+<li>所有参照都在经典计算机上执行，不包含真机结果。</li>
+<li>按项目当前记录，原应用目标完成数为 0，这些题目都还开放着；我们不声称量子优势。</li>
+<li>原始数据与第三方数据集不随题库发布，每题的 evidence.json 记录来源文件的 SHA-256。</li>
+</ul>
+</div>
+</div></section>
+
+<section id="join"><div class="wrap">
+<div class="section-head"><div><p class="kicker">Contribute</p><h2>你的解法会去哪里</h2></div>
+<p>想先聊思路，或觉得某道题的标准需要细化，直接开 issue。负结果和部分结果同样欢迎。</p></div>
+<ol class="join">
+<li><span class="num">01</span><h3>挑一道题</h3><p>读它的 PROBLEM.md：五段题面、五条验收标准和现有参照都在里面。</p></li>
+<li><span class="num">02</span><h3>按模板提交</h3><p>把解法放进 <code>solutions/&lt;题号&gt;/&lt;名字&gt;-&lt;短名&gt;/</code>，包括 SOLUTION.md 与 solution.json。</p></li>
+<li><span class="num">03</span><h3>校验后开 PR</h3><p>本地跑一遍校验器，用 <code>git commit -s</code> 签名提交，CI 会再检查一次。</p></li>
+</ol>
+<pre><code>python3 -I release/tools/check_submissions.py --root .</code></pre>
+<ol class="pipeline" aria-label="从提交到 skill"><li><b>提交</b><span>按模板提交，CI 校验格式</span></li><li><b>审核</b><span>五条验收标准都有回应</span></li><li><b>复现</b><span>他人按记录独立重跑</span></li><li><b>采纳</b><span>记入这道题的现有参照</span></li><li><b>skill</b><span>同类方法积累后提炼，署名全部来源作者</span></li></ol>
+<ul class="credit">
+<li><b>记入参照。</b>被采纳的解法记入这道题的现有参照，后来的人从你停下的地方接着做。</li>
+<li><b>署名进 skill。</b>同一类方法积累到足够多的采纳解法后提炼为 skill，署名全部来源解法的作者。</li>
+<li><b>负结果同样算数。</b>一条在给定预算下走不通的路线，写清楚了，就是别人不必再走的弯路。</li>
+<li><b>公开可复用。</b>题面与文档 CC BY 4.0，代码 Apache-2.0，任何人都能在你的工作上继续。</li>
+</ul>
+</div></section>
+</main>
+
+<footer class="closing"><div class="wrap">
+<p class="kicker" style="color:var(--on-deep-muted)">Start here</p>
+<h2>挑一道题，成为点亮第一格的人</h2>
+<p class="lead">84 道题都还开放着。先读题面，开个 issue 聊聊思路，或者直接提交一份解法。</p>
+<a class="btn" href="#problems">去题库<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+<div class="fine">
+<p>题面与文档采用 CC BY 4.0，代码采用 Apache-2.0，贡献需要 DCO 签名。题面目前只有中文，英文版会在下一个版本补上。详见 <a href="../../CONTRIBUTING.md">CONTRIBUTING.md</a>。</p>
+<p>社区沉淀出的 skill 也会内置到晓梦 Agent，让更多研发团队可以直接调用。</p>
+</div>
+</div></footer>
+<template id="problem-tpl"><li class="problem">
+<button type="button" class="phead" aria-expanded="false">
+<span class="pid" data-f="id"></span>
+<span class="pmain"><span class="ptitle" data-f="title"></span><span class="pmeta"><i></i><span data-f="meta"></span></span>
+<span class="pline"><span class="idx">02 算什么</span><span data-f="observable"></span></span>
+<span class="pline why"><span class="idx">05 为了什么</span><span data-f="decision"></span></span></span>
+<span class="pstate"><span class="ref" data-f="ref"></span></span>
+<svg class="chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<div class="pbody" role="region"><div class="pinner"><div class="pcontent">
+<dl class="ledger"><div class="part"><dt><span class="idx">01</span><span class="name">研究体系</span></dt><dd data-f="system"></dd></div></dl>
+<p class="versus-cap">同一问题，两种做法</p><div class="versus"><div class="side"><div class="label"><span class="idx">03</span><span class="name">经典基线</span><span class="hint">经典能做到哪</span></div><p data-f="classical_baseline"></p></div><div class="side"><div class="label"><span class="idx">04</span><span class="name">量子方法的角色</span><span class="hint">量子放在哪一步</span></div><p data-f="quantum_role"></p></div></div>
+<div class="pactions"><span data-f="refnote"></span><a data-link="problem" href="#">完整题面与验收标准</a><a href="../../CONTRIBUTING.md">提交解法</a></div>
+</div></div></div>
+</li></template>
+<script type="application/json" id="data">[{"area": "biomedicine", "classical_baseline": "DMRG、选态CI、AFQMC或多参考方法；同一积分、同一态及动态关联修正", "decision": "决定哪些中间体和自旋态值得投入高精度计算，为仿生固氮催化剂排除错误机制。", "has_reference": true, "id": "B01", "observable": "相对电子能、低能自旋态、各候选中间体排序", "quantum_role": "未来QPE/qubitization求强关联活性空间能量；经典负责结构、嵌入和反应路径", "subdomain": "生物催化 / 容错资源", "system": "氮化酶FeMo辅因子局域活性中心；不包括完整蛋白构象与催化循环", "title": "氮化酶 FeMoco：固氮机理与多金属电子关联"}, {"area": "biomedicine", "classical_baseline": "同态DMRG、多参考微扰、CC方法适用性诊断、不同DFT泛函", "decision": "判断代谢氧化路径、自旋交叉和潜在反应性排序是否对电子关联敏感。", "has_reference": true, "id": "B02", "observable": "自旋态能隙、相对电子能、自然轨道占据、资源误差曲线", "quantum_role": "容错QPE与SCDF；近期VQE用于选轨和硬件误差研究", "subdomain": "药物代谢 / 金属酶", "system": "P450活性中心模型及反应中间体；附药物样分子选轨基准", "title": "P450：药物代谢自旋态与活性空间选择"}, {"area": "biomedicine", "classical_baseline": "同一线路无噪声模拟、CASCI及经典SAPT分项", "decision": "评估第二配位层、电荷环境改变是否足以改变NO还原中间体稳定性。", "has_reference": true, "id": "B03", "observable": "静电相互作用能、一粒子约化密度矩阵", "quantum_role": "VQE准备局部电子态，以费米基旋转测量密度矩阵，再经典重建静电能", "subdomain": "生物无机 / 相互作用能", "system": "P450nor催化NO到N₂O的两个中间体及相互作用单元", "title": "P450nor：直接估计活性中心与环境的静电相互作用"}, {"area": "biomedicine", "classical_baseline": "DMRG、HCI/SHCI、经典构型生成，同子空间大小与墙钟预算", "decision": "决定是否用量子采样改善复杂铁硫活性中心低能态描述。", "has_reference": true, "id": "B04", "observable": "基态能、低能自旋关联；扩展可研究氧化还原能差", "quantum_role": "LUCJ等线路采样→粒子数恢复→经典子空间对角化", "subdomain": "生物能量 / 多金属簇", "system": "[2Fe–2S]和[4Fe–4S]局域簇模型；不等于呼吸链完整蛋白", "title": "铁硫簇：SQD与生物电子传递中心"}, {"area": "biomedicine", "classical_baseline": "相同结构/活性空间的FCI、DFT、多参考电子结构及QM/MM基线", "decision": "判断量子电子结构修正是否改变水网络质子转移路径的势垒排序。", "has_reference": true, "id": "B05", "observable": "沿反应坐标的电子能曲线、相对势垒", "quantum_role": "FAST-VQE与SAT门约简；经典结构与环境处理", "subdomain": "酶反应 / 多尺度电子结构", "system": "碳酸酐酶催化CO₂水合循环中的质子转移子步骤", "title": "碳酸酐酶：量子硬件参与真实酶反应能量曲线"}, {"area": "biomedicine", "classical_baseline": "同数据HCI、RHF、MM-FEP；需要相同扩展策略及总成本", "decision": "检验替换一个氢键供体/受体后，能否更可靠决定优先合成哪一个类似物。", "has_reference": true, "id": "B06", "observable": "相对结合自由能ΔΔG，统计误差及与实验偏差", "quantum_role": "AMBER/QUICK→QM/MM book-ending→LUCJ采样→SQD/extSQD→MBAR", "subdomain": "先导优化 / 结合自由能", "system": "Thermolysin与0PJ/0PI两个抑制剂；氮/氧替换导致氢键差异", "title": "Thermolysin：量子修正相对结合自由能"}, {"area": "biomedicine", "classical_baseline": "EWF-CCSD、同轨道经典选态CI；DMET-VQE/CCSD对应分片基线", "decision": "决定哪些结合口袋片段值得高精度处理，以及混合基础设施是否产生净收益。", "has_reference": true, "id": "B07", "observable": "片段能量、静态结合能、嵌入与基组收敛", "quantum_role": "EWF嵌入→片段QPU采样→超算TrimSQD→能量合并", "subdomain": "药物结合 / 异构高性能计算", "system": "T4溶菌酶与胰蛋白酶复合体；相关子例为凝血酶和5个配体", "title": "蛋白—配体嵌入：万原子规模与凝血酶分片"}, {"area": "biomedicine", "classical_baseline": "同几何FCI/CC、多参考；经典QM/MM、纯经典特征ML与同预算模型", "decision": "区分结合姿态合适但反应慢的候选物，平衡目标共价反应与脱靶反应性。", "has_reference": true, "id": "B08", "observable": "反应电子能剖面、势垒、动力学特征及实验反应性proxy", "quantum_role": "QM/QM/MM嵌入与VQE；哈密顿量演化特征配经典ML", "subdomain": "共价药 / 化学反应性", "system": "扎努布替尼–BTK Michael加成；简化丙烯酰胺+甲硫醇负离子；磺酰氟warhead子例", "title": "共价抑制剂：BTK反应势垒与磺酰氟反应性"}, {"area": "biomedicine", "classical_baseline": "同数据LSTM、其他生成模型、随机/经典先验替换、相同oracle预算", "decision": "在相同合成和筛选预算内获得更多新颖、可制备、有活性的候选化学系列。", "has_reference": true, "id": "B09", "observable": "候选有效性、新颖性、合成成功率、独立活性与结合读数", "quantum_role": "量子线路Born机产生先验/样本，经典LSTM生成，经典筛选与湿实验验证", "subdomain": "分子生成 / 肿瘤靶点", "system": "KRAS相关小分子生成与筛选；非模拟整个KRAS蛋白电子结构", "title": "KRAS：量子生成模型连接合成与活性测试"}, {"area": "biomedicine", "classical_baseline": "同模型枚举、随机采样、模拟退火；结构用途另比MD/Rosetta/AlphaFold", "decision": "评估量子优化是否能为短肽提供高质量候选构象，而非替代成熟蛋白结构预测。", "has_reference": true, "id": "B10", "observable": "格点能量、合法构象率、低能命中率、重建后RMSD与多样性", "quantum_role": "变分优化/QAOA编码格点转向与接触势", "subdomain": "肽药 / 构象采样", "system": "7残基神经肽与10残基血管紧张素的简化格点模型；相关QAOA短肽采样", "title": "短肽构象：量子优化的正例与负例"}, {"area": "biomedicine", "classical_baseline": "强加权团求解器、经典GBS近似、同评分对接和相同样本数", "decision": "在同样评分模型下提高正确结合姿态被发现的概率，减少后续精化数量。", "has_reference": true, "id": "B11", "observable": "最大权重团、pose RMSD、top-k成功率、全流程成本", "quantum_role": "相互作用图编码→可编程GBS→经典团修复与姿态重建", "subdomain": "虚拟筛选 / 姿态搜索", "system": "TNF-α converting enzyme受体与小分子配体的相互作用图；GBS药物平台", "title": "分子对接：光量子采样加权团搜索"}, {"area": "biomedicine", "classical_baseline": "RF/XGBoost、GNN、SMILES Transformer、匹配参数MLP、经典核", "decision": "在有限实验标签下选择可靠的活性或血脑屏障预测器，并控制漏掉优质候选的风险。", "has_reference": true, "id": "B12", "observable": "ROC-AUC、PR-AUC、校准、外部骨架泛化、误差与成本", "quantum_role": "经典表征压缩→量子核或变分层→经典训练预测", "subdomain": "ADMET / 活性预测", "system": "MoleculeNet BBBP和多个治疗靶点的性质/活性数据", "title": "药物性质与活性：QML必须跨过强经典基线"}, {"area": "biomedicine", "classical_baseline": "QM/MM自由能、经典多参考、路径积分或非绝热PCET动力学", "decision": "判断突变改变的是供受体距离分布、电子能面还是耦合，避免误归因酶活性变化。", "has_reference": true, "id": "B13", "observable": "PCET驱动力、重组能、供受体距离分布、kH/kD及温度依赖", "quantum_role": "拟以高精度电子求解器修正局部PES，再用核动力学/PCET理论求KIE", "subdomain": "酶设计 / 核量子效应", "system": "大豆脂氧合酶WT及L546A/L754A双突变；亚油酸氢转移与铁中心", "title": "脂氧合酶：PCET、氢隧穿与同位素效应"}, {"area": "biomedicine", "classical_baseline": "HEOM、Redfield/Lindblad适用区间、张量网络及同模型精确演化", "decision": "检验色素间耦合、能级排列和环境噪声如何改变能量到达反应中心的效率。", "has_reference": true, "id": "B14", "observable": "时间依赖位点布居、转移概率、到达率、相干与损耗", "quantum_role": "把激子哈密顿量映射到NMR/光子网络，以可控噪声表示环境", "subdomain": "光生物学 / 生物启发材料", "system": "四色素Frenkel激子模型与FMO启发的光子网络；跨到人工捕光材料", "title": "光合能量传递：色素网络与环境辅助输运"}, {"area": "biomedicine", "classical_baseline": "理想UCCSD/CCSD、同片段CASCI、噪声模拟与未分片参考", "decision": "检验同系列抑制剂结合能排序能否从局部关联修正受益。", "has_reference": true, "id": "B15", "observable": "片段能量、蛋白/真空能差与实验相关性", "quantum_role": "DMET划分→目标片段VQE→其他片段CCSD→经典能量合并", "subdomain": "抗凝靶点 / 结合电子能", "system": "Thrombin与5个配体；蛋白用点电荷表示，每个配体分为3片段", "title": "凝血酶五配体：DMET/VQE结合能分解"}, {"area": "biomedicine", "classical_baseline": "HF、同CAS CASCI、DFT及更大活性空间；原药物化学实验", "decision": "选择能在目标环境释放母药、在非目标环境保持稳定的触发和连接策略。", "has_reference": true, "id": "B16", "observable": "反应自由能与活化自由能的混合估计、溶剂效应", "quantum_role": "经典几何/频率→PCM/ddCOSMO→小CAS VQE→经典热校正", "subdomain": "前药设计 / 活化反应", "system": "β-lapachone前药的C–C断裂关键分子；关联KRAS共价键力计算", "title": "β-拉帕醌前药：碳碳断键与溶剂化自由能"}, {"area": "biomedicine", "classical_baseline": "完整理想动力学、经典量化特征、相同ML/数据划分", "decision": "在warhead结构修改时筛掉反应性过低或潜在非特异反应过强的分子。", "has_reference": true, "id": "B17", "observable": "时间相关特征、下游反应性预测误差、截断误差界", "quantum_role": "哈密顿量项截断→Clifford分解与变换→硬件转译→经典ML", "subdomain": "反应性预测 / 量子特征", "system": "含sulfonyl fluoride的药用共价抑制剂片段", "title": "磺酰氟共价药：哈密顿量动力学作为反应性特征"}, {"area": "biomedicine", "classical_baseline": "同截断多组分经典精确解、DVR/波包法、Born–Oppenheimer与非绝热对照", "decision": "判断显式处理质子量子态能否改变势垒、离域及动力学解释，并验证可压缩线路。", "has_reference": true, "id": "B18", "observable": "质子密度、转移布居、电子—核纠缠、势垒与近似动力学量", "quantum_role": "NEO多组分哈密顿量、二次量子化演化；FNO/ADAPT与近似编译", "subdomain": "质子转移 / 非绝热模型", "system": "Malonaldehyde质子转移模型；没有真实蛋白或药物结合环境", "title": "丙二醛：电子—质子动力学与NEO线路编译"}, {"area": "biomedicine", "classical_baseline": "同CAS CASCI、CASSCF扩大空间、适用时CCSD/DFT", "decision": "判断哪类药物电子子问题值得交给量子求解器，并避免“大分子小CAS”的虚假规模叙事。", "has_reference": true, "id": "B19", "observable": "轨道占据、相关能/相对能、选轨误差、线路资源", "quantum_role": "化学选轨→UCCSD/HEA→理想/硬件分级验证", "subdomain": "量子化学选题 / 活性空间", "system": "水、苯、阿司匹林、奥司他韦、吗啡、洛伐他汀、伊马替尼", "title": "药物样分子：选轨基准及能量定义审计"}, {"area": "biomedicine", "classical_baseline": "CPLEX、同QUBO模拟退火SA、贪心局部解；应用层另对照GCMC/3D-RISM水位点预测，使用相同距离阈值", "decision": "在设计配体取代基前，识别可能桥接蛋白和配体的水位点，为保水/排水假设提供结构输入。", "has_reference": true, "id": "B20", "observable": "离散目标函数、最优样本概率、晶体水覆盖、位置偏差和每个晶体水对应的预测水簇大小", "quantum_role": "经典3D-RISM→高斯密度拟合QUBO→门式量子优化→经典解码氧位置与晶体水比较", "subdomain": "溶剂构型与先导优化", "system": "五个药物—蛋白复合物及同一蛋白的apo补充结构；水的候选氧位置，不是完整水分子量子动力学", "title": "蛋白口袋水合位点：决定保留还是置换结合水"}, {"area": "biomedicine", "classical_baseline": "同网络Dijkstra最小动作路径、经典SA、路径蒙特卡洛/增强采样；应用层使用Anton长轨迹作参照", "decision": "为构象选择与隐蔽口袋研究生成多条可比较的过渡路径，判断关键中间状态是否被探索到。", "has_reference": true, "id": "B21", "observable": "有效路径比例、路径动作量、通道多样性、投影结构分布与单势垒过渡路径时间下界", "quantum_role": "经典iMapD/Polar Star探索→gTPS加权图→量子退火候选路径→经典动作量与全原子轨迹核验", "subdomain": "构象动力学与路径采样", "system": "显式溶剂中的BPTI原生态罕见重排；较早方法工作使用丙氨酸二肽", "title": "BPTI 罕见构象转变：在构象网络上采样反应路径"}, {"area": "biomedicine", "classical_baseline": "ΔCCSD、TDDFT、EOM-CCSD、CASPT2；保持几何、溶剂和实验参照口径", "decision": "判断候选光敏剂的电子激发能计算是否足以支持吸收窗口筛选。", "has_reference": true, "id": "B22", "observable": "S₁垂直激发能、平均绝对误差、活性空间和线路收敛", "quantum_role": "经典轨道与基态/激发态参考→态特异ΔADAPT线路模拟→两态能量差→光谱基准", "subdomain": "光敏药物与激发态", "system": "六种BODIPY衍生物的最低单重垂直激发；不是完整光动力治疗过程", "title": "BODIPY 光敏剂：用态特异激发能辅助光谱筛选"}, {"area": "biomedicine", "classical_baseline": "相同数据的经典多目标优化、SA、随机/贝叶斯搜索、直接序列模型；冻结实验候选预算", "decision": "在候选预算有限时，平衡预测结合、模型不确定性与可开发性，挑选值得独立验证的序列候选。", "has_reference": true, "id": "B23", "observable": "候选多样性、可行率、预测不确定性、独立结合与可开发性读数", "quantum_role": "经典编码/预测器→离散多目标优化与退火→经典解码及排序→独立实验或结构比较", "subdomain": "治疗性序列设计", "system": "治疗性肽和抗体序列候选；固定研发任务下的多目标搜索，非全蛋白电子结构", "title": "治疗性肽与抗体：序列空间的多目标候选搜索"}, {"area": "biomedicine", "classical_baseline": "同目标遗传算法、SA、动态规划或整数优化（视耦合结构）；同时间与同可行解预算", "decision": "在固定氨基酸序列条件下，评价同义密码子选择能否平衡预设序列代理指标。", "has_reference": true, "id": "B24", "observable": "目标值、同义约束可行率、重复样本、完整求解时间；表达效果须另行独立验证", "quantum_role": "经典定义同义选择及代理指标→QUBO/Ising→退火或QAOA小模型→经典约束核验", "subdomain": "核酸序列优化", "system": "编码同一蛋白的同义选择；不是改变蛋白功能的氨基酸设计，也不是RNA折叠求解", "title": "mRNA 同义密码子：固定蛋白序列的多约束优化"}, {"area": "biomedicine", "classical_baseline": "同积分小空间精确对角化/CCSD，环境层DLPNO-CCSD，DFT路径；分离嵌入与求解器增益", "decision": "判断小活性空间量子求解器替换是否真正改变氢活化路径判断。", "has_reference": true, "id": "B25", "observable": "驻点相对能、活性空间替换增量、候选路径与轨道连续性", "quantum_role": "经典QM/MM几何和环境→固定活性空间→VQE-UCCSD数值模拟→减法嵌入→相对能比较", "subdomain": "氢化酶与反应路径", "system": "单铁[Fe]氢化酶氢活化的五个驻点；不是[NiFe]/[FeFe]酶的完整产氢循环", "title": "单铁氢化酶：氢活化路径的嵌入式VQE"}, {"area": "biomedicine", "classical_baseline": "同参数320维模型精确对角化；另查电子结构参数和光谱模型误差", "decision": "通过低能自旋谱判断两个OEC候选结构哪一个更符合实验约束。", "has_reference": true, "id": "B26", "observable": "低能自旋阶梯、峰位置、自旋标签和结构间排序", "quantum_role": "经典交换参数→有效自旋模型编码→时间演化和模拟测量→经典自旋分辨谱恢复", "subdomain": "光系统II与多金属自旋", "system": "OEC的S₂H-1b与S₂H-2b有效Heisenberg模型；三处自旋3/2和一处自旋2", "title": "PSII释氧中心：低能自旋阶梯的量子模拟框架"}, {"area": "applied-materials", "classical_baseline": "DFT多泛函、CCSD(T)适用区、DMRG/选定CI及动态关联修正", "decision": "确定影响甲醇选择性与周转的竞争路径，再判断哪些驻点值得高精度校正。", "has_reference": true, "id": "M01", "observable": "相对电子能、ΔE‡、反应能与误差传播后的路径排序", "quantum_role": "双因子化哈密顿量结合qubitization/QPE求驻点电子能", "subdomain": "催化与绿色化学", "system": "Ru–Triphos均相CO₂加氢循环中的关键中间体和过渡态", "title": "Ru–Triphos 催化 CO₂ 制甲醇：把量子资源投向决定机理的驻点"}, {"area": "applied-materials", "classical_baseline": "同活性空间CASCI/CASSCF、收敛耦合簇及经典微扰后处理", "decision": "在合成和可逆交联设计前，判断反应温区与候选路径是否受电子关联误差影响。", "has_reference": true, "id": "M02", "observable": "反应物到TS的电子活化能、轨道占据和环境诱导势垒变化", "quantum_role": "纠缠锻造制备关联信息，QSE扩展子空间，再经典微扰恢复动态关联", "subdomain": "反应路径与聚合材料", "system": "乙烯+环戊二烯环加成；辅以呋喃+乙烯的极化环境算法对照", "title": "Diels–Alder 环加成势垒：把静态与动态关联接入合成路线判断"}, {"area": "applied-materials", "classical_baseline": "周期DFT/NEB、同空间FCI/CASSCF、扩大空间的DMRG或选定CI", "decision": "判断Pt覆盖层和Co环境如何影响局部氧解离，定位值得继续实验的催化构型。", "has_reference": true, "id": "M03", "observable": "ΔE解离、ΔE‡、局域磁性及轨道占据", "quantum_role": "AVAS区域嵌入+ADAPT-VQE/RDM测量+经典NEVPT2", "subdomain": "电催化与燃料电池", "system": "Pt(111)与Pt包覆Co表面的O₂→2O局部解离步骤", "title": "Pt/Pt–Co 燃料电池催化：氧分子解离的嵌入量子化学"}, {"area": "applied-materials", "classical_baseline": "TDDFT/ΔSCF作低成本参照；RAS/多参考响应和适当张量网络作强参照", "decision": "判断充电后的谱变化来自氧空穴、O–O成键还是过渡金属电子重排，选择后续原位实验。", "has_reference": true, "id": "M04", "observable": "XAS截面σ(ω)、峰位、相对强度、谱权重和机理判别置信度", "quantum_role": "制备偶极激发态并时间演化，测相关函数，经典傅里叶变换得展宽谱", "subdomain": "电池谱学与退化", "system": "富锂锰氧化物中的Li₄Mn₂O局域团簇与氧K边", "title": "富锂正极 XAS：用氧 K 边指纹区分氧化还原与结构退化"}, {"area": "applied-materials", "classical_baseline": "含芯空穴的DFT/TDDFT/BSE、RAS和同模型精确小空间响应", "decision": "定位充电后哪类局域配位或界面区域发生氧电子态变化，指导表面保护或结构调控。", "has_reference": true, "id": "M05", "observable": "S(q,ω)、各方向响应交叉项、近边峰形及空间结构指纹", "quantum_role": "量子演化获得非对角时域Green函数；经典构造动量分辨散射响应", "subdomain": "电池谱学与显微分析", "system": "Li₂MnO₃氧中心团簇的O K-edge EELS/ELNES", "title": "Li₂MnO₃ 的 EELS：解析纳米尺度氧化还原与界面异质性"}, {"area": "applied-materials", "classical_baseline": "精确枚举小系统、混合整数求解、模拟退火、并行回火和局域搜索", "decision": "筛选不同锂含量下值得继续第一性原理计算的低能排布，解释充电曲线与相分离趋势。", "has_reference": true, "id": "M06", "observable": "最低模型能量、有效低能样本、充电曲线与成功概率/成本", "quantum_role": "量子退火求含粒子数约束的离散优化；经典构造能量模型与重评分", "subdomain": "电池构型优化", "system": "LiₓFePO₄中的Li离子与redox电子占据配置", "title": "磷酸铁锂的电离子占据：量子退火搜索低能充电构型"}, {"area": "applied-materials", "classical_baseline": "收敛DFT+U/混合泛函、NEB、适用周期耦合簇或QMC、相图凸包", "decision": "判断未来高精度周期电子能是否能解决电压、扩散或分解稳定性的关键误差。", "has_reference": true, "id": "M07", "observable": "平均插锂电压、迁移电子势垒、分解反应能；温度性质另加自由能", "quantum_role": "以qubitization/QPE求周期材料基态能，经典组合成应用性质", "subdomain": "电池电子结构", "system": "硅酸亚铁锂Li₂FeSiO₄及不同锂含量/迁移路径构型", "title": "Li₂FeSiO₄ 正极：电压、离子迁移与热稳定性的容错成本"}, {"area": "applied-materials", "classical_baseline": "同积分精确对角化及扩大空间多参考嵌入；光谱层另用经典振电子方法", "decision": "确认单重/三重态顺序及扰动下的能级分裂，支撑缺陷光学模型选择。", "has_reference": true, "id": "M08", "observable": "³A₂、¹E、¹A₁、³E的能隙、〈S²〉、简并子空间投影与扰动响应", "quantum_role": "嵌入有效哈密顿量上的VQE+QSE/多态变分，约束粒子数并做噪声缓解", "subdomain": "缺陷与量子器件材料", "system": "金刚石NV⁻；4H-SiC双空位为同类扩展", "title": "NV⁻ 与 SiC 双空位：可验证的缺陷多重态和光学能级"}, {"area": "applied-materials", "classical_baseline": "QDET+FCI、经典多参考嵌入、适用TDDFT和实验谱", "decision": "比较不同杂原子缺陷的单重/三重激发态排列，为光学操控候选选择提供物理依据。", "has_reference": true, "id": "M09", "observable": "垂直激发能、态排序、多重度、对称性与候选间趋势", "quantum_role": "量子嵌入构造可由经典或未来QPU求解的有效哈密顿量", "subdomain": "缺陷候选筛选", "system": "金刚石中中性group-IV vacancy complexes", "title": "金刚石 IV 族空位中心：筛选可光学操控的强关联缺陷"}, {"area": "applied-materials", "classical_baseline": "周期DFT/NEB、AIMD、合金模型与适用高层相关参照", "decision": "判断防腐涂层/合金设计中哪段界面反应或扩散势垒需要更高精度电子能。", "has_reference": true, "id": "M10", "observable": "界面反应势垒、氧迁移/占位能差及速率模型的误差传播", "quantum_role": "QPE电子基态估计嵌入经典NEB/合金配置工作流", "subdomain": "腐蚀与航空材料", "system": "Mg/Mg–Al与水的析氢反应；Nb富集难熔合金中高温氧迁移", "title": "Mg 水界面与 Nb 合金氧化：腐蚀机制的量子工作流成本"}, {"area": "applied-materials", "classical_baseline": "相同EWF的FCI/TCI/CCSD；未分片CCSD与DLPNO-CCSD(T)；同任务HCI", "decision": "判断氚局域化学形态计算是否足以支持回收热力学，而不是仅证明片段解得准。", "has_reference": true, "id": "M11", "observable": "同参考构象相对能ΔE、固定几何氚电子结合能和模型误差", "quantum_role": "EWF分片，较大片段由QPU采样+ext-SQD，经典重构总能与RDM", "subdomain": "熔盐与聚变材料", "system": "2LiF–BeF₂熔盐AIMD抽取的中性、含F⁻和含氚团簇", "title": "聚变包层 FLiBe：氚结合能与分片误差的严格拆分"}, {"area": "applied-materials", "classical_baseline": "同积分DMRG/选定CI、匹配规模经典构型生成、实验STM/AFM表征", "decision": "判断测得的分子结构/电子特征是否支持半Möbius拓扑解释，并检查活性空间扩大后结论稳定性。", "has_reference": true, "id": "M12", "observable": "相对能、电子附着态/轨道特征、相关描述及空间收敛", "quantum_role": "SqDRIFT随机短时演化采样构造Krylov候选，经典子空间对角化", "subdomain": "新型分子材料与拓扑", "system": "2026报道的半Möbius碳环分子；需固定实验构象与电子态", "title": "半 Möbius 分子：把量子子空间计算接到真实分子表征"}, {"area": "applied-materials", "classical_baseline": "同一小空间精确对角化、未编码物理电路和经典高层能量校正", "decision": "在庞大催化网络中找到对对映选择性敏感且经典诊断困难的构型，避免无差别上QPU。", "has_reference": false, "id": "M13", "observable": "选定构型基态能和性质；最终所需为竞争对映路径ΔΔG‡", "quantum_role": "AutoRXN/AutoCAS筛选→逻辑态制备与误差检测→classical shadows性质估计", "subdomain": "催化自动化与逻辑量子计算", "system": "苯乙酮与P–N–N–P铁催化体系", "title": "手性铁催化的 HPC＋逻辑比特流程：识别值得量子计算的少数构型"}, {"area": "applied-materials", "classical_baseline": "MCTDH/ML-MCTDH、张量网络传播、严格小模型波包动力学及适用半经典方法", "decision": "判断分子堆积与界面耦合如何影响激子转化和电荷分离，筛选后续超快谱实验。", "has_reference": true, "id": "M14", "observable": "态布居Pα(t)、三重态对/CT形成、相关函数和100 fs内短时动力学", "quantum_role": "实空间编码多电子态与核模式，用乘积公式实现耦合时间演化", "subdomain": "光伏与光化学材料", "system": "蒽二聚体激子/三重态过程；蒽–富勒烯界面电荷转移", "title": "有机光伏单重态裂分与界面电荷转移：高维振电动力学"}, {"area": "applied-materials", "classical_baseline": "DFT溶剂化/反应网络、耦合簇或多参考能量校正、经典基组收敛", "decision": "判断溶剂/添加剂的竞争电子反应是否值得高层校正，以及未来硬件的实际吞吐能否承担筛选。", "has_reference": true, "id": "M15", "observable": "还原/电离相关能差、候选断键势垒；最终SEI与循环性能须另建模型", "quantum_role": "双因子化QPE电子能核，结合纠错、魔法态工厂与架构并行成本", "subdomain": "电解液与界面反应", "system": "EC、FEC、PF₆⁻及其含Li变体LEC、LFEC、LiPF₆、LREC", "title": "锂电电解液分子：还原稳定性与 SEI 初始反应的容错规划"}, {"area": "applied-materials", "classical_baseline": "QDET+FCI/多参考响应、合适TDDFT，以及实验PL/ODMR资料", "decision": "判断缺陷候选是否具有足够强的光学跃迁，并识别需要实验进一步检验的亮态。", "has_reference": true, "id": "M16", "observable": "光学活性激发态、|〈f|μ|i〉|²、跃迁频率与模型辐射发射率", "quantum_role": "偶极算符block encoding＋QPE，选择性采样具有较强跃迁振幅的态", "subdomain": "二维缺陷与量子传感", "system": "六方氮化硼团簇中的带负电硼空位V_B⁻", "title": "hBN 负硼空位：直接面向亮态与辐射发射率的容错算法"}, {"area": "applied-materials", "classical_baseline": "同空间FCI、MP2/耦合簇或多参考嵌入、经实验校准的力场和GCMC", "decision": "识别值得进入湿气选择性和再生能耗验证的金属位点与配体方案。", "has_reference": true, "id": "M17", "observable": "固定模型吸附能、关联能贡献、误差向等温线和选择性的传播", "quantum_role": "DMET/VQE或周期Wannier降维后的QNP采样与SQD求解局域关联能", "subdomain": "吸附分离与碳捕集", "system": "Al-fumarate、Fe-MOF-74及胺功能化MOF中的CO₂结合位点", "title": "MOF 碳捕集：从开放金属位结合能到吸附剂筛选"}, {"area": "applied-materials", "classical_baseline": "稀疏矩阵指数、解析活性聚合、kMC/Gillespie、矩方法和转移矩阵", "decision": "比较给定反应性比和进料条件下聚合物更接近随机还是嵌段序列。", "has_reference": true, "id": "M18", "observable": "链长分布、指定序列/嵌段事件概率、分子量矩", "quantum_role": "将非幺正稀疏速率矩阵嵌入量子电路，为ODE求解提供oracle", "subdomain": "聚合物与反应动力学", "system": "单单体活性聚合与二单体配位共聚的序列分辨速率模型", "title": "活性共聚动力学：保留单体序列的分子量分布模拟"}, {"area": "applied-materials", "classical_baseline": "同空间DMRG、收敛多参考计算；独立DFT溶剂热校正及实验反应机制", "decision": "判断钼钳形配体及还原步骤的电子结构校正是否改变C–N成键和产物释放通道排序。", "has_reference": true, "id": "M19", "observable": "反应物、过渡态、产物的相对能和不同自旋态能差", "quantum_role": "AVAS活性空间与双因子化QPE能量估计，结合初态和容错资源模型", "subdomain": "工业均相催化", "system": "PNP钳形配体钼配合物生成氰酸根的两个关键步骤", "title": "合成固氮到氰酸根：钼钳形配合物的竞争自旋与反应能"}, {"area": "applied-materials", "classical_baseline": "SHCI、CASSCF/MRCI与多层嵌入及经典核动力学；环境结构误差独立评估", "decision": "判断限域分子稳定性问题是否值得高层电子结构校正，以及容错成本是否可承受。", "has_reference": true, "id": "M20", "observable": "固定模型相对电子能、模型偏差与计算成本；材料稳定性仍需额外动力学证据", "quantum_role": "双因子化或双平面波QPE资源估算，为经典稳定性模型提供电子能校正", "subdomain": "限域分子与亚稳材料", "system": "富勒烯环境中的环状/开链臭氧及局域嵌入模型", "title": "富勒烯限域环状臭氧：分子稳定性与容错计算可行性"}, {"area": "applied-materials", "classical_baseline": "同模型FCI/pair-CI、iFCI、SHCI/DMRG及多参考方法；溶液自由能和实验脱氟另层验证", "decision": "判断PFAS降解候选通道的电子相关校正是否改变断键顺序或路径优先级。", "has_reference": false, "id": "M21", "observable": "固定电荷/几何定义的断键势能曲线及相对能，不等于水处理效率", "quantum_role": "HPC优化VQE参数，IonQ Aria执行最终能量测量，配合对称性后选择与阈值缓解", "subdomain": "环境材料与污染物转化", "system": "TFA等PFAS模拟，以及正文明确标注的CH₃F C–F断裂代理硬件模型", "title": "PFAS 脱氟：C–F 断裂曲线与治理机理的电子结构接口"}, {"area": "applied-materials", "classical_baseline": "同截断QED-FCI；增大体系需比较QED-DMRG、多参考与收敛光子基组", "decision": "在进入真实腔催化模型前，判断电子—光子联合求解和编码选择是否值得进一步投入。", "has_reference": true, "id": "M22", "observable": "极化激元低能态、断键曲线、光诱导避免交叉及态组成", "quantum_role": "CQE/ACSE求解Pauli–Fierz模型；SA-VQE比较qubit、qudit与qumode编码", "subdomain": "强光—物质耦合", "system": "腔耦合H2及矩形形变H4；单光子模与最小电子基组", "title": "腔内极化激元：电子—光子关联态与编码选择"}, {"area": "applied-materials", "classical_baseline": "同基组同冻结核FCI、RHF和CCSD；扩展至自由基时需SCI/DMRG与溶剂化基线", "decision": "先验证局部断键和电荷分布接口，再判断真实多硫开壳层物种是否存在值得量子求解的困难。", "has_reference": true, "id": "M23", "observable": "单键断裂曲线、偶极矩、电荷与静电性质", "quantum_role": "VQE/q-UCCSD求基态与1-RDM，计算断键能和静电性质", "subdomain": "电池活性物种电子结构", "system": "孤立LiH、H2S、LiSH、Li2S的单键伸长模型", "title": "锂硫产物断键：能量与偶极矩的量子算法基准"}, {"area": "applied-materials", "classical_baseline": "相同MI/FNO下的CCSD或可行的精确求解；跨几何再比较局部耦合簇和多参考方法", "decision": "判断聚合催化剂的相关能求解是否值得建立量子与经典可替换接口。", "has_reference": true, "id": "M30", "observable": "增量相关能、空间截断误差及求解资源；局部催化反应势垒未报告", "quantum_role": "MI分解占据轨道，FNO压缩虚轨道，再由VQE或QPE求增量相关能；经典组合总能", "subdomain": "聚合催化电子结构", "system": "用于α-烯烃聚合的钛基constrained geometry complex；资源研究针对固定催化剂电子结构", "title": "钛基聚合催化剂 CGC：轨道分解后的量子资源与总成本"}, {"area": "model-dynamics", "classical_baseline": "半填充 DQMC；有限簇 ED；掺杂区 DMRG、DMET、DCA", "decision": "判定某组 U/t、温度、掺杂是否保留强磁关联，筛选值得投入的多体理论。", "has_reference": true, "id": "F01", "observable": "自旋结构因子、关联长度、交错磁化", "quantum_role": "超冷费米原子在光晶格中直接实现 Hubbard 哈密顿量。", "subdomain": "强关联模型与磁性", "system": "二维正方晶格排斥 Fermi–Hubbard 模型", "title": "二维 Hubbard 反铁磁关联：为铜氧化物机制提供可控基准"}, {"area": "model-dynamics", "classical_baseline": "DQMC、METTS、有限温簇方法", "decision": "检验赝能隙是否能由最小 Hubbard 模型产生，并约束温度—掺杂区域。", "has_reference": true, "id": "F02", "observable": "κ=∂n/∂μ、低能谱权重、多点自旋电荷关联", "quantum_role": "光晶格费米子模拟，测压缩率与动量相关调制谱。", "subdomain": "强关联模型与谱学", "system": "二维掺杂排斥 Hubbard 模型", "title": "掺杂 Hubbard 赝能隙：热力学与谱学联合检验"}, {"area": "model-dynamics", "classical_baseline": "半填充 QMC、临界标度拟合、不同均匀性模型", "decision": "检验温度、相互作用和掺杂对反铁磁有序的临界约束。", "has_reference": true, "id": "F03", "observable": "自旋结构因子、临界温度/掺杂趋势", "quantum_role": "锂-6 原子构成模拟量子实验，Bragg 散射读取磁结构因子。", "subdomain": "强关联模型与相变", "system": "三维排斥费米 Hubbard 模型", "title": "三维 Hubbard 反铁磁相变：宏观均匀格点的临界行为"}, {"area": "model-dynamics", "classical_baseline": "ED、DMRG、张量网络、可解 Kitaev 极限", "decision": "排除普通无序态，辨识候选磁体模型是否具备分数量子激发和拓扑结构。", "has_reference": true, "id": "F04", "observable": "非局域弦算符、局域序、拓扑不变量", "quantum_role": "2021 原生 Rydberg blockade 模拟；2025 可重排中性原子的门式费米编码。", "subdomain": "受挫磁性与拓扑", "system": "kagome 链接阵列的约束模型及 Kitaev 蜂窝模型", "title": "受挫磁性与自旋液体：用弦算符及拓扑响应辨识量子态"}, {"area": "model-dynamics", "classical_baseline": "tDMRG、TEBD、精确对角化、流体力学标度", "decision": "建立关联磁体自旋传输机制的判据，避免仅靠一个指数拟合判相。", "has_reference": true, "id": "F05", "observable": "畴壁松弛、自旋密度、极化转移全计数统计", "quantum_role": "冷原子 Heisenberg 链或超导模拟器实现实时自旋演化。", "subdomain": "量子磁性与输运", "system": "一维 Heisenberg/XXZ 链、对照二维耦合或梯形结构", "title": "非平衡自旋输运：检验扩散、超扩散与初态依赖"}, {"area": "model-dynamics", "classical_baseline": "截断声子 ED、DMRG、DQMC、主方程求解", "decision": "判断电子排斥与晶格介导吸引何时改变电荷序和磁序，确定是否必须增加声子自由度。", "has_reference": true, "id": "F06", "observable": "电荷/自旋结构因子、有效跃迁、稳态电流", "quantum_role": "量子电路拟表示电子关联；声子重整化经典优化；另一支提案为原生电子—机械振动模拟。", "subdomain": "电子—声子与极化子", "system": "Hubbard–Holstein 链与悬空纳米管四量子点开放系统", "title": "电子—声子竞争与 Peierls 电荷序：混合求解和开放器件提案"}, {"area": "model-dynamics", "classical_baseline": "网格传播、MCTDH、截断 Fock 基精确传播", "decision": "检验分子光激发后的布居转移是否受关键振动和相位干涉控制。", "has_reference": true, "id": "F07", "observable": "波包密度、电子态布居 Pα(t)、几何相位干涉", "quantum_role": "离子内部两能级表示电子态，两运动模表示选定核振动。", "subdomain": "光化学与非绝热动力学", "system": "工程化 Jahn–Teller/线性振电子模型；丙二烯阳离子、丁三烯阳离子、吡嗪", "title": "锥形交叉与分子光化学：几何相位及参数化非绝热动力学"}, {"area": "model-dynamics", "classical_baseline": "截断 Lindblad 求解、HEOM/张量网络；适用区 Marcus/黄金规则", "decision": "判断有机光伏或分子电子学模型中环境与第二个振动是否改变转移机制。", "has_reference": true, "id": "F08", "observable": "供体布居 P_D(t)、积分定义的转移率、能隙依赖", "quantum_role": "两种镱离子共享运动模；一离子编码供受体，两模耗散由另一离子冷却工程化实现。", "subdomain": "开放量子系统与能量转移", "system": "双态双模线性振电子耦合模型与可调热库", "title": "工程化耗散下的电荷与激子转移：多振动通道的非微扰效应"}, {"area": "model-dynamics", "classical_baseline": "精确自旋动力学、既有 NMR 谱法、经典分子动力学/力场", "decision": "判断新增多体 NMR 信号能否区分候选构象并改进结构参数置信区间。", "has_reference": true, "id": "F09", "observable": "核自旋 OTOC 曲线、平均 H–H 距离、平均二面角", "quantum_role": "超导 QPU 计算给定核自旋 Hamiltonian 的 OTOC，经典优化几何参数。", "subdomain": "谱学反演与分子结构", "system": "液晶中部分取向的标记甲苯与 3′,5′-二甲基联苯", "title": "NMR 多体回波反演分子几何：把量子信号接回实验结构"}, {"area": "model-dynamics", "classical_baseline": "生成函数/时间相关法、2024 量子启发经典算法、模式简化", "decision": "决定目标光谱是否真的需要完整 GBS，或可由成熟经典及简化光子模型完成。", "has_reference": true, "id": "F10", "observable": "Franck–Condon 权重、分辨率指定的谱形、振动态分配", "quantum_role": "振动模式映射玻色模式；位移、压缩和线性混合实现谐振态变换。", "subdomain": "振动谱与光功能材料", "system": "H₂O、O₃、NO₂、SO₂ 双模示范；甲酸/胸腺嘧啶光子谱路线", "title": "分子振电子光谱：玻色采样示范与经典可解边界"}, {"area": "model-dynamics", "classical_baseline": "同 Hamiltonian ED/CT-QMC/DMRG 杂质求解、DFT+DMFT、ARPES", "decision": "判断局域电子关联能否解释 CCOC 低能谱，并量化替换经典杂质求解器的误差。", "has_reference": true, "id": "F11", "observable": "杂质格林函数、自能、单粒子谱 A(k,ω)", "quantum_role": "QPU 计算小 Anderson 杂质模型的态与响应；经典 DFT、降维、DMFT 自洽与重建材料谱。", "subdomain": "周期强关联材料与嵌入", "system": "Ca₂CuO₂Cl₂ 铜氧氯化物的有效单带；单杂质加离散浴", "title": "Ca₂CuO₂Cl₂ 真实晶体的量子 DMFT：杂质谱与 ARPES 对照"}, {"area": "model-dynamics", "classical_baseline": "HF/CASSCF/selected-CI/DMRG试探态AFQMC、FCI及耦合簇", "decision": "判断复杂关联体系的 AFQMC 偏差是否值得引入量子试探态而非改进经典试探态。", "has_reference": true, "id": "F12", "observable": "基态/原子化能、试探态约束偏差、重叠估计成本", "quantum_role": "量子电路提供试探波函数重叠信息；随机行走和大空间相关处理主要在经典端。", "subdomain": "多电子求解与混合算法", "system": "H₄等分子及周期金刚石小模型的电子结构示范", "title": "量子辅助 AFQMC：用小量子试探态减少大基组约束偏差"}, {"area": "model-dynamics", "classical_baseline": "相同二站杂质 ED、经典二站DMFT与增加浴数的求解", "decision": "验证带噪声的杂质响应能否稳定驱动自洽，而不是只求解固定 Hamiltonian。", "has_reference": false, "id": "F13", "observable": "局域格林函数、谱函数、自洽混成 V", "quantum_role": "五比特 NMR 中四数据比特表示自旋轨道，一探针比特辅助测量响应。", "subdomain": "强关联嵌入与自洽", "system": "半填充、无限配位 Bethe 晶格 Hubbard 模型的一杂质一浴近似", "title": "Bethe 晶格自洽 SIAM：五比特 NMR 验证 DMFT 反馈闭环"}, {"area": "model-dynamics", "classical_baseline": "ED、经典Lanczos、同ansatz理想值与强杂质求解器", "decision": "判断浅态准备是否足以给出可信DOS，以及额外矩校正的测量代价是否值得。", "has_reference": false, "id": "F14", "observable": "基态能、格林函数、DOS、高阶Hamiltonian矩", "quantum_role": "候选量子电路准备基态与粒子/空穴响应种子；经典优化、矩处理和连分式重建谱。", "subdomain": "量子杂质求解与谱学", "system": "粒子—空穴对称单杂质Anderson模型，离散浴1/3/5/7轨道", "title": "粒子—空穴对称 SIAM 的 VQE 态密度：能量与响应双重验收"}, {"area": "model-dynamics", "classical_baseline": "同Hamiltonian ED/Lanczos、HF与bare轨道基、精确幅度oracle", "decision": "判断量子样本筛出的紧凑基是否保留谱权重，避免把基态能量收敛当作响应完整。", "has_reference": true, "id": "F15", "observable": "添加/移除GF、DOS极点与残量、子空间采样收敛", "quantum_role": "量子候选步骤是短时Krylov态制备与采样；投影、跨扇区重叠和连分式重建在经典端。", "subdomain": "量子子空间与动态响应", "system": "由已收敛经典DMFT取得离散浴的粒子—空穴对称SIAM链", "title": "SKQD 杂质格林函数：从基态采样子空间扩展到粒子响应"}, {"area": "model-dynamics", "classical_baseline": "同势能面时间依赖波包、耦合通道、Kohn变分与基组/网格收敛", "decision": "判断给定碰撞能量和入射振动态下哪些产物通道被打开，是否存在改变分支比例的共振。", "has_reference": true, "id": "F16", "observable": "复数S矩阵、P(v′←v;E)、共振位置及宽度", "quantum_role": "以量子传播和受控态重叠估计所选通道关联；势能面、通道构造与傅里叶后处理在经典端。", "subdomain": "反应散射与气相化学", "system": "共线H+H₂→H₂+H的核波包；对照He+H₂质量参数的Secrest–Johnson振动弛豫模型", "title": "态到态反应散射：H＋H₂ 交换概率与碰撞能量分辨"}, {"area": "model-dynamics", "classical_baseline": "同五维问题经典对角化；实际散射需UKRmol/收敛密耦合方法与实验数据", "decision": "为等离子体模型筛选可靠电子碰撞数据，判断复杂靶分子的内区电子关联是否值得量子求解。", "has_reference": true, "id": "F17", "observable": "内区本征值、边界振幅、未来外区匹配得到的相移和截面", "quantum_role": "候选QPU求有限体积内的多电子本征态与边界系数；经典端保留外区传播和截面重建。", "subdomain": "电子碰撞与等离子体材料过程", "system": "固定核H₂靶与一个入射电子的R矩阵内区最小模型", "title": "电子—分子碰撞：R矩阵内区谱与等离子体截面接口"}, {"area": "model-dynamics", "classical_baseline": "同Hamiltonian主方程/HEOM；有结构振电模型的MCTDH；编译一致的无噪声线路", "decision": "判断二维谱交叉峰和线形变化源于直接耦合、共同环境还是人口转移，以选择有效材料动力学模型。", "has_reference": true, "id": "F18", "observable": "三阶R(t₃,t₂,t₁)、二维谱交叉峰、等待时间依赖、谱扩散", "quantum_role": "量子候选电路实现多次光场作用、环境辅助演化与多时关联；经典端合并路径并生成频率谱。", "subdomain": "多维光谱与光功能材料", "system": "两个色团激子模型及有限记忆赝模环境；独立XXZ硬件响应作为方法旁证", "title": "非线性二维光谱：用多时响应区分耦合、记忆与人口转移"}, {"area": "model-dynamics", "classical_baseline": "同初态/分布/耗散的平均场动力学与Lax分析；有限尺寸精确解用于量子涨落", "decision": "判断给定淬火和初态是否使配对序参量消失、保持或振荡，并避免把谱峰移动直接等同配对增强。", "has_reference": true, "id": "F19", "observable": "ΔBCS(t)、淬火动态相边界、谱隙ΔSG及其人口依赖", "quantum_role": "Sr内部态编码Cooper对占据，腔光子介导有效相互作用，泄漏光连续读出集体配对序参量。", "subdomain": "超导机制与非平衡材料", "system": "BCS/Richardson–Gaudin有效模型的原子腔量子模拟，非真实晶体从头算", "title": "BCS 非平衡配对：腔中原子模拟淬火相图与两种能隙"}, {"area": "extensions", "classical_baseline": "同空间 CASCI；扩大空间的多参考方法；经典 selected-CI", "decision": "判断求解器能否稳定分辨局部重排的反应物、过渡态和产物能差。", "has_reference": true, "id": "C01", "observable": "相对电子能、电子势垒、反应能、自旋与自然占据", "quantum_role": "VQE/ADAPT 或采样子空间求解指定几何的相关电子问题", "subdomain": "电池与电化学", "system": "气相 (LiO₂)₂ / Li₂O₄，六原子局部模型", "title": "Li₂O₄ 重排：电池局部反应曲线与跨几何态跟踪"}, {"area": "extensions", "classical_baseline": "FOMO-CASCI+surface hopping；多态CASCI/CASSCF并检查动态关联", "decision": "比较 Sn–C 与 Sn–O 激活倾向，为光刻胶局部化学模型选择提供依据。", "has_reference": true, "id": "C02", "observable": "垂直电离能、指定键的多态势能切片、自旋和占据", "quantum_role": "多态VQE/QSE或容错求解为电子态与态间矩阵元提供接口", "subdomain": "光刻与辐照化学", "system": "CH₃Sn(OH)₃ 与相关 (CH₃)₃SnOH 小分子；非完整锡氧笼薄膜", "title": "有机锡 EUV 光刻胶：电离后断键通道与多态势能面"}, {"area": "extensions", "classical_baseline": "精确矩阵指数、Krylov、HEOM/张量网络，按环境模型选基线", "decision": "比较分子堆叠的能量迁移和捕获表现，筛选值得进一步计算的构型。", "has_reference": true, "id": "C03", "observable": "受体布居、累计捕获概率、相干与振动敏感性", "quantum_role": "变分实时间演化/Trotter或量子通道模拟", "subdomain": "有机光电", "system": "2,2′-联噻吩二聚体的激子/振动有效模型", "title": "联噻吩二聚体：堆叠与振动如何改变激子迁移"}, {"area": "extensions", "classical_baseline": "同模型多态CASCI+偶极矩阵元；经典网格/贝叶斯参数推断", "decision": "检验量子前向模拟能否给参数反演提供可信信息，再迁移至复杂分子。", "has_reference": true, "id": "C04", "observable": "前三个激发单重态的能隙、取向平均偶极强度、C=O键长区间", "quantum_role": "qLR、qEOM、多态VQE或相关函数计算谱，经典外层反演", "subdomain": "光谱与模型反演", "system": "H₂CO有限活性空间，理想化C₂v几何族", "title": "甲醛电子谱与键长反演：可验收的光谱求解器原型"}, {"area": "extensions", "classical_baseline": "实时TDDFT、模型势与有限尺寸/时间步收敛；可解小模型精确传播", "decision": "降低聚变靶模拟中粒子能量沉积的不确定性，约束靶设计模型。", "has_reference": true, "id": "C05", "observable": "S(v)=−dE_projectile/dx，速度/温度/密度依赖及统计误差", "quantum_role": "非Born–Oppenheimer联合演化，qubitization/Trotter与动能测量", "subdomain": "极端条件材料", "system": "有限温度电子与带电入射粒子的第一量子化模型", "title": "温稠密物质阻止本领：聚变靶材的能量沉积"}, {"area": "extensions", "classical_baseline": "DVR、split-operator/FFT、Krylov、MCTDH；热效应用路径积分", "decision": "识别何时必须显式处理核量子运动，为氢键材料与质子转移模型提供校验。", "has_reference": true, "id": "C06", "observable": "质子空间概率、时间相关函数、非谐振动峰", "quantum_role": "离散核坐标映射与量子逻辑演化；与电子结构计算串接", "subdomain": "核量子与跨尺度", "system": "固定核骨架下的约化维数共享质子势能模型", "title": "共享质子波包与非谐振动谱：核量子效应的硬件原型"}, {"area": "extensions", "classical_baseline": "小模型密度矩阵精确传播；大自旋体系张量网络/半经典方法", "decision": "检验超精细耦合、复合与环境模型是否足以解释磁场方向依赖。", "has_reference": true, "id": "C07", "observable": "单重/三重态概率、积分反应产率、角向各向异性", "quantum_role": "酉扩张编码开放系统通道并测反应通量", "subdomain": "生物物理与自旋化学", "system": "自由基对电子自旋及少量核自旋，简化生物罗盘模型", "title": "自由基对自旋化学：磁场方向与化学产率的模型连接"}, {"area": "extensions", "classical_baseline": "同BQM的REMC/模拟退火；专门RNA结构预测软件与实验结构", "decision": "判断量子退火是否能为RNA构象候选提供有效增量，避免投资错误的能量模型。", "has_reference": true, "id": "C08", "observable": "碱基配对F1、假结正确率、物理可行率、达到指定质量的总时间", "quantum_role": "量子退火抽样茎组合，经典前处理/后处理负责编码和约束", "subdomain": "RNA与离散优化", "system": "茎选择的BQM/QUBO RNA二级结构与假结模型", "title": "RNA 二级结构与假结：退火编码的成功与规模失效"}, {"area": "extensions", "classical_baseline": "同势的模拟退火、basin hopping、遗传/随机搜索及连续弛豫", "decision": "寻找预设势函数下低能结构与粒子密度，为结构搜索提出候选。", "has_reference": true, "id": "C09", "observable": "低能结构命中率、势函数能、密度、连续弛豫后结构身份", "quantum_role": "QUBO/HUBO编码与退火；可接因子分解机代理模型", "subdomain": "结构搜索与优化", "system": "离散晶胞中的粒子占据；Lennard–Jones团簇与共价单层MoS₂", "title": "晶体结构与粒子数联合搜索：多体势的退火编码"}, {"area": "extensions", "classical_baseline": "Gurobi/HiGHS/SCIP的原生MILP、CP-SAT及相同QUBO的SA", "decision": "在固定反应库与可购原料中，选择满足目标产量的低成本反应组合。", "has_reference": true, "id": "C10", "observable": "计量守恒、路线可行率、相对最优成本差距和包含调参的时间", "quantum_role": "反应整数用量及启用变量→QUBO惩罚→D-Wave/SA采样→经典修复与原约束验收", "subdomain": "合成路线组合优化", "system": "从USPTO反应库提取的多目标合成子网络；成本与部分采购可得性为构造的基准参数", "title": "USPTO反应网络：采购与反应组合的最低成本路线"}, {"area": "extensions", "classical_baseline": "相同压缩数据上调参RBF、多种经典核与谱聚类；原始特征经典组学整合", "decision": "评估量子相似度是否给压缩组学数据提供稳定且可独立验证的新分群。", "has_reference": true, "id": "C11", "observable": "轮廓系数、不同采样下分群一致性AMI、噪声前后核矩阵变化", "quantum_role": "经典组学整理与UMAP→量子态重叠核→经典谱聚类与稳定性评价", "subdomain": "多组学量子核", "system": "METABRIC乳腺癌基因表达与拷贝数变异；UMAP压缩后谱聚类", "title": "METABRIC多组学：四维压缩后的乳腺癌分群"}, {"area": "extensions", "classical_baseline": "同分辨率CNN、调参ResNet、随机固定特征与相同容量消融；统一训练预算", "decision": "判断量子局部特征是否在同数据同预算下改善恶性病灶识别。", "has_reference": true, "id": "C12", "observable": "独立测试准确率、恶性召回率、AUROC、校准及训练时间", "quantum_role": "经典图像缩放→模拟器上的量子卷积特征→经典分类层", "subdomain": "医学影像分类", "system": "BreastMNIST乳腺超声低分辨率图像，正常与良性合并后对恶性二分类", "title": "BreastMNIST超声影像：量子卷积的模拟器边界"}, {"area": "extensions", "classical_baseline": "CP-SAT/约束规划、MILP、禁忌搜索与现代memetic方法；共同墙钟预算", "decision": "在固定机器与工序约束下，快速提出可执行且完工时间较短的生产时间表。", "has_reference": true, "id": "C13", "observable": "工序约束可行率、最大完工时间makespan、最优界及总运行时间", "quantum_role": "经典排程建模与分解→混合BQM/DQM/CQM服务→独立时间表验证", "subdomain": "制造排程", "system": "柔性作业车间的工序—可选机器—开始时间分配；MK01–MK10公开基准", "title": "制造柔性作业车间：混合退火排程的可行性"}, {"area": "extensions", "classical_baseline": "小模型动态规划/精确枚举；同模型Monte Carlo与方差缩减", "decision": "评估特定介质模型的粒子到达概率能否用可逆模拟加QAE减少统计采样成本。", "has_reference": true, "id": "C14", "observable": "最大飞行次数内进入指定区域的概率及估计误差", "quantum_role": "经典分布表→可逆距离/反应更新与历史保存→区域标记→QAE估计标记概率", "subdomain": "统计输运与振幅估计", "system": "一维虚拟粒子穿过两个介质区域，仅前向散射或吸收，固定能量与时间", "title": "两区域辐射输运：为振幅估计构造可逆轨迹预言机"}, {"area": "extensions", "classical_baseline": "同网格稀疏直接法、共轭梯度/预条件法、多重网格；解析解与网格收敛", "decision": "检验热传导离散线性子问题是否存在值得量子求解的可测输出。", "has_reference": true, "id": "C15", "observable": "离散线性系统残差、归一化温度态误差、重建温度或区域热量误差", "quantum_role": "经典网格和边界条件→矩阵编码→VQLS参数电路/经典优化→测量与温度尺度恢复", "subdomain": "热传导经典方程", "system": "有限差分离散的一维与二维热传导方程；经典连续介质温度场", "title": "一二维热传导：离散拉普拉斯的量子线性求解"}]</script>
+<script type="application/json" id="domains">{"applied-materials": ["应用材料", "d-mat"], "biomedicine": ["生物医药", "d-bio"], "extensions": ["交叉方向与算法", "d-ext"], "model-dynamics": ["材料模型与动力学", "d-dyn"]}</script>
+<script>
+const problems = JSON.parse(document.getElementById('data').textContent);
+const DOMAINS = JSON.parse(document.getElementById('domains').textContent);
+const PAGE = 12;
+let domain = 'all', query = '', shown = PAGE;
+const list = document.getElementById('plist'), count = document.getElementById('count'), more = document.getElementById('more');
+const tpl = document.getElementById('problem-tpl');
+function matches(p) {
+  if (domain !== 'all' && p.area !== domain) return false;
+  if (!query) return true;
+  return [p.id, p.title, p.subdomain, p.system, p.observable, p.classical_baseline, p.quantum_role, p.decision].join(' ').toLowerCase().includes(query);
+}
+function fill(root, key, value) { root.querySelectorAll(`[data-f="${key}"]`).forEach(el => { el.textContent = value || '—'; }); }
+function setOpen(node, open) {
+  node.classList.toggle('open', open);
+  node.querySelector('.phead').setAttribute('aria-expanded', String(open));
+  node.querySelector('.pbody').inert = !open;
+}
+function build(p) {
+  const node = tpl.content.firstElementChild.cloneNode(true);
+  const head = node.querySelector('.phead'), body = node.querySelector('.pbody');
+  node.dataset.id = p.id; node.id = `p-${p.id}`; node.classList.add(DOMAINS[p.area][1]);
+  head.id = `h-${p.id}`; body.id = `b-${p.id}`;
+  head.setAttribute('aria-controls', body.id); body.setAttribute('aria-labelledby', head.id);
+  for (const key of ['id', 'title', 'observable', 'system', 'classical_baseline', 'quantum_role', 'decision']) fill(node, key, p[key]);
+  fill(node, 'meta', `${DOMAINS[p.area][0]} · ${p.subdomain || ''}`);
+  fill(node, 'ref', p.has_reference ? '有参照记录' : '仅文献整理');
+  fill(node, 'refnote', p.has_reference ? '本项目已有执行记录，可以从那里接着做。' : '暂无执行记录，从文献出发。');
+  node.querySelector('[data-link="problem"]').href = `../../problems/${p.area}/${p.id}/PROBLEM.md`;
+  body.inert = true;
+  head.addEventListener('click', () => setOpen(node, !node.classList.contains('open')));
+  return node;
+}
+function render() {
+  const hits = problems.filter(matches);
+  list.replaceChildren(...hits.slice(0, shown).map(build));
+  if (!hits.length) {
+    const empty = document.createElement('li'); empty.className = 'empty';
+    empty.textContent = '没有找到匹配的题目。试试题号、体系或方法名，比如 Hubbard、VQE、退火。';
+    list.append(empty);
+  }
+  count.textContent = hits.length > shown ? `共 ${hits.length} 题，先显示 ${shown} 题` : `共 ${hits.length} 题`;
+  more.hidden = hits.length <= shown;
+}
+function setDomain(value) {
+  domain = value;
+  document.querySelectorAll('[data-domain]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.domain === value)));
+}
+function openProblem(id) {
+  setDomain('all'); query = ''; document.getElementById('q').value = ''; shown = problems.length; render();
+  const node = document.getElementById(`p-${id}`);
+  if (!node) return;
+  setOpen(node, true);
+  node.classList.remove('flash'); void node.offsetWidth; node.classList.add('flash');
+  node.scrollIntoView({block: 'start'});
+  node.querySelector('.phead').focus({preventScroll: true});
+}
+document.querySelectorAll('[data-domain]').forEach(btn => btn.addEventListener('click', () => { setDomain(btn.dataset.domain); shown = PAGE; render(); }));
+document.querySelectorAll('[data-open]').forEach(btn => btn.addEventListener('click', () => openProblem(btn.dataset.open)));
+document.getElementById('q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); shown = PAGE; render(); });
+more.addEventListener('click', () => { shown = problems.length; render(); });
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,67 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "生成函数/时间相关法、2024 量子启发经典算法、模式简化",
+  "decision": "决定目标光谱是否真的需要完整 GBS，或可由成熟经典及简化光子模型完成。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F10",
+  "observable": "Franck–Condon 权重、分辨率指定的谱形、振动态分配",
+  "quantum_role": "振动模式映射玻色模式；位移、压缩和线性混合实现谐振态变换。",
+  "scale": "2020 超导双玻色模并可解析每模至 15 光子；不是 15 模分子",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "理论映射及甲酸/胸腺嘧啶示例；不是当年实机应用",
+      "title": "Boson sampling for molecular vibronic spectra",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/nphoton.2015.153",
+      "year": 2015
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "双模硬件、至15光子读出、H₂O/O₃/NO₂/SO₂谱",
+      "title": "Efficient Multiphoton Sampling of Molecular Vibronic Spectra on a Superconducting Bosonic Processor",
+      "type": "期刊论文",
+      "url": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021060",
+      "year": 2020
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "谐振零温谱任务的高效经典方法及优势主张边界",
+      "title": "Quantum-inspired classical algorithms for molecular vibronic spectra",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41567-023-02308-9",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "id": "R4",
+      "supports": "化学近似与光子资源层级、甲酸相干态实验、原始输入计算方法",
+      "title": "Bridging chemistry and Gaussian boson sampling: a photonic hierarchy of approximations for molecular vibronic spectra",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41534-026-01250-x",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R5",
+      "supports": "光子网络中的甲酸及胸腺嘧啶谱示范",
+      "title": "Large-scale photonic network with squeezed vacuum states for molecular vibronic spectroscopy",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41467-024-50060-2",
+      "year": 2024
+    }
+  ],
+  "subdomain": "振动谱与光功能材料",
+  "system": "H₂O、O₃、NO₂、SO₂ 双模示范；甲酸/胸腺嘧啶光子谱路线",
+  "tags": [
+    "GBS",
+    "振电子谱",
+    "玻色模式",
+    "经典反证"
+  ],
+  "title": "分子振电子光谱：玻色采样示范与经典可解边界"
+}

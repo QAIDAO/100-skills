@@ -1,0 +1,59 @@
+{
+  "id": "F19",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "physical-readout-r106/results.json",
+      "current_revision": "physical-readout-r106",
+      "goal": "physical-readout-r106/GOAL.md",
+      "id": "F19",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f19-r106/review/DELIVERY-REVIEW.json",
+      "manifest": "physical-readout-r106/manifest.json",
+      "manifest_sha256": "3e0a95cc9dd8c10f5fe4d892705014881b82fce57ff8a516a8c0257d076872fa",
+      "original_target_status": "incomplete",
+      "previous_results": "results.json",
+      "research": "physical-readout-r106/RESEARCH.md",
+      "revision": "r106",
+      "updated_utc": "2026-10-07T09:38:23.282204+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F19-bcs-nonequilibrium-pairing/execution/physical-readout-r106/gap-estimates204.csv",
+    "tasks/F19-bcs-nonequilibrium-pairing/execution/physical-readout-r106/measurements408.csv",
+    "tasks/F19-bcs-nonequilibrium-pairing/execution/physical-readout-r106/states102.csv",
+    "tasks/F19-bcs-nonequilibrium-pairing/mechanism.png",
+    "tasks/F19-bcs-nonequilibrium-pairing/visualization.json",
+    "tasks/F19-bcs-nonequilibrium-pairing/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f19-r106/NEXT-EXPERIMENT.md",
+    "tasks/_execution/2026-10-04/frontier/f19-r106/SOURCE-NOTE.md",
+    "tasks/_execution/2026-10-04/frontier/f19-r106/figures/physical-readout.png",
+    "tasks/_execution/2026-10-04/frontier/f19-r106/run/output/result.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F19-bcs-nonequilibrium-pairing/README.md",
+      "sha256": "344df389ee1afe71bf6e64f2ddda5b9b97c8cd31dd408d66fbf59f74c3d71b77"
+    },
+    {
+      "path": "tasks/F19-bcs-nonequilibrium-pairing/mechanism.svg",
+      "sha256": "5a47621708f3a409409d0b9e999c81d875018d8f420bc85911d21f0a5de2a705"
+    },
+    {
+      "path": "tasks/F19-bcs-nonequilibrium-pairing/workflow.svg",
+      "sha256": "ecd67242c395e2f7577270302f53cb4807be7e5b4f7177dff8eb117cfbc99426"
+    },
+    {
+      "path": "tasks/F19-bcs-nonequilibrium-pairing/execution/LATEST.json",
+      "sha256": "32579aef0b1e59368482ec80617073244884ecdcb818bcd65e024482279c32e2"
+    },
+    {
+      "path": "tasks/F19-bcs-nonequilibrium-pairing/execution/physical-readout-r106/RESEARCH.md",
+      "sha256": "e2c17ffd3d6b7a8234b5cab8b80099f934f537dd3e73ec3750da7b3ff224e395"
+    }
+  ]
+}

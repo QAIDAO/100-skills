@@ -1,0 +1,38 @@
+{
+  "domains": {
+    "applied-materials": {
+      "original_target_status": {
+        "incomplete": 17,
+        "未记录": 5
+      },
+      "problems": 24,
+      "with_reference": 22
+    },
+    "biomedicine": {
+      "original_target_status": {
+        "incomplete": 23,
+        "未记录": 3
+      },
+      "problems": 26,
+      "with_reference": 26
+    },
+    "extensions": {
+      "original_target_status": {
+        "incomplete": 14,
+        "未记录": 1
+      },
+      "problems": 15,
+      "with_reference": 15
+    },
+    "model-dynamics": {
+      "original_target_status": {
+        "incomplete": 13,
+        "未记录": 4
+      },
+      "problems": 19,
+      "with_reference": 17
+    }
+  },
+  "total_problems": 84,
+  "with_reference": 80
+}

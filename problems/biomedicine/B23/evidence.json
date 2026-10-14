@@ -1,0 +1,50 @@
+{
+  "id": "B23",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "public-input-v3.1/manifest.json",
+      "current_results": "public-input-v3.1/results.json",
+      "current_revision": "public-input-v3.1",
+      "goal": "public-input-v3.1/GOAL.md",
+      "hardware_run": false,
+      "id": "B23",
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": false,
+      "research": "public-input-v3.1/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B23-therapeutic-sequence-design/mechanism.png",
+    "tasks/B23-therapeutic-sequence-design/visualization.json",
+    "tasks/B23-therapeutic-sequence-design/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B23-therapeutic-sequence-design/README.md",
+      "sha256": "0fb34cd39bb2c3c72e328e25be2ff218c3e0363ad407c56e2806512b4111e94f"
+    },
+    {
+      "path": "tasks/B23-therapeutic-sequence-design/mechanism.svg",
+      "sha256": "a66298809f81c368961ea2fa82dfa867c4f9bc67f826a0e55cf334ed0124ff41"
+    },
+    {
+      "path": "tasks/B23-therapeutic-sequence-design/workflow.svg",
+      "sha256": "955638756beba91753718679c35e53c93b63a0a1378c11854ef2ef78af592c85"
+    },
+    {
+      "path": "tasks/B23-therapeutic-sequence-design/execution/LATEST.json",
+      "sha256": "f16824c42fb827e5114f9f1c697e1311f1e9b8387faf43ac2b7ac4a645e0ea74"
+    },
+    {
+      "path": "tasks/B23-therapeutic-sequence-design/execution/public-input-v3.1/RESEARCH.md",
+      "sha256": "a73c36767a684ad2196a8a8fa1aedd934f1d37dc67f4a262c1fe4f4e5274c8ba"
+    }
+  ]
+}

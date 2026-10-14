@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同积分DMRG/选定CI、匹配规模经典构型生成、实验STM/AFM表征",
+  "decision": "判断测得的分子结构/电子特征是否支持半Möbius拓扑解释，并检查活性空间扩大后结论稳定性。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M12",
+  "observable": "相对能、电子附着态/轨道特征、相关描述及空间收敛",
+  "quantum_role": "SqDRIFT随机短时演化采样构造Krylov候选，经典子空间对角化",
+  "scale": "原始研究量子部分72比特；方法扩展36–50轨道对应72–100比特",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "Science DOI10.1126/science.aea3321；实验分子与72比特研究；本次仅检索到机构稿摘录",
+      "title": "A molecule with half-Möbius topology",
+      "type": "期刊论文",
+      "url": "https://ora.ox.ac.uk/objects/uuid%3Aab54a73f-6ee8-4afa-8997-541e6de6cc5d/files/s70795b17p",
+      "year": 2026
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "SqDRIFT活性空间扩展至50轨道100比特；v2更改标题",
+      "title": "Exploring pathways towards quantum advantage in quantum chemistry: the case of a molecule with half-Möbius topology",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2603.08696v2",
+      "year": 2026
+    }
+  ],
+  "subdomain": "新型分子材料与拓扑",
+  "system": "2026报道的半Möbius碳环分子；需固定实验构象与电子态",
+  "tags": [
+    "新型分子材料与拓扑",
+    "实验关联",
+    "近期验证"
+  ],
+  "title": "半 Möbius 分子：把量子子空间计算接到真实分子表征"
+}

@@ -1,0 +1,71 @@
+{
+  "id": "B05",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "jk-pilot-cost-screen-r44/results.json",
+      "goal": "jk-pilot-cost-screen-r44/GOAL.md",
+      "manifest": "jk-pilot-cost-screen-r44/manifest.json",
+      "manifest_sha256": "a094148396724ecabeb6d32941ced9a01d9c535c2454f1d0decbe7286812d789",
+      "new_quantum_results": 0,
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b05-round44-delivery-audit.json",
+      "parent_audit_sha256": "ff5a4a69ab9c0c4af06d9b5335f296face895cdd07f7e427528a95ffda458be4",
+      "previous_pointer": {
+        "current_results": "cache-qualification-r43/results.json",
+        "goal": "cache-qualification-r43/GOAL.md",
+        "manifest": "cache-qualification-r43/manifest.json",
+        "manifest_sha256": "577cdb58deac3a26f6aa639bfec709fa293aca93d6e75d50216294cee981210b",
+        "new_quantum_results": 0,
+        "original_target_status": "incomplete",
+        "parent_audit": "tasks/_execution/2026-10-04/validation/b05-round43-delivery-audit.json",
+        "parent_audit_sha256": "caa407011c98fb86328365f69959607d620ca2f9852d6a33fb6a50213114237e",
+        "previous_pointer": {
+          "current_results": "saved-first-fock-algebra-v7/results.json",
+          "goal": "saved-first-fock-algebra-v7/GOAL.md",
+          "original_target_status": "incomplete",
+          "parent_audit": "tasks/_execution/2026-10-04/validation/b05-round26-saved-matrix-parent.json",
+          "research": "saved-first-fock-algebra-v7/RESEARCH.md"
+        },
+        "report": "cache-qualification-r43/RESULTS.md",
+        "research": "cache-qualification-r43/RESEARCH.md"
+      },
+      "report": "jk-pilot-cost-screen-r44/RESULTS.md",
+      "research": "jk-pilot-cost-screen-r44/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B05-carbonic-anhydrase/mechanism.png",
+    "tasks/B05-carbonic-anhydrase/visualization.json",
+    "tasks/B05-carbonic-anhydrase/workflow.png",
+    "tasks/_execution/2026-10-04/bio/b05-public-next-r42/REPORT.md",
+    "tasks/_execution/2026-10-04/bio/public-next-r44/REPORT.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B05-carbonic-anhydrase/README.md",
+      "sha256": "d2960efe925444087439e0ba2fe9cf14cdf7164916cb553096e98f631dc2df46"
+    },
+    {
+      "path": "tasks/B05-carbonic-anhydrase/mechanism.svg",
+      "sha256": "ad568a472cc8ac31e23b8673520d7d3ffc15efe408a2808f90703041a47880c5"
+    },
+    {
+      "path": "tasks/B05-carbonic-anhydrase/workflow.svg",
+      "sha256": "5206c3013934054aea6761eb2567a7c1925f129f6f99df4748b4381e5f1c3502"
+    },
+    {
+      "path": "tasks/B05-carbonic-anhydrase/execution/LATEST.json",
+      "sha256": "a385a984d1756662b3c94c6b9c836fbd393cb018bf193e39bc8f4bab2f6081fb"
+    },
+    {
+      "path": "tasks/B05-carbonic-anhydrase/execution/jk-pilot-cost-screen-r44/RESEARCH.md",
+      "sha256": "e150fc1542c130477303213c7488d4b9eda8d511d15c44d51523a27cb2461b10"
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同积分小空间精确对角化/CCSD，环境层DLPNO-CCSD，DFT路径；分离嵌入与求解器增益",
+  "decision": "判断小活性空间量子求解器替换是否真正改变氢活化路径判断。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B25",
+  "observable": "驻点相对能、活性空间替换增量、候选路径与轨道连续性",
+  "quantum_role": "经典QM/MM几何和环境→固定活性空间→VQE-UCCSD数值模拟→减法嵌入→相对能比较",
+  "scale": "(4电子,4空间轨道)活性空间；氢化酶结果为数值模拟；同文F₂硬件演示不能移用",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "氢化酶五驻点、(4e,4o)模拟VQE、嵌入及近零量子修正；硬件F₂与酶模拟分离",
+      "title": "Quantum Computing in Pharma: A Multilayer Embedding Approach for Near Future Applications",
+      "type": "预印本作者全文；期刊DOI 10.1002/jcc.26958，2022在线/2023卷期",
+      "url": "https://arxiv.org/pdf/2202.04460",
+      "work_id": "10.1002/jcc.26958",
+      "year": 2022
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "经典QM/MM机制与构象背景；不是量子计算结果",
+      "title": "Hydrogen-activation mechanism of [Fe] hydrogenase revealed by multi-scale modeling",
+      "type": "期刊论文",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2014/sc/c4sc01605j",
+      "work_id": "10.1039/C4SC01605J",
+      "year": 2014
+    }
+  ],
+  "subdomain": "氢化酶与反应路径",
+  "system": "单铁[Fe]氢化酶氢活化的五个驻点；不是[NiFe]/[FeFe]酶的完整产氢循环",
+  "tags": [
+    "氢化酶",
+    "VQE",
+    "嵌入",
+    "直接案例补充"
+  ],
+  "title": "单铁氢化酶：氢活化路径的嵌入式VQE"
+}

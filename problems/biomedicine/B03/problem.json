@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同一线路无噪声模拟、CASCI及经典SAPT分项",
+  "decision": "评估第二配位层、电荷环境改变是否足以改变NO还原中间体稳定性。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B03",
+  "observable": "静电相互作用能、一粒子约化密度矩阵",
+  "quantum_role": "VQE准备局部电子态，以费米基旋转测量密度矩阵，再经典重建静电能",
+  "scale": "有限活性空间单体上机；另一单体经典HF，非整酶完全关联",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "P450nor两个中间体静电能硬件估计",
+      "title": "Estimation of electrostatic interaction energies on a trapped-ion quantum computer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2312.14739",
+      "year": 2024
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "SAPT(VQE)以单体波函数估计非共价分项",
+      "title": "Accurate non-covalent interaction energies on noisy intermediate-scale quantum computers via second-order symmetry-adapted perturbation theory",
+      "type": "期刊论文",
+      "url": "https://pubs.rsc.org/en/content/articlepdf/2023/sc/d2sc05896k",
+      "year": 2023
+    }
+  ],
+  "subdomain": "生物无机 / 相互作用能",
+  "system": "P450nor催化NO到N₂O的两个中间体及相互作用单元",
+  "tags": [
+    "P450nor",
+    "SAPT",
+    "静电",
+    "密度矩阵"
+  ],
+  "title": "P450nor：直接估计活性中心与环境的静电相互作用"
+}

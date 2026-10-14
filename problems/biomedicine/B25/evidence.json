@@ -1,0 +1,40 @@
+{
+  "id": "B25",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "revision-3-input-closure/results.json",
+      "goal": "revision-3-input-closure/GOAL.md",
+      "previous_results": "revision-2/results.json",
+      "research": "revision-3-input-closure/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B25-fe-hydrogenase-embedding/execution/revision-3-input-closure/GOAL.md",
+    "tasks/B25-fe-hydrogenase-embedding/execution/revision-3-input-closure/results.json",
+    "tasks/_execution/2026-10-04/bio/b25-followup/fetch-log.json",
+    "tasks/_execution/2026-10-04/bio/b25-followup/input-closure-audit.json",
+    "tasks/_execution/2026-10-04/bio/b25-followup/source-review.json",
+    "tasks/_execution/2026-10-04/bio/b25-followup/summary.json",
+    "tasks/_execution/2026-10-04/bio/b25-followup/version-comparison.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B25-fe-hydrogenase-embedding/README.md",
+      "sha256": "d8703537cf9a81c7efc0a9af1b9d64e8b45abb03755d5838f00606433ee87e33"
+    },
+    {
+      "path": "tasks/B25-fe-hydrogenase-embedding/execution/LATEST.json",
+      "sha256": "64ce3e897fc6c12b6229898c537396f2f118aa18b4b27e5177b29fa52ebc75f7"
+    },
+    {
+      "path": "tasks/B25-fe-hydrogenase-embedding/execution/revision-3-input-closure/RESEARCH.md",
+      "sha256": "a63cb03478c0a05a25c1c4c3016e157ef1238df424570e5538410ad6db71e251"
+    }
+  ]
+}

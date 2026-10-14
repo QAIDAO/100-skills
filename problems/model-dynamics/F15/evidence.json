@@ -1,0 +1,62 @@
+{
+  "id": "F15",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "orbital-response-r47/results.json",
+      "goal": "orbital-response-r47/GOAL.md",
+      "manifest": "orbital-response-r47/manifest.json",
+      "manifest_sha256": "1f57b7baa24deb258db4971a189860c7b12f5446fb3858d1d3209c2648312334",
+      "new_quantum_comparison_slices": 18,
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/f15-round47-delivery-audit.json",
+      "parent_audit_sha256": "472f76c50b8a49847ea193f9a717925c28c507ac6a0e8eeb7cfca78e2f6ae087",
+      "previous_pointer": null,
+      "previous_results": "results.json",
+      "previous_results_sha256": "c38105aed332076cb164b2fe1516683f59926a1bb0f4e3ccd8c88b3ef5fea0c3",
+      "report": "orbital-response-r47/RESULTS.md",
+      "research": "orbital-response-r47/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/costs.json",
+    "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/gates.csv",
+    "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/metrics.csv",
+    "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/previous/results.json",
+    "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/raw.csv",
+    "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/raw.json",
+    "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/results.json",
+    "tasks/F15-skqd-impurity-greens-functions/mechanism.png",
+    "tasks/F15-skqd-impurity-greens-functions/visualization.json",
+    "tasks/F15-skqd-impurity-greens-functions/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f15-source-r47/SOURCE-PROTOCOL.md",
+    "tasks/_execution/2026-10-04/frontier/f15-source-r47/citations-and-schema.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F15-skqd-impurity-greens-functions/README.md",
+      "sha256": "4b394634fd85331cc15e8e29c5d430d577ac58a89932437b3676183ffa031db8"
+    },
+    {
+      "path": "tasks/F15-skqd-impurity-greens-functions/mechanism.svg",
+      "sha256": "e5cd29646573ed2ffb340c2b70e53e7cd4419371e7160c6c2874239c18d04771"
+    },
+    {
+      "path": "tasks/F15-skqd-impurity-greens-functions/workflow.svg",
+      "sha256": "c9a8c8120f2419a2454848e83be01e7e28de4ca69d25f3ee3bc9cb7520f383c7"
+    },
+    {
+      "path": "tasks/F15-skqd-impurity-greens-functions/execution/LATEST.json",
+      "sha256": "e7e5f0f03d3a3e754759a630b83805c3c9297db5f13c374dd8c5f76f9638aabb"
+    },
+    {
+      "path": "tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/RESEARCH.md",
+      "sha256": "f05ff2770b95419728d0addcf3383dcb2088c5ae8853caf9e1e0e763c5607e73"
+    }
+  ]
+}

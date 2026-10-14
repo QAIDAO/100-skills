@@ -1,0 +1,61 @@
+{
+  "id": "B02",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "highest-spin-completion-r46/results.json",
+      "goal": "highest-spin-completion-r46/GOAL.md",
+      "manifest": "highest-spin-completion-r46/manifest.json",
+      "manifest_sha256": "1b16bccbb07f4fc0a1077a91686ae8b60d8b1d4eb7f884424b0befd70909b409",
+      "new_quantum_results": 0,
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b02-round46-delivery-audit.json",
+      "parent_audit_sha256": "b16efcf3e1ff87bd0878b46fdd840d8028c5140377056168e5e7f2e4964a45a8",
+      "previous_pointer": {
+        "current_results": "original-AB-spin-reference-v5/results.json",
+        "goal": "original-AB-spin-reference-v5/GOAL.md",
+        "original_target_status": "incomplete",
+        "parent_audit": "tasks/_execution/2026-10-04/validation/b02-round27-parent.json",
+        "previous_quantum_revision": "revision-4-source-A-spin",
+        "research": "original-AB-spin-reference-v5/RESEARCH.md"
+      },
+      "report": "highest-spin-completion-r46/RESULTS.md",
+      "research": "highest-spin-completion-r46/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B02-p450-spin-metabolism/execution/original-AB-spin-reference-v5/RESEARCH.md",
+    "tasks/B02-p450-spin-metabolism/mechanism.png",
+    "tasks/B02-p450-spin-metabolism/visualization.json",
+    "tasks/B02-p450-spin-metabolism/workflow.png",
+    "tasks/B19-druglike-active-space/README.md",
+    "tasks/_execution/2026-10-04/materials/m09-input-recovery-r45/NEXT-OPPORTUNITIES.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B02-p450-spin-metabolism/README.md",
+      "sha256": "a9b097867803b7c52c227d6e5fd4003c7ea347b463cd5fd74aa13aec404ea14a"
+    },
+    {
+      "path": "tasks/B02-p450-spin-metabolism/mechanism.svg",
+      "sha256": "0a44980b0f54ac901544dc038dabbfcc8a0d3bcf733aa25687dc05deb43c8a28"
+    },
+    {
+      "path": "tasks/B02-p450-spin-metabolism/workflow.svg",
+      "sha256": "011abb88edba8097a3849467bb4a1e95fd311213395a364f5fd4eee5e0519353"
+    },
+    {
+      "path": "tasks/B02-p450-spin-metabolism/execution/LATEST.json",
+      "sha256": "c251e575e75cb9cb86f20e29c2f387ead238f6a88585fce1c134224daafd238a"
+    },
+    {
+      "path": "tasks/B02-p450-spin-metabolism/execution/highest-spin-completion-r46/RESEARCH.md",
+      "sha256": "cd72ddd93af72f51ce88b551e0d4d0a5ae71218fb13ef504ae1dc81485f7dfaf"
+    }
+  ]
+}

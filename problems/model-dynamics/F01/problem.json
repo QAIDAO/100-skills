@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "半填充 DQMC；有限簇 ED；掺杂区 DMRG、DMET、DCA",
+  "decision": "判定某组 U/t、温度、掺杂是否保留强磁关联，筛选值得投入的多体理论。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F01",
+  "observable": "自旋结构因子、关联长度、交错磁化",
+  "quantum_role": "超冷费米原子在光晶格中直接实现 Hubbard 哈密顿量。",
+  "scale": "约 80 个物理晶格位点；并非 80 个门模型量子比特",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "约 80 格点、kBT/t≈0.25、磁结构因子与掺杂关联",
+      "title": "A cold-atom Fermi–Hubbard antiferromagnet",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/nature22362",
+      "year": 2017
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "多种经典求解器交叉比较及有限尺寸外推；摘要另经 arXiv:1505.02290 核查",
+      "title": "Solutions of the Two-Dimensional Hubbard Model: Benchmarks and Results from a Wide Range of Numerical Algorithms",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1103/PhysRevX.5.041041",
+      "year": 2015
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R3",
+      "supports": "原论文搜索返回的摘要与方法正文：低熵制备、二维Hubbard和半填充温度反演；直接全文访问受重定向限制",
+      "title": "A neutral-atom Hubbard quantum simulator in the cryogenic regime",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41586-025-09112-w",
+      "year": 2025
+    }
+  ],
+  "subdomain": "强关联模型与磁性",
+  "system": "二维正方晶格排斥 Fermi–Hubbard 模型",
+  "tags": [
+    "Hubbard",
+    "冷原子",
+    "反铁磁",
+    "高温超导"
+  ],
+  "title": "二维 Hubbard 反铁磁关联：为铜氧化物机制提供可控基准"
+}

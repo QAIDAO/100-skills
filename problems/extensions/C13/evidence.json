@@ -1,0 +1,56 @@
+{
+  "id": "C13",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-window-r62/results.json",
+      "delivery_review": "tasks/_execution/2026-10-04/cross/c13-window-r62/DELIVERY-REVIEW.json",
+      "delivery_review_sha256": "3f0448538bede4f328f99b6f7fa34cf691e5d292a0939d7cfa2868eaa2267ab1",
+      "goal": "public-window-r62/GOAL.md",
+      "manifest_sha256": "1b6248e903264e9f4d78364f92679c9050d3d812d2aa517f39aa61c8c62d8c67",
+      "note": "Actual public MK01 fixed flexible11q experiment independently verified. Native/discretization pass; probability/readout fail. R4/R6 scoped evidence complete; no original-application completion or quantum advantage.",
+      "original_target_status": "incomplete",
+      "research": "public-window-r62/RESULTS.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C13-manufacturing-jobshop/execution/public-baseline-r61/RESULTS.md",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/REQUIREMENT-SCOPE-REVIEW.md",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/fixed-gates.csv",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/fixed-window-error-and-cost.png",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/fixed-window-quality.png",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/method-probabilities.csv",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/native-counts.csv",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/quantum-component-costs.csv",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/quantum-design.md",
+    "tasks/C13-manufacturing-jobshop/execution/public-window-r62/stage-resources.csv",
+    "tasks/_execution/2026-10-04/cross/c13-public-r61/QUANTUM-WINDOW-INTAKE.md",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/PRESENTATION-RESOURCE.json",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/ROOT-SCOPE.json",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/mapping-audit/out/result.json",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/mapping-production/out/result.json",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/presentation/production-manifest.json",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/quantum-production/contract.json",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/quantum-production/out/native-cost-ledger.json",
+    "tasks/_execution/2026-10-04/cross/c13-window-r62/quantum-production/out/result.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C13-manufacturing-jobshop/README.md",
+      "sha256": "28c18754c6699a0e6a62983b20602fb9b7e1238d0de8a04eaf6c25b04d70f75a"
+    },
+    {
+      "path": "tasks/C13-manufacturing-jobshop/execution/LATEST.json",
+      "sha256": "dfe35e04a65ece9923b20f303947f7b6dc8f1e82a6e66672eb06d30ede128e41"
+    },
+    {
+      "path": "tasks/C13-manufacturing-jobshop/execution/public-window-r62/RESULTS.md",
+      "sha256": "25b35d2e010b596ebad892340318bb675da112e857eb4f3877bb2e876714c663"
+    }
+  ]
+}

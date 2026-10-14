@@ -1,0 +1,48 @@
+{
+  "id": "F17",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "order-diagnostic-v4/results.json",
+      "note": "Modified quantum protocol; not a relabeling of the source v3 failure.",
+      "original_target_status": "incomplete",
+      "research": "RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F17-electron-molecule-rmatrix/execution/RESULTS.md",
+    "tasks/F17-electron-molecule-rmatrix/execution/order-diagnostic-v4/manifest.json",
+    "tasks/F17-electron-molecule-rmatrix/execution/order-diagnostic-v4/raw.json",
+    "tasks/F17-electron-molecule-rmatrix/execution/order-diagnostic-v4/results.json",
+    "tasks/F17-electron-molecule-rmatrix/mechanism.png",
+    "tasks/F17-electron-molecule-rmatrix/visualization.json",
+    "tasks/F17-electron-molecule-rmatrix/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F17-electron-molecule-rmatrix/README.md",
+      "sha256": "a51f11ba12718dcfb97d2928c7c992342ea511da1ff398e01383f7183501b5cb"
+    },
+    {
+      "path": "tasks/F17-electron-molecule-rmatrix/mechanism.svg",
+      "sha256": "6edd5bed30b28a871e31c7f657b25dc9919707027126e2ea77b6ac443ad73592"
+    },
+    {
+      "path": "tasks/F17-electron-molecule-rmatrix/workflow.svg",
+      "sha256": "b5bc63faffa7851ac2be191192b403e32a6357b30c5c5405c4a4416f3a5e48e6"
+    },
+    {
+      "path": "tasks/F17-electron-molecule-rmatrix/execution/LATEST.json",
+      "sha256": "c25800a9c3023e0a13677bf5c836c538e158ae6e5607f5eccd9c376abb85df19"
+    },
+    {
+      "path": "tasks/F17-electron-molecule-rmatrix/execution/RESEARCH.md",
+      "sha256": "a00ba1cf25abb0c367eab28cdc6d77c952da22219ac27de45f26973bfb91d6ea"
+    }
+  ]
+}

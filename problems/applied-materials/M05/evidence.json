@@ -1,0 +1,47 @@
+{
+  "id": "M05",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "public-input-audit-v2/results.json",
+      "goal": "public-input-audit-v2/GOAL.md",
+      "previous_results": "results.json",
+      "research": "public-input-audit-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M05-battery-eels/execution/public-input-audit-v2/post-run-provenance.json",
+    "tasks/M05-battery-eels/mechanism.png",
+    "tasks/M05-battery-eels/visualization.json",
+    "tasks/M05-battery-eels/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m04-m05-followup/m05-time-step-consistency.json",
+    "tasks/_execution/2026-10-04/materials/m04-m05-followup/source-index.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M05-battery-eels/README.md",
+      "sha256": "5915fd6f7b06377cf833dae725b5685fc5baa0cae0919d2ed8fdc0ea530fa563"
+    },
+    {
+      "path": "tasks/M05-battery-eels/mechanism.svg",
+      "sha256": "28b3834fcff5b1bc725b943c2d9699d45a8e192c133faf6b75992ba262fd3afe"
+    },
+    {
+      "path": "tasks/M05-battery-eels/workflow.svg",
+      "sha256": "5c59cf25d015f16bdd87a124fc9ced561213fde63cdedd13b4a8839dde83be9a"
+    },
+    {
+      "path": "tasks/M05-battery-eels/execution/LATEST.json",
+      "sha256": "36ee780d780f93b85c0c1a0b34b569bb1c701d491908c4d5c0932a31920ac8c1"
+    },
+    {
+      "path": "tasks/M05-battery-eels/execution/public-input-audit-v2/RESEARCH.md",
+      "sha256": "a7a6b7d13e655e186d6e26674a73fce124b5c1bab4365d9ff292eddf0e90b7b6"
+    }
+  ]
+}

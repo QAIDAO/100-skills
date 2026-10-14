@@ -1,0 +1,42 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "同势能面时间依赖波包、耦合通道、Kohn变分与基组/网格收敛",
+  "decision": "判断给定碰撞能量和入射振动态下哪些产物通道被打开，是否存在改变分支比例的共振。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F16",
+  "observable": "复数S矩阵、P(v′←v;E)、共振位置及宽度",
+  "quantum_role": "以量子传播和受控态重叠估计所选通道关联；势能面、通道构造与傅里叶后处理在经典端。",
+  "scale": "氢交换示例10个波函数编码比特=8个平移+2个振动，重叠电路另含辅助比特；均为经典电路模拟",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.1021/acs.jpclett.4c01100",
+      "id": "R1",
+      "supports": "共线氢交换10数据比特编码、Qiskit经典模拟、Møller关联与两产物振动态；对应JPCL15,5633–5642",
+      "title": "Simulation of Chemical Reactions on a Quantum Computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2403.03052v1",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.1021/acs.jpclett.3c00985",
+      "id": "R2",
+      "supports": "独立Kohn/VQLS算法、SJ两开放通道、精确耦合通道对照和稠密Pauli分解成本；对应JPCL14,6224–6233",
+      "title": "A Hybrid Quantum-Classical Algorithm for Multichannel Quantum Scattering of Atoms and Molecules",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2304.06089v1",
+      "year": 2023
+    }
+  ],
+  "subdomain": "反应散射与气相化学",
+  "system": "共线H+H₂→H₂+H的核波包；对照He+H₂质量参数的Secrest–Johnson振动弛豫模型",
+  "tags": [
+    "反应散射",
+    "S矩阵",
+    "气相反应",
+    "第二轮扩展"
+  ],
+  "title": "态到态反应散射：H＋H₂ 交换概率与碰撞能量分辨"
+}

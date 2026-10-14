@@ -1,0 +1,62 @@
+{
+  "id": "F06",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "physical-seed-audit-r116/results.json",
+      "current_revision": "physical-seed-audit-r116",
+      "goal": "physical-seed-audit-r116/GOAL.md",
+      "id": "F06",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f06-r116/delivery-review/DELIVERY-REVIEW.json",
+      "manifest": "physical-seed-audit-r116/manifest.json",
+      "manifest_sha256": "3905329ff41ca6301e3ff8337f28898266af292818f6481453da7bfe7345164c",
+      "original_target_status": "incomplete",
+      "previous_results": "results.json",
+      "research": "physical-seed-audit-r116/RESEARCH.md",
+      "revision": "r116",
+      "updated_utc": "2026-10-07T16:04:29.896208+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/ED2.csv",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/HVA2.csv",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/METHODS.md",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/REPRODUCE.md",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/eigenpairs4.csv",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/figures/physical-seed-audit.png",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/independent4.csv",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/legacy-negative2.csv",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/results.json",
+    "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/seed-envelope8.csv",
+    "tasks/F06-electron-phonon-peierls/mechanism.png",
+    "tasks/F06-electron-phonon-peierls/visualization.json",
+    "tasks/F06-electron-phonon-peierls/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F06-electron-phonon-peierls/README.md",
+      "sha256": "b7cf710fbe34a7d508bce546190ff65f4258ece60703621a0c7d6fa37a2d9888"
+    },
+    {
+      "path": "tasks/F06-electron-phonon-peierls/mechanism.svg",
+      "sha256": "8201a206ab46074315832b0667575b5d1f2c70bfe65b1e112a5074d6fe9ebc5d"
+    },
+    {
+      "path": "tasks/F06-electron-phonon-peierls/workflow.svg",
+      "sha256": "9b4de72ee3e7e26e49d5ba7757163fa1935fbd7341179479c8982f93d0b93429"
+    },
+    {
+      "path": "tasks/F06-electron-phonon-peierls/execution/LATEST.json",
+      "sha256": "b7b8d5e48371ce655edc7ab361bf72bcf96a9ac9d2e5d04979784282b14cc26d"
+    },
+    {
+      "path": "tasks/F06-electron-phonon-peierls/execution/physical-seed-audit-r116/RESEARCH.md",
+      "sha256": "724031bf217d076cf10c3e0b38973809ef5face3333e30816994bedea39d1780"
+    }
+  ]
+}

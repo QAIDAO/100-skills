@@ -1,0 +1,39 @@
+{
+  "area": "extensions",
+  "classical_baseline": "Gurobi/HiGHS/SCIP的原生MILP、CP-SAT及相同QUBO的SA",
+  "decision": "在固定反应库与可购原料中，选择满足目标产量的低成本反应组合。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C10",
+  "observable": "计量守恒、路线可行率、相对最优成本差距和包含调参的时间",
+  "quantum_role": "反应整数用量及启用变量→QUBO惩罚→D-Wave/SA采样→经典修复与原约束验收",
+  "scale": "2024研究生成100个可嵌入的合成规划实例；不是完整百万级反应网络直接上QPU",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "USPTO基准、D-Wave/SA、惩罚调参、随机成本及可嵌入实例筛选；正式DOI 10.1103/PhysRevResearch.6.013115",
+      "title": "Finding optimal pathways in chemical reaction networks using Ising machines",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/pdf/2308.04544",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "独立CRN基准的MIP/CP与数字退火比较；CRN部分不能误写成D-Wave混合求解结果",
+      "title": "Comparative Studies of Quantum Annealing, Digital Annealing, and Classical Solvers for Reaction Network Pathway Analysis and mRNA Codon Selection",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2509.09862v1",
+      "year": 2025
+    }
+  ],
+  "subdomain": "合成路线组合优化",
+  "system": "从USPTO反应库提取的多目标合成子网络；成本与部分采购可得性为构造的基准参数",
+  "tags": [
+    "合成路线组合优化",
+    "直接案例补缺",
+    "2026-10-04"
+  ],
+  "title": "USPTO反应网络：采购与反应组合的最低成本路线"
+}

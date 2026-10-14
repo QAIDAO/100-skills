@@ -1,0 +1,67 @@
+{
+  "id": "C07",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "continuous-readout-r49/results.json",
+      "goal": "continuous-readout-r49/GOAL.md",
+      "manifest": "continuous-readout-r49/manifest.json",
+      "manifest_sha256": "6def3a6ca124b7ef69a0113ba08546c99db4d6b60cc1f4f45d85b03359394ea7",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/c07-round49-delivery-audit.json",
+      "previous_pointer": {
+        "current_results": "public-channel-r48/results.json",
+        "goal": "public-channel-r48/GOAL.md",
+        "manifest": "public-channel-r48/manifest-v2.json",
+        "manifest_sha256": "a6c3147fbb247bdcadf06c6ce506e6264cfd5fae7212469c917f1d0934c707de",
+        "original_target_status": "incomplete",
+        "parent_audit": "tasks/_execution/2026-10-04/validation/c07-round48-delivery-audit-v2.json",
+        "previous_pointer": {
+          "current_results": "revision-2/results.json",
+          "note": "Read the current_results path; root results may be a preserved superseded run.",
+          "original_target_status": "incomplete",
+          "research": "RESEARCH.md"
+        },
+        "previous_results_sha256": "aab6ece72e9451e99c397e9487b905fed802a50cb617dd4ceef705002f18ee76",
+        "report": "public-channel-r48/RESULTS.md",
+        "research": "public-channel-r48/RESEARCH.md"
+      },
+      "previous_result_sha256": "dbb1b5416395ff60d75783dbab21e383e5c5b9ffb42883035c89c0959c3f8254",
+      "report": "continuous-readout-r49/RESULTS.md",
+      "research": "continuous-readout-r49/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C07-radical-pair-spin/execution/continuous-readout-r49/figures/sampling-comparison.png",
+    "tasks/C07-radical-pair-spin/mechanism.png",
+    "tasks/C07-radical-pair-spin/visualization.json",
+    "tasks/C07-radical-pair-spin/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C07-radical-pair-spin/README.md",
+      "sha256": "cbc2e65e29cbb4b3d0854a1eb59e4caea58c64c385c477e82ab568c0a1e5b122"
+    },
+    {
+      "path": "tasks/C07-radical-pair-spin/mechanism.svg",
+      "sha256": "51f5e8b58ecd61e7482367148a1661459fd71134bd7f615354938273ec07642e"
+    },
+    {
+      "path": "tasks/C07-radical-pair-spin/workflow.svg",
+      "sha256": "65c9b09ba87596ff15fcef942f8dacd9446c0b94496e594c95d3bff676b6536e"
+    },
+    {
+      "path": "tasks/C07-radical-pair-spin/execution/LATEST.json",
+      "sha256": "41f3d48e7cc1359105069237f32f70b622e81cb334d039276b3ee975da6d77a0"
+    },
+    {
+      "path": "tasks/C07-radical-pair-spin/execution/continuous-readout-r49/RESEARCH.md",
+      "sha256": "19027c33f85887c99bd9a04f52a5a3e1161bdf01400cbd73483e8a651799e6ab"
+    }
+  ]
+}

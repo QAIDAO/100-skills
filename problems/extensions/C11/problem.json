@@ -1,0 +1,39 @@
+{
+  "area": "extensions",
+  "classical_baseline": "相同压缩数据上调参RBF、多种经典核与谱聚类；原始特征经典组学整合",
+  "decision": "评估量子相似度是否给压缩组学数据提供稳定且可独立验证的新分群。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "C11",
+  "observable": "轮廓系数、不同采样下分群一致性AMI、噪声前后核矩阵变化",
+  "quantum_role": "经典组学整理与UMAP→量子态重叠核→经典谱聚类与稳定性评价",
+  "scale": "原始1980样本；四维UMAP对应4比特；IBM Mumbai实机使用100样本子集",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "METABRIC、四维UMAP、四比特核、实机子样本、聚类指标与经典RBF比较",
+      "title": "Quantum enhanced stratification of breast cancer: exploring quantum expressivity for real omics data",
+      "type": "期刊论文",
+      "url": "https://link.springer.com/article/10.1007/s42484-025-00289-x",
+      "year": 2025
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "作者预印本及数据代码入口；同一工作版本，不算独立重复",
+      "title": "Quantum enhanced stratification of Breast Cancer: exploring quantum expressivity for real omics data",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2409.14089v1",
+      "year": 2024
+    }
+  ],
+  "subdomain": "多组学量子核",
+  "system": "METABRIC乳腺癌基因表达与拷贝数变异；UMAP压缩后谱聚类",
+  "tags": [
+    "多组学量子核",
+    "直接案例补缺",
+    "2026-10-04"
+  ],
+  "title": "METABRIC多组学：四维压缩后的乳腺癌分群"
+}

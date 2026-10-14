@@ -1,0 +1,39 @@
+{
+  "area": "extensions",
+  "classical_baseline": "CP-SAT/约束规划、MILP、禁忌搜索与现代memetic方法；共同墙钟预算",
+  "decision": "在固定机器与工序约束下，快速提出可执行且完工时间较短的生产时间表。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C13",
+  "observable": "工序约束可行率、最大完工时间makespan、最优界及总运行时间",
+  "quantum_role": "经典排程建模与分解→混合BQM/DQM/CQM服务→独立时间表验证",
+  "scale": "2022在线发表/2023卷期论文采用混合求解；2015直接QPU先导最高六作业六机器",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "2022在线/2023卷期，混合求解器、MK基准、静态约束及工业限制",
+      "title": "Solving flexible job shop scheduling problems in manufacturing with Quantum Annealing",
+      "type": "期刊论文",
+      "url": "https://link.springer.com/article/10.1007/s11740-022-01145-8",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "直接D-Wave Vesuvius的六作业六机器先导、时间索引QUBO与经典全局求解对照",
+      "title": "Quantum Annealing Implementation of Job-Shop Scheduling",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1506.08479",
+      "year": 2015
+    }
+  ],
+  "subdomain": "制造排程",
+  "system": "柔性作业车间的工序—可选机器—开始时间分配；MK01–MK10公开基准",
+  "tags": [
+    "制造排程",
+    "直接案例补缺",
+    "2026-10-04"
+  ],
+  "title": "制造柔性作业车间：混合退火排程的可行性"
+}

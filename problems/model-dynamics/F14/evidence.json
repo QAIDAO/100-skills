@@ -1,0 +1,27 @@
+{
+  "id": "F14",
+  "latest": null,
+  "omitted": [
+    "tasks/F14-vqe-siam-density-states/mechanism.png",
+    "tasks/F14-vqe-siam-density-states/visualization.json",
+    "tasks/F14-vqe-siam-density-states/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F14-vqe-siam-density-states/README.md",
+      "sha256": "cc11cb6d9e683fb9b9731c1427325be34cce63631210bc46025e1de3a415856d"
+    },
+    {
+      "path": "tasks/F14-vqe-siam-density-states/mechanism.svg",
+      "sha256": "b6ba8fdef32fda17fe9d46d638bb969fb938360f142b55be41e64a0dab1050f2"
+    },
+    {
+      "path": "tasks/F14-vqe-siam-density-states/workflow.svg",
+      "sha256": "639ddf32dc2b6e65734794b8969118fdf705650c55624c51ee13b20b71d66409"
+    }
+  ]
+}

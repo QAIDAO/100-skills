@@ -1,0 +1,41 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "截断 Lindblad 求解、HEOM/张量网络；适用区 Marcus/黄金规则",
+  "decision": "判断有机光伏或分子电子学模型中环境与第二个振动是否改变转移机制。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F08",
+  "observable": "供体布居 P_D(t)、积分定义的转移率、能隙依赖",
+  "quantum_role": "两种镱离子共享运动模；一离子编码供受体，两模耗散由另一离子冷却工程化实现。",
+  "scale": "2025 在线/2026 卷期工作为 1 个电子两能级、2 个振动模和受控储库",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "2025-12-05 在线，2026 卷17文章438；双模模型、Lindblad 方程和供体积分转移率",
+      "title": "Quantum simulation of charge and exciton transfer in multi-mode models using engineered reservoirs",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41467-025-67116-6",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "Science Advances 10 eads8011；单模可调供受体能隙、电子/振动耦合和耗散",
+      "title": "Trapped-Ion Quantum Simulation of Electron Transfer Models with Tunable Dissipation",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2405.10368",
+      "year": 2024
+    }
+  ],
+  "subdomain": "开放量子系统与能量转移",
+  "system": "双态双模线性振电子耦合模型与可调热库",
+  "tags": [
+    "激子转移",
+    "电荷转移",
+    "耗散",
+    "离子阱",
+    "有机光伏"
+  ],
+  "title": "工程化耗散下的电荷与激子转移：多振动通道的非微扰效应"
+}

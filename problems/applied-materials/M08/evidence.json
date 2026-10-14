@@ -1,0 +1,66 @@
+{
+  "id": "M08",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "symmetry-native-r60/results.json",
+      "delivery_review": "tasks/_execution/2026-10-04/materials/m08-identity-r60/DELIVERY-REVIEW.json",
+      "delivery_review_sha256": "a1fc795c7f027a67f10f6c2e1dd929716e0711f10517fa7aa40b58a1909bfd7a",
+      "goal": "symmetry-native-r60/GOAL.md",
+      "manifest_sha256": "b6083781d61a820b5e31c5b9c6c309f753aa8af15753d6697f693ee7616e9e70",
+      "note": "Conditional16D identity passed; partial native power01 precision failed and independently confirmed. No fullQPE/new jointdraws. R3/R6 incomplete. No prior M08 LATEST existed.",
+      "original_target_status": "incomplete",
+      "research": "symmetry-native-r60/RESULTS.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M08-nv-sic-multiplets/execution/raw-results.json",
+    "tasks/M08-nv-sic-multiplets/execution/symmetry-native-r60/FAILURE-DIAGNOSIS.md",
+    "tasks/M08-nv-sic-multiplets/execution/symmetry-native-r60/identity-and-native-stop.pdf",
+    "tasks/M08-nv-sic-multiplets/execution/symmetry-native-r60/identity-and-native-stop.png",
+    "tasks/M08-nv-sic-multiplets/execution/symmetry-native-r60/saved-observations.csv",
+    "tasks/M08-nv-sic-multiplets/mechanism.png",
+    "tasks/M08-nv-sic-multiplets/visualization.json",
+    "tasks/M08-nv-sic-multiplets/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/EXECUTION-SCOPE.md",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/INDEPENDENT-DESIGN-REVIEW.md",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/REQUIREMENT-CLOSEOUT-DRAFT.md",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/RESEARCH-DECISIONS.md",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/RESOURCE-REVIEW.json",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/RESOURCE-SUMMARY.json",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/UNEXECUTED-MAIN.json",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/identity-audit/out/result.json",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/identity-production/out/result.json",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/native-audit/out/result.json",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/native-production/out/result.json",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/sources/WEST-APS2026-aps001.html",
+    "tasks/_execution/2026-10-04/materials/m08-identity-r60/sources/orbital-irrep-source.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M08-nv-sic-multiplets/README.md",
+      "sha256": "6c3088055773a538c468dbd9245db24b63f65db3042799160d4be4a7adb9d949"
+    },
+    {
+      "path": "tasks/M08-nv-sic-multiplets/mechanism.svg",
+      "sha256": "ae6784709dc6a8ad67cda3ec1c55bbcf4efd014fd743a9a1168b8e5685ebf84c"
+    },
+    {
+      "path": "tasks/M08-nv-sic-multiplets/workflow.svg",
+      "sha256": "35fc2b1a6437198d4bb78bc052d9718b0971ecd46ab1fddd82d1d7774a31c9dd"
+    },
+    {
+      "path": "tasks/M08-nv-sic-multiplets/execution/LATEST.json",
+      "sha256": "a5d83309885dba6a05feadcaad5e30754b1f3b68a4f58a4568075e88b890c06c"
+    },
+    {
+      "path": "tasks/M08-nv-sic-multiplets/execution/symmetry-native-r60/RESULTS.md",
+      "sha256": "3ac85687b4d486d8a75afe8270f9f00707d14ff632202b04fd7a2c1f56f9ab5d"
+    }
+  ]
+}

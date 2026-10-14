@@ -1,0 +1,47 @@
+{
+  "id": "B07",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-source-v4/results.json",
+      "goal": "public-source-v4/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/round6-input-promotion.json",
+      "research": "public-source-v4/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B07-protein-ligand-embedding/mechanism.png",
+    "tasks/B07-protein-ligand-embedding/visualization.json",
+    "tasks/B07-protein-ligand-embedding/workflow.png",
+    "tasks/B15-thrombin-dmet-binding/execution/public-coordinate-quantum-v3/RESEARCH.md",
+    "tasks/_execution/2026-10-04/bio/b07-followup/audit_inputs.py"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B07-protein-ligand-embedding/README.md",
+      "sha256": "8f93347bb4922522b0c9735d892ada97d525027635590ddd2887d120c3bf7b2f"
+    },
+    {
+      "path": "tasks/B07-protein-ligand-embedding/mechanism.svg",
+      "sha256": "799e552a0198efd7c821f642fe75e3324e9f9a4c0c71325926ee111900b536e3"
+    },
+    {
+      "path": "tasks/B07-protein-ligand-embedding/workflow.svg",
+      "sha256": "607890bcad62a4295af17b8057b9e018678dc8222159708cbe68083a544575e5"
+    },
+    {
+      "path": "tasks/B07-protein-ligand-embedding/execution/LATEST.json",
+      "sha256": "04018a4719264efb851618fa11c02822edf83ced3774dfaeeedc509772652b0f"
+    },
+    {
+      "path": "tasks/B07-protein-ligand-embedding/execution/public-source-v4/RESEARCH.md",
+      "sha256": "f4c3f9704e557175e383fc1e62a56281a4ac977f22be86eb325eea0b91f04c68"
+    }
+  ]
+}

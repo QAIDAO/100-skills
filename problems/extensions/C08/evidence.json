@@ -1,0 +1,52 @@
+{
+  "id": "C08",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-biotin-v3/results.json",
+      "goal": "public-biotin-v3/GOAL.md",
+      "original_target_status": "incomplete",
+      "research": "public-biotin-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C08-rna-annealing/execution/public-biotin-v3/best-p4-native.qpy",
+    "tasks/C08-rna-annealing/execution/public-biotin-v3/classical-reference.json",
+    "tasks/C08-rna-annealing/execution/public-biotin-v3/frozen-input.json",
+    "tasks/C08-rna-annealing/execution/public-biotin-v3/manifest.json",
+    "tasks/C08-rna-annealing/execution/public-biotin-v3/post-run-provenance.json",
+    "tasks/C08-rna-annealing/execution/public-biotin-v3/results.json",
+    "tasks/C08-rna-annealing/execution/public-biotin-v3/validation.json",
+    "tasks/C08-rna-annealing/mechanism.png",
+    "tasks/C08-rna-annealing/visualization.json",
+    "tasks/C08-rna-annealing/workflow.png",
+    "tasks/_execution/2026-10-04/validation/c08-parent-audit.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C08-rna-annealing/README.md",
+      "sha256": "7721719119cef83122a50e5e4749bdbd1eaf196934e9407dd9adece1f045a0d6"
+    },
+    {
+      "path": "tasks/C08-rna-annealing/mechanism.svg",
+      "sha256": "9a52d7e9cec2a9fdad956a5042e1f47b43132be737856d1fa6da9ef4c23dae53"
+    },
+    {
+      "path": "tasks/C08-rna-annealing/workflow.svg",
+      "sha256": "caa2b04306becc9029449119db2acf72ddfc657f7d6dad47b86107ec7caa2b98"
+    },
+    {
+      "path": "tasks/C08-rna-annealing/execution/LATEST.json",
+      "sha256": "89300122b41773dce571c19aacd75f8334e5ebd7c0d9222b88b4f719ceb984c9"
+    },
+    {
+      "path": "tasks/C08-rna-annealing/execution/public-biotin-v3/RESEARCH.md",
+      "sha256": "07849a2b415751e53a95ed404941481affec22d09c0572d5c974e70b4d51e9d0"
+    }
+  ]
+}

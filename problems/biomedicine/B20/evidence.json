@@ -1,0 +1,53 @@
+{
+  "id": "B20",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "revision-4-qaoa71/results.json",
+      "goal": "revision-4-qaoa71/GOAL.md",
+      "previous_results": "revision-3-public-inputs/results.json",
+      "research": "revision-4-qaoa71/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B20-pocket-hydration-sites/mechanism.png",
+    "tasks/B20-pocket-hydration-sites/visualization.json",
+    "tasks/B20-pocket-hydration-sites/workflow.png",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/Q71-safe.npy",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/all-start-results.csv",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/audit_qaoa.py",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/checkpoint.json",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/full71-alltoall-CX.qasm",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/full71-logical.qasm",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/optimization.json",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/protocol.json",
+    "tasks/_execution/2026-10-04/bio/subset-B16-B22/bio/b20-followup/revision-4/resume-verification.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B20-pocket-hydration-sites/README.md",
+      "sha256": "e249d8c7310a745feea880d7121e6e4b30876ce2c0dbc31b0c29cf4de9b95ed4"
+    },
+    {
+      "path": "tasks/B20-pocket-hydration-sites/mechanism.svg",
+      "sha256": "39099cda27d00a908177161a7169f7d1dd3ffa5e6fb0ff3d526277bd77e90f1e"
+    },
+    {
+      "path": "tasks/B20-pocket-hydration-sites/workflow.svg",
+      "sha256": "87e5c0a0c475327fce981c33efafbda93804a484dd1ed94ca10e2669a7693e2d"
+    },
+    {
+      "path": "tasks/B20-pocket-hydration-sites/execution/LATEST.json",
+      "sha256": "badd69975f2881c4315b646720c420d99c59fa6f2f4477a3ae0ef6b2654d75d0"
+    },
+    {
+      "path": "tasks/B20-pocket-hydration-sites/execution/revision-4-qaoa71/RESEARCH.md",
+      "sha256": "d8132425ee9fdc9fef9880d61abfc508070258baab8703e459e13a6314f9ec77"
+    }
+  ]
+}

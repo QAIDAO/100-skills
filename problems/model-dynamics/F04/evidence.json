@@ -1,0 +1,83 @@
+{
+  "id": "F04",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "case_review": "tasks/_execution/2026-10-04/frontier/f04-r67/CASE-REVIEW-v3.json",
+      "case_review_sha256": "1ae579995df6ec62f6bd3fcd8a26a75b988b037aa28f8a90e5e3072a3c3f6a41",
+      "current_results": "native-dynamics-r67/results.json",
+      "current_revision": "native-dynamics-r67",
+      "goal": "native-dynamics-r67/GOAL.md",
+      "id": "F04",
+      "manifest_sha256": "81c0e2a78eda13b8a957afb1155a30270b29748902f6b4dadaba764fa5cb84c8",
+      "note": "18q native finite-spin dynamics/readout completed; J8 science, joint finite and four fixed independent roundtrip gates fail. Audit completed but integrity/native qualification false; scoped R6/R8 closure retains negative evidence, no material/Chern/QPU result.",
+      "old_quantum_reference": {
+        "path": "tasks/F04-frustrated-spin-liquid/execution/results.json",
+        "scope": "Old6-spin conserved-string exploratory pass remains unchanged",
+        "sha256": "3f2d06e4ec9c5b4c56ced15e28fd89f161287cf6cd6193ad704ae9ea1bd6a92b"
+      },
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "requirement_increment": "tasks/_execution/2026-10-04/validation/requirements-r67-increment.json",
+      "requirement_increment_sha256": "370d3394f5e4ba603dbc8c1b10cd39884d93db2c4028958036e47d48bf0f52a9",
+      "research": "native-dynamics-r67/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/GOAL.md",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/LATEST-at-intake.json",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/REPRODUCE.md",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/RESOURCE-REVIEW.json",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/RESOURCE-SUMMARY.json",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/exact-response.csv",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/figures/plot-manifest.json",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/figures/readout-comparison.pdf",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/figures/readout-comparison.png",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/finite-CI.csv",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/manifest.json",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/observables.csv",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/results.json",
+    "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/stage-resources.csv",
+    "tasks/F04-frustrated-spin-liquid/execution/results.json",
+    "tasks/F04-frustrated-spin-liquid/mechanism.png",
+    "tasks/F04-frustrated-spin-liquid/visualization.json",
+    "tasks/F04-frustrated-spin-liquid/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/DIAGNOSTIC-v2.md",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/NEGATIVE-AUDIT-CLOSEOUT.md",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/R6-R8-INDEPENDENT-SCOPE-DECISION.json",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/ROUTE-COMPARISON.md",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/SOURCE-DESIGN.md",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/dynamic-audit-v3/out/result.json",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/dynamic-audit/out/result.json",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/dynamic-production/production-manifest.json",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/finite-readout/out/result.json",
+    "tasks/_execution/2026-10-04/frontier/f04-r67/reference-production/production-manifest.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F04-frustrated-spin-liquid/README.md",
+      "sha256": "4f38654493b8dbb646a75eeef50ff3622b427a90335e589685bd6b74479d1448"
+    },
+    {
+      "path": "tasks/F04-frustrated-spin-liquid/mechanism.svg",
+      "sha256": "8dfd1bc73aeb92efa6eea959fec84bf5a093009a87acec8f1549da4cd524c874"
+    },
+    {
+      "path": "tasks/F04-frustrated-spin-liquid/workflow.svg",
+      "sha256": "3a48f50900ed98bcb2093ebcc70ff3a6c8df54e63eea6aae65a726292e630bbd"
+    },
+    {
+      "path": "tasks/F04-frustrated-spin-liquid/execution/LATEST.json",
+      "sha256": "7959a7c79bf1d8c627a36a1ef18858ff36e411e9ac4f25a7f7b315ef9b2e5028"
+    },
+    {
+      "path": "tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/RESEARCH.md",
+      "sha256": "3db0d361f6eb8d6c5d723d79165d4cb43028f34aec13fd93c30c0302a22d3bc6"
+    }
+  ]
+}

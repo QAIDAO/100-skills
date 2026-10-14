@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "周期DFT/NEB、AIMD、合金模型与适用高层相关参照",
+  "decision": "判断防腐涂层/合金设计中哪段界面反应或扩散势垒需要更高精度电子能。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M10",
+  "observable": "界面反应势垒、氧迁移/占位能差及速率模型的误差传播",
+  "quantum_role": "QPE电子基态估计嵌入经典NEB/合金配置工作流",
+  "scale": "2026文给出2292–38598逻辑比特、约(1.04–1962)×10¹³ T门范围，依具体模型；非已运行",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "Mg与Nb腐蚀的流程、模型和逻辑资源；2026发表，非DOI中2025",
+      "title": "Quantum computing for corrosion simulation: workflow and resource analysis",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41534-025-01171-1",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "同研究早期版本的两工业问题与端到端资源背景；不作为独立复现",
+      "title": "Quantum computing for corrosion-resistant materials and anti-corrosive coatings design",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2406.18759",
+      "year": 2024
+    }
+  ],
+  "subdomain": "腐蚀与航空材料",
+  "system": "Mg/Mg–Al与水的析氢反应；Nb富集难熔合金中高温氧迁移",
+  "tags": [
+    "腐蚀与航空材料",
+    "资源估算",
+    "重点储备"
+  ],
+  "title": "Mg 水界面与 Nb 合金氧化：腐蚀机制的量子工作流成本"
+}

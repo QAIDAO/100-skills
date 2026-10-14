@@ -1,0 +1,45 @@
+{
+  "id": "B01",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "revision-4-original-input/results.json",
+      "goal": "revision-4-original-input/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b01-parent-promotion.json",
+      "research": "revision-4-original-input/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B01-femoco-nitrogenase/mechanism.png",
+    "tasks/B01-femoco-nitrogenase/visualization.json",
+    "tasks/B01-femoco-nitrogenase/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B01-femoco-nitrogenase/README.md",
+      "sha256": "4fc7faa4bae07ff7c4ae0fbff7bb2afba2e1b2f6ad62b46fe1bc0066cd2ca752"
+    },
+    {
+      "path": "tasks/B01-femoco-nitrogenase/mechanism.svg",
+      "sha256": "b89fe56f900fa517526fac66dd150b6cff3e7814fe571277247222aec21be32f"
+    },
+    {
+      "path": "tasks/B01-femoco-nitrogenase/workflow.svg",
+      "sha256": "86150d8d92a4a86d7a39e5f50fef97319b2d930ff10da837f219218ddce76c52"
+    },
+    {
+      "path": "tasks/B01-femoco-nitrogenase/execution/LATEST.json",
+      "sha256": "c4fb13141b18c597c0b23cd5aba9896b58e2ef2de168eb9b9f41388641d94ea5"
+    },
+    {
+      "path": "tasks/B01-femoco-nitrogenase/execution/revision-4-original-input/RESEARCH.md",
+      "sha256": "2d46b7742aaf7f7b4926952ba105aaf1920bfaa02cecd73b70389c4336586159"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "理想UCCSD/CCSD、同片段CASCI、噪声模拟与未分片参考",
+  "decision": "检验同系列抑制剂结合能排序能否从局部关联修正受益。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B15",
+  "observable": "片段能量、蛋白/真空能差与实验相关性",
+  "quantum_role": "DMET划分→目标片段VQE→其他片段CCSD→经典能量合并",
+  "scale": "整体蛋白不在QPU；实际硬件限制4比特，完整5配体独立优化不应默认已完成",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "五配体三片段、静电蛋白、硬件限制与数据开放范围",
+      "title": "Quantum Computing Calculations of Protein–Ligand Binding Energies Using Decomposition Methods on Simulated and Real Quantum Hardware",
+      "type": "期刊论文",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.6c00544",
+      "year": 2026
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "两个万原子复合体、94比特、片段求解和基组导致的结合能限制",
+      "title": "Crossing the 12,000-atom barrier with heterogeneous quantum-classical supercomputing: quantum chemistry of protein-ligand complexes",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2605.01138v2",
+      "year": 2026
+    }
+  ],
+  "subdomain": "抗凝靶点 / 结合电子能",
+  "system": "Thrombin与5个配体；蛋白用点电荷表示，每个配体分为3片段",
+  "tags": [
+    "Thrombin",
+    "凝血酶",
+    "DMET",
+    "VQE"
+  ],
+  "title": "凝血酶五配体：DMET/VQE结合能分解"
+}

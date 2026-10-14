@@ -1,0 +1,60 @@
+{
+  "id": "F10",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "real-molecules-v2/results.json",
+      "goal": "real-molecules-v2/GOAL.md",
+      "manifest_sha256": "621e029410637821d02fb469cafc5adedc78551b9b0cb34e30daeb3c66ba92f8",
+      "original_target_status": "incomplete",
+      "previous_pointer": {
+        "current_results": "results.json",
+        "goal": "GOAL.md",
+        "original_target_status": "incomplete",
+        "research": "RESEARCH.md"
+      },
+      "research": "real-molecules-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F10-vibronic-boson-sampling/execution/real-molecules-v2/RESULTS.md",
+    "tasks/F10-vibronic-boson-sampling/execution/real-molecules-v2/protocol.json",
+    "tasks/F10-vibronic-boson-sampling/execution/real-molecules-v2/raw.csv",
+    "tasks/F10-vibronic-boson-sampling/mechanism.png",
+    "tasks/F10-vibronic-boson-sampling/visualization.json",
+    "tasks/F10-vibronic-boson-sampling/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f10-independent-reference-v2/outputs/results.json",
+    "tasks/_execution/2026-10-04/frontier/f10-real-molecules-v2/outputs/index.json",
+    "tasks/_execution/2026-10-04/frontier/f10-terminal-review-v2/REVIEW.md",
+    "tasks/_execution/2026-10-04/frontier/round29-scan-f07-f13/REPORT.md",
+    "tasks/_execution/2026-10-04/validation/f10-round29-audit-intake.json",
+    "tasks/_execution/2026-10-04/validation/f10-round29-producer-intake.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F10-vibronic-boson-sampling/README.md",
+      "sha256": "9aaec04dc537afc02dc5549e9dd5a07d9a8104446e6366a75ddbec787e3abd24"
+    },
+    {
+      "path": "tasks/F10-vibronic-boson-sampling/mechanism.svg",
+      "sha256": "afa0dbfe0f3ee8687aa6bf9f0107c35f402aebe056f1bb6250d00d15c679e80a"
+    },
+    {
+      "path": "tasks/F10-vibronic-boson-sampling/workflow.svg",
+      "sha256": "7ba5d629c2949561c5eeaa2eddd5fe30ac822ed17256d66f876b44262a887a79"
+    },
+    {
+      "path": "tasks/F10-vibronic-boson-sampling/execution/LATEST.json",
+      "sha256": "51f84938e5326eb6e65fc5a06e7b8767b384d7dc1c46df2d6c918d0d3f1f967f"
+    },
+    {
+      "path": "tasks/F10-vibronic-boson-sampling/execution/real-molecules-v2/RESEARCH.md",
+      "sha256": "6cf26a3e15c567d46d23501ef826a77cc0ea2f3122181ede12aef43a680bc036"
+    }
+  ]
+}

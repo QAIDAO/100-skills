@@ -1,0 +1,45 @@
+{
+  "id": "M12",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-derived-cas-v3/results.json",
+      "goal": "public-derived-cas-v3/GOAL.md",
+      "original_target_status": "incomplete",
+      "research": "public-derived-cas-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M12-half-mobius-molecule/mechanism.png",
+    "tasks/M12-half-mobius-molecule/visualization.json",
+    "tasks/M12-half-mobius-molecule/workflow.png",
+    "tasks/_execution/2026-10-04/m12-derived-evidence.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M12-half-mobius-molecule/README.md",
+      "sha256": "65d547de9378de5903e14f7c7957e1b60f5941f2fedea86a3b278453dca6aef4"
+    },
+    {
+      "path": "tasks/M12-half-mobius-molecule/mechanism.svg",
+      "sha256": "87cab392dc25d75489be92dd6d2ac8464f26fbf1e0399ce0ed804806fe50c96c"
+    },
+    {
+      "path": "tasks/M12-half-mobius-molecule/workflow.svg",
+      "sha256": "66c538ad5779fd99bb8cb9d62640555d67dacdf5e85b09bc471fdf2b7e8958ca"
+    },
+    {
+      "path": "tasks/M12-half-mobius-molecule/execution/LATEST.json",
+      "sha256": "98a50a98ef108ef9d848b45d6302597470f95ca0a62b0fd3972981552e863e9e"
+    },
+    {
+      "path": "tasks/M12-half-mobius-molecule/execution/public-derived-cas-v3/RESEARCH.md",
+      "sha256": "44336c5175198365a733c7e5f577231b7feb94a2f8a123286526d14be443ea61"
+    }
+  ]
+}

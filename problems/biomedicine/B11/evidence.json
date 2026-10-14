@@ -1,0 +1,56 @@
+{
+  "id": "B11",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "revision-2/manifest.json",
+      "current_raw": "revision-2/raw.json",
+      "current_results": "revision-2/results.json",
+      "current_revision": 2,
+      "goal": "GOAL.md",
+      "hardware_run": false,
+      "id": "B11",
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": true,
+      "research": "RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B11-docking-gbs/execution/initial-GOAL.md",
+    "tasks/B11-docking-gbs/execution/initial-RESEARCH.md",
+    "tasks/B11-docking-gbs/execution/revision-2/manifest.json",
+    "tasks/B11-docking-gbs/execution/revision-2/raw.json",
+    "tasks/B11-docking-gbs/execution/revision-2/results.json",
+    "tasks/B11-docking-gbs/mechanism.png",
+    "tasks/B11-docking-gbs/visualization.json",
+    "tasks/B11-docking-gbs/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B11-docking-gbs/README.md",
+      "sha256": "d98774cf714349fb9344732cba87b246782f21d16822344bb66847ae08245d12"
+    },
+    {
+      "path": "tasks/B11-docking-gbs/mechanism.svg",
+      "sha256": "cc540550c9719ae58057ca06f38a5f669ae12398c7c8886ba36372f81c1b9f82"
+    },
+    {
+      "path": "tasks/B11-docking-gbs/workflow.svg",
+      "sha256": "d7a68f39ea5f87bcb1639207774c7ad21dbb37330f1646207570deadd0833480"
+    },
+    {
+      "path": "tasks/B11-docking-gbs/execution/LATEST.json",
+      "sha256": "a88464683d9a12230b23e753ecb784355b745a6e8a98a73220f9ea0d2a971a64"
+    },
+    {
+      "path": "tasks/B11-docking-gbs/execution/RESEARCH.md",
+      "sha256": "2fa01e8b1f8e4501d50400647c24ea46c5749563dfaf85cbe4e4654c0265259d"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同几何FCI/CC、多参考；经典QM/MM、纯经典特征ML与同预算模型",
+  "decision": "区分结合姿态合适但反应慢的候选物，平衡目标共价反应与脱靶反应性。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B08",
+  "observable": "反应电子能剖面、势垒、动力学特征及实验反应性proxy",
+  "quantum_role": "QM/QM/MM嵌入与VQE；哈密顿量演化特征配经典ML",
+  "scale": "CovAngelo在20比特Garnet设备上实际使用8比特简化TS线路；不能称20比特全BTK",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "BTK工作流、简化过渡态8比特演示、20倍T门估算边界",
+      "title": "CovAngelo: A hybrid quantum-classical computing platform for accurate and scalable drug discovery",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2604.10487v1",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "磺酰氟反应性特征、8比特硬件、深度压缩；v1首发2024",
+      "title": "Circuit Depth Reduction for Executable Hamiltonian Dynamics of Covalent Inhibitor Reactivity on Quantum Hardware",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2412.15804v4",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "前药活化断键与共价相互作用的混合流程",
+      "title": "A Hybrid Quantum Computing Pipeline for Real World Drug Discovery",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2401.03759",
+      "year": 2024
+    }
+  ],
+  "subdomain": "共价药 / 化学反应性",
+  "system": "扎努布替尼–BTK Michael加成；简化丙烯酰胺+甲硫醇负离子；磺酰氟warhead子例",
+  "tags": [
+    "BTK",
+    "共价抑制剂",
+    "反应势垒",
+    "磺酰氟"
+  ],
+  "title": "共价抑制剂：BTK反应势垒与磺酰氟反应性"
+}

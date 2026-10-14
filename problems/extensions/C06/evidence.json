@@ -1,0 +1,49 @@
+{
+  "id": "C06",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "../../_execution/2026-10-04/cross/c06-direct-synthesis-v3/results.json",
+      "current_revision": "direct-synthesis-v3",
+      "goal": "direct-synthesis-v3/GOAL.md",
+      "hardware_run": false,
+      "id": "C06",
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": true,
+      "research": "../../_execution/2026-10-04/cross/c06-direct-synthesis-v3/README.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C06-hydrogen-bond-wavepacket/mechanism.png",
+    "tasks/C06-hydrogen-bond-wavepacket/visualization.json",
+    "tasks/C06-hydrogen-bond-wavepacket/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C06-hydrogen-bond-wavepacket/README.md",
+      "sha256": "0f4b0c8ea0dd55c0a65405a2526a2ea97da1533049c21ae498dc73b359f42897"
+    },
+    {
+      "path": "tasks/C06-hydrogen-bond-wavepacket/mechanism.svg",
+      "sha256": "2c35500001d9a947517cbc13c0c510a4f674d5d537c52f644cdccc1c9cb21193"
+    },
+    {
+      "path": "tasks/C06-hydrogen-bond-wavepacket/workflow.svg",
+      "sha256": "1e0ffd598980c8acdd34919db35cb1c0fbd0a737ee85201d8e35e40a444b421f"
+    },
+    {
+      "path": "tasks/C06-hydrogen-bond-wavepacket/execution/LATEST.json",
+      "sha256": "fd51f614e746bc5c078e8e4d246bb2ff7783dde1d5a4e07834e57bbf0dd2727a"
+    },
+    {
+      "path": "tasks/_execution/2026-10-04/cross/c06-direct-synthesis-v3/README.md",
+      "sha256": "fc9934378a965ade02df135410f6656692deeab18a0e9eee6850d4da65354b4d"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright 2026 100-skills contributors
+
+Unless otherwise noted, the problem statements, figures and documentation in this
+repository (problems/, skills/ text, solutions/ text, README.md, CONTRIBUTING.md and
+release/promo/) are licensed under the Creative Commons Attribution 4.0 International
+License. To view the full legal code, visit:
+
+    https://creativecommons.org/licenses/by/4.0/legalcode
+
+You are free to share and adapt this material for any purpose, including commercially,
+as long as you give appropriate credit, provide a link to the license, and indicate if
+changes were made.
+
+Source code (release/tools/, the code part of solutions/ and skills/) is licensed under
+the Apache License, Version 2.0; see LICENSE.
+
+本仓库的题面、图示与文档采用 CC BY 4.0 许可；代码采用 Apache-2.0 许可，见 LICENSE。

@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "FOMO-CASCI+surface hopping；多态CASCI/CASSCF并检查动态关联",
+  "decision": "比较 Sn–C 与 Sn–O 激活倾向，为光刻胶局部化学模型选择提供依据。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C02",
+  "observable": "垂直电离能、指定键的多态势能切片、自旋和占据",
+  "quantum_role": "多态VQE/QSE或容错求解为电子态与态间矩阵元提供接口",
+  "scale": "PDF拟定11原子，中性CAS(6,6)/阳离子CAS(5,6)，12系统比特",
+  "sources": [
+    {
+      "access_level": "publisher_summary",
+      "id": "R1",
+      "supports": "经典SH+FOMO-CASCI对两种有机锡模型的电离动力学",
+      "title": "Ab initio photodynamics of model EUV photoresists",
+      "type": "期刊论文",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0301010418304312",
+      "year": 2018
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "qLR/qEOM 响应方法及无噪模拟；不支持本题甲醛反演已在硬件完成",
+      "title": "Quantum simulation of molecular response properties",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2301.06260",
+      "year": 2023
+    }
+  ],
+  "subdomain": "光刻与辐照化学",
+  "system": "CH₃Sn(OH)₃ 与相关 (CH₃)₃SnOH 小分子；非完整锡氧笼薄膜",
+  "tags": [
+    "EUV",
+    "有机锡",
+    "非绝热",
+    "PDF六方向"
+  ],
+  "title": "有机锡 EUV 光刻胶：电离后断键通道与多态势能面"
+}

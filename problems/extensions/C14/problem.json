@@ -1,0 +1,39 @@
+{
+  "area": "extensions",
+  "classical_baseline": "小模型动态规划/精确枚举；同模型Monte Carlo与方差缩减",
+  "decision": "评估特定介质模型的粒子到达概率能否用可逆模拟加QAE减少统计采样成本。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C14",
+  "observable": "最大飞行次数内进入指定区域的概率及估计误差",
+  "quantum_role": "经典分布表→可逆距离/反应更新与历史保存→区域标记→QAE估计标记概率",
+  "scale": "附录为两区域三飞行小电路；推广100次飞行的估算约10^5逻辑比特，非实机",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "明确输运电路、附录模拟验证、QAE读出和逻辑比特估算；不是硬件演示",
+      "title": "Estimation of the number of logical qubits required for radiation transport calculations with a quantum computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/pdf/2203.03165",
+      "year": 2022
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "QAE实现的通用方法背景；不独立证明辐射输运应用性能",
+      "title": "Iterative Quantum Amplitude Estimation",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1912.05559",
+      "year": 2019
+    }
+  ],
+  "subdomain": "统计输运与振幅估计",
+  "system": "一维虚拟粒子穿过两个介质区域，仅前向散射或吸收，固定能量与时间",
+  "tags": [
+    "统计输运与振幅估计",
+    "直接案例补缺",
+    "2026-10-04"
+  ],
+  "title": "两区域辐射输运：为振幅估计构造可逆轨迹预言机"
+}

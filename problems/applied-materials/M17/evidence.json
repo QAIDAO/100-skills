@@ -1,0 +1,45 @@
+{
+  "id": "M17",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-input-quantum-v2/results.json",
+      "goal": "public-input-quantum-v2/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/m17-parent-promotion.json",
+      "research": "public-input-quantum-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M17-mof-carbon-capture/mechanism.png",
+    "tasks/M17-mof-carbon-capture/visualization.json",
+    "tasks/M17-mof-carbon-capture/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M17-mof-carbon-capture/README.md",
+      "sha256": "d669673576d7ba216de886430d6646a25c82f8b0c8d2c3991a312f7dda7ec2d2"
+    },
+    {
+      "path": "tasks/M17-mof-carbon-capture/mechanism.svg",
+      "sha256": "c80517739e75bab038e390518437f52047c4fb6ab5b8c588ac7d7ec1e7ed2c52"
+    },
+    {
+      "path": "tasks/M17-mof-carbon-capture/workflow.svg",
+      "sha256": "1a38f37ad9998c2eca1f64649dffa1c8c9331b2e1aa7d14a9958c9bfeb9d04ee"
+    },
+    {
+      "path": "tasks/M17-mof-carbon-capture/execution/LATEST.json",
+      "sha256": "fb42ea73c0c59476f647308fb18e8346fa084ee0e07e1a429e8d24cf5b4a7722"
+    },
+    {
+      "path": "tasks/M17-mof-carbon-capture/execution/public-input-quantum-v2/RESEARCH.md",
+      "sha256": "6571869b009006c98714256bb45358f9cf4f2db9faad94a24325b37c3abf67e6"
+    }
+  ]
+}

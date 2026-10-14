@@ -1,0 +1,62 @@
+{
+  "id": "F02",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "public-cold-kappa-r93/results.json",
+      "goal": "public-cold-kappa-r93/GOAL.md",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f02-r93/review/DELIVERY-REVIEW.json",
+      "manifest": "public-cold-kappa-r93/manifest.json",
+      "previous_results": "public-lowfreq-response-r92/results.json",
+      "research": "public-cold-kappa-r93/RESEARCH.md",
+      "revision": "r93",
+      "updated_utc": "2026-10-07T03:26:32.069768+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F02-hubbard-pseudogap/execution/grand-canonical-audit-r84/results.json",
+    "tasks/F02-hubbard-pseudogap/execution/public-cold-kappa-r93/REPRODUCE.md",
+    "tasks/F02-hubbard-pseudogap/execution/public-cold-kappa-r93/results.json",
+    "tasks/F02-hubbard-pseudogap/execution/public-ds3-calibration-r86/results.json",
+    "tasks/F02-hubbard-pseudogap/execution/public-lowfreq-response-r92/results.json",
+    "tasks/F02-hubbard-pseudogap/execution/public-query-thermometry-r91/results.json",
+    "tasks/F02-hubbard-pseudogap/mechanism.png",
+    "tasks/F02-hubbard-pseudogap/visualization.json",
+    "tasks/F02-hubbard-pseudogap/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/NEXT-EXPERIMENT.md",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/audit-run-v2/output/AUDIT.json",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/figures/cold-compressibility.png",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/production-v1/protocol.json",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/review/RESOURCE-SCOPE-REVIEW.md",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/review/SOURCE-REVIEW.md",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/run/output/cold8.csv",
+    "tasks/_execution/2026-10-04/frontier/f02-r93/run/output/result.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F02-hubbard-pseudogap/README.md",
+      "sha256": "611fe0843c647a46c93d18f4ea6d14d09b41bf1fa959384bb6c8777b87d2a416"
+    },
+    {
+      "path": "tasks/F02-hubbard-pseudogap/mechanism.svg",
+      "sha256": "5d338f8977a3bc9773d84a7fa00fb62d4c5570396944158e3728a08d6f3c10ef"
+    },
+    {
+      "path": "tasks/F02-hubbard-pseudogap/workflow.svg",
+      "sha256": "03c216d933ac7e9584b126ec721516badbe7a6760f5876fb6d7ffb9696fec75d"
+    },
+    {
+      "path": "tasks/F02-hubbard-pseudogap/execution/LATEST.json",
+      "sha256": "ebaea04bccf1b1051b6306f1134353576ec6da01c48ed5ae2c3bfe2538da6a43"
+    },
+    {
+      "path": "tasks/F02-hubbard-pseudogap/execution/public-cold-kappa-r93/RESEARCH.md",
+      "sha256": "13513dcb26c9434b93b25aee430c494ae663505cd4a7bf4fd95ed251249adb95"
+    }
+  ]
+}

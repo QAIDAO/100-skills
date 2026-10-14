@@ -1,0 +1,54 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同网络Dijkstra最小动作路径、经典SA、路径蒙特卡洛/增强采样；应用层使用Anton长轨迹作参照",
+  "decision": "为构象选择与隐蔽口袋研究生成多条可比较的过渡路径，判断关键中间状态是否被探索到。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B21",
+  "observable": "有效路径比例、路径动作量、通道多样性、投影结构分布与单势垒过渡路径时间下界",
+  "quantum_role": "经典iMapD/Polar Star探索→gTPS加权图→量子退火候选路径→经典动作量与全原子轨迹核验",
+  "scale": "BPTI网络80个代表构象，原文报告使用207 qubits；全原子环境与6744个水分子在经典端，量子端编码图节点/边而非原子。",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "BPTI 80节点与207比特、iMapD/Polar Star、混合计时、gTPS动力学限制与Anton对照；期刊题名为Sampling a Rare Protein Transition Using Quantum Annealing。",
+      "title": "Sampling a rare protein transition with a hybrid classical-quantum computing algorithm",
+      "type": "预印本作者全文",
+      "url": "https://arxiv.org/html/2311.15891v1",
+      "work_id": "bpti-2311.15891",
+      "year": 2023
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "丙氨酸二肽上的方法前驱、图路径采样及数据需向作者索取的边界。",
+      "title": "Sampling rare conformational transitions with a quantum computer",
+      "type": "期刊论文",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9522734/",
+      "work_id": "10.1038/s41598-022-20032-x",
+      "year": 2022
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R3",
+      "supports": "出版页直接访问403，已核查原站检索摘要：2024-04-08正式发表；与R1同一研究。本文方法数值以已读取的作者v1为依据，不宣称已审计付费正文。",
+      "title": "Sampling a Rare Protein Transition Using Quantum Annealing",
+      "type": "期刊正式版出版记录",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jctc.3c01174",
+      "work_id": "bpti-2311.15891",
+      "year": 2024
+    }
+  ],
+  "subdomain": "构象动力学与路径采样",
+  "system": "显式溶剂中的BPTI原生态罕见重排；较早方法工作使用丙氨酸二肽",
+  "tags": [
+    "BPTI",
+    "构象转换",
+    "量子退火",
+    "gTPS",
+    "路径采样",
+    "第二轮扩展"
+  ],
+  "title": "BPTI 罕见构象转变：在构象网络上采样反应路径"
+}

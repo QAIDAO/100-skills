@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "精确矩阵指数、Krylov、HEOM/张量网络，按环境模型选基线",
+  "decision": "比较分子堆叠的能量迁移和捕获表现，筛选值得进一步计算的构型。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C03",
+  "observable": "受体布居、累计捕获概率、相干与振动敏感性",
+  "quantum_role": "变分实时间演化/Trotter或量子通道模拟",
+  "scale": "论文含单激发与多激发计算；PDF另拟6/8系统比特模型，不能混作论文原设置",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "多尺度工作流、变分/Trotter动力学及实机误差；期刊版本 DOI 10.1021/acs.jctc.1c01296",
+      "title": "Simulating Energy Transfer in Molecular Systems with Digital Quantum Computers",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2101.06879v3",
+      "year": 2021
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "本地综述已引用的方法综述；本案直接结果以R1为依据",
+      "title": "Quantum algorithms for quantum dynamics",
+      "type": "综述",
+      "url": "https://www.nature.com/articles/s43588-022-00374-2",
+      "year": 2023
+    }
+  ],
+  "subdomain": "有机光电",
+  "system": "2,2′-联噻吩二聚体的激子/振动有效模型",
+  "tags": [
+    "激子",
+    "Trotter",
+    "有机光伏",
+    "PDF六方向"
+  ],
+  "title": "联噻吩二聚体：堆叠与振动如何改变激子迁移"
+}

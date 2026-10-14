@@ -1,0 +1,55 @@
+{
+  "id": "F18",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "complete_classical_reference_qualified": false,
+      "current_results": "full-response-reference-v3/results.json",
+      "goal": "full-response-reference-v3/GOAL.md",
+      "historical_quantum_component_retained": true,
+      "manifest": "full-response-reference-v3/manifest.json",
+      "manifest_sha256": "f02efe01cc99ff51f12e84fb1e9fde085ddcaeb0851d7db7c68d782087009691",
+      "new_quantum_results": 0,
+      "numerical_qualification_complete": true,
+      "original_application_status": "incomplete",
+      "previous_results": "full-response-qualification-v2/results.json",
+      "promotion_basis": "515 independent checks and39 forward probes;416 solver rows PASS,24 physical composite gates FAIL; sealed hashes and all3PNG/representative PDF and440gate20736complexCSV exact readback; original application incomplete",
+      "research": "full-response-reference-v3/RESEARCH.md",
+      "results_report": "full-response-reference-v3/RESULTS.md",
+      "status": "failed-cutoff"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F18-nonlinear-multidimensional-spectroscopy/execution/full-response-reference-v3/RESULTS.md",
+    "tasks/F18-nonlinear-multidimensional-spectroscopy/mechanism.png",
+    "tasks/F18-nonlinear-multidimensional-spectroscopy/visualization.json",
+    "tasks/F18-nonlinear-multidimensional-spectroscopy/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F18-nonlinear-multidimensional-spectroscopy/README.md",
+      "sha256": "529bdc681d08930543f4e7fdecea78480d2056da264ed5c40981aa75edfb513e"
+    },
+    {
+      "path": "tasks/F18-nonlinear-multidimensional-spectroscopy/mechanism.svg",
+      "sha256": "e215c1c750b459ff97277c2abfa402c8eb8cecf31c852fa72d178598c246f491"
+    },
+    {
+      "path": "tasks/F18-nonlinear-multidimensional-spectroscopy/workflow.svg",
+      "sha256": "cc152f95d7cfcd0ecd3830e4c0427ba99bab282bd90b58d75360d58f6104d921"
+    },
+    {
+      "path": "tasks/F18-nonlinear-multidimensional-spectroscopy/execution/LATEST.json",
+      "sha256": "c23828b444b710fa48df4ef6912690092e05c6f8917a5beaf25c594d3fced4b3"
+    },
+    {
+      "path": "tasks/F18-nonlinear-multidimensional-spectroscopy/execution/full-response-reference-v3/RESEARCH.md",
+      "sha256": "05edf689ff955a829be631a5960a394c0974cc87ae50815f88fcfeaf2a67dd41"
+    }
+  ]
+}

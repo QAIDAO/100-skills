@@ -1,0 +1,61 @@
+{
+  "id": "F07",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "nominal-jt-dynamics-r109/results.json",
+      "current_revision": "nominal-jt-dynamics-r109",
+      "goal": "nominal-jt-dynamics-r109/GOAL.md",
+      "id": "F07",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f07-r109/review/DELIVERY-REVIEW.json",
+      "manifest": "nominal-jt-dynamics-r109/manifest.json",
+      "manifest_sha256": "d3c24a885625ca7d3e3bad62ded15202412fb5354ac6fbd34d43f3fcc5ed7208",
+      "original_target_status": "incomplete",
+      "previous_results": "public-density-readout-r108/results.json",
+      "research": "nominal-jt-dynamics-r109/RESEARCH.md",
+      "revision": "r109",
+      "updated_utc": "2026-10-07T11:27:29.790451+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F07-conical-intersection-dynamics/execution/nominal-jt-dynamics-r109/REPRODUCE.md",
+    "tasks/F07-conical-intersection-dynamics/execution/nominal-jt-dynamics-r109/cutoff42.csv",
+    "tasks/F07-conical-intersection-dynamics/execution/nominal-jt-dynamics-r109/manifest.json",
+    "tasks/F07-conical-intersection-dynamics/execution/nominal-jt-dynamics-r109/observations-d40.csv",
+    "tasks/F07-conical-intersection-dynamics/execution/nominal-jt-dynamics-r109/states56.csv",
+    "tasks/F07-conical-intersection-dynamics/execution/public-density-readout-r108/results.json",
+    "tasks/F07-conical-intersection-dynamics/mechanism.png",
+    "tasks/F07-conical-intersection-dynamics/visualization.json",
+    "tasks/F07-conical-intersection-dynamics/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f07-r109/NEXT-EXPERIMENT.md",
+    "tasks/_execution/2026-10-04/frontier/f07-r109/figures/nominal-jt.png",
+    "tasks/_execution/2026-10-04/frontier/f07-r109/source/SOURCE-AUDIT.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F07-conical-intersection-dynamics/README.md",
+      "sha256": "c75b79ac19a08e9fe7fdc0b1e1eb8c0765785c9de64f24f94900c70fba907af4"
+    },
+    {
+      "path": "tasks/F07-conical-intersection-dynamics/mechanism.svg",
+      "sha256": "d13e449f01bc00ecb60d2b1aa45c80589affa79f218b54238f550cd8175afd18"
+    },
+    {
+      "path": "tasks/F07-conical-intersection-dynamics/workflow.svg",
+      "sha256": "7216823994d04d4dc447171271ffa746ba797de95ee387c292942ccd94c2d601"
+    },
+    {
+      "path": "tasks/F07-conical-intersection-dynamics/execution/LATEST.json",
+      "sha256": "79867ead1a983fe739684d3d3c26b395d7cb7ef2640f1f9d619c4d6369a95c21"
+    },
+    {
+      "path": "tasks/F07-conical-intersection-dynamics/execution/nominal-jt-dynamics-r109/RESEARCH.md",
+      "sha256": "d68405f0e7df2b2a07a4810b1739ab76b610b813af0ee2a35f81f4b4be6a3229"
+    }
+  ]
+}

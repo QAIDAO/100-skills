@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "相同结构/活性空间的FCI、DFT、多参考电子结构及QM/MM基线",
+  "decision": "判断量子电子结构修正是否改变水网络质子转移路径的势垒排序。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B05",
+  "observable": "沿反应坐标的电子能曲线、相对势垒",
+  "quantum_role": "FAST-VQE与SAT门约简；经典结构与环境处理",
+  "scale": "整酶采用经典力场与DFT等分层；QPU只处理精选活性空间",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "碳酸酐酶质子转移的FAST-VQE多尺度能量曲线",
+      "title": "Calculating the energy profile of an enzymatic reaction on a quantum computer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/html/2408.11091v3",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "前药活化断键与共价相互作用的混合流程",
+      "title": "A Hybrid Quantum Computing Pipeline for Real World Drug Discovery",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2401.03759",
+      "year": 2024
+    }
+  ],
+  "subdomain": "酶反应 / 多尺度电子结构",
+  "system": "碳酸酐酶催化CO₂水合循环中的质子转移子步骤",
+  "tags": [
+    "碳酸酐酶",
+    "FAST-VQE",
+    "质子转移",
+    "QM/MM"
+  ],
+  "title": "碳酸酐酶：量子硬件参与真实酶反应能量曲线"
+}

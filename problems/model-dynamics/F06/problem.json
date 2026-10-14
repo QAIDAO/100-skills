@@ -1,0 +1,40 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "截断声子 ED、DMRG、DQMC、主方程求解",
+  "decision": "判断电子排斥与晶格介导吸引何时改变电荷序和磁序，确定是否必须增加声子自由度。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F06",
+  "observable": "电荷/自旋结构因子、有效跃迁、稳态电流",
+  "quantum_role": "量子电路拟表示电子关联；声子重整化经典优化；另一支提案为原生电子—机械振动模拟。",
+  "scale": "NGS–VQE 论文含 4 位点状态矢量基准；纳米管研究四个自旋极化量子点",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "NGS–VQE、状态矢量模拟、Hubbard–Holstein 半填充基准及声子近似",
+      "title": "A hybrid quantum-classical method for electron-phonon systems",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s42005-023-01353-3",
+      "year": 2023
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "四量子点开放系统数值提案、稳态 CDW 与电流特征，不是实机数据",
+      "title": "Steady-state Peierls transition in nanotube quantum simulator",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41534-022-00675-4",
+      "year": 2023
+    }
+  ],
+  "subdomain": "电子—声子与极化子",
+  "system": "Hubbard–Holstein 链与悬空纳米管四量子点开放系统",
+  "tags": [
+    "电子声子",
+    "Peierls",
+    "Holstein",
+    "CDW"
+  ],
+  "title": "电子—声子竞争与 Peierls 电荷序：混合求解和开放器件提案"
+}

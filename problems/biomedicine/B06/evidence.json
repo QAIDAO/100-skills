@@ -1,0 +1,45 @@
+{
+  "id": "B06",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "revision-4-input-closure/results.json",
+      "goal": "revision-4-input-closure/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b06-parent-promotion.json",
+      "research": "revision-4-input-closure/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B06-thermolysin-free-energy/mechanism.png",
+    "tasks/B06-thermolysin-free-energy/visualization.json",
+    "tasks/B06-thermolysin-free-energy/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B06-thermolysin-free-energy/README.md",
+      "sha256": "5ccd8b2de81399972110fac1e033acf47ef01e1b256504af73109ce8170ff4ff"
+    },
+    {
+      "path": "tasks/B06-thermolysin-free-energy/mechanism.svg",
+      "sha256": "2007fb70e4d96051c6a130ad5bb9c7f143443d946b6f56179a2f365a3388bf19"
+    },
+    {
+      "path": "tasks/B06-thermolysin-free-energy/workflow.svg",
+      "sha256": "3fc8016dcf966e060a15fd32f39ba9d241828c2fefbb1e26cc4bd309c3dacd0e"
+    },
+    {
+      "path": "tasks/B06-thermolysin-free-energy/execution/LATEST.json",
+      "sha256": "41f46ab4c7f44987c65a946874e6e7b6f8761c423c0772c712c36fe59b6e22d2"
+    },
+    {
+      "path": "tasks/B06-thermolysin-free-energy/execution/revision-4-input-closure/RESEARCH.md",
+      "sha256": "9cea3c0b1eab3cc480d2450d2cc43e0a028ac0e6550a8ce927968497bf48b28a"
+    }
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "id": "M16",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "companion_audit": "public-formula-audit-v2/accepted-manuscript-audit.json",
+      "current_results": "public-formula-audit-v2/results.json",
+      "goal": "public-formula-audit-v2/GOAL.md",
+      "previous_results": "results.json",
+      "research": "public-formula-audit-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M16-hbn-defect-emission/mechanism.png",
+    "tasks/M16-hbn-defect-emission/visualization.json",
+    "tasks/M16-hbn-defect-emission/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M16-hbn-defect-emission/README.md",
+      "sha256": "21b2d88da1ceaa12c58f134291dc1f7e3f837ebad929b87cdc3893ccef09a66b"
+    },
+    {
+      "path": "tasks/M16-hbn-defect-emission/mechanism.svg",
+      "sha256": "1cd8495c11144e549822a67624276a399fd2a8e498a9fcd55efc42270806fe3c"
+    },
+    {
+      "path": "tasks/M16-hbn-defect-emission/workflow.svg",
+      "sha256": "abe1b026910278ac73a689a14c206e328b7d7c185dcbbc129b179143d515d151"
+    },
+    {
+      "path": "tasks/M16-hbn-defect-emission/execution/LATEST.json",
+      "sha256": "75cf7aa038c8919a42a0816c85af0f563b306afd67827bcea215d232a964c14c"
+    },
+    {
+      "path": "tasks/M16-hbn-defect-emission/execution/public-formula-audit-v2/RESEARCH.md",
+      "sha256": "cad3cbfda2933b7b19b068322eb529ac985181f2bdb32f706c608ab5e02abaef"
+    }
+  ]
+}

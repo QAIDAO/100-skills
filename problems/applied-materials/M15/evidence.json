@@ -1,0 +1,55 @@
+{
+  "id": "M15",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "public-salt-qpe-v2/results.json",
+      "goal": "public-salt-qpe-v2/GOAL.md",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/m15-parent-audit.json",
+      "previous_pointer": null,
+      "research": "public-salt-qpe-v2/report.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/GOAL.md",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/attempt-1/manifest.json",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/geometries.json",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/manifest.json",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/post-run-provenance.json",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/resource-ledger.json",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/results.json",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/source-input-audit.json",
+    "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/validation.json",
+    "tasks/M15-electrolyte-fault-tolerant/mechanism.png",
+    "tasks/M15-electrolyte-fault-tolerant/visualization.json",
+    "tasks/M15-electrolyte-fault-tolerant/workflow.png",
+    "tasks/_execution/2026-10-04/validation/m15-parent-audit.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M15-electrolyte-fault-tolerant/README.md",
+      "sha256": "fd27c569357a222eed630f5821095227157969ee9c852d8e39ab920b8ec658d3"
+    },
+    {
+      "path": "tasks/M15-electrolyte-fault-tolerant/mechanism.svg",
+      "sha256": "82811b1524cfed7877afac226ba5dd4f57e5b6d809630d83616ee7463743bf38"
+    },
+    {
+      "path": "tasks/M15-electrolyte-fault-tolerant/workflow.svg",
+      "sha256": "31cda6b06a089ff79371e82d1ba740a93d58b913da74cbd5b2c0bbd9078f1310"
+    },
+    {
+      "path": "tasks/M15-electrolyte-fault-tolerant/execution/LATEST.json",
+      "sha256": "f8dde7956bf7d6e89ede4020b590f6844829030141819fd05aad0037935d4121"
+    },
+    {
+      "path": "tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/report.md",
+      "sha256": "980456c4a0372efa8981d4b29082e4d31bacca7076a983180b042f49eb1af252"
+    }
+  ]
+}

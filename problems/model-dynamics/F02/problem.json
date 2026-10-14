@@ -1,0 +1,40 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "DQMC、METTS、有限温簇方法",
+  "decision": "检验赝能隙是否能由最小 Hubbard 模型产生，并约束温度—掺杂区域。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F02",
+  "observable": "κ=∂n/∂μ、低能谱权重、多点自旋电荷关联",
+  "quantum_role": "光晶格费米子模拟，测压缩率与动量相关调制谱。",
+  "scale": "冷原子格点模型；不是全电子铜氧化物，未统一为门模型比特数",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "压缩率峰、谱权重变化、实验提取方法；arXiv 元数据已给出 Nature 656 (2026) 602–608 与 DOI s41586-026-10875-z",
+      "title": "Pseudogap in a Fermi-Hubbard quantum simulator",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2509.18075v1",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "v2 最新题名、多点关联最高五阶、DQMC/METTS 对照及 PNAS DOI 10.1073/pnas.2525539123",
+      "title": "Observation of emergent scaling of spin-charge correlations at the onset of the pseudogap",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2412.17801",
+      "year": 2026
+    }
+  ],
+  "subdomain": "强关联模型与谱学",
+  "system": "二维掺杂排斥 Hubbard 模型",
+  "tags": [
+    "赝能隙",
+    "冷原子",
+    "Hubbard",
+    "谱权重"
+  ],
+  "title": "掺杂 Hubbard 赝能隙：热力学与谱学联合检验"
+}

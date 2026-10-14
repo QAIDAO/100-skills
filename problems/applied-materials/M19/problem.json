@@ -1,0 +1,42 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同空间DMRG、收敛多参考计算；独立DFT溶剂热校正及实验反应机制",
+  "decision": "判断钼钳形配体及还原步骤的电子结构校正是否改变C–N成键和产物释放通道排序。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M19",
+  "observable": "反应物、过渡态、产物的相对能和不同自旋态能差",
+  "quantum_role": "AVAS活性空间与双因子化QPE能量估计，结合初态和容错资源模型",
+  "scale": "原文小/大空间混合；大空间代表101电子75轨道，不能以全分子原子数代替量子空间",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.48550/arXiv.2406.06335",
+      "id": "R1",
+      "supports": "三组合成固氮任务、氰酸根子任务活性空间和QPE/DMRG预算",
+      "title": "Feasibility of accelerating homogeneous catalyst discovery with fault-tolerant quantum computers",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2406.06335v1",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.1038/s41467-022-33809-5",
+      "id": "R2",
+      "supports": "实验建立钼PNP介导的氰酸根循环，结合经典反应机制",
+      "title": "Direct synthesis of cyanate anion from dinitrogen catalysed by molybdenum complexes bearing pincer-type ligand",
+      "type": "期刊论文",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9592615/",
+      "year": 2022
+    }
+  ],
+  "subdomain": "工业均相催化",
+  "system": "PNP钳形配体钼配合物生成氰酸根的两个关键步骤",
+  "tags": [
+    "第二轮扩展",
+    "固氮",
+    "均相催化",
+    "QPE"
+  ],
+  "title": "合成固氮到氰酸根：钼钳形配合物的竞争自旋与反应能"
+}

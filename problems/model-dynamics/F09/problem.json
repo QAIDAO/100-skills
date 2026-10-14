@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "精确自旋动力学、既有 NMR 谱法、经典分子动力学/力场",
+  "decision": "判断新增多体 NMR 信号能否区分候选构象并改进结构参数置信区间。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F09",
+  "observable": "核自旋 OTOC 曲线、平均 H–H 距离、平均二面角",
+  "quantum_role": "超导 QPU 计算给定核自旋 Hamiltonian 的 OTOC，经典优化几何参数。",
+  "scale": "应用电路分别为 9/15 核自旋；不等于 Quantum Echoes 大尺度随机基准",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "甲苯/二甲基联苯结构学习、9/15 自旋、QPU 曲线与误差缓解",
+      "title": "Quantum computation of molecular geometry via many-body nuclear spin echoes",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2510.19550v1",
+      "year": 2025
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "数字量子模拟 NMR 实验的前序原始研究；Science Advances 9 eadh2594",
+      "title": "Digital quantum simulation of NMR experiments",
+      "type": "期刊论文",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10656062/",
+      "year": 2023
+    },
+    {
+      "access_level": "publisher_summary",
+      "id": "R3",
+      "supports": "研究团队明确区分 OTOC 随机基准优势与未超经典的分子应用",
+      "title": "A verifiable quantum advantage",
+      "type": "机构技术说明",
+      "url": "https://research.google/blog/a-verifiable-quantum-advantage/",
+      "year": 2025
+    }
+  ],
+  "subdomain": "谱学反演与分子结构",
+  "system": "液晶中部分取向的标记甲苯与 3′,5′-二甲基联苯",
+  "tags": [
+    "NMR",
+    "Quantum Echoes",
+    "结构反演",
+    "甲苯"
+  ],
+  "title": "NMR 多体回波反演分子几何：把量子信号接回实验结构"
+}

@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同CAS CASCI、CASSCF扩大空间、适用时CCSD/DFT",
+  "decision": "判断哪类药物电子子问题值得交给量子求解器，并避免“大分子小CAS”的虚假规模叙事。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B19",
+  "observable": "轨道占据、相关能/相对能、选轨误差、线路资源",
+  "quantum_role": "化学选轨→UCCSD/HEA→理想/硬件分级验证",
+  "scale": "模拟表列CAS(2e,2o)/(4e,4o)；实际QPU段为水/苯/阿司匹林2比特HEA",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "Table1/2/3/4和硬件段落的模型、执行级别及待核不一致",
+      "title": "Benchmarking the Impact of Active Space Selection on the VQE Pipeline for Quantum Drug Discovery",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2512.18203v1",
+      "year": 2025
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "P450经典多参考对照与表面码QPE资源分析；数据公开",
+      "title": "Reliably assessing the electronic structure of cytochrome P450 on today’s classical computers and tomorrow’s quantum computers",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1073/pnas.2203533119",
+      "year": 2022
+    }
+  ],
+  "subdomain": "量子化学选题 / 活性空间",
+  "system": "水、苯、阿司匹林、奥司他韦、吗啡、洛伐他汀、伊马替尼",
+  "tags": [
+    "药物样分子",
+    "活性空间",
+    "证据审计",
+    "VQE"
+  ],
+  "title": "药物样分子：选轨基准及能量定义审计"
+}

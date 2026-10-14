@@ -1,0 +1,53 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "相同数据的经典多目标优化、SA、随机/贝叶斯搜索、直接序列模型；冻结实验候选预算",
+  "decision": "在候选预算有限时，平衡预测结合、模型不确定性与可开发性，挑选值得独立验证的序列候选。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B23",
+  "observable": "候选多样性、可行率、预测不确定性、独立结合与可开发性读数",
+  "quantum_role": "经典编码/预测器→离散多目标优化与退火→经典解码及排序→独立实验或结构比较",
+  "scale": "WS-MOQA使用12,737条已标注序列；产生19,778个候选，选择5个测试，其中1个满足所需特异结合表现",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "数据规模、候选及五选一实验结果、多目标预测器和代码入口。",
+      "title": "Extensive antibody search with whole spectrum black-box optimization",
+      "type": "期刊全文；DOI 10.1038/s41598-023-51095-z",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10767033/",
+      "work_id": "PMC10767033",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "离散潜空间和退火参与的肽设计工作流；本案只作方法与证据分层。",
+      "title": "Quantum Annealing Designs Nonhemolytic Antimicrobial Peptides in a Discrete Latent Space",
+      "type": "期刊全文；DOI 10.1021/acsmedchemlett.2c00487",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10184305/",
+      "work_id": "10.1021/acsmedchemlett.2c00487",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "物理驱动结合肽设计的独立路线；不据摘要补充未核验硬件或湿实验数值。",
+      "title": "De Novo Design of Protein-Binding Peptides by Quantum Computing",
+      "type": "作者预印本摘要",
+      "url": "https://arxiv.org/abs/2503.05458",
+      "work_id": "2503.05458",
+      "year": 2025
+    }
+  ],
+  "subdomain": "治疗性序列设计",
+  "system": "治疗性肽和抗体序列候选；固定研发任务下的多目标搜索，非全蛋白电子结构",
+  "tags": [
+    "抗体",
+    "肽",
+    "多目标优化",
+    "量子退火",
+    "第二轮扩展"
+  ],
+  "title": "治疗性肽与抗体：序列空间的多目标候选搜索"
+}

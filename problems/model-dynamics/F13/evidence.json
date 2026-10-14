@@ -1,0 +1,27 @@
+{
+  "id": "F13",
+  "latest": null,
+  "omitted": [
+    "tasks/F13-bethe-self-consistent-siam/mechanism.png",
+    "tasks/F13-bethe-self-consistent-siam/visualization.json",
+    "tasks/F13-bethe-self-consistent-siam/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F13-bethe-self-consistent-siam/README.md",
+      "sha256": "e879c976ac9ad94b398dc5ec5e6d4439c10527c520e9e55a4e5268e10eb268f6"
+    },
+    {
+      "path": "tasks/F13-bethe-self-consistent-siam/mechanism.svg",
+      "sha256": "ac2dba2e101eca2c3480e5caad9106cc28a0c01a3e5e2efaa2657761d1780c0f"
+    },
+    {
+      "path": "tasks/F13-bethe-self-consistent-siam/workflow.svg",
+      "sha256": "624327faef9b200681da599d9ce8ebde65ba93195d0fb9d6e267bfe3de27271a"
+    }
+  ]
+}

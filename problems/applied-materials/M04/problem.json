@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "TDDFT/ΔSCF作低成本参照；RAS/多参考响应和适当张量网络作强参照",
+  "decision": "判断充电后的谱变化来自氧空穴、O–O成键还是过渡金属电子重排，选择后续原位实验。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M04",
+  "observable": "XAS截面σ(ω)、峰位、相对强度、谱权重和机理判别置信度",
+  "quantum_role": "制备偶极激发态并时间演化，测相关函数，经典傅里叶变换得展宽谱",
+  "scale": "CAS(22e,18o)是局域活性空间；100为工作逻辑比特，绝非现有100物理比特即可执行",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "CAS(22e,18o)谱学资源及优化；HTML有缺失且门种口径与摘要冲突",
+      "title": "Fast simulations of X-ray absorption spectroscopy for battery materials on a quantum computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2506.15784v2",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "电池局域XAS三个量子算法及谱学任务定位",
+      "title": "Simulating X-ray absorption spectroscopy of battery materials on a quantum computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2405.11015",
+      "year": 2024
+    }
+  ],
+  "subdomain": "电池谱学与退化",
+  "system": "富锂锰氧化物中的Li₄Mn₂O局域团簇与氧K边",
+  "tags": [
+    "电池谱学与退化",
+    "资源估算",
+    "重点储备"
+  ],
+  "title": "富锂正极 XAS：用氧 K 边指纹区分氧化还原与结构退化"
+}

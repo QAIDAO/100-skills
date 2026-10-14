@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "HF/CASSCF/selected-CI/DMRG试探态AFQMC、FCI及耦合簇",
+  "decision": "判断复杂关联体系的 AFQMC 偏差是否值得引入量子试探态而非改进经典试探态。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F12",
+  "observable": "基态/原子化能、试探态约束偏差、重叠估计成本",
+  "quantum_role": "量子电路提供试探波函数重叠信息；随机行走和大空间相关处理主要在经典端。",
+  "scale": "2022最多16量子比特辅助最多120轨道的经典计算；二者绝非同一规模",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "16比特/120轨道分工、H₄原子化能、经典传播与重叠查询、未证明实用优势",
+      "title": "Unbiasing fermionic quantum Monte Carlo with a quantum computer",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41586-021-04351-z",
+      "year": 2022
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "Matchgate影子、硬件噪声鲁棒及昂贵经典后处理；PhysRevResearch.6.043063",
+      "title": "Evaluating a quantum-classical quantum Monte Carlo algorithm with Matchgate shadows",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2404.18303v2",
+      "year": 2024
+    },
+    {
+      "access_level": "publisher_summary",
+      "id": "R3",
+      "supports": "研究团队提供论文复现notebook与实验波函数/Hamiltonian入口",
+      "title": "QCQMC",
+      "type": "机构技术说明",
+      "url": "https://quantumai.google/cirq/experiments/qcqmc",
+      "year": 2024
+    }
+  ],
+  "subdomain": "多电子求解与混合算法",
+  "system": "H₄等分子及周期金刚石小模型的电子结构示范",
+  "tags": [
+    "AFQMC",
+    "试探波函数",
+    "经典影子",
+    "金刚石"
+  ],
+  "title": "量子辅助 AFQMC：用小量子试探态减少大基组约束偏差"
+}

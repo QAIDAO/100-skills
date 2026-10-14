@@ -1,0 +1,61 @@
+{
+  "id": "F05",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "public-counting-diagnostic-v2/results.json",
+      "goal": "public-counting-diagnostic-v2/GOAL.md",
+      "manifest": "public-counting-diagnostic-v2/manifest.json",
+      "manifest_sha256": "b6a064281945b86f0242961fb9bf98a7fbbbf31e40de936a04395067d516fbf9",
+      "new_quantum_results": 0,
+      "original_application_status": "incomplete",
+      "previous_results": "results.json",
+      "promotion_basis": "5316 independent numeric checks and24LP; final PNG/PDF viewed; conditional source gaps preserved; old quantum component SHA-bound",
+      "research": "public-counting-diagnostic-v2/RESEARCH.md",
+      "results_report": "public-counting-diagnostic-v2/RESULTS.md",
+      "status": "source_numeric_audit_complete_target_blocked"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F05-nonequilibrium-spin-transport/execution/RESULTS.md",
+    "tasks/F05-nonequilibrium-spin-transport/execution/public-counting-diagnostic-v2/data/plot-data-all12.csv",
+    "tasks/F05-nonequilibrium-spin-transport/execution/public-counting-diagnostic-v2/figures/f05-ordinal-diagnostic.pdf",
+    "tasks/F05-nonequilibrium-spin-transport/execution/public-counting-diagnostic-v2/figures/f05-ordinal-diagnostic.png",
+    "tasks/F05-nonequilibrium-spin-transport/execution/public-counting-diagnostic-v2/raw.json",
+    "tasks/F05-nonequilibrium-spin-transport/mechanism.png",
+    "tasks/F05-nonequilibrium-spin-transport/visualization.json",
+    "tasks/F05-nonequilibrium-spin-transport/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f05-counting-audit-r33/producer.py",
+    "tasks/_execution/2026-10-04/frontier/f05-method-review-r33/REPORT.md",
+    "tasks/_execution/2026-10-04/frontier/f05-method-review-r33/production/audit-result.json",
+    "tasks/_execution/2026-10-04/frontier/f05-source-closure-r33/REPORT.md",
+    "tasks/_execution/2026-10-04/validation/f05-round33-acceptance-v2.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F05-nonequilibrium-spin-transport/README.md",
+      "sha256": "bf694e989f6af88402ddaeeb35b50c85542128c79267988474e38a233e7c5a20"
+    },
+    {
+      "path": "tasks/F05-nonequilibrium-spin-transport/mechanism.svg",
+      "sha256": "1a8bc0618fca4780cea9f12d5af0bd5e3a37552f6e08176431ed88e2a1aaa0cf"
+    },
+    {
+      "path": "tasks/F05-nonequilibrium-spin-transport/workflow.svg",
+      "sha256": "ab2e3471da4463071fc7bfbdfcad79b46d96b72d0f72e3f2c52ec241f24ed482"
+    },
+    {
+      "path": "tasks/F05-nonequilibrium-spin-transport/execution/LATEST.json",
+      "sha256": "22efbbb602de95aff175fe26d422b98609dc27e1e1ad5b1086a35dc7a1ae79f2"
+    },
+    {
+      "path": "tasks/F05-nonequilibrium-spin-transport/execution/public-counting-diagnostic-v2/RESEARCH.md",
+      "sha256": "350dc10805dc2cc7abd545a8e3efedf3e7a87f830c922e334e8222ee34275303"
+    }
+  ]
+}

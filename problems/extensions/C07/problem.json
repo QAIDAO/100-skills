@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "小模型密度矩阵精确传播；大自旋体系张量网络/半经典方法",
+  "decision": "检验超精细耦合、复合与环境模型是否足以解释磁场方向依赖。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "C07",
+  "observable": "单重/三重态概率、积分反应产率、角向各向异性",
+  "quantum_role": "酉扩张编码开放系统通道并测反应通量",
+  "scale": "2023文献在IBM QASM模拟器演示；QASM不是实机",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "QASM模拟器而非真实QPU；酉扩张开放动力学",
+      "title": "Quantum Simulation of the Radical Pair Dynamics of the Avian Compass",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2211.15427",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "经典张量网络是应纳入的竞争路线",
+      "title": "Introduction to modelling radical pair quantum spin dynamics with tensor networks",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2509.22104",
+      "year": 2025
+    }
+  ],
+  "subdomain": "生物物理与自旋化学",
+  "system": "自由基对电子自旋及少量核自旋，简化生物罗盘模型",
+  "tags": [
+    "自由基对",
+    "开放系统",
+    "磁感应",
+    "自旋"
+  ],
+  "title": "自由基对自旋化学：磁场方向与化学产率的模型连接"
+}

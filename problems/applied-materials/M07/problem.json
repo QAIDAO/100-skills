@@ -1,0 +1,48 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "收敛DFT+U/混合泛函、NEB、适用周期耦合簇或QMC、相图凸包",
+  "decision": "判断未来高精度周期电子能是否能解决电压、扩散或分解稳定性的关键误差。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M07",
+  "observable": "平均插锂电压、迁移电子势垒、分解反应能；温度性质另加自由能",
+  "quantum_role": "以qubitization/QPE求周期材料基态能，经典组合成应用性质",
+  "scale": "第一量子化周期电子与平面波表示；完整逻辑/物理成本依基组和精度变化",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "Li2FeSiO4电压、迁移、热稳定性与第一量子化资源；PRA106,032428",
+      "title": "Simulating key properties of lithium-ion batteries with a fault-tolerant quantum computer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2204.11890",
+      "year": 2022
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "态制备与强经典启发式共同约束基态任务的优势判断",
+      "title": "Evaluating the evidence for exponential quantum advantage in ground-state quantum chemistry",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41467-023-37587-6",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "富锂锰/镍锰氧化物及氧氟化物的赝势容错量子成本，不是Li2FeSiO4同例复现",
+      "title": "Quantum simulation of battery materials using ionic pseudopotentials",
+      "type": "期刊论文",
+      "url": "https://quantum-journal.org/papers/q-2023-07-10-1049/",
+      "year": 2023
+    }
+  ],
+  "subdomain": "电池电子结构",
+  "system": "硅酸亚铁锂Li₂FeSiO₄及不同锂含量/迁移路径构型",
+  "tags": [
+    "电池电子结构",
+    "资源估算",
+    "重点储备"
+  ],
+  "title": "Li₂FeSiO₄ 正极：电压、离子迁移与热稳定性的容错成本"
+}

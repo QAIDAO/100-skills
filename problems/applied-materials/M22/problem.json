@@ -1,0 +1,62 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同截断QED-FCI；增大体系需比较QED-DMRG、多参考与收敛光子基组",
+  "decision": "在进入真实腔催化模型前，判断电子—光子联合求解和编码选择是否值得进一步投入。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M22",
+  "observable": "极化激元低能态、断键曲线、光诱导避免交叉及态组成",
+  "quantum_role": "CQE/ACSE求解Pauli–Fierz模型；SA-VQE比较qubit、qudit与qumode编码",
+  "scale": "2025 CQE硬件实际使用3比特：2比特电子配置与1比特0/1光子；127比特是处理器容量",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.1088/2058-9565/ad9fa5",
+      "id": "R1",
+      "supports": "H4数值与H2三比特硬件演示；ACSE-1相对QED-FCI-1约11 mHa平均绝对误差；ACSE精确性边界",
+      "title": "Quantum algorithm for polaritonic chemistry based on an exact ansatz",
+      "type": "期刊论文",
+      "url": "https://inspirehep.net/files/2380acccbc8294d54fda6335009149db",
+      "year": 2025
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "H2单腔SA-VQE三种架构的态矢模拟、光子截断和QED-FCI对照",
+      "title": "Ab Initio Polaritonic Chemistry on Diverse Quantum Computing Platforms: Qubit, Qudit, and Hybrid Qubit-Qumode Architectures",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/html/2506.12504v2",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.1021/acs.jpclett.1c02659",
+      "id": "R3",
+      "supports": "H4腔内QED-UCC/VQE和QED-EOM的原始方法；不作为硬件运行证据",
+      "title": "Polaritonic Unitary Coupled Cluster for Quantum Computations",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2106.09842",
+      "year": 2021
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.1021/acs.jctc.4c00986",
+      "id": "R4",
+      "supports": "经典QED-DMRG在寡并苯上最多22个相关π轨道，作为强经典竞争来源",
+      "title": "Polaritonic Chemistry Using the Density Matrix Renormalization Group Method",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1021/acs.jctc.4c00986",
+      "year": 2024
+    }
+  ],
+  "subdomain": "强光—物质耦合",
+  "system": "腔耦合H2及矩形形变H4；单光子模与最小电子基组",
+  "tags": [
+    "直接缺口补充",
+    "极化激元",
+    "CQE",
+    "SA-VQE",
+    "电子光子"
+  ],
+  "title": "腔内极化激元：电子—光子关联态与编码选择"
+}
