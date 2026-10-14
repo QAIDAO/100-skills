@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "密度泛函微扰的电子—声子计算与 Eliashberg 理论；SSCHA 与 PIMD 处理非谐量子核；QMC",
+  "decision": "判断电子关联与非谐量子核效应是否改变耦合强度的估计，从而影响高 Tc 氢化物候选的筛选。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "F20",
+  "observable": "电子—声子耦合常数 λ 及其模式分解、同位素效应指数、量子核分布与相对自由能",
+  "quantum_role": "把电子与声子共同编码到量子比特（已有 Holstein 类模型的算法与真机演示），用于含强非谐与强耦合的有效模型；第一性原理参数化留在经典端（提案）",
+  "scale": "第一性原理需全布里渊区声子；量子算法目前只能处理小格点的电子—声子模型",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "第一性原理：费米能附近的大量电子态与氢衍生的高频声子强耦合",
+      "title": "Origin of High-Temperature Superconductivity in Compressed LaH10",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1811.08548",
+      "year": 2018
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "Q1",
+      "supports": "把低能声子态编码到量子比特，额外比特数随体系线性增长；Holstein 极化子模拟与精确对角化一致",
+      "title": "Electron-Phonon Systems on a Universal Quantum Computer",
+      "type": "预印本；期刊版 Phys. Rev. Lett. 121, 110504",
+      "url": "https://arxiv.org/abs/1802.07347",
+      "year": 2018
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "Q2",
+      "supports": "在 IBM 量子计算机上模拟电子—声子动力学",
+      "title": "Recompilation-enhanced simulation of electron-phonon dynamics on IBM Quantum computers",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2202.08270",
+      "year": 2022
+    }
+  ],
+  "subdomain": "超导材料 / 电子—声子",
+  "system": "H₃S、LaH₁₀ 等百万大气压下的富氢化合物，以氢振动主导的电子—声子耦合与非谐量子核效应",
+  "tags": [
+    "氢化物超导",
+    "电子声子",
+    "量子核效应",
+    "仅文献"
+  ],
+  "title": "高压氢化物：电子—声子耦合与量子核效应"
+}

@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "QM/MM 动力学（DFT 层级）；多参考方法与 EOM-CC 激发态；Marcus/超交换理论；飞秒光谱实验",
+  "decision": "判断修复效率受电子转移还是开环步骤限制，从而决定仿生修复催化剂应优化哪一段。",
+  "domain": "生物医药",
+  "has_reference": false,
+  "id": "B30",
+  "observable": "电子转移速率与路径、开环势垒与时间尺度、回传电子的竞争通道",
+  "quantum_role": "对黄素—二聚体电子转移的局部活性空间做嵌入，用多态子空间或 QPE 求关键态能与耦合，再接入经典速率理论（提案）",
+  "scale": "黄素辅因子加二聚体与关键残基的 QM 区，约百原子；多态、电荷转移态并存",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "QM/MM 动力学：电子注入后环丁烷异步协同开环，数皮秒内完成",
+      "title": "A QM/MM Investigation of Thymine Dimer Repair by DNA Photolyase",
+      "type": "期刊论文；ChemPhysChem 10, 400",
+      "url": "https://infoscience.epfl.ch/items/c63e1a49-583c-4532-907a-6404db42ce4b",
+      "year": 2009
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "飞秒光谱：黄素辅因子中的腺嘌呤通过超交换介导电子转移",
+      "title": "Electron Tunneling Pathways and Role of Adenine in Repair of Cyclobutane Pyrimidine Dimer by DNA Photolyase",
+      "type": "期刊论文；JACS 134, 8104",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3354007",
+      "year": 2012
+    }
+  ],
+  "subdomain": "核酸光化学 / 酶修复",
+  "system": "紫外照射形成的环丁烷嘧啶二聚体，以及光解酶中激发态 FADH⁻ 向损伤位点的电子转移与环丁烷开环",
+  "tags": [
+    "DNA修复",
+    "光解酶",
+    "电子转移",
+    "仅文献"
+  ],
+  "title": "DNA 光损伤与光解酶修复：电子转移驱动的环丁烷断裂"
+}

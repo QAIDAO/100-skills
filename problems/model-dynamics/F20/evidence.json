@@ -1,0 +1,15 @@
+{
+  "id": "F20",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/F20-hydride-electron-phonon/README.md",
+      "sha256": "96b156527931ad95b12200335f93a8a2c71e7db20f45745d5a3ea6af26a0f1fb"
+    }
+  ]
+}

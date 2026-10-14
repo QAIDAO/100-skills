@@ -1,0 +1,31 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "TDDFT、EOM-CC、ADC、多参考方法；与发光谱和延迟荧光动力学实验比较",
+  "decision": "判断候选分子的单三重态能隙与自旋轨道耦合是否足以支撑高效反向系间窜越，从而筛选 TADF 与磷光发光体。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M26",
+  "observable": "S₁–T₁ 能隙 ΔE_ST、跃迁偶极与自旋轨道耦合矩阵元",
+  "quantum_role": "用 qEOM-VQE、VQD 等多态子空间算法求 S₁ 与 T₁，近期限于前线轨道活性空间；远期用 QPE 扩大活性空间（已有真机演示）",
+  "scale": "已有演示只用 HOMO/LUMO 双轨道活性空间与双 ζ 基组；实用筛选需要更大活性空间与环境效应",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "Q1",
+      "supports": "qEOM-VQE 与 VQD 在模拟器和真机上计算 S₁、T₁；模拟器 ΔE_ST 与实验吻合，真机经态层析缓解后误差 4 mHa 以内",
+      "title": "Applications of quantum computing for investigations of electronic transitions in phenylsulfonyl-carbazole TADF emitters",
+      "type": "期刊论文；npj Computational Materials",
+      "url": "https://doi.org/10.1038/s41524-021-00540-6",
+      "year": 2021
+    }
+  ],
+  "subdomain": "光电材料 / 有机发光",
+  "system": "苯磺酰咔唑类热激活延迟荧光（TADF）分子，以及含重原子的磷光发光体",
+  "tags": [
+    "OLED",
+    "TADF",
+    "激发态",
+    "真机演示"
+  ],
+  "title": "OLED 的 TADF 与磷光发光体：单三重态能隙与自旋轨道耦合"
+}

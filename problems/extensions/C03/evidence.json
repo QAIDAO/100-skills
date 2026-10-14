@@ -24,7 +24,7 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
     },
     {
       "path": "tasks/C03-bithiophene-transfer/README.md",

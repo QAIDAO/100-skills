@@ -1,0 +1,49 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "隐式溶剂 DFT 静态势垒；第一性原理分子动力学加元动力学或 Blue Moon 热力学积分的自由能曲线；小模型上的 CC 层级与多参考方法校验",
+  "decision": "判断电子相关校正是否改变水合与配体交换的势垒排序，从而影响对新铂、钌类候选药活化速率的预判。",
+  "domain": "生物医药",
+  "has_reference": false,
+  "id": "B27",
+  "observable": "各水合步骤的活化自由能与反应自由能、水合产物 pKa、配体交换势垒排序",
+  "quantum_role": "在过渡态附近截取 Pt 中心活性空间，用 VQE/SQD 或未来的 QPE 求同一几何下的电子能修正；溶剂、构象采样与自由能留在经典端（提案）",
+  "scale": "单金属中心加 2–4 个配体的簇模型，外加显式第一溶剂层；活性空间规模待经典预筛确定",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "DFT-MD 加 Blue Moon 热力学积分得到铂药水合自由能曲线，报告势垒精度约 1 kcal/mol",
+      "title": "Blue moon ensemble simulation of aquation free energy profiles applied to mono and bifunctional platinum anticancer drugs",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2003.01418",
+      "year": 2020
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "Car–Parrinello 分子动力学加元动力学的顺铂两步水合自由能景观",
+      "title": "Hydrolysis of cisplatin—a first-principles metadynamics study",
+      "type": "期刊论文；PCCP 12, 10348",
+      "url": "https://dare.uva.nl/id/91cc4009-a213-4c93-9237-591c6ecebb50",
+      "year": 2010
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "Q1",
+      "supports": "VQE 处理 Pt–CO 键离解，模拟器与误差缓解后的真机能量相差约 ±2 kcal/mol；方法先例，不是顺铂",
+      "title": "Computational analysis of chemical reactions using a variational quantum eigensolver algorithm without specifying spin multiplicity",
+      "type": "预印本；期刊版 ACS Omega 8(22) 19917",
+      "url": "https://arxiv.org/abs/2303.05065",
+      "year": 2023
+    }
+  ],
+  "subdomain": "金属药物 / 活化反应",
+  "system": "顺铂 cis-[Pt(NH₃)₂Cl₂] 的逐步水合（氯离子被水取代）及与 DNA 鸟嘌呤 N7 的配体交换；可扩展到 Ru(III) 前药的还原活化",
+  "tags": [
+    "金属药物",
+    "顺铂",
+    "配体交换",
+    "仅文献"
+  ],
+  "title": "铂、钌类金属药物：水合活化与配体交换的势垒排序"
+}

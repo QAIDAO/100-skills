@@ -1,0 +1,15 @@
+{
+  "id": "F22",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/F22-molecular-magnet-anisotropy/README.md",
+      "sha256": "635deae78dea990f7e7214046ba52220f4b14c072758e7845dce8b2dbe795c88"
+    }
+  ]
+}

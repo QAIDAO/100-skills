@@ -1,0 +1,40 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "CASSCF/NEVPT2 提取各向异性交换；DMRG、选定 CI；巨自旋近似与精确对角化",
+  "decision": "判断哪些配体与金属组合能给出大磁各向异性与可控交换，从而指导高温分子磁存储与分子量子比特设计。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "F22",
+  "observable": "交换常数 J、零场分裂 D、自旋激发谱与非弹性中子散射截面",
+  "quantum_role": "两条路线：在量子硬件上模拟自旋哈密顿量的动力学关联与中子散射截面（已有真机演示）；用嵌入加 QPE 或 VQE 从电子结构直接求 J 与 D（提案）",
+  "scale": "自旋哈密顿量的希尔伯特空间随磁中心数指数增长；从头计算各向异性交换需要多中心多参考活性空间",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "Q1",
+      "supports": "在 IBM 量子硬件上提取磁性分子的动力学关联与磁中子散射截面，并评估门误差与可扩展性",
+      "title": "Quantum hardware simulating four-dimensional inelastic neutron scattering",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1809.07974",
+      "year": 2019
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "单分子磁体与量子电路耦合的方案",
+      "title": "Coupling single molecule magnets to quantum circuits",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1306.4276",
+      "year": 2013
+    }
+  ],
+  "subdomain": "分子磁性 / 自旋哈密顿量",
+  "system": "多核过渡金属与镧系单分子磁体，如 [Mn₄]₂ 二聚体与 Cr 基磁性分子环",
+  "tags": [
+    "分子磁体",
+    "磁各向异性",
+    "中子散射",
+    "真机演示"
+  ],
+  "title": "分子磁体：交换耦合、磁各向异性与自旋激发"
+}

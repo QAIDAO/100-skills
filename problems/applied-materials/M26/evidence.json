@@ -1,0 +1,15 @@
+{
+  "id": "M26",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/M26-tadf-oled-emitters/README.md",
+      "sha256": "fb3d342780c0d4c53e6a18e8ea34283ee13ac466b401fe56d7cd38f22ac8af5d"
+    }
+  ]
+}

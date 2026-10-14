@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""生成 v0.1.0 宣发展示页（单文件、自包含）。
+"""生成宣发展示页（单文件、自包含）；版本号取自 CHANGELOG。
 
 用法：python3 -I release/tools/build_promo.py --out <dir>
 写出 <dir>/index.html。题目数据取自 problems/*/*/problem.json 与 release/stats.json；
@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import html
 import json
+import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -31,6 +32,9 @@ PARTS = (
     ("decision", "研发决策", "支撑什么判断"),
 )
 SPECIMEN = "M01"
+REPO = "https://github.com/QAIDAO/100-skills"
+BLOB = f"{REPO}/blob/main"
+CRITERION_RE = re.compile(r"^\d+\. \*\*(.+?)\*\*：(.+)$")
 # 「为什么值得做」：主题词为固定措辞，决策句取自各题 problem.json 原文。
 STAKES = (
     ("固氮", "B01"),
@@ -106,7 +110,7 @@ header{position:sticky;top:0;z-index:20;background:var(--canvas);border-bottom:1
 .textlink{font-size:15px;color:var(--accent-ink);text-decoration:none;font-weight:600}
 @media (hover:hover){.textlink:hover{text-decoration:underline}}
 
-/* 首屏：标题 + 84 格题板 */
+/* 首屏：标题 + 题板（100 题排成 10×10） */
 .hero{padding:72px 0 88px;border-bottom:1px solid var(--rule)}
 .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.02fr);gap:64px;align-items:center}
 .hero h1{font:600 clamp(38px,4.8vw,62px)/1.16 var(--serif);margin:18px 0 24px}
@@ -125,7 +129,7 @@ header{position:sticky;top:0;z-index:20;background:var(--canvas);border-bottom:1
 .board-head{position:relative;display:flex;justify-content:space-between;align-items:baseline;gap:16px;margin-bottom:18px}
 .board-head b{font:600 16px/1.4 var(--serif)}
 .board-head span{font:500 12px/1 var(--mono);color:var(--on-deep-muted)}
-.cells{position:relative;display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:5px}
+.cells{position:relative;display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:6px}
 .cell{aspect-ratio:1;display:grid;place-items:center;border:1px solid color-mix(in srgb,var(--dn) 55%,transparent);background:color-mix(in srgb,var(--dn) 7%,transparent);border-radius:5px;padding:0;font:600 10px/1 var(--mono);color:color-mix(in srgb,var(--dn) 88%,white);letter-spacing:-.02em;transition:transform 140ms var(--ease),background-color 140ms var(--ease);animation:rise .6s var(--ease) both;animation-delay:calc(var(--i) * 7ms)}
 .cell:active{transform:scale(.92)}
 @media (hover:hover){.cell:hover{transform:scale(1.12);background:color-mix(in srgb,var(--dn) 30%,transparent);position:relative;z-index:1}}
@@ -216,10 +220,20 @@ section{padding:96px 0 104px;scroll-margin-top:60px;border-bottom:1px solid var(
 .problem.open .pbody{grid-template-rows:1fr}
 .pinner{overflow:hidden}
 .pcontent{margin:0 0 26px 84px;padding:4px 24px 18px;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-panel)}
+.psection{padding:16px 0 4px;border-top:1px solid var(--rule)}
+.versus+.psection{border-top:0}
+.pcap{font:500 11px/1 var(--mono);letter-spacing:.08em;color:var(--faint);text-transform:uppercase;margin-bottom:10px}
+.criteria{counter-reset:c;display:grid;gap:8px}
+.criteria li{counter-increment:c;display:grid;grid-template-columns:22px 92px minmax(0,1fr);gap:10px;font-size:14px;line-height:1.65}
+.criteria li:before{content:counter(c);font:600 12px/1.65 var(--mono);color:var(--accent)}
+.criteria b{font-weight:600}
+.pnote{font-size:13px;color:var(--muted);margin-top:10px}
+.reftitle{font-weight:600;font-size:14px}
+.refsum{font-size:14px;color:var(--muted);margin-top:4px;line-height:1.7}
 .pactions{display:flex;gap:24px;flex-wrap:wrap;align-items:center;padding-top:14px;font-size:14px}
 .pactions a{color:var(--accent-ink);font-weight:600;text-decoration:none}
 @media (hover:hover){.pactions a:hover{text-decoration:underline}}
-.pactions span{color:var(--muted);margin-right:auto}
+.pactions{border-top:1px solid var(--rule);margin-top:14px}
 .problem.flash .phead{animation:flash 1.2s var(--ease)}
 @keyframes flash{from{background:var(--accent-soft)}to{background:transparent}}
 .more{display:inline-flex;margin:28px 0 0;padding:11px 22px;border:1px solid var(--rule-strong);background:transparent;border-radius:var(--r-control);font-size:14px;font-weight:600;transition:transform 120ms var(--ease)}
@@ -279,7 +293,7 @@ pre code{background:none;padding:0;color:inherit}
 @media (max-width:640px){
   .wrap{padding:0 16px}.navlinks{display:none}.nav .contribute{margin-left:auto}
   .hero{padding:44px 0 60px}.lead{font-size:16px}
-  .board{padding:20px 16px 18px}.cells{gap:3px}.cell{font-size:8px;border-radius:3px}
+  .board{padding:20px 16px 18px}.cells{gap:4px}.cell{font-size:9px;border-radius:3px}
   .figures{grid-template-columns:repeat(3,minmax(0,1fr))}.figures div{margin-right:0;padding:14px 10px 0 0;border-right:0}.figures b{font-size:24px}
   section{padding:64px 0 72px}
   .stakes{grid-template-columns:1fr}.stake:nth-child(n){padding:22px 0;border-left:0}.stake .theme{font-size:26px}
@@ -291,6 +305,7 @@ pre code{background:none;padding:0;color:inherit}
   .pid{grid-column:1;padding-top:0}.phead .pmain{grid-column:1/-1;grid-row:2}.pstate{grid-column:1;grid-row:3;padding-top:0}
   .chev{grid-column:2;grid-row:1}
   .pcontent{padding:2px 16px 16px}
+  .criteria li{grid-template-columns:22px minmax(0,1fr)}.criteria li span{grid-column:2}
   .join{grid-template-columns:1fr;gap:28px}
   .closing{padding:64px 0 56px}
 }
@@ -300,6 +315,7 @@ pre code{background:none;padding:0;color:inherit}
 JS = """
 const problems = JSON.parse(document.getElementById('data').textContent);
 const DOMAINS = JSON.parse(document.getElementById('domains').textContent);
+const REPO = JSON.parse(document.getElementById('repo').textContent);
 const PAGE = 12;
 let domain = 'all', query = '', shown = PAGE;
 const list = document.getElementById('plist'), count = document.getElementById('count'), more = document.getElementById('more');
@@ -324,8 +340,18 @@ function build(p) {
   for (const key of ['id', 'title', 'observable', 'system', 'classical_baseline', 'quantum_role', 'decision']) fill(node, key, p[key]);
   fill(node, 'meta', `${DOMAINS[p.area][0]} · ${p.subdomain || ''}`);
   fill(node, 'ref', p.has_reference ? '有参照记录' : '仅文献整理');
-  fill(node, 'refnote', p.has_reference ? '本项目已有执行记录，可以从那里接着做。' : '暂无执行记录，从文献出发。');
-  node.querySelector('[data-link="problem"]').href = `../../problems/${p.area}/${p.id}/PROBLEM.md`;
+  const ref = p.reference;
+  fill(node, 'ref_title', ref ? `本项目最新一轮研究：${ref.title}` : '本题暂无本项目的执行记录，从文献出发。');
+  fill(node, 'ref_summary', ref ? ref.summary : '题面里的文献来源和五段拆解就是起点。');
+  const ol = node.querySelector('[data-list="criteria"]');
+  for (const [label, text] of p.criteria) {
+    const li = document.createElement('li');
+    const b = document.createElement('b'); b.textContent = label;
+    const span = document.createElement('span'); span.textContent = text;
+    li.append(b, span); ol.append(li);
+  }
+  node.querySelector('[data-link="problem"]').href = `${REPO}/blob/main/problems/${p.area}/${p.id}/PROBLEM.md`;
+  node.querySelector('[data-link="issue"]').href = `${REPO}/issues/new?template=problem.yml&title=${encodeURIComponent(`[题目] ${p.id}: `)}`;
   body.inert = true;
   head.addEventListener('click', () => setOpen(node, !node.classList.contains('open')));
   return node;
@@ -375,11 +401,45 @@ def load_problems() -> list[dict]:
     for domain in DOMAINS:
         for path in sorted((ROOT / "problems" / domain).glob("*/problem.json")):
             data = json.loads(path.read_text(encoding="utf-8"))
-            rows.append({k: data.get(k) for k in (
+            row = {k: data.get(k) for k in (
                 "id", "title", "area", "subdomain", "system", "observable",
                 "classical_baseline", "quantum_role", "decision", "has_reference",
-            )})
+            )}
+            row["criteria"] = criteria((path.parent / "PROBLEM.md").read_text(encoding="utf-8"))
+            row["reference"] = reference(path.parent / "REFERENCE.md")
+            rows.append(row)
     return rows
+
+
+def plain(text: str) -> str:
+    """Markdown 行内标记转纯文本：链接留文字，去掉粗体与代码标记。"""
+    text = re.sub(r"!?\[([^\]]*)\]\([^)]*\)", r"\1", text)
+    return re.sub(r"\*\*|`", "", text).strip()
+
+
+def criteria(problem_md: str) -> list[list[str]]:
+    section = problem_md.split("## 什么算解", 1)[1].split("## 现有参照", 1)[0]
+    return [[m.group(1), plain(m.group(2))] for m in map(CRITERION_RE.match, section.splitlines()) if m]
+
+
+def reference(path: Path) -> dict | None:
+    """REFERENCE.md 的报告标题与首个正文段落，原文提取；不足 12 字的短行视为小标题跳过。"""
+    if not path.is_file():
+        return None
+    title, paragraphs, current = "", [], []
+    for line in path.read_text(encoding="utf-8").splitlines() + [""]:
+        if not title:
+            if line.startswith("# "):
+                title = plain(line[2:])
+            continue
+        if not line.strip() or line.startswith(("#", ">", "|", "<!--", "```", "- ", "* ")):
+            if current:
+                paragraphs.append(plain(" ".join(current)))
+                current = []
+            continue
+        current.append(line.strip())
+    body = next((t for t in paragraphs if len(t) >= 12), paragraphs[0] if paragraphs else "")
+    return {"title": title, "summary": body}
 
 
 def embed(value: object) -> str:
@@ -451,12 +511,21 @@ def problem_template() -> str:
 <div class="pbody" role="region"><div class="pinner"><div class="pcontent">
 <dl class="ledger">{part_row(0, field='system')}</dl>
 {versus(templated=True)}
-<div class="pactions"><span data-f="refnote"></span><a data-link="problem" href="#">完整题面与验收标准</a><a href="../../CONTRIBUTING.md">提交解法</a></div>
+<div class="psection"><p class="pcap">什么算解</p><ol class="criteria" data-list="criteria"></ol>
+<p class="pnote">负结果同样接受，只要过程可复现、结论有依据。</p></div>
+<div class="psection"><p class="pcap">现有参照</p><p class="reftitle" data-f="ref_title"></p><p class="refsum" data-f="ref_summary"></p></div>
+<div class="pactions"><a data-link="problem" href="#" target="_blank" rel="noopener">在 GitHub 查看完整题面</a><a data-link="issue" href="#" target="_blank" rel="noopener">开 issue 讨论这道题</a><a href="{BLOB}/CONTRIBUTING.md" target="_blank" rel="noopener">提交解法</a></div>
 </div></div></div>
 </li></template>"""
 
 
-def page(problems: list[dict], stats: dict) -> str:
+def release_version() -> str:
+    """当前版本号取自 CHANGELOG.md 的第一个 `## vX.Y.Z` 标题。"""
+    match = re.search(r"^## (v\d+\.\d+\.\d+)", (ROOT / "CHANGELOG.md").read_text(encoding="utf-8"), re.MULTILINE)
+    return match.group(1) if match else ""
+
+
+def page(problems: list[dict], stats: dict, version: str) -> str:
     domains = stats["domains"]
     total, with_ref = stats["total_problems"], stats["with_reference"]
     by_id = {p["id"]: p for p in problems}
@@ -483,12 +552,12 @@ def page(problems: list[dict], stats: dict) -> str:
 <header><div class="wrap nav">
 <a class="brand" href="#top">100<b>-</b>skills</a>
 <nav class="navlinks" aria-label="页面导航"><a href="#why">为什么值得做</a><a href="#problems">题库</a><a href="#reference">现有参照</a><a href="#join">怎么参与</a></nav>
-<a class="contribute" href="../../CONTRIBUTING.md">参与贡献</a>
+<a class="contribute" href="{BLOB}/CONTRIBUTING.md" target="_blank" rel="noopener">参与贡献</a>
 </div></header>
 <main id="top">
 <div class="hero"><div class="wrap hero-grid">
 <div>
-<p class="kicker">Open problems · v0.1.0</p>
+<p class="kicker">Open problems · {version}</p>
 <h1><span class="num">{total}</span> 道还开放着的科学计算题</h1>
 <p class="lead">固氮、碳捕集、PFAS 治理、电池、药物、高温超导……每一道题都卡在一个<strong>真实的研发判断</strong>上：经典方法做到了哪一步，量子方法能不能补上。挑一道，提交你的解法；被采纳的解法会记入这道题的参照，并在沉淀出的 skill 里署名。</p>
 <div class="cta-row"><a class="btn" href="#problems">挑一道题{ARROW}</a><a class="textlink" href="#why">先看看为什么值得做</a></div>
@@ -566,13 +635,14 @@ def page(problems: list[dict], stats: dict) -> str:
 <p class="lead">{total} 道题都还开放着。先读题面，开个 issue 聊聊思路，或者直接提交一份解法。</p>
 <a class="btn" href="#problems">去题库{ARROW}</a>
 <div class="fine">
-<p>题面与文档采用 CC BY 4.0，代码采用 Apache-2.0，贡献需要 DCO 签名。题面目前只有中文，英文版会在下一个版本补上。详见 <a href="../../CONTRIBUTING.md">CONTRIBUTING.md</a>。</p>
+<p>题面与文档采用 CC BY 4.0，代码采用 Apache-2.0，贡献需要 DCO 签名。题面目前只有中文，英文版会在下一个版本补上。详见 <a href="{BLOB}/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>。</p>
 <p>社区沉淀出的 skill 也会内置到晓梦 Agent，让更多研发团队可以直接调用。</p>
 </div>
 </div></footer>
 {problem_template()}
 <script type="application/json" id="data">{embed(problems)}</script>
 <script type="application/json" id="domains">{embed(DOMAINS)}</script>
+<script type="application/json" id="repo">{embed(REPO)}</script>
 <script>{JS}</script>
 </body>
 </html>
@@ -585,7 +655,7 @@ def main() -> None:
     out = Path(parser.parse_args().out).resolve()
     out.mkdir(parents=True, exist_ok=True)
     stats = json.loads((ROOT / "release" / "stats.json").read_text(encoding="utf-8"))
-    (out / "index.html").write_text(page(load_problems(), stats), encoding="utf-8")
+    (out / "index.html").write_text(page(load_problems(), stats, release_version()), encoding="utf-8")
 
 
 if __name__ == "__main__":

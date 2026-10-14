@@ -1,0 +1,40 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "含激发态几何弛豫的杂化 TDDFT；GW/BSE 加密度泛函微扰的激子极化子方法；量子缺陷嵌入；非绝热分子动力学",
+  "decision": "判断自陷激子的发光与损耗由哪些局域结构决定，从而指导宽谱白光发射体与低损耗光伏材料的组分设计。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M27",
+  "observable": "自陷激子局域化能与发光斯托克斯位移、陷阱态能级、非辐射复合通道",
+  "quantum_role": "对局域的激子—晶格难核做嵌入，用多态子空间或 QPE 求局域态，必要时把电子与核坐标联合编码（提案）",
+  "scale": "自陷激子需大超胞与晶格弛豫；可交给量子求解的是嵌入后的局域难核",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "杂化 TDDFT 加激发态几何弛豫，用于 Cs₄SnBr₆ 与 Cs₂AgInCl₆ 的自陷激子",
+      "title": "The WEST code for large-scale excited-state materials simulations",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2607.14025",
+      "year": 2026
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "双卤化物钙钛矿自陷激子态的量子干涉与光学调控",
+      "title": "Quantum Interference and Optical Tuning of Self-Trapped Exciton State in Double Halide Perovskite",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2410.20654",
+      "year": 2024
+    }
+  ],
+  "subdomain": "光电材料 / 钙钛矿",
+  "system": "Cs₄SnBr₆、Cs₂AgInCl₆、Cs₂AgBiBr₆ 等无铅卤化物钙钛矿中的自陷激子、极化子与缺陷陷阱态",
+  "tags": [
+    "钙钛矿",
+    "自陷激子",
+    "缺陷",
+    "仅文献"
+  ],
+  "title": "卤化物钙钛矿：自陷激子与缺陷的局域化和非辐射通道"
+}

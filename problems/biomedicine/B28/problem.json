@@ -1,0 +1,49 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "DFT（BP86 与 B3LYP 对 Co–C 键强的系统偏差）、IMOMM/QM/MM 加溶剂模型；CASSCF/CASPT2、NEVPT2、DMRG、选定 CI",
+  "decision": "判断甲基钴胺素与腺苷钴胺素断键差异、以及自由基 SAM 断键选择性，是否来自强相关电子结构，从而决定是否值得投入高精度计算。",
+  "domain": "生物医药",
+  "has_reference": false,
+  "id": "B28",
+  "observable": "Co–C 与 S–C 断键能垒、键离解能差、自由基产物的自旋态序",
+  "quantum_role": "对 Co 中心或 Fe–S 簇的断键活性空间做嵌入，再用 QPE/qubitization（远期）或小规模 VQE/SQD（近期）求势垒电子能；构象门控与反应网络留在经典端（提案）",
+  "scale": "Co 卟啉类咕啉环加轴向配体的截断模型；Fe–S 簇为多金属中心，活性空间预计远超精确对角化范围",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "IMOMM 计算两种钴胺素的 Co–C 键离解能，指出需要溶剂效应才能重现溶液中的趋势",
+      "title": "Computational study on the difference between the Co–C bond dissociation energy in methylcobalamin and adenosylcobalamin",
+      "type": "期刊论文；J Biol Inorg Chem 10, 509",
+      "url": "https://iciq.org/research/publication/computational-study-on-the-difference-between-the-co-c-bond-dissociation-energy-in-methylcobalamin-and-adenosylcobalamin",
+      "year": 2005
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "讨论酶过渡态中出现的多参考特征及其模拟难点",
+      "title": "Challenges in the simulation of enzymatic transition states with emerging multireference character",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2607.09769",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "Q1",
+      "supports": "同类金属酶活性空间的 DMRG+NEVPT2/CCSD(T) 对照与 qubitization 相位估计资源估计；作为量子路线的方法先例，不是本题体系",
+      "title": "Reliably assessing the electronic structure of cytochrome P450 on today's classical computers and tomorrow's quantum computers",
+      "type": "期刊论文；PNAS 119(38) e2203533119",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499570/",
+      "year": 2022
+    }
+  ],
+  "subdomain": "金属辅因子 / 自由基酶",
+  "system": "甲基钴胺素与腺苷钴胺素的 Co–C 键均裂，以及自由基 SAM 酶中 [4Fe–4S] 簇驱动的 S–C 断键",
+  "tags": [
+    "钴胺素",
+    "自由基SAM",
+    "断键",
+    "仅文献"
+  ],
+  "title": "维生素 B12 与自由基 SAM 酶：Co–C 断键与自由基态序"
+}

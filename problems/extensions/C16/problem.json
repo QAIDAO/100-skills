@@ -1,0 +1,49 @@
+{
+  "area": "extensions",
+  "classical_baseline": "高精度经典标签（CCSD(T)、多参考方法）、Δ-learning、委员会主动学习与 D-最优主动学习",
+  "decision": "判断少量量子标签能否以更低成本把势函数修正到目标精度，从而决定难反应区的标签预算该花在经典高精度方法还是量子求解器上。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "C16",
+  "observable": "势能面误差（对精确参照）、所需量子标签数、分子动力学稳定性与分布外误差",
+  "quantum_role": "作为主动学习中可替换的标签求解器，只在模型不确定的构型上调用 VQE 计算能量或力（已有小分子演示）",
+  "scale": "已有演示限于 H₂、水单体与二聚体；扩展到实际体系受量子力梯度的成本限制",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "Q1",
+      "supports": "委员会主动学习选样，用数十个 VQE 点修正 DFT 预训练网络，水单体与二聚体上得到高精度势能面",
+      "title": "Quantum Hardware-Enabled Molecular Dynamics via Transfer Learning",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2406.08554",
+      "year": 2024
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "Q2",
+      "supports": "ADAPT-VQE 力驱动 H₂ 的在线主动学习分子动力学，比较不同主动学习历史所需的量子计算次数",
+      "title": "Integration of Variational Quantum Algorithms into Atomistic Simulation Workflows",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2602.02695",
+      "year": 2026
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "D-最优主动学习，改善势函数可迁移性并支持在线训练",
+      "title": "Active learning of linearly parametrized interatomic potentials",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1611.09346",
+      "year": 2016
+    }
+  ],
+  "subdomain": "AI × 量子 / 势函数",
+  "system": "以 DFT 预训练的神经网络势函数，在主动学习中用 VQE 等量子求解器提供难区域的高精度能量与力标签",
+  "tags": [
+    "机器学习势",
+    "主动学习",
+    "VQE",
+    "AI×量子"
+  ],
+  "title": "用量子精度标签校准机器学习势函数"
+}

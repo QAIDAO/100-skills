@@ -1,6 +1,6 @@
 # 100-skills：量子计算与科学计算开放题
 
-84 道来自真实研发场景的开放题，覆盖生物医药、应用材料、强关联模型与动力学，以及优化、量子机器学习和线性求解等交叉方向。我们把这些题目开放给量子开源社区：欢迎提交解法，也欢迎提交负结果。被采纳的解法会逐步沉淀为可复用的 skills。
+100 道来自真实研发场景的开放题，覆盖生物医药、应用材料、强关联模型与动力学，以及优化、量子机器学习和线性求解等交叉方向。我们把这些题目开放给量子开源社区：欢迎提交解法，也欢迎提交负结果。被采纳的解法会逐步沉淀为可复用的 skills。
 
 ## 每道题都拆解清楚
 
@@ -12,7 +12,7 @@
 | 量子方法的角色 | QPE、VQE、SQD、量子核、退火、振幅估计等方法放在哪一步 |
 | 研发决策 | 结果最终支撑哪一个判断 |
 
-每题还有「什么算解」的五条验收标准，以及「现有参照」：84 题中有 80 题附有我们在经典计算机上完成的计算与模拟记录，包括没通过的检验。参照只用于对照和复用，不代表最优解。
+每题还有「什么算解」的五条验收标准，以及「现有参照」：100 题中有 80 题附有我们在经典计算机上完成的计算与模拟记录，包括没通过的检验。参照只用于对照和复用，不代表最优解。
 
 举几个例子：
 
@@ -24,10 +24,10 @@
 
 | 领域 | 目录 | 题数 | 有执行记录 |
 |---|---|---|---|
-| 生物医药 | [problems/biomedicine](problems/biomedicine/INDEX.md) | 26 | 26 |
-| 应用材料 | [problems/applied-materials](problems/applied-materials/INDEX.md) | 24 | 22 |
-| 材料模型与动力学 | [problems/model-dynamics](problems/model-dynamics/INDEX.md) | 19 | 17 |
-| 交叉方向与算法 | [problems/extensions](problems/extensions/INDEX.md) | 15 | 15 |
+| 生物医药 | [problems/biomedicine](problems/biomedicine/INDEX.md) | 31 | 26 |
+| 应用材料 | [problems/applied-materials](problems/applied-materials/INDEX.md) | 29 | 22 |
+| 材料模型与动力学 | [problems/model-dynamics](problems/model-dynamics/INDEX.md) | 22 | 17 |
+| 交叉方向与算法 | [problems/extensions](problems/extensions/INDEX.md) | 18 | 15 |
 
 ## 怎么参与
 
@@ -53,4 +53,4 @@
 
 ## English
 
-**100-skills** publishes 84 open research problems in quantum and scientific computing, drawn from real R&D settings across drug discovery, applied materials, strongly correlated models and dynamics, and cross-cutting algorithms (optimization, quantum machine learning, linear solvers). Each problem states the physical system, the target observable, the classical baselines, the intended role of quantum methods, and the decision the result should support. It also gives five acceptance criteria and our existing reference runs (80 of 84, all classical computation or simulation, failures included). Contributions, including negative results, are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Accepted solutions will be distilled into reusable skills under `skills/`. Problem statements are currently in Chinese; English versions are planned for the next release. Content is CC BY 4.0; code is Apache-2.0.
+**100-skills** publishes 100 open research problems in quantum and scientific computing, drawn from real R&D settings across drug discovery, applied materials, strongly correlated models and dynamics, and cross-cutting algorithms (optimization, quantum machine learning, linear solvers). Each problem states the physical system, the target observable, the classical baselines, the intended role of quantum methods, and the decision the result should support. It also gives five acceptance criteria and our existing reference runs (80 of 100, all classical computation or simulation, failures included). Contributions, including negative results, are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Accepted solutions will be distilled into reusable skills under `skills/`. Problem statements are currently in Chinese; English versions are planned for the next release. Content is CC BY 4.0; code is Apache-2.0.
