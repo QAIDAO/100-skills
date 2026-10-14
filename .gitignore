@@ -1,0 +1,9 @@
+# 白名单：默认忽略全部，只放行发布物。研究原件（tasks/、campaign/ 等，约 207G）永不入库。
+/*
+!/.gitignore
+!/README.md
+!/CHANGELOG.md
+!/LICENSE
+!/release/
+!/packs/
+.DS_Store
