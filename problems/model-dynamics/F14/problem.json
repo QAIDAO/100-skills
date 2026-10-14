@@ -1,0 +1,41 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "ED、经典Lanczos、同ansatz理想值与强杂质求解器",
+  "decision": "判断浅态准备是否足以给出可信DOS，以及额外矩校正的测量代价是否值得。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "F14",
+  "observable": "基态能、格林函数、DOS、高阶Hamiltonian矩",
+  "quantum_role": "候选量子电路准备基态与粒子/空穴响应种子；经典优化、矩处理和连分式重建谱。",
+  "scale": "1杂质加Nb浴的2(Nb+1)自旋轨道，按常规编码为4/8/12/16比特；论文为经典模拟",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "经典模拟VQE、1/3/5/7浴、连分式GF、量子计算矩与采样成本；已关联PRResearch8,033066",
+      "title": "Quantum solver for single-impurity Anderson models with particle-hole symmetry",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2601.10594v2",
+      "year": 2026
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "独立的单浴硬件自洽对照，不能当作本VQE求解器实机证明",
+      "title": "Self-Consistent Determination of Single-Impurity Anderson Model Using Hybrid Quantum-Classical Approach on a Spin Quantum Simulator",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2410.07808v1",
+      "year": 2024
+    }
+  ],
+  "subdomain": "量子杂质求解与谱学",
+  "system": "粒子—空穴对称单杂质Anderson模型，离散浴1/3/5/7轨道",
+  "tags": [
+    "VQE",
+    "SIAM",
+    "DOS",
+    "QCM",
+    "格林函数"
+  ],
+  "title": "粒子—空穴对称 SIAM 的 VQE 态密度：能量与响应双重验收"
+}

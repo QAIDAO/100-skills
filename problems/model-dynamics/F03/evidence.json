@@ -1,0 +1,62 @@
+{
+  "id": "F03",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-critical-fit-r107/results.json",
+      "current_revision": "public-critical-fit-r107",
+      "goal": "public-critical-fit-r107/GOAL.md",
+      "id": "F03",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f03-r107/review/DELIVERY-REVIEW.json",
+      "manifest": "public-critical-fit-r107/manifest.json",
+      "manifest_sha256": "68570bba9d830e7861384e15c4a0197e807149320c5e990a3849f948955878a9",
+      "original_target_status": "incomplete",
+      "previous_results": "results.json",
+      "research": "public-critical-fit-r107/RESEARCH.md",
+      "revision": "r107",
+      "updated_utc": "2026-10-07T10:14:26.243349+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F03-hubbard-3d-transition/execution/public-critical-fit-r107/affine4.csv",
+    "tasks/F03-hubbard-3d-transition/execution/public-critical-fit-r107/fits8.csv",
+    "tasks/F03-hubbard-3d-transition/execution/public-critical-fit-r107/measurements46.csv",
+    "tasks/F03-hubbard-3d-transition/execution/public-critical-fit-r107/predictions116.csv",
+    "tasks/F03-hubbard-3d-transition/execution/public-critical-fit-r107/profiles244.csv",
+    "tasks/F03-hubbard-3d-transition/execution/results.json",
+    "tasks/F03-hubbard-3d-transition/mechanism.png",
+    "tasks/F03-hubbard-3d-transition/visualization.json",
+    "tasks/F03-hubbard-3d-transition/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f03-r107/NEXT-EXPERIMENT.md",
+    "tasks/_execution/2026-10-04/frontier/f03-r107/SOURCE-NOTE.md",
+    "tasks/_execution/2026-10-04/frontier/f03-r107/figures/critical-fit.png",
+    "tasks/_execution/2026-10-04/frontier/f03-r107/run/output/result.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F03-hubbard-3d-transition/README.md",
+      "sha256": "9a2559debd4e6d35ca3c6e1ec6edb995d251544a46475199bd6ebebe8130f960"
+    },
+    {
+      "path": "tasks/F03-hubbard-3d-transition/mechanism.svg",
+      "sha256": "cf1825056bbf27c0ed4f9d48ea4cea1b55677c1a74b2a18e9219bde3f5891801"
+    },
+    {
+      "path": "tasks/F03-hubbard-3d-transition/workflow.svg",
+      "sha256": "17bf4b2e6eda09d87a2fb98d422291f2ac43af4148f3e58b0403c67d1cf1f3c1"
+    },
+    {
+      "path": "tasks/F03-hubbard-3d-transition/execution/LATEST.json",
+      "sha256": "d46e4ea675385eeece487dd864b716c78f6e78aea70cda2ac607f723d46fc388"
+    },
+    {
+      "path": "tasks/F03-hubbard-3d-transition/execution/public-critical-fit-r107/RESEARCH.md",
+      "sha256": "67689c339004804c265b62d6cfd1bfde930516849b3625a4bb23303a88a562fa"
+    }
+  ]
+}

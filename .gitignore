@@ -3,7 +3,13 @@
 !/.gitignore
 !/README.md
 !/CHANGELOG.md
+!/CONTRIBUTING.md
 !/LICENSE
+!/LICENSE-CONTENT
+!/problems/
+!/solutions/
+!/skills/
+!/.github/
 !/release/
-!/packs/
 .DS_Store
+__pycache__/

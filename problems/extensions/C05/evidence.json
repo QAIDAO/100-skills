@@ -1,0 +1,72 @@
+{
+  "id": "C05",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "case_review": "tasks/_execution/2026-10-04/cross/c05-coupled-r65/CASE-REVIEW-v2.json",
+      "case_review_sha256": "1316b68ae1be7779e5d26a8a4602ef1ed9928392d53be3622b094b0fd91c22cf",
+      "current_results": "coupled-r65/results.json",
+      "goal": "coupled-r65/GOAL.md",
+      "manifest_sha256": "b5b862ca1a3e7cbb69db91d0c635a0d943150bc6d0e8f9093da478b1cdb29a7f",
+      "note": "Finite eta1 coupled quantum result and independent audit complete. Severe continuum truncation failures retained. Scoped negative result only; original material incomplete.",
+      "original_target_status": "incomplete",
+      "research": "coupled-r65/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/LATEST-at-intake.json",
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/REPRODUCE.md",
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/coupled-results.pdf",
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/coupled-results.png",
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/failed-gates.json",
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/manifest.json",
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/results.json",
+    "tasks/C05-warm-dense-stopping/execution/coupled-r65/summary.csv",
+    "tasks/C05-warm-dense-stopping/execution/results.json",
+    "tasks/C05-warm-dense-stopping/mechanism.png",
+    "tasks/C05-warm-dense-stopping/visualization.json",
+    "tasks/C05-warm-dense-stopping/workflow.png",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/AUDIT-STATIC-REVIEW-v2.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/AUDIT-STATIC-REVIEW.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/DESIGN.md",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/PLOT-PROVENANCE.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/REPAIR-v2.md",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/RESOURCE-REVIEW.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/RESOURCE-SUMMARY.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/ROUTE-DECISION.md",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/SUFFICIENCY-REVIEW.md",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/quantum-audit-v2/out/result.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/quantum-production/out/native-cost-ledger.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/quantum-production/out/native-template.json",
+    "tasks/_execution/2026-10-04/cross/c05-coupled-r65/quantum-production/out/result.json",
+    "tasks/_execution/2026-10-04/cross/c05-stopping-r64/INPUT-RESULTS.md",
+    "tasks/_execution/2026-10-04/cross/c05-stopping-r64/source-manifest.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C05-warm-dense-stopping/README.md",
+      "sha256": "783cb2a52153faf81f6d881da1a5850c48654c42b968e173ac9f40c2643a328f"
+    },
+    {
+      "path": "tasks/C05-warm-dense-stopping/mechanism.svg",
+      "sha256": "c6b4d4b81326b98ea67ce80558ebc2949f6e7a212e4ec583dcbf37b4eb70b20e"
+    },
+    {
+      "path": "tasks/C05-warm-dense-stopping/workflow.svg",
+      "sha256": "0339691324faa8e7027e1396c07e6752502406d8906e1f2e70074c3103657f29"
+    },
+    {
+      "path": "tasks/C05-warm-dense-stopping/execution/LATEST.json",
+      "sha256": "a096f75e79939e8edd89745776cfd4b591876fc579d2fe2b03c11059a8d7c5b1"
+    },
+    {
+      "path": "tasks/C05-warm-dense-stopping/execution/coupled-r65/RESEARCH.md",
+      "sha256": "0fb3126ed6836c9c008ad877b65c3f00cc6d36c7d0604098dc1ccb0ec6afd047"
+    }
+  ]
+}

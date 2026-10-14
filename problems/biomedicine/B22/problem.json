@@ -1,0 +1,43 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "ΔCCSD、TDDFT、EOM-CCSD、CASPT2；保持几何、溶剂和实验参照口径",
+  "decision": "判断候选光敏剂的电子激发能计算是否足以支持吸收窗口筛选。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B22",
+  "observable": "S₁垂直激发能、平均绝对误差、活性空间和线路收敛",
+  "quantum_role": "经典轨道与基态/激发态参考→态特异ΔADAPT线路模拟→两态能量差→光谱基准",
+  "scale": "最大活性空间(8电子,8轨道)；无噪声态矢模拟；70/583 CNOT为编译资源估计",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "六分子、无噪声方法、(8e,8o)、误差和线路资源；0.054 eV强经典比较。",
+      "title": "ΔADAPT-VQE: Toward Accurate Calculation of Excitation Energies on Quantum Computers for BODIPY Molecules With Application in Photodynamic Therapy",
+      "type": "预印本作者全文",
+      "url": "https://arxiv.org/html/2404.16149v1",
+      "work_id": "2404.16149",
+      "year": 2024
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "原站与PubMed检索核对经典多参考基准的书目信息；直接打开PubMed本次未返回正文，不宣称读取全文。",
+      "title": "Why do TD-DFT excitation energies of BODIPY/aza-BODIPY families largely deviate from experiment? Answers from electron correlated and multireference methods",
+      "type": "原始经典基准；DOI 10.1021/ct500775r",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/26575559/",
+      "work_id": "10.1021/ct500775r",
+      "year": 2015
+    }
+  ],
+  "subdomain": "光敏药物与激发态",
+  "system": "六种BODIPY衍生物的最低单重垂直激发；不是完整光动力治疗过程",
+  "tags": [
+    "BODIPY",
+    "光动力治疗",
+    "ΔADAPT",
+    "激发态",
+    "第二轮扩展"
+  ],
+  "title": "BODIPY 光敏剂：用态特异激发能辅助光谱筛选"
+}

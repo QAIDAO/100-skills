@@ -1,0 +1,37 @@
+{
+  "id": "C10",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "revision-3-public-benchmark-closure/results.json",
+      "goal": "GOAL.md",
+      "previous_results": "public-input-audit-v2/results.json",
+      "research": "revision-3-public-benchmark-closure/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/_execution/2026-10-04/cross/c10-followup/public-benchmark-v3/README.md",
+    "tasks/_execution/2026-10-04/cross/c10-followup/public-benchmark-v3/manifest.json",
+    "tasks/_execution/2026-10-04/cross/c10-followup/public-benchmark-v3/protocol.json",
+    "tasks/_execution/2026-10-04/cross/c10-followup/public-benchmark-v3/source-audit.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C10-reaction-network-pathways/README.md",
+      "sha256": "57a7a955f0a8f4f8b8ef40e9198dfa70bc9abd43d501cb948662882508f8a3cb"
+    },
+    {
+      "path": "tasks/C10-reaction-network-pathways/execution/LATEST.json",
+      "sha256": "cf51ad5f24da742afa48da517122f745e6ca43db439e24fd232aa0d104f77441"
+    },
+    {
+      "path": "tasks/C10-reaction-network-pathways/execution/revision-3-public-benchmark-closure/RESEARCH.md",
+      "sha256": "a36580e5b4a83e06e13f29e8eee811e745a3289fc4f67abcd6dfb52bdb075868"
+    }
+  ]
+}

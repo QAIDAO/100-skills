@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "半填充 QMC、临界标度拟合、不同均匀性模型",
+  "decision": "检验温度、相互作用和掺杂对反铁磁有序的临界约束。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F03",
+  "observable": "自旋结构因子、临界温度/掺杂趋势",
+  "quantum_role": "锂-6 原子构成模拟量子实验，Bragg 散射读取磁结构因子。",
+  "scale": "约 800,000 晶格位点；不是 800,000 通用逻辑比特",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "期刊题名与日期；详细实验摘要由同一研究 arXiv:2402.14605 交叉核查",
+      "title": "Antiferromagnetic phase transition in a 3D fermionic Hubbard model",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41586-024-07689-2",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "锂-6、约 80 万位点、SSF=123(8)、采用 Heisenberg 临界指数",
+      "title": "Observation of the antiferromagnetic phase transition in the fermionic Hubbard model",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2402.14605",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "早期低温磁关联与光散射测温；不是 2024 实验的独立复现",
+      "title": "Observation of antiferromagnetic correlations in the Hubbard model with ultracold atoms",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/nature14223",
+      "year": 2015
+    }
+  ],
+  "subdomain": "强关联模型与相变",
+  "system": "三维排斥费米 Hubbard 模型",
+  "tags": [
+    "三维Hubbard",
+    "反铁磁相变",
+    "中国科大",
+    "冷原子"
+  ],
+  "title": "三维 Hubbard 反铁磁相变：宏观均匀格点的临界行为"
+}

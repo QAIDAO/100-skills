@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "DVR、split-operator/FFT、Krylov、MCTDH；热效应用路径积分",
+  "decision": "识别何时必须显式处理核量子运动，为氢键材料与质子转移模型提供校验。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C06",
+  "observable": "质子空间概率、时间相关函数、非谐振动峰",
+  "quantum_role": "离散核坐标映射与量子逻辑演化；与电子结构计算串接",
+  "scale": "少量逻辑自由度映射至离子阱；不是完整氢键网络与电子共同从头模拟",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "QSCOUT共享质子与振动频率；预印本2022、期刊2023",
+      "title": "Quantum Computation of Hydrogen Bond Dynamics and Vibrational Spectra",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2204.08571",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "多组分电子—核耦合扩展，不能与单核波包混为一谈",
+      "title": "Nonadiabatic nuclear-electron dynamics: a quantum computing approach",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2306.01671",
+      "year": 2023
+    }
+  ],
+  "subdomain": "核量子与跨尺度",
+  "system": "固定核骨架下的约化维数共享质子势能模型",
+  "tags": [
+    "核量子",
+    "质子转移",
+    "振动谱",
+    "离子阱"
+  ],
+  "title": "共享质子波包与非谐振动谱：核量子效应的硬件原型"
+}

@@ -1,0 +1,46 @@
+{
+  "id": "B08",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-source-v4/results.json",
+      "goal": "public-source-v4/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b08-parent-promotion.json",
+      "research": "public-source-v4/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B08-covalent-btk/mechanism.png",
+    "tasks/B08-covalent-btk/visualization.json",
+    "tasks/B08-covalent-btk/workflow.png",
+    "tasks/B16-prodrug-cleavage/README.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B08-covalent-btk/README.md",
+      "sha256": "142a1b0512cc9fe7d751c010e5b239aaa8635222b6002cf1709e30634c53600e"
+    },
+    {
+      "path": "tasks/B08-covalent-btk/mechanism.svg",
+      "sha256": "aaf804f5c3f1a3210992a9bd72ba004a1149c6a15c352fd6bc579e292adfe019"
+    },
+    {
+      "path": "tasks/B08-covalent-btk/workflow.svg",
+      "sha256": "751c902c728701abef9a1b827cfe6d3ea20dc2fb7f9939e946e2b51f78861852"
+    },
+    {
+      "path": "tasks/B08-covalent-btk/execution/LATEST.json",
+      "sha256": "c9340f8bde84712199b720a399a66481a34c2807f9fc53eee5150e70efdf2641"
+    },
+    {
+      "path": "tasks/B08-covalent-btk/execution/public-source-v4/RESEARCH.md",
+      "sha256": "001f8bbeb4758f049d20f8d876c8253a9cd26f81d855082d732d598d40c77435"
+    }
+  ]
+}

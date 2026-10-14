@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "ED、DMRG、张量网络、可解 Kitaev 极限",
+  "decision": "排除普通无序态，辨识候选磁体模型是否具备分数量子激发和拓扑结构。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F04",
+  "observable": "非局域弦算符、局域序、拓扑不变量",
+  "quantum_role": "2021 原生 Rydberg blockade 模拟；2025 可重排中性原子的门式费米编码。",
+  "scale": "2021 为 219 原子；2025 是不同数字架构，二者尺度不能相加",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "219 原子、kagome 链接、弦算符；期刊 Science 374 (2021)",
+      "title": "Probing Topological Spin Liquids on a Programmable Quantum Simulator",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2104.04119",
+      "year": 2021
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "测量反馈、可重排阵列数字模拟、奇 Chern 数；Nature 645,341–347",
+      "title": "Probing the Kitaev honeycomb model on a neutral-atom quantum computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2501.18554",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "用动力学理论分析 Rydberg 制备态；不是追加实机实验",
+      "title": "Dynamical preparation of quantum spin liquids in Rydberg atom arrays",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2201.04034",
+      "year": 2022
+    }
+  ],
+  "subdomain": "受挫磁性与拓扑",
+  "system": "kagome 链接阵列的约束模型及 Kitaev 蜂窝模型",
+  "tags": [
+    "自旋液体",
+    "Rydberg",
+    "Kitaev",
+    "拓扑"
+  ],
+  "title": "受挫磁性与自旋液体：用弦算符及拓扑响应辨识量子态"
+}

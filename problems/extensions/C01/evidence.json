@@ -1,0 +1,50 @@
+{
+  "id": "C01",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "public-geometry-v2/manifest.json",
+      "current_results": "public-geometry-v2/results.json",
+      "current_revision": "public-geometry-v2",
+      "goal": "public-geometry-v2/GOAL.md",
+      "hardware_run": false,
+      "id": "C01",
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": true,
+      "research": "public-geometry-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C01-lithium-superoxide/mechanism.png",
+    "tasks/C01-lithium-superoxide/visualization.json",
+    "tasks/C01-lithium-superoxide/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C01-lithium-superoxide/README.md",
+      "sha256": "d6c204f0c735b600e7e1f34f4cfcb795a25311c6c5633411edfccffd54ab9452"
+    },
+    {
+      "path": "tasks/C01-lithium-superoxide/mechanism.svg",
+      "sha256": "ade04ed4305857aef20afa37ae17612c1591b939828b3b7e8b4f776d71af43d5"
+    },
+    {
+      "path": "tasks/C01-lithium-superoxide/workflow.svg",
+      "sha256": "4878c237c8c46addece6ff83a6d9e0d357ba88d50f04426d8a21338b84b02526"
+    },
+    {
+      "path": "tasks/C01-lithium-superoxide/execution/LATEST.json",
+      "sha256": "01555aa1b7948d5b71bd1160b9026902590bb4f6388f84954e4f7207666cb0d6"
+    },
+    {
+      "path": "tasks/C01-lithium-superoxide/execution/public-geometry-v2/RESEARCH.md",
+      "sha256": "ba4eb173606f5f5ea38129f7997007456a666d21f96739761a203e2d395c2a02"
+    }
+  ]
+}

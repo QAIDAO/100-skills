@@ -1,0 +1,56 @@
+{
+  "id": "M07",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "public-input-v2/manifest.json",
+      "current_results": "public-input-v2/results.json",
+      "current_revision": "public-input-v2",
+      "goal": "public-input-v2/GOAL.md",
+      "hardware_run": false,
+      "id": "M07",
+      "original_target_status": "incomplete",
+      "parent_validation": "tasks/_execution/2026-10-04/validation/round7-input-parent-audit.json",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": false,
+      "research": "public-input-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M07-lithium-silicate-qpe/execution/public-input-v2/GOAL.md",
+    "tasks/M07-lithium-silicate-qpe/execution/public-input-v2/NEXT.md",
+    "tasks/M07-lithium-silicate-qpe/execution/public-input-v2/manifest.json",
+    "tasks/M07-lithium-silicate-qpe/execution/public-input-v2/results.json",
+    "tasks/M07-lithium-silicate-qpe/mechanism.png",
+    "tasks/M07-lithium-silicate-qpe/visualization.json",
+    "tasks/M07-lithium-silicate-qpe/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m07-followup"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M07-lithium-silicate-qpe/README.md",
+      "sha256": "900649f5056ca048781ccf2c82debd0f0ec06382ae77da8488fc9bcd87a939a2"
+    },
+    {
+      "path": "tasks/M07-lithium-silicate-qpe/mechanism.svg",
+      "sha256": "3a12daacd8bd371c94df5c900caf97dc2cc932c89fc25922e284c01576a3752d"
+    },
+    {
+      "path": "tasks/M07-lithium-silicate-qpe/workflow.svg",
+      "sha256": "0196572e39a27a1e62dc74de2ae552d1ff7382a291a098405be74e6d0cf48958"
+    },
+    {
+      "path": "tasks/M07-lithium-silicate-qpe/execution/LATEST.json",
+      "sha256": "f74b406f8b8281cfcf95b84a29aab4c7fa8996658c97cdaf87e53b622933ab0c"
+    },
+    {
+      "path": "tasks/M07-lithium-silicate-qpe/execution/public-input-v2/RESEARCH.md",
+      "sha256": "c8d00932daa90b77872cad6c692ef5f4db300abf0353006a60069128778704b9"
+    }
+  ]
+}

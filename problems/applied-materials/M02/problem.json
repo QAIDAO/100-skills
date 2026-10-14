@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同活性空间CASCI/CASSCF、收敛耦合簇及经典微扰后处理",
+  "decision": "在合成和可逆交联设计前，判断反应温区与候选路径是否受电子关联误差影响。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M02",
+  "observable": "反应物到TS的电子活化能、轨道占据和环境诱导势垒变化",
+  "quantum_role": "纠缠锻造制备关联信息，QSE扩展子空间，再经典微扰恢复动态关联",
+  "scale": "论文硬件最多8比特；仅活性电子部分，非整个溶液或聚合物网络",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "乙烯与环戊二烯势垒，纠缠锻造、QSE、微扰修正，最多8比特硬件",
+      "title": "Simulation of a Diels-Alder Reaction on a Quantum Computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2403.08107v1",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "PE-VQE-SCF模拟器及呋喃-乙烯反应势垒示例",
+      "title": "The variational quantum eigensolver self-consistent field method within a polarizable embedded framework",
+      "type": "期刊论文",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38533884/",
+      "year": 2024
+    }
+  ],
+  "subdomain": "反应路径与聚合材料",
+  "system": "乙烯+环戊二烯环加成；辅以呋喃+乙烯的极化环境算法对照",
+  "tags": [
+    "反应路径与聚合材料",
+    "硬件演示",
+    "近期验证"
+  ],
+  "title": "Diels–Alder 环加成势垒：把静态与动态关联接入合成路线判断"
+}

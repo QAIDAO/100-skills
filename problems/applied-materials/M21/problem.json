@@ -1,0 +1,43 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同模型FCI/pair-CI、iFCI、SHCI/DMRG及多参考方法；溶液自由能和实验脱氟另层验证",
+  "decision": "判断PFAS降解候选通道的电子相关校正是否改变断键顺序或路径优先级。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M21",
+  "observable": "固定电荷/几何定义的断键势能曲线及相对能，不等于水处理效率",
+  "quantum_role": "HPC优化VQE参数，IonQ Aria执行最终能量测量，配合对称性后选择与阈值缓解",
+  "scale": "所核查v1正文CH₃F为11比特、56纠缠门；2025经典iFCI对照扩展至PFOA150电子330轨道",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.48550/arXiv.2311.01242",
+      "id": "R1",
+      "supports": "只针对v1：摘要/正文分子不一致，III-B硬件参数与表I/II误差",
+      "title": "Pushing the Limits of Quantum Computing for Simulating PFAS Chemistry",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2311.01242v1",
+      "year": 2023
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.1039/d5sc03019f",
+      "id": "R2",
+      "supports": "TFA/PFBA/PFOA的iFCI强经典断键研究，PFOA150电子330轨道",
+      "title": "Breaking down per- and polyfluoroalkyl substances (PFAS): tackling multitudes of correlated electrons",
+      "type": "期刊论文",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12483100/",
+      "year": 2025
+    }
+  ],
+  "subdomain": "环境材料与污染物转化",
+  "system": "TFA等PFAS模拟，以及正文明确标注的CH₃F C–F断裂代理硬件模型",
+  "tags": [
+    "第二轮扩展",
+    "PFAS",
+    "脱氟",
+    "VQE",
+    "证据冲突"
+  ],
+  "title": "PFAS 脱氟：C–F 断裂曲线与治理机理的电子结构接口"
+}

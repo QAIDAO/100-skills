@@ -1,0 +1,49 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同截断多组分经典精确解、DVR/波包法、Born–Oppenheimer与非绝热对照",
+  "decision": "判断显式处理质子量子态能否改变势垒、离域及动力学解释，并验证可压缩线路。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B18",
+  "observable": "质子密度、转移布居、电子—核纠缠、势垒与近似动力学量",
+  "quantum_role": "NEO多组分哈密顿量、二次量子化演化；FNO/ADAPT与近似编译",
+  "scale": "电子与质子采用多组分轨道截断；2026出版版以18比特对应硬件噪声模型为线索",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "多组分时间演化与丙二醛模型",
+      "title": "Nonadiabatic nuclear-electron dynamics: a quantum computing approach",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2306.01671",
+      "year": 2023
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "期刊版NEO线路压缩；理想及ibm_pittsburgh噪声模型",
+      "title": "Approximate quantum circuit compilation for proton-transfer kinetics on quantum processors",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1039/D5CP04097C",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "早期预印本ibm_fez噪声模型和13%势垒偏差",
+      "title": "Approximate quantum circuit compilation for proton-transfer kinetics on quantum processors",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2507.08996",
+      "year": 2025
+    }
+  ],
+  "subdomain": "质子转移 / 非绝热模型",
+  "system": "Malonaldehyde质子转移模型；没有真实蛋白或药物结合环境",
+  "tags": [
+    "丙二醛",
+    "NEO",
+    "质子",
+    "非绝热"
+  ],
+  "title": "丙二醛：电子—质子动力学与NEO线路编译"
+}

@@ -1,0 +1,41 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "同Hamiltonian ED/Lanczos、HF与bare轨道基、精确幅度oracle",
+  "decision": "判断量子样本筛出的紧凑基是否保留谱权重，避免把基态能量收敛当作响应完整。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F15",
+  "observable": "添加/移除GF、DOS极点与残量、子空间采样收敛",
+  "quantum_role": "量子候选步骤是短时Krylov态制备与采样；投影、跨扇区重叠和连分式重建在经典端。",
+  "scale": "L=8/10/12轨道位点，最大1杂质+11浴；常规编码2L自旋轨道；非12比特实机",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "L8/10/12、N±1扇区、有限shots与oracle、经典模拟及未来闭环界限",
+      "title": "Green's Functions from Sample-based Krylov Quantum Diagonalization: An Impurity Solver for Dynamical Mean-Field Theory",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2609.09147v1",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "SKQD前驱的条件性收敛与大杂质基态实机演示；并非2026GF工作的实机证据",
+      "title": "Quantum-Centric Algorithm for Sample-Based Krylov Diagonalization",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2501.09702",
+      "year": 2025
+    }
+  ],
+  "subdomain": "量子子空间与动态响应",
+  "system": "由已收敛经典DMFT取得离散浴的粒子—空穴对称SIAM链",
+  "tags": [
+    "SKQD",
+    "Krylov",
+    "Green函数",
+    "SIAM",
+    "响应子空间"
+  ],
+  "title": "SKQD 杂质格林函数：从基态采样子空间扩展到粒子响应"
+}

@@ -1,0 +1,41 @@
+{
+  "id": "B26",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "native-spin-reference-v4/results.json",
+      "goal": "native-spin-reference-v4/GOAL.md",
+      "original_target_status": "incomplete",
+      "previous": {
+        "current_results": "results.json",
+        "note": "Read the current_results path; root results may be a preserved superseded run.",
+        "original_target_status": "incomplete",
+        "research": "RESEARCH.md"
+      },
+      "research": "native-spin-reference-v4/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/_execution/2026-10-04/bio/b26-si-reference-v4/spin-sector-reference.png",
+    "tasks/_execution/2026-10-04/bio/b26-spin-spectroscopy-design-v5/REPORT.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B26-psii-spin-ladder/README.md",
+      "sha256": "e7196b0e8ac5c0d3ebc2e1391321490984dd297c89f5557cbae4616bd8901ca3"
+    },
+    {
+      "path": "tasks/B26-psii-spin-ladder/execution/LATEST.json",
+      "sha256": "ad07fe8f0dcb7217129a18bbac76075f36e38b83dc83ad2fab301381b5c50a4c"
+    },
+    {
+      "path": "tasks/B26-psii-spin-ladder/execution/native-spin-reference-v4/RESEARCH.md",
+      "sha256": "e36a89de07c44de0ad16e3d05a323c1c9bfa5922133f3bf6ca06ff87f6fe679b"
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同一小空间精确对角化、未编码物理电路和经典高层能量校正",
+  "decision": "在庞大催化网络中找到对对映选择性敏感且经典诊断困难的构型，避免无差别上QPU。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M13",
+  "observable": "选定构型基态能和性质；最终所需为竞争对映路径ΔΔG‡",
+  "quantum_role": "AutoRXN/AutoCAS筛选→逻辑态制备与误差检测→classical shadows性质估计",
+  "scale": "经典网络3150构型/2227基元步；演示量子核心约简为两逻辑比特，不是整个网络量子计算",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "手性铁催化HPC筛选和两逻辑比特演示；HTML正文后段缺失",
+      "title": "End-to-End Quantum Simulation of a Chemical System",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2409.05835v1",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "态制备与强经典启发式共同约束基态任务的优势判断",
+      "title": "Evaluating the evidence for exponential quantum advantage in ground-state quantum chemistry",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41467-023-37587-6",
+      "year": 2023
+    }
+  ],
+  "subdomain": "催化自动化与逻辑量子计算",
+  "system": "苯乙酮与P–N–N–P铁催化体系",
+  "tags": [
+    "催化自动化与逻辑量子计算",
+    "硬件演示",
+    "近期验证"
+  ],
+  "title": "手性铁催化的 HPC＋逻辑比特流程：识别值得量子计算的少数构型"
+}

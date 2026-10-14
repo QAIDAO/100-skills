@@ -1,0 +1,43 @@
+{
+  "id": "M30",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-cgc-fno-v2/parent-review/results.json",
+      "goal": "public-cgc-fno-v2/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/m30-parent-promotion.json",
+      "research": "public-cgc-fno-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M18-copolymerization-dynamics/README.md",
+    "tasks/M30-cgc-polymerization-resources/execution/public-cgc-fno-v2/manifest.json",
+    "tasks/M30-cgc-polymerization-resources/execution/public-cgc-fno-v2/results-table.json",
+    "tasks/M30-cgc-polymerization-resources/execution/public-cgc-fno-v2/results.json",
+    "tasks/_execution/2026-10-04/materials/m20-m30-followup/m30/independent-validation.json",
+    "tasks/_execution/2026-10-04/materials/m20-m30-followup/m30/post-run-provenance.json",
+    "tasks/_execution/2026-10-04/materials/m20-m30-followup/m30/source-input-audit.json",
+    "tasks/_execution/2026-10-04/materials/m20-m30-followup/m30/sourceledger.json",
+    "tasks/_execution/2026-10-04/materials/m20-m30-followup/m30/validate_m30.py"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M30-cgc-polymerization-resources/README.md",
+      "sha256": "d0783020c2f5a600b296818ec65a4157bebafa50d81c5b4c6108090d016a0102"
+    },
+    {
+      "path": "tasks/M30-cgc-polymerization-resources/execution/LATEST.json",
+      "sha256": "62c585e4dcee1a6c8583f182005ee1819f4f922b365900114757fa5e54bd6dd9"
+    },
+    {
+      "path": "tasks/M30-cgc-polymerization-resources/execution/public-cgc-fno-v2/RESEARCH.md",
+      "sha256": "4d628cea92473fc2992362a06a64ac8f6ecb3e6c30d5a2d75b157ddf749f6095"
+    }
+  ]
+}

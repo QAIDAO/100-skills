@@ -1,0 +1,58 @@
+{
+  "id": "M03",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "bounded-training-v8/manifest.json",
+      "current_results": "bounded-training-v8/results.json",
+      "current_revision": "bounded-training-v8",
+      "goal": "bounded-training-v8/GOAL.md",
+      "original_target_status": "incomplete",
+      "previous_results": "results.json",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": true,
+      "research": "bounded-training-v8/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M03-ptco-oxygen-reduction/execution/bounded-training-v8/GOAL.md",
+    "tasks/M03-ptco-oxygen-reduction/execution/bounded-training-v8/manifest.json",
+    "tasks/M03-ptco-oxygen-reduction/execution/bounded-training-v8/results.json",
+    "tasks/M03-ptco-oxygen-reduction/execution/full36q-component-v6/RESEARCH.md",
+    "tasks/M03-ptco-oxygen-reduction/execution/perturbation-qualification-v7/RESEARCH.md",
+    "tasks/M03-ptco-oxygen-reduction/mechanism.png",
+    "tasks/M03-ptco-oxygen-reduction/visualization.json",
+    "tasks/M03-ptco-oxygen-reduction/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m03-training-figures-v8/exports/training-trace.pdf",
+    "tasks/_execution/2026-10-04/materials/m03-training-figures-v8/exports/training-trace.png",
+    "tasks/_execution/2026-10-04/materials/m03-training-terminal-review-v8/result.json",
+    "tasks/_execution/2026-10-04/materials/m03-variational-training-v8/protocol.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M03-ptco-oxygen-reduction/README.md",
+      "sha256": "9af003b10b2176d7b52cf8d5d8df28c84d4b1a66ec7a5956550c457ad24cf8dc"
+    },
+    {
+      "path": "tasks/M03-ptco-oxygen-reduction/mechanism.svg",
+      "sha256": "9ab6f850e103c0ebc9e3a869016055aea5f1a59155b59a76af88cf567ca9ea1c"
+    },
+    {
+      "path": "tasks/M03-ptco-oxygen-reduction/workflow.svg",
+      "sha256": "922d96c951549884d7d091ba7d8ae785943e5c3d42c20b58e690e764ce5f25a6"
+    },
+    {
+      "path": "tasks/M03-ptco-oxygen-reduction/execution/LATEST.json",
+      "sha256": "a95f6b39374e5af8ab473c076a0438beb7e19af89706d009a090c89de8652bb8"
+    },
+    {
+      "path": "tasks/M03-ptco-oxygen-reduction/execution/bounded-training-v8/RESEARCH.md",
+      "sha256": "daea509e5825c9fc500603228227d4af1ab95f5bd68f209cec85e909a50a1f43"
+    }
+  ]
+}

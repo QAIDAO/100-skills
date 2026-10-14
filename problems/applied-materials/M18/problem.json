@@ -1,0 +1,52 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "稀疏矩阵指数、解析活性聚合、kMC/Gillespie、矩方法和转移矩阵",
+  "decision": "比较给定反应性比和进料条件下聚合物更接近随机还是嵌段序列。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M18",
+  "observable": "链长分布、指定序列/嵌段事件概率、分子量矩",
+  "quantum_role": "将非幺正稀疏速率矩阵嵌入量子电路，为ODE求解提供oracle",
+  "scale": "状态种类随链长指数增长；论文短链模拟；约10³系统比特处10⁴–10⁵门为单次编码量级估算",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.48550/arXiv.2609.08432",
+      "id": "R1",
+      "supports": "2026-09-08；单体与二元活性聚合编码、数值验证及未完成端到端成本",
+      "title": "Explicit block encodings of rate matrices for simulating polymerization kinetics on quantum computers",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2609.08432v1",
+      "year": 2026
+    },
+    {
+      "access_level": "search_excerpt",
+      "doi": "10.1002/(SICI)1521-3927(19990401)20:4<214::AID-MARC214>3.0.CO;2-A",
+      "id": "R2",
+      "supports": "出版社检索摘要核验实验反应性比；直接打开失败，未读全文",
+      "title": "Random ethene/propene copolymerization from a catalyst system based on a “constrained geometry” half-sandwich complex",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1002/%28SICI%291521-3927%2819990401%2920%3A4%3C214%3A%3AAID-MARC214%3E3.0.CO%3B2-A",
+      "year": 1999
+    },
+    {
+      "access_level": "search_excerpt",
+      "doi": "10.1021/j100540a008",
+      "id": "R3",
+      "supports": "经典随机反应轨迹原始基线；出版社检索核验，公开PDF打开超时",
+      "title": "Exact stochastic simulation of coupled chemical reactions",
+      "type": "期刊论文",
+      "url": "https://pubs.acs.org/doi/10.1021/j100540a008",
+      "year": 1977
+    }
+  ],
+  "subdomain": "聚合物与反应动力学",
+  "system": "单单体活性聚合与二单体配位共聚的序列分辨速率模型",
+  "tags": [
+    "第二轮扩展",
+    "聚合物",
+    "非幺正动力学",
+    "block encoding"
+  ],
+  "title": "活性共聚动力学：保留单体序列的分子量分布模拟"
+}

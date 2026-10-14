@@ -1,0 +1,50 @@
+{
+  "id": "C03",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "published-static-v2/manifest.json",
+      "current_results": "published-static-v2/results.json",
+      "current_revision": "published-static-v2",
+      "goal": "published-static-v2/GOAL.md",
+      "hardware_run": false,
+      "id": "C03",
+      "original_target_status": "incomplete",
+      "quantum_algorithm_simulated": true,
+      "research": "published-static-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C03-bithiophene-transfer/execution/published-static-v2/evidence.png",
+    "tasks/C03-bithiophene-transfer/mechanism.png",
+    "tasks/C03-bithiophene-transfer/visualization.json",
+    "tasks/C03-bithiophene-transfer/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C03-bithiophene-transfer/README.md",
+      "sha256": "0c506896a095cc8d397a742dc845f74543a905b41b26a40e06f4dec5574e877f"
+    },
+    {
+      "path": "tasks/C03-bithiophene-transfer/mechanism.svg",
+      "sha256": "43872edac350ccfe831ff9754e602df48de2d0e01c9e4f33de6b3a41e0050307"
+    },
+    {
+      "path": "tasks/C03-bithiophene-transfer/workflow.svg",
+      "sha256": "72395e1ed48be9ae3681c8acf9d9bd8575ebed10102ff0b28188dc04741d8b0b"
+    },
+    {
+      "path": "tasks/C03-bithiophene-transfer/execution/LATEST.json",
+      "sha256": "621d347c74899597b0dcea2e512ae5d1384eeaf6bdf19a16124d8d425780d66f"
+    },
+    {
+      "path": "tasks/C03-bithiophene-transfer/execution/published-static-v2/RESEARCH.md",
+      "sha256": "a7c4f4842ced04957e5a1dbe869122f2d95e666758e5c52129b9d7876d6dace0"
+    }
+  ]
+}

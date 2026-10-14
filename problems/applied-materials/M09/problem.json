@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "QDET+FCI、经典多参考嵌入、适用TDDFT和实验谱",
+  "decision": "比较不同杂原子缺陷的单重/三重激发态排列，为光学操控候选选择提供物理依据。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M09",
+  "observable": "垂直激发能、态排序、多重度、对称性与候选间趋势",
+  "quantum_role": "量子嵌入构造可由经典或未来QPU求解的有效哈密顿量",
+  "scale": "完整周期缺陷环境用经典处理；局域缺陷有效空间供多体求解，空间大小需逐缺陷核验",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "中性IV族空位复合体单重/三重激发态的第一性原理预测",
+      "title": "First-principles Studies of Strongly Correlated States in Defect Spin Qubits in Diamond",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2008.13283",
+      "year": 2020
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "固体缺陷局域有效哈密顿量和经典/量子嵌入验证",
+      "title": "Quantum simulations of materials on near-term quantum computers",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2002.11173",
+      "year": 2020
+    }
+  ],
+  "subdomain": "缺陷候选筛选",
+  "system": "金刚石中中性group-IV vacancy complexes",
+  "tags": [
+    "缺陷候选筛选",
+    "经典验证",
+    "重点储备"
+  ],
+  "title": "金刚石 IV 族空位中心：筛选可光学操控的强关联缺陷"
+}

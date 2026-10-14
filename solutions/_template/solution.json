@@ -1,0 +1,24 @@
+{
+  "problem": "<题号，如 B12>",
+  "title": "<解法标题>",
+  "authors": ["<你的名字>"],
+  "license": "Apache-2.0",
+  "method": {
+    "family": "<方法族，如 vqe、qpe、sqd、quantum-kernel、annealing>",
+    "quantum_component": "<量子部分做什么>"
+  },
+  "results": [
+    {"observable": "<可观测量>", "value": 0.0, "unit": "<单位>", "uncertainty": 0.0}
+  ],
+  "baseline_comparison": [
+    {"method": "<经典方法>", "value": 0.0}
+  ],
+  "reproducibility": {
+    "code": "<代码路径或仓库链接加提交哈希>",
+    "environment": "<语言与依赖版本>",
+    "seeds": [],
+    "inputs": [{"name": "<输入>", "sha256": "<哈希>"}]
+  },
+  "compute": {"hardware": "<CPU/GPU/QPU 型号>", "qpu": false, "wall_time": "<耗时>"},
+  "self_assessment": "<pass、fail 或 inconclusive>"
+}

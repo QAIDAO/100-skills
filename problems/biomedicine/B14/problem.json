@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "HEOM、Redfield/Lindblad适用区间、张量网络及同模型精确演化",
+  "decision": "检验色素间耦合、能级排列和环境噪声如何改变能量到达反应中心的效率。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B14",
+  "observable": "时间依赖位点布居、转移概率、到达率、相干与损耗",
+  "quantum_role": "把激子哈密顿量映射到NMR/光子网络，以可控噪声表示环境",
+  "scale": "2018 NMR实验以2比特表示4个单激发态；不是全叶绿素电子结构或完整光合作用",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "四叶绿素原型、2比特NMR和环境谱密度控制",
+      "title": "Efficient quantum simulation of photosynthetic light harvesting",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41534-018-0102-2",
+      "year": 2018
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "光子网络光合能量输运模型",
+      "title": "Simulating photosynthetic energy transport on a photonic network",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41534-024-00824-x",
+      "year": 2024
+    }
+  ],
+  "subdomain": "光生物学 / 生物启发材料",
+  "system": "四色素Frenkel激子模型与FMO启发的光子网络；跨到人工捕光材料",
+  "tags": [
+    "FMO",
+    "激子",
+    "光合作用",
+    "开放系统"
+  ],
+  "title": "光合能量传递：色素网络与环境辅助输运"
+}

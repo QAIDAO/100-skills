@@ -1,0 +1,44 @@
+{
+  "id": "M19",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "full62q-component-v5/results.json",
+      "goal": "full62q-component-v5/GOAL.md",
+      "research": "full62q-component-v5/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M19-dinitrogen-cyanate-catalysis/execution/solver-diagnostics-v4/RESEARCH.md",
+    "tasks/M19-dinitrogen-cyanate-catalysis/mechanism.png",
+    "tasks/M19-dinitrogen-cyanate-catalysis/visualization.json",
+    "tasks/M19-dinitrogen-cyanate-catalysis/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M19-dinitrogen-cyanate-catalysis/README.md",
+      "sha256": "4435f576d8bc4c1c8441b041bbd35503c2e8801c6a9c448c4d07e7c19a66b2fb"
+    },
+    {
+      "path": "tasks/M19-dinitrogen-cyanate-catalysis/mechanism.svg",
+      "sha256": "c1b378a077bb85eeee51b989cf2e219a546f7aa95092baac8e7bd2339f54bea8"
+    },
+    {
+      "path": "tasks/M19-dinitrogen-cyanate-catalysis/workflow.svg",
+      "sha256": "b4c2744d3934ce1668cc12a15e2a59eef9cfa123536ac201d6199caaceabfdf7"
+    },
+    {
+      "path": "tasks/M19-dinitrogen-cyanate-catalysis/execution/LATEST.json",
+      "sha256": "ea8e193cefe63070691e2ea817a57f1463afc8b1477a61f5587d2eeb6856619c"
+    },
+    {
+      "path": "tasks/M19-dinitrogen-cyanate-catalysis/execution/full62q-component-v5/RESEARCH.md",
+      "sha256": "0da0706752c019c5f470c9b95e017a07b58aa0fe34be5f5edbd4f3eddd6e8d6e"
+    }
+  ]
+}

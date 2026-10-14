@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "网格传播、MCTDH、截断 Fock 基精确传播",
+  "decision": "检验分子光激发后的布居转移是否受关键振动和相位干涉控制。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F07",
+  "observable": "波包密度、电子态布居 Pα(t)、几何相位干涉",
+  "quantum_role": "离子内部两能级表示电子态，两运动模表示选定核振动。",
+  "scale": "每个示范是少电子态、少关键振动模；不是分子的全部 3N−6 核自由度",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "动态波包绕锥形交叉的干涉；摘要经 arXiv:2211.07320 核查",
+      "title": "Direct observation of geometric-phase interference in dynamics around a conical intersection",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41557-023-01300-3",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "另一组离子实验的几何相位及运动态测量",
+      "title": "Quantum simulation of conical intersections using trapped ions",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41557-023-01303-0",
+      "year": 2023
+    },
+    {
+      "access_level": "full_text",
+      "id": "R3",
+      "supports": "三种分子的双模非绝热动力学、参数表与实验过程；JACS 2025 DOI 10.1021/jacs.5c03336",
+      "title": "Experimental Quantum Simulation of Chemical Dynamics",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2409.04044v2",
+      "year": 2025
+    }
+  ],
+  "subdomain": "光化学与非绝热动力学",
+  "system": "工程化 Jahn–Teller/线性振电子模型；丙二烯阳离子、丁三烯阳离子、吡嗪",
+  "tags": [
+    "锥形交叉",
+    "离子阱",
+    "光化学",
+    "吡嗪"
+  ],
+  "title": "锥形交叉与分子光化学：几何相位及参数化非绝热动力学"
+}

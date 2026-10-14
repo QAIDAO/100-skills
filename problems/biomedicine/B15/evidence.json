@@ -1,0 +1,45 @@
+{
+  "id": "B15",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-coordinate-quantum-v3/results.json",
+      "goal": "public-coordinate-quantum-v3/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/round4-parent-promotion.json",
+      "research": "public-coordinate-quantum-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B15-thrombin-dmet-binding/mechanism.png",
+    "tasks/B15-thrombin-dmet-binding/visualization.json",
+    "tasks/B15-thrombin-dmet-binding/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B15-thrombin-dmet-binding/README.md",
+      "sha256": "34ae356ddfdf27df50a411c03c678e316ccd02c6b694c5aac0f34229a51f91ef"
+    },
+    {
+      "path": "tasks/B15-thrombin-dmet-binding/mechanism.svg",
+      "sha256": "20a0ed903bc0bb54d67d66052045f85658548f376fd5b10f245c08746f5ef670"
+    },
+    {
+      "path": "tasks/B15-thrombin-dmet-binding/workflow.svg",
+      "sha256": "342ae4ba9ee01d0b772140c841dd27f115bf42eac88e7c484d70cb347079e49a"
+    },
+    {
+      "path": "tasks/B15-thrombin-dmet-binding/execution/LATEST.json",
+      "sha256": "2637a29c35d5075307679997dad2588438ecbfd9c274b5379f187f6ab71abb8f"
+    },
+    {
+      "path": "tasks/B15-thrombin-dmet-binding/execution/public-coordinate-quantum-v3/RESEARCH.md",
+      "sha256": "32b6884a8f82fca61756743c01404003b9531367ffc6d82d6828813391384395"
+    }
+  ]
+}

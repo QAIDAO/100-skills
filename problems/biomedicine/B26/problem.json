@@ -1,0 +1,43 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同参数320维模型精确对角化；另查电子结构参数和光谱模型误差",
+  "decision": "通过低能自旋谱判断两个OEC候选结构哪一个更符合实验约束。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B26",
+  "observable": "低能自旋阶梯、峰位置、自旋标签和结构间排序",
+  "quantum_role": "经典交换参数→有效自旋模型编码→时间演化和模拟测量→经典自旋分辨谱恢复",
+  "scale": "13比特编码的数值演示；物理自旋空间维数320由局域维数推导；非全电子PSII",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "OEC图5及正文、13比特模拟、结构自旋排序、Rydberg实现提案与OSF数据声明",
+      "title": "Programmable simulations of molecules and materials with reconfigurable quantum processors",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41567-024-02738-z",
+      "work_id": "10.1038/s41567-024-02738-z",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "OEC氧化态模型和光谱约束背景；未审计全部参数和补充材料",
+      "title": "Metal oxidation states in biological water splitting",
+      "type": "期刊论文",
+      "url": "https://pubs.rsc.org/en/content/articlelanding/2015/sc/c4sc03720k",
+      "work_id": "10.1039/C4SC03720K",
+      "year": 2015
+    }
+  ],
+  "subdomain": "光系统II与多金属自旋",
+  "system": "OEC的S₂H-1b与S₂H-2b有效Heisenberg模型；三处自旋3/2和一处自旋2",
+  "tags": [
+    "PSII",
+    "Mn4CaO5",
+    "自旋阶梯",
+    "量子模拟",
+    "直接案例补充"
+  ],
+  "title": "PSII释氧中心：低能自旋阶梯的量子模拟框架"
+}

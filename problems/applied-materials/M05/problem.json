@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "含芯空穴的DFT/TDDFT/BSE、RAS和同模型精确小空间响应",
+  "decision": "定位充电后哪类局域配位或界面区域发生氧电子态变化，指导表面保护或结构调控。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M05",
+  "observable": "S(q,ω)、各方向响应交叉项、近边峰形及空间结构指纹",
+  "quantum_role": "量子演化获得非对角时域Green函数；经典构造动量分辨散射响应",
+  "scale": "18活性轨道的模型资源约100逻辑比特；论文报单电路3.25×10⁸ T门和约10⁴ shots",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "Li2MnO3氧K边、动态结构因子、18轨道资源估算",
+      "title": "Quantum Simulation of Electron Energy Loss Spectroscopy for Battery Materials",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2508.15935v1",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "电池局域XAS三个量子算法及谱学任务定位",
+      "title": "Simulating X-ray absorption spectroscopy of battery materials on a quantum computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2405.11015",
+      "year": 2024
+    }
+  ],
+  "subdomain": "电池谱学与显微分析",
+  "system": "Li₂MnO₃氧中心团簇的O K-edge EELS/ELNES",
+  "tags": [
+    "电池谱学与显微分析",
+    "资源估算",
+    "重点储备"
+  ],
+  "title": "Li₂MnO₃ 的 EELS：解析纳米尺度氧化还原与界面异质性"
+}

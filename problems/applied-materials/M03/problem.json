@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "周期DFT/NEB、同空间FCI/CASSCF、扩大空间的DMRG或选定CI",
+  "decision": "判断Pt覆盖层和Co环境如何影响局部氧解离，定位值得继续实验的催化构型。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M03",
+  "observable": "ΔE解离、ΔE‡、局域磁性及轨道占据",
+  "quantum_role": "AVAS区域嵌入+ADAPT-VQE/RDM测量+经典NEVPT2",
+  "scale": "Pt活性空间(2e,3o)/6比特；Pt/Co(4e,4o)/8比特；晶片与片段由经典处理",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "Pt及Pt/Co嵌入ORR；区分H1真机和H1-E模拟器；2023首发2024修订",
+      "title": "Platinum-based Catalysts for Oxygen Reduction Reaction simulated with a Quantum Computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2307.15823v2",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "Fe表面N₂活化的独立混合硬件流程，作为表面嵌入迁移参照",
+      "title": "Quantum hardware calculations of the activation and dissociation of nitrogen on iron clusters and surfaces",
+      "type": "期刊论文",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/38315092/",
+      "year": 2024
+    }
+  ],
+  "subdomain": "电催化与燃料电池",
+  "system": "Pt(111)与Pt包覆Co表面的O₂→2O局部解离步骤",
+  "tags": [
+    "电催化与燃料电池",
+    "硬件演示",
+    "近期验证"
+  ],
+  "title": "Pt/Pt–Co 燃料电池催化：氧分子解离的嵌入量子化学"
+}

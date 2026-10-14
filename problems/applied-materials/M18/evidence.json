@@ -1,0 +1,75 @@
+{
+  "id": "M18",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "quantum-ode-r59/results.json",
+      "delivery_review": "tasks/_execution/2026-10-04/materials/m18-ode-r59/DELIVERY-REVIEW.json",
+      "delivery_review_sha256": "e5a821e42e7705e95a89b4cd07bb04c4849db0c077c1ec6a50844f55ac5d548c",
+      "goal": "quantum-ode-r59/GOAL.md",
+      "manifest_sha256": "38ba23fb07aa086f2a48a64330d9a9792a0753fa2dd8278e6656f44a1c74ae77",
+      "note": "Two public N8 quantum100step trajectories and independent audit complete; both quantum/Euler precision gates and inherited second Euler/expm failure retained. Finite-shot readout/full-chain application unqualified. No previous M18 LATEST existed.",
+      "original_target_status": "incomplete",
+      "research": "quantum-ode-r59/RESULTS.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/audit-saved-retry-native-expectations.csv",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/concentrations-and-separate-error-gates.pdf",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/concentrations-and-separate-error-gates.png",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/figure1-saved-trajectories.csv",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/figure2-success-and-restart.csv",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/final-saved-observables.csv",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/local-stage-costs.csv",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/presentation-manifest.json",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/presentation-summary.json",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/success-retry-and-cost-boundaries.pdf",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/success-retry-and-cost-boundaries.png",
+    "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/successful-path-native-plans.csv",
+    "tasks/M18-copolymerization-dynamics/mechanism.png",
+    "tasks/M18-copolymerization-dynamics/visualization.json",
+    "tasks/M18-copolymerization-dynamics/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/EXECUTION-SCOPE.md",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/INDEPENDENT-SOURCES.md",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ODE-INDEPENDENT-AUDIT-DESIGN.md",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/PARENT-VISUAL-INSPECTION.json",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/RESOURCE-INDEPENDENT-REVIEW.json",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/RESOURCE-SUMMARY.json",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ode-audit/out/result.json",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ode-design.md",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ode-production/contract.json",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ode-production/out/result.json",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ode-production/production-manifest.json",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ode_audit_worker.py",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/ode_worker.py",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/qsvt-inverse-execution-design.md",
+    "tasks/_execution/2026-10-04/materials/m18-ode-r59/sources-qsvt.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M18-copolymerization-dynamics/README.md",
+      "sha256": "471c51da537b18a64948f436e5f840f1ac0d5ac55758c93157ee3806c9e6de6d"
+    },
+    {
+      "path": "tasks/M18-copolymerization-dynamics/mechanism.svg",
+      "sha256": "2b1da4c9b69084a4b42d623f1729f9d7e0f1d86eb37a56a8ab1c3cfd74f90839"
+    },
+    {
+      "path": "tasks/M18-copolymerization-dynamics/workflow.svg",
+      "sha256": "ff6ac189957c6407bdfdcf8d3cc9003db540c7994e8eb9cdd518e7569ea7e345"
+    },
+    {
+      "path": "tasks/M18-copolymerization-dynamics/execution/LATEST.json",
+      "sha256": "db2b20bae8d6892c060de0f4cb0d98a6eec0c9fbc1b01cb61daf1a14cf122b12"
+    },
+    {
+      "path": "tasks/M18-copolymerization-dynamics/execution/quantum-ode-r59/RESULTS.md",
+      "sha256": "d7d12b61510de506995167104a87b4e8efce684c2f2564d75d4f2075e1807eb0"
+    }
+  ]
+}

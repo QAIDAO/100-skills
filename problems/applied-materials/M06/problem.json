@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "精确枚举小系统、混合整数求解、模拟退火、并行回火和局域搜索",
+  "decision": "筛选不同锂含量下值得继续第一性原理计算的低能排布，解释充电曲线与相分离趋势。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M06",
+  "observable": "最低模型能量、有效低能样本、充电曲线与成功概率/成本",
+  "quantum_role": "量子退火求含粒子数约束的离散优化；经典构造能量模型与重评分",
+  "scale": "二进制占据变量映射为QUBO/Ising；物理退火比特随嵌入链增加，不等于电子轨道数",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "LFP点电荷模型、电离子联合优化与退火输出统计",
+      "title": "Simulating charging characteristics of lithium iron phosphate by electro-ionic optimization on a quantum annealer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2503.10581",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "巨正则变换降低有效耦合、离子配置量子退火",
+      "title": "Optimization of ionic configurations in battery materials by quantum annealing",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2401.02165",
+      "year": 2024
+    }
+  ],
+  "subdomain": "电池构型优化",
+  "system": "LiₓFePO₄中的Li离子与redox电子占据配置",
+  "tags": [
+    "电池构型优化",
+    "硬件演示",
+    "近期验证"
+  ],
+  "title": "磷酸铁锂的电离子占据：量子退火搜索低能充电构型"
+}

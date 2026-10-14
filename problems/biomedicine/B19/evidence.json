@@ -1,0 +1,46 @@
+{
+  "id": "B19",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-source-v3.1/results.json",
+      "goal": "public-source-v3.1/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b19-v3.1-erratum.json",
+      "research": "public-source-v3.1/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B19-druglike-active-space/execution/revision-2-frontier/RESEARCH.md",
+    "tasks/B19-druglike-active-space/mechanism.png",
+    "tasks/B19-druglike-active-space/visualization.json",
+    "tasks/B19-druglike-active-space/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B19-druglike-active-space/README.md",
+      "sha256": "7efcfb2f9a870cd54f7cd3c47bf15fbd8863bef4e5bd1bd840628fd28c46de10"
+    },
+    {
+      "path": "tasks/B19-druglike-active-space/mechanism.svg",
+      "sha256": "55b660ee6c832054493e9c2f87021978c203d2db5fc435a64e68b8ec2c8cfd25"
+    },
+    {
+      "path": "tasks/B19-druglike-active-space/workflow.svg",
+      "sha256": "80d23745b2eec4a738c3194d9e3fd7700b23f9b2b971f9d3a7bed89484d60e32"
+    },
+    {
+      "path": "tasks/B19-druglike-active-space/execution/LATEST.json",
+      "sha256": "e174942e3c2b6931b2e7e707a57cae02d026163b87d71a1b1e9c36c2b689c112"
+    },
+    {
+      "path": "tasks/B19-druglike-active-space/execution/public-source-v3.1/RESEARCH.md",
+      "sha256": "6f5f13627a4f0f4c51d10d2b2ca3c3bca529bd0382b9adeceae976d23041efb0"
+    }
+  ]
+}

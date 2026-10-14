@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "同模型多态CASCI+偶极矩阵元；经典网格/贝叶斯参数推断",
+  "decision": "检验量子前向模拟能否给参数反演提供可信信息，再迁移至复杂分子。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C04",
+  "observable": "前三个激发单重态的能隙、取向平均偶极强度、C=O键长区间",
+  "quantum_role": "qLR、qEOM、多态VQE或相关函数计算谱，经典外层反演",
+  "scale": "PDF拟定CAS(4,3)/CAS(6,5)，6/10系统比特；非已完成硬件规模",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "qLR/qEOM 响应方法及无噪模拟；不支持本题甲醛反演已在硬件完成",
+      "title": "Quantum simulation of molecular response properties",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2301.06260",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "RDM 路线计算分子谱，示例苯、R-methyloxirane、水；不把这些对象冒充甲醛",
+      "title": "Reduced density matrix formulation of quantum linear response",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2404.16586",
+      "year": 2024
+    }
+  ],
+  "subdomain": "光谱与模型反演",
+  "system": "H₂CO有限活性空间，理想化C₂v几何族",
+  "tags": [
+    "qLR",
+    "光谱反演",
+    "不确定性",
+    "PDF六方向"
+  ],
+  "title": "甲醛电子谱与键长反演：可验收的光谱求解器原型"
+}

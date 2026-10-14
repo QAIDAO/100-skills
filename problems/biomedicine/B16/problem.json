@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "HF、同CAS CASCI、DFT及更大活性空间；原药物化学实验",
+  "decision": "选择能在目标环境释放母药、在非目标环境保持稳定的触发和连接策略。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B16",
+  "observable": "反应自由能与活化自由能的混合估计、溶剂效应",
+  "quantum_role": "经典几何/频率→PCM/ddCOSMO→小CAS VQE→经典热校正",
+  "scale": "CAS(2e,2o)经parity约化到2比特；环境和热G修正经典完成",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "β-lapachone、CAS(2e,2o)、2比特、ddCOSMO和HF热G修正",
+      "title": "A Hybrid Quantum Computing Pipeline for Real World Drug Discovery",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/html/2401.03759v3",
+      "year": 2024
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "ROS响应触发、C–C释放β-lapachone与独立药理实验",
+      "title": "A Carbon-Carbon Bond Cleavage-Based Prodrug Activation Strategy Applied to β-Lapachone for Cancer-Specific Targeting",
+      "type": "期刊论文",
+      "url": "https://onlinelibrary.wiley.com/doi/10.1002/anie.202210001",
+      "year": 2022
+    }
+  ],
+  "subdomain": "前药设计 / 活化反应",
+  "system": "β-lapachone前药的C–C断裂关键分子；关联KRAS共价键力计算",
+  "tags": [
+    "前药",
+    "β-lapachone",
+    "溶剂化",
+    "断键"
+  ],
+  "title": "β-拉帕醌前药：碳碳断键与溶剂化自由能"
+}

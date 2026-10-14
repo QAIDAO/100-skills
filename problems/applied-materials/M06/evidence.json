@@ -1,0 +1,77 @@
+{
+  "id": "M06",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "case_review": "tasks/_execution/2026-10-04/materials/m06-cost-r66/CASE-REVIEW.json",
+      "case_review_sha256": "8e5d3d77e3e072b520988eb41b227810cdb6f1ae0f6a7c2aad1ddb5c839217ab",
+      "current_results": "cost-qualification-r66/results.json",
+      "current_revision": "cost-qualification-r66",
+      "goal": "cost-qualification-r66/GOAL.md",
+      "id": "M06",
+      "manifest_sha256": "6257d4a424f6021e16e5bf5cbe3040a55799e8e8a3177c550feddcf5f98c80c4",
+      "note": "Current native preparation/cost qualification and resource policy stop; full32 optimization unexecuted; historical8q quantum component retained; only R6 cost evidence newly scoped.",
+      "original_target_status": "incomplete",
+      "prior_quantum_reference": {
+        "path": "tasks/M06-lfp-annealing/execution/revision-2-public-unit-cell/results.json",
+        "sha256": "8b40edfdeb03801df6d7418859f9a54d1ff4e60e9b276661f89dc274ad22ddf0"
+      },
+      "prior_revisions_preserved": true,
+      "requirement_increment": "tasks/_execution/2026-10-04/validation/requirements-r66-increment.json",
+      "requirement_increment_sha256": "c5ff87a46277346f7315d48a394aca7b1275f440ba616b9c41131692952d2574",
+      "research": "cost-qualification-r66/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/GOAL.md",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/LATEST-at-intake.json",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/REPRODUCE.md",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/RESOURCE-REVIEW.json",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/RESOURCE-SUMMARY.json",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/classical-reference.csv",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/manifest.json",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/profile-summary.csv",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/results.json",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/stage-resources.csv",
+    "tasks/M06-lfp-annealing/execution/cost-qualification-r66/summary.csv",
+    "tasks/M06-lfp-annealing/execution/revision-2-public-unit-cell/results.json",
+    "tasks/M06-lfp-annealing/execution/revision-3-full32-classical-audit/RESEARCH.md",
+    "tasks/M06-lfp-annealing/mechanism.png",
+    "tasks/M06-lfp-annealing/visualization.json",
+    "tasks/M06-lfp-annealing/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m06-cost-r66/BASELINE-RESULT-REVIEW.json",
+    "tasks/_execution/2026-10-04/materials/m06-cost-r66/DESIGN-COST.md",
+    "tasks/_execution/2026-10-04/materials/m06-cost-r66/INPUT-BASELINE-REVIEW.md",
+    "tasks/_execution/2026-10-04/materials/m06-cost-r66/PUBLIC-ROUTE-READBACK.json",
+    "tasks/_execution/2026-10-04/materials/m06-cost-r66/baseline-cost/production-manifest.json",
+    "tasks/_execution/2026-10-04/materials/m06-cost-r66/cost-qualification/out/capacity-guard.json",
+    "tasks/_execution/2026-10-04/materials/m06-cost-r66/cost-qualification/production-manifest.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M06-lfp-annealing/README.md",
+      "sha256": "521c4380d33acbf8fb4cd6338566a6c941b5f540377f09abb67fb5e42fbfe9dd"
+    },
+    {
+      "path": "tasks/M06-lfp-annealing/mechanism.svg",
+      "sha256": "f19ff047d05833b53843675d839c49c92258f6b2ec1ae0d6de8df47c70460be1"
+    },
+    {
+      "path": "tasks/M06-lfp-annealing/workflow.svg",
+      "sha256": "846f1601f23d3776fb2245f8b7b5f95427a98bdbc3e855f86d82c32537cafa73"
+    },
+    {
+      "path": "tasks/M06-lfp-annealing/execution/LATEST.json",
+      "sha256": "921b94940bae3040dfe5b86f58618b1fd6dc7b5bd16c0abe100590892143be73"
+    },
+    {
+      "path": "tasks/M06-lfp-annealing/execution/cost-qualification-r66/RESEARCH.md",
+      "sha256": "f4aac0094e09321947eac8da31a46f553b4cc8b0dfcf52d16ace9955141e096a"
+    }
+  ]
+}

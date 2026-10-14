@@ -1,0 +1,52 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "SHCI、CASSCF/MRCI与多层嵌入及经典核动力学；环境结构误差独立评估",
+  "decision": "判断限域分子稳定性问题是否值得高层电子结构校正，以及容错成本是否可承受。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M20",
+  "observable": "固定模型相对电子能、模型偏差与计算成本；材料稳定性仍需额外动力学证据",
+  "quantum_role": "双因子化或双平面波QPE资源估算，为经典稳定性模型提供电子能校正",
+  "scale": "小嵌入空间到百轨道资源模型；逻辑比特与纠错物理比特分层，未运行容错硬件",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.48550/arXiv.2408.13244",
+      "id": "R1",
+      "supports": "限域异构化任务与QPE成本；应用设想不等于稳定材料或推进验证",
+      "title": "Fullerene-encapsulated Cyclic Ozone for the Next Generation of Nano-sized Propellants via Quantum Computation",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2408.13244v1",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.1021/acs.jpca.8b01554",
+      "id": "R2",
+      "supports": "SHCI原始强经典基线，包含孤立臭氧的相关电子态",
+      "title": "Excited States of Methylene, Polyenes, and Ozone from Heat-Bath Configuration Interaction",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/1803.05941",
+      "year": 2018
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.1021/ja203428x",
+      "id": "R3",
+      "supports": "本次读取作者公开26页SI而非期刊正文；多参考电子结构与核量子效应方法依据",
+      "title": "Theoretical Prediction on the Thermal Stability of Cyclic Ozone and Strong Oxygen Tunneling",
+      "type": "期刊论文",
+      "url": "https://lab409chem.ccu.edu.tw/var/file/80/1080/img/1544/ja203428x_si_001.pdf",
+      "year": 2011
+    }
+  ],
+  "subdomain": "限域分子与亚稳材料",
+  "system": "富勒烯环境中的环状/开链臭氧及局域嵌入模型",
+  "tags": [
+    "第二轮扩展",
+    "限域稳定性",
+    "亚稳分子",
+    "QPE"
+  ],
+  "title": "富勒烯限域环状臭氧：分子稳定性与容错计算可行性"
+}

@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "实时TDDFT、模型势与有限尺寸/时间步收敛；可解小模型精确传播",
+  "decision": "降低聚变靶模拟中粒子能量沉积的不确定性，约束靶设计模型。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C05",
+  "observable": "S(v)=−dE_projectile/dx，速度/温度/密度依赖及统计误差",
+  "quantum_role": "非Born–Oppenheimer联合演化，qubitization/Trotter与动能测量",
+  "scale": "逻辑量子比特和Toffoli估算依目标密度、基组、时间与精度变化；无当前硬件完成证明",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "容错算法、有限温度多粒子动力学与资源估算；PNAS DOI 10.1073/pnas.2317772121",
+      "title": "Quantum computation of stopping power for inertial fusion target design",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2308.12352",
+      "year": 2024
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "检索返回方法段关于动能测量与初态；直接打开遇验证码，未宣称通读",
+      "title": "Quantum computation of stopping power for inertial fusion target design — published full text",
+      "type": "期刊论文",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC11161767/",
+      "year": 2024
+    }
+  ],
+  "subdomain": "极端条件材料",
+  "system": "有限温度电子与带电入射粒子的第一量子化模型",
+  "tags": [
+    "容错",
+    "聚变",
+    "非平衡",
+    "阻止本领"
+  ],
+  "title": "温稠密物质阻止本领：聚变靶材的能量沉积"
+}

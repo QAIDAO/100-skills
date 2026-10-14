@@ -1,0 +1,49 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "tDMRG、TEBD、精确对角化、流体力学标度",
+  "decision": "建立关联磁体自旋传输机制的判据，避免仅靠一个指数拟合判相。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F05",
+  "observable": "畴壁松弛、自旋密度、极化转移全计数统计",
+  "quantum_role": "冷原子 Heisenberg 链或超导模拟器实现实时自旋演化。",
+  "scale": "KPZ 冷原子工作最多约 50 自旋；各平台和几何不能直接拼接",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "最多 50 自旋畴壁、z=3/2、输运统计；Science 376,716–720",
+      "title": "Quantum gas microscopy of Kardar-Parisi-Zhang superdiffusion",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2107.00038",
+      "year": 2022
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "XXZ 可调各向异性、自旋螺旋初态、扩散至异常输运",
+      "title": "Spin transport in a tunable Heisenberg model realized with ultracold atoms",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41586-020-3033-y",
+      "year": 2020
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "超导梯形模拟器扩散与无序/倾斜场下异常次扩散",
+      "title": "Probing spin hydrodynamics on a superconducting quantum simulator",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41467-024-52082-2",
+      "year": 2024
+    }
+  ],
+  "subdomain": "量子磁性与输运",
+  "system": "一维 Heisenberg/XXZ 链、对照二维耦合或梯形结构",
+  "tags": [
+    "自旋输运",
+    "KPZ",
+    "Heisenberg",
+    "非平衡"
+  ],
+  "title": "非平衡自旋输运：检验扩散、超扩散与初态依赖"
+}

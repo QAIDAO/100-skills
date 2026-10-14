@@ -1,0 +1,42 @@
+{
+  "id": "M23",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "delivery-clarification-r52/results.json",
+      "delivery_manifest_sha256": "51f6918c9c4e1e5dc65e9273488938ed884f9c7e24d9f464a7d961568c314734",
+      "goal": "delivery-clarification-r52/GOAL.md",
+      "id": "M23",
+      "manifest": "delivery-clarification-r52/manifest.json",
+      "original_target_status": "incomplete",
+      "previous_pointer": null,
+      "previous_results": "results.json",
+      "research": "delivery-clarification-r52/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M23-lithium-sulfur-dissociation/execution/GOAL.md",
+    "tasks/M23-lithium-sulfur-dissociation/execution/RESEARCH.md",
+    "tasks/M23-lithium-sulfur-dissociation/execution/delivery-clarification-r52/coordinate-alias-audit.json",
+    "tasks/M23-lithium-sulfur-dissociation/execution/delivery-clarification-r52/results.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M23-lithium-sulfur-dissociation/README.md",
+      "sha256": "82da7db21f7c69e17766d004e2e27536a71778d7aba3cbb14e5adf8381333de4"
+    },
+    {
+      "path": "tasks/M23-lithium-sulfur-dissociation/execution/LATEST.json",
+      "sha256": "7129942a2b243cbde0f4eda611cad49171a3cc3409927bd505f22b7d842ee2a4"
+    },
+    {
+      "path": "tasks/M23-lithium-sulfur-dissociation/execution/delivery-clarification-r52/RESEARCH.md",
+      "sha256": "cf9683b41aabee341e130269c3b212f43df8c038a054a3a949457b18ec9ff2f5"
+    }
+  ]
+}

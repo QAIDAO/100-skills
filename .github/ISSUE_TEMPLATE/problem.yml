@@ -1,0 +1,30 @@
+name: 题目讨论
+description: 题面勘误、补充输入来源，或细化验收标准
+title: "[题目] <题号>: "
+labels: ["problem"]
+body:
+  - type: input
+    id: problem
+    attributes:
+      label: 题号
+      placeholder: M01
+    validations:
+      required: true
+  - type: dropdown
+    id: kind
+    attributes:
+      label: 类型
+      options:
+        - 题面勘误
+        - 补充公开输入或数据来源
+        - 细化验收标准
+        - 其他
+    validations:
+      required: true
+  - type: textarea
+    id: detail
+    attributes:
+      label: 说明
+      description: 请附文献或数据来源
+    validations:
+      required: true

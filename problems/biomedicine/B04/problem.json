@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "DMRG、HCI/SHCI、经典构型生成，同子空间大小与墙钟预算",
+  "decision": "决定是否用量子采样改善复杂铁硫活性中心低能态描述。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B04",
+  "observable": "基态能、低能自旋关联；扩展可研究氧化还原能差",
+  "quantum_role": "LUCJ等线路采样→粒子数恢复→经典子空间对角化",
+  "scale": "论文工作流最多77比特、10570门；最大值覆盖整项研究，不自动属于每个簇",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "SQD流程；氮分子及铁硫簇硬件实验；77比特上限",
+      "title": "Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric Supercomputer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2405.05068",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "铁硫簇低能谱的经典多电子量子化学基线",
+      "title": "Low-energy spectrum of iron-sulfur clusters directly from many-particle quantum mechanics",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/1408.5080",
+      "year": 2014
+    }
+  ],
+  "subdomain": "生物能量 / 多金属簇",
+  "system": "[2Fe–2S]和[4Fe–4S]局域簇模型；不等于呼吸链完整蛋白",
+  "tags": [
+    "铁硫簇",
+    "SQD",
+    "DMRG",
+    "电子传递"
+  ],
+  "title": "铁硫簇：SQD与生物电子传递中心"
+}

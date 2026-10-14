@@ -1,0 +1,24 @@
+name: 解法提案
+description: 提出或讨论某道题的解法思路
+title: "[解法] <题号>: "
+labels: ["solution"]
+body:
+  - type: input
+    id: problem
+    attributes:
+      label: 题号
+      placeholder: B12
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: 思路
+      description: 模型如何对应题面、量子与经典各做什么、打算和哪个经典基线对照
+    validations:
+      required: true
+  - type: textarea
+    id: resources
+    attributes:
+      label: 预计资源与风险
+      description: 规模、计算资源、可能失败的地方

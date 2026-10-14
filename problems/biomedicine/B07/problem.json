@@ -1,0 +1,49 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "EWF-CCSD、同轨道经典选态CI；DMET-VQE/CCSD对应分片基线",
+  "decision": "决定哪些结合口袋片段值得高精度处理，以及混合基础设施是否产生净收益。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B07",
+  "observable": "片段能量、静态结合能、嵌入与基组收敛",
+  "quantum_role": "EWF嵌入→片段QPU采样→超算TrimSQD→能量合并",
+  "scale": "整体11608/12635原子；两台156比特设备中最多用94比特；并非万原子直接映射QPU",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "两个万原子复合体、94比特、片段求解和基组导致的结合能限制",
+      "title": "Crossing the 12,000-atom barrier with heterogeneous quantum-classical supercomputing: quantum chemistry of protein-ligand complexes",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2605.01138v2",
+      "year": 2026
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "凝血酶5配体、3片段DMET/VQE与CCSD；硬件受限和部分transpiler不公开",
+      "title": "Quantum Computing Calculations of Protein–Ligand Binding Energies Using Decomposition Methods on Simulated and Real Quantum Hardware",
+      "type": "期刊论文",
+      "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.6c00544",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "SQD流程；氮分子及铁硫簇硬件实验；77比特上限",
+      "title": "Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric Supercomputer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2405.05068",
+      "year": 2025
+    }
+  ],
+  "subdomain": "药物结合 / 异构高性能计算",
+  "system": "T4溶菌酶与胰蛋白酶复合体；相关子例为凝血酶和5个配体",
+  "tags": [
+    "EWF",
+    "DMET",
+    "蛋白配体",
+    "超算"
+  ],
+  "title": "蛋白—配体嵌入：万原子规模与凝血酶分片"
+}

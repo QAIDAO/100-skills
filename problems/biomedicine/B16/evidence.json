@@ -1,0 +1,45 @@
+{
+  "id": "B16",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "revision-3-frontier/final-audit/results.json",
+      "goal": "revision-3-frontier/final-audit/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/b16-parent-promotion.json",
+      "research": "revision-3-frontier/final-audit/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B16-prodrug-cleavage/mechanism.png",
+    "tasks/B16-prodrug-cleavage/visualization.json",
+    "tasks/B16-prodrug-cleavage/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B16-prodrug-cleavage/README.md",
+      "sha256": "d3316f67ee37c5370bcda0cfa56d6afa476cf500494a14e5f946b7b6563e8ae5"
+    },
+    {
+      "path": "tasks/B16-prodrug-cleavage/mechanism.svg",
+      "sha256": "666527afc4fa03380a38de76c0827b845a2020f8003dbe134722a102a65b2b47"
+    },
+    {
+      "path": "tasks/B16-prodrug-cleavage/workflow.svg",
+      "sha256": "2cb9946d927f295bc0a33ab82d0e94144060e04095ba2725c72d549039af4fe1"
+    },
+    {
+      "path": "tasks/B16-prodrug-cleavage/execution/LATEST.json",
+      "sha256": "ce69f8c18c4a46dd9e2b1d177d5491267223a579c31a58043e6df2c0f164d9c7"
+    },
+    {
+      "path": "tasks/B16-prodrug-cleavage/execution/revision-3-frontier/final-audit/RESEARCH.md",
+      "sha256": "e8245a04fd2fcf785688f9382ab5682e15ad631777c80ad3befd783c4506d20e"
+    }
+  ]
+}

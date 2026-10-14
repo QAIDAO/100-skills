@@ -1,0 +1,51 @@
+{
+  "id": "M02",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-coordinate-v2/results.json",
+      "goal": "public-coordinate-v2/GOAL.md",
+      "original_target_status": "incomplete",
+      "research": "public-coordinate-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M02-diels-alder-barrier/execution/public-coordinate-v2/manifest.json",
+    "tasks/M02-diels-alder-barrier/execution/public-coordinate-v2/post-run-provenance.json",
+    "tasks/M02-diels-alder-barrier/execution/public-coordinate-v2/results.json",
+    "tasks/M02-diels-alder-barrier/execution/public-coordinate-v2/summary.json",
+    "tasks/M02-diels-alder-barrier/execution/public-coordinate-v2/validation.json",
+    "tasks/M02-diels-alder-barrier/mechanism.png",
+    "tasks/M02-diels-alder-barrier/visualization.json",
+    "tasks/M02-diels-alder-barrier/workflow.png",
+    "tasks/_execution/2026-10-04/validation/m02-oracle-schmidt-diagnostic.json",
+    "tasks/_execution/2026-10-04/validation/m02-parent-state-audit.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M02-diels-alder-barrier/README.md",
+      "sha256": "5c16fa147d0b74ba0fbb681693bb47bc0c84e80e239c9810f89235605aa1ed7c"
+    },
+    {
+      "path": "tasks/M02-diels-alder-barrier/mechanism.svg",
+      "sha256": "c4b4259edaa019e44dc84fa8267b9c03fcee2f33315280eda0af8d4d08810c60"
+    },
+    {
+      "path": "tasks/M02-diels-alder-barrier/workflow.svg",
+      "sha256": "02b8ad84f7f636c612825d086516d10c405fe6150cc07bd1e3bba8407ddf962a"
+    },
+    {
+      "path": "tasks/M02-diels-alder-barrier/execution/LATEST.json",
+      "sha256": "f3e0f6b80d9687d2ff488e99c44877c6e5025a322873879a12f36ccd3c815733"
+    },
+    {
+      "path": "tasks/M02-diels-alder-barrier/execution/public-coordinate-v2/RESEARCH.md",
+      "sha256": "212fe41491afbff20d86983f1a3e721d4130bda7118ddb1433984f82dca356f9"
+    }
+  ]
+}

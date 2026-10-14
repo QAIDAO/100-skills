@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "相同EWF的FCI/TCI/CCSD；未分片CCSD与DLPNO-CCSD(T)；同任务HCI",
+  "decision": "判断氚局域化学形态计算是否足以支持回收热力学，而不是仅证明片段解得准。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M11",
+  "observable": "同参考构象相对能ΔE、固定几何氚电子结合能和模型误差",
+  "quantum_role": "EWF分片，较大片段由QPU采样+ext-SQD，经典重构总能与RDM",
+  "scale": "九个构型；中性团簇21原子，另有22/23原子带电配对；13–33轨道片段不等于整块熔盐",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "FLiBe ext-SQD与分片误差；图5相对能和绝对能必须区分",
+      "title": "Quantum Computations on Fusion Blanket Molten Salts",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2606.30402v1",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "SQD采样与经典对角化接口；2024预印本2025期刊",
+      "title": "Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric Supercomputer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2405.05068",
+      "year": 2025
+    }
+  ],
+  "subdomain": "熔盐与聚变材料",
+  "system": "2LiF–BeF₂熔盐AIMD抽取的中性、含F⁻和含氚团簇",
+  "tags": [
+    "熔盐与聚变材料",
+    "硬件演示",
+    "近期验证"
+  ],
+  "title": "聚变包层 FLiBe：氚结合能与分片误差的严格拆分"
+}

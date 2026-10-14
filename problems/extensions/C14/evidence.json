@@ -1,0 +1,51 @@
+{
+  "id": "C14",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "full-native-mlae-v4/results.json",
+      "goal": "full-native-mlae-v4/GOAL.md",
+      "manifest_sha256": "c79d0ec9b6885d79c053a773f02602756c14727e235c4014db0e919f1703d366",
+      "original_target_status": "incomplete",
+      "previous_pointer": {
+        "current_results": "semantic-local-oracle-v3/results.json",
+        "goal": "semantic-local-oracle-v3/GOAL.md",
+        "manifest_sha256": "9484b3de81e0025bb93f10f5d9dfabe7f42d3f8a3540545f7f284386491ad98b",
+        "original_target_status": "incomplete",
+        "previous_pointer": {
+          "current_results": "results.json",
+          "note": "Read the current_results path; root results may be a preserved superseded run.",
+          "original_target_status": "incomplete",
+          "research": "RESEARCH.md"
+        },
+        "research": "semantic-local-oracle-v3/RESEARCH.md"
+      },
+      "research": "full-native-mlae-v4/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C14-radiation-transport-qae/execution/full-native-mlae-v4/c14-rmse-confidence.png",
+    "tasks/_execution/2026-10-04/cross/c14-full-qae-audit-v4/result.json",
+    "tasks/_execution/2026-10-04/cross/c14-full-qae-v4/protocol.json",
+    "tasks/_execution/2026-10-04/cross/c14-full-qae-v4/result.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C14-radiation-transport-qae/README.md",
+      "sha256": "9be7531f9e05cbca1cd800888f61d38125cc9cd92edee79fe77548f1826c1e86"
+    },
+    {
+      "path": "tasks/C14-radiation-transport-qae/execution/LATEST.json",
+      "sha256": "904fdd1d23240a06d7cf6867e6c74b7fef94626feefe69f4fbb2c064f7e21b16"
+    },
+    {
+      "path": "tasks/C14-radiation-transport-qae/execution/full-native-mlae-v4/RESEARCH.md",
+      "sha256": "5c476a3154adb8f3d89d91de07e1724468c87e027052486e9fb9d1a4b6885c93"
+    }
+  ]
+}

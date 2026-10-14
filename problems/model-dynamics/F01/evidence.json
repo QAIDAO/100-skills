@@ -1,0 +1,59 @@
+{
+  "id": "F01",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "public-magnetization-r94/results.json",
+      "goal": "public-magnetization-r94/GOAL.md",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f01-r94/review/DELIVERY-REVIEW.json",
+      "manifest": "public-magnetization-r94/manifest.json",
+      "previous_results": "thermal-dilation-audit-r83/results.json",
+      "research": "public-magnetization-r94/RESEARCH.md",
+      "revision": "r94",
+      "updated_utc": "2026-10-07T03:49:31.576113+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F01-hubbard-antiferromagnet/execution/public-magnetization-r94/REPRODUCE.md",
+    "tasks/F01-hubbard-antiferromagnet/execution/public-magnetization-r94/results.json",
+    "tasks/F01-hubbard-antiferromagnet/execution/thermal-dilation-audit-r83/results.json",
+    "tasks/F01-hubbard-antiferromagnet/mechanism.png",
+    "tasks/F01-hubbard-antiferromagnet/visualization.json",
+    "tasks/F01-hubbard-antiferromagnet/workflow.png",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/NEXT-EXPERIMENT.md",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/audit-run/output/AUDIT.json",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/figures/VISUAL-REVIEW.json",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/figures/raw-magnetization.png",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/production-v1/protocol.json",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/reader-run/output/CELL-MAP.json",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/review/SOURCE-REVIEW.md",
+    "tasks/_execution/2026-10-04/frontier/f01-r94/run/output/summary4.csv"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F01-hubbard-antiferromagnet/README.md",
+      "sha256": "d405d0c377b340f156f57571bdee48ba77bae175a871a59443293bac9aa34812"
+    },
+    {
+      "path": "tasks/F01-hubbard-antiferromagnet/mechanism.svg",
+      "sha256": "4db99e726a76f4d7e6f8e8f97e95dfb3f492257ca60cdee31e7fd01beec51619"
+    },
+    {
+      "path": "tasks/F01-hubbard-antiferromagnet/workflow.svg",
+      "sha256": "04a905a936efa92feaff42c4600002f12fdce5fe215afc86c679fd09efc75c5b"
+    },
+    {
+      "path": "tasks/F01-hubbard-antiferromagnet/execution/LATEST.json",
+      "sha256": "73d5c514fafb47689cb8fc9fb67cd99fc30c9330e30e4eb3be4ac82a20df302d"
+    },
+    {
+      "path": "tasks/F01-hubbard-antiferromagnet/execution/public-magnetization-r94/RESEARCH.md",
+      "sha256": "a0ea73165320e0ea06a89dc2c75beffeceb34f450d483764e3e809659fd6766b"
+    }
+  ]
+}

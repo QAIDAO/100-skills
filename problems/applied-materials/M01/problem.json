@@ -1,0 +1,39 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "DFT多泛函、CCSD(T)适用区、DMRG/选定CI及动态关联修正",
+  "decision": "确定影响甲醇选择性与周转的竞争路径，再判断哪些驻点值得高精度校正。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M01",
+  "observable": "相对电子能、ΔE‡、反应能与误差传播后的路径排序",
+  "quantum_role": "双因子化哈密顿量结合qubitization/QPE求驻点电子能",
+  "scale": "分子活性空间随驻点与动态关联要求扩大；不是整个反应器的量子模拟",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "Ru催化CO2转甲醇关键驻点的容错算法资源研究；2020预印本、2021期刊",
+      "title": "Quantum computing enhanced computational catalysis",
+      "type": "期刊论文",
+      "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.3.033055",
+      "year": 2021
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "态制备与强经典启发式共同约束基态任务的优势判断",
+      "title": "Evaluating the evidence for exponential quantum advantage in ground-state quantum chemistry",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41467-023-37587-6",
+      "year": 2023
+    }
+  ],
+  "subdomain": "催化与绿色化学",
+  "system": "Ru–Triphos均相CO₂加氢循环中的关键中间体和过渡态",
+  "tags": [
+    "催化与绿色化学",
+    "资源估算",
+    "重点储备"
+  ],
+  "title": "Ru–Triphos 催化 CO₂ 制甲醇：把量子资源投向决定机理的驻点"
+}

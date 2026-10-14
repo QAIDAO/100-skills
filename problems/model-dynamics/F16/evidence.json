@@ -1,0 +1,58 @@
+{
+  "id": "F16",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "saved-time-frequency-r135/results.json",
+      "current_revision": "saved-time-frequency-r135",
+      "goal": "saved-time-frequency-r135/GOAL.md",
+      "id": "F16",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f16-r135/delivery-review/DELIVERY-REVIEW.json",
+      "independent_review_sha256": "e6e59e5d6b8265f60f5c66c380cbc698b36e97acee2ddf8aab0f27a196b24ae4",
+      "manifest": "saved-time-frequency-r135/manifest.json",
+      "manifest_sha256": "3c226680d11de9eccc951f357a43c453e82186892212517247811f7ae25c7b44",
+      "original_target_status": "incomplete",
+      "research": "saved-time-frequency-r135/REPORT.md",
+      "revision": "r135",
+      "updated_utc": "2026-10-08T14:48:27.994967+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F16-state-resolved-reaction-scattering/execution/saved-time-frequency-r135/NEXT.md",
+    "tasks/F16-state-resolved-reaction-scattering/execution/saved-time-frequency-r135/PHYSICS-NOTE.md",
+    "tasks/F16-state-resolved-reaction-scattering/execution/saved-time-frequency-r135/metrics.csv",
+    "tasks/F16-state-resolved-reaction-scattering/execution/saved-time-frequency-r135/raw-audit.json",
+    "tasks/F16-state-resolved-reaction-scattering/execution/saved-time-frequency-r135/raw-producer.json",
+    "tasks/F16-state-resolved-reaction-scattering/execution/saved-time-frequency-r135/time-frequency.png",
+    "tasks/F16-state-resolved-reaction-scattering/mechanism.png",
+    "tasks/F16-state-resolved-reaction-scattering/visualization.json",
+    "tasks/F16-state-resolved-reaction-scattering/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F16-state-resolved-reaction-scattering/README.md",
+      "sha256": "92df117960125da29ad4e0717ba4a228b0b47dd00833f4a0191eb1f4d8dab183"
+    },
+    {
+      "path": "tasks/F16-state-resolved-reaction-scattering/mechanism.svg",
+      "sha256": "1c49591c17eef19aa482cc8d3a9839535cbf1a7df809a3b5ffbeb86d0abfda21"
+    },
+    {
+      "path": "tasks/F16-state-resolved-reaction-scattering/workflow.svg",
+      "sha256": "4d65554279e2ec4e69fcea49e6c0c046954cd2f5ef5a53273b3f46a3686fd48a"
+    },
+    {
+      "path": "tasks/F16-state-resolved-reaction-scattering/execution/LATEST.json",
+      "sha256": "9ad95e1b3f76dc8bdf5d61bd43439c28486f17b2922d1f53e74018cd42b1dcae"
+    },
+    {
+      "path": "tasks/F16-state-resolved-reaction-scattering/execution/saved-time-frequency-r135/REPORT.md",
+      "sha256": "f66e1c94659cbe51fae3856560a5412d85144ab24ce586cd091cf7f6dc13968f"
+    }
+  ]
+}

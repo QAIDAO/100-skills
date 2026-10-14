@@ -1,0 +1,52 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "同初态/分布/耗散的平均场动力学与Lax分析；有限尺寸精确解用于量子涨落",
+  "decision": "判断给定淬火和初态是否使配对序参量消失、保持或振荡，并避免把谱峰移动直接等同配对增强。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F19",
+  "observable": "ΔBCS(t)、淬火动态相边界、谱隙ΔSG及其人口依赖",
+  "quantum_role": "Sr内部态编码Cooper对占据，腔光子介导有效相互作用，泄漏光连续读出集体配对序参量。",
+  "scale": "约10⁵–10⁶个⁸⁸Sr原子的集合模拟；原子数不是通用逻辑比特数；后续利用三个内部态",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.1038/s41586-023-06911-x",
+      "id": "R1",
+      "supports": "原子腔实验、10⁵–10⁶Sr、三种动态相、平均场数值与有限观察窗；对应Nature625,679–684",
+      "title": "Observing Dynamical Phases of BCS Superconductors in a Cavity QED Simulator",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2306.00066v2",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.1103/PhysRevLett.134.183404",
+      "id": "R2",
+      "supports": "正式期刊最新题名与日期；独立后续实验区分配对隙、谱隙及人口依赖",
+      "title": "Time-Resolved Spectral Gap Spectroscopy in a Quantum Simulator of Fermionic Superfluidity inside an Optical Cavity",
+      "type": "期刊论文",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.134.183404",
+      "year": 2025
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.48550/arXiv.2408.12640",
+      "id": "R3",
+      "supports": "R2同一研究的早期题名/公开方法：三内部态、非破坏读出及均值场模型；不是第三项独立实验",
+      "title": "Time-resolved pairing gap spectroscopy in a quantum simulator of fermionic superfluidity inside an optical cavity",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2408.12640v1",
+      "year": 2024
+    }
+  ],
+  "subdomain": "超导机制与非平衡材料",
+  "system": "BCS/Richardson–Gaudin有效模型的原子腔量子模拟，非真实晶体从头算",
+  "tags": [
+    "BCS",
+    "淬火动力学",
+    "配对能隙",
+    "第二轮扩展"
+  ],
+  "title": "BCS 非平衡配对：腔中原子模拟淬火相图与两种能隙"
+}

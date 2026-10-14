@@ -1,0 +1,107 @@
+{
+  "id": "B17",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "cas8-sensitivity-r42/results.json",
+      "goal": "cas8-sensitivity-r42/GOAL.md",
+      "manifest": "cas8-sensitivity-r42/manifest.json",
+      "manifest_sha256": "ebb9ad4bacfbf0a0ab7162003b6f6e61751f0ae8489e5af8ceca293390d6c9d3",
+      "new_quantum_results": 1,
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/bio/b17-delivery-review-r42/production/outputs/results.json",
+      "parent_audit_sha256": "12ad69bcf1b30d09ddf6fc58785620c997ddac1677a2960e00a0e18ba95f5973",
+      "previous_pointer": {
+        "current_results": "numerical-definition-and-fine-step-r41/results.json",
+        "goal": "numerical-definition-and-fine-step-r41/GOAL.md",
+        "manifest": "numerical-definition-and-fine-step-r41/manifest.json",
+        "manifest_sha256": "2a8a3fd837239b5cb761e2ab157bf9122cfe50919862ff3313f73877db9ad195",
+        "new_quantum_results": 1,
+        "original_target_status": "incomplete",
+        "parent_audit": "tasks/_execution/2026-10-04/validation/b17-round41-parent-delivery-audit.json",
+        "parent_audit_sha256": "0d806861bff587878bf9ecca25ca3f1c0d3ff725d6d24470edf5c5ca5ebc295a",
+        "previous_pointer": {
+          "current_results": "cas-dynamics-gate-failure-r40/results.json",
+          "goal": "cas-dynamics-gate-failure-r40/GOAL.md",
+          "manifest": "cas-dynamics-gate-failure-r40/manifest.json",
+          "manifest_sha256": "6ca8fa9a27b665f46949d1f85eabb424212aacde5302962e0b242cb8b23f83c8",
+          "new_quantum_results": 1,
+          "original_target_status": "incomplete",
+          "parent_audit": "tasks/_execution/2026-10-04/validation/b17-round40-parent-delivery-audit.json",
+          "parent_audit_sha256": "c1134c238741696b1da070aa3224e8f5fd972b6176ce1d0cefcc03789c5ba362",
+          "previous_pointer": {
+            "current_results": "active-frame-gate-failure-r39/results.json",
+            "goal": "active-frame-gate-failure-r39/GOAL.md",
+            "manifest": "active-frame-gate-failure-r39/manifest.json",
+            "manifest_sha256": "9f01fa518957b9082308400ec1da29d1b64def1dec0be8abb570126466579540",
+            "new_quantum_results": 0,
+            "original_target_status": "incomplete",
+            "parent_audit": "tasks/_execution/2026-10-04/validation/b17-round39-parent-delivery-audit.json",
+            "parent_audit_sha256": "4c2c42d46a65362851f3f7eb553b78d847a478ed472eaaaafeb07dae6827fbf7",
+            "previous_pointer": {
+              "current_results": "residual-controlled-bath-r38/results.json",
+              "goal": "residual-controlled-bath-r38/GOAL.md",
+              "manifest": "residual-controlled-bath-r38/manifest.json",
+              "manifest_sha256": "1c714d9a9bd1870a4e42363167258727cbfbb2d0573897577394a25a1be557eb",
+              "new_quantum_results": 0,
+              "original_target_status": "incomplete",
+              "parent_audit": "tasks/_execution/2026-10-04/validation/b17-round38-parent-delivery-audit.json",
+              "parent_audit_sha256": "a63ab660d861284359b4740615d57ba0f7b62f8074807084453a804dd27622be",
+              "previous_pointer": {
+                "current_results": "schmidt-mapping-failure-v5.1/results.json",
+                "goal": "schmidt-mapping-failure-v5.1/GOAL.md",
+                "original_target_status": "incomplete",
+                "parent_audit": "tasks/_execution/2026-10-04/validation/b17-round26-mapping-parent.json",
+                "research": "schmidt-mapping-failure-v5.1/RESEARCH.md"
+              },
+              "report": "residual-controlled-bath-r38/RESULTS.md",
+              "research": "residual-controlled-bath-r38/RESEARCH.md"
+            },
+            "report": "active-frame-gate-failure-r39/RESULTS.md",
+            "research": "active-frame-gate-failure-r39/RESEARCH.md"
+          },
+          "report": "cas-dynamics-gate-failure-r40/RESULTS.md",
+          "research": "cas-dynamics-gate-failure-r40/RESEARCH.md"
+        },
+        "report": "numerical-definition-and-fine-step-r41/RESULTS.md",
+        "research": "numerical-definition-and-fine-step-r41/RESEARCH.md"
+      },
+      "report": "cas8-sensitivity-r42/RESULTS.md",
+      "research": "cas8-sensitivity-r42/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B17-sulfonyl-fluoride-dynamics/execution/cas8-sensitivity-r42/results.json",
+    "tasks/B17-sulfonyl-fluoride-dynamics/execution/cas8-sensitivity-r42/upstream-bindings.json",
+    "tasks/B17-sulfonyl-fluoride-dynamics/mechanism.png",
+    "tasks/B17-sulfonyl-fluoride-dynamics/visualization.json",
+    "tasks/B17-sulfonyl-fluoride-dynamics/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B17-sulfonyl-fluoride-dynamics/README.md",
+      "sha256": "407b13e5b1a4e3e87002e83da193efc33dc3ec2d7885ece839decd71916d1230"
+    },
+    {
+      "path": "tasks/B17-sulfonyl-fluoride-dynamics/mechanism.svg",
+      "sha256": "207d3abe8817648e4e2a38f33ab8b8b5cc4b393fdbae6a09a2fba7b4d017bfa9"
+    },
+    {
+      "path": "tasks/B17-sulfonyl-fluoride-dynamics/workflow.svg",
+      "sha256": "e24891eda60b3b6bb472afaa3b2abd5ce8bd15e44ea386378dd4691182f5968f"
+    },
+    {
+      "path": "tasks/B17-sulfonyl-fluoride-dynamics/execution/LATEST.json",
+      "sha256": "43d48ee09775d68f3f09124e3d4745d691cf26e9419471b08e36e58af86b2e27"
+    },
+    {
+      "path": "tasks/B17-sulfonyl-fluoride-dynamics/execution/cas8-sensitivity-r42/RESEARCH.md",
+      "sha256": "99cf5e2371305aba97901503f3b75aed921020305b86c10474f7d94d96ba24f8"
+    }
+  ]
+}

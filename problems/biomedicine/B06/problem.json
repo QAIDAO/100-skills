@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同数据HCI、RHF、MM-FEP；需要相同扩展策略及总成本",
+  "decision": "检验替换一个氢键供体/受体后，能否更可靠决定优先合成哪一个类似物。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B06",
+  "observable": "相对结合自由能ΔΔG，统计误差及与实验偏差",
+  "quantum_role": "AMBER/QUICK→QM/MM book-ending→LUCJ采样→SQD/extSQD→MBAR",
+  "scale": "活性空间26电子、18或19空间轨道；全蛋白/水由经典采样",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "两个thermolysin抑制剂；误差、时间排除项、HCI基线和接口开放边界",
+      "title": "Protein-Ligand Free Energy Perturbation on Quantum Hardware",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2604.09857v2",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "SQD流程；氮分子及铁硫簇硬件实验；77比特上限",
+      "title": "Chemistry Beyond the Scale of Exact Diagonalization on a Quantum-Centric Supercomputer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2405.05068",
+      "year": 2025
+    }
+  ],
+  "subdomain": "先导优化 / 结合自由能",
+  "system": "Thermolysin与0PJ/0PI两个抑制剂；氮/氧替换导致氢键差异",
+  "tags": [
+    "FEP",
+    "Thermolysin",
+    "SQD",
+    "自由能"
+  ],
+  "title": "Thermolysin：量子修正相对结合自由能"
+}

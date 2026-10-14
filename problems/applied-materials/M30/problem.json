@@ -1,0 +1,42 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "相同MI/FNO下的CCSD或可行的精确求解；跨几何再比较局部耦合簇和多参考方法",
+  "decision": "判断聚合催化剂的相关能求解是否值得建立量子与经典可替换接口。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M30",
+  "observable": "增量相关能、空间截断误差及求解资源；局部催化反应势垒未报告",
+  "quantum_role": "MI分解占据轨道，FNO压缩虚轨道，再由VQE或QPE求增量相关能；经典组合总能",
+  "scale": "cc-pVDZ/cc-pVTZ完整空间956/2208比特；99% FNO代表性三体增量126/184比特，不是全问题总资源",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "作者v2第19–21页CGC比特预算；只取HOMO/HOMO-1/HOMO-2增量，未扫描所有增量；不是催化势垒结果。",
+      "title": "Scaling Up Electronic Structure Calculations on Quantum Computers: The Frozen Natural Orbital Based Method of Increments",
+      "type": "作者稿；对应期刊DOI 10.1063/5.0054647",
+      "url": "https://1qbit.com/wp-content/uploads/2021/04/1QBit-Research-Paper.-Scaling-Up-Electronic-Structure-Calculations-on-Quantum-Computers-The-Frozen-Natural-Orbital-Based-Method-of-Increments.pdf",
+      "work_id": "10.1063/5.0054647",
+      "year": 2021
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "核对2021-04-21版本、作者、题名及期刊关联DOI；不算独立复现。",
+      "title": "Scaling Up Electronic Structure Calculations on Quantum Computers: The Frozen Natural Orbital Based Method of Increments",
+      "type": "同一工作预印本v2；首发2020",
+      "url": "https://arxiv.org/abs/2002.07901v2",
+      "work_id": "10.1063/5.0054647",
+      "year": 2021
+    }
+  ],
+  "subdomain": "聚合催化电子结构",
+  "system": "用于α-烯烃聚合的钛基constrained geometry complex；资源研究针对固定催化剂电子结构",
+  "tags": [
+    "缺口补充",
+    "CGC",
+    "聚合催化",
+    "MI-FNO"
+  ],
+  "title": "钛基聚合催化剂 CGC：轨道分解后的量子资源与总成本"
+}

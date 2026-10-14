@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "DMRG、选态CI、AFQMC或多参考方法；同一积分、同一态及动态关联修正",
+  "decision": "决定哪些中间体和自旋态值得投入高精度计算，为仿生固氮催化剂排除错误机制。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B01",
+  "observable": "相对电子能、低能自旋态、各候选中间体排序",
+  "quantum_role": "未来QPE/qubitization求强关联活性空间能量；经典负责结构、嵌入和反应路径",
+  "scale": "原子、电子、空间轨道、逻辑比特、物理比特必须分列；活性空间模型不能称为全酶模拟",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "氮化酶活性中心的量子资源估算；预印本首发2016年",
+      "title": "Elucidating Reaction Mechanisms on Quantum Computers",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/1605.03590",
+      "year": 2017
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "FeMoco和P450的SCDF资源估算；不是硬件结果",
+      "title": "Reducing the runtime of fault-tolerant quantum simulations in chemistry through symmetry-compressed double factorization",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2403.03502",
+      "year": 2024
+    }
+  ],
+  "subdomain": "生物催化 / 容错资源",
+  "system": "氮化酶FeMo辅因子局域活性中心；不包括完整蛋白构象与催化循环",
+  "tags": [
+    "FeMoco",
+    "固氮",
+    "QPE",
+    "强关联"
+  ],
+  "title": "氮化酶 FeMoco：固氮机理与多金属电子关联"
+}

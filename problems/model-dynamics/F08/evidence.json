@@ -1,0 +1,60 @@
+{
+  "id": "F08",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "higher-cutoff-control-r115/results.json",
+      "current_revision": "higher-cutoff-control-r115",
+      "goal": "higher-cutoff-control-r115/GOAL.md",
+      "id": "F08",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f08-r115/delivery-review/DELIVERY-REVIEW.json",
+      "manifest": "higher-cutoff-control-r115/manifest.json",
+      "manifest_sha256": "d0bbc600cd9ccfcc32e0f8bc8b357bd05bef81dff87ff862ab86a1854efe6a16",
+      "original_target_status": "incomplete",
+      "previous_results": "structured-strang-r114/results.json",
+      "research": "higher-cutoff-control-r115/RESEARCH.md",
+      "revision": "r115",
+      "updated_utc": "2026-10-07T15:37:13.606042+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/METHODS.md",
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/REPRODUCE.md",
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/cutoff2.csv",
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/endpoints6.csv",
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/figures/cutoff-reference.png",
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/observations213.csv",
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/rates3.csv",
+    "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/results.json",
+    "tasks/F08-dissipative-vibronic-transfer/mechanism.png",
+    "tasks/F08-dissipative-vibronic-transfer/visualization.json",
+    "tasks/F08-dissipative-vibronic-transfer/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F08-dissipative-vibronic-transfer/README.md",
+      "sha256": "8e5d650cc66db89cf164d36f851f8baa6b665f427b74727313444d900ef4b424"
+    },
+    {
+      "path": "tasks/F08-dissipative-vibronic-transfer/mechanism.svg",
+      "sha256": "54f7f5db9017b51f92bc18f848ffd8a339ccb375639514930b60e498eee62362"
+    },
+    {
+      "path": "tasks/F08-dissipative-vibronic-transfer/workflow.svg",
+      "sha256": "bd212ce78ba05910ac875510f1710c879f6b20a8a85ebf3139ab9add04ba4792"
+    },
+    {
+      "path": "tasks/F08-dissipative-vibronic-transfer/execution/LATEST.json",
+      "sha256": "ee3489024ac5c31e34bf34216a45db9f8b1914cc1f980f588e6f59cd77a7b51b"
+    },
+    {
+      "path": "tasks/F08-dissipative-vibronic-transfer/execution/higher-cutoff-control-r115/RESEARCH.md",
+      "sha256": "1b3df3aefabf45a7be8cfd3b92f72609d08009eccc1c87ba9a08d9438284f3cb"
+    }
+  ]
+}

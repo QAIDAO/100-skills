@@ -1,0 +1,70 @@
+{
+  "id": "C09",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-periodic-r63/results.json",
+      "delivery_review": "tasks/_execution/2026-10-04/cross/c09-periodic-r63/DELIVERY-REVIEW.json",
+      "delivery_review_sha256": "25034597248b7a341df9693a3c4a1c7433afbbb5caa1b9ad324bec7e2910f250",
+      "goal": "public-periodic-r63/GOAL.md",
+      "manifest_sha256": "77f87bf3baf68c0f4a8f937a7b564788dacb2ac46f4492fd31d453cf34b1e295",
+      "note": "Exact public Kr potential, periodic8q and full fixed-attempt relaxed library independently verified. Probability/readout gates fail. Original paper energy pointwise reproduction fails. Old nonperiodic algorithm_pass retained in original results; original application incomplete.",
+      "original_target_status": "incomplete",
+      "research": "public-periodic-r63/RESULTS.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/AUDIT-REPAIR-REVIEW.md",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/BASIN-AUDIT-SCOPE-CLARIFICATION.md",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/METHOD-DESIGN.md",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/RELAX-DESIGN.md",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/REQUIREMENT-AND-BASELINE-REVIEW.md",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/SOURCE-INTAKE.md",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/failed-N4.csv",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/particle-layers.csv",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/periodic-geometry-and-library.png",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/periodic-quality-and-errors.png",
+    "tasks/C09-crystal-annealing/execution/public-periodic-r63/quantum-design.md",
+    "tasks/C09-crystal-annealing/execution/results.json",
+    "tasks/C09-crystal-annealing/mechanism.png",
+    "tasks/C09-crystal-annealing/visualization.json",
+    "tasks/C09-crystal-annealing/workflow.png",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/PRESENTATION-RESOURCE.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/RESOURCE-REVIEW.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/RESOURCE-SUMMARY.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/ROOT-SCOPE.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/basin-audit/out/result.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/presentation/production-manifest.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/relax-production/out/basin-library.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/relax-production/out/result.json",
+    "tasks/_execution/2026-10-04/cross/c09-periodic-r63/source-manifest.json",
+    "tasks/_execution/2026-10-04/cross/sources/C09-paper.pdf"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C09-crystal-annealing/README.md",
+      "sha256": "754b24f99f9ceb4e931cff7db6814f6a16bbe6d1a5e0d2679b46945d0590ce6a"
+    },
+    {
+      "path": "tasks/C09-crystal-annealing/mechanism.svg",
+      "sha256": "012e581362ce9c1a9e22a49c777f8c4d405a36fb1023b423f51d73a3a80dc0fc"
+    },
+    {
+      "path": "tasks/C09-crystal-annealing/workflow.svg",
+      "sha256": "542abfcc44744b7e4119fa3b8eea2d4383ef70d11a7ead42299a655ed7d787eb"
+    },
+    {
+      "path": "tasks/C09-crystal-annealing/execution/LATEST.json",
+      "sha256": "f88769bd035cb2fee92ae6c80e460a0fa68f56705809ee532d3b67b4b7bd2812"
+    },
+    {
+      "path": "tasks/C09-crystal-annealing/execution/public-periodic-r63/RESULTS.md",
+      "sha256": "891069c7533fcc024eae7fdd1aed1e457b5959aab4120ea1cf2ddc7c3020903d"
+    }
+  ]
+}

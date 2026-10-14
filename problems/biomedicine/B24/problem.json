@@ -1,0 +1,43 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同目标遗传算法、SA、动态规划或整数优化（视耦合结构）；同时间与同可行解预算",
+  "decision": "在固定氨基酸序列条件下，评价同义密码子选择能否平衡预设序列代理指标。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B24",
+  "observable": "目标值、同义约束可行率、重复样本、完整求解时间；表达效果须另行独立验证",
+  "quantum_role": "经典定义同义选择及代理指标→QUBO/Ising→退火或QAOA小模型→经典约束核验",
+  "scale": "直接退火约180候选密码子变量；资源较重映射约30氨基酸。约1000氨基酸属于混合服务；门式主比较为小规模经典模拟",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "直接退火/混合/模拟规模区别、遗传算法比较、可行解筛选与无优势边界。",
+      "title": "mRNA codon optimization with quantum computers",
+      "type": "期刊全文",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259101",
+      "work_id": "10.1371/journal.pone.0259101",
+      "year": 2021
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "经典多约束密码子优化基线；本轮未审计其全部实现。",
+      "title": "Computational codon optimization of synthetic gene for protein expression",
+      "type": "原始经典方法",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/23083100/",
+      "work_id": "PMID23083100",
+      "year": 2012
+    }
+  ],
+  "subdomain": "核酸序列优化",
+  "system": "编码同一蛋白的同义选择；不是改变蛋白功能的氨基酸设计，也不是RNA折叠求解",
+  "tags": [
+    "mRNA",
+    "密码子",
+    "QUBO",
+    "序列约束",
+    "第二轮扩展"
+  ],
+  "title": "mRNA 同义密码子：固定蛋白序列的多约束优化"
+}

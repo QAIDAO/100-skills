@@ -1,0 +1,49 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同模型枚举、随机采样、模拟退火；结构用途另比MD/Rosetta/AlphaFold",
+  "decision": "评估量子优化是否能为短肽提供高质量候选构象，而非替代成熟蛋白结构预测。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B10",
+  "observable": "格点能量、合法构象率、低能命中率、重建后RMSD与多样性",
+  "quantum_role": "变分优化/QAOA编码格点转向与接触势",
+  "scale": "2021工作7残基用9比特硬件；10残基22比特为模拟；不是真实蛋白全原子动力学",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "R1",
+      "supports": "7残基9比特硬件和10残基22比特模拟的格点模型",
+      "title": "Resource-efficient quantum algorithm for protein folding",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41534-021-00368-4",
+      "year": 2021
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "QAOA在简化肽构象中受限；随机采样可匹敌",
+      "title": "Peptide conformational sampling using the Quantum Approximate Optimization Algorithm",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2204.01821",
+      "year": 2023
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R3",
+      "supports": "成熟经典结构预测对照；不等于动力学求解",
+      "title": "Highly accurate protein structure prediction with AlphaFold",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1038/s41586-021-03819-2",
+      "year": 2021
+    }
+  ],
+  "subdomain": "肽药 / 构象采样",
+  "system": "7残基神经肽与10残基血管紧张素的简化格点模型；相关QAOA短肽采样",
+  "tags": [
+    "蛋白折叠",
+    "短肽",
+    "QAOA",
+    "负结果"
+  ],
+  "title": "短肽构象：量子优化的正例与负例"
+}

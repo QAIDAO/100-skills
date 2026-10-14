@@ -1,0 +1,42 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "同五维问题经典对角化；实际散射需UKRmol/收敛密耦合方法与实验数据",
+  "decision": "为等离子体模型筛选可靠电子碰撞数据，判断复杂靶分子的内区电子关联是否值得量子求解。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F17",
+  "observable": "内区本征值、边界振幅、未来外区匹配得到的相移和截面",
+  "quantum_role": "候选QPU求有限体积内的多电子本征态与边界系数；经典端保留外区传播和截面重建。",
+  "scale": "7比特=2靶自旋轨道+2连续态自旋轨道+3选择比特；五维试探空间；无噪声经典模拟",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.1103/q8ry-hlxt",
+      "id": "R1",
+      "supports": "7比特、5维试探空间、无噪声模拟、边界振幅和连续态扩展限制；对应PRA114,012407",
+      "title": "Electron–molecule scattering via R-matrix variational algorithms on a quantum computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2507.05514v2",
+      "year": 2026
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.1103/PhysRevLett.116.233201",
+      "id": "R2",
+      "supports": "独立强经典基线：固定核收敛密耦合计算多种电子碰撞截面并与实验比较",
+      "title": "Complete Solution of Electronic Excitation and Ionization in Electron-Hydrogen Molecule Scattering",
+      "type": "期刊论文",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.116.233201",
+      "year": 2016
+    }
+  ],
+  "subdomain": "电子碰撞与等离子体材料过程",
+  "system": "固定核H₂靶与一个入射电子的R矩阵内区最小模型",
+  "tags": [
+    "电子碰撞",
+    "R矩阵",
+    "等离子体",
+    "第二轮扩展"
+  ],
+  "title": "电子—分子碰撞：R矩阵内区谱与等离子体截面接口"
+}

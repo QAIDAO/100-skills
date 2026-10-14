@@ -1,0 +1,62 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同空间FCI、MP2/耦合簇或多参考嵌入、经实验校准的力场和GCMC",
+  "decision": "识别值得进入湿气选择性和再生能耗验证的金属位点与配体方案。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M17",
+  "observable": "固定模型吸附能、关联能贡献、误差向等温线和选择性的传播",
+  "quantum_role": "DMET/VQE或周期Wannier降维后的QNP采样与SQD求解局域关联能",
+  "scale": "Fe-MOF-74硬件缩小空间20/28比特；物理收敛空间远大于硬件空间",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.1039/d6dd00023a",
+      "id": "R1",
+      "supports": "预印本2025全文，期刊2026；缩小空间QNP/SQD硬件和物理截断边界",
+      "title": "Quantum simulation of carbon capture in periodic metal-organic frameworks",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/html/2510.02550v1",
+      "year": 2026
+    },
+    {
+      "access_level": "full_text",
+      "doi": "10.1140/epjqt/s40507-022-00155-w",
+      "id": "R2",
+      "supports": "Al-fumarate DMET、VQE、噪声模拟而非真实硬件",
+      "title": "Modelling carbon capture on metal-organic frameworks with quantum computing",
+      "type": "期刊论文",
+      "url": "https://link.springer.com/article/10.1140/epjqt/s40507-022-00155-w",
+      "year": 2022
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.1038/nchem.1432",
+      "id": "R3",
+      "supports": "高层电子结构导出力场并与吸附热力学联系的经典基线",
+      "title": "Ab initio carbon capture in open-site metal–organic frameworks",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/nchem.1432",
+      "year": 2012
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.48550/arXiv.2504.17453",
+      "id": "R4",
+      "supports": "v2为12/16/20比特GPU模拟；活性空间不平衡造成结合能变化",
+      "title": "Quantum simulation of CO2 chemisorption in an amine-functionalized metal-organic framework",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2504.17453v2",
+      "year": 2025
+    }
+  ],
+  "subdomain": "吸附分离与碳捕集",
+  "system": "Al-fumarate、Fe-MOF-74及胺功能化MOF中的CO₂结合位点",
+  "tags": [
+    "第二轮扩展",
+    "MOF",
+    "碳捕集",
+    "SQD"
+  ],
+  "title": "MOF 碳捕集：从开放金属位结合能到吸附剂筛选"
+}

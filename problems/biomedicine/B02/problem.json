@@ -1,0 +1,49 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同态DMRG、多参考微扰、CC方法适用性诊断、不同DFT泛函",
+  "decision": "判断代谢氧化路径、自旋交叉和潜在反应性排序是否对电子关联敏感。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B02",
+  "observable": "自旋态能隙、相对电子能、自然轨道占据、资源误差曲线",
+  "quantum_role": "容错QPE与SCDF；近期VQE用于选轨和硬件误差研究",
+  "scale": "活性中心的电子/轨道模型与完整药物分子原子数分开；本例不宣称全酶上机",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "P450经典多参考对照与表面码QPE资源分析；数据公开",
+      "title": "Reliably assessing the electronic structure of cytochrome P450 on today’s classical computers and tomorrow’s quantum computers",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1073/pnas.2203533119",
+      "year": 2022
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "FeMoco和P450的SCDF资源估算；不是硬件结果",
+      "title": "Reducing the runtime of fault-tolerant quantum simulations in chemistry through symmetry-compressed double factorization",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2403.03502",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "洛伐他汀、奥司他韦、吗啡的活性空间基准；模拟与QPU",
+      "title": "Benchmarking the Impact of Active Space Selection on the VQE Pipeline for Quantum Drug Discovery",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2512.18203",
+      "year": 2025
+    }
+  ],
+  "subdomain": "药物代谢 / 金属酶",
+  "system": "P450活性中心模型及反应中间体；附药物样分子选轨基准",
+  "tags": [
+    "P450",
+    "代谢",
+    "自旋",
+    "活性空间"
+  ],
+  "title": "P450：药物代谢自旋态与活性空间选择"
+}

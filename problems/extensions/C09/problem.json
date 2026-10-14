@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "同势的模拟退火、basin hopping、遗传/随机搜索及连续弛豫",
+  "decision": "寻找预设势函数下低能结构与粒子密度，为结构搜索提出候选。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C09",
+  "observable": "低能结构命中率、势函数能、密度、连续弛豫后结构身份",
+  "quantum_role": "QUBO/HUBO编码与退火；可接因子分解机代理模型",
+  "scale": "逻辑变量随网格/元素数增长；三体势降阶需辅助变量",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "预印本标题；正式PRA标题略删Efficient；LJ与MoS₂退火，MoS₂为模拟退火",
+      "title": "Annealing for prediction of grand canonical crystal structures: Efficient implementation of n-body atomic interactions",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2307.03123",
+      "year": 2024
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "FMQA代理模型与预设势函数下结构搜索",
+      "title": "Machine learning supported annealing for prediction of grand canonical crystal structures",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2408.03556",
+      "year": 2024
+    }
+  ],
+  "subdomain": "结构搜索与优化",
+  "system": "离散晶胞中的粒子占据；Lennard–Jones团簇与共价单层MoS₂",
+  "tags": [
+    "晶体",
+    "QUBO",
+    "退火",
+    "MoS2"
+  ],
+  "title": "晶体结构与粒子数联合搜索：多体势的退火编码"
+}

@@ -1,0 +1,58 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "QM/MM自由能、经典多参考、路径积分或非绝热PCET动力学",
+  "decision": "判断突变改变的是供受体距离分布、电子能面还是耦合，避免误归因酶活性变化。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B13",
+  "observable": "PCET驱动力、重组能、供受体距离分布、kH/kD及温度依赖",
+  "quantum_role": "拟以高精度电子求解器修正局部PES，再用核动力学/PCET理论求KIE",
+  "scale": "全蛋白经典采样；局部电子活性区和质子自由度分层；本例无LOX量子硬件结果",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "WT/双突变PCET自由能、KIE与供受体距离；经典QM/MM",
+      "title": "Fundamental Insights into Proton-Coupled Electron Transfer in Soybean Lipoxygenase from Quantum Mechanical/Molecular Mechanical Free Energy Simulations",
+      "type": "期刊论文",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/29392938/",
+      "year": 2018
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "室温X射线和生物物理实验关联蛋白运动与隧穿",
+      "title": "Temporal and spatial resolution of distal protein motions that activate hydrogen tunneling in soybean lipoxygenase",
+      "type": "期刊论文",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC10013837/",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "丙二醛电子-核动力学算法原型",
+      "title": "Nonadiabatic nuclear-electron dynamics: a quantum computing approach",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2306.01671",
+      "year": 2023
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R4",
+      "supports": "NEO与线路压缩；理想/硬件噪声模型模拟，不是确认真机执行",
+      "title": "Approximate quantum circuit compilation for proton-transfer kinetics on quantum processors",
+      "type": "期刊论文",
+      "url": "https://doi.org/10.1039/D5CP04097C",
+      "year": 2026
+    }
+  ],
+  "subdomain": "酶设计 / 核量子效应",
+  "system": "大豆脂氧合酶WT及L546A/L754A双突变；亚油酸氢转移与铁中心",
+  "tags": [
+    "LOX",
+    "PCET",
+    "KIE",
+    "氢隧穿"
+  ],
+  "title": "脂氧合酶：PCET、氢隧穿与同位素效应"
+}

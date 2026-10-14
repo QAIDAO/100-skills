@@ -1,0 +1,56 @@
+{
+  "id": "B13",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "chemical-state-diagnostic-v6/manifest.json",
+      "current_results": "chemical-state-diagnostic-v6/results.json",
+      "current_revision": "chemical-state-diagnostic-v6",
+      "goal": "chemical-state-diagnostic-v6/GOAL.md",
+      "hardware_run": false,
+      "id": "B13",
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": true,
+      "research": "chemical-state-diagnostic-v6/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B13-lipoxygenase-pcet/execution/chemical-state-diagnostic-v6/GOAL.md",
+    "tasks/B13-lipoxygenase-pcet/execution/chemical-state-diagnostic-v6/manifest.json",
+    "tasks/B13-lipoxygenase-pcet/execution/chemical-state-diagnostic-v6/results.json",
+    "tasks/B13-lipoxygenase-pcet/execution/public-derived14q-v5/RESEARCH.md",
+    "tasks/B13-lipoxygenase-pcet/mechanism.png",
+    "tasks/B13-lipoxygenase-pcet/visualization.json",
+    "tasks/B13-lipoxygenase-pcet/workflow.png",
+    "tasks/_execution/2026-10-04/bio/b13-active-space-content-v6/result.json",
+    "tasks/_execution/2026-10-04/bio/b13-spin-localization-review-v6/REVIEW.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B13-lipoxygenase-pcet/README.md",
+      "sha256": "fb27f388c8aff1374324c431b39f313f2d1af2a15d2283cba9c587fbcce6dbc3"
+    },
+    {
+      "path": "tasks/B13-lipoxygenase-pcet/mechanism.svg",
+      "sha256": "47b946f7b43c50dfc017cfa6d8428630e36ebf49378a4bbaa210a0662607aad0"
+    },
+    {
+      "path": "tasks/B13-lipoxygenase-pcet/workflow.svg",
+      "sha256": "31572ed36940b82dd1bc860784346573fa0d5fda8e9d5e273066cdedabf6b090"
+    },
+    {
+      "path": "tasks/B13-lipoxygenase-pcet/execution/LATEST.json",
+      "sha256": "5cc3dd0d91172909f8aaf200316260ecbfa5daf7e99bed71ae09bb6aa0f89d8f"
+    },
+    {
+      "path": "tasks/B13-lipoxygenase-pcet/execution/chemical-state-diagnostic-v6/RESEARCH.md",
+      "sha256": "dd1ed015724ed1e0695db03c32b53a21f3995c79fdd89561ca47fd980c520f99"
+    }
+  ]
+}

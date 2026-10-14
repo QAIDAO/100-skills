@@ -1,0 +1,50 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "同 Hamiltonian ED/CT-QMC/DMRG 杂质求解、DFT+DMFT、ARPES",
+  "decision": "判断局域电子关联能否解释 CCOC 低能谱，并量化替换经典杂质求解器的误差。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "F11",
+  "observable": "杂质格林函数、自能、单粒子谱 A(k,ω)",
+  "quantum_role": "QPU 计算小 Anderson 杂质模型的态与响应；经典 DFT、降维、DMFT 自洽与重建材料谱。",
+  "scale": "2025 最多14比特=1杂质轨道+6浴轨道的自旋轨道编码；2026独立方法为8数据比特+1辅助",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "期刊CCOC、14比特、qEOM与ARPES；正文细节同时核查作者预印本",
+      "title": "Dynamical mean field theory for real materials on a quantum computer",
+      "type": "期刊论文",
+      "url": "https://www.nature.com/articles/s41524-025-01772-6",
+      "year": 2025
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "CCOC杂质模型、浴、qEOM、ZNEC与14比特测量；为R1同一研究不是独立复现",
+      "title": "Dynamical Mean Field Theory for Real Materials on a Quantum Computer",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2404.09527v1",
+      "year": 2024
+    },
+    {
+      "access_level": "full_text",
+      "id": "R3",
+      "supports": "2026 npj DOI s41524-026-02289-2；低秩Gaussian子空间、无噪声自洽与实机GF区分",
+      "title": "Efficient Quantum Implementation of Dynamical Mean Field Theory for Correlated Materials",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2508.05738v4",
+      "year": 2026
+    }
+  ],
+  "subdomain": "周期强关联材料与嵌入",
+  "system": "Ca₂CuO₂Cl₂ 铜氧氯化物的有效单带；单杂质加离散浴",
+  "tags": [
+    "CCOC",
+    "Ca2CuO2Cl2",
+    "DMFT",
+    "格林函数",
+    "ARPES"
+  ],
+  "title": "Ca₂CuO₂Cl₂ 真实晶体的量子 DMFT：杂质谱与 ARPES 对照"
+}

@@ -1,0 +1,56 @@
+{
+  "id": "B10",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_manifest": "revision-2/manifest.json",
+      "current_raw": "revision-2/raw.json",
+      "current_results": "revision-2/results.json",
+      "current_revision": 2,
+      "goal": "GOAL.md",
+      "hardware_run": false,
+      "id": "B10",
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "quantum_algorithm_simulated": true,
+      "research": "RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B10-peptide-conformation/execution/initial-GOAL.md",
+    "tasks/B10-peptide-conformation/execution/initial-RESEARCH.md",
+    "tasks/B10-peptide-conformation/execution/revision-2/manifest.json",
+    "tasks/B10-peptide-conformation/execution/revision-2/raw.json",
+    "tasks/B10-peptide-conformation/execution/revision-2/results.json",
+    "tasks/B10-peptide-conformation/mechanism.png",
+    "tasks/B10-peptide-conformation/visualization.json",
+    "tasks/B10-peptide-conformation/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B10-peptide-conformation/README.md",
+      "sha256": "db6d4fd346ed7d47ab96efad461befc9fc8752e448c7e26fce2254513e7f79e4"
+    },
+    {
+      "path": "tasks/B10-peptide-conformation/mechanism.svg",
+      "sha256": "966682f5f1268fcf04c57001b9b14cfff5af15aae90bc33cf6ecf6bb94005d77"
+    },
+    {
+      "path": "tasks/B10-peptide-conformation/workflow.svg",
+      "sha256": "718bd408bddfcb317c26d4c9c10c7dcc705fc9c75f00d106f07ff5e87a3b5a12"
+    },
+    {
+      "path": "tasks/B10-peptide-conformation/execution/LATEST.json",
+      "sha256": "f035ae21fd63d58a389f5ffc50b8d59707bef390f73dc9e7f8ecaf6d5968fd5c"
+    },
+    {
+      "path": "tasks/B10-peptide-conformation/execution/RESEARCH.md",
+      "sha256": "e7489f3fc0835faaf296d00da8b1dabab8d5d0cd14531cf65f730747ccc23864"
+    }
+  ]
+}

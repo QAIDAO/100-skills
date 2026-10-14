@@ -1,0 +1,62 @@
+{
+  "id": "M09",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-input-transport-r45/results.json",
+      "goal": "public-input-transport-r45/GOAL.md",
+      "manifest": "public-input-transport-r45/manifest.json",
+      "manifest_sha256": "a395bd1a3cb1b5df4e21628a9ce84701d5136b5a20d12592006847d5f3968daf",
+      "new_quantum_results": 0,
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/m09-round45-delivery-audit.json",
+      "parent_audit_sha256": "53c514e5d9c89d899dbe6832749bdf5cb7bada7be964e66b6a882d6f052dad8b",
+      "previous_pointer": {
+        "current_results": "public-model-audit-v2/results.json",
+        "goal": "public-model-audit-v2/GOAL.md",
+        "previous_results": "results.json",
+        "research": "public-model-audit-v2/RESEARCH.md"
+      },
+      "report": "public-input-transport-r45/RESULTS.md",
+      "research": "public-input-transport-r45/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M09-group-iv-vacancy/execution/public-input-transport-r45/GOAL.md",
+    "tasks/M09-group-iv-vacancy/execution/public-input-transport-r45/manifest.json",
+    "tasks/M09-group-iv-vacancy/execution/public-input-transport-r45/results.json",
+    "tasks/M09-group-iv-vacancy/execution/public-model-audit-v2/validation.json",
+    "tasks/M09-group-iv-vacancy/mechanism.png",
+    "tasks/M09-group-iv-vacancy/visualization.json",
+    "tasks/M09-group-iv-vacancy/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m09-input-recovery-r45/INPUT-ADMISSION.md",
+    "tasks/_execution/2026-10-04/materials/m09-input-recovery-r45/REPORT.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M09-group-iv-vacancy/README.md",
+      "sha256": "3d6bc69a6fdc49893fe132e5972856cdbcdee8776744ad5469a6649b035d73c6"
+    },
+    {
+      "path": "tasks/M09-group-iv-vacancy/mechanism.svg",
+      "sha256": "bfae0526aa4ebb53e74d5a4ccef30a4eea9d204a2f6a2cd89bbc99d33f27bbba"
+    },
+    {
+      "path": "tasks/M09-group-iv-vacancy/workflow.svg",
+      "sha256": "5202f6a59d7d0d49305e904386226207871dfa3e2917b67e76fd458c04caab06"
+    },
+    {
+      "path": "tasks/M09-group-iv-vacancy/execution/LATEST.json",
+      "sha256": "83b56793b3f27e563b4c9d2202f5e20389d5141c85e7a20edf8249081046e1c3"
+    },
+    {
+      "path": "tasks/M09-group-iv-vacancy/execution/public-input-transport-r45/RESEARCH.md",
+      "sha256": "da75ad782b1830757556e4f958b40bda5cbdb4c34a8cf855b2cdf441682a1ac6"
+    }
+  ]
+}

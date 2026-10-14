@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "完整理想动力学、经典量化特征、相同ML/数据划分",
+  "decision": "在warhead结构修改时筛掉反应性过低或潜在非特异反应过强的分子。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B17",
+  "observable": "时间相关特征、下游反应性预测误差、截断误差界",
+  "quantum_role": "哈密顿量项截断→Clifford分解与变换→硬件转译→经典ML",
+  "scale": "代表性8比特哈密顿量动力学；大设备名称不等于用满设备",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "磺酰氟反应性特征、8比特硬件、深度压缩；v1首发2024",
+      "title": "Circuit Depth Reduction for Executable Hamiltonian Dynamics of Covalent Inhibitor Reactivity on Quantum Hardware",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2412.15804v4",
+      "year": 2026
+    },
+    {
+      "access_level": "full_text",
+      "id": "R2",
+      "supports": "BTK工作流、简化过渡态8比特演示、20倍T门估算边界",
+      "title": "CovAngelo: A hybrid quantum-classical computing platform for accurate and scalable drug discovery",
+      "type": "预印本",
+      "url": "https://arxiv.org/html/2604.10487v1",
+      "year": 2026
+    }
+  ],
+  "subdomain": "反应性预测 / 量子特征",
+  "system": "含sulfonyl fluoride的药用共价抑制剂片段",
+  "tags": [
+    "磺酰氟",
+    "哈密顿量动力学",
+    "线路压缩",
+    "反应性"
+  ],
+  "title": "磺酰氟共价药：哈密顿量动力学作为反应性特征"
+}

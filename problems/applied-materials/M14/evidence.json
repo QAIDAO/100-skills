@@ -1,0 +1,68 @@
+{
+  "id": "M14",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "case_review": "tasks/_execution/2026-10-04/materials/m14-r82/CASE-REVIEW.json",
+      "case_review_sha256": "73bd3e33b8f847a75164c77fc4ad29a0ac2b6da6b5952086c5fb6f60be513025",
+      "current_results": "full246-strang-refinement-r82/results.json",
+      "current_revision": "full246-strang-refinement-r82",
+      "goal": "full246-strang-refinement-r82/GOAL.md",
+      "id": "M14",
+      "manifest_sha256": "e2e42fb8b896d41265639810713d849c57c571f698d9c43f27fb0755e4e80833",
+      "note": "R82 classical tensor simulation of public full246 coupled dynamics at .2fs; actual numerical physics screen in results. No new QPU/circuit execution, no100fs completion or strict certificate.",
+      "old_quantum_reference": {
+        "path": "tasks/M14-organic-photovoltaic-vibronics/execution/input-native-r70/results.json",
+        "scope": "R70 35local native components, not full11 propagation; two retained R70 stops unchanged",
+        "sha256": "8e5140c9a0988a2afd1d2658f070153cfc0600da050cbfb8fc6faf945c2850c9"
+      },
+      "original_target_status": "incomplete",
+      "prior_revisions_preserved": true,
+      "requirement_increment": "tasks/_execution/2026-10-04/validation/requirements-r82-increment.json",
+      "requirement_increment_sha256": "98e8fcde051a685fdf1311ece7c601f276d12d5841fa877f40e8232d06cc6764",
+      "research": "full246-strang-refinement-r82/RESEARCH.md",
+      "verified_prior_quantum_component_reference": {
+        "path": "tasks/M14-organic-photovoltaic-vibronics/execution/mpo-native-dynamics-r72/results.json",
+        "scope": "R72 actual13q finite11mode native dynamics; historical reference only",
+        "sha256": "a4f5c562a5c6d4b554316396060b1c26d734e6f84f68b7a06bafd1d3fd7196be"
+      }
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M14-organic-photovoltaic-vibronics/mechanism.png",
+    "tasks/M14-organic-photovoltaic-vibronics/visualization.json",
+    "tasks/M14-organic-photovoltaic-vibronics/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m14-r80/CLASSICAL-BASELINE-ADDENDUM.md",
+    "tasks/_execution/2026-10-04/materials/m14-r80/source-review/QUANTUM-ROUTES.md",
+    "tasks/_execution/2026-10-04/materials/m14-r81/CLOSEOUT.md",
+    "tasks/_execution/2026-10-04/materials/m14-r82/METHOD-APPLICABILITY.md",
+    "tasks/_execution/2026-10-04/materials/m14-r82/production-design/PRODUCTION-DESIGN.md"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M14-organic-photovoltaic-vibronics/README.md",
+      "sha256": "d3429f72ced774573df2a6dcb63f00a441c1bebc7b5cbcab412df78ff04fc725"
+    },
+    {
+      "path": "tasks/M14-organic-photovoltaic-vibronics/mechanism.svg",
+      "sha256": "282179160a9b9092a3b6c98a5ea9dadcc3e6fdaba31065dc0bd7ae74ad0f0c93"
+    },
+    {
+      "path": "tasks/M14-organic-photovoltaic-vibronics/workflow.svg",
+      "sha256": "599cf3e3d28d2ce7d4ea382149cbe12165181e7ed3ce4932b6339eb139806d45"
+    },
+    {
+      "path": "tasks/M14-organic-photovoltaic-vibronics/execution/LATEST.json",
+      "sha256": "8fd9ab9923c84a0acf908bc177355689d3b0533d5c06a25f6a4ab6785672907d"
+    },
+    {
+      "path": "tasks/M14-organic-photovoltaic-vibronics/execution/full246-strang-refinement-r82/RESEARCH.md",
+      "sha256": "6c96d4a1d77e4c00970867b0eff8ddbf91aac964a1d93c803fd2030c9a6b13ef"
+    }
+  ]
+}

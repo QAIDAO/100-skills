@@ -1,0 +1,41 @@
+{
+  "id": "C15",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "two-dimensional-field-v2/results.json",
+      "goal": "two-dimensional-field-v2/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/c15-round27-parent.json",
+      "previous_1D_preserved": "results.json",
+      "research": "two-dimensional-field-v2/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/C15-heat-equation-vqls/execution/RESEARCH.md",
+    "tasks/_execution/2026-10-04/cross/c15-2d-audit-v2/result.json",
+    "tasks/_execution/2026-10-04/cross/c15-2d-v2/protocol.json",
+    "tasks/_execution/2026-10-04/cross/c15-2d-v2/result.json",
+    "tasks/_execution/2026-10-04/figures/round27/c15_readout.png",
+    "tasks/_execution/2026-10-04/validation/c15-round27-parent.json"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/C15-heat-equation-vqls/README.md",
+      "sha256": "e718ecae6079c4a636183f591ebaa6f71c8a6c10cc2af77630882a7521c7c6d2"
+    },
+    {
+      "path": "tasks/C15-heat-equation-vqls/execution/LATEST.json",
+      "sha256": "96bf36ad6d9c8b9e1a1f1470f709e6d7c61c459ca6d5f0df8acb2c38a43a18e3"
+    },
+    {
+      "path": "tasks/C15-heat-equation-vqls/execution/two-dimensional-field-v2/RESEARCH.md",
+      "sha256": "027ab36dc154f2b9cb00ccb2b6c1faafa52a37aa314804d558dadeae0cac8ec3"
+    }
+  ]
+}

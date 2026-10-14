@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "强加权团求解器、经典GBS近似、同评分对接和相同样本数",
+  "decision": "在同样评分模型下提高正确结合姿态被发现的概率，减少后续精化数量。",
+  "domain": "生物医药",
+  "has_reference": true,
+  "id": "B11",
+  "observable": "最大权重团、pose RMSD、top-k成功率、全流程成本",
+  "quantum_role": "相互作用图编码→可编程GBS→经典团修复与姿态重建",
+  "scale": "图顶点/光学模式不是原子或门模型比特；32节点团搜索是平台基准非完整蛋白",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "TACE相互作用图、加权团与GBS对接算法",
+      "title": "Molecular Docking with Gaussian Boson Sampling",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/1902.00462",
+      "year": 2020
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "可编程GBS、32节点图基准及对接/RNA应用；预印本始于2022",
+      "title": "A universal programmable Gaussian Boson Sampler for drug discovery",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2210.14877v3",
+      "year": 2024
+    }
+  ],
+  "subdomain": "虚拟筛选 / 姿态搜索",
+  "system": "TNF-α converting enzyme受体与小分子配体的相互作用图；GBS药物平台",
+  "tags": [
+    "对接",
+    "GBS",
+    "光子",
+    "组合优化"
+  ],
+  "title": "分子对接：光量子采样加权团搜索"
+}

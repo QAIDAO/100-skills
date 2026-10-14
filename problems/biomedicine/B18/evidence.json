@@ -1,0 +1,56 @@
+{
+  "id": "B18",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "companion_mapping_audit": "../../_execution/2026-10-04/bio/b18-mapping-audit/mapping-audit.json",
+      "current_results": "delivery-clarification-r52/results.json",
+      "delivery_manifest_sha256": "9fa368b5b7e5f3703aeadc1ef075980d37d41f91640db46e9b6d4357add105b3",
+      "goal": "delivery-clarification-r52/GOAL.md",
+      "manifest": "delivery-clarification-r52/manifest.json",
+      "original_target_status": "incomplete",
+      "previous_pointer": {
+        "companion_mapping_audit": "../../_execution/2026-10-04/bio/b18-mapping-audit/mapping-audit.json",
+        "current_results": "revision-3-public-18q-boundary/results.json",
+        "goal": "revision-3-public-18q-boundary/GOAL.md",
+        "original_target_status": "incomplete",
+        "research": "RESEARCH-current.md"
+      },
+      "research": "delivery-clarification-r52/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B18-malonaldehyde-proton/execution/RESEARCH-current.md",
+    "tasks/B18-malonaldehyde-proton/execution/delivery-clarification-r52/results.json",
+    "tasks/B18-malonaldehyde-proton/mechanism.png",
+    "tasks/B18-malonaldehyde-proton/visualization.json",
+    "tasks/B18-malonaldehyde-proton/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B18-malonaldehyde-proton/README.md",
+      "sha256": "0abba39a82ca46191348654f7f6734ebdbddb1a8fdf45cb301612629d968c6cc"
+    },
+    {
+      "path": "tasks/B18-malonaldehyde-proton/mechanism.svg",
+      "sha256": "0bdf03ecaf0dcfc1b21ae714c928a76bdfbb8b731c5699892cc221dc73c0a339"
+    },
+    {
+      "path": "tasks/B18-malonaldehyde-proton/workflow.svg",
+      "sha256": "1eee3005223b375b6c719ebfff907550dab2237a367bbfad511eb758e81b030b"
+    },
+    {
+      "path": "tasks/B18-malonaldehyde-proton/execution/LATEST.json",
+      "sha256": "0af227cf1c9d977d4ee7d6de30d5edd3e16635759c23f27bab7f9504ba5f2d1d"
+    },
+    {
+      "path": "tasks/B18-malonaldehyde-proton/execution/delivery-clarification-r52/RESEARCH.md",
+      "sha256": "60f72362149c777255a0651cd33a4b9c9d71c7101839045db2bed31f37e81317"
+    }
+  ]
+}

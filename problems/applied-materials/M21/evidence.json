@@ -1,0 +1,27 @@
+{
+  "id": "M21",
+  "latest": null,
+  "omitted": [
+    "tasks/M21-pfas-defluorination/mechanism.png",
+    "tasks/M21-pfas-defluorination/visualization.json",
+    "tasks/M21-pfas-defluorination/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M21-pfas-defluorination/README.md",
+      "sha256": "85bb870a869054d1c28d39427d9ac1a2b0239b48692ee66e6ea415ff1bccf3cf"
+    },
+    {
+      "path": "tasks/M21-pfas-defluorination/mechanism.svg",
+      "sha256": "6fc5c8146ab7da22730908a1a71693814dbace4972b353347f5f3cddecb7144b"
+    },
+    {
+      "path": "tasks/M21-pfas-defluorination/workflow.svg",
+      "sha256": "c70ef3e1dfffac36a2abf66584a7a1b454fc2a3d441d8744a5a903ba23f12b09"
+    }
+  ]
+}

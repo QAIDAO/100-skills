@@ -1,0 +1,43 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同基组同冻结核FCI、RHF和CCSD；扩展至自由基时需SCI/DMRG与溶剂化基线",
+  "decision": "先验证局部断键和电荷分布接口，再判断真实多硫开壳层物种是否存在值得量子求解的困难。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M23",
+  "observable": "单键断裂曲线、偶极矩、电荷与静电性质",
+  "quantum_role": "VQE/q-UCCSD求基态与1-RDM，计算断键能和静电性质",
+  "scale": "含硫分子在经典模拟器运行；LiSH为15比特、Li2S最高21比特；实机对象为缩小LiH模型",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "doi": "10.1063/5.0044068",
+      "id": "R1",
+      "supports": "读取预印本全文；LiH硬件与含硫分子模拟的分离，21比特Li2S模拟，断键能量及偶极矩；期刊题名另由书目核验",
+      "title": "Quantum computation of dominant products in lithium–sulfur batteries",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/pdf/2001.01120",
+      "year": 2021
+    },
+    {
+      "access_level": "abstract",
+      "doi": "10.1149/2.0851503jes",
+      "id": "R2",
+      "supports": "原位EPR支持真实锂硫电池存在硫自由基；不支持量子算法已求解该反应网络",
+      "title": "Direct Observation of Sulfur Radicals as Reaction Media in Lithium Sulfur Batteries",
+      "type": "期刊论文",
+      "url": "https://www.pnnl.gov/publications/direct-observation-sulfur-radicals-reaction-media-lithium-sulfur-batteries",
+      "year": 2015
+    }
+  ],
+  "subdomain": "电池活性物种电子结构",
+  "system": "孤立LiH、H2S、LiSH、Li2S的单键伸长模型",
+  "tags": [
+    "直接缺口补充",
+    "锂硫",
+    "VQE",
+    "断键",
+    "偶极矩"
+  ],
+  "title": "锂硫产物断键：能量与偶极矩的量子算法基准"
+}

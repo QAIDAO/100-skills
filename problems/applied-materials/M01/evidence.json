@@ -1,0 +1,59 @@
+{
+  "id": "M01",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "paired-ucj-slater-r151/results.json",
+      "current_revision": "paired-ucj-slater-r151",
+      "goal": "paired-ucj-slater-r151/GOAL.md",
+      "id": "M01",
+      "independent_review": "tasks/_execution/2026-10-04/materials/m01-r151/delivery-review/REVIEW.json",
+      "independent_review_sha256": "76f26a73f2be3f431654f52d384fcb335fa04f5b417ac5ffedf58fc237e8aed8",
+      "manifest": "paired-ucj-slater-r151/manifest.json",
+      "manifest_sha256": "93016d67abcc2a007328410dec1e48c3c62839561c79bee27d8ea8a531ea667c",
+      "original_target_status": "incomplete",
+      "previous_results": "full-paired-ucj-mps-r150/results.json",
+      "research": "paired-ucj-slater-r151/REPORT.md",
+      "revision": "r151",
+      "updated_utc": "2026-10-09T05:59:45.622109+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/RESEARCH.md",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/candidates.csv",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/energy-and-bound.png",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/inputs.json",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/manifest.json",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/results.json",
+    "tasks/M01-ru-co2-methanol/mechanism.png",
+    "tasks/M01-ru-co2-methanol/visualization.json",
+    "tasks/M01-ru-co2-methanol/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M01-ru-co2-methanol/README.md",
+      "sha256": "c8ab8440bd45f31ebc17753221113b761768cb38a46879a1d0476a6aa4b3b83c"
+    },
+    {
+      "path": "tasks/M01-ru-co2-methanol/mechanism.svg",
+      "sha256": "f966007d4ab9afc0e1419c2223b99ee4304eba23c156d345ee48685163f04bb7"
+    },
+    {
+      "path": "tasks/M01-ru-co2-methanol/workflow.svg",
+      "sha256": "316fbbaf854229334ae06f0a619b269791911e418f5e5a356d85103f2871fafd"
+    },
+    {
+      "path": "tasks/M01-ru-co2-methanol/execution/LATEST.json",
+      "sha256": "8d5931b0bfce1e0c2320f456b7fc0294621565532baa9186655f67cb9478aba1"
+    },
+    {
+      "path": "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/REPORT.md",
+      "sha256": "03b71518202f1f963cc5ee56b98003b514661ac3e2109e6e0ffc27a2a5aac61d"
+    }
+  ]
+}

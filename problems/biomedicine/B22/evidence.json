@@ -1,0 +1,45 @@
+{
+  "id": "B22",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-geometry-ssadapt-v3/results.json",
+      "goal": "public-geometry-ssadapt-v3/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/round4-parent-promotion.json",
+      "research": "public-geometry-ssadapt-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B22-bodipy-photodynamic/mechanism.png",
+    "tasks/B22-bodipy-photodynamic/visualization.json",
+    "tasks/B22-bodipy-photodynamic/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B22-bodipy-photodynamic/README.md",
+      "sha256": "cc598e294a1838565477e0fd69a7499461772c06bf7e9484a5cba1f47a783d44"
+    },
+    {
+      "path": "tasks/B22-bodipy-photodynamic/mechanism.svg",
+      "sha256": "689fc79854ac4e95f56b032a4198367dacbe272bc7a343fa00d07e2f3258e7b3"
+    },
+    {
+      "path": "tasks/B22-bodipy-photodynamic/workflow.svg",
+      "sha256": "67152cf9c6a5a03f74d6a24e0393d46750ab3d6f6bdca1406971a31b5217d8ac"
+    },
+    {
+      "path": "tasks/B22-bodipy-photodynamic/execution/LATEST.json",
+      "sha256": "8f4e891388098a66223ce7a68399dc262bc321c179bedbcd4a4532d6cc4d3f11"
+    },
+    {
+      "path": "tasks/B22-bodipy-photodynamic/execution/public-geometry-ssadapt-v3/RESEARCH.md",
+      "sha256": "a08a016f699e217849306f59b345c16682a307b5caaa1782c8578cc6f3ef895b"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "B12",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "revision-6/results.json",
+      "goal": "revision-6/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_acceptance": "../../../tasks/_execution/2026-10-04/validation/b12-rev6-parent-provenance-audit.json",
+      "prior_verified_batch": "revision-5/results.json",
+      "research": "../../../campaign/bio/b12-followup/revision-6/FINAL-REPORT.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B12-drug-properties-qml/mechanism.png",
+    "tasks/B12-drug-properties-qml/visualization.json",
+    "tasks/B12-drug-properties-qml/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B12-drug-properties-qml/README.md",
+      "sha256": "c80e3523109c3b27c662b25364943f0b73686e2703c9df0c3b8afb25c67d5df1"
+    },
+    {
+      "path": "tasks/B12-drug-properties-qml/mechanism.svg",
+      "sha256": "14d6fe30afc1d0d34dfd1d35350626d5886fec222b49061b0a12495fd4d6c390"
+    },
+    {
+      "path": "tasks/B12-drug-properties-qml/workflow.svg",
+      "sha256": "3b527b3c94b4c0af48246e62a7dc10499f404087fcbbd78a18600de728464cf9"
+    },
+    {
+      "path": "tasks/B12-drug-properties-qml/execution/LATEST.json",
+      "sha256": "77d378a3c6745af68b42981bc742ee7b90a31bc0fb0ff5e9451d47d7e7bed134"
+    },
+    {
+      "path": "campaign/bio/b12-followup/revision-6/FINAL-REPORT.md",
+      "sha256": "2d93c673c535353ea9d1291667514efe18f59b5e01f4b16cc6234223538bab11"
+    }
+  ]
+}

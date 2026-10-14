@@ -1,0 +1,48 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "MCTDH/ML-MCTDH、张量网络传播、严格小模型波包动力学及适用半经典方法",
+  "decision": "判断分子堆积与界面耦合如何影响激子转化和电荷分离，筛选后续超快谱实验。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "M14",
+  "observable": "态布居Pα(t)、三重态对/CT形成、相关函数和100 fs内短时动力学",
+  "quantum_role": "实空间编码多电子态与核模式，用乘积公式实现耦合时间演化",
+  "scale": "v3二聚体6态21模/154比特；界面4态246模/1053比特；均为振电离散编码而非原子数",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "2025修订版两种光伏振电模型资源；2024首次公开",
+      "title": "Quantum Algorithm for Vibronic Dynamics: Case Study on Singlet Fission Solar Cell Design",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2411.13669v3",
+      "year": 2025
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "量子动力学算法应用/局限背景；在线2022、卷年2023；只读取摘要",
+      "title": "Quantum algorithms for quantum dynamics",
+      "type": "综述",
+      "url": "https://www.nature.com/articles/s43588-022-00374-2",
+      "year": 2023
+    },
+    {
+      "access_level": "abstract",
+      "id": "R3",
+      "supports": "线性H4的裂分能量条件硬件原型；不是蒽或实际光伏器件",
+      "title": "Modeling singlet fission on a quantum computer",
+      "type": "期刊论文",
+      "url": "https://arxiv.org/abs/2301.05752",
+      "year": 2023
+    }
+  ],
+  "subdomain": "光伏与光化学材料",
+  "system": "蒽二聚体激子/三重态过程；蒽–富勒烯界面电荷转移",
+  "tags": [
+    "光伏与光化学材料",
+    "资源估算",
+    "重点储备"
+  ],
+  "title": "有机光伏单重态裂分与界面电荷转移：高维振电动力学"
+}

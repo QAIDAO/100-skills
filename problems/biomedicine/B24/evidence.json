@@ -1,0 +1,49 @@
+{
+  "id": "B24",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "revision-2/results.json",
+      "goal": "scope-clarification-r21/GOAL.md",
+      "original_target_status": "incomplete",
+      "previous_research": "RESEARCH.md",
+      "reader_scope_note": "当前执行范围在公开统计/资源数字审计结束；不启动序列优化，也不改用教学输入填补量子实验计数。原任务仍未完成，已有停止边界保持有效。",
+      "research": "scope-clarification-r21/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B24-mrna-codon-optimization/execution/revision-2/manifest.json",
+    "tasks/B24-mrna-codon-optimization/execution/revision-2/raw.json",
+    "tasks/B24-mrna-codon-optimization/execution/revision-2/results.json",
+    "tasks/B24-mrna-codon-optimization/mechanism.png",
+    "tasks/B24-mrna-codon-optimization/visualization.json",
+    "tasks/B24-mrna-codon-optimization/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B24-mrna-codon-optimization/README.md",
+      "sha256": "d989658456694f30d86db820134bc1893fa0ef1b25fd49dfe97cdfca520819b7"
+    },
+    {
+      "path": "tasks/B24-mrna-codon-optimization/mechanism.svg",
+      "sha256": "02205ed702a78695701cd47af3f433a2d4d58fc242fa8c8a09d06c44a1447407"
+    },
+    {
+      "path": "tasks/B24-mrna-codon-optimization/workflow.svg",
+      "sha256": "179031e85618005e266e3351a40c7ffea68b9a0beb899951784a13ccd1fb8157"
+    },
+    {
+      "path": "tasks/B24-mrna-codon-optimization/execution/LATEST.json",
+      "sha256": "53dae268adbeada55e83d23c45ce9054f7d02a6a8a9d9f96136dc4e7beb6e823"
+    },
+    {
+      "path": "tasks/B24-mrna-codon-optimization/execution/scope-clarification-r21/RESEARCH.md",
+      "sha256": "e903607f05d38a17c6b34b9a309b952061d4873dfe4ce565af962051b170132d"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "同空间 CASCI；扩大空间的多参考方法；经典 selected-CI",
+  "decision": "判断求解器能否稳定分辨局部重排的反应物、过渡态和产物能差。",
+  "domain": "材料计算",
+  "has_reference": true,
+  "id": "C01",
+  "observable": "相对电子能、电子势垒、反应能、自旋与自然占据",
+  "quantum_role": "VQE/ADAPT 或采样子空间求解指定几何的相关电子问题",
+  "scale": "论文为受限活性空间；PDF 拟定 CAS(6,6)/CAS(8,8) 与12/16系统比特，非原论文参数",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "有限活性空间、模拟器与实机差异；预印本2019，关联期刊 DOI 10.1021/acs.jpca.0c09530",
+      "title": "Computational Investigations of the Lithium Superoxide Dimer Rearrangement on Noisy Quantum Devices",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1906.10675",
+      "year": 2019
+    },
+    {
+      "access_level": "abstract",
+      "id": "R2",
+      "supports": "qLR/qEOM 响应方法及无噪模拟；不支持本题甲醛反演已在硬件完成",
+      "title": "Quantum simulation of molecular response properties",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2301.06260",
+      "year": 2023
+    }
+  ],
+  "subdomain": "电池与电化学",
+  "system": "气相 (LiO₂)₂ / Li₂O₄，六原子局部模型",
+  "tags": [
+    "VQE",
+    "电池",
+    "反应势垒",
+    "PDF六方向"
+  ],
+  "title": "Li₂O₄ 重排：电池局部反应曲线与跨几何态跟踪"
+}

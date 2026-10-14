@@ -1,0 +1,45 @@
+{
+  "id": "M20",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "public-cage-pair-v3/parent-review/results.json",
+      "goal": "public-cage-pair-v3/GOAL.md",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/round4-parent-promotion.json",
+      "research": "public-cage-pair-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/M20-confined-cyclic-ozone/mechanism.png",
+    "tasks/M20-confined-cyclic-ozone/visualization.json",
+    "tasks/M20-confined-cyclic-ozone/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/M20-confined-cyclic-ozone/README.md",
+      "sha256": "7e1570f2710edd56e0506b74c2a9cf4ddbcb836b1a6b39f458ecd01a26f09610"
+    },
+    {
+      "path": "tasks/M20-confined-cyclic-ozone/mechanism.svg",
+      "sha256": "e0b63773f3c24bc72b2caa315d90251d32cf60066314fc456d73920687ac818c"
+    },
+    {
+      "path": "tasks/M20-confined-cyclic-ozone/workflow.svg",
+      "sha256": "6655c3f6b34bf0824d02b0b8183b1e9070dc843324c67b2fa14f7d21025af75e"
+    },
+    {
+      "path": "tasks/M20-confined-cyclic-ozone/execution/LATEST.json",
+      "sha256": "87344e9cf518abe8a065d1e8f4bca76303ac07ba209d519e2b19a84319322c2e"
+    },
+    {
+      "path": "tasks/M20-confined-cyclic-ozone/execution/public-cage-pair-v3/RESEARCH.md",
+      "sha256": "f38bbf7a45d1013dc62c2a7c8a31879c4c78fb765c966efe5d02c05cb3e2417f"
+    }
+  ]
+}

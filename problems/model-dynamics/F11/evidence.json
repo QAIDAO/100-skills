@@ -1,0 +1,72 @@
+{
+  "id": "F11",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "full-response-decomposition-r51/results.json",
+      "goal": "full-response-decomposition-r51/GOAL.md",
+      "manifest": "full-response-decomposition-r51/manifest.json",
+      "manifest_sha256": "509afa7aa0ca6485696ecb3b2ce34239f41b7408809b11c0559f4ce49f5f8163",
+      "original_target_status": "incomplete",
+      "parent_audit": "tasks/_execution/2026-10-04/validation/f11-round51-delivery-audit.json",
+      "previous_pointer": {
+        "current_results": "qse-response-r50/results.json",
+        "goal": "qse-response-r50/GOAL.md",
+        "manifest": "qse-response-r50/manifest.json",
+        "manifest_sha256": "be625bea48b61875e256fbbeee2fc334e292b5c745831e89c05bd698919a28f4",
+        "original_target_status": "incomplete",
+        "parent_audit": "tasks/_execution/2026-10-04/validation/f11-round50-delivery-audit.json",
+        "previous_pointer": {
+          "current_results": "real-fixed-bath-v2/results.json",
+          "goal": "real-fixed-bath-v2/GOAL.md",
+          "manifest_sha256": "f2836bdbd75d9ab1d156aebf84004a6b2e3aa0cf2c2069b214db2b18cd3a21ef",
+          "original_target_status": "incomplete",
+          "previous_pointer": {
+            "current_results": "results.json",
+            "goal": "GOAL.md",
+            "original_target_status": "incomplete",
+            "research": "RESEARCH.md"
+          },
+          "research": "real-fixed-bath-v2/RESEARCH.md"
+        },
+        "report": "qse-response-r50/RESULTS.md",
+        "research": "qse-response-r50/RESEARCH.md"
+      },
+      "report": "full-response-decomposition-r51/RESULTS.md",
+      "research": "full-response-decomposition-r51/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F11-ccoc-quantum-dmft/execution/full-response-decomposition-r51/figures/full-response-decomposition.png",
+    "tasks/F11-ccoc-quantum-dmft/mechanism.png",
+    "tasks/F11-ccoc-quantum-dmft/visualization.json",
+    "tasks/F11-ccoc-quantum-dmft/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F11-ccoc-quantum-dmft/README.md",
+      "sha256": "573c61b76a349fb0ef9cc96dcce97d0964d4f08a38156ffedcb446fb73fc4dfe"
+    },
+    {
+      "path": "tasks/F11-ccoc-quantum-dmft/mechanism.svg",
+      "sha256": "7deee2a924bdb1b54da69fe2c7990a307c4a297053144fe47f8ad28301ab1f46"
+    },
+    {
+      "path": "tasks/F11-ccoc-quantum-dmft/workflow.svg",
+      "sha256": "062c1152653e37ce4834e896fd1438c1187eb1ab67f772fa1309e8e97ab21ab7"
+    },
+    {
+      "path": "tasks/F11-ccoc-quantum-dmft/execution/LATEST.json",
+      "sha256": "0452b04a567c2a2fbdb4d545a0ae73f2458a1c56df9262fdd63432740206907e"
+    },
+    {
+      "path": "tasks/F11-ccoc-quantum-dmft/execution/full-response-decomposition-r51/RESEARCH.md",
+      "sha256": "b2c737ae74e0447e08d99a91e3e11b828279aa8205d11b765624efdb9cd7ad2a"
+    }
+  ]
+}

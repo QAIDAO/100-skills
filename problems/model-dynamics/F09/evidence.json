@@ -1,0 +1,61 @@
+{
+  "id": "F09",
+  "latest": {
+    "original_target_status": "incomplete",
+    "pointers": {
+      "current_results": "physical-echo-audit-r117/results.json",
+      "current_revision": "physical-echo-audit-r117",
+      "goal": "physical-echo-audit-r117/GOAL.md",
+      "id": "F09",
+      "independent_review": "tasks/_execution/2026-10-04/frontier/f09-r117/delivery-review/DELIVERY-REVIEW.json",
+      "manifest": "physical-echo-audit-r117/manifest.json",
+      "manifest_sha256": "60c0923982f7826c733ab206f0dbd6ae69a4b6f6575aafb0cd1b039bbd2427d0",
+      "original_target_status": "incomplete",
+      "previous_results": "results.json",
+      "research": "physical-echo-audit-r117/RESEARCH.md",
+      "revision": "r117",
+      "updated_utc": "2026-10-07T16:24:42.707375+00:00"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/METHODS.md",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/REPRODUCE.md",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/diagnostic5.csv",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/exact126.csv",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/figures/physical-echo-audit.png",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/grid63.csv",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/independent63.csv",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/legacy-gates.csv",
+    "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/results.json",
+    "tasks/F09-nmr-structure-echoes/mechanism.png",
+    "tasks/F09-nmr-structure-echoes/visualization.json",
+    "tasks/F09-nmr-structure-echoes/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/F09-nmr-structure-echoes/README.md",
+      "sha256": "466a9308711bc27fe0adfef96db778d6550dd03a356d313b6f67e906434d4a03"
+    },
+    {
+      "path": "tasks/F09-nmr-structure-echoes/mechanism.svg",
+      "sha256": "110204ad4a9437fd318d412957891b03a8ecb5a9779a09b17461a6b80475f273"
+    },
+    {
+      "path": "tasks/F09-nmr-structure-echoes/workflow.svg",
+      "sha256": "acd61c51c39bae13c474f81dacc860eb20704cdf4e5c4e15822ab9c224af61ce"
+    },
+    {
+      "path": "tasks/F09-nmr-structure-echoes/execution/LATEST.json",
+      "sha256": "0a37f65a2b0447fcfbef695aa374417f329cc2fc3d939d23181660e223c96690"
+    },
+    {
+      "path": "tasks/F09-nmr-structure-echoes/execution/physical-echo-audit-r117/RESEARCH.md",
+      "sha256": "f4f5e26183021260cf89ccbbd1e1f3cccb7c507f285eb10b7a94cf02260043fe"
+    }
+  ]
+}

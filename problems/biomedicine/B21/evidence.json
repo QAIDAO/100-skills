@@ -1,0 +1,44 @@
+{
+  "id": "B21",
+  "latest": {
+    "original_target_status": null,
+    "pointers": {
+      "current_results": "public-si-audit-v3/results.json",
+      "goal": "public-si-audit-v3/GOAL.md",
+      "previous_results": "revision-2-frontier/results.json",
+      "research": "public-si-audit-v3/RESEARCH.md"
+    },
+    "reference": "REFERENCE.md"
+  },
+  "omitted": [
+    "tasks/B21-bpti-transition-paths/mechanism.png",
+    "tasks/B21-bpti-transition-paths/visualization.json",
+    "tasks/B21-bpti-transition-paths/workflow.png"
+  ],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "ea97d26eafc98c762049a4ad2066dbe9f6a86eb3b162cf363f1e5a532c06215b"
+    },
+    {
+      "path": "tasks/B21-bpti-transition-paths/README.md",
+      "sha256": "b26023c49d400c5336815c765d7dcca582771a445721c4db45dccfc2c67c5a4d"
+    },
+    {
+      "path": "tasks/B21-bpti-transition-paths/mechanism.svg",
+      "sha256": "a61ef23864c9c7f4efb6af7061d50dd3e70253d7076f669cf2f1499a7adebf33"
+    },
+    {
+      "path": "tasks/B21-bpti-transition-paths/workflow.svg",
+      "sha256": "5519f216deb6592ec9c95ddbb9016714170ddcd593ea0e685c98c7d1126c69b2"
+    },
+    {
+      "path": "tasks/B21-bpti-transition-paths/execution/LATEST.json",
+      "sha256": "e5e439a91ed7e1b55fc327c6da5d803fd2867df121cef22b9c92ef0b1f0edf98"
+    },
+    {
+      "path": "tasks/B21-bpti-transition-paths/execution/public-si-audit-v3/RESEARCH.md",
+      "sha256": "b3f1e3defd4c6362ea2d5d5eb931e11e5fc6109ad7efa13ad815624bce0e1964"
+    }
+  ]
+}
