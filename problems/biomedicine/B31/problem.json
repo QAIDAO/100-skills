@@ -12,18 +12,18 @@
     {
       "access_level": "search_excerpt",
       "id": "R1",
-      "supports": "杂化 DFT 计算比较细胞色素氧化酶中多种 O–O 断键机理",
+      "supports": "杂化 DFT 计算比较细胞色素氧化酶中多种 O–O 断键机理（付费期刊，未取得全文）",
       "title": "O-O bond splitting mechanism in cytochrome oxidase",
       "type": "期刊论文；J Inorg Biochem",
       "url": "https://pubmed.ncbi.nlm.nih.gov/11001098/",
       "year": 2000
     },
     {
-      "access_level": "abstract",
+      "access_level": "full_text",
       "id": "Q1",
-      "supports": "同类金属酶活性空间的 DMRG+NEVPT2/CCSD(T) 对照与 qubitization 相位估计资源估计；作为量子路线的方法先例，不是本题体系",
+      "supports": "CYP3A4 衍生模型：41 轨道 DMRG 给出 Cpd I 二重态比四重态仅低 0.02 kcal/mol，CCSD(T) 在多参考特征强的二重态上偏离 DMRG；最大 58 轨道活性空间的相位估计在 0.1% 物理错误率下约需 460 万物理比特、73 小时。方法先例，不是本题体系",
       "title": "Reliably assessing the electronic structure of cytochrome P450 on today's classical computers and tomorrow's quantum computers",
-      "type": "期刊论文；PNAS 119(38) e2203533119",
+      "type": "期刊论文；PNAS 119(38) e2203533119；读取 arXiv 2202.01244 全文",
       "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499570/",
       "year": 2022
     }

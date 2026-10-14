@@ -10,26 +10,26 @@
   "scale": "自旋哈密顿量的希尔伯特空间随磁中心数指数增长；从头计算各向异性交换需要多中心多参考活性空间",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "Q1",
-      "supports": "在 IBM 量子硬件上提取磁性分子的动力学关联与磁中子散射截面，并评估门误差与可扩展性",
+      "supports": "ibmqx4（5 比特）模拟自旋二聚体、ibmqx5 与 ibmq20 模拟三聚体，提取动力学关联与磁中子散射截面；需相位与幅度校正；原型模型，非具体分子",
       "title": "Quantum hardware simulating four-dimensional inelastic neutron scattering",
       "type": "预印本",
       "url": "https://arxiv.org/abs/1809.07974",
       "year": 2019
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "单分子磁体与量子电路耦合的方案",
+      "supports": "单分子磁体晶体与超导谐振腔、磁通比特可达强耦合乃至超强耦合，可作量子信息存储与操控载体；对应本题的分子量子比特设计决策",
       "title": "Coupling single molecule magnets to quantum circuits",
-      "type": "预印本",
+      "type": "预印本；期刊版 New J. Phys.",
       "url": "https://arxiv.org/abs/1306.4276",
       "year": 2013
     }
   ],
   "subdomain": "分子磁性 / 自旋哈密顿量",
-  "system": "多核过渡金属与镧系单分子磁体，如 [Mn₄]₂ 二聚体与 Cr 基磁性分子环",
+  "system": "多核过渡金属与镧系单分子磁体；现有量子模拟以自旋二聚体、三聚体原型模型为例",
   "tags": [
     "分子磁体",
     "磁各向异性",

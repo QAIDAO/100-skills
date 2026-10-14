@@ -10,21 +10,21 @@
   "scale": "有效模型为 2 个电子态加 2–3 个核模式；完整发色团加蛋白环境需 QM/MM",
   "sources": [
     {
-      "access_level": "abstract",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "两态两模加热浴的视紫红质模型，研究稳态非相干激发下的异构化量子产率",
+      "supports": "两态两模加 Ohmic 热浴、Redfield 主方程、1000 个体系系综：稳态量子产率与过剩能量正相关，同时受系统—环境耦合显著影响，纯波包图像不足",
       "title": "Steady State Photoisomerization Quantum Yield of Model Rhodopsin: Insights from Wavepacket Dynamics?",
       "type": "预印本",
       "url": "https://arxiv.org/abs/2202.00533",
       "year": 2022
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "Q1",
-      "supports": "离子阱用内态与运动态模拟锥形交叉并观测几何相位；通用模型，不是视黄醛",
+      "supports": "5 个 ¹⁷¹Yb⁺ 离子：一个离子的自旋作电子态、两个运动模作核坐标，Trotter 化绝热演化后观测到几何相位干涉形成的新月形分布；通用模型，不是视黄醛",
       "title": "Quantum simulation of conical intersections using trapped ions",
-      "type": "期刊论文；Nature Chemistry 15, 1509",
-      "url": "https://scholars.duke.edu/publication/1594869",
+      "type": "预印本；期刊版 Nature Chemistry 15, 1509",
+      "url": "https://arxiv.org/abs/2211.07319",
       "year": 2023
     }
   ],

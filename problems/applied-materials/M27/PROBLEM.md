@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-经典侧：WEST 代码的杂化 TDDFT 研究了 Cs₄SnBr₆ 与 Cs₂AgInCl₆ 的自陷激子；另有研究讨论双钙钛矿中自陷激子的量子干涉与光学调控。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：WEST 代码的杂化 TDDFT（DDH 泛函加解析激发态力）重现了 Cs₄SnBr₆、Cs₂AgInCl₆ 的光学能隙、自陷激子发光能与宽谱发光谱，并指出必须显式弛豫激发态势能面，只看基态几何上的激子—声子耦合不够；Cs₂Ag₀.₄Na₀.₆InCl₆ 的共振拉曼与发光实验观测到 Fano 共振，表明存在可被激光调节的激子—声子杂化态，计算指出 A₁g 声子主导自陷激子形成。量子侧：WEST 已支持把量子缺陷嵌入（QDET）有效哈密顿量交给 Qiskit 的 VQE 与量子子空间展开求解，但尚未用于钙钛矿。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：不能把所有钙钛矿性质预测都列为量子任务；量子只针对经典嵌入与 GW/BSE 难以描述的局域难核。
 
@@ -70,10 +70,10 @@
 
 #### 文献与读取范围
 
-- R1 [The WEST code for large-scale excited-state materials simulations](https://arxiv.org/abs/2607.14025)（2026），预印本；读取范围：search_excerpt。杂化 TDDFT 加激发态几何弛豫，用于 Cs₄SnBr₆ 与 Cs₂AgInCl₆ 的自陷激子。
-- R2 [Quantum Interference and Optical Tuning of Self-Trapped Exciton State in Double Halide Perovskite](https://arxiv.org/abs/2410.20654)（2024），预印本；读取范围：search_excerpt。双卤化物钙钛矿自陷激子态的量子干涉与光学调控。
+- R1 [The WEST code for large-scale excited-state materials simulations](https://arxiv.org/abs/2607.14025)（2026），预印本；读取范围：full_text。DDH 杂化 TDDFT 加解析激发态力重现 Cs₄SnBr₆、Cs₂AgInCl₆ 的自陷激子发光；QDET 有效哈密顿量可经 Qiskit 用 VQE 求解。
+- R2 [Quantum Interference and Optical Tuning of Self-Trapped Exciton State in Double Halide Perovskite](https://arxiv.org/abs/2410.20654)（2024），预印本；读取范围：full_text。以实验为主：Cs₂Ag₀.₄Na₀.₆InCl₆ 的 Fano 共振揭示激子—声子杂化态，可随激发能量与功率调节；标题中的「量子干涉」指 Fano 干涉，与量子计算无关。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

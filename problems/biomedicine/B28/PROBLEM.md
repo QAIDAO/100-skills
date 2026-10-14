@@ -56,9 +56,9 @@ DFT（BP86 与 B3LYP 对 Co–C 键强的系统偏差）、IMOMM/QM/MM 加溶剂
 
 #### 已有文献与证据边界
 
-经典侧：IMOMM 计算比较了两种钴胺素的 Co–C 键离解能并指出溶剂效应必要；多参考方法对断键势垒的描述仍有争议。量子侧仅有同类金属酶活性空间的资源估计先例。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：甲基钴胺素 Co–C 键离解能实验值 155 ± 13 kJ/mol，B3LYP 只给 91–117 kJ/mol；基组、相对论、溶剂、零点能与热校正都解释不了这一差距，BP86 与 MP2 给出 135–139 kJ/mol，两类泛函相差约 55 kJ/mol，且这一偏差在四吡咯类金属–碳键中普遍存在；腺苷钴胺素键能更低的实验趋势计算未能重现。IMOMM 研究指出溶液中的趋势需要溶剂效应。量子侧仅有同类金属酶活性空间的资源估计先例（P450）。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
-局限：不同泛函对 Co–C 键强给出相反趋势，经典参照本身需先收敛；完整反应网络和构象门控仍须经典计算。
+局限：不同泛函给出的 Co–C 键能相差可达约 55 kJ/mol，经典参照本身需要先收敛；完整反应网络和构象门控仍须经典计算。
 
 #### 与已有题目的区别
 
@@ -70,11 +70,11 @@ DFT（BP86 与 B3LYP 对 Co–C 键强的系统偏差）、IMOMM/QM/MM 加溶剂
 
 #### 文献与读取范围
 
-- R1 [Computational study on the difference between the Co–C bond dissociation energy in methylcobalamin and adenosylcobalamin](https://iciq.org/research/publication/computational-study-on-the-difference-between-the-co-c-bond-dissociation-energy-in-methylcobalamin-and-adenosylcobalamin)（2005），期刊论文；J Biol Inorg Chem 10, 509；读取范围：search_excerpt。IMOMM 计算两种钴胺素的 Co–C 键离解能，指出需要溶剂效应才能重现溶液中的趋势。
-- R2 [Challenges in the simulation of enzymatic transition states with emerging multireference character](https://arxiv.org/abs/2607.09769)（2026），预印本；读取范围：search_excerpt。讨论酶过渡态中出现的多参考特征及其模拟难点。
-- Q1 [Reliably assessing the electronic structure of cytochrome P450 on today's classical computers and tomorrow's quantum computers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499570/)（2022），期刊论文；PNAS 119(38) e2203533119；读取范围：abstract。同类金属酶活性空间的 DMRG+NEVPT2/CCSD(T) 对照与 qubitization 相位估计资源估计；作为量子路线的方法先例，不是本题体系。
+- R1 [Theoretical prediction of the Co–C bond strength in cobalamins](https://lup.lub.lu.se/record/128729)（2003），期刊论文；J Phys Chem A 107, 7539；Lund 大学仓库 post-print；读取范围：full_text。MeCbl Co–C 键能实验 155±13 kJ/mol，B3LYP 91–117，各项校正都解释不了；BP86/MP2 给 135–139；B3LYP 比 BP86 低约 55 kJ/mol，归因于 HF 交换与 LYP，对 Co/Fe/Ni 四吡咯普遍成立。
+- R2 [Computational study on the difference between the Co–C bond dissociation energy in methylcobalamin and adenosylcobalamin](https://iciq.org/research/publication/computational-study-on-the-difference-between-the-co-c-bond-dissociation-energy-in-methylcobalamin-and-adenosylcobalamin)（2005），期刊论文；J Biol Inorg Chem 10, 509；读取范围：search_excerpt。IMOMM 计算两种钴胺素的 Co–C 键离解能，指出需要溶剂效应才能重现溶液中的趋势（无开放全文）。
+- Q1 [Reliably assessing the electronic structure of cytochrome P450 on today's classical computers and tomorrow's quantum computers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499570/)（2022），期刊论文；PNAS 119(38) e2203533119；读取 arXiv 2202.01244 全文；读取范围：full_text。CYP3A4 衍生模型：41 轨道 DMRG 给出 Cpd I 二重态比四重态仅低 0.02 kcal/mol，CCSD(T) 在多参考特征强的二重态上偏离 DMRG；最大 58 轨道活性空间的相位估计在 0.1% 物理错误率下约需 460 万物理比特、73 小时。方法先例，不是本题体系。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/M25-heterostructure-interlayer-exciton/README.md",
-      "sha256": "388159cf5637e65fd2d0a16ba40d16daaa3dcc468548da98b3b13a8a460f79aa"
+      "sha256": "46d3707379dd3162c6c32103fb6b4bdb5e45ef54c8dfd98d2257cd32e8c4762f"
     }
   ]
 }

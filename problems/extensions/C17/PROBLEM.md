@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-经典侧：第一性原理排序结合多体色散与振动自由能，在盲测中表现可靠；第七次晶体结构预测盲测指出周期 DFT-D 总体与实验一致，并发现某目标的实验晶型比预测的全局最低高出 4 kJ/mol 以上。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：第一性原理排序（PBE0 加多体色散与谐振自由能）在第六次盲测五个分子上成功率最优，并预测了未观测的稳定晶型，作者指出需要约 1 kJ/mol 的相对能精度；第七次盲测中周期 DFT-D 总体与实验一致，某目标的实验晶型比预测全局最低高出 4 kJ/mol 以上，室温自由能只在部分情况下改善预测，而同一化合物的晶型能差通常只有 1–2 kJ/mol。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：不替代晶体结构搜索；溶解度与成核动力学需要溶剂与动力学信息；更准的电子能不能消除熵与采样问题。
 
@@ -70,10 +70,10 @@
 
 #### 文献与读取范围
 
-- R1 [Reliable and Practical Computational Prediction of Molecular Crystal Polymorphs](https://arxiv.org/abs/1803.07503)（2018），预印本；读取范围：search_excerpt。第一性原理排序含交换排斥、多体色散与振动自由能，指出需约 1 kJ/mol 的相对能精度。
-- R2 [The seventh blind test of crystal structure prediction: structure ranking methods](https://www.chem.ox.ac.uk/node/4167206)（2024），期刊论文；读取范围：search_excerpt。周期 DFT-D 总体与实验一致；某目标的实验晶型比预测全局最低高 4 kJ/mol 以上。
+- R1 [Reliable and Practical Computational Prediction of Molecular Crystal Polymorphs](https://arxiv.org/abs/1803.07503)（2018），预印本；读取范围：full_text。第六次盲测五个分子，PBE0+MBD+Fvib 排序成功率最优并预测未观测的稳定晶型；需约 1 kJ/mol 的相对（自由）能精度。
+- R2 [The seventh blind test of crystal structure prediction: structure ranking methods](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11789160/)（2024），期刊论文；Acta Cryst B 80, 548；Europe PMC 全文；读取范围：full_text。22 个组参与：周期 DFT-D 总体与实验一致，系统专用 AIMnet 势在多数情况一致；目标 XXXII 实验晶型比全局最低高 4 kJ/mol 以上；室温自由能只在部分情况改善预测。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

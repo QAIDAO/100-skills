@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/M24-quantum-dot-auger/README.md",
-      "sha256": "637b7cede23cb6fde5b105e701344d6c335da0a5e66d598943fd7cf69b75d627"
+      "sha256": "f78f812258b15e804d6eb8e44f2d50342ae6ffe2eb2ab2f0421b8a02643939f4"
     }
   ]
 }

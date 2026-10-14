@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/B27-metal-drug-activation/README.md",
-      "sha256": "bcfb6fe702812d78184c1668b0e522feb61cc199dcc244fce3f92db7495246ae"
+      "sha256": "81a404eb3bdb70f0917bed9a958b7a36c2696d24b697a82cc84b538881d4640f"
     }
   ]
 }

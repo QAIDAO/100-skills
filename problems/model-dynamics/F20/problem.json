@@ -10,27 +10,27 @@
   "scale": "第一性原理需全布里渊区声子；量子算法目前只能处理小格点的电子—声子模型",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "第一性原理：费米能附近的大量电子态与氢衍生的高频声子强耦合",
+      "supports": "300 GPa 下 LaH₁₀ 的拓扑狄拉克节线态在费米能附近形成 van Hove 奇点，La f 与 H s 强杂化，这些电子态与氢高频声子强耦合给出高 Tc",
       "title": "Origin of High-Temperature Superconductivity in Compressed LaH10",
       "type": "预印本",
       "url": "https://arxiv.org/abs/1811.08548",
       "year": 2018
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "Q1",
-      "supports": "把低能声子态编码到量子比特，额外比特数随体系线性增长；Holstein 极化子模拟与精确对角化一致",
+      "supports": "声子低能子空间编码到量子比特，额外比特随体系线性增长；Holstein 极化子在 Atos QLM 模拟器上用 QPE 求解，与精确对角化一致（非真机）",
       "title": "Electron-Phonon Systems on a Universal Quantum Computer",
       "type": "预印本；期刊版 Phys. Rev. Lett. 121, 110504",
       "url": "https://arxiv.org/abs/1802.07347",
       "year": 2018
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "Q2",
-      "supports": "在 IBM 量子计算机上模拟电子—声子动力学",
+      "supports": "两格点电子—声子模型：不做近似电路重编译时真机结果不准确，重编译后弱耦合高度准确、强耦合部分准确",
       "title": "Recompilation-enhanced simulation of electron-phonon dynamics on IBM Quantum computers",
       "type": "预印本",
       "url": "https://arxiv.org/abs/2202.08270",

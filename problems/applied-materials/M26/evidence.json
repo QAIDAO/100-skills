@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/M26-tadf-oled-emitters/README.md",
-      "sha256": "fb3d342780c0d4c53e6a18e8ea34283ee13ac466b401fe56d7cd38f22ac8af5d"
+      "sha256": "508e2cd84ab22ca3ab85572203902e63d2d263b34f7104e55f976cc303aa3277"
     }
   ]
 }

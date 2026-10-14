@@ -11,7 +11,7 @@
 | 研究体系 | 以 DFT 预训练的神经网络势函数，在主动学习中用 VQE 等量子求解器提供难区域的高精度能量与力标签 |
 | 可观测量 | 势能面误差（对精确参照）、所需量子标签数、分子动力学稳定性与分布外误差 |
 | 经典基线 | 高精度经典标签（CCSD(T)、多参考方法）、Δ-learning、委员会主动学习与 D-最优主动学习 |
-| 量子方法的角色 | 作为主动学习中可替换的标签求解器，只在模型不确定的构型上调用 VQE 计算能量或力（已有小分子演示） |
+| 量子方法的角色 | 作为主动学习中可替换的标签求解器，只在模型不确定的构型上调用 VQE 计算能量或力（已有小分子的模拟器演示，尚无真机标签） |
 | 研发决策 | 判断少量量子标签能否以更低成本把势函数修正到目标精度，从而决定难反应区的标签预算该花在经典高精度方法还是量子求解器上。 |
 
 ## 什么算解
@@ -44,11 +44,11 @@
 
 - 研究体系：以 DFT 预训练的神经网络势函数，在主动学习中用 VQE 等量子求解器提供难区域的高精度能量与力标签
 - 可观测量：势能面误差（对精确参照）、所需量子标签数、分子动力学稳定性与分布外误差
-- 规模：已有演示限于 H₂、水单体与二聚体；扩展到实际体系受量子力梯度的成本限制
+- 规模：已有演示限于 H₂、BeH₂、水单体与二聚体，且均在模拟器上完成；扩展到实际体系受量子力梯度的成本与真机噪声限制
 
 #### 量子—经典工作流（建议，未运行）
 
-作为主动学习中可替换的标签求解器，只在模型不确定的构型上调用 VQE 计算能量或力（已有小分子演示）
+作为主动学习中可替换的标签求解器，只在模型不确定的构型上调用 VQE 计算能量或力（已有小分子的模拟器演示，尚无真机标签）
 
 #### 强经典基线
 
@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-2024 年研究用委员会主动学习选样，以数十个 VQE 点修正 DFT 预训练的网络，在水单体与二聚体上得到高精度势能面；2026 年研究在 H₂ 上用 ADAPT-VQE 力驱动在线主动学习的分子动力学。
+2024 年研究用委员会主动学习选样，以数十个 UCCSD-VQE 能量修正 DFT 预训练的神经网络势，在 STO-3G 下的水单体与二聚体上得到高精度势能面，但这些 VQE 能量是在经典稀疏线路模拟器上算的，未上真机、未含噪声；2026 年研究把 Qiskit Nature 接入 ASE，用 ADAPT-VQE 力驱动 H₂ 的在线主动学习分子动力学，BeH₂ 的结构与振动性质与同基组 CCSD 一致，同样在态矢量模拟器上完成。
 
 局限：必须把 AI 的收益、嵌入的收益与量子求解器的贡献分开归因；量子标签要与同预算的最佳经典标签做消融比较。
 
@@ -70,11 +70,11 @@
 
 #### 文献与读取范围
 
-- Q1 [Quantum Hardware-Enabled Molecular Dynamics via Transfer Learning](https://arxiv.org/abs/2406.08554)（2024），预印本；读取范围：search_excerpt。委员会主动学习选样，用数十个 VQE 点修正 DFT 预训练网络，水单体与二聚体上得到高精度势能面。
-- Q2 [Integration of Variational Quantum Algorithms into Atomistic Simulation Workflows](https://arxiv.org/abs/2602.02695)（2026），预印本；读取范围：search_excerpt。ADAPT-VQE 力驱动 H₂ 的在线主动学习分子动力学，比较不同主动学习历史所需的量子计算次数。
-- R1 [Active learning of linearly parametrized interatomic potentials](https://arxiv.org/abs/1611.09346)（2016），预印本；读取范围：search_excerpt。D-最优主动学习，改善势函数可迁移性并支持在线训练。
+- Q1 [Quantum Hardware-Enabled Molecular Dynamics via Transfer Learning](https://arxiv.org/abs/2406.08554)（2024），预印本；读取范围：full_text。委员会主动学习，数十个 UCCSD-VQE 点修正 DFT 预训练的 Behler–Parrinello 网络；标题虽称量子硬件，VQE 能量实际在经典稀疏线路模拟器上计算，作者承认忽略了真机噪声。
+- Q2 [Integration of Variational Quantum Algorithms into Atomistic Simulation Workflows](https://arxiv.org/abs/2602.02695)（2026），预印本；读取范围：full_text。Qiskit Nature 接入 ASE；ADAPT-VQE 力加 FALCON 高斯过程在线选样驱动 H₂ 分子动力学；BeH₂ 与同基组 CCSD 一致；全部在 qiskit-aer 态矢量模拟器上。
+- R1 [Active learning of linearly parametrized interatomic potentials](https://arxiv.org/abs/1611.09346)（2016），预印本；读取范围：full_text。D-最优主动学习在线训练矩张量势，保证不外推，用于分子动力学与结构弛豫。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

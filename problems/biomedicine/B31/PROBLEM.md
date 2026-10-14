@@ -56,7 +56,7 @@
 
 #### 已有文献与证据边界
 
-经典侧：杂化 DFT 已研究多种 O–O 断键机理。量子侧仅有 P450 活性空间的资源估计先例，结论是足够规模的同类模型可能落在量子优势区间。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
+经典侧：杂化 DFT 已研究多种 O–O 断键机理。量子侧仅有 P450 活性空间的资源估计先例：Cpd I 的二重态与四重态近乎简并，CCSD(T) 在多参考特征强的二重态上偏离 DMRG；最大活性空间的相位估计约需数十万到数百万物理比特、数十小时，作者认为足够规模的同类模型可能落在量子优势区间，同时承认可靠计入动态关联所需的规模可能超出经典与量子设备的能力。2026-10-14 检索未见针对该具体体系的量子计算研究（检索不穷尽）。
 
 局限：长距离电子传输常可经典处理，量子只应用于难的局部子模型；双核中心自旋耦合使经典参照本身不确定。
 
@@ -70,10 +70,10 @@
 
 #### 文献与读取范围
 
-- R1 [O-O bond splitting mechanism in cytochrome oxidase](https://pubmed.ncbi.nlm.nih.gov/11001098/)（2000），期刊论文；J Inorg Biochem；读取范围：search_excerpt。杂化 DFT 计算比较细胞色素氧化酶中多种 O–O 断键机理。
-- Q1 [Reliably assessing the electronic structure of cytochrome P450 on today's classical computers and tomorrow's quantum computers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499570/)（2022），期刊论文；PNAS 119(38) e2203533119；读取范围：abstract。同类金属酶活性空间的 DMRG+NEVPT2/CCSD(T) 对照与 qubitization 相位估计资源估计；作为量子路线的方法先例，不是本题体系。
+- R1 [O-O bond splitting mechanism in cytochrome oxidase](https://pubmed.ncbi.nlm.nih.gov/11001098/)（2000），期刊论文；J Inorg Biochem；读取范围：search_excerpt。杂化 DFT 计算比较细胞色素氧化酶中多种 O–O 断键机理（付费期刊，未取得全文）。
+- Q1 [Reliably assessing the electronic structure of cytochrome P450 on today's classical computers and tomorrow's quantum computers](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499570/)（2022），期刊论文；PNAS 119(38) e2203533119；读取 arXiv 2202.01244 全文；读取范围：full_text。CYP3A4 衍生模型：41 轨道 DMRG 给出 Cpd I 二重态比四重态仅低 0.02 kcal/mol，CCSD(T) 在多参考特征强的二重态上偏离 DMRG；最大 58 轨道活性空间的相位估计在 0.1% 物理错误率下约需 460 万物理比特、73 小时。方法先例，不是本题体系。
 
-读取范围中 search_excerpt 表示只读到检索摘录，abstract 表示读到摘要页；均未读全文。
+读取范围：full_text 表示已取得全文并逐条核对本题引用的论断；abstract 表示只读到摘要或仓库页；search_excerpt 表示只读到检索摘录（付费、人机验证或无法连接）。2026-10-14 完成全文核对，修正记录见题目说明。
 
 ## 如何提交
 

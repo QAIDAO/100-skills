@@ -10,22 +10,22 @@
   "scale": "力敏基团为小分子尺度；断键区多参考特征强，力修正方法选择本身会改变路径",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "abstract",
       "id": "R1",
-      "supports": "比较 COGEF 与 EFEI 力修正势能面：前者在环丁烯开环中缺少通往对旋产物的最低能量路径",
+      "supports": "COGEF 给顺旋、EFEI 给与实验一致的对旋路径；COGEF 面缺少通往对旋产物的最低能量路径；外力使过渡态向反应物移动（仓库页摘要，PDF 未能读取）",
       "title": "Quantum Chemical Simulations of the Mechanical Activation of Pericyclic Reactions",
-      "type": "学位论文；Queen's University",
+      "type": "学位论文；Queen's University MSc（Kochhar）",
       "url": "https://queensu.scholaris.ca/items/c16e1d44-c5a3-474d-9c1b-69ae7a30679a",
-      "year": null
+      "year": 2011
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R2",
-      "supports": "与 ASE 配合的力化学计算工具，可接各种量子化学计算器做几何优化与 NEB",
+      "supports": "配合 ASE 实现 FMPES、EFEI、EGO，可接各种量子化学计算器做几何优化与 NEB",
       "title": "OpenMechanochem",
-      "type": "软件",
+      "type": "软件；v1.0.1，GNU 许可",
       "url": "https://pypi.org/project/OpenMechanochem",
-      "year": null
+      "year": 2021
     }
   ],
   "subdomain": "力化学 / 断键反应",

@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/F20-hydride-electron-phonon/README.md",
-      "sha256": "96b156527931ad95b12200335f93a8a2c71e7db20f45745d5a3ea6af26a0f1fb"
+      "sha256": "a87d6264901c3ad98ff42b00268bf3fc9ae6f7c0c076b3a6c7676c4dfaec3d43"
     }
   ]
 }

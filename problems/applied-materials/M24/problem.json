@@ -10,22 +10,22 @@
   "scale": "数百到数千原子的纳米晶需有效模型或嵌入；可精确处理的是小团簇或截断的多激子子空间",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "指出电子—空穴关联决定纳米结构中的俄歇复合",
+      "supports": "半经验赝势 + BSE + 费米黄金规则，17 个 CdSe 量子点（1.2–5.3 nm）与纳米棒：计入关联后 τ∝V^0.99，非相互作用 V^1.69 且寿命长 1–2 个数量级",
       "title": "Electron-hole correlations govern Auger recombination in nanostructures",
       "type": "预印本",
       "url": "https://arxiv.org/abs/1808.10404",
       "year": 2018
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R2",
-      "supports": "量子点激子动力学的量子控制理论，数值模拟中包含计算子空间外的多激子能级",
-      "title": "Theory of Fast Quantum Control of Exciton Dynamics in Semiconductor Quantum Dots",
-      "type": "预印本",
-      "url": "https://arxiv.org/abs/cond-mat/0109252",
-      "year": 2001
+      "supports": "经验赝势加近简并时的组态相互作用：双激子俄歇寿命 5 ps 与 24 ps（实验 6 与 22 ps），τ(2→1)/τ(3→2)≈2.4（实验 2.1），双激子复合主要来自表面贡献",
+      "title": "Pseudopotential theory of Auger processes in CdSe quantum dots",
+      "type": "期刊论文；Phys. Rev. Lett. 91, 056404；White Rose 仓库全文",
+      "url": "https://eprints.whiterose.ac.uk/75645/",
+      "year": 2003
     }
   ],
   "subdomain": "光电材料 / 纳米晶",

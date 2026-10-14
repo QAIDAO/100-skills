@@ -10,18 +10,18 @@
   "scale": "自陷激子需大超胞与晶格弛豫；可交给量子求解的是嵌入后的局域难核",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "杂化 TDDFT 加激发态几何弛豫，用于 Cs₄SnBr₆ 与 Cs₂AgInCl₆ 的自陷激子",
+      "supports": "DDH 杂化 TDDFT 加解析激发态力重现 Cs₄SnBr₆、Cs₂AgInCl₆ 的自陷激子发光；QDET 有效哈密顿量可经 Qiskit 用 VQE 求解",
       "title": "The WEST code for large-scale excited-state materials simulations",
       "type": "预印本",
       "url": "https://arxiv.org/abs/2607.14025",
       "year": 2026
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R2",
-      "supports": "双卤化物钙钛矿自陷激子态的量子干涉与光学调控",
+      "supports": "以实验为主：Cs₂Ag₀.₄Na₀.₆InCl₆ 的 Fano 共振揭示激子—声子杂化态，可随激发能量与功率调节；标题中的「量子干涉」指 Fano 干涉，与量子计算无关",
       "title": "Quantum Interference and Optical Tuning of Self-Trapped Exciton State in Double Halide Perovskite",
       "type": "预印本",
       "url": "https://arxiv.org/abs/2410.20654",

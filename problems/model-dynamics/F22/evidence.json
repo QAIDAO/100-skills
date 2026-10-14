@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
     },
     {
       "path": "tasks/F22-molecular-magnet-anisotropy/README.md",
-      "sha256": "635deae78dea990f7e7214046ba52220f4b14c072758e7845dce8b2dbe795c88"
+      "sha256": "47254f9410058e2c7e6eca986ef5bf96ba1698073d528893eecf24dda24c4a04"
     }
   ]
 }

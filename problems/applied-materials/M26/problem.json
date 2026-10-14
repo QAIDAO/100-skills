@@ -7,14 +7,14 @@
   "id": "M26",
   "observable": "S₁–T₁ 能隙 ΔE_ST、跃迁偶极与自旋轨道耦合矩阵元",
   "quantum_role": "用 qEOM-VQE、VQD 等多态子空间算法求 S₁ 与 T₁，近期限于前线轨道活性空间；远期用 QPE 扩大活性空间（已有真机演示）",
-  "scale": "已有演示只用 HOMO/LUMO 双轨道活性空间与双 ζ 基组；实用筛选需要更大活性空间与环境效应",
+  "scale": "已有演示只用 HOMO/LUMO 双轨道活性空间（约化后 2 个量子比特）与 STO-3G、双 ζ 基组；实用筛选需要更大活性空间与环境效应",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "Q1",
-      "supports": "qEOM-VQE 与 VQD 在模拟器和真机上计算 S₁、T₁；模拟器 ΔE_ST 与实验吻合，真机经态层析缓解后误差 4 mHa 以内",
+      "supports": "qEOM-VQE 与 VQD，HOMO–LUMO 活性空间（2 个量子比特），ibmq_boeblingen 与 ibmq_singapore：未缓解误差 16/88 mHa（预印本；期刊版摘录为 17/88），态层析后最多 3 mHa（期刊版 4 mHa）",
       "title": "Applications of quantum computing for investigations of electronic transitions in phenylsulfonyl-carbazole TADF emitters",
-      "type": "期刊论文；npj Computational Materials",
+      "type": "期刊论文；npj Computational Materials；期刊页需登录跳转，读取 arXiv 2007.15795 预印本全文",
       "url": "https://doi.org/10.1038/s41524-021-00540-6",
       "year": 2021
     }

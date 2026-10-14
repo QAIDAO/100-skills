@@ -10,21 +10,21 @@
   "scale": "晶胞含数十到数百原子；能差只有约 1 kJ/mol，电子与核量子效应的误差都可能翻转排序",
   "sources": [
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R1",
-      "supports": "第一性原理排序含交换排斥、多体色散与振动自由能，指出需约 1 kJ/mol 的相对能精度",
+      "supports": "第六次盲测五个分子，PBE0+MBD+Fvib 排序成功率最优并预测未观测的稳定晶型；需约 1 kJ/mol 的相对（自由）能精度",
       "title": "Reliable and Practical Computational Prediction of Molecular Crystal Polymorphs",
       "type": "预印本",
       "url": "https://arxiv.org/abs/1803.07503",
       "year": 2018
     },
     {
-      "access_level": "search_excerpt",
+      "access_level": "full_text",
       "id": "R2",
-      "supports": "周期 DFT-D 总体与实验一致；某目标的实验晶型比预测全局最低高 4 kJ/mol 以上",
+      "supports": "22 个组参与：周期 DFT-D 总体与实验一致，系统专用 AIMnet 势在多数情况一致；目标 XXXII 实验晶型比全局最低高 4 kJ/mol 以上；室温自由能只在部分情况改善预测",
       "title": "The seventh blind test of crystal structure prediction: structure ranking methods",
-      "type": "期刊论文",
-      "url": "https://www.chem.ox.ac.uk/node/4167206",
+      "type": "期刊论文；Acta Cryst B 80, 548；Europe PMC 全文",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11789160/",
       "year": 2024
     }
   ],
