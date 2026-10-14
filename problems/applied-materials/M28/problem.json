@@ -1,0 +1,49 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "簇关联展开（PyCCE 等）处理核自旋浴；第一性原理自旋—声子弛豫；HEOM、TEMPO/过程张量、Lindblad 与随机轨道",
+  "decision": "判断哪种退相干通道限制候选缺陷的相干时间，从而决定量子传感与量子网络应选哪种主体材料与工作温度。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M28",
+  "observable": "T₁ 与 T₂ 相干时间、零场分裂的声子调制、噪声谱",
+  "quantum_role": "把系统—浴模型编码到量子线路，用量子通道或扩张方法模拟非马尔可夫开放动力学，作为经典簇方法之外的离线求解器（提案）",
+  "scale": "核自旋浴可达数百至数千自旋；自旋—声子需全声子谱；量子求解只针对多模浴或强关联的子问题",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "综述固态自旋退相干的计算方法，包括簇方法及其验证",
+      "title": "Decoherence of solid-state spin qubits: a computational perspective",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2405.18535",
+      "year": 2024
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "第一性原理指出低频两声子对零场分裂的调制主导自旋弛豫与退相干",
+      "title": "Spin-phonon decoherence in solid-state paramagnetic defects from first principles",
+      "type": "预印本；期刊版 npj Computational Materials (2023)",
+      "url": "https://arxiv.org/abs/2212.11705",
+      "year": 2022
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R3",
+      "supports": "硅空位自旋与声子耦合的门与模拟方案，基于数值模拟的提案",
+      "title": "Toward high-fidelity quantum information processing and quantum simulation with spin qubits and phonons",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2402.16960",
+      "year": 2024
+    }
+  ],
+  "subdomain": "量子材料 / 缺陷自旋",
+  "system": "hBN 中 V_B⁻、金刚石 IV 族空位、SiC 缺陷等固态自旋，与核自旋浴及晶格声子的耦合",
+  "tags": [
+    "自旋量子比特",
+    "退相干",
+    "自旋声子",
+    "仅文献"
+  ],
+  "title": "固态缺陷自旋量子比特：自旋—声子耦合与退相干"
+}

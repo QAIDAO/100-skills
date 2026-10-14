@@ -1,0 +1,15 @@
+{
+  "id": "B29",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/B29-retinal-photoisomerization/README.md",
+      "sha256": "12a3fc278c9e875a7f6669ed2845f3a3cffaaee125e597404752cf068ffeafbe"
+    }
+  ]
+}

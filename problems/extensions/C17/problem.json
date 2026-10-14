@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "周期 DFT-D 加多体色散与振动自由能；周期 CC 与 QMC；PIMD 与 SSCHA 处理核量子效应；机器学习势排序",
+  "decision": "判断最稳定晶型是否已被发现、是否存在更稳定的未知晶型，从而影响药物固态形式选择与专利风险评估。",
+  "domain": "生物医药",
+  "has_reference": false,
+  "id": "C17",
+  "observable": "候选晶型的相对晶格能与自由能（需约 1 kJ/mol 精度）、零点能与核量子效应修正",
+  "quantum_role": "对决定排序的局部相互作用做嵌入，用 QPE 或 VQE 提供电子能修正；核量子效应可用热态制备与量子采样（提案）",
+  "scale": "晶胞含数十到数百原子；能差只有约 1 kJ/mol，电子与核量子效应的误差都可能翻转排序",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "第一性原理排序含交换排斥、多体色散与振动自由能，指出需约 1 kJ/mol 的相对能精度",
+      "title": "Reliable and Practical Computational Prediction of Molecular Crystal Polymorphs",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1803.07503",
+      "year": 2018
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "周期 DFT-D 总体与实验一致；某目标的实验晶型比预测全局最低高 4 kJ/mol 以上",
+      "title": "The seventh blind test of crystal structure prediction: structure ranking methods",
+      "type": "期刊论文",
+      "url": "https://www.chem.ox.ac.uk/node/4167206",
+      "year": 2024
+    }
+  ],
+  "subdomain": "固态药物 / 晶型",
+  "system": "分子晶体（如 ROY 等多晶型药物分子）在晶体结构预测后的低能候选结构排序",
+  "tags": [
+    "药物晶型",
+    "晶体结构预测",
+    "核量子效应",
+    "仅文献"
+  ],
+  "title": "药物晶型的能量排序：kJ/mol 级能差与核量子效应"
+}

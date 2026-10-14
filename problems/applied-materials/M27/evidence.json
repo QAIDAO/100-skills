@@ -1,0 +1,15 @@
+{
+  "id": "M27",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/M27-perovskite-self-trapped-exciton/README.md",
+      "sha256": "4f8f15369c1ef68a1a02a67b78ac50b3e72b1d258fac10a08735c4b7eeb59b44"
+    }
+  ]
+}

@@ -242,7 +242,7 @@ def main() -> None:
     overview = [
         "# 开放题总索引",
         "",
-        "84 道量子计算与科学计算研究问题，分 4 个领域。提交方式见 [CONTRIBUTING.md](../CONTRIBUTING.md)。",
+        "{total} 道量子计算与科学计算研究问题，分 4 个领域。提交方式见 [CONTRIBUTING.md](../CONTRIBUTING.md)。",
         "",
         "| 领域 | 目录 | 题数 | 有执行记录 |",
         "|---|---|---|---|",
@@ -261,6 +261,7 @@ def main() -> None:
         stats["total_problems"] += len(rows)
         stats["with_reference"] += with_ref
         overview.append(f"| {label} | [{domain}]({domain}/INDEX.md) | {len(rows)} | {with_ref} |")
+    overview[2] = overview[2].format(total=stats["total_problems"])
     (problems_dir / "INDEX.md").write_text("\n".join(overview) + "\n", encoding="utf-8")
     dump_json(out / "stats.json", stats)
 

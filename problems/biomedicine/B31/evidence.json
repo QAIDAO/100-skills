@@ -1,0 +1,15 @@
+{
+  "id": "B31",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/B31-cytochrome-c-oxidase/README.md",
+      "sha256": "8329848c48f92776ce03c193453a012884e242f535ea906e11abd66fa05ae345"
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "M28",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/M28-defect-spin-phonon-decoherence/README.md",
+      "sha256": "963605d82c6489765a429ab38f2d7cfd19e957a3f50b0a7230ed469e435b3677"
+    }
+  ]
+}

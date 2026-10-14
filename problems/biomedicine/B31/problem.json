@@ -1,0 +1,40 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "杂化 DFT 簇模型与 QM/MM；CASPT2、NEVPT2、DMRG、选定 CI；Marcus/PCET 理论与 HEOM",
+  "decision": "判断 O–O 断键路径与中间体态序是否被强相关效应改写，从而影响对呼吸链能量转换效率与相关抑制剂的理解。",
+  "domain": "生物医药",
+  "has_reference": false,
+  "id": "B31",
+  "observable": "O–O 断键势垒、中间体自旋态序、质子耦合电子转移的驱动力",
+  "quantum_role": "对 Fe–Cu 双核活性空间做嵌入，用 QPE/qubitization（远期）或 VQE/SQD（近期）求中间体自旋态能差；长距离电子传输网络仍用经典模型（提案）",
+  "scale": "Fe 卟啉加 Cu 与配位组氨酸的簇模型；多金属、多自旋态，活性空间与 P450 类模型同量级或更大",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "杂化 DFT 计算比较细胞色素氧化酶中多种 O–O 断键机理",
+      "title": "O-O bond splitting mechanism in cytochrome oxidase",
+      "type": "期刊论文；J Inorg Biochem",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/11001098/",
+      "year": 2000
+    },
+    {
+      "access_level": "abstract",
+      "id": "Q1",
+      "supports": "同类金属酶活性空间的 DMRG+NEVPT2/CCSD(T) 对照与 qubitization 相位估计资源估计；作为量子路线的方法先例，不是本题体系",
+      "title": "Reliably assessing the electronic structure of cytochrome P450 on today's classical computers and tomorrow's quantum computers",
+      "type": "期刊论文；PNAS 119(38) e2203533119",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9499570/",
+      "year": 2022
+    }
+  ],
+  "subdomain": "生物能量 / 多金属酶",
+  "system": "细胞色素 c 氧化酶的血红素 a₃–Cu_B 双核中心，O₂ 结合、O–O 断键与质子耦合电子转移",
+  "tags": [
+    "细胞色素c氧化酶",
+    "O2还原",
+    "多金属",
+    "仅文献"
+  ],
+  "title": "细胞色素 c 氧化酶：呼吸链末端的 O₂ 还原与质子泵耦合"
+}

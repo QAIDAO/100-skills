@@ -1,0 +1,15 @@
+{
+  "id": "C17",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/C17-polymorph-energy-ranking/README.md",
+      "sha256": "45a3660b2705327cf37e5e987f14a9319b49a6a1713c85aaad727cc0241a81f7"
+    }
+  ]
+}

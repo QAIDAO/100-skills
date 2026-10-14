@@ -1,0 +1,40 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "原子赝势加组态相互作用；GW/BSE、EOM-CC、TDDFT；含时 DFT 加非绝热分子动力学；TD-DMRG、Krylov 方法",
+  "decision": "判断电子—空穴关联是否主导俄歇速率，从而决定抑制俄歇损耗应优先调控核壳结构、尺寸还是表面。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M24",
+  "observable": "多激子能谱、俄歇复合速率与寿命（双激子约数十皮秒量级）、电子—空穴关联对速率的贡献",
+  "quantum_role": "用多态子空间或 QPE 求小量子点模型的多激子态，再用数字哈密顿量模拟估计俄歇耦合与速率（提案）",
+  "scale": "数百到数千原子的纳米晶需有效模型或嵌入；可精确处理的是小团簇或截断的多激子子空间",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "指出电子—空穴关联决定纳米结构中的俄歇复合",
+      "title": "Electron-hole correlations govern Auger recombination in nanostructures",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/1808.10404",
+      "year": 2018
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "量子点激子动力学的量子控制理论，数值模拟中包含计算子空间外的多激子能级",
+      "title": "Theory of Fast Quantum Control of Exciton Dynamics in Semiconductor Quantum Dots",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/cond-mat/0109252",
+      "year": 2001
+    }
+  ],
+  "subdomain": "光电材料 / 纳米晶",
+  "system": "CdSe 等胶体量子点中的双激子、三激子态及其俄歇复合；Si、CdSe 小团簇的多激子产生与复合",
+  "tags": [
+    "量子点",
+    "多激子",
+    "俄歇复合",
+    "仅文献"
+  ],
+  "title": "量子点多激子与俄歇复合：决定发光与光伏效率的损耗通道"
+}

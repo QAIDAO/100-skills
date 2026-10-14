@@ -27,7 +27,8 @@ for (const [width, height] of [[1440, 1000], [768, 1024], [390, 844]]) {
   check(`${width} 初始显示 12 道题`, (await page.locator('.problem').count()) === 12);
   await page.locator('#more').click();
   const ids = await page.locator('.problem').evaluateAll(rows => rows.map(r => r.dataset.id));
-  check(`${width} 全部 84 题可达且不重复`, ids.length === 84 && new Set(ids).size === 84);
+  const total = await page.evaluate(() => JSON.parse(document.getElementById('data').textContent).length);
+  check(`${width} 全部 ${total} 题可达且不重复`, total >= 84 && ids.length === total && new Set(ids).size === total);
   check(`${width} 展开后仍无横向滚动`, await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
   await page.screenshot({path: path.join(outDir, `page-${width}.png`), fullPage: false});
   await page.close();
@@ -37,7 +38,8 @@ const page = await browser.newPage({viewport: {width: 1440, height: 1000}});
 page.on('pageerror', e => errors.push(`interact: ${e.message}`));
 await page.emulateMedia({reducedMotion: 'reduce', colorScheme: 'light'});
 await page.goto(url);
-for (const [domain, n] of [['biomedicine', 26], ['applied-materials', 24], ['model-dynamics', 19], ['extensions', 15]]) {
+const domainCounts = await page.evaluate(() => { const c = {}; for (const p of JSON.parse(document.getElementById('data').textContent)) c[p.area] = (c[p.area] || 0) + 1; return Object.entries(c); });
+for (const [domain, n] of domainCounts) {
   await page.locator(`[data-domain="${domain}"]`).click();
   await page.locator('#more').click({timeout: 1000}).catch(() => {});
   check(`筛选 ${domain} 得到 ${n} 题`, (await page.locator('.problem').count()) === n);
@@ -51,12 +53,16 @@ check('收起时详情不可聚焦', await row.locator('.pbody').evaluate(el => 
 await row.locator('.phead').click();
 await page.waitForTimeout(300);
 check('点开后显示五段题面', await row.innerText().then(t => ['研究体系', '算什么', '经典基线', '量子方法的角色', '为了什么'].every(k => t.includes(k))));
+check('展开后显示 5 条验收标准与现有参照', (await row.locator('.criteria li').count()) === 5 && await row.locator('.reftitle').innerText().then(t => t.length > 4));
+check('题目链接指向 GitHub 并预填 issue', await row.evaluate(r => r.querySelector('[data-link="problem"]').href.startsWith('https://github.com/') && decodeURIComponent(r.querySelector('[data-link="issue"]').href).includes(`[题目] ${r.dataset.id}`)));
 check('点开后 aria-expanded 为 true', (await row.locator('.phead').getAttribute('aria-expanded')) === 'true');
 await row.screenshot({path: path.join(outDir, 'problem-open-1440.png')});
 await row.locator('.phead').focus();
 await page.keyboard.press('Enter');
 check('键盘 Enter 收起题目', (await row.locator('.phead').getAttribute('aria-expanded')) === 'false' && await row.locator('.pbody').evaluate(el => el.inert === true));
-check('题板共 84 格', (await page.locator('.cell').count()) === 84);
+await page.locator('#more').click({timeout: 1000}).catch(() => {});
+check('所有链接都是页内锚点或 https 外链（不依赖本地文件）', await page.evaluate(() => [...document.querySelectorAll('a[href]')].every(a => { const h = a.getAttribute('href'); return h.startsWith('#') || h.startsWith('https://'); })));
+check('题板格数等于题目数', (await page.locator('.cell').count()) === domainCounts.reduce((a, [, n]) => a + n, 0));
 await page.locator('#q').fill('');
 await page.locator('.cell[data-open="M01"]').click();
 await page.waitForTimeout(400);

@@ -1,0 +1,15 @@
+{
+  "id": "C18",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/C18-mechanochemical-bond-rupture/README.md",
+      "sha256": "d562237304ad5dda3e6979aea85d17247470d2254b8c876a92c1b18feee71a73"
+    }
+  ]
+}

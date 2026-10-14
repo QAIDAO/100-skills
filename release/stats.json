@@ -5,7 +5,7 @@
         "incomplete": 17,
         "未记录": 5
       },
-      "problems": 24,
+      "problems": 29,
       "with_reference": 22
     },
     "biomedicine": {
@@ -13,7 +13,7 @@
         "incomplete": 23,
         "未记录": 3
       },
-      "problems": 26,
+      "problems": 31,
       "with_reference": 26
     },
     "extensions": {
@@ -21,7 +21,7 @@
         "incomplete": 14,
         "未记录": 1
       },
-      "problems": 15,
+      "problems": 18,
       "with_reference": 15
     },
     "model-dynamics": {
@@ -29,10 +29,10 @@
         "incomplete": 13,
         "未记录": 4
       },
-      "problems": 19,
+      "problems": 22,
       "with_reference": 17
     }
   },
-  "total_problems": 84,
+  "total_problems": 100,
   "with_reference": 80
 }

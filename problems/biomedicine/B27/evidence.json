@@ -1,0 +1,15 @@
+{
+  "id": "B27",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/B27-metal-drug-activation/README.md",
+      "sha256": "bcfb6fe702812d78184c1668b0e522feb61cc199dcc244fce3f92db7495246ae"
+    }
+  ]
+}

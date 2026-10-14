@@ -1,0 +1,40 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "第一性原理 GW-BSE；Wannier 紧束缚加 BSE；EOM-CC、CI；ED 与 DMRG 动力学",
+  "decision": "判断层间激子能否被莫尔势局域成可控的量子发光体，从而决定异质结的扭转角与材料组合。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M25",
+  "observable": "层间激子能量与莫尔势调制（报告超过 100 meV 的横向限域）、振子强度与辐射寿命、带电激子结合能",
+  "quantum_role": "在莫尔超胞有效模型上用多态子空间或 QPE 求多激子、带电激子束缚态，用实时相关函数算法估计光学响应（提案）",
+  "scale": "莫尔超胞含数千原子，第一性原理需在 k 点网格上插值；多激子与带电激子超出单粒子近似",
+  "sources": [
+    {
+      "access_level": "abstract",
+      "id": "R1",
+      "supports": "GW-BSE 计算：扭转 MoSe₂/WSe₂ 中层间激子被横向限域超过 100 meV，光学强度与寿命变化数个量级",
+      "title": "Modulated Interlayer Exciton Properties in a Two-Dimensional Moire Crystal",
+      "type": "预印本；期刊版 Phys. Rev. B 100, 155416",
+      "url": "https://arxiv.org/abs/1911.00976",
+      "year": 2019
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "通过成像电子与空穴组分，直接观测莫尔局域的层间激子波函数",
+      "title": "Moiré-localized interlayer exciton wavefunctions captured by imaging its electron and hole constituents",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2108.01933",
+      "year": 2021
+    }
+  ],
+  "subdomain": "二维材料 / 激子",
+  "system": "扭转 MoSe₂/WSe₂ 等过渡金属二硫族异质结中的层间激子、带电激子与多激子束缚态",
+  "tags": [
+    "二维异质结",
+    "层间激子",
+    "莫尔",
+    "仅文献"
+  ],
+  "title": "二维异质结层间激子：莫尔势中的束缚态与光学响应"
+}

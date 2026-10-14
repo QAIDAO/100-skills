@@ -1,0 +1,40 @@
+{
+  "area": "extensions",
+  "classical_baseline": "COGEF 与 EFEI 力修正势能面；CC 层级、DMRG、选定 CI；结合 ASE 的力化学工具链",
+  "decision": "判断外力是否改变反应分支或使不同周环路径胜出，从而指导自修复与应力响应高分子的力敏基团设计。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "C18",
+  "observable": "力修正势能面上的势垒随力的变化、断键点位置、力致反应分支比",
+  "quantum_role": "在力修正的几何上，用嵌入加 QPE 或小规模 VQE/SQD 求多参考断键区的电子能，几何搜索与力学模型留在经典端（提案）",
+  "scale": "力敏基团为小分子尺度；断键区多参考特征强，力修正方法选择本身会改变路径",
+  "sources": [
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "比较 COGEF 与 EFEI 力修正势能面：前者在环丁烯开环中缺少通往对旋产物的最低能量路径",
+      "title": "Quantum Chemical Simulations of the Mechanical Activation of Pericyclic Reactions",
+      "type": "学位论文；Queen's University",
+      "url": "https://queensu.scholaris.ca/items/c16e1d44-c5a3-474d-9c1b-69ae7a30679a",
+      "year": null
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R2",
+      "supports": "与 ASE 配合的力化学计算工具，可接各种量子化学计算器做几何优化与 NEB",
+      "title": "OpenMechanochem",
+      "type": "软件",
+      "url": "https://pypi.org/project/OpenMechanochem",
+      "year": null
+    }
+  ],
+  "subdomain": "力化学 / 断键反应",
+  "system": "力敏基团（如环丁烯开环等周环反应）在外加拉力下的势能面，以及势垒消失的断键点",
+  "tags": [
+    "力化学",
+    "断键",
+    "周环反应",
+    "仅文献"
+  ],
+  "title": "力化学：外力下的断键势垒与反应分支"
+}

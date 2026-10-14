@@ -1,0 +1,15 @@
+{
+  "id": "M25",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "11e32fe4fb8f48fccb442e5dd3a03ad4699e0a48304ccd74eae9a4abd0d3677c"
+    },
+    {
+      "path": "tasks/M25-heterostructure-interlayer-exciton/README.md",
+      "sha256": "388159cf5637e65fd2d0a16ba40d16daaa3dcc468548da98b3b13a8a460f79aa"
+    }
+  ]
+}
