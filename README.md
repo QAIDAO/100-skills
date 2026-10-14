@@ -2,6 +2,16 @@
 
 100 道来自真实研发场景的开放题，覆盖生物医药、应用材料、强关联模型与动力学，以及优化、量子机器学习和线性求解等交叉方向。我们把这些题目开放给量子开源社区：欢迎提交解法，也欢迎提交负结果。被采纳的解法会逐步沉淀为可复用的 skills。
 
+## 展示页
+
+[![100 道开放题展示页首屏：左侧标题与统计，右侧 10×10 题板，一格一道题](release/promo/preview.png)](release/promo/index.html)
+
+[`release/promo/index.html`](release/promo/index.html) 是一页可以单独打开的展示页：100 道题按领域排成题板，点任意一格直接展开这道题的五段题面、验收标准和现有参照摘要，也可以按领域筛选或搜索。
+
+- **怎么打开**：GitHub 不渲染 HTML，在仓库里点开看到的是源码。请下载这个文件（或克隆仓库）后用浏览器打开；它是自包含的单文件，不依赖其他本地文件。
+- **页面里的链接**：「在 GitHub 查看完整题面」「开 issue 讨论这道题」「提交解法」都指向本仓库，需要有仓库访问权限。
+- **发布稿**：配套的文字版见 [release/promo/发布稿.md](release/promo/发布稿.md)。
+
 ## 每道题都拆解清楚
 
 | 环节 | 回答什么 |
@@ -50,6 +60,8 @@
 ## 维护者说明
 
 `problems/` 与 `release/stats.json` 由 `release/tools/build_problems.py` 从维护者本地的研究目录确定性生成，不能手改。研究原件约 207G，不入库。
+
+展示页 `release/promo/index.html` 由 `release/tools/build_promo.py` 从 `problems/` 生成，同样不能手改；`release/tools/verify_promo.mjs` 做三种宽度的浏览器检查。首屏截图 `release/promo/preview.png` 不是自动产物，页面首屏变化后需要重新截取。
 
 ## English
 
