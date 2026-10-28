@@ -19,7 +19,7 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "0b3d24b290d7c4aac8943976c65da67ea17a17304c65c6be132b04109d590056"
+      "sha256": "55db069f22abb305040e0f17e5e8ee34c842879ee4bc8c2ffb369ecaaec20b09"
     },
     {
       "path": "tasks/B22-bodipy-photodynamic/README.md",
