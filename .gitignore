@@ -11,5 +11,8 @@
 !/skills/
 !/.github/
 !/release/
+!/starters/
+/starters/.cache/
+/starters/*/results.json
 .DS_Store
 __pycache__/

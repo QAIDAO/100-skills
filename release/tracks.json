@@ -1,0 +1,426 @@
+{
+  "_comment": "入门轨道标签。手工维护，release/tools/build_problems.py 读取；改动后重新构建 problems/。",
+  "levels": {
+    "热身": "输入公开，笔记本能跑，参照里有可以直接对照的数字。",
+    "进阶": "已有参照运行，但需要较多领域知识、工作站级算力，或要用替代输入、自建输入。",
+    "前沿": "还没有参照运行，或者目标规模属于容错量子计算，需要先做资源估算。"
+  },
+  "backgrounds": [
+    "量子化学",
+    "凝聚态与动力学",
+    "量子机器学习",
+    "优化与算法"
+  ],
+  "problems": {
+    "B01": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "B02": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B03": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B04": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B05": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B06": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B07": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B08": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B09": {
+      "level": "进阶",
+      "background": "量子机器学习"
+    },
+    "B10": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "B11": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "B12": {
+      "level": "进阶",
+      "background": "量子机器学习"
+    },
+    "B13": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B14": {
+      "level": "热身",
+      "background": "凝聚态与动力学"
+    },
+    "B15": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B16": {
+      "level": "热身",
+      "background": "量子化学",
+      "starter": {
+        "path": "starters/B16",
+        "runtime": "笔记本约 40 秒（--all 另需数小时）",
+        "reproduces": "H2O 与产物 5 的 CAS(2e,2o) 能量和两比特 VQE 能量"
+      }
+    },
+    "B17": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "B18": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "B19": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B20": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "B21": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "B22": {
+      "level": "热身",
+      "background": "量子化学"
+    },
+    "B23": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "B24": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "B25": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B26": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "B27": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "B28": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "B29": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "B30": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "B31": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "C01": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "C02": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "C03": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "C04": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "C05": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "C06": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "C07": {
+      "level": "热身",
+      "background": "凝聚态与动力学"
+    },
+    "C08": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "C09": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "C10": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "C11": {
+      "level": "热身",
+      "background": "量子机器学习",
+      "starter": {
+        "path": "starters/C11",
+        "runtime": "笔记本约 30 秒（--shots 约 1 分钟）",
+        "reproduces": "RBF、线性、理想量子核的平均 AMI，以及 8192 shots 下的差值与 95% 区间"
+      }
+    },
+    "C12": {
+      "level": "热身",
+      "background": "量子机器学习"
+    },
+    "C13": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "C14": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "C15": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "C16": {
+      "level": "前沿",
+      "background": "量子机器学习"
+    },
+    "C17": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "C18": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "F01": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F02": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F03": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F04": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F05": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F06": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F07": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F08": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F09": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F10": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F11": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F12": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F13": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "F14": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "F15": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F16": {
+      "level": "热身",
+      "background": "凝聚态与动力学"
+    },
+    "F17": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F18": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F19": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "F20": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "F21": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "F22": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M01": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M02": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M03": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M04": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M05": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M06": {
+      "level": "进阶",
+      "background": "优化与算法"
+    },
+    "M07": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M08": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M09": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M10": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M11": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M12": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M13": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M14": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "M15": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M16": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M17": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M18": {
+      "level": "进阶",
+      "background": "凝聚态与动力学"
+    },
+    "M19": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M20": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M21": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M22": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M23": {
+      "level": "进阶",
+      "background": "量子化学"
+    },
+    "M24": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "M25": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "M26": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M27": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M28": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
+    },
+    "M30": {
+      "level": "前沿",
+      "background": "量子化学"
+    }
+  }
+}

@@ -46,5 +46,9 @@
     "直接案例补缺",
     "2026-10-04"
   ],
-  "title": "BreastMNIST超声影像：量子卷积的模拟器边界"
+  "title": "BreastMNIST超声影像：量子卷积的模拟器边界",
+  "track": {
+    "background": "量子机器学习",
+    "level": "热身"
+  }
 }

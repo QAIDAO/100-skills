@@ -1,0 +1,6 @@
+# 入门轨道（starters/）的共同依赖。只用 CPU，笔记本即可运行。
+numpy==1.26.4
+scipy==1.13.1
+pyscf==2.12.1
+scikit-learn==1.5.2
+pandas==2.2.3

@@ -1,0 +1,12 @@
+{
+  "source": "problems/biomedicine/B16/REFERENCE.md（参照报告表格，真空 RHF/6-311G(d,p)，CAS(2e,2o)）",
+  "values": {
+    "E_CAS2[H2O]": {"value": -76.045128125044, "tol": 1e-6, "unit": "Ha"},
+    "E_CAS2[5]": {"value": -343.479252692513, "tol": 1e-6, "unit": "Ha"},
+    "E_VQE[H2O]": {"value": -76.045128125044, "tol": 1e-6, "unit": "Ha"},
+    "E_VQE[5]": {"value": -343.479252692513, "tol": 1e-6, "unit": "Ha"},
+    "E_CAS2[6]": {"value": -802.121594866208, "tol": 1e-6, "unit": "Ha", "note": "加 --all 运行"},
+    "E_CAS2[4]": {"value": -1221.579402522696, "tol": 1e-6, "unit": "Ha", "note": "加 --all 运行"},
+    "E_CAS2[TS]": {"value": -1221.575028115596, "tol": 1e-6, "unit": "Ha", "note": "加 --all 运行"}
+  }
+}

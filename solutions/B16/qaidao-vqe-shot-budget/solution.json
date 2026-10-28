@@ -1,0 +1,67 @@
+{
+  "problem": "B16",
+  "title": "两比特 VQE 的测量预算：产物 5 达到化学精度要比 H₂O 多测约 60 倍",
+  "authors": [
+    "QAIDAO 维护者（Claude Code 协助）"
+  ],
+  "license": "Apache-2.0",
+  "method": {
+    "family": "vqe",
+    "quantum_component": "CAS(2e,2o) 两比特 VQE（RY⊗RY→CX→RY⊗RY）在固定最优参数下按逐比特对易分组测量，多项分布抽样模拟有限 shots 的能量估计"
+  },
+  "results": [
+    {
+      "observable": "95% 落在化学精度（1.6 mHa）内所需总 shots，H₂O",
+      "value": 516,
+      "unit": "shots"
+    },
+    {
+      "observable": "95% 落在化学精度（1.6 mHa）内所需总 shots，产物 5",
+      "value": 32272,
+      "unit": "shots"
+    },
+    {
+      "observable": "能量估计标准差，产物 5，每个测量基 8192 shots",
+      "value": 0.00081,
+      "unit": "Ha"
+    },
+    {
+      "observable": "能量估计标准差，H₂O，每个测量基 8192 shots",
+      "value": 0.000145,
+      "unit": "Ha"
+    }
+  ],
+  "baseline_comparison": [
+    {
+      "method": "同一 4×4 哈密顿量精确对角化（CASCI），H₂O",
+      "value": -76.045128125
+    },
+    {
+      "method": "同一 4×4 哈密顿量精确对角化（CASCI），产物 5",
+      "value": -343.479252693
+    }
+  ],
+  "reproducibility": {
+    "code": "solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py（依赖 starters/B16/run.py）",
+    "environment": "Python 3.12.13；starters/requirements.txt（numpy 1.26.4、scipy 1.13.1、pyscf 2.12.1）",
+    "seeds": [
+      0,
+      1,
+      2,
+      20261028
+    ],
+    "inputs": [
+      {
+        "name": "B16-qc.py",
+        "url": "https://raw.githubusercontent.com/AceMapAI/qc-drug-design/1f9e4253f8166872e42d242aeb410f9d672d183a/c_c_bond/qc.py",
+        "sha256": "2a5504d2f126378c22f9310b26e283834bfddd554798b4e71b32ec55a42769aa"
+      }
+    ]
+  },
+  "compute": {
+    "hardware": "Apple M5 笔记本 CPU",
+    "qpu": false,
+    "wall_time": "约 32 秒"
+  },
+  "self_assessment": "inconclusive"
+}

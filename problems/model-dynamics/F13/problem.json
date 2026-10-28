@@ -38,5 +38,9 @@
     "NMR",
     "自洽"
   ],
-  "title": "Bethe 晶格自洽 SIAM：五比特 NMR 验证 DMFT 反馈闭环"
+  "title": "Bethe 晶格自洽 SIAM：五比特 NMR 验证 DMFT 反馈闭环",
+  "track": {
+    "background": "凝聚态与动力学",
+    "level": "前沿"
+  }
 }

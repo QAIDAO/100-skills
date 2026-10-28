@@ -1,0 +1,151 @@
+{
+  "seed": 20261028,
+  "repeats": 2000,
+  "chem_acc_Ha": 0.0016,
+  "species": {
+    "H2O": {
+      "E_CASCI": -76.04512812504382,
+      "vqe_minus_casci": 3.126388037344441e-13,
+      "pauli_terms": {
+        "II": -75.61093594630039,
+        "IZ": -0.26622164396841796,
+        "XX": 0.009259594932441571,
+        "ZI": -0.2662216439684215,
+        "ZZ": 0.09833161881620711
+      },
+      "bases": {
+        "ZZ": [
+          "IZ",
+          "ZI",
+          "ZZ"
+        ],
+        "XX": [
+          "XX"
+        ]
+      },
+      "sigma_single_shot": 0.013092679254494593,
+      "shots_per_basis_for_95pct_chem_acc": 258,
+      "total_shots_for_95pct_chem_acc": 516,
+      "scan": [
+        {
+          "shots_per_basis": 256,
+          "total_shots": 512,
+          "sigma_analytic": 0.0008182924534059121,
+          "sigma_empirical": 0.000849265547489706,
+          "bias": 3.663803684617051e-05,
+          "fraction_within_chem_acc": 0.97
+        },
+        {
+          "shots_per_basis": 1024,
+          "total_shots": 2048,
+          "sigma_analytic": 0.00040914622670295604,
+          "sigma_empirical": 0.0004015844480275549,
+          "bias": 4.5362544227600665e-06,
+          "fraction_within_chem_acc": 0.9965
+        },
+        {
+          "shots_per_basis": 4096,
+          "total_shots": 8192,
+          "sigma_analytic": 0.00020457311335147802,
+          "sigma_empirical": 0.00020794697303869425,
+          "bias": 8.51300931969945e-06,
+          "fraction_within_chem_acc": 1.0
+        },
+        {
+          "shots_per_basis": 8192,
+          "total_shots": 16384,
+          "sigma_analytic": 0.00014465503569927434,
+          "sigma_empirical": 0.00014238367311128982,
+          "bias": -8.263886286385969e-07,
+          "fraction_within_chem_acc": 1.0
+        },
+        {
+          "shots_per_basis": 32768,
+          "total_shots": 65536,
+          "sigma_analytic": 7.232751784963717e-05,
+          "sigma_empirical": 7.132438293816783e-05,
+          "bias": 4.654618948052303e-06,
+          "fraction_within_chem_acc": 1.0
+        }
+      ]
+    },
+    "5": {
+      "E_CASCI": -343.47925269251414,
+      "vqe_minus_casci": 1.6484591469634324e-12,
+      "pauli_terms": {
+        "II": -343.2895727124058,
+        "IX": 0.0011511872525124989,
+        "IZ": -0.09130564965300891,
+        "XI": 0.0011511872525124989,
+        "XX": 0.06336636241877083,
+        "XZ": -0.0011511648861125725,
+        "ZI": -0.09130564965302312,
+        "ZX": -0.0011511648861125725,
+        "ZZ": 0.0036141908429101477
+      },
+      "bases": {
+        "ZX": [
+          "IX",
+          "ZI",
+          "ZX"
+        ],
+        "ZZ": [
+          "IZ",
+          "ZZ"
+        ],
+        "XZ": [
+          "XI",
+          "XZ"
+        ],
+        "XX": [
+          "XX"
+        ]
+      },
+      "sigma_single_shot": 0.07332092683633472,
+      "shots_per_basis_for_95pct_chem_acc": 8068,
+      "total_shots_for_95pct_chem_acc": 32272,
+      "scan": [
+        {
+          "shots_per_basis": 256,
+          "total_shots": 1024,
+          "sigma_analytic": 0.00458255792727092,
+          "sigma_empirical": 0.0047058943980090254,
+          "bias": 9.684186164804487e-05,
+          "fraction_within_chem_acc": 0.2575
+        },
+        {
+          "shots_per_basis": 1024,
+          "total_shots": 4096,
+          "sigma_analytic": 0.00229127896363546,
+          "sigma_empirical": 0.002278661059353244,
+          "bias": 3.9705152119040577e-05,
+          "fraction_within_chem_acc": 0.53
+        },
+        {
+          "shots_per_basis": 4096,
+          "total_shots": 16384,
+          "sigma_analytic": 0.00114563948181773,
+          "sigma_empirical": 0.0011449790833806398,
+          "bias": -4.0886819533625385e-05,
+          "fraction_within_chem_acc": 0.847
+        },
+        {
+          "shots_per_basis": 8192,
+          "total_shots": 32768,
+          "sigma_analytic": 0.0008100894463883593,
+          "sigma_empirical": 0.0007991260623041739,
+          "bias": -1.8728906013620872e-05,
+          "fraction_within_chem_acc": 0.948
+        },
+        {
+          "shots_per_basis": 32768,
+          "total_shots": 131072,
+          "sigma_analytic": 0.00040504472319417964,
+          "sigma_empirical": 0.00041158951653483814,
+          "bias": -3.354263071742025e-07,
+          "fraction_within_chem_acc": 1.0
+        }
+      ]
+    }
+  }
+}

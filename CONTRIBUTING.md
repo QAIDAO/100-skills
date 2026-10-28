@@ -4,9 +4,9 @@
 
 ## 提交流程
 
-1. 在 [problems/INDEX.md](problems/INDEX.md) 找到题目，读该题 `PROBLEM.md` 的「什么算解」和「现有参照」。
+1. 在 [problems/INDEX.md](problems/INDEX.md) 找到题目，读该题 `PROBLEM.md` 的「什么算解」和「现有参照」。第一次参与建议先走 [入门轨道](starters/README.md)：从热身题的 starter 复现参照数字开始。
 2. 想先讨论思路或细化标准，就开一个 issue，选「解法提案」或「题目讨论」模板。
-3. 复制 [solutions/_template/](solutions/_template/SOLUTION.md) 到 `solutions/<题号>/<你的名字>-<短名>/`，填写 `SOLUTION.md` 和 `solution.json`。
+3. 运行 `python3 -I release/tools/new_solution.py <题号> <你的名字>-<短名>`，它会从 [solutions/_template/](solutions/_template/SOLUTION.md) 建好 `solutions/<题号>/<你的名字>-<短名>/`。填写 `SOLUTION.md` 和 `solution.json`。不必一次回应全部五条验收标准里的研发决策：只解决题目一小部分的解法同样欢迎，在「局限」里写清楚没覆盖什么即可，写法见 [B16 入门示例解法](solutions/B16/qaidao-vqe-shot-budget/SOLUTION.md)。
 4. 本地运行校验：
 
    ```bash

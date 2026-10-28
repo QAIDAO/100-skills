@@ -45,9 +45,19 @@
 
 ## 怎么参与
 
-1. 挑一道题，读它的 `PROBLEM.md`；
-2. 按 [CONTRIBUTING.md](CONTRIBUTING.md) 把解法放进 `solutions/<题号>/<你的名字>-<短名>/`；
+第一次参与，从 [入门轨道](starters/README.md) 开始：每道题都标了难度（热身 / 进阶 / 前沿）和背景，热身题输入公开、笔记本能跑。比如：
+
+```bash
+python starters/C11/run.py
+```
+
+大约 30 秒，就能复现 C11 现有参照里的数字：4 比特量子核与 RBF 核的分群稳定性。之后：
+
+1. 从 starter 的「下一步」里挑一个方向，或者另选一道题读它的 `PROBLEM.md`；
+2. 用 `python3 -I release/tools/new_solution.py <题号> <你的名字>-<短名>` 建好解法目录，按 [CONTRIBUTING.md](CONTRIBUTING.md) 填写；
 3. 运行 `python3 -I release/tools/check_submissions.py --root .`，然后开 PR。
+
+[B16 入门示例解法](solutions/B16/qaidao-vqe-shot-budget/SOLUTION.md) 演示了一份小解法怎么写。
 
 解法经过审核、独立复现、采纳三步。同一类方法积累到足够多的采纳解法后，会按 [skills/README.md](skills/README.md) 提炼为 skill，并署名所有来源作者。
 

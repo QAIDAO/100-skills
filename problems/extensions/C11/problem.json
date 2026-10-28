@@ -51,5 +51,14 @@
     "直接案例补缺",
     "2026-10-04"
   ],
-  "title": "METABRIC多组学：四维压缩后的乳腺癌分群"
+  "title": "METABRIC多组学：四维压缩后的乳腺癌分群",
+  "track": {
+    "background": "量子机器学习",
+    "level": "热身",
+    "starter": {
+      "path": "starters/C11",
+      "reproduces": "RBF、线性、理想量子核的平均 AMI，以及 8192 shots 下的差值与 95% 区间",
+      "runtime": "笔记本约 30 秒（--shots 约 1 分钟）"
+    }
+  }
 }
