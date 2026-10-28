@@ -7,6 +7,23 @@
   "id": "F09",
   "observable": "核自旋 OTOC 曲线、平均 H–H 距离、平均二面角",
   "quantum_role": "超导 QPU 计算给定核自旋 Hamiltonian 的 OTOC，经典优化几何参数。",
+  "reference_input": {
+    "gaps": "原 9/15 核自旋完整网络与取向映射未整理；单个三自旋 OTOC 不能唯一反演两个 C–H 耦合。",
+    "items": [
+      {
+        "label": "参数",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2510.19550v1",
+        "value": "原文 Table 4 的 15Q DMBP MD 计算耦合：DC1=237.27 Hz、DC2=−129.40 Hz、D12=−2753.91 Hz"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "C、H1、H2 三自旋：H = aZ₀Z₁ + bZ₀Z₂ + c(X₁X₂ − Y₁Y₂)"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "应用电路分别为 9/15 核自旋；不等于 Quantum Echoes 大尺度随机基准",
   "sources": [
     {

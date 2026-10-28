@@ -7,6 +7,22 @@
   "id": "C11",
   "observable": "轮廓系数、不同采样下分群一致性AMI、噪声前后核矩阵变化",
   "quantum_role": "经典组学整理与UMAP→量子态重叠核→经典谱聚类与稳定性评价",
+  "reference_input": {
+    "gaps": "原文 IBM 实机所用 100 样本子集的索引未公开。",
+    "items": [
+      {
+        "label": "数据",
+        "origin": "原文",
+        "url": "https://github.com/ctglab/QKomics",
+        "value": "作者公开 CSV：1980 行四维 UMAP 坐标，SHA256 71a930de…c91e（commit f08d203）"
+      },
+      {
+        "label": "参照所用划分",
+        "origin": "参照",
+        "value": "固定随机 dev 660 / eval 1320 互斥划分"
+      }
+    ]
+  },
   "scale": "原始1980样本；四维UMAP对应4比特；IBM Mumbai实机使用100样本子集",
   "sources": [
     {

@@ -7,6 +7,7 @@
   "id": "M21",
   "observable": "固定电荷/几何定义的断键势能曲线及相对能，不等于水处理效率",
   "quantum_role": "HPC优化VQE参数，IonQ Aria执行最终能量测量，配合对称性后选择与阈值缓解",
+  "reference_input": null,
   "scale": "所核查v1正文CH₃F为11比特、56纠缠门；2025经典iFCI对照扩展至PFOA150电子330轨道",
   "sources": [
     {

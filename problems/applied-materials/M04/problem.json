@@ -7,6 +7,24 @@
   "id": "M04",
   "observable": "XAS截面σ(ω)、峰位、相对强度、谱权重和机理判别置信度",
   "quantum_role": "制备偶极激发态并时间演化，测相关函数，经典傅里叶变换得展宽谱",
+  "reference_input": {
+    "gaps": "7 原子坐标、去锂选择、簇电荷/自旋、AVAS 阈值、积分与偶极矩阵均未公开。",
+    "items": [
+      {
+        "label": "晶体",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2405.11015v1",
+        "value": "原文指定 Materials Project mp-1173926（数据库 v2023.11.1），提取裸 Li₄Mn₂O（7 原子）"
+      },
+      {
+        "label": "模型设置",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2506.15784v2",
+        "value": "cc-pVDZ/HF + AVAS；资源目标 CAS(22e,18o)，2025 谱模拟用 CAS(14e,11o)"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "CAS(22e,18o)是局域活性空间；100为工作逻辑比特，绝非现有100物理比特即可执行",
   "sources": [
     {

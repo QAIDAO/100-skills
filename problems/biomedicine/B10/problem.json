@@ -7,6 +7,23 @@
   "id": "B10",
   "observable": "格点能量、合法构象率、低能命中率、重建后RMSD与多样性",
   "quantum_role": "变分优化/QAOA编码格点转向与接触势",
+  "reference_input": {
+    "gaps": "10 残基血管紧张素的 22 比特模型输入未整理。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://github.com/qiskit-community/quantum-protein-folding/tree/73fb4500d6f21e2be496025bafae7222474ff53d",
+        "value": "APRLRFY 序列 9 比特教程 Hamiltonian：无侧链、惩罚参数均为 10、77 项 Pauli（固定 commit）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/s41534-021-00368-4",
+        "value": "Robert 等 2021，npj Quantum Information"
+      }
+    ]
+  },
   "scale": "2021工作7残基用9比特硬件；10残基22比特为模拟；不是真实蛋白全原子动力学",
   "sources": [
     {

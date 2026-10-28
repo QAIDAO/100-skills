@@ -7,6 +7,29 @@
   "id": "M14",
   "observable": "态布居Pα(t)、三重态对/CT形成、相关函数和100 fs内短时动力学",
   "quantum_role": "实空间编码多电子态与核模式，用乘积公式实现耦合时间演化",
+  "reference_input": {
+    "gaps": "完整 100 fs 传播与模截断误差尚无参照结果。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2411.13669v3",
+        "value": "原文 v3 振电模型：蒽二聚体 6 态 21 模，蒽–富勒烯界面 4 态 246 模"
+      },
+      {
+        "label": "代码",
+        "origin": "原文",
+        "url": "https://github.com/XanaduAI/VibeCounting",
+        "value": "作者公开代码"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "界面 4 态、246 模的完整非零耦合参数"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "v3二聚体6态21模/154比特；界面4态246模/1053比特；均为振电离散编码而非原子数",
   "sources": [
     {

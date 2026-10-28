@@ -7,6 +7,18 @@
   "id": "C05",
   "observable": "S(v)=−dE_projectile/dx，速度/温度/密度依赖及统计误差",
   "quantum_role": "非Born–Oppenheimer联合演化，qubitization/Trotter与动能测量",
+  "reference_input": {
+    "gaps": "原文目标密度与温度下的完整规模只有资源估算；参照的小动量基组与宽波包不相容。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2308.12352v1",
+        "value": "第一量子化非 Born–Oppenheimer 电子—投射体模型：原子单位，η=Zp=1，质子质量 1836，周期盒，删除零 Fourier 模"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "逻辑量子比特和Toffoli估算依目标密度、基组、时间与精度变化；无当前硬件完成证明",
   "sources": [
     {

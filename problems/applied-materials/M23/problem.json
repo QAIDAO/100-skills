@@ -7,6 +7,17 @@
   "id": "M23",
   "observable": "单键断裂曲线、偶极矩、电荷与静电性质",
   "quantum_role": "VQE/q-UCCSD求基态与1-RDM，计算断键能和静电性质",
+  "reference_input": {
+    "gaps": "原 LiSH、Li₂S、H₂S 的几何、活性空间与积分未取得；LiH 只是方法接口验证，不能代替含硫体系。",
+    "items": [
+      {
+        "label": "参照所用替代模型",
+        "origin": "参照",
+        "value": "LiH/STO-3G 的 CAS(2e,3o)，键长 1.45、2、3 Å"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "含硫分子在经典模拟器运行；LiSH为15比特、Li2S最高21比特；实机对象为缩小LiH模型",
   "sources": [
     {

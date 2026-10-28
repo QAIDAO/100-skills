@@ -7,6 +7,18 @@
   "id": "C02",
   "observable": "垂直电离能、指定键的多态势能切片、自旋和占据",
   "quantum_role": "多态VQE/QSE或容错求解为电子态与态间矩阵元提供接口",
+  "reference_input": {
+    "gaps": "原 FOMO 电子模型、坐标与基组设置未公开；作者开源代码不含本体系输入。",
+    "items": [
+      {
+        "label": "体系",
+        "origin": "原文",
+        "url": "https://doi.org/10.1016/j.chemphys.2018.06.009",
+        "value": "TMTH Sn(CH₃)₃OH（15 原子）与 THMS Sn(OH)₃CH₃（11 原子）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "PDF拟定11原子，中性CAS(6,6)/阳离子CAS(5,6)，12系统比特",
   "sources": [
     {

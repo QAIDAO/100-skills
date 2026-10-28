@@ -7,6 +7,23 @@
   "id": "F04",
   "observable": "非局域弦算符、局域序、拓扑不变量",
   "quantum_role": "2021 原生 Rydberg blockade 模拟；2025 可重排中性原子的门式费米编码。",
+  "reference_input": {
+    "gaps": "原 72 数据比特 + 32 辅助比特硬件反馈实验的线路与数据未公开。",
+    "items": [
+      {
+        "label": "模型来源",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2501.18554v2",
+        "value": "中性原子 Kitaev 模型"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "3×3 单元 18 自旋，x 周期、y 开放，24 条键；H = −ΣXX − ΣYY − Jz ΣZZ"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "2021 为 219 原子；2025 是不同数字架构，二者尺度不能相加",
   "sources": [
     {

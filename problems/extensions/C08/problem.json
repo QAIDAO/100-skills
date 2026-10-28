@@ -7,6 +7,23 @@
   "id": "C08",
   "observable": "碱基配对F1、假结正确率、物理可行率、达到指定质量的总时间",
   "quantum_role": "量子退火抽样茎组合，经典前处理/后处理负责编码和约束",
+  "reference_input": {
+    "gaps": "作者代码引用的 test_sets/pseudobase_data_clean.csv 未随仓库公开。",
+    "items": [
+      {
+        "label": "序列与参考结构",
+        "origin": "原文",
+        "url": "https://www.ekevanbatenburg.nl/PKBASE/PKB00176.HTML",
+        "value": "biotin-PK-AN69.1（PseudoBase PKB00176）33 nt 序列及 11 对带假结的参考配对"
+      },
+      {
+        "label": "论文与代码",
+        "origin": "原文",
+        "url": "https://github.com/dillionfox/quantum_rna_folding/tree/87226da5acbc5e5f67bb121573f8896b179900f9",
+        "value": "PLOS Comput Biol 2022 SI Table A/D（18 茎、Hybrid 分 −117）；作者代码固定 commit"
+      }
+    ]
+  },
   "scale": "2022硬件小实例；2026再评估研究用经典模拟退火分析较长序列",
   "sources": [
     {

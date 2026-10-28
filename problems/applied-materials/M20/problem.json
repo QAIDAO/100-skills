@@ -7,6 +7,28 @@
   "id": "M20",
   "observable": "固定模型相对电子能、模型偏差与计算成本；材料稳定性仍需额外动力学证据",
   "quantum_role": "双因子化或双平面波QPE资源估算，为经典稳定性模型提供电子能校正",
+  "reference_input": {
+    "gaps": "同一笼内 bent 构型与过渡态坐标未公开，无法直接组装相对能。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://github.com/isi-usc-edu/pyLIQTR/tree/fdf2a62ac11527bb19687aa2c20405277ec6ef42",
+        "value": "cyclic O₃@C₆₀ 完整 60C+3O 坐标 data/geometries/c60-o3-opt.xyz（pyLIQTR v1.1.1 固定 commit）"
+      },
+      {
+        "label": "基组与电子态",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2408.13244v2",
+        "value": "C 用 STO-3G、O 用 cc-pVDZ，中性单重态"
+      },
+      {
+        "label": "参照所用活性空间",
+        "origin": "参照",
+        "value": "18e12o"
+      }
+    ]
+  },
   "scale": "小嵌入空间到百轨道资源模型；逻辑比特与纠错物理比特分层，未运行容错硬件",
   "sources": [
     {

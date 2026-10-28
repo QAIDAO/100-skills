@@ -7,6 +7,16 @@
   "id": "C13",
   "observable": "工序约束可行率、最大完工时间makespan、最优界及总运行时间",
   "quantum_role": "经典排程建模与分解→混合BQM/DQM/CQM服务→独立时间表验证",
+  "reference_input": {
+    "items": [
+      {
+        "label": "实例",
+        "origin": "原文",
+        "url": "https://raw.githubusercontent.com/SchedulingLab/fjsp-instances/ac4c3402312bfbeafcf4472d78be567d4e6b46ab/brandimarte/mk01.json",
+        "value": "Brandimarte MK01–MK10；参照使用 mk01.json（SchedulingLab/fjsp-instances 固定 commit）"
+      }
+    ]
+  },
   "scale": "2022在线发表/2023卷期论文采用混合求解；2015直接QPU先导最高六作业六机器",
   "sources": [
     {

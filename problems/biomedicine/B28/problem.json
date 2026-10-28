@@ -7,6 +7,7 @@
   "id": "B28",
   "observable": "Co–C 与 S–C 断键能垒、键离解能差、自由基产物的自旋态序",
   "quantum_role": "对 Co 中心或 Fe–S 簇的断键活性空间做嵌入，再用 QPE/qubitization（远期）或小规模 VQE/SQD（近期）求势垒电子能；构象门控与反应网络留在经典端（提案）",
+  "reference_input": null,
   "scale": "Co 卟啉类咕啉环加轴向配体的截断模型；Fe–S 簇为多金属中心，活性空间预计远超精确对角化范围",
   "sources": [
     {

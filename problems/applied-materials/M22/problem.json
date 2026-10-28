@@ -7,6 +7,23 @@
   "id": "M22",
   "observable": "极化激元低能态、断键曲线、光诱导避免交叉及态组成",
   "quantum_role": "CQE/ACSE求解Pauli–Fierz模型；SA-VQE比较qubit、qudit与qumode编码",
+  "reference_input": {
+    "gaps": "原文 Eq. 20 与 Eq. 21 的 Pauli 符号不一致，参照按 Eq. 21；矩形形变 H₄ 的输入未整理。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2506.12504v2",
+        "value": "原文 LIAC 模型族"
+      },
+      {
+        "label": "参照所用参数",
+        "origin": "参照",
+        "value": "H₂/STO-3G，λ=0.1，ω=1 Ha，光子数 0–3；键长 0.4、0.5、0.6、0.7、0.74、0.8、0.9、1.0 Å"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "2025 CQE硬件实际使用3比特：2比特电子配置与1比特0/1光子；127比特是处理器容量",
   "sources": [
     {

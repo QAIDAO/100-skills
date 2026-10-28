@@ -7,6 +7,23 @@
   "id": "B12",
   "observable": "ROC-AUC、PR-AUC、校准、外部骨架泛化、误差与成本",
   "quantum_role": "经典表征压缩→量子核或变分层→经典训练预测",
+  "reference_input": {
+    "gaps": "BBBP 原预处理、标签规则、骨架划分索引与逐样本预测未公开。",
+    "items": [
+      {
+        "label": "十靶点数据与代码",
+        "origin": "原文",
+        "url": "https://github.com/shiv2158/potency_prediction_model_evaluation/tree/41b6d7fa641f0fc26b91bbc65e4a2de113072f76",
+        "value": "作者公开 data.csv 与代码（固定 commit）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13488102/",
+        "value": "十靶点比较全文"
+      }
+    ]
+  },
   "scale": "输入是SMILES/指纹/图描述符；量子电路宽度是压缩特征维度，不代表分子电子规模",
   "sources": [
     {

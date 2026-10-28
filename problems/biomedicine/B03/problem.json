@@ -7,6 +7,24 @@
   "id": "B03",
   "observable": "静电相互作用能、一粒子约化密度矩阵",
   "quantum_role": "VQE准备局部电子态，以费米基旋转测量密度矩阵，再经典重建静电能",
+  "reference_input": {
+    "gaps": "原 4e4o 哈密顿量、广义静电 J、单体分割与初态未公开。",
+    "items": [
+      {
+        "label": "蛋白结构",
+        "origin": "原文",
+        "url": "https://www.rcsb.org/structure/1CL6",
+        "value": "原 SI 指定 PDB 1CL6 与 1XQD"
+      },
+      {
+        "label": "论文与 SI",
+        "origin": "原文",
+        "url": "https://acs.figshare.com/articles/journal_contribution/25483061",
+        "value": "ACS Central Science 2024 官方 SI"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "有限活性空间单体上机；另一单体经典HF，非整酶完全关联",
   "sources": [
     {

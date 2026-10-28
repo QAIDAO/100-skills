@@ -7,6 +7,23 @@
   "id": "M18",
   "observable": "链长分布、指定序列/嵌段事件概率、分子量矩",
   "quantum_role": "将非幺正稀疏速率矩阵嵌入量子电路，为ODE求解提供oracle",
+  "reference_input": {
+    "gaps": "更长链与真实聚合条件下的速率参数未整理。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2609.08432v1",
+        "value": "原文公开的 Model B 速率模型"
+      },
+      {
+        "label": "参照所用截断",
+        "origin": "参照",
+        "value": "N=8：催化剂、全部长度 1/2 物种及首个长度 3 物种"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "状态种类随链长指数增长；论文短链模拟；约10³系统比特处10⁴–10⁵门为单次编码量级估算",
   "sources": [
     {

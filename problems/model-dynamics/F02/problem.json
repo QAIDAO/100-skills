@@ -7,6 +7,18 @@
   "id": "F02",
   "observable": "κ=∂n/∂μ、低能谱权重、多点自旋电荷关联",
   "quantum_role": "光晶格费米子模拟，测压缩率与动量相关调制谱。",
+  "reference_input": {
+    "gaps": "原始图像、位串与赝能隙谱的完整测量数据未公开。",
+    "items": [
+      {
+        "label": "数据",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2509.18075v1",
+        "value": "原文冷态四轮 32 行数据与八点测量（t=1 归一化）"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "冷原子格点模型；不是全电子铜氧化物，未统一为门模型比特数",
   "sources": [
     {

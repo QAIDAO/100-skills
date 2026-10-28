@@ -7,6 +7,24 @@
   "id": "B23",
   "observable": "候选多样性、可行率、预测不确定性、独立结合与可开发性读数",
   "quantum_role": "经典编码/预测器→离散多目标优化与退火→经典解码及排序→独立实验或结构比较",
+  "reference_input": {
+    "gaps": "64 位 QUBO 系数、逐轮样本与能量、NetSolP 权重版本与运行种子未公开。",
+    "items": [
+      {
+        "label": "代码与模型",
+        "origin": "原文",
+        "url": "https://github.com/tucs7/WS-MOQA",
+        "value": "WS-MOQA 固定 commit ed013d4：五个 PARROT 分类器、bVAE checkpoint 与训练数据"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2503.05458v1",
+        "value": "arXiv:2503.05458v1"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "WS-MOQA使用12,737条已标注序列；产生19,778个候选，选择5个测试，其中1个满足所需特异结合表现",
   "sources": [
     {

@@ -7,6 +7,18 @@
   "id": "M11",
   "observable": "同参考构象相对能ΔE、固定几何氚电子结合能和模型误差",
   "quantum_role": "EWF分片，较大片段由QPU采样+ext-SQD，经典重构总能与RDM",
+  "reference_input": {
+    "gaps": "SI 没有笛卡尔坐标，也没有片段积分或 HDF5 输入。",
+    "items": [
+      {
+        "label": "物种与设置",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2606.30402v1",
+        "value": "原文 SI：九个构型的电荷、计量、电子数与闭壳单重态；6-31+G(d)；IAO 片段 + DMET bath + MP2 BNO（η=1e−5）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "九个构型；中性团簇21原子，另有22/23原子带电配对；13–33轨道片段不等于整块熔盐",
   "sources": [
     {

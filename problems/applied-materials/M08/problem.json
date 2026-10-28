@@ -7,6 +7,29 @@
   "id": "M08",
   "observable": "³A₂、¹E、¹A₁、³E的能隙、〈S²〉、简并子空间投影与扰动响应",
   "quantum_role": "嵌入有效哈密顿量上的VQE+QSE/多态变分，约束粒子数并做噪声缓解",
+  "reference_input": {
+    "gaps": "四轨道模型与 19 轨道完整模型的能隙差超过 0.05 eV，活性空间尚未收敛；4H-SiC 双空位输入未整理。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://github.com/west-code-development/westpy/tree/3d965f39c23522f6ed5460f50316866bb2766d24",
+        "value": "WEST 官方 215 原子 NV⁻ 教学数据（19 轨道、36 电子，单位 eV；westpy 固定 commit）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2112.04435",
+        "value": "arXiv:2112.04435"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "缺陷轨道 426/430/431/432 的四轨道、6 电子 Ms=0 模型，其余 15 个占据轨道冻结"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "docs DEF-NV最小(4e,3o)为6比特、固定N维度15；完整晶体并未装入寄存器",
   "sources": [
     {

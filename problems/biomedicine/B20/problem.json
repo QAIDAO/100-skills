@@ -7,6 +7,17 @@
   "id": "B20",
   "observable": "离散目标函数、最优样本概率、晶体水覆盖、位置偏差和每个晶体水对应的预测水簇大小",
   "quantum_role": "经典3D-RISM→高斯密度拟合QUBO→门式量子优化→经典解码氧位置与晶体水比较",
+  "reference_input": {
+    "gaps": "各变量对应的候选水位点坐标、3D-RISM 格点与晶体水匹配定义未公开；其余复合物实例未公开。",
+    "items": [
+      {
+        "label": "QUBO 实例",
+        "origin": "原文",
+        "url": "https://github.com/qctrl/notebooks-public/tree/073f0a4dfd7e8fdc5ce2d9878aaa83553e1b9a08/fire-opal/apply/resources",
+        "value": "71 变量 Q 矩阵 Q_matrix_nparray_3b7eL_71_variables.pkl（qctrl/notebooks-public 固定 commit）"
+      }
+    ]
+  },
   "scale": "常规测试41–116变量；另含123变量实例；运行于IBM Heron设备。更大如900变量分析使用经典SA，不能算作量子执行。",
   "sources": [
     {

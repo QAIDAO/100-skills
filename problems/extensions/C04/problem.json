@@ -7,6 +7,23 @@
   "id": "C04",
   "observable": "前三个激发单重态的能隙、取向平均偶极强度、C=O键长区间",
   "quantum_role": "qLR、qEOM、多态VQE或相关函数计算谱，经典外层反演",
+  "reference_input": {
+    "gaps": "键长网格之外的几何参数需在解法中写明。",
+    "items": [
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "甲醛 def2-SVP、CAS(6,5)（题库原始问题单拟定），理想化 C₂v 几何上的 11 个键长点"
+      },
+      {
+        "label": "方法来源",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2301.06260",
+        "value": "量子线性响应计算分子响应性质"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "PDF拟定CAS(4,3)/CAS(6,5)，6/10系统比特；非已完成硬件规模",
   "sources": [
     {

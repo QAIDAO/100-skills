@@ -7,6 +7,17 @@
   "id": "C12",
   "observable": "独立测试准确率、恶性召回率、AUROC、校准及训练时间",
   "quantum_role": "经典图像缩放→模拟器上的量子卷积特征→经典分类层",
+  "reference_input": {
+    "gaps": "公开数据没有患者标识，无法构造患者级独立划分。",
+    "items": [
+      {
+        "label": "数据",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/s41597-022-01721-8",
+        "value": "MedMNIST v2 官方 BreastMNIST NPZ，标准划分 546/78/156"
+      }
+    ]
+  },
   "scale": "780幅公开图像；标准划分546/78/156；论文将图像缩至14×14，局部3×3对应9比特",
   "sources": [
     {

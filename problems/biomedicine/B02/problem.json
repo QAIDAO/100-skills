@@ -7,6 +7,23 @@
   "id": "B02",
   "observable": "自旋态能隙、相对电子能、自然轨道占据、资源误差曲线",
   "quantum_role": "容错QPE与SCDF；近期VQE用于选轨和硬件误差研究",
+  "reference_input": {
+    "gaps": "不应从结构重建替代模型后与原积分结果混比。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://zenodo.org/records/5941130",
+        "value": "作者公开的自旋无关共同 ROHF 轨道积分（h1、ERI、ecore），覆盖原文 A/B 两个模型"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://doi.org/10.1073/pnas.2203533119",
+        "value": "Goings 等 2022，PNAS 119, e2203533119"
+      }
+    ]
+  },
   "scale": "活性中心的电子/轨道模型与完整药物分子原子数分开；本例不宣称全酶上机",
   "sources": [
     {

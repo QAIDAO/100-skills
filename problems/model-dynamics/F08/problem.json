@@ -7,6 +7,28 @@
   "id": "F08",
   "observable": "供体布居 P_D(t)、积分定义的转移率、能隙依赖",
   "quantum_role": "两种镱离子共享运动模；一离子编码供受体，两模耗散由另一离子冷却工程化实现。",
+  "reference_input": {
+    "gaps": "SI 中跳跃算符与耦合基底的对应只能按整体旋转解释，作者内部实现未确认。",
+    "items": [
+      {
+        "label": "模型与数据",
+        "origin": "原文",
+        "url": "https://zenodo.org/records/17539557",
+        "value": "作者公开源数据（五个 Mathematica notebook）与 SI 参数"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://doi.org/10.1038/s41467-025-67116-6",
+        "value": "Nature Communications 2025"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "简并 fixed-λ 单模、热占据 n̄=0.2 的条件模型"
+      }
+    ]
+  },
   "scale": "2025 在线/2026 卷期工作为 1 个电子两能级、2 个振动模和受控储库",
   "sources": [
     {

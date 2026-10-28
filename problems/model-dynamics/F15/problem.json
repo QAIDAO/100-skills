@@ -7,6 +7,18 @@
   "id": "F15",
   "observable": "添加/移除GF、DOS极点与残量、子空间采样收敛",
   "quantum_role": "量子候选步骤是短时Krylov态制备与采样；投影、跨扇区重叠和连分式重建在经典端。",
+  "reference_input": {
+    "gaps": "作者未舍入数据与 DMFT 自洽结果未公开。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2609.09147v1",
+        "value": "原文 v1 的粒子—空穴对称 SIAM 链：L=8/10/12，HF 旋转按 Eq. 4–10 重建，Table 1 参数"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "L=8/10/12轨道位点，最大1杂质+11浴；常规编码2L自旋轨道；非12比特实机",
   "sources": [
     {

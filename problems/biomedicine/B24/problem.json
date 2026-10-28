@@ -7,6 +7,18 @@
   "id": "B24",
   "observable": "目标值、同义约束可行率、重复样本、完整求解时间；表达效果须另行独立验证",
   "quantum_role": "经典定义同义选择及代理指标→QUBO/Ising→退火或QAOA小模型→经典约束核验",
+  "reference_input": {
+    "gaps": "基准蛋白序列与优化输入未整理，部分来自病原体，本库不提供其编码；解法需自选非敏感蛋白并写明来源。",
+    "items": [
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259101",
+        "value": "PLOS ONE 2021 密码子优化（含公开汇总统计）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "直接退火约180候选密码子变量；资源较重映射约30氨基酸。约1000氨基酸属于混合服务；门式主比较为小规模经典模拟",
   "sources": [
     {

@@ -3,37 +3,41 @@
   "latest": {
     "original_target_status": "incomplete",
     "pointers": {
-      "current_results": "paired-ucj-slater-r151/results.json",
-      "current_revision": "paired-ucj-slater-r151",
-      "goal": "paired-ucj-slater-r151/GOAL.md",
+      "current_results": "paired-ucj-optimized-r152/results.json",
+      "current_revision": "paired-ucj-optimized-r152",
+      "goal": "paired-ucj-optimized-r152/GOAL.md",
       "id": "M01",
-      "independent_review": "tasks/_execution/2026-10-04/materials/m01-r151/delivery-review/REVIEW.json",
-      "independent_review_sha256": "76f26a73f2be3f431654f52d384fcb335fa04f5b417ac5ffedf58fc237e8aed8",
-      "manifest": "paired-ucj-slater-r151/manifest.json",
-      "manifest_sha256": "93016d67abcc2a007328410dec1e48c3c62839561c79bee27d8ea8a531ea667c",
+      "independent_review": "tasks/_execution/2026-10-04/materials/m01-r152/delivery-review/REVIEW.json",
+      "independent_review_sha256": "bb5edfc4227f5727a76298df43b5cf4796ed848b00a0ec5a4a5cdb63f4e8b102",
+      "manifest": "paired-ucj-optimized-r152/manifest.json",
+      "manifest_sha256": "efaf14e6c7e3f889ee90c7fb1b88a20f68bfa280f5519717af03a493ea3622e9",
       "original_target_status": "incomplete",
-      "previous_results": "full-paired-ucj-mps-r150/results.json",
-      "research": "paired-ucj-slater-r151/REPORT.md",
-      "revision": "r151",
-      "updated_utc": "2026-10-09T05:59:45.622109+00:00"
+      "previous_results": "paired-ucj-slater-r151/results.json",
+      "research": "paired-ucj-optimized-r152/REPORT.md",
+      "revision": "r152",
+      "updated_utc": "2026-10-15T06:08:20.401305+00:00"
     },
     "reference": "REFERENCE.md"
   },
   "omitted": [
-    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/RESEARCH.md",
-    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/candidates.csv",
-    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/energy-and-bound.png",
-    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/inputs.json",
-    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/manifest.json",
-    "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/results.json",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-optimized-r152/RESEARCH.md",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-optimized-r152/inputs.json",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-optimized-r152/manifest.json",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-optimized-r152/optimization.png",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-optimized-r152/results.json",
+    "tasks/M01-ru-co2-methanol/execution/paired-ucj-optimized-r152/trajectory.csv",
     "tasks/M01-ru-co2-methanol/mechanism.png",
     "tasks/M01-ru-co2-methanol/visualization.json",
-    "tasks/M01-ru-co2-methanol/workflow.png"
+    "tasks/M01-ru-co2-methanol/workflow.png",
+    "tasks/_execution/2026-10-04/materials/m01-r152/NEXT.md",
+    "tasks/_execution/2026-10-04/materials/m01-r152/audit/POSTRUN-REVIEW.md",
+    "tasks/_execution/2026-10-04/materials/m01-r152/environment-recovery-2026-10-15/RESTORATION.json",
+    "tasks/_execution/2026-10-04/materials/m01-r152/review/FINAL-COST-REVIEW.md"
   ],
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "0e9215dbf50feb95261bf6f6955996663b7b0c4a7f259f03c9dda925b1b26539"
+      "sha256": "0b3d24b290d7c4aac8943976c65da67ea17a17304c65c6be132b04109d590056"
     },
     {
       "path": "tasks/M01-ru-co2-methanol/README.md",
@@ -49,11 +53,11 @@
     },
     {
       "path": "tasks/M01-ru-co2-methanol/execution/LATEST.json",
-      "sha256": "8d5931b0bfce1e0c2320f456b7fc0294621565532baa9186655f67cb9478aba1"
+      "sha256": "65c0b370e63329f91be06a11d1e683a64b10a1e9e07f03132c250af4ed834fd5"
     },
     {
-      "path": "tasks/M01-ru-co2-methanol/execution/paired-ucj-slater-r151/REPORT.md",
-      "sha256": "03b71518202f1f963cc5ee56b98003b514661ac3e2109e6e0ffc27a2a5aac61d"
+      "path": "tasks/M01-ru-co2-methanol/execution/paired-ucj-optimized-r152/REPORT.md",
+      "sha256": "e50412f970f131d97fadcf11a9a2a47f340b2d3d8ec5665d13b93ad73a7b5fc5"
     }
   ]
 }

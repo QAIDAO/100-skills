@@ -7,6 +7,18 @@
   "id": "M16",
   "observable": "光学活性激发态、|〈f|μ|i〉|²、跃迁频率与模型辐射发射率",
   "quantum_role": "偶极算符block encoding＋QPE，选择性采样具有较强跃迁振幅的态",
+  "reference_input": {
+    "gaps": "有效一二体积分、三轴偶极算符与基态定义未公开；论文表 I 偶极列定义与寿命计算不一致。",
+    "items": [
+      {
+        "label": "模型规模",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2405.13115v1",
+        "value": "原文最大活性空间 34 电子、18 空间轨道（两个空穴）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "缺陷超胞经QDET降维；具体活性空间、辅助比特、纠错开销分层核算",
   "sources": [
     {

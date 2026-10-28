@@ -7,6 +7,24 @@
   "id": "B18",
   "observable": "质子密度、转移布居、电子—核纠缠、势垒与近似动力学量",
   "quantum_role": "NEO多组分哈密顿量、二次量子化演化；FNO/ADAPT与近似编译",
+  "reference_input": {
+    "gaps": "22 比特 Jordan–Wigner 到 18 比特的模式顺序、Clifford 变换与电子/质子数算符未公开，比特 0 不对应质子占据。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://github.com/stfc/quantum-neo-dynamics/tree/11bbce067a250eb7dc7b91994dc9fd5f4d483566",
+        "value": "作者公开 Left、Right（各 5,229 项）与 Middle（3,607 项）三个 18 比特哈密顿量（固定 commit）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://doi.org/10.1039/D5CP04097C",
+        "value": "PCCP，arXiv:2507.08996"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "电子与质子采用多组分轨道截断；2026出版版以18比特对应硬件噪声模型为线索",
   "sources": [
     {

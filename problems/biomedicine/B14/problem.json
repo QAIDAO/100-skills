@@ -7,6 +7,16 @@
   "id": "B14",
   "observable": "时间依赖位点布居、转移概率、到达率、相干与损耗",
   "quantum_role": "把激子哈密顿量映射到NMR/光子网络，以可控噪声表示环境",
+  "reference_input": {
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/s41534-018-0102-2",
+        "value": "原文四位点激子模型与高温 NMR 噪声模型（2 比特编码 4 个单激发态）"
+      }
+    ]
+  },
   "scale": "2018 NMR实验以2比特表示4个单激发态；不是全叶绿素电子结构或完整光合作用",
   "sources": [
     {

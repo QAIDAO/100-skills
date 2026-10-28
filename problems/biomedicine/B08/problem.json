@@ -7,6 +7,24 @@
   "id": "B08",
   "observable": "反应电子能剖面、势垒、动力学特征及实验反应性proxy",
   "quantum_role": "QM/QM/MM嵌入与VQE；哈密顿量演化特征配经典ML",
+  "reference_input": {
+    "gaps": "简化体系的过渡态与前络合物坐标、电荷/自旋、PCM 设置、积分与线路参数未公开。",
+    "items": [
+      {
+        "label": "蛋白结构",
+        "origin": "原文",
+        "url": "https://www.rcsb.org/structure/6J6M",
+        "value": "PDB 6J6M（扎努布替尼–BTK 共价复合物）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2604.10487v1",
+        "value": "arXiv:2604.10487v1"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "CovAngelo在20比特Garnet设备上实际使用8比特简化TS线路；不能称20比特全BTK",
   "sources": [
     {

@@ -7,6 +7,7 @@
   "id": "M13",
   "observable": "选定构型基态能和性质；最终所需为竞争对映路径ΔΔG‡",
   "quantum_role": "AutoRXN/AutoCAS筛选→逻辑态制备与误差检测→classical shadows性质估计",
+  "reference_input": null,
   "scale": "经典网络3150构型/2227基元步；演示量子核心约简为两逻辑比特，不是整个网络量子计算",
   "sources": [
     {

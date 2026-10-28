@@ -7,6 +7,29 @@
   "id": "M19",
   "observable": "反应物、过渡态、产物的相对能和不同自旋态能差",
   "quantum_role": "AVAS活性空间与双因子化QPE能量估计，结合初态和容错资源模型",
+  "reference_input": {
+    "gaps": "原基准 UUID 对应的积分未取得，参照模型与原模型的一致性未闭合；溶剂与活性空间收敛未处理。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://github.com/isi-usc-edu/qb-gsee-benchmark/tree/a196aebd624420311872d22da62734c7960a9e54",
+        "value": "RC、TS、PC 三点的公开 87 原子坐标（原文 SI 与 qb-gsee-benchmark 问题实例）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2406.06335v1",
+        "value": "arXiv:2406.06335"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "真空、电荷 0、单重态；Mo/I/Cl 用 def2-SVP（Mo、I 带 ECP），其余 6-31G(d)，683 AO、344 电子；AVAS 选 44e31o"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "原文小/大空间混合；大空间代表101电子75轨道，不能以全分子原子数代替量子空间",
   "sources": [
     {

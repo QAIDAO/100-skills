@@ -34,7 +34,7 @@ STATEMENT = (
 )
 PROBLEM_FIELDS = (
     "id", "title", "domain", "subdomain", "system", "observable", "classical_baseline",
-    "quantum_role", "decision", "scale", "tags", "sources",
+    "quantum_role", "decision", "scale", "tags", "sources", "reference_input",
 )
 MAX_SVG = 1_000_000
 MAX_REPORT = 65_536
@@ -101,6 +101,37 @@ def cell(text: object) -> str:
 
 def dump_json(path: Path, value: object) -> None:
     path.write_text(json.dumps(value, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+
+
+INPUT_LEAD = {
+    "public": "解法默认使用下列输入，以便与现有参照和其他解法直接比较；改用其他输入时请说明理由。",
+    "substitute": "原文输入没有完全公开。下表是参照运行实际使用的替代输入，解法可以沿用以便直接比较；"
+    "取得原文输入或改用其他输入时请说明理由。",
+    "self_build": "原文输入没有公开，也没有可直接运行的替代输入，解法需要自建模型并写明来源与哈希。"
+    "下表只列出已知的公开材料。",
+}
+
+
+def reference_input(case: dict) -> list[str]:
+    spec = case.get("reference_input")
+    if not spec:
+        return [
+            "本题尚未指定基准输入。请在「模型对应」中写明所用结构、参数或数据的来源与哈希；"
+            "如能找到权威的公开输入，欢迎在 issue 中提出，采纳后写入后续版本。",
+        ]
+    rows = ["| 项目 | 内容 | 出处 |", "|---|---|---|"]
+    for item in spec["items"]:
+        where = f"[{item['origin']}]({item['url']})" if item.get("url") else item["origin"]
+        rows.append(f"| {cell(item['label'])} | {cell(item['value'])} | {where} |")
+    lead = INPUT_LEAD[spec.get("kind", "public")]
+    lines = [
+        lead + "「原文」指作者或原论文公开的材料，「参照」指本项目参照运行自行冻结的选择。",
+        "",
+        *rows,
+    ]
+    if spec.get("gaps"):
+        lines += ["", f"**尚未公开或需注意：**{spec['gaps']}"]
+    return lines
 
 
 def acceptance(case: dict) -> list[str]:
@@ -176,6 +207,10 @@ def build_problem(case: dict, domain: str, label: str, dest: Path) -> dict:
         "## 题面",
         "",
         *statement,
+        "",
+        "## 基准输入",
+        "",
+        *reference_input(case),
         "",
         "## 什么算解",
         "",

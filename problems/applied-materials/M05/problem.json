@@ -7,6 +7,24 @@
   "id": "M05",
   "observable": "S(q,ω)、各方向响应交叉项、近边峰形及空间结构指纹",
   "quantum_role": "量子演化获得非对角时域Green函数；经典构造动量分辨散射响应",
+  "reference_input": {
+    "gaps": "51 原子坐标（尤其 26 个封端 H）、总电荷、CAS 积分、三个偶极矩阵与 CVS mask 未公开。",
+    "items": [
+      {
+        "label": "晶体与簇",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2508.15935v1",
+        "value": "Materials Project mp-18988（C2/m），作者封端模型 Li₄Mn₂O₁₉H₂₆（51 原子）"
+      },
+      {
+        "label": "模型设置",
+        "origin": "原文",
+        "url": "https://doi.org/10.1063/5.0300557",
+        "value": "unrestricted PBE0/ANO-RCC-VDZP，broken-symmetry Sz=0，AVAS；Fig. 4 小模型 CAS(8e,7o)"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "18活性轨道的模型资源约100逻辑比特；论文报单电路3.25×10⁸ T门和约10⁴ shots",
   "sources": [
     {

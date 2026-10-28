@@ -7,6 +7,28 @@
   "id": "M30",
   "observable": "增量相关能、空间截断误差及求解资源；局部催化反应势垒未报告",
   "quantum_role": "MI分解占据轨道，FNO压缩虚轨道，再由VQE或QPE求增量相关能；经典组合总能",
+  "reference_input": {
+    "gaps": "作者使用的孤立分子几何与无序处理未公开，参照的展开方式不是唯一选择。",
+    "items": [
+      {
+        "label": "晶体结构",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/ja070061y.s002",
+        "value": "Arriola 等 CGC(1) 官方 CIF ja070061y_si_002.cif，data_1 为 C₁₇H₃₃NSiTi（Pnma）"
+      },
+      {
+        "label": "资源研究",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2002.07901v2",
+        "value": "arXiv:2002.07901v2，固定最高三个占据轨道做 FNO 增量"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "按镜面展开并取一个无序方向；中性单重态 cc-pVDZ（478 AO）；HOMO、HOMO−1、HOMO−2 的 FNO 空间"
+      }
+    ]
+  },
   "scale": "cc-pVDZ/cc-pVTZ完整空间956/2208比特；99% FNO代表性三体增量126/184比特，不是全问题总资源",
   "sources": [
     {
