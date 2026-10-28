@@ -1,0 +1,124 @@
+{
+  "problem": "M17",
+  "title": "两级活性空间审计：缩小空间的吸附能取决于截取方式，母空间 FCIDUMP 还不能直接给出结合能",
+  "authors": [
+    "QAIDAO 维护者（Claude Code 协助）"
+  ],
+  "license": "Apache-2.0",
+  "method": {
+    "family": "qpe-resource-estimate + vqe-reference",
+    "quantum_component": "引用作者固定参数 QNP 线路在 8/20/28 比特缩小空间上的能量；对冻结芯 CAS 与 52/80/84 比特母空间估算相位估计资源（Pauli 1-范数 λ、qubitization 步数、HF 初态重叠）"
+  },
+  "results": [
+    {
+      "observable": "E_ads，平衡 HF+MP2（VASP NO 阈值 1e-7，420 eV；论文给出 28 kJ/mol）",
+      "value": -28.3,
+      "unit": "kJ/mol",
+      "uncertainty": 0.4
+    },
+    {
+      "observable": "E_ads，作者原样缩小空间（1a），同 H FCI",
+      "value": -43.43,
+      "unit": "kJ/mol"
+    },
+    {
+      "observable": "E_ads，同轨道冻结芯 CAS（1b），FCI",
+      "value": 32.45,
+      "unit": "kJ/mol"
+    },
+    {
+      "observable": "D_CCSD(T)，母空间占据与虚轨道数对齐扫描的范围",
+      "value": [
+        -69.4,
+        139.4
+      ],
+      "unit": "kJ/mol"
+    },
+    {
+      "observable": "1a 结合项中轨道弛豫与剩余关联的抵消",
+      "value": [
+        396.4,
+        -370.9
+      ],
+      "unit": "kJ/mol"
+    },
+    {
+      "observable": "Pauli 1-范数 λ，ads（1a / 1b / 母空间）",
+      "value": [
+        118.4,
+        69.4,
+        1880.1
+      ],
+      "unit": "Ha"
+    },
+    {
+      "observable": "HF 初态与基态重叠平方，1b（CO2 / MOF / ads）",
+      "value": [
+        0.973,
+        0.997,
+        0.984
+      ],
+      "unit": "无量纲"
+    }
+  ],
+  "baseline_comparison": [
+    {
+      "method": "1a 原固定参数 QNP（现有参照）",
+      "value": -43.3
+    },
+    {
+      "method": "1b CCSD(T)，与 FCI 相差 <0.2 kJ/mol",
+      "value": 32.29
+    },
+    {
+      "method": "Fe-MOF-74 周期 DFT 六泛函 E_ads 范围（与论文表 1 逐项一致）",
+      "value": [
+        -50.8,
+        -31.0
+      ]
+    },
+    {
+      "method": "Mg-MOF-74 周期 DFT 六泛函 E_ads 范围",
+      "value": [
+        -60.0,
+        -40.5
+      ]
+    },
+    {
+      "method": "实验估计（论文表 1，取自 Queen 等 2014，已扣除零点能与热校正）：Fe / Mg",
+      "value": [
+        -36.8,
+        -47.3
+      ]
+    }
+  ],
+  "reproducibility": {
+    "code": "solutions/M17/qaidao-two-level-audit/code/（m17_two_level.py、balanced_scan.py、check_l1.py）",
+    "environment": "Python 3.12.13，PySCF 2.12.1，NumPy 1.26.4，SciPy 1.17.1，Qiskit 1.4.5；OMP_NUM_THREADS=8",
+    "seeds": [],
+    "inputs": [
+      {
+        "name": "qcware/quantum_simulation_MOF@ad3c6658 fullci_reference_pyscf/singlet/FCIDUMP.CO2",
+        "sha256": "0a831802d696978fe414271ed927c52f8bf3b98bf0f328e8eb1508b0c35b17f6"
+      },
+      {
+        "name": "qcware/quantum_simulation_MOF@ad3c6658 fullci_reference_pyscf/singlet/FCIDUMP.MOF",
+        "sha256": "75f518127f8493acbaa504407d01a595004f38be4557373b8ca152a96b31801c"
+      },
+      {
+        "name": "qcware/quantum_simulation_MOF@ad3c6658 fullci_reference_pyscf/singlet/FCIDUMP.MOFCO2",
+        "sha256": "d5f9eaba909dca8dc7d4c4920c9d98ff02a2330a4475e91b14b1efb165e11671"
+      },
+      {
+        "name": "qcware/quantum_simulation_MOF@ad3c6658 active_space_generation_vasp/、Fe-MOF-74-vasp/、Mg-MOF-74-vasp/ 的 OUTCAR",
+        "sha256": "见 git commit ad3c6658f3d32167b6c0462af2451e5b0e062c2a"
+      }
+    ]
+  },
+  "compute": {
+    "hardware": "arm64 Mac，10 核 CPU，24 GB 内存",
+    "qpu": false,
+    "wall_time": "主流程 29.8 分钟（CPU 1562 秒，峰值 2.9 GB），平衡扫描约 1 分钟"
+  },
+  "self_assessment": "inconclusive"
+}
