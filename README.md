@@ -14,7 +14,7 @@
 
 ### 图文能力展示
 
-[科学能力与 100 案例图文展示](release/showcase/index.html) 提供机制图卡片、场景入口、搜索与证据详情，适合演示与交流。下载 [离线展示包](release/showcase/对外展示包.zip) 可同时取得新版网页与原版演示册；版本与证据范围见 [展示说明](release/showcase/README.md)。
+[科学能力与 100 案例图文展示](release/showcase/index.html) 提供机制图卡片、场景入口、搜索与证据详情，适合演示与交流。含原版演示册的离线展示包不放入仓库，另行分发；版本与证据范围见 [展示说明](release/showcase/README.md)。
 
 ## 每道题都拆解清楚
 
