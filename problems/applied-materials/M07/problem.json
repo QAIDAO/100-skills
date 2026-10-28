@@ -7,6 +7,24 @@
   "id": "M07",
   "observable": "平均插锂电压、迁移电子势垒、分解反应能；温度性质另加自由能",
   "quantum_role": "以qubitization/QPE求周期材料基态能，经典组合成应用性质",
+  "reference_input": {
+    "gaps": "原文没有坐标、轨道或积分；完整配置中各核的位置相位无法从晶胞参数唯一确定。",
+    "items": [
+      {
+        "label": "资源参数",
+        "origin": "原文",
+        "url": "https://github.com/PabloAMC/TFermion/tree/first_quantization",
+        "value": "TFermion first_quantization 分支 parameters/Li2FeSiO4_6-31G_100（commit 798d5df）：N_grid=1.159e6、η=156、Ω=1145.166"
+      },
+      {
+        "label": "晶体参考",
+        "origin": "原文",
+        "url": "https://api.figshare.com/v2/articles/2514904",
+        "value": "Eames 等 2012 官方 SI"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "第一量子化周期电子与平面波表示；完整逻辑/物理成本依基组和精度变化",
   "sources": [
     {

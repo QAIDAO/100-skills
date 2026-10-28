@@ -7,6 +7,28 @@
   "id": "B22",
   "observable": "S₁垂直激发能、平均绝对误差、活性空间和线路收敛",
   "quantum_role": "经典轨道与基态/激发态参考→态特异ΔADAPT线路模拟→两态能量差→光谱基准",
+  "reference_input": {
+    "gaps": "作者未提供 2024 与 2019 编号的对应表。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://ndownloader.figshare.com/files/20156816",
+        "value": "六个 BODIPY 衍生物坐标，取自 2019 JCTC 官方 SI（2024 编号 1–6 对应 2019 编号 13、5、4、7、11、25，由参照推定）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/acs.jctc.9b00559",
+        "value": "arXiv:2404.16149v1；结构来源 JCTC 2019"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "不重新优化几何；真空 RHF/cc-pVDZ，前沿 CAS(4e,4o)，另以 CAS6/CAS8 检查"
+      }
+    ]
+  },
   "scale": "最大活性空间(8电子,8轨道)；无噪声态矢模拟；70/583 CNOT为编译资源估计",
   "sources": [
     {

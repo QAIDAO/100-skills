@@ -7,6 +7,28 @@
   "id": "M02",
   "observable": "反应物到TS的电子活化能、轨道占据和环境诱导势垒变化",
   "quantum_role": "纠缠锻造制备关联信息，QSE扩展子空间，再经典微扰恢复动态关联",
+  "reference_input": {
+    "gaps": "原作者未拟合积分未公开；呋喃+乙烯极化环境对照的输入未整理。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://acs.figshare.com/articles/journal_contribution/Theoretical_Analysis_of_Reactivity_Patterns_in_Diels_Alder_Reactions_of_Cyclopentadiene_Cyclohexadiene_and_Cycloheptadiene_with_Symmetrical_and_Unsymmetrical_Dienophiles/2180551",
+        "value": "乙烯、环戊二烯与 TS1A，取自 Levandowski/Houk 2015 官方 SI（原量子方法明确引用）"
+      },
+      {
+        "label": "基组",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2403.08107v1",
+        "value": "aug-cc-pVTZ（原方法设置）"
+      },
+      {
+        "label": "参照所用活性空间",
+        "origin": "参照",
+        "value": "MP2 自然轨道取 HONO/LUNO 附近：乙烯 CAS(2e,2o)、环戊二烯 CAS(4e,4o)、TS CAS(6e,6o)；密度拟合积分"
+      }
+    ]
+  },
   "scale": "论文硬件最多8比特；仅活性电子部分，非整个溶液或聚合物网络",
   "sources": [
     {

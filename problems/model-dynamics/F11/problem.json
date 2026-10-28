@@ -7,6 +7,24 @@
   "id": "F11",
   "observable": "杂质格林函数、自能、单粒子谱 A(k,ω)",
   "quantum_role": "QPU 计算小 Anderson 杂质模型的态与响应；经典 DFT、降维、DMFT 自洽与重建材料谱。",
+  "reference_input": {
+    "gaps": "未舍入参数、原 qEOM 系数、DFT/Wannier/cRPA 与自洽 DMFT 数据未公开。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/s41524-025-01772-6",
+        "value": "Ca₂CuO₂Cl₂ 有效单带单杂质 + 离散浴参数（正文与官方 SI）"
+      },
+      {
+        "label": "SI",
+        "origin": "原文",
+        "url": "https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41524-025-01772-6/MediaObjects/41524_2025_1772_MOESM1_ESM.pdf",
+        "value": "官方补充材料"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "2025 最多14比特=1杂质轨道+6浴轨道的自旋轨道编码；2026独立方法为8数据比特+1辅助",
   "sources": [
     {

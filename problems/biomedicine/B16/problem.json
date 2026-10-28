@@ -7,6 +7,23 @@
   "id": "B16",
   "observable": "反应自由能与活化自由能的混合估计、溶剂效应",
   "quantum_role": "经典几何/频率→PCM/ddCOSMO→小CAS VQE→经典热校正",
+  "reference_input": {
+    "gaps": "溶剂、热修正、原频率与过渡态虚频未闭合，真空 ΔE 不能当作溶液 ΔG‡。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2401.03759v3",
+        "value": "作者公开仓库（commit 1f9e425）中 4、TS、5、6、H₂O 的笛卡尔坐标（B3LYP-D3/6-31+G(d)、SMD 优化）"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "真空 RHF/6-311G(d,p)，canonical HOMO–LUMO 的 CAS(2e,2o)，另以 CAS(4e,4o) 检查"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "CAS(2e,2o)经parity约化到2比特；环境和热G修正经典完成",
   "sources": [
     {

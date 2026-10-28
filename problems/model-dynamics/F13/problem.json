@@ -7,6 +7,7 @@
   "id": "F13",
   "observable": "局域格林函数、谱函数、自洽混成 V",
   "quantum_role": "五比特 NMR 中四数据比特表示自旋轨道，一探针比特辅助测量响应。",
+  "reference_input": null,
   "scale": "1杂质+1浴=4数据自旋轨道；加1探针共5个NMR比特",
   "sources": [
     {

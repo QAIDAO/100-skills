@@ -7,6 +7,24 @@
   "id": "B25",
   "observable": "驻点相对能、活性空间替换增量、候选路径与轨道连续性",
   "quantum_role": "经典QM/MM几何和环境→固定活性空间→VQE-UCCSD数值模拟→减法嵌入→相对能比较",
+  "reference_input": {
+    "gaps": "RE、TS1、IS、TS2、PR 五个驻点的几何、哈密顿量与完整 MM 电荷场未公开。",
+    "items": [
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/pdf/2202.04460v2",
+        "value": "2022 作者全文（含 SI）"
+      },
+      {
+        "label": "前驱研究",
+        "origin": "原文",
+        "url": "https://eprints.gla.ac.uk/95072/1/95072.pdf",
+        "value": "2014 QM/MM 接受稿（含部分电荷表）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "(4电子,4空间轨道)活性空间；氢化酶结果为数值模拟；同文F₂硬件演示不能移用",
   "sources": [
     {

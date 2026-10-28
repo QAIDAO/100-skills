@@ -7,6 +7,7 @@
   "id": "B31",
   "observable": "O–O 断键势垒、中间体自旋态序、质子耦合电子转移的驱动力",
   "quantum_role": "对 Fe–Cu 双核活性空间做嵌入，用 QPE/qubitization（远期）或 VQE/SQD（近期）求中间体自旋态能差；长距离电子传输网络仍用经典模型（提案）",
+  "reference_input": null,
   "scale": "Fe 卟啉加 Cu 与配位组氨酸的簇模型；多金属、多自旋态，活性空间与 P450 类模型同量级或更大",
   "sources": [
     {

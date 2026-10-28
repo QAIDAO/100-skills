@@ -7,6 +7,24 @@
   "id": "B09",
   "observable": "候选有效性、新颖性、合成成功率、独立活性与结合读数",
   "quantum_role": "量子线路Born机产生先验/样本，经典LSTM生成，经典筛选与湿实验验证",
+  "reference_input": {
+    "gaps": "16 比特拟合参数、门序列、硬件 counts、训练权重与划分索引未公开。",
+    "items": [
+      {
+        "label": "代码与数据",
+        "origin": "原文",
+        "url": "https://github.com/the-matter-lab/quantum-generative-models",
+        "value": "作者仓库与唯一 release 1.0.0-beta.1（Zenodo 11137638）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/s41587-024-02526-3",
+        "value": "Nature Biotechnology"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "生成模型使用16比特相关实验；量子变量表示生成分布，不是一比特对应一原子",
   "sources": [
     {

@@ -7,6 +7,17 @@
   "id": "M06",
   "observable": "最低模型能量、有效低能样本、充电曲线与成功概率/成本",
   "quantum_role": "量子退火求含粒子数约束的离散优化；经典构造能量模型与重评分",
+  "reference_input": {
+    "gaps": "Fe²⁺/Fe³⁺ 是同一位点的标签，不是另外 32 个 Fe 位点。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://doi.org/10.26165/JUELICH-DATA/VEHDXR",
+        "value": "作者公开 CC0 数据（2025-09-10 版）：1×2×2 与 1×4×1 两个超胞，16 个 Li 与 16 个 Fe 氧化还原占据变量及全部交叉项，单位 eV/16FU"
+      }
+    ]
+  },
   "scale": "二进制占据变量映射为QUBO/Ising；物理退火比特随嵌入链增加，不等于电子轨道数",
   "sources": [
     {

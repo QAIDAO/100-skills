@@ -7,6 +7,24 @@
   "id": "B06",
   "observable": "相对结合自由能ΔΔG，统计误差及与实验偏差",
   "quantum_role": "AMBER/QUICK→QM/MM book-ending→LUCJ采样→SQD/extSQD→MBAR",
+  "reference_input": {
+    "gaps": "积分、能量 offset 与 bookending 采样数据未公开，作者接口按请求提供。",
+    "items": [
+      {
+        "label": "蛋白结构",
+        "origin": "原文",
+        "url": "https://www.rcsb.org/structure/5TMN",
+        "value": "PDB 5TMN（含 0PJ）与 6TMN（含 0PI）"
+      },
+      {
+        "label": "模型设置",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2604.09857v2",
+        "value": "作者公布活性空间 0PJ (26e,19o)、0PI (26e,18o)，RHF 闭壳层，LUCJ + SQD"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "活性空间26电子、18或19空间轨道；全蛋白/水由经典采样",
   "sources": [
     {

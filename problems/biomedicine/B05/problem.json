@@ -7,6 +7,23 @@
   "id": "B05",
   "observable": "沿反应坐标的电子能曲线、相对势垒",
   "quantum_role": "FAST-VQE与SAT门约简；经典结构与环境处理",
+  "reference_input": {
+    "gaps": "每帧的嵌入积分与能量常数未公开。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/acs.jctc.5c00022",
+        "value": "官方 SI 十帧 178 原子封端 QM 区坐标（另有十帧 4108 原子完整酶坐标），电荷 +1、多重度 1"
+      },
+      {
+        "label": "模型设置",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2408.11091v3",
+        "value": "第 5 帧为质子转移过渡态参考；B3LYP/pcseg-1，CAS(6e,6o)，相关区为中央氧及两个移动氢"
+      }
+    ]
+  },
   "scale": "整酶采用经典力场与DFT等分层；QPU只处理精选活性空间",
   "sources": [
     {

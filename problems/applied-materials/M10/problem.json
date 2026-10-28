@@ -7,6 +7,24 @@
   "id": "M10",
   "observable": "界面反应势垒、氧迁移/占位能差及速率模型的误差传播",
   "quantum_role": "QPE电子基态估计嵌入经典NEB/合金配置工作流",
+  "reference_input": {
+    "gaps": "公开坐标不含水、H、O，不能代表原析氢或腐蚀反应；正文与 SI 的原子数口径互相矛盾；MgAl 表面与 Nb 合金含氧构型、过渡态均未公开。",
+    "items": [
+      {
+        "label": "几何与哈密顿量",
+        "origin": "原文",
+        "url": "https://github.com/isi-usc-edu/pyLIQTR",
+        "value": "pyLIQTR v1.2.0 中两套 64 个 Mg 原子的裸表面 XYZ 与 PEST Hamiltonian（固定 commit e63e18a）"
+      },
+      {
+        "label": "论文与 SI",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/s41534-025-01171-1",
+        "value": "npj Quantum Information 2026，36 页 SI"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "2026文给出2292–38598逻辑比特、约(1.04–1962)×10¹³ T门范围，依具体模型；非已运行",
   "sources": [
     {

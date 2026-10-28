@@ -7,6 +7,28 @@
   "id": "B17",
   "observable": "时间相关特征、下游反应性预测误差、截断误差界",
   "quantum_role": "哈密顿量项截断→Clifford分解与变换→硬件转译→经典ML",
+  "reference_input": {
+    "gaps": "DMET 哈密顿量、观测量系数、初态与 GSK 保密子集未公开，仅凭 XYZ 不能唯一重建原模型。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://github.com/Kowalikov/efficient_hamiltonian_simulation_2025_data/tree/2ce40d9875afe63c7d2c08e51c87a17931728d45",
+        "value": "作者公开 268 个结构的 XYZ 坐标（固定 commit）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2412.15804v4",
+        "value": "arXiv:2412.15804v4"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "Mol_009（31 原子、138 电子），全电子 6-31+G**（380 AO），中性单重态"
+      }
+    ]
+  },
   "scale": "代表性8比特哈密顿量动力学；大设备名称不等于用满设备",
   "sources": [
     {

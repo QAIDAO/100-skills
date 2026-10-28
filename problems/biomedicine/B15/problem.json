@@ -7,6 +7,28 @@
   "id": "B15",
   "observable": "片段能量、蛋白/真空能差与实验相关性",
   "quantum_role": "DMET划分→目标片段VQE→其他片段CCSD→经典能量合并",
+  "reference_input": {
+    "gaps": "DMET 片段原子/AO 映射、bath、收敛化学势与嵌入积分未公开；作者的转译器为商业秘密。ESP 总电荷与正文所写 −1 不一致。",
+    "items": [
+      {
+        "label": "几何与环境",
+        "origin": "原文",
+        "url": "https://api.figshare.com/v2/articles/32952515",
+        "value": "五个配体的官方坐标及各 4023 个 ESP 点电荷（Figshare 32952515 / 32952518）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://pubs.acs.org/doi/10.1021/acs.jcim.6c00544",
+        "value": "J. Chem. Inf. Model.，数据声明指向公开 Tangelo"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "配体电荷 +1、单重态、STO-3G，canonical HOMO−1…LUMO+1 的 CAS(4e,4o)"
+      }
+    ]
+  },
   "scale": "整体蛋白不在QPU；实际硬件限制4比特，完整5配体独立优化不应默认已完成",
   "sources": [
     {

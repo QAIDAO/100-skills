@@ -7,6 +7,23 @@
   "id": "M03",
   "observable": "ΔE解离、ΔE‡、局域磁性及轨道占据",
   "quantum_role": "AVAS区域嵌入+ADAPT-VQE/RDM测量+经典NEVPT2",
+  "reference_input": {
+    "gaps": "原 Pt(111)/Pt 包覆 Co 周期表面的反应物、过渡态、产物与嵌入输入未公开；单个 Pt₅O₂ 簇不能代替表面势垒。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://aws.amazon.com/blogs/quantum-computing/exploring-computational-chemistry-using-quantinuums-inquanto-on-aws/",
+        "value": "2022 AWS 公开 Pt₅O₂ 先导模型的 7 原子坐标"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "RHF/def2-SVP（Pt 用 ECP），106 个显式电子、188 AO；13 个占据 + 5 个虚轨道的 26e18o，冻结 40 个占据轨道"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "Pt活性空间(2e,3o)/6比特；Pt/Co(4e,4o)/8比特；晶片与片段由经典处理",
   "sources": [
     {

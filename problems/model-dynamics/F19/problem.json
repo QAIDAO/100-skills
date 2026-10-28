@@ -7,6 +7,23 @@
   "id": "F19",
   "observable": "ΔBCS(t)、淬火动态相边界、谱隙ΔSG及其人口依赖",
   "quantum_role": "Sr内部态编码Cooper对占据，腔光子介导有效相互作用，泄漏光连续读出集体配对序参量。",
+  "reference_input": {
+    "gaps": "冷原子实验的 ¹⁰⁵–¹⁰⁶ 原子参数与读出校准未整理。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2306.00066v2",
+        "value": "H = χS⁺S⁻ + Σ ωᵢ Sᶻᵢ（ℏ=1，角频率）"
+      },
+      {
+        "label": "参照所用规模",
+        "origin": "参照",
+        "value": "N=8 精确对角化"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "约10⁵–10⁶个⁸⁸Sr原子的集合模拟；原子数不是通用逻辑比特数；后续利用三个内部态",
   "sources": [
     {

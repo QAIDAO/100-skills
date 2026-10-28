@@ -7,6 +7,17 @@
   "id": "C06",
   "observable": "质子空间概率、时间相关函数、非谐振动峰",
   "quantum_role": "离散核坐标映射与量子逻辑演化；与电子结构计算串接",
+  "reference_input": {
+    "gaps": "128 点势能面、DAF 与精确坐标未公开；公开矩阵与出版版约 800 cm⁻¹ 的叙述不一致。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2204.08571v2",
+        "value": "作者公开 8×8 数值 Hamiltonian（arXiv v2）"
+      }
+    ]
+  },
   "scale": "少量逻辑自由度映射至离子阱；不是完整氢键网络与电子共同从头模拟",
   "sources": [
     {

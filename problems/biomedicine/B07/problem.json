@@ -7,6 +7,30 @@
   "id": "B07",
   "observable": "片段能量、静态结合能、嵌入与基组收敛",
   "quantum_role": "EWF嵌入→片段QPU采样→超算TrimSQD→能量合并",
+  "reference_input": {
+    "gaps": "作者含水体系（11608/12635 原子）、EWF 片段与 bath、积分均未公开。",
+    "items": [
+      {
+        "label": "蛋白结构",
+        "origin": "原文",
+        "url": "https://files.rcsb.org/download/3PTB.pdb",
+        "value": "初始晶体 PDB 3PTB（胰蛋白酶）与 4W57（T4 溶菌酶）"
+      },
+      {
+        "label": "凝血酶子例",
+        "origin": "原文",
+        "url": "https://ndownloader.figshare.com/files/66481841",
+        "value": "五配体坐标与 ESP 点电荷（同 B15）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2605.01138v2",
+        "value": "arXiv:2605.01138v2"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "整体11608/12635原子；两台156比特设备中最多用94比特；并非万原子直接映射QPU",
   "sources": [
     {
