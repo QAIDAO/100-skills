@@ -3,7 +3,7 @@
 
 用法：python3 -I release/tools/build_promo.py --out <dir>
 写出 <dir>/index.html。题目数据取自 problems/*/*/problem.json 与 release/stats.json；
-叙述文字为固定措辞。不读时钟、不联网。
+叙述文字为固定措辞。不读时钟、不联网。难度与 starter 取自 problem.json 的 track 字段。
 
 呈现重心：每道题为什么值得做（研发决策）、要算什么（可观测量），
 以及「经典基线」与「量子方法的角色」的对照。
@@ -32,6 +32,8 @@ PARTS = (
     ("decision", "研发决策", "支撑什么判断"),
 )
 SPECIMEN = "M01"
+LEVELS = ("热身", "进阶", "前沿")
+WARM_DEMO = "C11"  # 「从热身题开始」里演示的 starter
 REPO = "https://github.com/QAIDAO/100-skills"
 BLOB = f"{REPO}/blob/main"
 CRITERION_RE = re.compile(r"^\d+\. \*\*(.+?)\*\*：(.+)$")
@@ -67,6 +69,7 @@ CSS = """
   --deep:#1b1229;--deep-2:#241838;--on-deep:#f1ebf7;--on-deep-muted:#b6a8c8;--on-deep-faint:#7f7192;
   --bio:#7442c4;--mat:#a8732a;--dyn:#4b6699;--ext:#ad4f7d;
   --bio-n:#c6a6f7;--mat-n:#e6c48f;--dyn-n:#a6badf;--ext-n:#eba9c9;
+  --warm:#2f9e6e;--warm-soft:#e3f4ec;--warm-ink:#1d7a52;
   --grain-opacity:.05;
   --serif:"Subscripts","Songti SC","STSong","Noto Serif SC","Source Han Serif SC",ui-serif,Georgia,serif;
   --sans:-apple-system,BlinkMacSystemFont,"SF Pro Text","PingFang SC","Hiragino Sans GB","Noto Sans SC","Microsoft YaHei",sans-serif;
@@ -77,11 +80,13 @@ CSS = """
 @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
   --canvas:#110c18;--surface:rgba(255,255,255,.035);--ink:#ece6f4;--muted:#a898bb;--faint:#7d6f8f;
   --rule:rgba(255,255,255,.08);--rule-strong:rgba(255,255,255,.14);--accent:#c3a3f5;--accent-ink:#d6c0fa;--accent-soft:rgba(195,163,245,.12);
-  --deep:#0a0710;--deep-2:#140e1e;--bio:#c6a6f7;--mat:#e6c48f;--dyn:#a6badf;--ext:#eba9c9;--grain-opacity:.07}}
+  --deep:#0a0710;--deep-2:#140e1e;--bio:#c6a6f7;--mat:#e6c48f;--dyn:#a6badf;--ext:#eba9c9;--grain-opacity:.07;
+  --warm:#6fd3a5;--warm-soft:rgba(111,211,165,.12);--warm-ink:#8fe0ba}}
 :root[data-theme="dark"]{
   --canvas:#110c18;--surface:rgba(255,255,255,.035);--ink:#ece6f4;--muted:#a898bb;--faint:#7d6f8f;
   --rule:rgba(255,255,255,.08);--rule-strong:rgba(255,255,255,.14);--accent:#c3a3f5;--accent-ink:#d6c0fa;--accent-soft:rgba(195,163,245,.12);
-  --deep:#0a0710;--deep-2:#140e1e;--bio:#c6a6f7;--mat:#e6c48f;--dyn:#a6badf;--ext:#eba9c9;--grain-opacity:.07}
+  --deep:#0a0710;--deep-2:#140e1e;--bio:#c6a6f7;--mat:#e6c48f;--dyn:#a6badf;--ext:#eba9c9;--grain-opacity:.07;
+  --warm:#6fd3a5;--warm-soft:rgba(111,211,165,.12);--warm-ink:#8fe0ba}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;scroll-padding-top:72px}
 body{margin:0;background:var(--canvas);color:var(--ink);font:16px/1.75 var(--sans);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
@@ -137,6 +142,9 @@ header{position:sticky;top:0;z-index:20;background:var(--canvas);border-bottom:1
 .legend{position:relative;display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;font-size:12px;color:var(--on-deep-muted)}
 .legend span{display:inline-flex;align-items:center;gap:7px}
 .legend i{width:9px;height:9px;border-radius:2px;background:var(--dn)}
+.cell.warm{position:relative}
+.cell.warm:after{content:"";position:absolute;top:3px;right:3px;width:5px;height:5px;border-radius:50%;background:var(--warm)}
+.legend .warm-key i{width:7px;height:7px;border-radius:50%;background:var(--warm)}
 .board-foot{position:relative;margin-top:18px;padding-top:16px;border-top:1px solid rgba(255,255,255,.1);font-size:14px;color:var(--on-deep-muted)}
 .board-foot b{color:var(--on-deep);font-weight:600}
 
@@ -197,6 +205,12 @@ section{padding:96px 0 104px;scroll-margin-top:60px;border-bottom:1px solid var(
 .filters button[aria-pressed="true"]{background:var(--ink);color:var(--canvas)}
 .filters button[aria-pressed="true"] .num{color:inherit;opacity:.7}
 @media (hover:hover){.filters button[aria-pressed="false"]:hover{color:var(--ink);background:var(--accent-soft)}}
+.filters .flabel{align-self:center;font:500 11px/1 var(--mono);letter-spacing:.08em;color:var(--faint);padding:0 6px 0 2px}
+.filters.levels{flex-basis:100%;order:3;padding-top:2px}
+.pstate{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
+.lvl{font:600 11px/1 var(--mono);letter-spacing:.04em;padding:5px 7px;border-radius:var(--r-chip);color:var(--muted);background:var(--accent-soft);white-space:nowrap}
+.lvl[data-level="热身"]{color:var(--warm-ink);background:var(--warm-soft)}
+.lvl[data-level="前沿"]{color:var(--faint);background:transparent;box-shadow:inset 0 0 0 1px var(--rule-strong)}
 .search{display:flex;align-items:center;gap:8px;min-width:300px;border:1px solid var(--rule-strong);border-radius:var(--r-control);padding:7px 12px;background:var(--surface)}
 .search input{border:0;background:transparent;outline:none;width:100%;font-size:14px}
 .search svg{flex:none;width:16px;height:16px;color:var(--faint)}
@@ -212,6 +226,7 @@ section{padding:96px 0 104px;scroll-margin-top:60px;border-bottom:1px solid var(
 .pline .idx{background:var(--accent-soft);padding:2px 6px;border-radius:var(--r-chip);font-size:11px;white-space:nowrap}
 .pline.why{color:var(--muted)}
 .pstate{padding-top:4px}
+.pmeta .bg:before{content:"·";margin-right:7px}
 .pstate .ref{font-size:12px;color:var(--muted);white-space:nowrap}
 .chev{width:20px;height:20px;margin-top:4px;color:var(--faint);transition:transform 200ms var(--ease)}
 .problem.open .chev{transform:rotate(180deg);color:var(--accent)}
@@ -239,6 +254,27 @@ section{padding:96px 0 104px;scroll-margin-top:60px;border-bottom:1px solid var(
 .more{display:inline-flex;margin:28px 0 0;padding:11px 22px;border:1px solid var(--rule-strong);background:transparent;border-radius:var(--r-control);font-size:14px;font-weight:600;transition:transform 120ms var(--ease)}
 .more:active{transform:scale(.97)}
 .empty{padding:40px 0;color:var(--muted)}
+
+/* 从热身题开始 */
+.start{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:start}
+.steps li{display:grid;grid-template-columns:40px minmax(0,1fr);gap:4px 12px;padding:16px 0;border-top:1px solid var(--rule)}
+.steps li:last-of-type{border-bottom:1px solid var(--rule)}
+.steps .num{grid-row:1/3;font-size:13px;color:var(--warm-ink);font-weight:600;padding-top:3px}
+.steps b{font-weight:600}.steps span:not(.num){grid-column:2;font-size:15px;color:var(--muted)}
+.start pre{margin-top:28px}
+.start pre .ok{color:var(--warm)}.start pre .dim{color:var(--on-deep-faint)}
+.warmlist{border-top:1px solid var(--rule-strong)}
+.warm-item{display:grid;grid-template-columns:52px minmax(0,1fr) auto;gap:4px 16px;align-items:baseline;width:100%;text-align:left;background:transparent;border:0;border-bottom:1px solid var(--rule);padding:16px 0;transition:transform 120ms var(--ease)}
+.warm-item:active{transform:scale(.99)}
+.warm-item .num{font-weight:600;color:var(--d)}
+.warm-item .wt{font:600 16px/1.5 var(--serif)}
+.warm-item .wbg{grid-column:2;font-size:13px;color:var(--faint)}
+.warm-item .wst{grid-row:1/3;grid-column:3;align-self:center;font:600 11px/1 var(--mono);padding:6px 8px;border-radius:var(--r-chip);color:var(--muted);box-shadow:inset 0 0 0 1px var(--rule-strong);white-space:nowrap}
+.warm-item .wst.ready{color:var(--warm-ink);background:var(--warm-soft);box-shadow:none}
+@media (hover:hover){.warm-item:hover .wt{color:var(--accent-ink)}}
+.warm-foot{margin-top:18px;font-size:14px;color:var(--muted)}
+.warm-foot a{color:var(--accent-ink);font-weight:600;text-decoration:none}
+@media (hover:hover){.warm-foot a:hover{text-decoration:underline}}
 
 /* 现有参照 */
 .split{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,1fr);gap:64px;align-items:start}
@@ -281,7 +317,7 @@ pre code{background:none;padding:0;color:inherit}
 
 [hidden]{display:none!important}
 @media (max-width:980px){
-  .wrap{padding:0 28px}.hero-grid,.anatomy{grid-template-columns:1fr;gap:48px}
+  .wrap{padding:0 28px}.hero-grid,.anatomy,.start{grid-template-columns:1fr;gap:48px}
   .section-head{grid-template-columns:1fr;gap:12px}.split{grid-template-columns:1fr;gap:40px}
   .stakes{grid-template-columns:repeat(2,minmax(0,1fr))}
   .stake:nth-child(n){padding:24px 24px 26px 0;border-left:0}
@@ -302,7 +338,8 @@ pre code{background:none;padding:0;color:inherit}
   .versus{grid-template-columns:1fr}.versus .side+.side{padding-left:0;border-left:0;border-top:1px dashed var(--rule)}.versus .side:first-child{padding-right:0}
   .search{min-width:0;width:100%}
   .phead{grid-template-columns:minmax(0,1fr) 20px;gap:6px 12px}
-  .pid{grid-column:1;padding-top:0}.phead .pmain{grid-column:1/-1;grid-row:2}.pstate{grid-column:1;grid-row:3;padding-top:0}
+  .pid{grid-column:1;padding-top:0}.phead .pmain{grid-column:1/-1;grid-row:2}.pstate{grid-column:1;grid-row:3;padding-top:0;flex-direction:row;align-items:center;gap:10px}
+  .warm-item{grid-template-columns:44px minmax(0,1fr)}.warm-item .wst{grid-row:auto;grid-column:2;justify-self:start;margin-top:6px}
   .chev{grid-column:2;grid-row:1}
   .pcontent{padding:2px 16px 16px}
   .criteria li{grid-template-columns:22px minmax(0,1fr)}.criteria li span{grid-column:2}
@@ -317,11 +354,12 @@ const problems = JSON.parse(document.getElementById('data').textContent);
 const DOMAINS = JSON.parse(document.getElementById('domains').textContent);
 const REPO = JSON.parse(document.getElementById('repo').textContent);
 const PAGE = 12;
-let domain = 'all', query = '', shown = PAGE;
+let domain = 'all', level = 'all', query = '', shown = PAGE;
 const list = document.getElementById('plist'), count = document.getElementById('count'), more = document.getElementById('more');
 const tpl = document.getElementById('problem-tpl');
 function matches(p) {
   if (domain !== 'all' && p.area !== domain) return false;
+  if (level !== 'all' && p.track.level !== level) return false;
   if (!query) return true;
   return [p.id, p.title, p.subdomain, p.system, p.observable, p.classical_baseline, p.quantum_role, p.decision].join(' ').toLowerCase().includes(query);
 }
@@ -339,6 +377,15 @@ function build(p) {
   head.setAttribute('aria-controls', body.id); body.setAttribute('aria-labelledby', head.id);
   for (const key of ['id', 'title', 'observable', 'system', 'classical_baseline', 'quantum_role', 'decision']) fill(node, key, p[key]);
   fill(node, 'meta', `${DOMAINS[p.area][0]} · ${p.subdomain || ''}`);
+  fill(node, 'bg', p.track.background);
+  fill(node, 'level', p.track.level);
+  node.querySelector('.lvl').dataset.level = p.track.level;
+  if (p.track.starter) {
+    const a = document.createElement('a');
+    a.href = `${REPO}/tree/main/${p.track.starter.path}`; a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = `运行 starter（${p.track.starter.path}）`;
+    node.querySelector('.pactions').prepend(a);
+  }
   fill(node, 'ref', p.has_reference ? '有参照记录' : '仅文献整理');
   const ref = p.reference;
   fill(node, 'ref_title', ref ? `本项目最新一轮研究：${ref.title}` : '本题暂无本项目的执行记录，从文献出发。');
@@ -371,8 +418,12 @@ function setDomain(value) {
   domain = value;
   document.querySelectorAll('[data-domain]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.domain === value)));
 }
+function setLevel(value) {
+  level = value;
+  document.querySelectorAll('[data-level-filter]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.levelFilter === value)));
+}
 function openProblem(id) {
-  setDomain('all'); query = ''; document.getElementById('q').value = ''; shown = problems.length; render();
+  setDomain('all'); setLevel('all'); query = ''; document.getElementById('q').value = ''; shown = problems.length; render();
   const node = document.getElementById(`p-${id}`);
   if (!node) return;
   setOpen(node, true);
@@ -381,6 +432,7 @@ function openProblem(id) {
   node.querySelector('.phead').focus({preventScroll: true});
 }
 document.querySelectorAll('[data-domain]').forEach(btn => btn.addEventListener('click', () => { setDomain(btn.dataset.domain); shown = PAGE; render(); }));
+document.querySelectorAll('[data-level-filter]').forEach(btn => btn.addEventListener('click', () => { setLevel(btn.dataset.levelFilter); shown = PAGE; render(); }));
 document.querySelectorAll('[data-open]').forEach(btn => btn.addEventListener('click', () => openProblem(btn.dataset.open)));
 document.getElementById('q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); shown = PAGE; render(); });
 more.addEventListener('click', () => { shown = problems.length; render(); });
@@ -403,7 +455,7 @@ def load_problems() -> list[dict]:
             data = json.loads(path.read_text(encoding="utf-8"))
             row = {k: data.get(k) for k in (
                 "id", "title", "area", "subdomain", "system", "observable",
-                "classical_baseline", "quantum_role", "decision", "has_reference",
+                "classical_baseline", "quantum_role", "decision", "has_reference", "track",
             )}
             row["criteria"] = criteria((path.parent / "PROBLEM.md").read_text(encoding="utf-8"))
             row["reference"] = reference(path.parent / "REFERENCE.md")
@@ -463,11 +515,13 @@ def versus(classical: str | None = None, quantum: str | None = None, templated: 
 
 def board(problems: list[dict], total: int) -> str:
     cells = "".join(
-        f'<button type="button" class="cell {DOMAINS[p["area"]][1]}" style="--i:{i}" data-open="{esc(p["id"])}" '
-        f'title="{esc(p["id"])} {esc(p["title"])}" aria-label="{esc(p["id"])} {esc(p["title"])}">{esc(p["id"])}</button>'
+        f'<button type="button" class="cell {DOMAINS[p["area"]][1]}{" warm" if p["track"]["level"] == "热身" else ""}" '
+        f'style="--i:{i}" data-open="{esc(p["id"])}" title="{esc(p["id"])} {esc(p["title"])}（{esc(p["track"]["level"])}）" '
+        f'aria-label="{esc(p["id"])} {esc(p["title"])}，{esc(p["track"]["level"])}">{esc(p["id"])}</button>'
         for i, p in enumerate(problems)
     )
     legend = "".join(f'<span class="{cls}"><i></i>{esc(label)}</span>' for label, cls in DOMAINS.values())
+    legend += '<span class="warm-key"><i></i>热身题</span>'
     return f"""<div class="board" aria-label="题板：{total} 道开放题">
 <div class="board-head"><b>{total} 道题，全部开放</b><span>点亮 0 / {total}</span></div>
 <div class="cells">{cells}</div>
@@ -498,14 +552,51 @@ def specimen(p: dict) -> str:
 </article>"""
 
 
+def warmup(problems: list[dict], stats: dict) -> str:
+    warm = [p for p in problems if p["track"]["level"] == "热身"]
+    items = "".join(
+        f'<li><button type="button" class="warm-item {DOMAINS[p["area"]][1]}" data-open="{esc(p["id"])}">'
+        f'<span class="num">{esc(p["id"])}</span><span class="wt">{esc(p["title"])}</span>'
+        f'<span class="wbg">{esc(p["track"]["background"])}</span>'
+        + (f'<span class="wst ready">starter 可运行</span>' if p["track"].get("starter") else '<span class="wst">starter 待认领</span>')
+        + "</button></li>"
+        for p in warm
+    )
+    demo = next(p for p in warm if p["id"] == WARM_DEMO)["track"]["starter"]
+    levels = stats["levels"]
+    return f"""<section id="start"><div class="wrap">
+<div class="section-head"><div><p class="kicker">First steps</p><h2>第一次参与，从一道热身题开始</h2></div>
+<p>{len(warm)} 道热身题输入公开、笔记本就能跑。带 starter 的题，一条命令就能复现现有参照的数字；复现之后，再往前走一小步。其余题按难度分为进阶 {levels.get("进阶", 0)} 道、前沿 {levels.get("前沿", 0)} 道，在题库里可以筛选。</p></div>
+<div class="start">
+<div>
+<ol class="steps">
+<li><span class="num">01</span><b>装环境</b><span>Python 3.10+，依赖固定版本，只用 CPU。</span></li>
+<li><span class="num">02</span><b>复现参照</b><span>脚本下载公开输入、校验哈希，跑完后逐项对照参照数字并打 ✓。</span></li>
+<li><span class="num">03</span><b>往前一步，提交</b><span>从 starter 的「下一步」挑一个方向；结果不论好坏，用脚手架建目录提交。</span></li>
+</ol>
+<pre><code>uv pip install -r starters/requirements.txt
+python {esc(demo["path"])}/run.py
+<span class="dim">…</span>
+<span class="ok">✓</span> AMI[rbf] = 0.7353419233（参照 0.735342）
+<span class="ok">✓</span> AMI[quantum] = 0.7107767887（参照 0.710777）
+全部落在容差内：你已经复现了现有参照。</code></pre>
+</div>
+<div>
+<ul class="warmlist">{items}</ul>
+<p class="warm-foot">给标着「待认领」的题写 starter，本身就是一份很好的第一份贡献。<a href="{BLOB}/starters/README.md" target="_blank" rel="noopener">入门轨道说明</a> · <a href="{BLOB}/solutions/B16/qaidao-vqe-shot-budget/SOLUTION.md" target="_blank" rel="noopener">一份入门示例解法</a></p>
+</div>
+</div>
+</div></section>"""
+
+
 def problem_template() -> str:
     return f"""<template id="problem-tpl"><li class="problem">
 <button type="button" class="phead" aria-expanded="false">
 <span class="pid" data-f="id"></span>
-<span class="pmain"><span class="ptitle" data-f="title"></span><span class="pmeta"><i></i><span data-f="meta"></span></span>
+<span class="pmain"><span class="ptitle" data-f="title"></span><span class="pmeta"><i></i><span data-f="meta"></span><span class="bg" data-f="bg"></span></span>
 <span class="pline"><span class="idx">02 算什么</span><span data-f="observable"></span></span>
 <span class="pline why"><span class="idx">05 为了什么</span><span data-f="decision"></span></span></span>
-<span class="pstate"><span class="ref" data-f="ref"></span></span>
+<span class="pstate"><span class="lvl" data-f="level"></span><span class="ref" data-f="ref"></span></span>
 {CHEVRON}
 </button>
 <div class="pbody" role="region"><div class="pinner"><div class="pcontent">
@@ -533,6 +624,10 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
         f'<button type="button" class="{cls}" data-domain="{d}" aria-pressed="false"><i></i>{esc(label)}<span class="num">{domains[d]["problems"]}</span></button>'
         for d, (label, cls) in DOMAINS.items()
     ]
+    level_filters = ['<span class="flabel">难度</span>', '<button type="button" data-level-filter="all" aria-pressed="true">全部</button>'] + [
+        f'<button type="button" data-level-filter="{lv}" aria-pressed="false">{lv}<span class="num">{stats["levels"].get(lv, 0)}</span></button>'
+        for lv in LEVELS
+    ]
     pipeline = "".join(f"<li><b>{esc(a)}</b><span>{esc(b)}</span></li>" for a, b in PIPELINE)
     anatomy = "".join(
         f'<li><span class="num">0{i + 1}</span><b>{esc(name)}</b><span>{esc(hint)}</span></li>'
@@ -551,7 +646,7 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 <a class="skip" href="#problems">跳到题库</a>
 <header><div class="wrap nav">
 <a class="brand" href="#top">100<b>-</b>skills</a>
-<nav class="navlinks" aria-label="页面导航"><a href="#why">为什么值得做</a><a href="#problems">题库</a><a href="#reference">现有参照</a><a href="#join">怎么参与</a></nav>
+<nav class="navlinks" aria-label="页面导航"><a href="#why">为什么值得做</a><a href="#start">从热身题开始</a><a href="#problems">题库</a><a href="#reference">现有参照</a><a href="#join">怎么参与</a></nav>
 <a class="contribute" href="{BLOB}/CONTRIBUTING.md" target="_blank" rel="noopener">参与贡献</a>
 </div></header>
 <main id="top">
@@ -560,7 +655,7 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 <p class="kicker">Open problems · {version}</p>
 <h1><span class="num">{total}</span> 道还开放着的科学计算题</h1>
 <p class="lead">固氮、碳捕集、PFAS 治理、电池、药物、高温超导……每一道题都卡在一个<strong>真实的研发判断</strong>上：经典方法做到了哪一步，量子方法能不能补上。挑一道，提交你的解法；被采纳的解法会记入这道题的参照，并在沉淀出的 skill 里署名。</p>
-<div class="cta-row"><a class="btn" href="#problems">挑一道题{ARROW}</a><a class="textlink" href="#why">先看看为什么值得做</a></div>
+<div class="cta-row"><a class="btn" href="#problems">挑一道题{ARROW}</a><a class="textlink" href="#start">第一次参与？从热身题开始</a></div>
 <div class="figures">
 <div><b>{total}</b><span>道开放题</span></div>
 <div><b>{len(domains)}</b><span>个领域</span></div>
@@ -585,10 +680,13 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 {specimen(by_id[SPECIMEN])}
 </div></section>
 
+{warmup(problems, stats)}
+
 <section id="problems"><div class="wrap">
 <div class="section-head"><div><p class="kicker">Problem set</p><h2>题库</h2></div>
-<p>每一行告诉你这道题算什么、为了什么；点开看经典基线与量子方法的对照。完整题面、验收标准和现有参照在每道题的题面文件里。</p></div>
+<p>每一行告诉你这道题算什么、为了什么，右侧标着难度；点开看经典基线与量子方法的对照。完整题面、验收标准和现有参照在每道题的题面文件里。</p></div>
 <div class="toolbar"><div class="filters" role="group" aria-label="按领域筛选">{''.join(filters)}</div>
+<div class="filters levels" role="group" aria-label="按难度筛选">{''.join(level_filters)}</div>
 <label class="search">{SEARCH}<input id="q" type="search" placeholder="搜索题号、体系或方法：Hubbard、VQE、退火" aria-label="搜索题目"></label></div>
 <p class="count" id="count" aria-live="polite"></p>
 <ol class="plist" id="plist"></ol>
@@ -614,11 +712,12 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 <div class="section-head"><div><p class="kicker">Contribute</p><h2>你的解法会去哪里</h2></div>
 <p>想先聊思路，或觉得某道题的标准需要细化，直接开 issue。负结果和部分结果同样欢迎。</p></div>
 <ol class="join">
-<li><span class="num">01</span><h3>挑一道题</h3><p>读它的 PROBLEM.md：五段题面、五条验收标准和现有参照都在里面。</p></li>
-<li><span class="num">02</span><h3>按模板提交</h3><p>把解法放进 <code>solutions/&lt;题号&gt;/&lt;名字&gt;-&lt;短名&gt;/</code>，包括 SOLUTION.md 与 solution.json。</p></li>
+<li><span class="num">01</span><h3>挑一道题</h3><p>第一次参与先挑热身题。读它的 PROBLEM.md：五段题面、五条验收标准和现有参照都在里面。</p></li>
+<li><span class="num">02</span><h3>建目录、写解法</h3><p>脚手架建好 <code>solutions/&lt;题号&gt;/&lt;名字&gt;-&lt;短名&gt;/</code>，填写 SOLUTION.md 与 solution.json。只做一小部分也欢迎。</p></li>
 <li><span class="num">03</span><h3>校验后开 PR</h3><p>本地跑一遍校验器，用 <code>git commit -s</code> 签名提交，CI 会再检查一次。</p></li>
 </ol>
-<pre><code>python3 -I release/tools/check_submissions.py --root .</code></pre>
+<pre><code>python3 -I release/tools/new_solution.py C11 你的名字-短名
+python3 -I release/tools/check_submissions.py --root .</code></pre>
 <ol class="pipeline" aria-label="从提交到 skill">{pipeline}</ol>
 <ul class="credit">
 <li><b>记入参照。</b>被采纳的解法记入这道题的现有参照，后来的人从你停下的地方接着做。</li>
@@ -632,7 +731,7 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 <footer class="closing"><div class="wrap">
 <p class="kicker" style="color:var(--on-deep-muted)">Start here</p>
 <h2>挑一道题，成为点亮第一格的人</h2>
-<p class="lead">{total} 道题都还开放着。先读题面，开个 issue 聊聊思路，或者直接提交一份解法。</p>
+<p class="lead">{total} 道题都还开放着。可以从一道热身题复现参照开始，开个 issue 聊聊思路，或者直接提交一份解法。</p>
 <a class="btn" href="#problems">去题库{ARROW}</a>
 <div class="fine">
 <p>题面与文档采用 CC BY 4.0，代码采用 Apache-2.0，贡献需要 DCO 签名。题面目前只有中文，英文版会在下一个版本补上。详见 <a href="{BLOB}/CONTRIBUTING.md" target="_blank" rel="noopener">CONTRIBUTING.md</a>。</p>

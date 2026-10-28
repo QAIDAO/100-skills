@@ -45,6 +45,16 @@ for (const [domain, n] of domainCounts) {
   check(`筛选 ${domain} 得到 ${n} 题`, (await page.locator('.problem').count()) === n);
 }
 await page.locator('[data-domain="all"]').click();
+const levelCounts = await page.evaluate(() => { const c = {}; for (const p of JSON.parse(document.getElementById('data').textContent)) c[p.track.level] = (c[p.track.level] || 0) + 1; return Object.entries(c); });
+for (const [level, n] of levelCounts) {
+  await page.locator(`[data-level-filter="${level}"]`).click();
+  await page.locator('#more').click({timeout: 1000}).catch(() => {});
+  check(`难度筛选 ${level} 得到 ${n} 题`, (await page.locator('.problem').count()) === n && await page.locator('.problem .lvl').evaluateAll((els, lv) => els.every(e => e.textContent === lv), level));
+}
+const warmCount = levelCounts.find(([l]) => l === '热身')?.[1] ?? 0;
+check('题板标出全部热身题', warmCount > 0 && (await page.locator('.cell.warm').count()) === warmCount);
+check('「从热身题开始」列出全部热身题', (await page.locator('.warm-item').count()) === warmCount);
+await page.locator('[data-level-filter="all"]').click();
 await page.locator('#q').fill('M01');
 check('搜索 M01 得到 1 题', (await page.locator('.problem').count()) === 1);
 const row = page.locator('.problem').first();
@@ -71,6 +81,11 @@ check('点题板格子打开对应题目并滚到视野内', await page.evaluate
   const top = node?.getBoundingClientRect().top ?? -1;
   return Boolean(node?.classList.contains('open')) && top >= 0 && top < innerHeight;
 }));
+await page.locator('[data-level-filter="前沿"]').click();
+await page.locator('.warm-item[data-open="C11"]').click();
+await page.waitForTimeout(400);
+check('热身题列表可直达题目，并清除难度筛选', await page.evaluate(() => document.getElementById('p-C11')?.classList.contains('open') && document.querySelector('[data-level-filter="all"]').getAttribute('aria-pressed') === 'true'));
+check('有 starter 的题展开后给出 starter 链接', await page.evaluate(() => [...document.querySelectorAll('#p-C11 .pactions a')].some(a => a.href.endsWith('/tree/main/starters/C11'))));
 await page.locator('.stake[data-open="B01"]').click();
 await page.waitForTimeout(400);
 check('「为什么值得做」可直达对应题目', await page.evaluate(() => document.getElementById('p-B01')?.classList.contains('open')));
