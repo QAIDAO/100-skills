@@ -7,6 +7,23 @@
   "id": "M15",
   "observable": "还原/电离相关能差、候选断键势垒；最终SEI与循环性能须另建模型",
   "quantum_role": "双因子化QPE电子能核，结合纠错、魔法态工厂与架构并行成本",
+  "reference_input": {
+    "gaps": "原积分、分子轨道与还原态/断键过渡态数据未公开。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2104.10653v2#S2.T1",
+        "value": "EC、LEC、LREC、FEC、LFEC、PF₆⁻、LiPF₆ 七种分子的 Å 坐标（正文 Tables 1/2）"
+      },
+      {
+        "label": "电荷与基组",
+        "origin": "原文",
+        "url": "https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.4.023019",
+        "value": "PF₆⁻ 为 −1，其余中性；原文列出 STO-3G、DZ、6-311G、cc-pVDZ、cc-pVTZ"
+      }
+    ]
+  },
   "scale": "原文包含全部电子（含芯），非小活性空间；不同高斯基组到逻辑电路和光子fusion-based架构逐级预算",
   "sources": [
     {

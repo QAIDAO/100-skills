@@ -1,13 +1,42 @@
 {
   "area": "applied-materials",
-  "classical_baseline": "同空间FCI、MP2/耦合簇或多参考嵌入、经实验校准的力场和GCMC",
+  "classical_baseline": "缩小空间同H FCI；母空间MP2、CCSD(T)、DMRG或SHCI；Fe-MOF-74与Mg-MOF-74六种泛函的周期DFT吸附能",
   "decision": "识别值得进入湿气选择性和再生能耗验证的金属位点与配体方案。",
   "domain": "材料计算",
   "has_reference": true,
   "id": "M17",
-  "observable": "固定模型吸附能、关联能贡献、误差向等温线和选择性的传播",
-  "quantum_role": "DMET/VQE或周期Wannier降维后的QNP采样与SQD求解局域关联能",
-  "scale": "Fe-MOF-74硬件缩小空间20/28比特；物理收敛空间远大于硬件空间",
+  "observable": "固定模型吸附能、相关能贡献及其从缩小空间到母空间的变化；误差向等温线和选择性的传播",
+  "quantum_role": "周期Wannier与MP2自然轨道降维后，先在缩小空间做QNP采样与SQD；下一级在母空间用SQD或相位估计求局域关联能",
+  "reference_input": {
+    "gaps": "母空间本身也是按 MP2 自然轨道阈值截断的结果，不是完整周期体系；积分来自自旋限制 HF，只有单重态 FCIDUMP，Fe 高自旋与晶格磁序未纳入（三重态、五重态只有缩小空间）；Mg-MOF-74 只有 DFT，没有活性空间积分；DFT 能量未含零点能与热校正，等温线不在输入内。",
+    "items": [
+      {
+        "label": "第一级：缩小空间哈密顿量",
+        "origin": "原文",
+        "url": "https://github.com/qcware/quantum_simulation_MOF/tree/ad3c6658f3d32167b6c0462af2451e5b0e062c2a/fullci_reference_pyscf",
+        "value": "作者公开三套 reduced Hamiltonian（CO₂ 4e4o、Fe-MOF-74 10e10o、Fe-MOF-74+CO₂ 14e14o）、周期配对结构与固定 QNP 参数，commit ad3c665；本项目参照运行已复现"
+      },
+      {
+        "label": "第二级：母空间哈密顿量",
+        "origin": "原文",
+        "url": "https://github.com/qcware/quantum_simulation_MOF/tree/ad3c6658f3d32167b6c0462af2451e5b0e062c2a/fullci_reference_pyscf/singlet",
+        "value": "同一 commit 的 `FCIDUMP.CO2/MOF/MOFCO2`：CO₂ 16e26o、Fe-MOF-74 22e40o（冻结 142 个轨道）、Fe-MOF-74+CO₂ 26e42o（冻结 148 个轨道），即缩小空间所取自的母空间，对应 52/80/84 比特"
+      },
+      {
+        "label": "经典对照：周期 DFT",
+        "origin": "原文",
+        "url": "https://github.com/qcware/quantum_simulation_MOF/tree/ad3c6658f3d32167b6c0462af2451e5b0e062c2a/Mg-MOF-74-vasp",
+        "value": "Mg-MOF-74 与 Fe-MOF-74 的 VASP 输入和 OUTCAR，三体系各用 PBE-D3、vdW-DF2、SCAN-rVV10、HSE-D3、HSE-D3(BJ)、B3LYP-D3 计算；Mg²⁺ 为闭壳层，用来区分泛函误差与 Fe 自旋问题"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://doi.org/10.1039/d6dd00023a",
+        "value": "arXiv:2510.02550v1，正式版 Digital Discovery"
+      }
+    ]
+  },
+  "scale": "已复现级：缩小空间4e4o/10e10o/14e14o（8/20/28比特）；下一级：作者母空间16e26o/22e40o/26e42o（52/80/84比特），超出精确FCI",
   "sources": [
     {
       "access_level": "full_text",
@@ -51,7 +80,7 @@
     }
   ],
   "subdomain": "吸附分离与碳捕集",
-  "system": "Al-fumarate、Fe-MOF-74及胺功能化MOF中的CO₂结合位点",
+  "system": "Fe-MOF-74开放Fe(II)位点上的CO₂吸附（周期晶胞，每晶胞一分子CO₂）",
   "tags": [
     "第二轮扩展",
     "MOF",

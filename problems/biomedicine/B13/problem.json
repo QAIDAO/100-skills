@@ -7,6 +7,29 @@
   "id": "B13",
   "observable": "PCET驱动力、重组能、供受体距离分布、kH/kD及温度依赖",
   "quantum_role": "拟以高精度电子求解器修正局部PES，再用核动力学/PCET理论求KIE",
+  "reference_input": {
+    "gaps": "2018 年 122 原子 QM/MM 的 WT/突变体采样模型未公开；参照发现未配对电子主要在碳骨架而非铁上，活性空间的化学身份待核。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://acs.figshare.com/articles/journal_contribution/2040549",
+        "value": "2014 气相簇研究官方 SI 的两套完整 73 原子过渡态坐标（C₂₂H₃₈FeN₈O₄，wB97X 与 B3LYP）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/jz501655v",
+        "value": "J. Phys. Chem. Lett. 2014；2018 JACS 沿用该模型"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "B3LYP 过渡态几何，283 电子（电荷 +1）、六重态，739 AO；CAS7 与 CAS9"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "全蛋白经典采样；局部电子活性区和质子自由度分层；本例无LOX量子硬件结果",
   "sources": [
     {

@@ -7,6 +7,18 @@
   "id": "C10",
   "observable": "计量守恒、路线可行率、相对最优成本差距和包含调参的时间",
   "quantum_role": "反应整数用量及启用变量→QUBO惩罚→D-Wave/SA采样→经典修复与原约束验收",
+  "reference_input": {
+    "gaps": "原 100/12 个实例的完整计量、成本参数与 USPTO 子网络导出未公开。",
+    "items": [
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/pdf/2308.04544",
+        "value": "化学反应网络最优路径的 Ising 求解（2024 版生成 100 个合成规划实例）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "2024研究生成100个可嵌入的合成规划实例；不是完整百万级反应网络直接上QPU",
   "sources": [
     {

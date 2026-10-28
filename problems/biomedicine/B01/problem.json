@@ -7,6 +7,23 @@
   "id": "B01",
   "observable": "相对电子能、低能自旋态、各候选中间体排序",
   "quantum_role": "未来QPE/qubitization求强关联活性空间能量；经典负责结构、嵌入和反应路径",
+  "reference_input": {
+    "gaps": "Li 等 2019 指出该空间缺少代表性开壳层；不要与 113e76o 输入混用。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://github.com/quantumlib/OpenFermion/blob/60a6e1ab3362b6e580a3a96ebf24e42680c78799/src/openfermion/resource_estimates/integrals/eri_reiher.h5",
+        "value": "Reiher 2017 结构 1 的 54e54o 积分 eri_reiher.h5（OpenFermion 固定 commit），S=0、电荷 +3"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/1605.03590",
+        "value": "Reiher 等 2017，arXiv:1605.03590"
+      }
+    ]
+  },
   "scale": "原子、电子、空间轨道、逻辑比特、物理比特必须分列；活性空间模型不能称为全酶模拟",
   "sources": [
     {

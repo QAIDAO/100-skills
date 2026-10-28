@@ -7,6 +7,24 @@
   "id": "C03",
   "observable": "受体布居、累计捕获概率、相干与振动敏感性",
   "quantum_role": "变分实时间演化/Trotter或量子通道模拟",
+  "reference_input": {
+    "gaps": "真实联噻吩二聚体几何、64 分子 MD 与原 5000 帧轨迹未公开。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2101.06879v3",
+        "value": "原文第 V 节简化四分子周期链：耦合 V=40 meV，两组位点能差 20 meV"
+      },
+      {
+        "label": "SI",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/acs.jctc.1c01296.s001",
+        "value": "J. Chem. Theory Comput. 官方 SI"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "论文含单激发与多激发计算；PDF另拟6/8系统比特模型，不能混作论文原设置",
   "sources": [
     {

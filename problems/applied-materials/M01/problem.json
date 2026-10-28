@@ -7,6 +7,28 @@
   "id": "M01",
   "observable": "相对电子能、ΔE‡、反应能与误差传播后的路径排序",
   "quantum_role": "双因子化哈密顿量结合qubitization/QPE求驻点电子能",
+  "reference_input": {
+    "gaps": "原文 V 中间体空间应为 32e24o（参照已订正）；溶剂、零点与热修正不在积分内。",
+    "items": [
+      {
+        "label": "哈密顿量",
+        "origin": "原文",
+        "url": "https://zenodo.org/records/4769113",
+        "value": "作者公开的八个驻点积分，每个驻点三档 defCD 活性空间"
+      },
+      {
+        "label": "论文与 SI",
+        "origin": "原文",
+        "url": "https://zenodo.org/records/7262118",
+        "value": "von Burg 等 2021，arXiv:2007.14460v2；官方 SI"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "中间体 II 的 34e26o 与过渡态 TS 的 38e29o 完整活性空间"
+      }
+    ]
+  },
   "scale": "分子活性空间随驻点与动态关联要求扩大；不是整个反应器的量子模拟",
   "sources": [
     {

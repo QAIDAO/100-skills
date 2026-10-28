@@ -7,6 +7,18 @@
   "id": "B21",
   "observable": "有效路径比例、路径动作量、通道多样性、投影结构分布与单势垒过渡路径时间下界",
   "quantum_role": "经典iMapD/Polar Star探索→gTPS加权图→量子退火候选路径→经典动作量与全原子轨迹核验",
+  "reference_input": {
+    "gaps": "80 节点网络的邻接表、边权、代表构象坐标与退火样本未公开。",
+    "items": [
+      {
+        "label": "SI",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/acs.jctc.3c01174.s001",
+        "value": "构图规则（RMSD 阈值连边、主文式 (15) 赋权）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "BPTI网络80个代表构象，原文报告使用207 qubits；全原子环境与6744个水分子在经典端，量子端编码图节点/边而非原子。",
   "sources": [
     {

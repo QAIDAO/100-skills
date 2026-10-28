@@ -7,6 +7,24 @@
   "id": "M09",
   "observable": "垂直激发能、态排序、多重度、对称性与候选间趋势",
   "quantum_role": "量子嵌入构造可由经典或未来QPU求解的有效哈密顿量",
+  "reference_input": {
+    "gaps": "四类中性 IV 族缺陷的有效一、二体积分、几何与屏蔽定义未取得。",
+    "items": [
+      {
+        "label": "模型规模",
+        "origin": "原文",
+        "url": "https://www.rsc.org/suppdata/d0/cp/d0cp04585c/d0cp04585c1.pdf",
+        "value": "原 SI 给出最小模型 16 电子、9 空间轨道及扩展模型"
+      },
+      {
+        "label": "后续修正",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2203.05493v2",
+        "value": "QDET 双计数修正"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "完整周期缺陷环境用经典处理；局域缺陷有效空间供多体求解，空间大小需逐缺陷核验",
   "sources": [
     {

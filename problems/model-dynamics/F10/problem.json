@@ -7,6 +7,23 @@
   "id": "F10",
   "observable": "Franck–Condon 权重、分辨率指定的谱形、振动态分配",
   "quantum_role": "振动模式映射玻色模式；位移、压缩和线性混合实现谐振态变换。",
+  "reference_input": {
+    "gaps": "参数表把 θ 标为度，但只有弧度解释与硬件表一致；A7/S7 与 A8/S8 的旋转生成元方向相反。参照按弧度与 A7 处理。",
+    "items": [
+      {
+        "label": "模型参数",
+        "origin": "原文",
+        "url": "https://arxiv.org/pdf/1908.03598v2",
+        "value": "H₂O、O₃、NO₂、SO₂ 的双模参数（PRX 表 II/III，对应 arXiv v2 SI 表 I/II）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021060",
+        "value": "Phys. Rev. X 10, 021060"
+      }
+    ]
+  },
   "scale": "2020 超导双玻色模并可解析每模至 15 光子；不是 15 模分子",
   "sources": [
     {

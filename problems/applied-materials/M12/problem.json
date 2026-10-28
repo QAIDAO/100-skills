@@ -7,6 +7,29 @@
   "id": "M12",
   "observable": "相对能、电子附着态/轨道特征、相关描述及空间收敛",
   "quantum_role": "SqDRIFT随机短时演化采样构造Krylov候选，经典子空间对角化",
+  "reference_input": {
+    "gaps": "原文 72 比特表面分子模型的积分未公开。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://zenodo.org/records/15495263",
+        "value": "作者 Zenodo 真空与表面 XYZ（表面文件 305 个坐标：C₁₃Cl₂ + 145 对 NaCl）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/pdf/2507.03516v4",
+        "value": "arXiv:2507.03516v4（含完整 SI）"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "singlet-vacuum.xyz 的 15 原子分子，STO-3G，冻结 54 个双占轨道；中性 4e4o、阴离子 5e4o"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "原始研究量子部分72比特；方法扩展36–50轨道对应72–100比特",
   "sources": [
     {

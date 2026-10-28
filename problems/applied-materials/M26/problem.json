@@ -7,6 +7,7 @@
   "id": "M26",
   "observable": "S₁–T₁ 能隙 ΔE_ST、跃迁偶极与自旋轨道耦合矩阵元",
   "quantum_role": "用 qEOM-VQE、VQD 等多态子空间算法求 S₁ 与 T₁，近期限于前线轨道活性空间；远期用 QPE 扩大活性空间（已有真机演示）",
+  "reference_input": null,
   "scale": "已有演示只用 HOMO/LUMO 双轨道活性空间（约化后 2 个量子比特）与 STO-3G、双 ζ 基组；实用筛选需要更大活性空间与环境效应",
   "sources": [
     {

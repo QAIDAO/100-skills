@@ -7,6 +7,23 @@
   "id": "C01",
   "observable": "相对电子能、电子势垒、反应能、自旋与自然占据",
   "quantum_role": "VQE/ADAPT 或采样子空间求解指定几何的相关电子问题",
+  "reference_input": {
+    "gaps": "SI 中过渡态的 O2/O3 坐标完全重合，过渡态不能直接使用。",
+    "items": [
+      {
+        "label": "几何",
+        "origin": "原文",
+        "url": "https://api.figshare.com/v2/articles/14128697",
+        "value": "Li₂O₄ 反应物 R 与产物 P 原坐标（官方 SI）"
+      },
+      {
+        "label": "模型设置",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/acs.jpca.0c09530",
+        "value": "气相中性单重态，6-311++G(d,p)，作者指定 CAS(2,2) 与 CAS(4,3)"
+      }
+    ]
+  },
   "scale": "论文为受限活性空间；PDF 拟定 CAS(6,6)/CAS(8,8) 与12/16系统比特，非原论文参数",
   "sources": [
     {

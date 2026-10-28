@@ -7,6 +7,22 @@
   "id": "C07",
   "observable": "单重/三重态概率、积分反应产率、角向各向异性",
   "quantum_role": "酉扩张编码开放系统通道并测反应通量",
+  "reference_input": {
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2211.15427",
+        "value": "三自旋、等复合率自由基对模型"
+      },
+      {
+        "label": "SI",
+        "origin": "原文",
+        "url": "https://doi.org/10.1021/acs.jpclett.2c03617.s001",
+        "value": "J. Phys. Chem. Lett. 官方 SI"
+      }
+    ]
+  },
   "scale": "2023文献在IBM QASM模拟器演示；QASM不是实机",
   "sources": [
     {

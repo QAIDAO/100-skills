@@ -7,6 +7,24 @@
   "id": "F01",
   "observable": "自旋结构因子、关联长度、交错磁化",
   "quantum_role": "超冷费米原子在光晶格中直接实现 Hubbard 哈密顿量。",
+  "reference_input": {
+    "gaps": "逐点位串、shot 身份与探测校准未公开；QMC 权重的归一化含义未经作者确认。",
+    "items": [
+      {
+        "label": "数据",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/nature22362",
+        "value": "原文 Figure 3b 的作者 XLS 数据（实验观测与 QMC 分箱权重）"
+      },
+      {
+        "label": "经典基线",
+        "origin": "原文",
+        "url": "https://doi.org/10.1103/PhysRevX.5.041041",
+        "value": "二维 Hubbard 模型基准"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "约 80 个物理晶格位点；并非 80 个门模型量子比特",
   "sources": [
     {

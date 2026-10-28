@@ -14,6 +14,18 @@
 | 量子方法的角色 | 纠缠锻造制备关联信息，QSE扩展子空间，再经典微扰恢复动态关联 |
 | 研发决策 | 在合成和可逆交联设计前，判断反应温区与候选路径是否受电子关联误差影响。 |
 
+## 基准输入
+
+解法默认使用下列输入，以便与现有参照和其他解法直接比较；改用其他输入时请说明理由。「原文」指作者或原论文公开的材料，「参照」指本项目参照运行自行冻结的选择。
+
+| 项目 | 内容 | 出处 |
+|---|---|---|
+| 几何 | 乙烯、环戊二烯与 TS1A，取自 Levandowski/Houk 2015 官方 SI（原量子方法明确引用） | [原文](https://acs.figshare.com/articles/journal_contribution/Theoretical_Analysis_of_Reactivity_Patterns_in_Diels_Alder_Reactions_of_Cyclopentadiene_Cyclohexadiene_and_Cycloheptadiene_with_Symmetrical_and_Unsymmetrical_Dienophiles/2180551) |
+| 基组 | aug-cc-pVTZ（原方法设置） | [原文](https://arxiv.org/html/2403.08107v1) |
+| 参照所用活性空间 | MP2 自然轨道取 HONO/LUNO 附近：乙烯 CAS(2e,2o)、环戊二烯 CAS(4e,4o)、TS CAS(6e,6o)；密度拟合积分 | 参照 |
+
+**尚未公开或需注意：**原作者未拟合积分未公开；呋喃+乙烯极化环境对照的输入未整理。
+
 ## 什么算解
 
 一份解法满足以下五点即可提交审核。负结果同样接受，只要过程可复现、结论有依据。

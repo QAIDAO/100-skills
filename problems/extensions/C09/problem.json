@@ -7,6 +7,29 @@
   "id": "C09",
   "observable": "低能结构命中率、势函数能、密度、连续弛豫后结构身份",
   "quantum_role": "QUBO/HUBO编码与退火；可接因子分解机代理模型",
+  "reference_input": {
+    "gaps": "参照 FCC 参考能与论文差约 1 meV/胞，未能逐点复现；共价单层 MoS₂ 输入未整理。",
+    "items": [
+      {
+        "label": "势函数",
+        "origin": "原文",
+        "url": "https://www.ctcms.nist.gov/potentials/entry/1958--Bernardes-N--Kr/LJ_Shifted_Bernardes_1958LowCutoff_Kr__MO_995724792024_004.html",
+        "value": "OpenKIM LJ_Shifted_Bernardes_1958LowCutoff_Kr__MO_995724792024_004：ε=0.014 eV，σ=3.65 Å，rc=9.91 Å"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://doi.org/10.1103/PhysRevA.109.032416",
+        "value": "Phys. Rev. A 109, 032416"
+      },
+      {
+        "label": "参照所用模型",
+        "origin": "参照",
+        "value": "胞边 5.653 Å，三轴周期，8 个占据位，全部 256 种配置"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "逻辑变量随网格/元素数增长；三体势降阶需辅助变量",
   "sources": [
     {

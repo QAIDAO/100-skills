@@ -7,6 +7,7 @@
   "id": "F14",
   "observable": "基态能、格林函数、DOS、高阶Hamiltonian矩",
   "quantum_role": "候选量子电路准备基态与粒子/空穴响应种子；经典优化、矩处理和连分式重建谱。",
+  "reference_input": null,
   "scale": "1杂质加Nb浴的2(Nb+1)自旋轨道，按常规编码为4/8/12/16比特；论文为经典模拟",
   "sources": [
     {

@@ -7,6 +7,23 @@
   "id": "B04",
   "observable": "基态能、低能自旋关联；扩展可研究氧化还原能差",
   "quantum_role": "LUCJ等线路采样→粒子数恢复→经典子空间对角化",
+  "reference_input": {
+    "gaps": "仓库中 localized、experimental MO 与 numeric MO 三套轨道不同，需要注明使用哪一套。",
+    "items": [
+      {
+        "label": "哈密顿量与线路",
+        "origin": "原文",
+        "url": "https://github.com/jrm874/sqd_data_repository/tree/865bd762d3f96ee79bb362eb3dd46951b48b426e",
+        "value": "[2Fe–2S] 30e20o（20 空间轨道、15α+15β）积分与原 QPY 线路，作者仓库固定 commit"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2405.05068",
+        "value": "arXiv:2405.05068"
+      }
+    ]
+  },
   "scale": "论文工作流最多77比特、10570门；最大值覆盖整项研究，不自动属于每个簇",
   "sources": [
     {

@@ -14,6 +14,17 @@
 | 量子方法的角色 | 量子退火抽样茎组合，经典前处理/后处理负责编码和约束 |
 | 研发决策 | 判断量子退火是否能为RNA构象候选提供有效增量，避免投资错误的能量模型。 |
 
+## 基准输入
+
+解法默认使用下列输入，以便与现有参照和其他解法直接比较；改用其他输入时请说明理由。「原文」指作者或原论文公开的材料，「参照」指本项目参照运行自行冻结的选择。
+
+| 项目 | 内容 | 出处 |
+|---|---|---|
+| 序列与参考结构 | biotin-PK-AN69.1（PseudoBase PKB00176）33 nt 序列及 11 对带假结的参考配对 | [原文](https://www.ekevanbatenburg.nl/PKBASE/PKB00176.HTML) |
+| 论文与代码 | PLOS Comput Biol 2022 SI Table A/D（18 茎、Hybrid 分 −117）；作者代码固定 commit | [原文](https://github.com/dillionfox/quantum_rna_folding/tree/87226da5acbc5e5f67bb121573f8896b179900f9) |
+
+**尚未公开或需注意：**作者代码引用的 test_sets/pseudobase_data_clean.csv 未随仓库公开。
+
 ## 什么算解
 
 一份解法满足以下五点即可提交审核。负结果同样接受，只要过程可复现、结论有依据。

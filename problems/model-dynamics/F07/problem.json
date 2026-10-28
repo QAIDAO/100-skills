@@ -7,6 +7,18 @@
   "id": "F07",
   "observable": "波包密度、电子态布居 Pα(t)、几何相位干涉",
   "quantum_role": "离子内部两能级表示电子态，两运动模表示选定核振动。",
+  "reference_input": {
+    "gaps": "丙二烯阳离子、丁三烯阳离子、吡嗪的完整振电参数未整理。",
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2211.07320v3",
+        "value": "原文两模振电模型：h = n₁ + n₂ + 1 + 1.5(Z Q₁ + X Q₂)"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "每个示范是少电子态、少关键振动模；不是分子的全部 3N−6 核自由度",
   "sources": [
     {

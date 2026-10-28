@@ -7,6 +7,24 @@
   "id": "F03",
   "observable": "自旋结构因子、临界温度/掺杂趋势",
   "quantum_role": "锂-6 原子构成模拟量子实验，Bragg 散射读取磁结构因子。",
+  "reference_input": {
+    "gaps": "原始位串与探测校准未公开。",
+    "items": [
+      {
+        "label": "数据",
+        "origin": "原文",
+        "url": "https://zenodo.org/records/11195759",
+        "value": "作者公开数据：46 个密度点的结构因子 Sπ"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://www.nature.com/articles/s41586-024-07689-2/figures/4",
+        "value": "Nature 2024，图 4（U/t≈11.75，固定指数 1.396）"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "约 800,000 晶格位点；不是 800,000 通用逻辑比特",
   "sources": [
     {

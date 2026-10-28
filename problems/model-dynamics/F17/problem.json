@@ -7,6 +7,22 @@
   "id": "F17",
   "observable": "内区本征值、边界振幅、未来外区匹配得到的相移和截面",
   "quantum_role": "候选QPU求有限体积内的多电子本征态与边界系数；经典端保留外区传播和截面重建。",
+  "reference_input": {
+    "items": [
+      {
+        "label": "模型",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2507.05514v2",
+        "value": "H₂ STO-3G 靶、GTO 连续态、R 矩阵半径 10 a₀、五维试探空间"
+      },
+      {
+        "label": "数据",
+        "origin": "原文",
+        "url": "https://doi.org/10.5281/zenodo.20140843",
+        "value": "作者 Zenodo 档案"
+      }
+    ]
+  },
   "scale": "7比特=2靶自旋轨道+2连续态自旋轨道+3选择比特；五维试探空间；无噪声经典模拟",
   "sources": [
     {

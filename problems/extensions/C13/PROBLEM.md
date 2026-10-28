@@ -14,6 +14,14 @@
 | 量子方法的角色 | 经典排程建模与分解→混合BQM/DQM/CQM服务→独立时间表验证 |
 | 研发决策 | 在固定机器与工序约束下，快速提出可执行且完工时间较短的生产时间表。 |
 
+## 基准输入
+
+解法默认使用下列输入，以便与现有参照和其他解法直接比较；改用其他输入时请说明理由。「原文」指作者或原论文公开的材料，「参照」指本项目参照运行自行冻结的选择。
+
+| 项目 | 内容 | 出处 |
+|---|---|---|
+| 实例 | Brandimarte MK01–MK10；参照使用 mk01.json（SchedulingLab/fjsp-instances 固定 commit） | [原文](https://raw.githubusercontent.com/SchedulingLab/fjsp-instances/ac4c3402312bfbeafcf4472d78be567d4e6b46ab/brandimarte/mk01.json) |
+
 ## 什么算解
 
 一份解法满足以下五点即可提交审核。负结果同样接受，只要过程可复现、结论有依据。

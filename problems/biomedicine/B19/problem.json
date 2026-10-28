@@ -7,6 +7,24 @@
   "id": "B19",
   "observable": "轨道占据、相关能/相对能、选轨误差、线路资源",
   "quantum_role": "化学选轨→UCCSD/HEA→理想/硬件分级验证",
+  "reference_input": {
+    "gaps": "七套优化坐标、电荷/自旋/基组、各 CAS 积分与能量扣除约定未公开。",
+    "items": [
+      {
+        "label": "体系与活性空间",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2512.18203v1",
+        "value": "水、苯、阿司匹林、奥司他韦、吗啡、洛伐他汀、伊马替尼；CAS(2e,2o)/(4e,4o)/(6e,6o)"
+      },
+      {
+        "label": "作者仓库",
+        "origin": "原文",
+        "url": "https://github.com/QureGenAI-Biotech/research/tree/d39de121459cd2285e3d12e4cf481f66c358e1b7/3-Benchmarking",
+        "value": "固定 commit d39de12（未包含该基准的分子输入）"
+      }
+    ],
+    "kind": "self_build"
+  },
   "scale": "模拟表列CAS(2e,2o)/(4e,4o)；实际QPU段为水/苯/阿司匹林2比特HEA",
   "sources": [
     {

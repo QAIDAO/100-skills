@@ -7,6 +7,27 @@
   "id": "F16",
   "observable": "复数S矩阵、P(v′←v;E)、共振位置及宽度",
   "quantum_role": "以量子传播和受控态重叠估计所选通道关联；势能面、通道构造与傅里叶后处理在经典端。",
+  "reference_input": {
+    "items": [
+      {
+        "label": "势能面",
+        "origin": "原文",
+        "url": "https://comp.chem.umn.edu/potlib/src/H3/h3lsth.f",
+        "value": "LSTH H₃ 势能面（POTLIB h3lsth.f）"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/html/2403.03052v1",
+        "value": "arXiv:2403.03052v1"
+      },
+      {
+        "label": "参照所用网格",
+        "origin": "参照",
+        "value": "128×128 网格"
+      }
+    ]
+  },
   "scale": "氢交换示例10个波函数编码比特=8个平移+2个振动，重叠电路另含辅助比特；均为经典电路模拟",
   "sources": [
     {

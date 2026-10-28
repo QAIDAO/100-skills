@@ -7,6 +7,24 @@
   "id": "F05",
   "observable": "畴壁松弛、自旋密度、极化转移全计数统计",
   "quantum_role": "冷原子 Heisenberg 链或超导模拟器实现实时自旋演化。",
+  "reference_input": {
+    "gaps": "数据未给分箱坐标与分物种分布，作者统计量无法精确复现；50 站完整传播尚无参照。",
+    "items": [
+      {
+        "label": "数据",
+        "origin": "原文",
+        "url": "https://doi.org/10.17617/3.8W",
+        "value": "作者公开全计数 JSON：两种几何、6 个时点、各 49 个条目"
+      },
+      {
+        "label": "论文",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2107.00038",
+        "value": "arXiv:2107.00038"
+      }
+    ],
+    "kind": "substitute"
+  },
   "scale": "KPZ 冷原子工作最多约 50 自旋；各平台和几何不能直接拼接",
   "sources": [
     {
