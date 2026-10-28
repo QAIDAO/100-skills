@@ -1,0 +1,29 @@
+name: starters
+
+# 入门轨道的 starter 必须始终能复现参照数字；改动 starter 或入门示例解法时重跑。
+on:
+  pull_request:
+    paths:
+      - "starters/**"
+      - "solutions/B16/qaidao-vqe-shot-budget/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: 安装依赖
+        run: pip install -r starters/requirements.txt
+      - name: B16
+        run: python starters/B16/run.py
+      - name: C11
+        run: python starters/C11/run.py --shots
+      - name: B16 入门示例解法
+        run: python solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py

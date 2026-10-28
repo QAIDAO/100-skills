@@ -53,5 +53,14 @@
     "溶剂化",
     "断键"
   ],
-  "title": "β-拉帕醌前药：碳碳断键与溶剂化自由能"
+  "title": "β-拉帕醌前药：碳碳断键与溶剂化自由能",
+  "track": {
+    "background": "量子化学",
+    "level": "热身",
+    "starter": {
+      "path": "starters/B16",
+      "reproduces": "H2O 与产物 5 的 CAS(2e,2o) 能量和两比特 VQE 能量",
+      "runtime": "笔记本约 40 秒（--all 另需数小时）"
+    }
+  }
 }

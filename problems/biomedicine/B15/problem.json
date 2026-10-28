@@ -58,5 +58,9 @@
     "DMET",
     "VQE"
   ],
-  "title": "凝血酶五配体：DMET/VQE结合能分解"
+  "title": "凝血酶五配体：DMET/VQE结合能分解",
+  "track": {
+    "background": "量子化学",
+    "level": "进阶"
+  }
 }

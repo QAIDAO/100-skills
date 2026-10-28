@@ -54,5 +54,9 @@
     "SQD",
     "自由能"
   ],
-  "title": "Thermolysin：量子修正相对结合自由能"
+  "title": "Thermolysin：量子修正相对结合自由能",
+  "track": {
+    "background": "量子化学",
+    "level": "进阶"
+  }
 }

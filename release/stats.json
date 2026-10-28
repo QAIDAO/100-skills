@@ -33,6 +33,11 @@
       "with_reference": 17
     }
   },
+  "levels": {
+    "前沿": 31,
+    "热身": 7,
+    "进阶": 62
+  },
   "total_problems": 100,
   "with_reference": 80
 }

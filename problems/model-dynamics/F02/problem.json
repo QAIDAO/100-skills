@@ -48,5 +48,9 @@
     "Hubbard",
     "谱权重"
   ],
-  "title": "掺杂 Hubbard 赝能隙：热力学与谱学联合检验"
+  "title": "掺杂 Hubbard 赝能隙：热力学与谱学联合检验",
+  "track": {
+    "background": "凝聚态与动力学",
+    "level": "进阶"
+  }
 }

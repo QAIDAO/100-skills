@@ -53,5 +53,9 @@
     "DMRG",
     "电子传递"
   ],
-  "title": "铁硫簇：SQD与生物电子传递中心"
+  "title": "铁硫簇：SQD与生物电子传递中心",
+  "track": {
+    "background": "量子化学",
+    "level": "进阶"
+  }
 }

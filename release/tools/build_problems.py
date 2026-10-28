@@ -18,6 +18,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 TASKS = ROOT / "tasks"
+TRACKS = ROOT / "release" / "tracks.json"
 
 DOMAINS = {
     "biomedicine": ("B", "生物医药"),
@@ -148,7 +149,35 @@ def acceptance(case: dict) -> list[str]:
     ]
 
 
-def build_problem(case: dict, domain: str, label: str, dest: Path) -> dict:
+def start_here(case: dict, track: dict) -> list[str]:
+    """热身题在题面之前给出入门入口：有 starter 的给命令，没有的邀请认领。"""
+    if track["level"] != "热身":
+        return []
+    starter = track.get("starter")
+    if starter is None:
+        return [
+            "## 从这里开始",
+            "",
+            "这是一道热身题：输入公开，笔记本能跑，参照里有可以直接对照的数字。它还没有 starter，"
+            f"为它写一个本身就是一份很好的第一份贡献，做法见 [入门轨道]({TO_ROOT}/starters/README.md)。",
+            "",
+        ]
+    return [
+        "## 从这里开始",
+        "",
+        f"这是一道热身题。装好 [入门轨道]({TO_ROOT}/starters/README.md) 的环境后运行：",
+        "",
+        "```bash",
+        f"python {starter['path']}/run.py",
+        "```",
+        "",
+        f"{starter['runtime']}。复现的内容：{starter['reproduces']}。"
+        f"脚本逐项对照参照数字并打印 ✓ 或 ✗；之后可以从 [{starter['path']}/README.md]({TO_ROOT}/{starter['path']}/README.md) 里的「下一步」挑一个方向往下做。",
+        "",
+    ]
+
+
+def build_problem(case: dict, domain: str, label: str, dest: Path, track: dict) -> dict:
     src = TASKS / case["folder"]
     dest.mkdir(parents=True)
     sources = [src / "README.md"]
@@ -203,7 +232,9 @@ def build_problem(case: dict, domain: str, label: str, dest: Path) -> dict:
         f"# {case['id']} · {case['title']}",
         "",
         f"> 开放题 · {label} · {case.get('subdomain', '')}",
+        f"> 难度：{track['level']}（[分级说明]({TO_ROOT}/starters/README.md#难度分级)） · 背景：{track['background']}",
         "",
+        *start_here(case, track),
         "## 题面",
         "",
         *statement,
@@ -235,6 +266,7 @@ def build_problem(case: dict, domain: str, label: str, dest: Path) -> dict:
     problem = {key: case.get(key) for key in PROBLEM_FIELDS}
     problem["area"] = domain
     problem["has_reference"] = latest is not None
+    problem["track"] = track
     dump_json(dest / "problem.json", scrub_json(problem))
     dump_json(dest / "evidence.json", {
         "id": case["id"],
@@ -242,17 +274,18 @@ def build_problem(case: dict, domain: str, label: str, dest: Path) -> dict:
         "sources": [{"path": rel(p), "sha256": sha256(p)} for p in [TASKS / "catalog.json", *sources]],
         "omitted": sorted(omitted),
     })
-    return {"has_latest": latest is not None, "status": latest and latest["original_target_status"]}
+    return {"has_latest": latest is not None, "status": latest and latest["original_target_status"], "track": track}
 
 
 def domain_index(label: str, rows: list[tuple[dict, dict]]) -> str:
     out = [
         f"# {label} · 开放题",
         "",
-        f"共 {len(rows)} 题。每题有题面、验收标准和现有参照；提交方式见 [CONTRIBUTING.md](../../CONTRIBUTING.md)。",
+        f"共 {len(rows)} 题。每题有题面、验收标准和现有参照；提交方式见 [CONTRIBUTING.md](../../CONTRIBUTING.md)。"
+        "第一次参与建议从「热身」题开始，见 [入门轨道](../../starters/README.md)。",
         "",
-        "| 题号 | 题目 | 子领域 | 现有参照 |",
-        "|---|---|---|---|",
+        "| 题号 | 题目 | 难度 | 背景 | 子领域 | 现有参照 |",
+        "|---|---|---|---|---|---|",
     ]
     for case, info in rows:
         if info["has_latest"]:
@@ -260,7 +293,11 @@ def domain_index(label: str, rows: list[tuple[dict, dict]]) -> str:
             ref = f"有执行记录；原应用目标{STATUS_LABEL.get(value, value) if value else '状态未记录'}"
         else:
             ref = "仅文献整理"
-        out.append(f"| [{case['id']}]({case['id']}/PROBLEM.md) | {cell(case['title'])} | {cell(case.get('subdomain'))} | {ref} |")
+        track = info["track"]
+        out.append(
+            f"| [{case['id']}]({case['id']}/PROBLEM.md) | {cell(case['title'])} | {track['level']} | {track['background']} "
+            f"| {cell(case.get('subdomain'))} | {ref} |"
+        )
     return "\n".join(out) + "\n"
 
 
@@ -272,8 +309,14 @@ def main() -> None:
     if problems_dir.exists():
         shutil.rmtree(problems_dir)
     catalog = json.loads((TASKS / "catalog.json").read_text(encoding="utf-8"))
+    tracks = json.loads(TRACKS.read_text(encoding="utf-8"))["problems"]
+    missing = {c["id"] for c in catalog} ^ set(tracks)
+    if missing:
+        raise SystemExit(f"release/tracks.json 与 catalog 题号不一致：{sorted(missing)}")
 
-    stats: dict = {"total_problems": 0, "with_reference": 0, "domains": {}}
+    stats: dict = {"total_problems": 0, "with_reference": 0, "levels": {}, "domains": {}}
+    for track in tracks.values():
+        stats["levels"][track["level"]] = stats["levels"].get(track["level"], 0) + 1
     overview = [
         "# 开放题总索引",
         "",
@@ -284,7 +327,7 @@ def main() -> None:
     ]
     for domain, (prefix, label) in DOMAINS.items():
         cases = sorted((c for c in catalog if c["id"].startswith(prefix)), key=lambda c: c["id"])
-        rows = [(c, build_problem(c, domain, label, problems_dir / domain / c["id"])) for c in cases]
+        rows = [(c, build_problem(c, domain, label, problems_dir / domain / c["id"], tracks[c["id"]])) for c in cases]
         (problems_dir / domain / "INDEX.md").write_text(domain_index(label, rows), encoding="utf-8")
         statuses: dict[str, int] = {}
         for _, info in rows:
@@ -297,6 +340,22 @@ def main() -> None:
         stats["with_reference"] += with_ref
         overview.append(f"| {label} | [{domain}]({domain}/INDEX.md) | {len(rows)} | {with_ref} |")
     overview[2] = overview[2].format(total=stats["total_problems"])
+    titles = {c["id"]: c["title"] for c in catalog}
+    areas = {c["id"]: d for d, (prefix, _) in DOMAINS.items() for c in catalog if c["id"].startswith(prefix)}
+    overview += [
+        "",
+        "## 第一次参与：热身题",
+        "",
+        "难度分三级：热身、进阶、前沿（[分级说明](../starters/README.md#难度分级)）。"
+        f"现有 {stats['levels'].get('热身', 0)} 道热身题，输入公开、笔记本能跑；带 starter 的题一条命令就能复现参照数字。",
+        "",
+        "| 题号 | 题目 | 背景 | starter |",
+        "|---|---|---|---|",
+    ]
+    for pid in sorted(p for p, t in tracks.items() if t["level"] == "热身"):
+        t = tracks[pid]
+        starter = f"[{t['starter']['path']}](../{t['starter']['path']}/README.md)" if "starter" in t else "欢迎认领"
+        overview.append(f"| [{pid}]({areas[pid]}/{pid}/PROBLEM.md) | {cell(titles[pid])} | {t['background']} | {starter} |")
     (problems_dir / "INDEX.md").write_text("\n".join(overview) + "\n", encoding="utf-8")
     dump_json(out / "stats.json", stats)
 

@@ -57,5 +57,9 @@
     "硬件演示",
     "近期验证"
   ],
-  "title": "Diels–Alder 环加成势垒：把静态与动态关联接入合成路线判断"
+  "title": "Diels–Alder 环加成势垒：把静态与动态关联接入合成路线判断",
+  "track": {
+    "background": "量子化学",
+    "level": "进阶"
+  }
 }

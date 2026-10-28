@@ -64,5 +64,9 @@
     "格林函数",
     "ARPES"
   ],
-  "title": "Ca₂CuO₂Cl₂ 真实晶体的量子 DMFT：杂质谱与 ARPES 对照"
+  "title": "Ca₂CuO₂Cl₂ 真实晶体的量子 DMFT：杂质谱与 ARPES 对照",
+  "track": {
+    "background": "凝聚态与动力学",
+    "level": "进阶"
+  }
 }

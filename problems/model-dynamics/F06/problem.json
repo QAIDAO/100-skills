@@ -53,5 +53,9 @@
     "Holstein",
     "CDW"
   ],
-  "title": "电子—声子竞争与 Peierls 电荷序：混合求解和开放器件提案"
+  "title": "电子—声子竞争与 Peierls 电荷序：混合求解和开放器件提案",
+  "track": {
+    "background": "凝聚态与动力学",
+    "level": "进阶"
+  }
 }
