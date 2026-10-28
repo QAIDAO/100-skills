@@ -19,11 +19,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "0b3d24b290d7c4aac8943976c65da67ea17a17304c65c6be132b04109d590056"
+      "sha256": "55db069f22abb305040e0f17e5e8ee34c842879ee4bc8c2ffb369ecaaec20b09"
     },
     {
       "path": "tasks/M17-mof-carbon-capture/README.md",
-      "sha256": "cb4e8280b5f3200451a5ac5dab8022fd18854056393c874f550011a015ac7d2b"
+      "sha256": "171820469e2e1b167b26aac3f1e6ded47c08a70911a9bfd632d0d1d3db820b4e"
     },
     {
       "path": "tasks/M17-mof-carbon-capture/mechanism.svg",
