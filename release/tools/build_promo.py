@@ -6,7 +6,8 @@
 叙述文字为固定措辞。不读时钟、不联网。难度与 starter 取自 problem.json 的 track 字段。
 
 呈现重心：每道题为什么值得做（研发决策）、要算什么（可观测量），
-以及「经典基线」与「量子方法的角色」的对照。
+以及「经典基线」与「量子方法的角色」的对照。题库为「左列表 + 右详情」双栏，另有侧边目录；
+这两处最初在 QAIDAO.github.io 上手改，已并回本生成器，站点页面只从这里复制。
 """
 
 from __future__ import annotations
@@ -34,6 +35,10 @@ PARTS = (
 SPECIMEN = "M01"
 LEVELS = ("热身", "进阶", "前沿")
 WARM_DEMO = "C11"  # 「从热身题开始」里演示的 starter
+TOC = (  # 侧边目录：锚点与名称
+    ("top", "开篇"), ("why", "为什么值得做"), ("anatomy", "一道题长什么样"), ("start", "从热身题开始"),
+    ("problems", "题库"), ("reference", "现有参照"), ("join", "怎么参与"),
+)
 REPO = "https://github.com/QAIDAO/100-skills"
 BLOB = f"{REPO}/blob/main"
 CRITERION_RE = re.compile(r"^\d+\. \*\*(.+?)\*\*：(.+)$")
@@ -207,34 +212,18 @@ section{padding:96px 0 104px;scroll-margin-top:60px;border-bottom:1px solid var(
 @media (hover:hover){.filters button[aria-pressed="false"]:hover{color:var(--ink);background:var(--accent-soft)}}
 .filters .flabel{align-self:center;font:500 11px/1 var(--mono);letter-spacing:.08em;color:var(--faint);padding:0 6px 0 2px}
 .filters.levels{flex-basis:100%;order:3;padding-top:2px}
-.pstate{display:flex;flex-direction:column;align-items:flex-end;gap:6px}
 .lvl{font:600 11px/1 var(--mono);letter-spacing:.04em;padding:5px 7px;border-radius:var(--r-chip);color:var(--muted);background:var(--accent-soft);white-space:nowrap}
 .lvl[data-level="热身"]{color:var(--warm-ink);background:var(--warm-soft)}
 .lvl[data-level="前沿"]{color:var(--faint);background:transparent;box-shadow:inset 0 0 0 1px var(--rule-strong)}
 .search{display:flex;align-items:center;gap:8px;min-width:300px;border:1px solid var(--rule-strong);border-radius:var(--r-control);padding:7px 12px;background:var(--surface)}
 .search input{border:0;background:transparent;outline:none;width:100%;font-size:14px}
 .search svg{flex:none;width:16px;height:16px;color:var(--faint)}
-.count{font-size:13px;color:var(--muted);padding:14px 0 6px}
-.problem{border-bottom:1px solid var(--rule);scroll-margin-top:72px}
-.phead{display:grid;grid-template-columns:64px minmax(0,1fr) auto 20px;gap:20px;align-items:start;width:100%;text-align:left;background:transparent;border:0;padding:22px 0;transition:transform 120ms var(--ease)}
-.phead:active{transform:scale(.995)}
-.pid{font:600 15px/1.6 var(--mono);color:var(--d);padding-top:2px}
+.count{font-size:13px;color:var(--muted)}
+.pid{font:600 15px/1.6 var(--mono);color:var(--d)}
 .ptitle{display:block;font:600 19px/1.5 var(--serif)}
 .pmeta{display:flex;align-items:center;gap:7px;font-size:13px;color:var(--faint);margin-top:2px}
 .pmeta i{width:7px;height:7px;border-radius:2px;background:var(--d)}
-.pline{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:baseline;margin-top:8px;font-size:15px}
-.pline .idx{background:var(--accent-soft);padding:2px 6px;border-radius:var(--r-chip);font-size:11px;white-space:nowrap}
-.pline.why{color:var(--muted)}
-.pstate{padding-top:4px}
 .pmeta .bg:before{content:"·";margin-right:7px}
-.pstate .ref{font-size:12px;color:var(--muted);white-space:nowrap}
-.chev{width:20px;height:20px;margin-top:4px;color:var(--faint);transition:transform 200ms var(--ease)}
-.problem.open .chev{transform:rotate(180deg);color:var(--accent)}
-@media (hover:hover){.phead:hover .ptitle{color:var(--accent-ink)}.phead:hover .chev{color:var(--accent)}}
-.pbody{display:grid;grid-template-rows:0fr;transition:grid-template-rows 240ms var(--ease)}
-.problem.open .pbody{grid-template-rows:1fr}
-.pinner{overflow:hidden}
-.pcontent{margin:0 0 26px 84px;padding:4px 24px 18px;background:var(--surface);border:1px solid var(--rule);border-radius:var(--r-panel)}
 .psection{padding:16px 0 4px;border-top:1px solid var(--rule)}
 .versus+.psection{border-top:0}
 .pcap{font:500 11px/1 var(--mono);letter-spacing:.08em;color:var(--faint);text-transform:uppercase;margin-bottom:10px}
@@ -245,15 +234,101 @@ section{padding:96px 0 104px;scroll-margin-top:60px;border-bottom:1px solid var(
 .pnote{font-size:13px;color:var(--muted);margin-top:10px}
 .reftitle{font-weight:600;font-size:14px}
 .refsum{font-size:14px;color:var(--muted);margin-top:4px;line-height:1.7}
-.pactions{display:flex;gap:24px;flex-wrap:wrap;align-items:center;padding-top:14px;font-size:14px}
+.pactions{display:flex;gap:24px;flex-wrap:wrap;align-items:center;padding-top:14px;font-size:14px;border-top:1px solid var(--rule);margin-top:14px}
 .pactions a{color:var(--accent-ink);font-weight:600;text-decoration:none}
 @media (hover:hover){.pactions a:hover{text-decoration:underline}}
-.pactions{border-top:1px solid var(--rule);margin-top:14px}
-.problem.flash .phead{animation:flash 1.2s var(--ease)}
-@keyframes flash{from{background:var(--accent-soft)}to{background:transparent}}
-.more{display:inline-flex;margin:28px 0 0;padding:11px 22px;border:1px solid var(--rule-strong);background:transparent;border-radius:var(--r-control);font-size:14px;font-weight:600;transition:transform 120ms var(--ease)}
-.more:active{transform:scale(.97)}
-.empty{padding:40px 0;color:var(--muted)}
+
+/* 题库：左列表 + 右详情 */
+.md{display:grid;grid-template-columns:minmax(300px,380px) minmax(0,1fr);gap:28px;align-items:start;padding-top:18px}
+.md-index{position:sticky;top:76px;display:flex;flex-direction:column;max-height:calc(100vh - 92px);border:1px solid var(--rule);border-radius:var(--r-panel);background:var(--surface);overflow:hidden}
+.md-bar{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--rule)}
+.md-bar .count{padding:0;margin:0}
+.md-reftoggle{display:inline-flex;align-items:center;gap:6px;font-size:13px;color:var(--muted);cursor:pointer;white-space:nowrap}
+.md-reftoggle input{accent-color:var(--accent);margin:0}
+.md-scroll{overflow-y:auto;overscroll-behavior:contain;padding:0 0 10px}
+.md-group{position:sticky;top:0;z-index:1;display:flex;align-items:center;gap:8px;padding:10px 14px 6px;font:600 12px/1 var(--sans);color:var(--ink);background:linear-gradient(var(--surface),var(--surface)),var(--canvas)}
+.md-group i{width:8px;height:8px;border-radius:2px;background:var(--d)}
+.md-group .num{font:500 11px/1 var(--mono);color:var(--faint)}
+.md-row{display:grid;grid-template-columns:40px minmax(0,1fr) 8px;gap:10px;align-items:center;width:100%;text-align:left;border:0;background:transparent;padding:8px 14px;cursor:pointer;color:var(--ink);border-left:3px solid transparent;font:inherit}
+.md-row .pid{font:600 12px/1.4 var(--mono);color:var(--d);padding:0}
+.md-t{display:flex;flex-direction:column;min-width:0}
+.md-title{font-size:14px;line-height:1.45;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.md-sub{font-size:12px;line-height:1.4;color:var(--faint);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.md-dot{width:7px;height:7px;border-radius:50%}
+.md-row.has-ref .md-dot{background:var(--d);opacity:.65}
+.md-row.on{background:var(--accent-soft);border-left-color:var(--d)}
+.md-row.on .md-title{font-weight:600}
+@media (hover:hover){.md-row:not(.on):hover{background:color-mix(in srgb,var(--accent-soft) 55%,transparent)}}
+.md-row:focus-visible{outline:2px solid var(--accent);outline-offset:-2px}
+.md-scroll .empty{padding:20px 14px;font-size:14px;color:var(--muted)}
+.md-detail{position:sticky;top:76px;max-height:calc(100vh - 92px);overflow-y:auto;overscroll-behavior:contain;border:1px solid var(--rule);border-radius:var(--r-panel);background:var(--surface)}
+.md-sheethead{display:none}
+.md-card{padding:22px 26px 22px}
+.md-dhead{padding-bottom:14px;border-bottom:1px solid var(--rule-strong)}
+.md-dtop{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
+.md-dtop .pid{font:600 15px/1.4 var(--mono);color:var(--d);padding:0}
+.md-dtop .pmeta{margin:0}
+.md-ref{margin-left:auto;font-size:12px;color:var(--muted);border:1px solid var(--rule-strong);border-radius:999px;padding:2px 10px}
+.md-ref.yes{color:var(--d);border-color:color-mix(in srgb,var(--d) 45%,transparent)}
+.md-dhead .ptitle{font-size:24px;line-height:1.4;margin:8px 0 12px}
+.md-nav{display:flex;gap:8px}
+.md-nav button{border:1px solid var(--rule-strong);background:transparent;color:var(--ink);border-radius:var(--r-control);padding:6px 12px;font-size:13px;cursor:pointer}
+.md-nav button:disabled{opacity:.4;cursor:default}
+@media (hover:hover){.md-nav button:not(:disabled):hover{background:var(--accent-soft)}}
+.md-card .ledger{margin-top:4px}
+.md-card .pactions{margin-top:18px}
+@media (max-width:980px){
+  .md{grid-template-columns:1fr}
+  .md-index{position:static;max-height:none;overflow:visible}
+  .md-scroll{overflow:visible}
+  .md-group{top:60px}
+  .md-detail{position:fixed;inset:0;z-index:40;max-height:none;border:0;border-radius:0;background:var(--canvas);transform:translateY(100%);transition:transform .28s var(--ease);visibility:hidden}
+  .md-detail.sheet-open{transform:none;visibility:visible}
+  .md-sheethead{display:flex;position:sticky;top:0;z-index:2;padding:10px 12px;background:var(--canvas);border-bottom:1px solid var(--rule)}
+  .md-close{border:0;background:transparent;color:var(--accent-ink);font:600 15px/1 var(--sans);padding:8px 4px;cursor:pointer}
+  .md-card{padding:18px 16px 40px}
+  .md-dhead .ptitle{font-size:20px}
+  .md-card .versus{grid-template-columns:1fr}
+  .md-card .versus .side+.side{padding-left:0;border-left:0;border-top:1px solid var(--rule)}
+  .md-card .part{grid-template-columns:1fr;gap:4px}
+  .md-card .criteria li{grid-template-columns:22px minmax(0,1fr)}
+  .md-card .criteria li span{grid-column:2}
+  html.md-lock,html.md-lock body{overflow:hidden}
+  #sidenav{z-index:30}
+}
+@media (prefers-reduced-motion:reduce){.md-detail{transition:none}}
+.md-row{grid-template-columns:40px minmax(0,1fr) auto 8px}
+.md-lv{font:600 10px/1 var(--mono);padding:4px 6px;border-radius:var(--r-chip);color:var(--warm-ink);background:var(--warm-soft)}
+.md-lv:empty{display:none}
+.md-dtop .lvl{flex:none}
+
+/* 侧边快速导航 */
+#sidenav{position:fixed;z-index:30;font:14px/1.4 var(--sans)}
+#sidenav ol{list-style:none;margin:0;padding:0}
+#sidenav a{display:flex;align-items:center;gap:10px;padding:7px 10px;border-radius:var(--r-control);color:var(--muted);text-decoration:none;transition:color .2s,background .2s}
+#sidenav a:hover{color:var(--ink);background:var(--accent-soft)}
+#sidenav a .n{font:500 11px/1 var(--mono);color:var(--faint);width:18px;flex:none}
+#sidenav a.on{color:var(--accent-ink);font-weight:600}
+#sidenav a.on .n{color:var(--accent)}
+#sidenav .sn-title{font:500 11px/1 var(--mono);letter-spacing:.1em;text-transform:uppercase;color:var(--faint);padding:0 10px 10px}
+#sidenav .sn-bar{position:absolute;left:0;top:28px;bottom:0;width:2px;background:var(--rule);border-radius:2px}
+#sidenav .sn-bar i{display:block;width:100%;height:0;background:var(--accent);border-radius:2px}
+#sidenav .sn-toggle{display:none}
+/* 宽屏：常驻左侧 */
+@media (min-width:1500px){
+  #sidenav{top:50%;transform:translateY(-50%);left:max(20px,calc((100vw - 1180px)/2 - 190px));width:170px}
+  #sidenav nav{position:relative;padding-left:12px}
+}
+/* 窄屏：右下角按钮展开 */
+@media (max-width:1499px){
+  #sidenav{right:20px;bottom:20px}
+  #sidenav .sn-toggle{display:inline-flex;align-items:center;gap:8px;margin-left:auto;height:44px;padding:0 16px;border-radius:999px;border:1px solid var(--rule-strong);background:var(--surface);color:var(--ink);font:500 14px/1 var(--sans);cursor:pointer;box-shadow:0 8px 24px -12px rgba(39,27,56,.45);backdrop-filter:blur(8px)}
+  #sidenav{display:flex;flex-direction:column;align-items:flex-end;gap:10px}
+  #sidenav nav{order:-1;width:220px;padding:14px 8px 10px;border-radius:var(--r-panel);border:1px solid var(--rule);background:var(--canvas);box-shadow:0 18px 40px -18px rgba(39,27,56,.5);opacity:0;transform:translateY(8px);pointer-events:none;transition:opacity .2s,transform .2s var(--ease);position:relative}
+  #sidenav.open nav{opacity:1;transform:none;pointer-events:auto}
+  #sidenav .sn-bar{display:none}
+}
+@media (prefers-reduced-motion:reduce){#sidenav *{transition:none!important}}
 
 /* 从热身题开始 */
 .start{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:64px;align-items:start}
@@ -324,7 +399,6 @@ pre code{background:none;padding:0;color:inherit}
   .stake:nth-child(2n){padding-left:24px;border-left:1px solid var(--rule)}
   .pipeline{grid-template-columns:1fr}.pipeline:before{right:auto;bottom:6px;width:1px;height:auto}
   .pipeline li{padding:0 0 22px 32px}.credit{grid-template-columns:1fr}
-  .pcontent{margin-left:0}
 }
 @media (max-width:640px){
   .wrap{padding:0 16px}.navlinks{display:none}.nav .contribute{margin-left:auto}
@@ -337,11 +411,7 @@ pre code{background:none;padding:0;color:inherit}
   .part{grid-template-columns:1fr;gap:4px}
   .versus{grid-template-columns:1fr}.versus .side+.side{padding-left:0;border-left:0;border-top:1px dashed var(--rule)}.versus .side:first-child{padding-right:0}
   .search{min-width:0;width:100%}
-  .phead{grid-template-columns:minmax(0,1fr) 20px;gap:6px 12px}
-  .pid{grid-column:1;padding-top:0}.phead .pmain{grid-column:1/-1;grid-row:2}.pstate{grid-column:1;grid-row:3;padding-top:0;flex-direction:row;align-items:center;gap:10px}
   .warm-item{grid-template-columns:44px minmax(0,1fr)}.warm-item .wst{grid-row:auto;grid-column:2;justify-self:start;margin-top:6px}
-  .chev{grid-column:2;grid-row:1}
-  .pcontent{padding:2px 16px 16px}
   .criteria li{grid-template-columns:22px minmax(0,1fr)}.criteria li span{grid-column:2}
   .join{grid-template-columns:1fr;gap:28px}
   .closing{padding:64px 0 56px}
@@ -353,40 +423,88 @@ JS = """
 const problems = JSON.parse(document.getElementById('data').textContent);
 const DOMAINS = JSON.parse(document.getElementById('domains').textContent);
 const REPO = JSON.parse(document.getElementById('repo').textContent);
-const PAGE = 12;
-let domain = 'all', level = 'all', query = '', shown = PAGE;
-const list = document.getElementById('plist'), count = document.getElementById('count'), more = document.getElementById('more');
-const tpl = document.getElementById('problem-tpl');
+const ORDER = ['biomedicine','applied-materials','model-dynamics','extensions'];
+let domain = 'all', level = 'all', query = '', onlyRef = false, current = null, hits = [];
+const listEl = document.getElementById('mdlist'), count = document.getElementById('count');
+const detail = document.getElementById('mddetail'), body = document.getElementById('mdbody');
+const tpl = document.getElementById('detail-tpl');
+const mobile = window.matchMedia('(max-width:980px)');
+const byId = Object.fromEntries(problems.map(p => [p.id, p]));
+
 function matches(p) {
   if (domain !== 'all' && p.area !== domain) return false;
   if (level !== 'all' && p.track.level !== level) return false;
+  if (onlyRef && !p.has_reference) return false;
   if (!query) return true;
   return [p.id, p.title, p.subdomain, p.system, p.observable, p.classical_baseline, p.quantum_role, p.decision].join(' ').toLowerCase().includes(query);
 }
 function fill(root, key, value) { root.querySelectorAll(`[data-f="${key}"]`).forEach(el => { el.textContent = value || '—'; }); }
-function setOpen(node, open) {
-  node.classList.toggle('open', open);
-  node.querySelector('.phead').setAttribute('aria-expanded', String(open));
-  node.querySelector('.pbody').inert = !open;
+
+function renderList() {
+  hits = problems.filter(matches);
+  const frag = document.createDocumentFragment();
+  for (const area of ORDER) {
+    const group = hits.filter(p => p.area === area);
+    if (!group.length) continue;
+    const h = document.createElement('div');
+    h.className = 'md-group ' + DOMAINS[area][1];
+    h.innerHTML = '<i></i><span></span><span class="num"></span>';
+    h.children[1].textContent = DOMAINS[area][0]; h.children[2].textContent = group.length;
+    frag.append(h);
+    for (const p of group) {
+      const b = document.createElement('button');
+      b.type = 'button'; b.className = 'md-row ' + DOMAINS[p.area][1];
+      b.id = 'row-' + p.id; b.dataset.id = p.id; b.setAttribute('role', 'option');
+      b.innerHTML = '<span class="pid"></span><span class="md-t"><span class="md-title"></span><span class="md-sub"></span></span><span class="md-lv"></span><span class="md-dot" aria-hidden="true"></span>';
+      b.querySelector('.pid').textContent = p.id;
+      b.querySelector('.md-title').textContent = p.title;
+      b.querySelector('.md-sub').textContent = p.subdomain || '';
+      if (p.track.level === '热身') b.querySelector('.md-lv').textContent = '热身';
+      if (p.has_reference) { b.classList.add('has-ref'); b.title = '有参照记录'; }
+      b.addEventListener('click', () => select(p.id, {open: true, focus: false}));
+      frag.append(b);
+    }
+  }
+  listEl.replaceChildren(frag);
+  if (!hits.length) {
+    const e = document.createElement('p'); e.className = 'empty';
+    e.textContent = '没有找到匹配的题目。试试题号、体系或方法名，比如 Hubbard、VQE、退火。';
+    listEl.append(e);
+  }
+  count.textContent = `共 ${hits.length} 题`;
+  if (!current || !hits.some(p => p.id === current)) {
+    if (hits.length) select(hits[0].id, {open: false, scroll: false, hash: false});
+    else { current = null; body.replaceChildren(); }
+  } else markActive(false);
 }
-function build(p) {
+
+function markActive(scroll) {
+  listEl.querySelectorAll('.md-row').forEach(r => {
+    const on = r.dataset.id === current;
+    r.classList.toggle('on', on); r.setAttribute('aria-selected', String(on));
+    if (on && scroll) reveal(r);
+  });
+}
+// 只滚动列表自身，不带动整页（scrollIntoView 会把页面也滚过题库标题）
+function reveal(row) {
+  const box = listEl.getBoundingClientRect(), r = row.getBoundingClientRect();
+  const head = listEl.querySelector('.md-group')?.offsetHeight || 0;
+  // 列表在吸顶之前可能伸出视口，按它在视口里可见的那一段计算
+  const top = Math.max(box.top, 60) + head, bottom = Math.min(box.bottom, innerHeight - 16);
+  if (r.top < top) listEl.scrollTop -= top - r.top;
+  else if (r.bottom > bottom) listEl.scrollTop += r.bottom - bottom;
+}
+
+function renderDetail(p) {
   const node = tpl.content.firstElementChild.cloneNode(true);
-  const head = node.querySelector('.phead'), body = node.querySelector('.pbody');
-  node.dataset.id = p.id; node.id = `p-${p.id}`; node.classList.add(DOMAINS[p.area][1]);
-  head.id = `h-${p.id}`; body.id = `b-${p.id}`;
-  head.setAttribute('aria-controls', body.id); body.setAttribute('aria-labelledby', head.id);
+  node.classList.add(DOMAINS[p.area][1]);
   for (const key of ['id', 'title', 'observable', 'system', 'classical_baseline', 'quantum_role', 'decision']) fill(node, key, p[key]);
   fill(node, 'meta', `${DOMAINS[p.area][0]} · ${p.subdomain || ''}`);
   fill(node, 'bg', p.track.background);
   fill(node, 'level', p.track.level);
   node.querySelector('.lvl').dataset.level = p.track.level;
-  if (p.track.starter) {
-    const a = document.createElement('a');
-    a.href = `${REPO}/tree/main/${p.track.starter.path}`; a.target = '_blank'; a.rel = 'noopener';
-    a.textContent = `运行 starter（${p.track.starter.path}）`;
-    node.querySelector('.pactions').prepend(a);
-  }
   fill(node, 'ref', p.has_reference ? '有参照记录' : '仅文献整理');
+  if (p.has_reference) node.querySelector('.md-ref').classList.add('yes');
   const ref = p.reference;
   fill(node, 'ref_title', ref ? `本项目最新一轮研究：${ref.title}` : '本题暂无本项目的执行记录，从文献出发。');
   fill(node, 'ref_summary', ref ? ref.summary : '题面里的文献来源和五段拆解就是起点。');
@@ -399,21 +517,40 @@ function build(p) {
   }
   node.querySelector('[data-link="problem"]').href = `${REPO}/blob/main/problems/${p.area}/${p.id}/PROBLEM.md`;
   node.querySelector('[data-link="issue"]').href = `${REPO}/issues/new?template=problem.yml&title=${encodeURIComponent(`[题目] ${p.id}: `)}`;
-  body.inert = true;
-  head.addEventListener('click', () => setOpen(node, !node.classList.contains('open')));
-  return node;
-}
-function render() {
-  const hits = problems.filter(matches);
-  list.replaceChildren(...hits.slice(0, shown).map(build));
-  if (!hits.length) {
-    const empty = document.createElement('li'); empty.className = 'empty';
-    empty.textContent = '没有找到匹配的题目。试试题号、体系或方法名，比如 Hubbard、VQE、退火。';
-    list.append(empty);
+  if (p.track.starter) {
+    const a = document.createElement('a');
+    a.href = `${REPO}/tree/main/${p.track.starter.path}`; a.target = '_blank'; a.rel = 'noopener';
+    a.textContent = `运行 starter（${p.track.starter.path}）`;
+    node.querySelector('.pactions').prepend(a);
   }
-  count.textContent = hits.length > shown ? `共 ${hits.length} 题，先显示 ${shown} 题` : `共 ${hits.length} 题`;
-  more.hidden = hits.length <= shown;
+  const i = hits.findIndex(x => x.id === p.id);
+  node.querySelectorAll('[data-step]').forEach(btn => {
+    const j = i + Number(btn.dataset.step);
+    btn.disabled = j < 0 || j >= hits.length;
+    btn.addEventListener('click', () => step(Number(btn.dataset.step)));
+  });
+  body.replaceChildren(node);
+  detail.scrollTop = 0;
 }
+
+function select(id, opts = {}) {
+  const p = byId[id]; if (!p) return;
+  current = id;
+  renderDetail(p);
+  markActive(opts.scroll !== false);
+  if (opts.hash !== false) history.replaceState(null, '', '#p-' + id);
+  if (mobile.matches && opts.open) openSheet(true);
+}
+function step(d) {
+  const i = hits.findIndex(x => x.id === current), j = i + d;
+  if (j >= 0 && j < hits.length) select(hits[j].id, {open: false});
+}
+function openSheet(open) {
+  detail.classList.toggle('sheet-open', open);
+  document.documentElement.classList.toggle('md-lock', open && mobile.matches);
+}
+document.getElementById('mdclose').addEventListener('click', () => openSheet(false));
+
 function setDomain(value) {
   domain = value;
   document.querySelectorAll('[data-domain]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.domain === value)));
@@ -422,25 +559,61 @@ function setLevel(value) {
   level = value;
   document.querySelectorAll('[data-level-filter]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.levelFilter === value)));
 }
+// 首屏题板 / 其他入口：直接打开某题
 function openProblem(id) {
-  setDomain('all'); setLevel('all'); query = ''; document.getElementById('q').value = ''; shown = problems.length; render();
-  const node = document.getElementById(`p-${id}`);
-  if (!node) return;
-  setOpen(node, true);
-  node.classList.remove('flash'); void node.offsetWidth; node.classList.add('flash');
-  node.scrollIntoView({block: 'start'});
-  node.querySelector('.phead').focus({preventScroll: true});
+  if (!byId[id]) return;
+  if (!hits.some(p => p.id === id)) { setDomain('all'); setLevel('all'); query = ''; document.getElementById('q').value = ''; onlyRef = false; document.getElementById('onlyref').checked = false; renderList(); }
+  document.getElementById('problems').scrollIntoView({block: 'start'});
+  select(id, {open: true});
 }
-document.querySelectorAll('[data-domain]').forEach(btn => btn.addEventListener('click', () => { setDomain(btn.dataset.domain); shown = PAGE; render(); }));
-document.querySelectorAll('[data-level-filter]').forEach(btn => btn.addEventListener('click', () => { setLevel(btn.dataset.levelFilter); shown = PAGE; render(); }));
+document.querySelectorAll('[data-domain]').forEach(btn => btn.addEventListener('click', () => { setDomain(btn.dataset.domain); renderList(); listEl.scrollTop = 0; }));
+document.querySelectorAll('[data-level-filter]').forEach(btn => btn.addEventListener('click', () => { setLevel(btn.dataset.levelFilter); renderList(); listEl.scrollTop = 0; }));
 document.querySelectorAll('[data-open]').forEach(btn => btn.addEventListener('click', () => openProblem(btn.dataset.open)));
-document.getElementById('q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); shown = PAGE; render(); });
-more.addEventListener('click', () => { shown = problems.length; render(); });
-render();
+document.getElementById('q').addEventListener('input', e => { query = e.target.value.trim().toLowerCase(); renderList(); listEl.scrollTop = 0; });
+document.getElementById('onlyref').addEventListener('change', e => { onlyRef = e.target.checked; renderList(); });
+// 键盘：在题库区域内 ↑/↓ 或 j/k 切换
+document.addEventListener('keydown', e => {
+  if (e.target.closest && e.target.closest('input,textarea')) return;
+  if (e.key === 'Escape') { openSheet(false); return; }
+  const sec = document.getElementById('problems').getBoundingClientRect();
+  if (sec.bottom < 0 || sec.top > innerHeight) return;
+  if (e.key === 'ArrowDown' || e.key === 'j') { e.preventDefault(); step(1); }
+  else if (e.key === 'ArrowUp' || e.key === 'k') { e.preventDefault(); step(-1); }
+});
+mobile.addEventListener('change', () => { if (!mobile.matches) openSheet(false); });
+
+renderList();
+function fromHash(){ const m0 = location.hash.match(/^#p-([A-Za-z][0-9]+)$/); if (m0 && byId[m0[1].toUpperCase()]) openProblem(m0[1].toUpperCase()); }
+window.addEventListener('hashchange', fromHash);
+fromHash();
+"""
+
+SIDENAV_JS = """
+(function(){
+  var root=document.getElementById('sidenav'); if(!root) return;
+  var links=[].slice.call(root.querySelectorAll('ol a'));
+  var secs=links.map(function(a){return document.getElementById(a.getAttribute('href').slice(1))});
+  var bar=root.querySelector('.sn-bar i'), btn=root.querySelector('.sn-toggle');
+  function update(){
+    var cur=0;
+    secs.forEach(function(s,i){ if(s && s.getBoundingClientRect().top<=Math.max(180,innerHeight*.3)) cur=i; });
+    if(window.innerHeight+window.scrollY>=document.documentElement.scrollHeight-4) cur=secs.length-1;
+    links.forEach(function(a,i){ a.classList.toggle('on',i===cur); if(i===cur) a.setAttribute('aria-current','true'); else a.removeAttribute('aria-current'); });
+    var max=document.documentElement.scrollHeight-window.innerHeight;
+    if(bar) bar.style.height=(max>0?Math.min(100,window.scrollY/max*100):0)+'%';
+  }
+  var ticking=false;
+  window.addEventListener('scroll',function(){ if(!ticking){ticking=true;requestAnimationFrame(function(){update();ticking=false;});} },{passive:true});
+  window.addEventListener('resize',update); update();
+  function setOpen(o){ root.classList.toggle('open',o); btn.setAttribute('aria-expanded',o?'true':'false'); }
+  btn.addEventListener('click',function(e){ e.stopPropagation(); setOpen(!root.classList.contains('open')); });
+  links.forEach(function(a){ a.addEventListener('click',function(){ setOpen(false); }); });
+  document.addEventListener('click',function(e){ if(!root.contains(e.target)) setOpen(false); });
+  document.addEventListener('keydown',function(e){ if(e.key==='Escape') setOpen(false); });
+})();
 """
 
 ARROW = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
-CHEVRON = '<svg class="chev" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 8l5 5 5-5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>'
 SEARCH = '<svg viewBox="0 0 16 16" fill="none" aria-hidden="true"><circle cx="7" cy="7" r="4.6" stroke="currentColor" stroke-width="1.4"/><path d="M10.5 10.5L14 14" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg>'
 
 
@@ -590,24 +763,27 @@ python {esc(demo["path"])}/run.py
 
 
 def problem_template() -> str:
-    return f"""<template id="problem-tpl"><li class="problem">
-<button type="button" class="phead" aria-expanded="false">
-<span class="pid" data-f="id"></span>
-<span class="pmain"><span class="ptitle" data-f="title"></span><span class="pmeta"><i></i><span data-f="meta"></span><span class="bg" data-f="bg"></span></span>
-<span class="pline"><span class="idx">02 算什么</span><span data-f="observable"></span></span>
-<span class="pline why"><span class="idx">05 为了什么</span><span data-f="decision"></span></span></span>
-<span class="pstate"><span class="lvl" data-f="level"></span><span class="ref" data-f="ref"></span></span>
-{CHEVRON}
-</button>
-<div class="pbody" role="region"><div class="pinner"><div class="pcontent">
-<dl class="ledger">{part_row(0, field='system')}</dl>
+    return f"""<template id="detail-tpl"><article class="md-card">
+<div class="md-dhead">
+<div class="md-dtop"><span class="pid" data-f="id"></span><span class="pmeta"><i></i><span data-f="meta"></span><span class="bg" data-f="bg"></span></span><span class="lvl" data-f="level"></span><span class="md-ref" data-f="ref"></span></div>
+<h3 class="ptitle" data-f="title"></h3>
+<div class="md-nav"><button type="button" data-step="-1" aria-label="上一题">↑ 上一题</button><button type="button" data-step="1" aria-label="下一题">下一题 ↓</button></div>
+</div>
+<dl class="ledger">{part_row(0, field='system')}{part_row(1, field='observable')}{part_row(4, field='decision')}</dl>
 {versus(templated=True)}
 <div class="psection"><p class="pcap">什么算解</p><ol class="criteria" data-list="criteria"></ol>
 <p class="pnote">负结果同样接受，只要过程可复现、结论有依据。</p></div>
 <div class="psection"><p class="pcap">现有参照</p><p class="reftitle" data-f="ref_title"></p><p class="refsum" data-f="ref_summary"></p></div>
 <div class="pactions"><a data-link="problem" href="#" target="_blank" rel="noopener">在 GitHub 查看完整题面</a><a data-link="issue" href="#" target="_blank" rel="noopener">开 issue 讨论这道题</a><a href="{BLOB}/CONTRIBUTING.md" target="_blank" rel="noopener">提交解法</a></div>
-</div></div></div>
-</li></template>"""
+</article></template>"""
+
+
+def sidenav() -> str:
+    links = "".join(f'<li><a href="#{anchor}"><span class="n">0{i}</span>{esc(name)}</a></li>' for i, (anchor, name) in enumerate(TOC))
+    return f"""<aside id="sidenav" aria-label="快速跳转">
+<nav><div class="sn-title">目录</div><span class="sn-bar" aria-hidden="true"><i></i></span><ol>{links}</ol></nav>
+<button class="sn-toggle" type="button" aria-expanded="false" aria-controls="sidenav"><svg width="16" height="16" viewBox="0 0 16 16" aria-hidden="true"><path d="M2 4h12M2 8h12M2 12h8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" fill="none"/></svg>目录</button>
+</aside>"""
 
 
 def release_version() -> str:
@@ -684,13 +860,21 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 
 <section id="problems"><div class="wrap">
 <div class="section-head"><div><p class="kicker">Problem set</p><h2>题库</h2></div>
-<p>每一行告诉你这道题算什么、为了什么，右侧标着难度；点开看经典基线与量子方法的对照。完整题面、验收标准和现有参照在每道题的题面文件里。</p></div>
+<p>按领域列出全部 {total} 题，可按难度筛选；点任意一题即可查看五段拆解、经典与量子的对照、验收标准和现有参照，也可用 ↑ ↓ 键逐题浏览。</p></div>
 <div class="toolbar"><div class="filters" role="group" aria-label="按领域筛选">{''.join(filters)}</div>
 <div class="filters levels" role="group" aria-label="按难度筛选">{''.join(level_filters)}</div>
 <label class="search">{SEARCH}<input id="q" type="search" placeholder="搜索题号、体系或方法：Hubbard、VQE、退火" aria-label="搜索题目"></label></div>
-<p class="count" id="count" aria-live="polite"></p>
-<ol class="plist" id="plist"></ol>
-<button type="button" class="more" id="more">显示全部 {total} 题</button>
+<div class="md">
+<div class="md-index" aria-label="题目列表">
+<div class="md-bar"><p class="count" id="count" aria-live="polite"></p>
+<label class="md-reftoggle"><input type="checkbox" id="onlyref">只看有参照</label></div>
+<div class="md-scroll" id="mdlist" role="listbox" aria-label="题目"></div>
+</div>
+<div class="md-detail" id="mddetail" aria-live="polite">
+<div class="md-sheethead"><button type="button" class="md-close" id="mdclose" aria-label="返回列表">← 返回列表</button></div>
+<div id="mdbody"></div>
+</div>
+</div>
 </div></section>
 
 <section id="reference"><div class="wrap">
@@ -743,6 +927,8 @@ python3 -I release/tools/check_submissions.py --root .</code></pre>
 <script type="application/json" id="domains">{embed(DOMAINS)}</script>
 <script type="application/json" id="repo">{embed(REPO)}</script>
 <script>{JS}</script>
+{sidenav()}
+<script>{SIDENAV_JS}</script>
 </body>
 </html>
 """
