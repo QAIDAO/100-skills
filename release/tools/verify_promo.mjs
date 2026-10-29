@@ -17,6 +17,8 @@ const checks = [];
 const errors = [];
 const check = (name, pass) => checks.push({name, pass: Boolean(pass)});
 const url = pathToFileURL(path.resolve(pagePath)).href;
+const current = page => page.locator('#mdbody .md-card .pid').innerText();
+const rows = page => page.locator('.md-row');
 
 for (const [width, height] of [[1440, 1000], [768, 1024], [390, 844]]) {
   const page = await browser.newPage({viewport: {width, height}});
@@ -24,12 +26,20 @@ for (const [width, height] of [[1440, 1000], [768, 1024], [390, 844]]) {
   await page.emulateMedia({reducedMotion: 'reduce', colorScheme: 'light'});
   await page.goto(url);
   check(`${width} 无横向滚动`, await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
-  check(`${width} 初始显示 12 道题`, (await page.locator('.problem').count()) === 12);
-  await page.locator('#more').click();
-  const ids = await page.locator('.problem').evaluateAll(rows => rows.map(r => r.dataset.id));
+  const ids = await rows(page).evaluateAll(rs => rs.map(r => r.dataset.id));
   const total = await page.evaluate(() => JSON.parse(document.getElementById('data').textContent).length);
-  check(`${width} 全部 ${total} 题可达且不重复`, total >= 84 && ids.length === total && new Set(ids).size === total);
-  check(`${width} 展开后仍无横向滚动`, await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
+  check(`${width} 列表列出全部 ${total} 题且不重复`, total >= 84 && ids.length === total && new Set(ids).size === total);
+  await rows(page).nth(1).click();
+  await page.waitForTimeout(350);
+  check(`${width} 点题目后详情显示该题`, (await current(page)) === ids[1]);
+  if (width < 980) {
+    check(`${width} 手机端详情以全屏面板弹出`, await page.locator('#mddetail.sheet-open').count() === 1);
+    await page.screenshot({path: path.join(outDir, `sheet-${width}.png`)});
+    await page.locator('#mdclose').click();
+    await page.waitForTimeout(350);
+    check(`${width} 「返回列表」关闭面板`, await page.locator('#mddetail.sheet-open').count() === 0);
+  }
+  check(`${width} 打开详情后仍无横向滚动`, await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth));
   await page.screenshot({path: path.join(outDir, `page-${width}.png`), fullPage: false});
   await page.close();
 }
@@ -38,66 +48,89 @@ const page = await browser.newPage({viewport: {width: 1440, height: 1000}});
 page.on('pageerror', e => errors.push(`interact: ${e.message}`));
 await page.emulateMedia({reducedMotion: 'reduce', colorScheme: 'light'});
 await page.goto(url);
-const domainCounts = await page.evaluate(() => { const c = {}; for (const p of JSON.parse(document.getElementById('data').textContent)) c[p.area] = (c[p.area] || 0) + 1; return Object.entries(c); });
-for (const [domain, n] of domainCounts) {
+const data = await page.evaluate(() => JSON.parse(document.getElementById('data').textContent));
+const tally = key => Object.entries(data.reduce((c, p) => { const k = key(p); c[k] = (c[k] || 0) + 1; return c; }, {}));
+for (const [domain, n] of tally(p => p.area)) {
   await page.locator(`[data-domain="${domain}"]`).click();
-  await page.locator('#more').click({timeout: 1000}).catch(() => {});
-  check(`筛选 ${domain} 得到 ${n} 题`, (await page.locator('.problem').count()) === n);
+  check(`筛选 ${domain} 得到 ${n} 题`, (await rows(page).count()) === n);
 }
 await page.locator('[data-domain="all"]').click();
-const levelCounts = await page.evaluate(() => { const c = {}; for (const p of JSON.parse(document.getElementById('data').textContent)) c[p.track.level] = (c[p.track.level] || 0) + 1; return Object.entries(c); });
-for (const [level, n] of levelCounts) {
+const levelOf = Object.fromEntries(data.map(p => [p.id, p.track.level]));
+for (const [level, n] of tally(p => p.track.level)) {
   await page.locator(`[data-level-filter="${level}"]`).click();
-  await page.locator('#more').click({timeout: 1000}).catch(() => {});
-  check(`难度筛选 ${level} 得到 ${n} 题`, (await page.locator('.problem').count()) === n && await page.locator('.problem .lvl').evaluateAll((els, lv) => els.every(e => e.textContent === lv), level));
+  const shown = await rows(page).evaluateAll(rs => rs.map(r => r.dataset.id));
+  check(`难度筛选 ${level} 得到 ${n} 题`, shown.length === n && shown.every(id => levelOf[id] === level));
 }
-const warmCount = levelCounts.find(([l]) => l === '热身')?.[1] ?? 0;
-check('题板标出全部热身题', warmCount > 0 && (await page.locator('.cell.warm').count()) === warmCount);
-check('「从热身题开始」列出全部热身题', (await page.locator('.warm-item').count()) === warmCount);
 await page.locator('[data-level-filter="all"]').click();
+const warmCount = data.filter(p => p.track.level === '热身').length;
+check('列表行标出全部热身题', warmCount > 0 && (await page.locator('.md-lv').evaluateAll(es => es.filter(e => e.textContent === '热身').length)) === warmCount);
+check('题板标出全部热身题', (await page.locator('.cell.warm').count()) === warmCount);
+check('「从热身题开始」列出全部热身题', (await page.locator('.warm-item').count()) === warmCount);
+await page.locator('#onlyref').check();
+check('「只看有参照」只列有参照的题', (await rows(page).count()) === data.filter(p => p.has_reference).length);
+await page.locator('#onlyref').uncheck();
+
 await page.locator('#q').fill('M01');
-check('搜索 M01 得到 1 题', (await page.locator('.problem').count()) === 1);
-const row = page.locator('.problem').first();
-check('题目行直接显示「算什么」与「为了什么」', await row.locator('.phead').innerText().then(t => t.includes('算什么') && t.includes('为了什么')));
-check('收起时详情不可聚焦', await row.locator('.pbody').evaluate(el => el.inert === true));
-await row.locator('.phead').click();
-await page.waitForTimeout(300);
-check('点开后显示五段题面', await row.innerText().then(t => ['研究体系', '算什么', '经典基线', '量子方法的角色', '为了什么'].every(k => t.includes(k))));
-check('展开后显示 5 条验收标准与现有参照', (await row.locator('.criteria li').count()) === 5 && await row.locator('.reftitle').innerText().then(t => t.length > 4));
-check('题目链接指向 GitHub 并预填 issue', await row.evaluate(r => r.querySelector('[data-link="problem"]').href.startsWith('https://github.com/') && decodeURIComponent(r.querySelector('[data-link="issue"]').href).includes(`[题目] ${r.dataset.id}`)));
-check('点开后 aria-expanded 为 true', (await row.locator('.phead').getAttribute('aria-expanded')) === 'true');
-await row.screenshot({path: path.join(outDir, 'problem-open-1440.png')});
-await row.locator('.phead').focus();
-await page.keyboard.press('Enter');
-check('键盘 Enter 收起题目', (await row.locator('.phead').getAttribute('aria-expanded')) === 'false' && await row.locator('.pbody').evaluate(el => el.inert === true));
-await page.locator('#more').click({timeout: 1000}).catch(() => {});
-check('所有链接都是页内锚点或 https 外链（不依赖本地文件）', await page.evaluate(() => [...document.querySelectorAll('a[href]')].every(a => { const h = a.getAttribute('href'); return h.startsWith('#') || h.startsWith('https://'); })));
-check('题板格数等于题目数', (await page.locator('.cell').count()) === domainCounts.reduce((a, [, n]) => a + n, 0));
+check('搜索 M01 得到 1 题', (await rows(page).count()) === 1);
+const card = page.locator('#mdbody .md-card');
+check('详情显示五段题面', await card.innerText().then(t => ['研究体系', '可观测量', '经典基线', '量子方法的角色', '研发决策'].every(k => t.includes(k))));
+check('详情显示 5 条验收标准与现有参照', (await card.locator('.criteria li').count()) === 5 && await card.locator('.reftitle').innerText().then(t => t.length > 4));
+check('详情显示难度标签', (await card.locator('.lvl').innerText()) === levelOf['M01']);
+check('题目链接指向 GitHub 并预填 issue', await card.evaluate(r => r.querySelector('[data-link="problem"]').href.startsWith('https://github.com/') && decodeURIComponent(r.querySelector('[data-link="issue"]').href).includes('[题目] M01')));
+await card.screenshot({path: path.join(outDir, 'detail-1440.png')});
 await page.locator('#q').fill('');
+await rows(page).first().click();
+const first = await current(page);
+await page.locator('#mdbody [data-step="1"]').click();
+const second = await current(page);
+check('「下一题」切到下一道', second !== first && second === await rows(page).nth(1).getAttribute('data-id'));
+await page.evaluate(() => document.activeElement?.blur());
+await page.keyboard.press('ArrowUp');
+check('键盘 ↑ 切回上一道', (await current(page)) === first);
+check('所有链接都是页内锚点或 https 外链（不依赖本地文件）', await page.evaluate(() => [...document.querySelectorAll('a[href]')].every(a => { const h = a.getAttribute('href'); return h.startsWith('#') || h.startsWith('https://'); })));
+check('题板格数等于题目数', (await page.locator('.cell').count()) === data.length);
 await page.locator('.cell[data-open="M01"]').click();
 await page.waitForTimeout(400);
-check('点题板格子打开对应题目并滚到视野内', await page.evaluate(() => {
-  const node = document.getElementById('p-M01');
-  const top = node?.getBoundingClientRect().top ?? -1;
-  return Boolean(node?.classList.contains('open')) && top >= 0 && top < innerHeight;
-}));
+check('点题板格子打开对应题目并滚到题库', (await current(page)) === 'M01' && await page.evaluate(() => { const t = document.getElementById('problems').getBoundingClientRect().top; return t > -200 && t < innerHeight; }));
+await page.locator('.stake[data-open="B01"]').click();
+await page.waitForTimeout(300);
+check('「为什么值得做」可直达对应题目', (await current(page)) === 'B01');
 await page.locator('[data-level-filter="前沿"]').click();
 await page.locator('.warm-item[data-open="C11"]').click();
-await page.waitForTimeout(400);
-check('热身题列表可直达题目，并清除难度筛选', await page.evaluate(() => document.getElementById('p-C11')?.classList.contains('open') && document.querySelector('[data-level-filter="all"]').getAttribute('aria-pressed') === 'true'));
-check('有 starter 的题展开后给出 starter 链接', await page.evaluate(() => [...document.querySelectorAll('#p-C11 .pactions a')].some(a => a.href.endsWith('/tree/main/starters/C11'))));
-await page.locator('.stake[data-open="B01"]').click();
-await page.waitForTimeout(400);
-check('「为什么值得做」可直达对应题目', await page.evaluate(() => document.getElementById('p-B01')?.classList.contains('open')));
+await page.waitForTimeout(300);
+check('热身题列表可直达题目，并清除难度筛选', (await current(page)) === 'C11' && (await page.locator('[data-level-filter="all"]').getAttribute('aria-pressed')) === 'true');
+check('有 starter 的题在详情里给出 starter 链接', await card.evaluate(r => [...r.querySelectorAll('.pactions a')].some(a => a.href.endsWith('/tree/main/starters/C11'))));
 await page.locator('#q').fill('不存在的题目xyz');
-check('无结果时显示空状态', (await page.locator('.empty').count()) === 1);
+check('无结果时显示空状态', (await page.locator('#mdlist .empty').count()) === 1);
+await page.locator('#q').fill('');
+check('清空搜索后详情恢复显示', (await page.locator('#mdbody .md-card').count()) === 1);
+
+const toc = page.locator('#sidenav');
+check('侧边目录覆盖所有章节', await toc.locator('ol a').evaluateAll(as => as.every(a => document.getElementById(a.getAttribute('href').slice(1)))) && (await toc.locator('ol a').count()) >= 7);
+await toc.locator('.sn-toggle').click();
+check('目录按钮展开目录', await page.locator('#sidenav.open').count() === 1);
+await toc.locator('ol a[href="#join"]').click();
+await page.waitForTimeout(400);
+check('点目录项跳到对应章节并收起', await page.locator('#sidenav.open').count() === 0 && await page.evaluate(() => { const t = document.getElementById('join').getBoundingClientRect().top; return t >= -10 && t < innerHeight / 2; }));
+
 const light = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
 await page.emulateMedia({colorScheme: 'dark'});
-await page.locator('#q').fill('');
 const dark = await page.evaluate(() => getComputedStyle(document.body).backgroundColor);
 check('深色模式切换背景', light !== dark);
+await page.evaluate(() => document.getElementById('problems').scrollIntoView());
 await page.screenshot({path: path.join(outDir, 'dark-1440.png')});
 await page.close();
+
+const deep = await browser.newPage({viewport: {width: 1600, height: 1000}});
+deep.on('pageerror', e => errors.push(`deep: ${e.message}`));
+await deep.emulateMedia({reducedMotion: 'reduce', colorScheme: 'light'});
+await deep.goto(url + '#p-F16');
+await deep.waitForTimeout(300);
+check('深链 #p-F16 直接打开该题', (await current(deep)) === 'F16');
+check('深链打开的题在列表里可见', await deep.evaluate(() => { const r = document.getElementById('row-F16').getBoundingClientRect(); return r.top >= 0 && r.bottom <= innerHeight; }));
+check('宽屏侧边目录常驻且不出按钮', await deep.locator('#sidenav .sn-toggle').isHidden() && await deep.locator('#sidenav nav').isVisible());
+await deep.screenshot({path: path.join(outDir, 'wide-1600.png')});
+await deep.close();
 await browser.close();
 
 check('无 JS 错误', errors.length === 0);
