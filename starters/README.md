@@ -18,19 +18,19 @@ source .venv/bin/activate
 uv pip install -r starters/requirements.txt
 ```
 
-不用 uv 时，`python3 -m venv .venv` 加 `pip install -r starters/requirements.txt` 也可以。依赖只有 numpy、scipy、pyscf、scikit-learn、pandas，版本已固定，以保证数字能逐位对上。Windows 用户若装 pyscf 失败，可以用 WSL。
+不用 uv 时，`python3 -m venv .venv` 加 `pip install -r starters/requirements.txt` 也可以。依赖只有 numpy、scipy、pyscf，版本已固定，以保证数字能逐位对上。Windows 用户若装 pyscf 失败，可以用 WSL。
 
 ## 2. 复现一道题
 
 ```bash
-python starters/C11/run.py
+python starters/B16/run.py
 ```
 
 脚本会下载该题的公开输入（固定版本，校验 SHA-256，缓存到 `starters/.cache/`），跑完经典基线和量子方法，最后逐项对照现有参照：
 
 ```text
 对照现有参照：
-  ✓ AMI[rbf] = 0.7353419233（参照 0.735342，容差 5e-07 ）
+  ✓ E_CAS2[H2O] = -76.04512813（参照 -76.04512813，容差 1e-06 Ha）
   ...
 全部落在容差内：你已经复现了现有参照。
 ```
@@ -44,21 +44,19 @@ python starters/C11/run.py
 ## 4. 提交
 
 ```bash
-python3 -I release/tools/new_solution.py C11 你的名字-短名
+python3 -I release/tools/new_solution.py B16 你的名字-短名
 ```
 
-脚手架会建好 `solutions/C11/你的名字-短名/`，填好题号，并把公开输入的 SHA-256 写进 `solution.json`。照着 `SOLUTION.md` 里的提示填写五节，然后运行校验、开 PR，流程见 [CONTRIBUTING.md](../CONTRIBUTING.md)。写法可以参考 [B16 入门示例解法](../solutions/B16/qaidao-vqe-shot-budget/SOLUTION.md)。
+脚手架会建好 `solutions/B16/你的名字-短名/`，填好题号，并把公开输入的 SHA-256 写进 `solution.json`。照着 `SOLUTION.md` 里的提示填写五节，然后运行校验、开 PR，流程见 [CONTRIBUTING.md](../CONTRIBUTING.md)。写法可以参考 [B16 入门示例解法](../solutions/B16/qaidao-vqe-shot-budget/SOLUTION.md)。
 
 ## 热身题与 starter
 
 | 题号 | 背景 | starter | 运行时间 |
 |---|---|---|---|
 | [B16 β-拉帕醌前药断键](../problems/biomedicine/B16/PROBLEM.md) | 量子化学 | [starters/B16](B16/README.md)：CAS(2e,2o) 两比特 VQE | 约 40 秒 |
-| [C11 METABRIC 分群](../problems/extensions/C11/PROBLEM.md) | 量子机器学习 | [starters/C11](C11/README.md)：4 比特量子核分群稳定性 | 约 30 秒 |
 | [B14 光合能量传递](../problems/biomedicine/B14/PROBLEM.md) | 凝聚态与动力学 | 欢迎认领 | — |
 | [B22 BODIPY 光敏剂](../problems/biomedicine/B22/PROBLEM.md) | 量子化学 | 欢迎认领 | — |
 | [C07 自由基对自旋化学](../problems/extensions/C07/PROBLEM.md) | 凝聚态与动力学 | 欢迎认领 | — |
-| [C12 BreastMNIST 量子卷积](../problems/extensions/C12/PROBLEM.md) | 量子机器学习 | 欢迎认领 | — |
 | [F16 H＋H₂ 反应散射](../problems/model-dynamics/F16/PROBLEM.md) | 凝聚态与动力学 | 欢迎认领 | — |
 
 ## 写一个 starter
@@ -78,8 +76,8 @@ python3 -I release/tools/new_solution.py C11 你的名字-短名
 
 | 难度 | 含义 | 题数 |
 |---|---|---|
-| 热身 | 输入公开，笔记本能跑，参照里有可以直接对照的数字。 | 7 |
-| 进阶 | 已有参照运行，但需要较多领域知识、工作站级算力，或要用替代输入、自建输入。 | 62 |
-| 前沿 | 还没有参照运行，或者目标规模属于容错量子计算，需要先做资源估算。 | 31 |
+| 热身 | 输入公开，笔记本能跑，参照里有可以直接对照的数字。 | 5 |
+| 进阶 | 已有参照运行，但需要较多领域知识、工作站级算力，或要用替代输入、自建输入。 | 60 |
+| 前沿 | 还没有参照运行，或者目标规模属于容错量子计算，需要先做资源估算。 | 35 |
 
-背景分四类：量子化学、凝聚态与动力学、量子机器学习、优化与算法。完整标签见 [release/tracks.json](../release/tracks.json)，各领域索引里也有对应列。
+背景分三类：量子化学、凝聚态与动力学、优化与算法。完整标签见 [release/tracks.json](../release/tracks.json)，各领域索引里也有对应列。

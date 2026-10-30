@@ -5,11 +5,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "55db069f22abb305040e0f17e5e8ee34c842879ee4bc8c2ffb369ecaaec20b09"
+      "sha256": "453c668dd6186cda8909a75aead013de3e7a73bf19ed8b231c15343c7970606c"
     },
     {
       "path": "tasks/C16-quantum-labels-ml-potentials/README.md",
-      "sha256": "a84ae8e026609a4e2e291b344169b5dbeffb4961258e377aa853b70174dcd107"
+      "sha256": "e36d4b79d4fea69c98a07fc1cd36adeaa2de5d8bb2bb0fabd03aa2bd04c11a9d"
     }
   ]
 }

@@ -1,0 +1,15 @@
+{
+  "id": "M29",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "453c668dd6186cda8909a75aead013de3e7a73bf19ed8b231c15343c7970606c"
+    },
+    {
+      "path": "tasks/M29-plutonium-hydride-corrosion/README.md",
+      "sha256": "29b607592479c4bc44bb7b9ef980ec434d9f3f42c7e13d3c484d78684e6d0606"
+    }
+  ]
+}

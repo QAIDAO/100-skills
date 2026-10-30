@@ -1,0 +1,36 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同活性空间的 CASSCF/MC-PDFT、NEVPT2/CASPT2、ROUCCSD 与 DFT；文献中的 QM/MM 速率预测",
+  "decision": "判断色氨酸链空穴跳跃步骤的多组态处理（相对单参考方法）是否改变 Marcus 速率的量级与排序，从而决定光感受与磁感应蛋白的电子转移模型需要多大的量子核心。",
+  "domain": "生物医药",
+  "has_reference": false,
+  "id": "B33",
+  "observable": "电子转移速率 kET、重组能、驱动力、电子耦合 ⟨|H_DA|⟩，以及与超快瞬态吸收实验的比较",
+  "quantum_role": "MD 采样构象→QM/MM 划出 TrpB、TrpC 吲哚环→VQE 制备 CASCI 级波函数并测一、二阶约化密度矩阵→经典 MC-PDFT 补动态关联→四点法求重组能与驱动力，电子耦合另算→Marcus 速率",
+  "reference_input": null,
+  "scale": "活性空间仅 (3e,3o) 与 (4e,3o)、6-31G 基组；20 个 MD 构象的速率在无噪声模拟器上完成，真机只跑了 1 个构象（13 比特超导设备）",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "Q1",
+      "supports": "VQE-PDFT 方法与 CT7/04 基准；ErCRY4 TrpB→TrpC 20 构象无噪声 kET 0.944×10¹⁰（HEA）、0.864×10¹⁰（ROUCCSD）对实验 0.709×10¹⁰ s⁻¹；13 比特超导设备单构象 2.62×10⁸ s⁻¹ 对无噪声 1.89–2.49×10⁸ s⁻¹；活性空间 (3e,3o)/(4e,3o)、6-31G",
+      "title": "Quantum-Classical Hybrid Computation of Electron Transfer in a Cryptochrome Protein via VQE-PDFT and Multiscale Modeling",
+      "type": "预印本 v2（2026-04）；期刊版 Chem. Sci. 17, 3492 (2026)，DOI 10.1039/D5SC07528A",
+      "url": "https://arxiv.org/abs/2508.07359",
+      "year": 2025
+    }
+  ],
+  "subdomain": "光感受蛋白 / 电子转移",
+  "system": "欧亚鸲隐花色素 ErCRY4 中 TrpB（W372）到 TrpC（W318）的空穴转移；每个吲哚环单独作为 QM 片段，其余蛋白与溶剂为 MM",
+  "tags": [
+    "隐花色素",
+    "电子转移",
+    "MC-PDFT",
+    "QM/MM"
+  ],
+  "title": "隐花色素 ErCRY4：色氨酸链电子转移速率的多组态嵌入计算",
+  "track": {
+    "background": "量子化学",
+    "level": "前沿"
+  }
+}

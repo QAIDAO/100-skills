@@ -1,6 +1,6 @@
 # 100-skills：量子计算与科学计算开放题
 
-100 道来自真实研发场景的开放题，覆盖生物医药、应用材料、强关联模型与动力学，以及优化、量子机器学习和线性求解等交叉方向。我们把这些题目开放给量子开源社区：欢迎提交解法，也欢迎提交负结果。被采纳的解法会逐步沉淀为可复用的 skills。
+100 道来自真实研发场景的开放题，覆盖生物医药、应用材料、强关联模型与动力学，以及优化、振幅估计和线性求解等交叉方向。我们把这些题目开放给量子开源社区：欢迎提交解法，也欢迎提交负结果。被采纳的解法会逐步沉淀为可复用的 skills。
 
 ## 展示页
 
@@ -21,37 +21,37 @@
 | 环节 | 回答什么 |
 |---|---|
 | 研究体系 | 要算的到底是哪个分子、材料、模型或数据集 |
-| 可观测量 | 用什么数值回答问题：能垒、谱峰、S 矩阵、ROC-AUC…… |
-| 经典基线 | 同一问题上 DFT、CCSD(T)、DMRG、AFQMC、GNN 等经典方法能做到哪里 |
-| 量子方法的角色 | QPE、VQE、SQD、量子核、退火、振幅估计等方法放在哪一步 |
+| 可观测量 | 用什么数值回答问题：能垒、谱峰、S 矩阵、转移速率…… |
+| 经典基线 | 同一问题上 DFT、CCSD(T)、DMRG、AFQMC 等经典方法能做到哪里 |
+| 量子方法的角色 | QPE、VQE、SQD、退火、振幅估计等方法放在哪一步 |
 | 研发决策 | 结果最终支撑哪一个判断 |
 
-每题还有「什么算解」的五条验收标准，以及「现有参照」：100 题中有 80 题附有我们在经典计算机上完成的计算与模拟记录，包括没通过的检验。参照只用于对照和复用，不代表最优解。
+每题还有「什么算解」的五条验收标准，以及「现有参照」：100 题中有 76 题附有我们在经典计算机上完成的计算与模拟记录，包括没通过的检验。参照只用于对照和复用，不代表最优解。
 
 举几个例子：
 
 - [M01 Ru–Triphos 催化 CO₂ 制甲醇](problems/applied-materials/M01/PROBLEM.md)：关键中间体与过渡态的相对电子能和能垒，经典端为 DFT、CCSD(T) 与 DMRG，量子端为双因子化哈密顿量加 QPE。
-- [B12 药物性质与活性](problems/biomedicine/B12/PROBLEM.md)：量子核与变分模型必须在同一切分、同一指标下跨过 RF/XGBoost、GNN 与 Transformer 基线。
+- [B32 血蓝蛋白 Cu₂O₂](problems/biomedicine/B32/PROBLEM.md)：双铜氧桥的 Anderson 杂质模型，论文附录公开了 6、8、14 比特哈密顿量；先以精确对角化为基准，再看 VQE 的能量与杂质自旋关联对噪声和比特排布有多敏感。
 - [F16 态到态反应散射](problems/model-dynamics/F16/PROBLEM.md)：H + H₂ 的复数 S 矩阵和分支概率，判断哪些产物通道被打开、是否存在共振。
 
 ## 题库
 
 | 领域 | 目录 | 题数 | 有执行记录 |
 |---|---|---|---|
-| 生物医药 | [problems/biomedicine](problems/biomedicine/INDEX.md) | 31 | 26 |
-| 应用材料 | [problems/applied-materials](problems/applied-materials/INDEX.md) | 29 | 22 |
-| 材料模型与动力学 | [problems/model-dynamics](problems/model-dynamics/INDEX.md) | 22 | 17 |
-| 交叉方向与算法 | [problems/extensions](problems/extensions/INDEX.md) | 18 | 15 |
+| 生物医药 | [problems/biomedicine](problems/biomedicine/INDEX.md) | 31 | 24 |
+| 应用材料 | [problems/applied-materials](problems/applied-materials/INDEX.md) | 30 | 22 |
+| 材料模型与动力学 | [problems/model-dynamics](problems/model-dynamics/INDEX.md) | 23 | 17 |
+| 交叉方向与算法 | [problems/extensions](problems/extensions/INDEX.md) | 16 | 13 |
 
 ## 怎么参与
 
 第一次参与，从 [入门轨道](starters/README.md) 开始：每道题都标了难度（热身 / 进阶 / 前沿）和背景，热身题输入公开、笔记本能跑。比如：
 
 ```bash
-python starters/C11/run.py
+python starters/B16/run.py
 ```
 
-大约 30 秒，就能复现 C11 现有参照里的数字：4 比特量子核与 RBF 核的分群稳定性。之后：
+大约 40 秒，就能复现 B16 现有参照里的数字：CAS(2e,2o) 能量与两比特 VQE 能量。之后：
 
 1. 从 starter 的「下一步」里挑一个方向，或者另选一道题读它的 `PROBLEM.md`；
 2. 用 `python3 -I release/tools/new_solution.py <题号> <你的名字>-<短名>` 建好解法目录，按 [CONTRIBUTING.md](CONTRIBUTING.md) 填写；

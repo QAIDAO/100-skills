@@ -1,0 +1,15 @@
+{
+  "id": "B32",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "453c668dd6186cda8909a75aead013de3e7a73bf19ed8b231c15343c7970606c"
+    },
+    {
+      "path": "tasks/B32-hemocyanin-cu2o2/README.md",
+      "sha256": "96dcb7e741651462a97d88b95a5dd804e6e1fa9a5d908476e1e11e13771d9266"
+    }
+  ]
+}

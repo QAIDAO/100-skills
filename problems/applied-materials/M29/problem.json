@@ -1,0 +1,36 @@
+{
+  "area": "applied-materials",
+  "classical_baseline": "同活性空间 CASCI/CASSCF/SA-CASSCF；含自旋轨道耦合的 DFT（PBE-D3、非共线）；相对论多参考方法（CASPT2、DMRG 加自旋轨道耦合）",
+  "decision": "判断钚氢化物催化氧化中关键步骤的反应能是否需要多参考与自旋轨道处理，从而决定核材料储存的安全评估能否继续只依赖 DFT。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "M29",
+  "observable": "各物种总能、O₂ 解离反应能、与 CASCI/CASSCF 的偏差（mHa）",
+  "quantum_role": "DFT 结构与片段截取→AVAS/CASSCF 活性空间→统计 QPE（单辅助比特，以经典变分编译代替受控时间演化，QCELS 取相位）或 QCM4 矩方法→与 CASCI/CASSCF 对照",
+  "reference_input": null,
+  "scale": "硬件实验最多 19 比特（18 个系统比特加 1 个辅助比特），活性空间至 (10e,10o)；Pu₂O₃ 的 QPE 到 (2e,8o)、QCM4 到 (2e,6o)；高自旋基态算不动时改用单重态",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "Q1",
+      "supports": "H1-1/H2-1 上的统计 QPE（变分编译、QCELS）与 QCM4；Pu₂O₃ 3 比特 QPE 差 0.7 mHa；PuH₂(110) O₂ 解离 19 比特、(10e,10o)，500 SPC 时差 0.9–2.6 mHa，反应能 −6.69 对 CASSCF −6.73 eV；CRENBL ECP、未含 SOC；附录 DFT+SOC 气相反应能 −9.286 eV",
+      "title": "Quantum simulation of actinide chemistry: towards scalable algorithms on trapped ion quantum computers",
+      "type": "预印本",
+      "url": "https://arxiv.org/abs/2510.25675",
+      "year": 2025
+    }
+  ],
+  "subdomain": "核材料 / 锕系腐蚀",
+  "system": "气相反应 3PuH₂ + O₂ → Pu₂O₃ + 2PuH₃ 的片段模型，以及 PuH₂(110) 表面物理吸附 O₂ 的解离（截取 Pu₅H₁₂ 团簇）",
+  "tags": [
+    "锕系",
+    "钚",
+    "腐蚀",
+    "QPE"
+  ],
+  "title": "钚氢化物与氧化物：锕系腐蚀反应能的量子相位估计",
+  "track": {
+    "background": "量子化学",
+    "level": "前沿"
+  }
+}

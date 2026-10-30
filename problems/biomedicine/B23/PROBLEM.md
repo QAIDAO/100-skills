@@ -83,9 +83,9 @@
 
 #### 去重说明：为什么是新案例
 
-B09是小分子生成；B10在给定氨基酸序列上寻找构象；B11优化给定配体的对接。这里修改候选氨基酸序列并平衡多种性质。MOQA肽、WS-MOQA抗体与物理驱动结合肽路线按同一研发决策归并。
+B10在给定氨基酸序列上寻找构象；B11优化给定配体的对接；B24在固定蛋白序列下优化同义密码子。这里修改候选氨基酸序列并平衡多种性质。MOQA肽、WS-MOQA抗体与物理驱动结合肽路线按同一研发决策归并。
 
-最近相关旧案：B09、B10、B11。本案决策键：`therapeutic-sequence/multiobjective-candidate-search/developability`。
+最近相关旧案：B10、B11、B24。本案决策键：`therapeutic-sequence/multiobjective-candidate-search/developability`。
 
 #### 应用价值与研究链
 

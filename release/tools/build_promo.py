@@ -34,7 +34,7 @@ PARTS = (
 )
 SPECIMEN = "M01"
 LEVELS = ("热身", "进阶", "前沿")
-WARM_DEMO = "C11"  # 「从热身题开始」里演示的 starter
+WARM_DEMO = "B16"  # 「从热身题开始」里演示的 starter
 TOC = (  # 侧边目录：锚点与名称
     ("top", "开篇"), ("why", "为什么值得做"), ("anatomy", "一道题长什么样"), ("start", "从热身题开始"),
     ("problems", "题库"), ("reference", "现有参照"), ("join", "怎么参与"),
@@ -48,7 +48,7 @@ STAKES = (
     ("碳捕集", "M17"),
     ("PFAS 治理", "M21"),
     ("电池电解液", "M15"),
-    ("药物筛选", "B12"),
+    ("药物结合", "B06"),
     ("高温超导", "F01"),
 )
 PIPELINE = (
@@ -750,8 +750,8 @@ def warmup(problems: list[dict], stats: dict) -> str:
 <pre><code>uv pip install -r starters/requirements.txt
 python {esc(demo["path"])}/run.py
 <span class="dim">…</span>
-<span class="ok">✓</span> AMI[rbf] = 0.7353419233（参照 0.735342）
-<span class="ok">✓</span> AMI[quantum] = 0.7107767887（参照 0.710777）
+<span class="ok">✓</span> E_CAS2[5] = -343.4792527（参照 -343.4792527）
+<span class="ok">✓</span> E_VQE[5] = -343.4792527（参照 -343.4792527）
 全部落在容差内：你已经复现了现有参照。</code></pre>
 </div>
 <div>
@@ -900,7 +900,7 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 <li><span class="num">02</span><h3>建目录、写解法</h3><p>脚手架建好 <code>solutions/&lt;题号&gt;/&lt;名字&gt;-&lt;短名&gt;/</code>，填写 SOLUTION.md 与 solution.json。只做一小部分也欢迎。</p></li>
 <li><span class="num">03</span><h3>校验后开 PR</h3><p>本地跑一遍校验器，用 <code>git commit -s</code> 签名提交，CI 会再检查一次。</p></li>
 </ol>
-<pre><code>python3 -I release/tools/new_solution.py C11 你的名字-短名
+<pre><code>python3 -I release/tools/new_solution.py B16 你的名字-短名
 python3 -I release/tools/check_submissions.py --root .</code></pre>
 <ol class="pipeline" aria-label="从提交到 skill">{pipeline}</ol>
 <ul class="credit">

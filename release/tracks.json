@@ -8,7 +8,6 @@
   "backgrounds": [
     "量子化学",
     "凝聚态与动力学",
-    "量子机器学习",
     "优化与算法"
   ],
   "problems": {
@@ -44,10 +43,6 @@
       "level": "进阶",
       "background": "量子化学"
     },
-    "B09": {
-      "level": "进阶",
-      "background": "量子机器学习"
-    },
     "B10": {
       "level": "进阶",
       "background": "优化与算法"
@@ -55,10 +50,6 @@
     "B11": {
       "level": "进阶",
       "background": "优化与算法"
-    },
-    "B12": {
-      "level": "进阶",
-      "background": "量子机器学习"
     },
     "B13": {
       "level": "进阶",
@@ -181,19 +172,6 @@
       "level": "进阶",
       "background": "优化与算法"
     },
-    "C11": {
-      "level": "热身",
-      "background": "量子机器学习",
-      "starter": {
-        "path": "starters/C11",
-        "runtime": "笔记本约 30 秒（--shots 约 1 分钟）",
-        "reproduces": "RBF、线性、理想量子核的平均 AMI，以及 8192 shots 下的差值与 95% 区间"
-      }
-    },
-    "C12": {
-      "level": "热身",
-      "background": "量子机器学习"
-    },
     "C13": {
       "level": "进阶",
       "background": "优化与算法"
@@ -208,7 +186,7 @@
     },
     "C16": {
       "level": "前沿",
-      "background": "量子机器学习"
+      "background": "量子化学"
     },
     "C17": {
       "level": "前沿",
@@ -421,6 +399,22 @@
     "M30": {
       "level": "前沿",
       "background": "量子化学"
+    },
+    "B32": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "B33": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "M29": {
+      "level": "前沿",
+      "background": "量子化学"
+    },
+    "F23": {
+      "level": "前沿",
+      "background": "凝聚态与动力学"
     }
   }
 }
