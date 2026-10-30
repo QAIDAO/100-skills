@@ -1,0 +1,15 @@
+{
+  "id": "B33",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "453c668dd6186cda8909a75aead013de3e7a73bf19ed8b231c15343c7970606c"
+    },
+    {
+      "path": "tasks/B33-cryptochrome-electron-transfer/README.md",
+      "sha256": "c1b638d986054caf694f39a4cb597d806e6266b63b2f9f21e7001e137c7da0f3"
+    }
+  ]
+}

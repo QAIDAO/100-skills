@@ -1,0 +1,62 @@
+{
+  "area": "model-dynamics",
+  "classical_baseline": "Bethe ansatz 与两自旋子解析结果、t-DMRG/MPS 时间演化、精确对角化、线性自旋波；实验侧为 ISIS MAPS 谱仪的 KCuF₃ 非弹性中子散射数据",
+  "decision": "判断量子处理器算出的动态结构因子能否在峰位、线宽与谱权重上达到与中子实验对照的精度，从而决定把量子模拟用于中子谱解析时，应先投向哪些经典张量网络难以处理的模型（长程、梯子、二维）。",
+  "domain": "材料计算",
+  "has_reference": false,
+  "id": "F23",
+  "observable": "动态结构因子 S(q,ω)、q=π 与 q=π/2 处的峰位与线宽、谱权重、量子 Fisher 信息",
+  "quantum_role": "Heisenberg 链参数→绝热态制备线路→在单个格点施加局域扰动，再做 Trotter 时间演化，测推迟格林函数→经典傅里叶变换得 S(q,ω)→与非弹性中子散射谱按 MSE、SSIM、量子 Fisher 信息比较",
+  "reference_input": {
+    "gaps": "论文未随文公开量子线路、硬件原始计数与所用实验谱的数字化数据；交换常数 J 与实验谱的能量归一化需自行从 Lake 等原文取得。",
+    "items": [
+      {
+        "label": "实验谱",
+        "origin": "原文",
+        "url": "https://doi.org/10.1103/PhysRevLett.111.137205",
+        "value": "KCuF₃ 非弹性中子散射谱，ISIS MAPS 谱仪（Q1 引用的 Lake 等 2013）"
+      },
+      {
+        "label": "模型与线路设定",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2603.15608",
+        "value": "一维 S=1/2 Heisenberg 链；基线为 50 比特、20 个 Trotter 步、步长 0.6（Q1 图 3）"
+      }
+    ],
+    "kind": "self_build"
+  },
+  "scale": "IBM Heron 上最多 50 比特、20–30 个一阶 Trotter 步；链间耦合未进入模型；同规模 MPS 仍可模拟",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "Q1",
+      "supports": "IBM Heron 至多 50 比特计算 KCuF₃ 动态结构因子，与 ISIS MAPS 谱比较；q=π 峰位不确定度低于半高宽 10%；与 50 比特 MPS 相当；小于约 40 比特时谱像素化；XXZ 次近邻扩展单次运行约 18 分钟",
+      "title": "Benchmarking quantum simulation with neutron-scattering experiments",
+      "type": "预印本 v3（2026-04）",
+      "url": "https://arxiv.org/abs/2603.15608",
+      "year": 2026
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "Q1 所用 KCuF₃ 中子谱的来源（Lake、Tennant、Caux 等，ISIS MAPS）；本项目未读全文",
+      "title": "Multispinon Continua at Zero and Finite Temperature in a Near-Ideal Heisenberg Chain",
+      "type": "期刊论文；Phys. Rev. Lett. 111, 137205",
+      "url": "https://doi.org/10.1103/PhysRevLett.111.137205",
+      "year": 2013
+    }
+  ],
+  "subdomain": "量子磁性 / 中子散射",
+  "system": "准一维反铁磁体 KCuF₃ 的 S=1/2 Heisenberg 链（Luttinger 液体、自旋子连续谱）；扩展到含次近邻与强各向异性的 XXZ 链（对应奈尔温度以上的 CsCoX₃）",
+  "tags": [
+    "量子磁性",
+    "中子散射",
+    "动态结构因子",
+    "Heisenberg 链"
+  ],
+  "title": "KCuF₃ 中子散射谱：用量子处理器计算动态结构因子并与实验对照",
+  "track": {
+    "background": "凝聚态与动力学",
+    "level": "前沿"
+  }
+}

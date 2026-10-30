@@ -5,39 +5,39 @@
         "incomplete": 17,
         "未记录": 5
       },
-      "problems": 29,
+      "problems": 30,
       "with_reference": 22
     },
     "biomedicine": {
       "original_target_status": {
-        "incomplete": 23,
+        "incomplete": 21,
         "未记录": 3
       },
       "problems": 31,
-      "with_reference": 26
+      "with_reference": 24
     },
     "extensions": {
       "original_target_status": {
-        "incomplete": 14,
+        "incomplete": 12,
         "未记录": 1
       },
-      "problems": 18,
-      "with_reference": 15
+      "problems": 16,
+      "with_reference": 13
     },
     "model-dynamics": {
       "original_target_status": {
         "incomplete": 13,
         "未记录": 4
       },
-      "problems": 22,
+      "problems": 23,
       "with_reference": 17
     }
   },
   "levels": {
-    "前沿": 31,
-    "热身": 7,
-    "进阶": 62
+    "前沿": 35,
+    "热身": 5,
+    "进阶": 60
   },
   "total_problems": 100,
-  "with_reference": 80
+  "with_reference": 76
 }

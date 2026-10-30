@@ -7,7 +7,7 @@ body:
     id: problem
     attributes:
       label: 题号
-      placeholder: B12
+      placeholder: B16
     validations:
       required: true
   - type: textarea

@@ -2,7 +2,7 @@
 """新建一份解法目录：复制模板，填好题号、作者和标题；有 starter 的题顺带填入公开输入及其 SHA-256。
 
 用法：python3 -I release/tools/new_solution.py <题号> <名字>-<短名> [--title 标题]
-例如：python3 -I release/tools/new_solution.py C11 alice-zz-kernel
+例如：python3 -I release/tools/new_solution.py B16 alice-cas4-vqe
 """
 
 from __future__ import annotations
@@ -27,7 +27,7 @@ def problem_title(pid: str) -> str | None:
 
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
-    parser.add_argument("problem", help="题号，如 C11")
+    parser.add_argument("problem", help="题号，如 B16")
     parser.add_argument("name", help="目录名 <你的名字>-<短名>，如 alice-zz-kernel")
     parser.add_argument("--title", default=None, help="解法标题，可以之后再改")
     args = parser.parse_args()

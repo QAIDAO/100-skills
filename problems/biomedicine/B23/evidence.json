@@ -24,11 +24,11 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "55db069f22abb305040e0f17e5e8ee34c842879ee4bc8c2ffb369ecaaec20b09"
+      "sha256": "453c668dd6186cda8909a75aead013de3e7a73bf19ed8b231c15343c7970606c"
     },
     {
       "path": "tasks/B23-therapeutic-sequence-design/README.md",
-      "sha256": "0fb34cd39bb2c3c72e328e25be2ff218c3e0363ad407c56e2806512b4111e94f"
+      "sha256": "51d162955b845c57e9db3588003beb85c5e02eceeb8638b524ce72f330eddcf0"
     },
     {
       "path": "tasks/B23-therapeutic-sequence-design/mechanism.svg",

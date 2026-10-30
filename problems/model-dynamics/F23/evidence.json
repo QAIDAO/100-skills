@@ -1,0 +1,15 @@
+{
+  "id": "F23",
+  "latest": null,
+  "omitted": [],
+  "sources": [
+    {
+      "path": "tasks/catalog.json",
+      "sha256": "453c668dd6186cda8909a75aead013de3e7a73bf19ed8b231c15343c7970606c"
+    },
+    {
+      "path": "tasks/F23-kcuf3-neutron-dsf/README.md",
+      "sha256": "921f588307d9bdda252a8b9b4fab1476f9a38497cbcfa60894496bf5c177af1f"
+    }
+  ]
+}

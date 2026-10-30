@@ -1,0 +1,62 @@
+{
+  "area": "biomedicine",
+  "classical_baseline": "同一哈密顿量的精确对角化与 Lanczos 杂质求解器（原文 DMFT 所用）、DMRG 或选态 CI；化学侧对照 NEVPT2/CASPT2 QM/MM 与 broken-symmetry DFT",
+  "decision": "判断双铜—氧桥超交换中的多体关联是否改变氧合血蓝蛋白的磁结构与单重/三重态排序，从而决定含双铜氧桥的金属蛋白何时必须用多位点杂质求解器，而不能只靠 DFT(+U) 或单位点 DMFT。",
+  "domain": "生物医药",
+  "has_reference": false,
+  "id": "B32",
+  "observable": "杂质模型基态能、杂质间自旋—自旋关联 ⟨Sz·Sz⟩、改变 U 时的单重—三重态交叉",
+  "quantum_role": "DFT 加簇 DMFT 给出双杂质 Anderson 模型参数→VQE（广义 UCCSD 等拟设）求杂质加浴的基态与杂质间自旋关联→结果回到 DMFT 自洽（原文只做了单次杂质求解，自洽未闭合）",
+  "reference_input": {
+    "gaps": "正文提到的 10、16 比特哈密顿量附录未给出；DFT+DMFT 原始浴参数（ε、V）只以 Pauli 系数形式出现；作者代码未公开。",
+    "items": [
+      {
+        "label": "杂质模型哈密顿量",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2410.12733",
+        "value": "论文附录（arXiv v2）以 Jordan–Wigner Pauli 串形式给出 6、8、14 比特 oxyHc Anderson 杂质模型哈密顿量的全部系数"
+      },
+      {
+        "label": "模型参数",
+        "origin": "原文",
+        "url": "https://arxiv.org/abs/2410.12733",
+        "value": "U=0.29340 Eh、J_Hund=0.02939；6 比特映射下 Ud≈0.2934 Eh、t_pd≈0.0578 Eh、Δ≈0.2104 Eh（正文式 13–17）"
+      }
+    ],
+    "kind": "public"
+  },
+  "scale": "硬件运行限于 6 比特（Quantinuum H 系列与 IBM 设备），14 比特只在模拟器上；完整蛋白环境、DMFT 自洽与有限温度都没有进入量子部分",
+  "sources": [
+    {
+      "access_level": "full_text",
+      "id": "Q1",
+      "supports": "oxyHc 双杂质 Anderson 模型（U=0.2934 Eh、J_Hund=0.02939）的 6–16 比特 VQE；Quantinuum 6 比特收敛到精确值 0.485% 以内，IBM 真机陷入平台；表 II 自旋关联精确值 −0.307 与各拟设、排布结果；附录给出 6、8、14 比特 Pauli 哈密顿量；代码链接缺失",
+      "title": "Quantum Embedding of Non-local Quantum Many-body Interactions in Prototypal Anti-tumor Vaccine Metalloprotein on Near Term Quantum Computing Hardware",
+      "type": "预印本；期刊版 Int. J. Mol. Sci. 26(4), 1550 (2025)",
+      "url": "https://arxiv.org/abs/2410.12733",
+      "year": 2024
+    },
+    {
+      "access_level": "search_excerpt",
+      "id": "R1",
+      "supports": "QM[NEVPT2]/MM 给出过氧到双(μ-氧)异构化势垒低于 DFT 的预测，蛋白环境中过氧式仍更稳定；作为化学侧经典对照",
+      "title": "Revisiting Oxygen Transport Features of Hemocyanin with NEVPT2 Level QM/MM Calculations",
+      "type": "期刊论文",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC11866748/",
+      "year": 2025
+    }
+  ],
+  "subdomain": "金属蛋白 / 氧运输",
+  "system": "氧合血蓝蛋白（oxyHc）58 原子模型的 Cu₂O₂ 核：两个 Cu 为杂质位点，过氧桥与咪唑配体为浴；6、8、14 比特的 Anderson 杂质模型哈密顿量",
+  "tags": [
+    "血蓝蛋白",
+    "双铜中心",
+    "Anderson 杂质模型",
+    "VQE"
+  ],
+  "title": "血蓝蛋白 Cu₂O₂：双铜氧桥的超交换与杂质模型求解",
+  "track": {
+    "background": "量子化学",
+    "level": "前沿"
+  }
+}

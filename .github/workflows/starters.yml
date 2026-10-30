@@ -23,7 +23,5 @@ jobs:
         run: pip install -r starters/requirements.txt
       - name: B16
         run: python starters/B16/run.py
-      - name: C11
-        run: python starters/C11/run.py --shots
       - name: B16 入门示例解法
         run: python solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py

@@ -9,7 +9,7 @@
   "sources": [
     {
       "path": "tasks/catalog.json",
-      "sha256": "55db069f22abb305040e0f17e5e8ee34c842879ee4bc8c2ffb369ecaaec20b09"
+      "sha256": "453c668dd6186cda8909a75aead013de3e7a73bf19ed8b231c15343c7970606c"
     },
     {
       "path": "tasks/F14-vqe-siam-density-states/README.md",
