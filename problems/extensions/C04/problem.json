@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C04",
   "observable": "前三个激发单重态的能隙、取向平均偶极强度、C=O键长区间",
+  "original_target_status": "incomplete",
   "quantum_role": "qLR、qEOM、多态VQE或相关函数计算谱，经典外层反演",
   "reference_input": {
     "gaps": "键长网格之外的几何参数需在解法中写明。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

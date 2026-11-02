@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F10-vibronic-boson-sampling/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F10 · 分子振电子光谱：玻色采样示范与经典可解边界
 
-> 开放题 · 材料模型与动力学 · 振动谱与光功能材料
+> 开放题 · 材料模型与动力学 · 振动谱与光功能材料 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Boson sampling for molecular vibronic spectra](https://www.nature.com/articles/nphoton.2015.153)；[R2 · Efficient Multiphoton Sampling of Molecular Vibronic Spectra on a Superconducting Bosonic Processor](https://journals.aps.org/prx/abstract/10.1103/PhysRevX.10.021060)；[R3 · Quantum-inspired classical algorithms for molecular vibronic spectra](https://www.nature.com/articles/s41567-023-02308-9)；[R4 · Bridging chemistry and Gaussian boson sampling: a photonic hierarchy of approximations for molecular vibronic spectra](https://www.nature.com/articles/s41534-026-01250-x)；[R5 · Large-scale photonic network with squeezed vacuum states for molecular vibronic spectroscopy](https://www.nature.com/articles/s41467-024-50060-2)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 文献核查截至 2026-10-04。优先级：探索观察（编辑判断）；证据：硬件演示。本档案是文献研究和试点设计，未运行复现实验。
 

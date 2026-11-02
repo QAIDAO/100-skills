@@ -1,12 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B04-iron-sulfur-sqd/execution/original40q-MPS-SQD-v4/RESEARCH.md 生成，勿手改 -->
-
-> B04 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B04 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B04 原40q LUCJ 的截断MPS量子组件与采样修补
 
 已在作者公开[2Fe–2S]原30e20o、40qubit空间执行固定优化LUCJ的近似MPS门传播，随后验证保存截断态的有限采样与固定支持SCI。状态为 `normalized_saved_truncated_MPS_sampling_validated_precision_failed`，原目标 `incomplete`。本轮可归档为组件负结果；没有通过1mHa、自旋及整体残差/收敛门，不构成量子优势或电子转移目标完成。
-
-（图：独立验收科研图，本地证据，未随题库发布）
 
 图A展示原Aer采样失败与完整环境修补的统计门；图B为同谱外部近似DMRG参考差，不是严格误差下界；图C/D保留修补后各支持的自旋与投影残差失败。PNG和PDF均由已冻结JSON生成，未重新执行传播或SCI。
 

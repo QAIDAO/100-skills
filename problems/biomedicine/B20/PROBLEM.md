@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B20-pocket-hydration-sites/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B20 · 蛋白口袋水合位点：决定保留还是置换结合水
 
-> 开放题 · 生物医药 · 溶剂构型与先导优化
+> 开放题 · 生物医药 · 溶剂构型与先导优化 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：优化与算法
 
 ## 题面
@@ -43,7 +43,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -62,7 +61,7 @@
 
 图解依据：[R1 · Practical protein-pocket hydration-site prediction for drug discovery on a quantum computer](https://arxiv.org/html/2512.08390v1)；[R2 · Leveraging analog quantum computing with neutral atoms for solvent configuration prediction in drug discovery](https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.043020)；[R3 · Water Networks in Complexes between Proteins and FDA-Approved Drugs](https://pmc.ncbi.nlm.nih.gov/articles/PMC9832485/)；[R4 · Practical protein-pocket hydration-site prediction for drug discovery on a quantum computer](https://journals.aps.org/prresearch/abstract/10.1103/gyqr-mv1h)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
 
 > 更新：2026-10-04｜近期验证｜证据：硬件演示

@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/C09-crystal-annealing/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # C09 · 晶体结构与粒子数联合搜索：多体势的退火编码
 
-> 开放题 · 交叉方向与算法 · 结构搜索与优化
+> 开放题 · 交叉方向与算法 · 结构搜索与优化 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：优化与算法
 
 ## 题面
@@ -45,7 +45,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -64,15 +63,8 @@
 
 图解依据：[R1 · Annealing for prediction of grand canonical crystal structures: Efficient implementation of n-body atomic interactions](https://arxiv.org/abs/2307.03123)；[R2 · Machine learning supported annealing for prediction of grand canonical crystal structures](https://arxiv.org/abs/2408.03556)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 更新：2026-10-04｜领域：材料计算｜证据类型：经典验证｜建议优先级：探索观察
 

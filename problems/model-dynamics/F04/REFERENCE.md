@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F04-frustrated-spin-liquid/execution/native-dynamics-r67/RESEARCH.md 生成，勿手改 -->
-
-> F04 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> F04 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # F04 R67：18自旋原生动力学与固定有限读出
 
@@ -8,7 +6,7 @@
 
 ## 模型、初态和观测
 
-[原论文v2](https://arxiv.org/html/2501.18554v2)研究中性原子Kitaev模型；本轮不是作者72data+32anc硬件反馈复现，也不是指定材料。3×3单元、18自旋，x周期/y开放，24条bond、6个指定hexface，H=−ΣXX−ΣYY−JzΣZZ，Jz∈{1,8}，单位采用Jx=Jy=1与ℏ=1。几何、signed Pauli和补全见冻结源设计（本地证据，未随题库发布）。9ZZ+6W秩15，加circumference C0和两个边界Dpair得到完整18稳定子；边界补全定义初态，不宣称全部与H对易。
+[原论文v2](https://arxiv.org/html/2501.18554v2)研究中性原子Kitaev模型；本轮不是作者72data+32anc硬件反馈复现，也不是指定材料。3×3单元、18自旋，x周期/y开放，24条bond、6个指定hexface，H=−ΣXX−ΣYY−JzΣZZ，Jz∈{1,8}，单位采用Jx=Jy=1与ℏ=1。几何、signed Pauli和补全见冻结源设计。9ZZ+6W秩15，加circumference C0和两个边界Dpair得到完整18稳定子；边界补全定义初态，不宣称全部与H对易。
 
 Qiskit从完整signed稳定子生成Clifford，真实从0制备并降为RY/RZ/CX与GP相位记录，未注入ED答案或免费投影。资格native准备单次RY43/RZ72/CX119/GP72，depth120。动态每case/grid重新制备，实际初态与资格保存全幅在1e−12门下比较，不归一化或投影。纯target、zero、Z0target三支路；partial_dephase仅target与Z0target等权的**单点部分去相干**，不是全Z去相干。Majorana物理投影/Gaussian参考仍未资格。
 
@@ -18,14 +16,14 @@ Qiskit从完整signed稳定子生成Clifford，真实从0制备并降为RY/RZ/CX
 
 固定T=.5、t=.125/.25/.5、coarse32/fine64，Strang X半/Y半/Z整/Y半/X半。两J×三pure×两grid共12条轨迹，576实际steps、36完整节点全幅；每步完整18q scalar RY/RZ/CX实际回放，GP累计相位仅按协议施加一次，无cached macro替代主线路。动态physical preparation 1876、physical evolution 233280，GP记录97348；GP不计硬件门时长。
 
-独立同H spin matrix-free expm_multiply采用资格actualnative全幅，另以固定Taylor24阶/32segments、不同tensor算符实现核误差；自己的128orbit只核初态身份，不作为免费量子准备。Taylor截断界只覆盖精确算术尾，整体FP严格证明未知。coarse/fine与参考对照固定maxobservable≤.002、L2≤.01。实际coarse/fine最大L2=0.00483083144857、观测差=0.0010075674273；fine对reference最大L2=0.00160351784251、观测差=0.000334748666029。reference两独立方法最大L2=1.46474077746e-12、观测差=4.20607992884e-13。数值直接取封存checks，完整状态/误差/范数见量子seal（本地证据，未随题库发布）与reference seal（本地证据，未随题库发布）。同模型精度不能证明物理材料模型正确。
+独立同H spin matrix-free expm_multiply采用资格actualnative全幅，另以固定Taylor24阶/32segments、不同tensor算符实现核误差；自己的128orbit只核初态身份，不作为免费量子准备。Taylor截断界只覆盖精确算术尾，整体FP严格证明未知。coarse/fine与参考对照固定maxobservable≤.002、L2≤.01。实际coarse/fine最大L2=0.00483083144857、观测差=0.0010075674273；fine对reference最大L2=0.00160351784251、观测差=0.000334748666029。reference两独立方法最大L2=1.46474077746e-12、观测差=4.20607992884e-13。数值直接取封存checks，完整状态/误差/范数见量子seal与reference seal。同模型精度不能证明物理材料模型正确。
 
 |Jz|开放串响应RMS|密度响应RMS|与zero差RMS|与partial差RMS|
 |---|---:|---:|---:|---:|
 |1|0.175424210402|0.165923715885|0.0817381399457|0.0522757276208|
 |8|0.0336366507294|0.00786859486005|0.014176932136|0.00894361984295|
 
-精确科学门依次为.05/.01/.05/.05；Jz=8四项全部未达门，不能把静态各向异性直接解释为拓扑相证实。Jz=1限定响应与对照区分必须与下面有限CI能力一起判断。exact-response.csv（本地证据，未随题库发布）直接来自保存字段，全部51观测见observables.csv（本地证据，未随题库发布）。
+精确科学门依次为.05/.01/.05/.05；Jz=8四项全部未达门，不能把静态各向异性直接解释为拓扑相证实。Jz=1限定响应与对照区分必须与下面有限CI能力一起判断。exact-response.csv直接来自保存字段，全部51观测见observables.csv。
 
 ## 固定预算的真实模拟读出
 
@@ -54,11 +52,9 @@ Qiskit从完整signed稳定子生成Clifford，真实从0制备并降为RY/RZ/CX
 |8|8192|zero|0.023353132148931782|0.0|0.12383158465049711|0.01|
 |8|8192|partial_dephase|0.018172532942225216|0.0|0.11956863714699789|0.01|
 
-finite-CI.csv（本地证据，未随题库发布）逐值来自sealed JSON。实际有限负门共10项：J1/N1024两个对照区分门失败；J1/N8192四项通过，不能覆盖联合失败；J8两预算各四项失败。图中interval是上述共同family置信区间，不是标准差或postselected区间。
+finite-CI.csv逐值来自sealed JSON。实际有限负门共10项：J1/N1024两个对照区分门失败；J1/N8192四项通过，不能覆盖联合失败；J8两预算各四项失败。图中interval是上述共同family置信区间，不是标准差或postselected区间。
 
-（图：固定读出与响应比较，本地证据，未随题库发布）
-
-PNG已真实目视；PDF（本地证据，未随题库发布）仅导出，未目视。绘图仅读sealed JSON，不新传播/抽样，全部来源见plot manifest（本地证据，未随题库发布）。
+PNG已真实目视；PDF仅导出，未目视。绘图仅读sealed JSON，不新传播/抽样，全部来源见plot manifest。
 
 ## 独立核验、全部费用与范围
 
@@ -74,14 +70,14 @@ PNG已真实目视；PDF（本地证据，未随题库发布）仅导出，未�
 |dynamic-audit-v3|True|149.52|132.81|274923520|4178279|
 |dynamic-audit|False|81.01|71.49000000000001|227016704|1439521|
 
-首dynamic-audit尝试的工程失败原样保留：旧审计result（本地证据，未随题库发布）及seal/source/receipt均绑定。它完成576 semantic steps、407checks中402通过，但5项initial byte identity检查false并遇到int(complex sign)异常，0draw replay；这不是J8或有限统计科学负门。诊断（本地证据，未随题库发布）明确：生产仅保存前三个共用初态payload，12run各有SHA记录，协议没有要求每次重新制备byteequal；五个差异原样留痕，缺失的重复幅度不被追认为逐字资格。最终V3显式核signed Pauli实部/虚部类型，前三payload严格身份保持，再从各case最早节点t=.125逆semantic推进144steps/5616pair，与资格actual初态比较combined maxabs≤1e−12。这个误差包含原native传播和逆回roundoff，**不是纯制备误差界，也不能证明未保存的各run初态幅度逐字一致**。最终V3完成19070/19074检查；J1/J8×32/64的四个zero支路逆回combinedmaxabs约2.88e−12至5.76e−12，超过固定1e−12，不能放宽或重跑V4。其余19070项通过，576forward/144reverse/7133184原draw replay完整完成；audit_integrity_passed=false、independent_native_dynamics_qualified=false，参考/读出精度true和科学负门分别保存。最终证据仅取dynamic-audit-v3（本地证据，未随题库发布）独立完成证据，不覆盖旧失败、也不把工程修订snapshot计新科学run。
+首dynamic-audit尝试的工程失败原样保留：旧审计result及seal/source/receipt均绑定。它完成576 semantic steps、407checks中402通过，但5项initial byte identity检查false并遇到int(complex sign)异常，0draw replay；这不是J8或有限统计科学负门。诊断明确：生产仅保存前三个共用初态payload，12run各有SHA记录，协议没有要求每次重新制备byteequal；五个差异原样留痕，缺失的重复幅度不被追认为逐字资格。最终V3显式核signed Pauli实部/虚部类型，前三payload严格身份保持，再从各case最早节点t=.125逆semantic推进144steps/5616pair，与资格actual初态比较combined maxabs≤1e−12。这个误差包含原native传播和逆回roundoff，**不是纯制备误差界，也不能证明未保存的各run初态幅度逐字一致**。最终V3完成19070/19074检查；J1/J8×32/64的四个zero支路逆回combinedmaxabs约2.88e−12至5.76e−12，超过固定1e−12，不能放宽或重跑V4。其余19070项通过，576forward/144reverse/7133184原draw replay完整完成；audit_integrity_passed=false、independent_native_dynamics_qualified=false，参考/读出精度true和科学负门分别保存。最终证据仅取dynamic-audit-v3独立完成证据，不覆盖旧失败、也不把工程修订snapshot计新科学run。
 
-最终负审计收束（本地证据，未随题库发布）说明四zero combined失败不能归因于纯制备错误，也不能证实仅有全局相位误差；未保存逆回arrays/overlap，不能声称相位对齐后会通过。保持原1e−12门，不phase-align、不重跑。
+最终负审计收束说明四zero combined失败不能归因于纯制备错误，也不能证实仅有全局相位误差；未保存逆回arrays/overlap，不能声称相位对齐后会通过。保持原1e−12门，不phase-align、不重跑。
 
-所有受监控科学attempt CPU **917.08s**、累计stage wall **803.56s**、peakRSS **274923520bytes**、output **411126676bytes**、scratch **0bytes**。worker+monitor只计一次，phase/call计时不再相加；wall求和不是端到端历时，RSS取max。图/构包/审阅等工程生命周期不在科学总账，不填0。资源汇总（本地证据，未随题库发布）、资源review（本地证据，未随题库发布）、stage CSV（本地证据，未随题库发布）与完整per-draw exposure见readout result（本地证据，未随题库发布）。不同workload本地CPU不可相除称量子speedup；硬件连接/路由、门时长、纠错、噪声和价格unknown。
+所有受监控科学attempt CPU **917.08s**、累计stage wall **803.56s**、peakRSS **274923520bytes**、output **411126676bytes**、scratch **0bytes**。worker+monitor只计一次，phase/call计时不再相加；wall求和不是端到端历时，RSS取max。图/构包/审阅等工程生命周期不在科学总账，不填0。资源汇总、资源review、stage CSV与完整per-draw exposure见readout result。不同workload本地CPU不可相除称量子speedup；硬件连接/路由、门时长、纠错、噪声和价格unknown。
 
-旧6自旋结果（本地证据，未随题库发布）finest string error门passed原样保留，只验证单hexagon守恒弦代数；原旧scoped pass没有反转，本轮补充真正动态观测与对照。限定推荐见路线比较（本地证据，未随题库发布）：当前完整spin参考可用，Majorana路线仍未资格且未被排除；未做Floquet/Chern协议，不声称数字路线全球最优或实验优势。
+旧6自旋结果finest string error门passed原样保留，只验证单hexagon守恒弦代数；原旧scoped pass没有反转，本轮补充真正动态观测与对照。限定推荐见路线比较：当前完整spin参考可用，Majorana路线仍未资格且未被排除；未做Floquet/Chern协议，不声称数字路线全球最优或实验优势。
 
-原R52 R6=incomplete（全进程/完整测量成本缺口）、R8=not_verified（独立科学重建缺口）。根据R6/R8独立范围决定（本地证据，未随题库发布），本轮只提出这两项在**该18q有限模型**的成本/误差、独立重建与有效负证据范围proven_scoped，须最终case review与父级晋升；这不把audit/native false升级为true；不把原应用完成等同八项scoped证据。材料有效交换、作者二维阵列反馈数据和拓扑完整观测仍缺，original_application_completed=false、总84 Goal active。live LATEST/EXECUTION-STATUS不绑定，输入时指针另存LATEST-at-intake.json（本地证据，未随题库发布）。
+原R52 R6=incomplete（全进程/完整测量成本缺口）、R8=not_verified（独立科学重建缺口）。根据R6/R8独立范围决定，本轮只提出这两项在**该18q有限模型**的成本/误差、独立重建与有效负证据范围proven_scoped，须最终case review与父级晋升；这不把audit/native false升级为true；不把原应用完成等同八项scoped证据。材料有效交换、作者二维阵列反馈数据和拓扑完整观测仍缺，original_application_completed=false、总84 Goal active。live LATEST/EXECUTION-STATUS不绑定，输入时指针另存LATEST-at-intake.json。
 
-GOAL（本地证据，未随题库发布）、机器结果（本地证据，未随题库发布）、全部SHA（本地证据，未随题库发布）、封存命令（本地证据，未随题库发布）。固定负门之后不调J/时间/路径/steps/shots追pass；下一科学问题需另冻输入与门。
+GOAL、机器结果、全部SHA、封存命令。固定负门之后不调J/时间/路径/steps/shots追pass；下一科学问题需另冻输入与门。

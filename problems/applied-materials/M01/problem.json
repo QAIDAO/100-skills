@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M01",
   "observable": "相对电子能、ΔE‡、反应能与误差传播后的路径排序",
+  "original_target_status": "incomplete",
   "quantum_role": "双因子化哈密顿量结合qubitization/QPE求驻点电子能",
   "reference_input": {
     "gaps": "原文 V 中间体空间应为 32e24o（参照已订正）；溶剂、零点与热修正不在积分内。",
@@ -61,5 +62,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

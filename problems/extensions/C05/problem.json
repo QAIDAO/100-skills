@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C05",
   "observable": "S(v)=−dE_projectile/dx，速度/温度/密度依赖及统计误差",
+  "original_target_status": "incomplete",
   "quantum_role": "非Born–Oppenheimer联合演化，qubitization/Trotter与动能测量",
   "reference_input": {
     "gaps": "原文目标密度与温度下的完整规模只有资源估算；参照的小动量基组与宽波包不相容。",
@@ -52,5 +53,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F06",
   "observable": "电荷/自旋结构因子、有效跃迁、稳态电流",
+  "original_target_status": "incomplete",
   "quantum_role": "量子电路拟表示电子关联；声子重整化经典优化；另一支提案为原生电子—机械振动模拟。",
   "reference_input": {
     "gaps": "原文 HVA 起态未保存，历史结果无法唯一复现；纳米管四量子点开放系统输入未整理。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

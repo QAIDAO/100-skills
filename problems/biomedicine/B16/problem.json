@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B16",
   "observable": "反应自由能与活化自由能的混合估计、溶剂效应",
+  "original_target_status": "incomplete",
   "quantum_role": "经典几何/频率→PCM/ddCOSMO→小CAS VQE→经典热校正",
   "reference_input": {
     "gaps": "溶剂、热修正、原频率与过渡态虚频未闭合，真空 ΔE 不能当作溶液 ΔG‡。",
@@ -62,5 +63,6 @@
       "reproduces": "H2O 与产物 5 的 CAS(2e,2o) 能量和两比特 VQE 能量",
       "runtime": "笔记本约 40 秒（--all 另需数小时）"
     }
-  }
+  },
+  "version": 1
 }

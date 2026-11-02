@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C09",
   "observable": "低能结构命中率、势函数能、密度、连续弛豫后结构身份",
+  "original_target_status": "incomplete",
   "quantum_role": "QUBO/HUBO编码与退火；可接因子分解机代理模型",
   "reference_input": {
     "gaps": "参照 FCC 参考能与论文差约 1 meV/胞，未能逐点复现；共价单层 MoS₂ 输入未整理。",
@@ -63,5 +64,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

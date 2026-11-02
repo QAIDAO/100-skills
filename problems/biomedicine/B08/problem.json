@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B08",
   "observable": "反应电子能剖面、势垒、动力学特征及实验反应性proxy",
+  "original_target_status": "incomplete",
   "quantum_role": "QM/QM/MM嵌入与VQE；哈密顿量演化特征配经典ML",
   "reference_input": {
     "gaps": "简化体系的过渡态与前络合物坐标、电荷/自旋、PCM 设置、积分与线路参数未公开。",
@@ -67,5 +68,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

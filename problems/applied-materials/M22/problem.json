@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M22",
   "observable": "极化激元低能态、断键曲线、光诱导避免交叉及态组成",
+  "original_target_status": "incomplete",
   "quantum_role": "CQE/ACSE求解Pauli–Fierz模型；SA-VQE比较qubit、qudit与qumode编码",
   "reference_input": {
     "gaps": "原文 Eq. 20 与 Eq. 21 的 Pauli 符号不一致，参照按 Eq. 21；矩形形变 H₄ 的输入未整理。",
@@ -79,5 +80,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

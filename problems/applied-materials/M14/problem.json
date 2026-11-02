@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M14",
   "observable": "态布居Pα(t)、三重态对/CT形成、相关函数和100 fs内短时动力学",
+  "original_target_status": "incomplete",
   "quantum_role": "实空间编码多电子态与核模式，用乘积公式实现耦合时间演化",
   "reference_input": {
     "gaps": "完整 100 fs 传播与模截断误差尚无参照结果。",
@@ -71,5 +72,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

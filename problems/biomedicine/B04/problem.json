@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B04",
   "observable": "基态能、低能自旋关联；扩展可研究氧化还原能差",
+  "original_target_status": "incomplete",
   "quantum_role": "LUCJ等线路采样→粒子数恢复→经典子空间对角化",
   "reference_input": {
     "gaps": "仓库中 localized、experimental MO 与 numeric MO 三套轨道不同，需要注明使用哪一套。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

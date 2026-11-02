@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M22-cavity-polaritonic-states/execution/native-three-state-v2/RESEARCH.md 生成，勿手改 -->
-
-> M22 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> M22 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # M22 三低态 SA-VQE：经终审的拒绝终态
 
@@ -47,15 +45,13 @@ PF保留核排斥、total signed dipole、−√(ω/2)λD(b+b†)、.5λ²D²，
 
 ## 可执行证据入口
 
-- 科学生产目录：m22-three-state-v2（本地证据，未随题库发布），含冻结protocol、raw-results、逐点/seed checkpoint、资源ledger和原生源码。
-- 生产入口：m22-round28-production-intake.json（本地证据，未随题库发布）；protocol SHA256 `dab752c4b107e6b95ce24cbefc8703b390c7b24f3e709e135dc4bdf1756cae8e`。
-- 本报告精确数值、逐点数据及输入hash：results-draft.json（本地证据，未随题库发布）。
-- 保存数据图：saved-summary.png（本地证据，未随题库发布） / PDF（本地证据，未随题库发布）；plot.py（本地证据，未随题库发布）仅读取JSON，不计算模型。
+- 科学生产目录：m22-three-state-v2，含冻结protocol、raw-results、逐点/seed checkpoint、资源ledger和原生源码。
+- 生产入口：m22-round28-production-intake.json；protocol SHA256 `dab752c4b107e6b95ce24cbefc8703b390c7b24f3e709e135dc4bdf1756cae8e`。
+- 本报告精确数值、逐点数据及输入hash：results-draft.json。
+- 保存数据图：saved-summary.png / PDF；plot.py仅读取JSON，不计算模型。
 
 独立终审144项检查通过，科学协议仍rejected。审计费用15.040 CPU秒，原始记录、数组、协议和资源均封存。
 
 公开原始来源：[Ab Initio Polaritonic Chemistry on Diverse Quantum Computing Platforms, v2](https://arxiv.org/abs/2506.12504v2)。
 
 终审独立性边界：独立门作用重放共享已通过全basis夹具的生产电路生成器；用保存的电子积分与D16重建有限模型，未重新生成AO积分或偶极矩。没有重新优化、调种子或读入精确本征态训练。
-
-独立终审结果（本地证据，未随题库发布） · 父级终验（本地证据，未随题库发布）

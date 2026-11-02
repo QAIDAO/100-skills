@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M07-lithium-silicate-qpe/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M07 · Li₂FeSiO₄ 正极：电压、离子迁移与热稳定性的容错成本
 
-> 开放题 · 应用材料 · 电池电子结构
+> 开放题 · 应用材料 · 电池电子结构 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Simulating key properties of lithium-ion batteries with a fault-tolerant quantum computer](https://arxiv.org/abs/2204.11890)；[R2 · Evaluating the evidence for exponential quantum advantage in ground-state quantum chemistry](https://www.nature.com/articles/s41467-023-37587-6)；[R3 · Quantum simulation of battery materials using ionic pseudopotentials](https://quantum-journal.org/papers/q-2023-07-10-1049/)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **已有从周期模型到三类电池性质的端到端算法路线；结果主要是容错资源估算。**
 >

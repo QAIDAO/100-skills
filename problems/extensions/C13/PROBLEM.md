@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/C13-manufacturing-jobshop/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # C13 · 制造柔性作业车间：混合退火排程的可行性
 
-> 开放题 · 交叉方向与算法 · 制造排程
+> 开放题 · 交叉方向与算法 · 制造排程 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：优化与算法
 
 ## 题面
@@ -41,7 +41,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 

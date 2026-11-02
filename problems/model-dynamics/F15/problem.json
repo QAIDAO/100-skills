@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F15",
   "observable": "添加/移除GF、DOS极点与残量、子空间采样收敛",
+  "original_target_status": "incomplete",
   "quantum_role": "量子候选步骤是短时Krylov态制备与采样；投影、跨扇区重叠和连分式重建在经典端。",
   "reference_input": {
     "gaps": "作者未舍入数据与 DMFT 自洽结果未公开。",
@@ -53,5 +54,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

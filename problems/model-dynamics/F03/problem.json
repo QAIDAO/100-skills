@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F03",
   "observable": "自旋结构因子、临界温度/掺杂趋势",
+  "original_target_status": "incomplete",
   "quantum_role": "锂-6 原子构成模拟量子实验，Bragg 散射读取磁结构因子。",
   "reference_input": {
     "gaps": "原始位串与探测校准未公开。",
@@ -67,5 +68,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

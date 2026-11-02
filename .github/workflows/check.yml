@@ -14,9 +14,15 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - name: 题库源合规且生成物同步（改过的题须升 version）
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+        run: python3 -I release/tools/build_problems.py --check ${BASE:+--base "$BASE"}
       - name: 校验工具自测
         run: python3 -I release/tools/selftest.py
       - name: 校验解法提交（结构、类型与证据完整性，不代表科学正确或已复现）

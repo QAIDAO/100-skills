@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F04",
   "observable": "非局域弦算符、局域序、拓扑不变量",
+  "original_target_status": "incomplete",
   "quantum_role": "2021 原生 Rydberg blockade 模拟；2025 可重排中性原子的门式费米编码。",
   "reference_input": {
     "gaps": "原 72 数据比特 + 32 辅助比特硬件反馈实验的线路与数据未公开。",
@@ -66,5 +67,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

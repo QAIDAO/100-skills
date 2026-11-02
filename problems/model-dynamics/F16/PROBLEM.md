@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F16-state-resolved-reaction-scattering/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F16 · 态到态反应散射：H＋H₂ 交换概率与碰撞能量分辨
 
-> 开放题 · 材料模型与动力学 · 反应散射与气相化学
+> 开放题 · 材料模型与动力学 · 反应散射与气相化学 · 题面版本 v1
 > 难度：热身（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 从这里开始
@@ -47,7 +47,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -66,7 +65,7 @@
 
 图解依据：[R1 · Simulation of Chemical Reactions on a Quantum Computer](https://arxiv.org/html/2403.03052v1)；[R2 · A Hybrid Quantum-Classical Algorithm for Multichannel Quantum Scattering of Atoms and Molecules](https://arxiv.org/html/2304.06089v1)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
 
 > 文献核查截至 2026-10-04。优先级：重点储备（编辑判断）；证据：经典验证。这里的应用价值指可迁移的研究任务，未证明工业收益。本次未执行论文计算复现。

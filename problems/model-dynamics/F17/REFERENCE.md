@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F17-electron-molecule-rmatrix/execution/RESEARCH.md 生成，勿手改 -->
-
-> F17 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> F17 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # F17 原始来源研究与条件性推荐
 
@@ -43,14 +41,12 @@ SO(5) Givens sequential-subspace VQE and controlled boundary-amplitude measureme
 
 本轮source快照见 `tasks/_execution/2026-10-04/frontier/sources/F17-primary.txt`（其HTML/补充截取若存在一并保留）。本地实验结论在results.json，不能倒写成文献结论。
 
-
 执行后证据审查
 
 - v1真实执行但用synthetic径向模型；后发现Zenodo真实输入，需以public-input-v3另案结果审查，不能倒改v1manifest。
 
 原作者公开Zenodo代码/积分已经取得，冻结v1缺口为当时状态；新的实际输入结果见public-input-v3，两个optimizer均未过门。当前发布次序与归档NPZ不一致，不声称原论文实验复现。
-完整数值与cost边界见 RESULTS.md（本地证据，未随题库发布）。
-
+完整数值与cost边界见 RESULTS.md。
 
 ## 主代理新增：门序与后选的独立诊断（v4）
 
@@ -60,7 +56,7 @@ SO(5) Givens sequential-subspace VQE and controlled boundary-amplitude measureme
 
 原“ancilla求和”必须有物理解释：五个ancilla在Hadamard基测量并全后选，成功概率1/32。当前完整12比特态核验确认这一概率；每个被接受的能量样本期望约32次制备，尚需乘以能量测量分组、训练评估和有限shot预算。不存在免费trace-out得到相干和。
 
-证据：v4 manifest（本地证据，未随题库发布）、results（本地证据，未随题库发布）、raw（本地证据，未随题库发布）。源码为tasks/_execution/2026-10-04/frontier/f17_order_diagnostic.py。原任务仍缺连续谱边界振幅与外区匹配，尚无分子散射截面。
+证据：v4 manifest、results、raw。源码为tasks/_execution/2026-10-04/frontier/f17_order_diagnostic.py。原任务仍缺连续谱边界振幅与外区匹配，尚无分子散射截面。
 
 ### 独立复核补充
 

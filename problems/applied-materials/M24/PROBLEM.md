@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M24-quantum-dot-auger/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M24 · 量子点多激子与俄歇复合：决定发光与光伏效率的损耗通道
 
-> 开放题 · 应用材料 · 光电材料 / 纳米晶
+> 开放题 · 应用材料 · 光电材料 / 纳米晶 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面

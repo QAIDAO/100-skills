@@ -1,10 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F18-nonlinear-multidimensional-spectroscopy/execution/full-response-reference-v3/RESEARCH.md 生成，勿手改 -->
-
-> F18 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> F18 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # F18 v3 研究证据边界
 
-目标是完整可审计强经典参考和物理bath cutoff评估。结果层次见 RESULTS（本地证据，未随题库发布）；numerical_qualification_complete与physical_cutoff_pass分别报告，不混为同一门。
+目标是完整可审计强经典参考和物理bath cutoff评估。结果层次见 RESULTS；numerical_qualification_complete与physical_cutoff_pass分别报告，不混为同一门。
 
 采用锁定公开source二聚体、正文Γ/4 Markov与物理finite-memory bath，occupation/稀疏Lindblad及普通转置L.T线性读出，不对光学非Hermitian operator施加density正性/trace门。实际raw密度无repair。
 

@@ -6,6 +6,7 @@
   "has_reference": false,
   "id": "B33",
   "observable": "电子转移速率 kET、重组能、驱动力、电子耦合 ⟨|H_DA|⟩，以及与超快瞬态吸收实验的比较",
+  "original_target_status": null,
   "quantum_role": "MD 采样构象→QM/MM 划出 TrpB、TrpC 吲哚环→VQE 制备 CASCI 级波函数并测一、二阶约化密度矩阵→经典 MC-PDFT 补动态关联→四点法求重组能与驱动力，电子耦合另算→Marcus 速率",
   "reference_input": null,
   "scale": "活性空间仅 (3e,3o) 与 (4e,3o)、6-31G 基组；20 个 MD 构象的速率在无噪声模拟器上完成，真机只跑了 1 个构象（13 比特超导设备）",
@@ -32,5 +33,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

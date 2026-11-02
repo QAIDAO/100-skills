@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B10-peptide-conformation/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B10 · 短肽构象：量子优化的正例与负例
 
-> 开放题 · 生物医药 · 肽药 / 构象采样
+> 开放题 · 生物医药 · 肽药 / 构象采样 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：优化与算法
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Resource-efficient quantum algorithm for protein folding](https://www.nature.com/articles/s41534-021-00368-4)；[R2 · Peptide conformational sampling using the Quantum Approximate Optimization Algorithm](https://arxiv.org/abs/2204.01821)；[R3 · Highly accurate protein structure prediction with AlphaFold](https://doi.org/10.1038/s41586-021-03819-2)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 更新：2026-10-04｜探索观察｜证据：硬件演示
 > 本文为文献研究与试点建议；未执行计算复现、硬件实验或生物实验。优先级是编辑判断。

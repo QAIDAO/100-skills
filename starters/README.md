@@ -69,7 +69,7 @@ python3 -I release/tools/new_solution.py B16 alice-shot-budget --author "王小�
 - `expected.json`：从该题 `REFERENCE.md` 摘出的参照数字和容差，每个数字都要能在 `REFERENCE.md` 里找到；用 `profiles` 标明它在哪种运行模式下必须出现（默认模式 `quick`，慢开关 `full`），`_common.check` 会把当前模式的必需项缺失当作失败；
 - `README.md`：这道题在问什么、脚本做了什么、怎么读输出，以及三到五个「下一步」。
 
-要求：只用 `requirements.txt` 里的依赖（确需新依赖请在 PR 里说明）；默认运行在笔记本上几分钟内结束，慢的部分放在参数开关后面；不把第三方数据提交进仓库。合并后维护者会把这道题的 starter 写进 `release/tracks.json`。
+要求：只用 `requirements.txt` 里的依赖（确需新依赖请在 PR 里说明）；默认运行在笔记本上几分钟内结束，慢的部分放在参数开关后面；不把第三方数据提交进仓库。合并后在该题 `problem.json` 的 `track.starter` 里登记 starter（path、runtime、reproduces），并升 `version`、重新生成题库。
 
 ## 难度分级
 
@@ -81,4 +81,4 @@ python3 -I release/tools/new_solution.py B16 alice-shot-budget --author "王小�
 | 进阶 | 已有参照运行，但需要较多领域知识、工作站级算力，或要用替代输入、自建输入。 | 60 |
 | 前沿 | 还没有参照运行，或者目标规模属于容错量子计算，需要先做资源估算。 | 35 |
 
-背景分三类：量子化学、凝聚态与动力学、优化与算法。完整标签见 [release/tracks.json](../release/tracks.json)，各领域索引里也有对应列。
+背景分三类：量子化学、凝聚态与动力学、优化与算法。每题的标签在它的 `problem.json` 的 `track` 字段里，各领域索引里也有对应列。

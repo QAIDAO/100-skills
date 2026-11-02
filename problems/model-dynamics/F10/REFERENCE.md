@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F10-vibronic-boson-sampling/execution/real-molecules-v2/RESEARCH.md 生成，勿手改 -->
-
-> F10 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> F10 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # F10：四真实分子双模振电子谱的闭包与判定
 
@@ -49,7 +47,4 @@ finite shots 仅对 full N40 抽样：256/4096 shots、各30固定 seed 重复�
 
 完整量子分支记7 Gaussian gates、一次 ideal PNR 测量 setting；初 Fock 制备的真实硬件成本未知，PNR读出 N40与源硬件至15光子的范围不同。测量预算、态制备、设备实现和强经典求解均不能省略成一个 gate 数。此次完成了有实质新输入的应用组件，`original_application_complete=false`：未重建原硬件counts与完整噪声/读出标定链，未复现作者所有实验谱。
 
-审计证据：独立结果（本地证据，未随题库发布）、生产输出索引（本地证据，未随题库发布）、源筛选（本地证据，未随题库发布）。终态进程与资源证据位于 producer intake（本地证据，未随题库发布） 和 audit intake（本地证据，未随题库发布）；这些 intake 的 scope 文本保留“审计待定”旧阶段，最终科学结论以独立 results 的 `status=passed` 与3312门为准。
-
-
-数值结果与图（本地证据，未随题库发布） · 完整指标CSV（本地证据，未随题库发布） · 冻结协议（本地证据，未随题库发布） · 终态复核（本地证据，未随题库发布）。
+审计证据：独立结果、生产输出索引、源筛选。终态进程与资源证据位于 producer intake 和 audit intake；这些 intake 的 scope 文本保留“审计待定”旧阶段，最终科学结论以独立 results 的 `status=passed` 与3312门为准。

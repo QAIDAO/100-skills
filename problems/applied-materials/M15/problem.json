@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M15",
   "observable": "还原/电离相关能差、候选断键势垒；最终SEI与循环性能须另建模型",
+  "original_target_status": null,
   "quantum_role": "双因子化QPE电子能核，结合纠错、魔法态工厂与架构并行成本",
   "reference_input": {
     "gaps": "原积分、分子轨道与还原态/断键过渡态数据未公开。",
@@ -56,5 +57,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

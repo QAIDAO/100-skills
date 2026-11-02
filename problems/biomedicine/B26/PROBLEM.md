@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B26-psii-spin-ladder/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B26 · PSII释氧中心：低能自旋阶梯的量子模拟框架
 
-> 开放题 · 生物医药 · 光系统II与多金属自旋
+> 开放题 · 生物医药 · 光系统II与多金属自旋 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -42,7 +42,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 

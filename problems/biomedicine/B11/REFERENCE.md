@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B11-docking-gbs/execution/RESEARCH.md 生成，勿手改 -->
-
-> B11 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B11 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B11 独立深入研究（2026-10-04）
 
@@ -34,4 +32,4 @@
 
 ## 可复核产物
 
-当前数值：revision-2/results.json（本地证据，未随题库发布），协议与输入哈希：manifest.json（本地证据，未随题库发布），全部数据：raw.json（本地证据，未随题库发布）。历史初稿保留在 initial-RESEARCH.md（本地证据，未随题库发布） 和 initial-GOAL.md（本地证据，未随题库发布）；原 execution 根目录 manifest/results 未覆盖。共享来源和独立驱动位于 `tasks/_execution/2026-10-04/bio/subset-B09-B13/`。所有来源读取失败日志亦保留。
+当前数值：revision-2/results.json，协议与输入哈希：manifest.json，全部数据：raw.json。历史初稿保留在 initial-RESEARCH.md 和 initial-GOAL.md；原 execution 根目录 manifest/results 未覆盖。共享来源和独立驱动位于 `tasks/_execution/2026-10-04/bio/subset-B09-B13/`。所有来源读取失败日志亦保留。

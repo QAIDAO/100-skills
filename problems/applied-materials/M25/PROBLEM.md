@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M25-heterostructure-interlayer-exciton/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M25 · 二维异质结层间激子：莫尔势中的束缚态与光学响应
 
-> 开放题 · 应用材料 · 二维材料 / 激子
+> 开放题 · 应用材料 · 二维材料 / 激子 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面

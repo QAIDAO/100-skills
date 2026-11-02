@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F07-conical-intersection-dynamics/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F07 · 锥形交叉与分子光化学：几何相位及参数化非绝热动力学
 
-> 开放题 · 材料模型与动力学 · 光化学与非绝热动力学
+> 开放题 · 材料模型与动力学 · 光化学与非绝热动力学 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -43,7 +43,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -62,15 +61,8 @@
 
 图解依据：[R1 · Direct observation of geometric-phase interference in dynamics around a conical intersection](https://www.nature.com/articles/s41557-023-01300-3)；[R2 · Quantum simulation of conical intersections using trapped ions](https://www.nature.com/articles/s41557-023-01303-0)；[R3 · Experimental Quantum Simulation of Chemical Dynamics](https://arxiv.org/html/2409.04044v2)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 文献核查截至 2026-10-04。优先级：近期验证（编辑判断）；证据：硬件演示。本档案是文献研究和试点设计，未运行复现实验。
 

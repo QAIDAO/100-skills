@@ -3,7 +3,7 @@
 
 用法：python3 -I release/tools/selftest.py
 覆盖 check_submissions（证据完整性与审核状态）、starters/_common.check（必需指标）、
-build_problems（缺源或中途失败时保留旧产物）。全部通过时退出码为 0。
+build_problems（只用公开文件重建、确定性、只改动相关文件、版本号）。全部通过时退出码为 0。
 """
 
 from __future__ import annotations
@@ -104,28 +104,64 @@ def starter_cases() -> None:
 def build_cases() -> None:
     print("build_problems：")
     with tempfile.TemporaryDirectory() as tmp:
+        # 只复制公开仓库里的东西：题库、生成器与 starter；没有任何私有目录
         fake = Path(tmp)
-        tools = fake / "release" / "tools"
-        tools.mkdir(parents=True)
-        shutil.copy(ROOT / "release" / "tools" / "build_problems.py", tools)
-        shutil.copy(ROOT / "release" / "tracks.json", fake / "release")
-        out = fake / "out"
-        (out / "problems").mkdir(parents=True)
-        marker = out / "problems" / "marker"
-        marker.write_text("keep", encoding="utf-8")
+        shutil.copytree(ROOT / "problems", fake / "problems")
+        shutil.copytree(ROOT / "starters", fake / "starters", ignore=shutil.ignore_patterns(".cache"))
+        (fake / "release" / "tools").mkdir(parents=True)
+        shutil.copy(ROOT / "release" / "stats.json", fake / "release")
+        tool = fake / "release" / "tools" / "build_problems.py"
+        shutil.copy(ROOT / "release" / "tools" / "build_problems.py", tool)
 
-        def build(target: Path) -> int:
-            return subprocess.run([sys.executable, "-I", str(tools / "build_problems.py"), "--out", str(target)],
-                                  capture_output=True).returncode
+        def build(*extra: str) -> int:
+            return subprocess.run([sys.executable, "-I", str(tool), "--root", str(fake), *extra],
+                                  capture_output=True, cwd=fake).returncode
 
-        expect("缺 catalog 时非零退出", build(out) != 0)
-        expect("缺 catalog 时旧产物保留", marker.read_text(encoding="utf-8") == "keep")
-        (fake / "tasks").mkdir()
-        (fake / "tasks" / "catalog.json").write_text('[{"id": "Z99"}]', encoding="utf-8")
-        expect("中途失败时非零退出", build(out) != 0)
-        expect("中途失败时旧产物保留且无临时目录残留",
-               marker.read_text(encoding="utf-8") == "keep" and sorted(p.name for p in out.iterdir()) == ["problems"])
-        expect("输出指向源目录时拒绝", build(fake / "tasks") != 0 and (fake / "tasks" / "catalog.json").is_file())
+        def snapshot() -> dict[str, bytes]:
+            return {p.relative_to(fake).as_posix(): p.read_bytes() for p in fake.rglob("*") if p.is_file() and ".git" not in p.parts}
+
+        expect("仅凭公开文件即可重建且与已提交生成物一致", build("--check") == 0)
+        before = snapshot()
+        build()
+        build()
+        expect("连续两次构建结果逐字节一致", snapshot() == before)
+
+        bg = fake / "problems" / "biomedicine" / "B16" / "BACKGROUND.md"
+        bg.write_text(bg.read_text(encoding="utf-8") + "\n补充一句背景。\n", encoding="utf-8")
+        build()
+        after = snapshot()
+        changed = sorted(k for k in after if after[k] != before.get(k))
+        expect("改一道题只改该题源与它的 PROBLEM.md",
+               changed == ["problems/biomedicine/B16/BACKGROUND.md", "problems/biomedicine/B16/PROBLEM.md"])
+
+        meta = fake / "problems" / "biomedicine" / "B14" / "problem.json"
+        good = meta.read_text(encoding="utf-8")
+        data = json.loads(good)
+        data.pop("system")
+        meta.write_text(json.dumps(data, ensure_ascii=False), encoding="utf-8")
+        frozen = snapshot()
+        expect("源不合规时非零退出", build() != 0)
+        expect("源不合规时不写任何生成物", snapshot() == frozen)
+        meta.write_text(good, encoding="utf-8")
+
+        bg14 = fake / "problems" / "biomedicine" / "B14" / "BACKGROUND.md"
+        original = bg14.read_text(encoding="utf-8")
+        bg14.write_text(original + "\n见 [原始结果](results/raw.json)。\n", encoding="utf-8")
+        expect("指向不存在文件的链接被拒绝", build("--check") != 0)
+        bg14.write_text(original, encoding="utf-8")
+
+        git = ["git", "-C", str(fake), "-c", "user.name=t", "-c", "user.email=t@example.com"]
+        subprocess.run([*git, "init", "-q"], check=True)
+        subprocess.run([*git, "add", "-A"], check=True)
+        subprocess.run([*git, "commit", "-qm", "base"], check=True)
+        bg14.write_text(original + "\n改了一句。\n", encoding="utf-8")
+        build()
+        expect("改了源却没升 version 被拒绝", build("--check", "--base", "HEAD") != 0)
+        data = json.loads(good)
+        data["version"] += 1
+        meta.write_text(json.dumps(data, ensure_ascii=False, sort_keys=True, indent=2) + "\n", encoding="utf-8")
+        build()
+        expect("升 version 后通过", build("--check", "--base", "HEAD") == 0)
 
 
 def main() -> int:

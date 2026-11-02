@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B24-mrna-codon-optimization/execution/scope-clarification-r21/RESEARCH.md 生成，勿手改 -->
-
-> B24 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B24 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B24｜mRNA 同义密码子：固定蛋白序列的多约束优化
 
@@ -30,7 +28,7 @@
 
 ## 来源与可复现证据
 - [原文](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0259101)
-- 冻结输入与环境（本地证据，未随题库发布）
-- 原始数字与复算（本地证据，未随题库发布）
-- 结果（本地证据，未随题库发布）
+- 冻结输入与环境
+- 原始数字与复算
+- 结果
 - 脚本：tasks/_execution/2026-10-04/bio/audit_statistical_claims.py

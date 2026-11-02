@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F10",
   "observable": "Franck–Condon 权重、分辨率指定的谱形、振动态分配",
+  "original_target_status": "incomplete",
   "quantum_role": "振动模式映射玻色模式；位移、压缩和线性混合实现谐振态变换。",
   "reference_input": {
     "gaps": "参数表把 θ 标为度，但只有弧度解释与硬件表一致；A7/S7 与 A8/S8 的旋转生成元方向相反。参照按弧度与 A7 处理。",
@@ -84,5 +85,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

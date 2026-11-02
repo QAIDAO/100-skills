@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M21-pfas-defluorination/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M21 · PFAS 脱氟：C–F 断裂曲线与治理机理的电子结构接口
 
-> 开放题 · 应用材料 · 环境材料与污染物转化
+> 开放题 · 应用材料 · 环境材料与污染物转化 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -52,7 +52,7 @@
 
 图解依据：[R1 · Pushing the Limits of Quantum Computing for Simulating PFAS Chemistry](https://arxiv.org/html/2311.01242v1)；[R2 · Breaking down per- and polyfluoroalkyl substances (PFAS): tackling multitudes of correlated electrons](https://pmc.ncbi.nlm.nih.gov/articles/PMC12483100/)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
 
 > QPFAS展示量子化学工作流；所核查v1正文硬件为CH₃F代理而摘要写TFA，需保守解释。

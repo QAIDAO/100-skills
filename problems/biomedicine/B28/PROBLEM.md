@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B28-cobalamin-radical-sam/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B28 · 维生素 B12 与自由基 SAM 酶：Co–C 断键与自由基态序
 
-> 开放题 · 生物医药 · 金属辅因子 / 自由基酶
+> 开放题 · 生物医药 · 金属辅因子 / 自由基酶 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面

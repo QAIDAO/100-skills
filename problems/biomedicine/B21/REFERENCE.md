@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B21-bpti-transition-paths/execution/public-si-audit-v3/RESEARCH.md 生成，勿手改 -->
-
-> B21 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B21 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B21：官方补充资料闭包审计
 

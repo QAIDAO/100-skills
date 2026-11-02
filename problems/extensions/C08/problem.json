@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C08",
   "observable": "碱基配对F1、假结正确率、物理可行率、达到指定质量的总时间",
+  "original_target_status": "incomplete",
   "quantum_role": "量子退火抽样茎组合，经典前处理/后处理负责编码和约束",
   "reference_input": {
     "gaps": "作者代码引用的 test_sets/pseudobase_data_clean.csv 未随仓库公开。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

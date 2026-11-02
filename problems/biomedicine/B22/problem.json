@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B22",
   "observable": "S₁垂直激发能、平均绝对误差、活性空间和线路收敛",
+  "original_target_status": "incomplete",
   "quantum_role": "经典轨道与基态/激发态参考→态特异ΔADAPT线路模拟→两态能量差→光谱基准",
   "reference_input": {
     "gaps": "作者未提供 2024 与 2019 编号的对应表。",
@@ -65,5 +66,6 @@
   "track": {
     "background": "量子化学",
     "level": "热身"
-  }
+  },
+  "version": 1
 }

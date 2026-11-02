@@ -6,6 +6,7 @@
   "has_reference": false,
   "id": "B32",
   "observable": "杂质模型基态能、杂质间自旋—自旋关联 ⟨Sz·Sz⟩、改变 U 时的单重—三重态交叉",
+  "original_target_status": null,
   "quantum_role": "DFT 加簇 DMFT 给出双杂质 Anderson 模型参数→VQE（广义 UCCSD 等拟设）求杂质加浴的基态与杂质间自旋关联→结果回到 DMFT 自洽（原文只做了单次杂质求解，自洽未闭合）",
   "reference_input": {
     "gaps": "正文提到的 10、16 比特哈密顿量附录未给出；DFT+DMFT 原始浴参数（ε、V）只以 Pauli 系数形式出现；作者代码未公开。",
@@ -58,5 +59,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

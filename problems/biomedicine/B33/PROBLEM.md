@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B33-cryptochrome-electron-transfer/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B33 · 隐花色素 ErCRY4：色氨酸链电子转移速率的多组态嵌入计算
 
-> 开放题 · 生物医药 · 光感受蛋白 / 电子转移
+> 开放题 · 生物医药 · 光感受蛋白 / 电子转移 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -10,7 +10,7 @@
 | 环节 | 内容 |
 |---|---|
 | 研究体系 | 欧亚鸲隐花色素 ErCRY4 中 TrpB（W372）到 TrpC（W318）的空穴转移；每个吲哚环单独作为 QM 片段，其余蛋白与溶剂为 MM |
-| 可观测量 | 电子转移速率 kET、重组能、驱动力、电子耦合 ⟨／H_DA／⟩，以及与超快瞬态吸收实验的比较 |
+| 可观测量 | 电子转移速率 kET、重组能、驱动力、电子耦合 ⟨\|H_DA\|⟩，以及与超快瞬态吸收实验的比较 |
 | 经典基线 | 同活性空间的 CASSCF/MC-PDFT、NEVPT2/CASPT2、ROUCCSD 与 DFT；文献中的 QM/MM 速率预测 |
 | 量子方法的角色 | MD 采样构象→QM/MM 划出 TrpB、TrpC 吲哚环→VQE 制备 CASCI 级波函数并测一、二阶约化密度矩阵→经典 MC-PDFT 补动态关联→四点法求重组能与驱动力，电子耦合另算→Marcus 速率 |
 | 研发决策 | 判断色氨酸链空穴跳跃步骤的多组态处理（相对单参考方法）是否改变 Marcus 速率的量级与排序，从而决定光感受与磁感应蛋白的电子转移模型需要多大的量子核心。 |

@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M05-battery-eels/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M05 · Li₂MnO₃ 的 EELS：解析纳米尺度氧化还原与界面异质性
 
-> 开放题 · 应用材料 · 电池谱学与显微分析
+> 开放题 · 应用材料 · 电池谱学与显微分析 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Quantum Simulation of Electron Energy Loss Spectroscopy for Battery Materials](https://arxiv.org/html/2508.15935v1)；[R2 · Simulating X-ray absorption spectroscopy of battery materials on a quantum computer](https://arxiv.org/abs/2405.11015)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **动态结构因子算法把量子响应连接到带动量信息的EELS，仍是算法与资源验证。**
 >

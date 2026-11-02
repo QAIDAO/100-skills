@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F12-quantum-assisted-afqmc/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F12 · 量子辅助 AFQMC：用小量子试探态减少大基组约束偏差
 
-> 开放题 · 材料模型与动力学 · 多电子求解与混合算法
+> 开放题 · 材料模型与动力学 · 多电子求解与混合算法 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Unbiasing fermionic quantum Monte Carlo with a quantum computer](https://www.nature.com/articles/s41586-021-04351-z)；[R2 · Evaluating a quantum-classical quantum Monte Carlo algorithm with Matchgate shadows](https://arxiv.org/html/2404.18303v2)；[R3 · QCQMC](https://quantumai.google/cirq/experiments/qcqmc)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 文献核查截至 2026-10-04。优先级：重点储备（编辑判断）；证据：硬件演示。本档案是文献研究和试点设计，未运行复现实验。
 

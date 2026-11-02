@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B24",
   "observable": "目标值、同义约束可行率、重复样本、完整求解时间；表达效果须另行独立验证",
+  "original_target_status": "incomplete",
   "quantum_role": "经典定义同义选择及代理指标→QUBO/Ising→退火或QAOA小模型→经典约束核验",
   "reference_input": {
     "gaps": "基准蛋白序列与优化输入未整理，部分来自病原体，本库不提供其编码；解法需自选非敏感蛋白并写明来源。",
@@ -55,5 +56,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

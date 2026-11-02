@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M05",
   "observable": "S(q,ω)、各方向响应交叉项、近边峰形及空间结构指纹",
+  "original_target_status": null,
   "quantum_role": "量子演化获得非对角时域Green函数；经典构造动量分辨散射响应",
   "reference_input": {
     "gaps": "51 原子坐标（尤其 26 个封端 H）、总电荷、CAS 积分、三个偶极矩阵与 CVS mask 未公开。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

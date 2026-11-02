@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B27-metal-drug-activation/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B27 · 铂、钌类金属药物：水合活化与配体交换的势垒排序
 
-> 开放题 · 生物医药 · 金属药物 / 活化反应
+> 开放题 · 生物医药 · 金属药物 / 活化反应 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面

@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M05-battery-eels/execution/public-input-audit-v2/RESEARCH.md 生成，勿手改 -->
-
-> M05 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> M05 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # M05 原公开输入闭包复查
 
@@ -30,4 +28,4 @@
 
 材料数据库两个公开页均返回 403，2024/EELS PDF 和部分 arXiv 源请求返回 406，AIP 正式 EELS 文本返回 403，均记录后停止，不绕过。EELS 正式发表为 JCP 163, 244110 (2025)，DOI 10.1063/5.0300557；Crossref 元数据可得，但正式正文、数据可用性声明和 SI 未核实。可读预印本文本未给可直接执行的原积分/偶极矩阵下载入口。
 
-完整请求见 source-index.json（本地证据，未随题库发布），哈希见 post-run-provenance.json（本地证据，未随题库发布），参数复算见 m05-time-step-consistency.json（本地证据，未随题库发布）。静态源内容和逐项检查见共享 followup 目录。未修改任何 LATEST 或共享汇总。
+完整请求见 source-index.json，哈希见 post-run-provenance.json，参数复算见 m05-time-step-consistency.json。静态源内容和逐项检查见共享 followup 目录。未修改任何 LATEST 或共享汇总。

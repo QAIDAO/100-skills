@@ -21,6 +21,16 @@
 
 `contribution_type` 说明这份贡献是哪一类：`reproduction`（复现）、`baseline`（基线实现）、`method-comparison`（方法比较）、`failure-analysis`（失败分析）、`hardware-validation`（硬件验证）、`input-curation`（输入整理）、`literature`（文献与文档）。后两类可以没有数值结果，不必为了模板编数字；某个结果没算出来时，`value` 写 `null` 并给出 `status`（`not_evaluable` 或 `skipped`）和 `reason`。
 
+## 修订题目
+
+题目的源文件都在 `problems/<领域>/<题号>/` 里，可以直接改：`problem.json`（五段题面、基准输入、难度标签）、`BACKGROUND.md`（原案例说明）、`REFERENCE.md`（现有参照）。`PROBLEM.md` 是生成的，不要手改。
+
+1. 改源文件，并把 `problem.json` 的 `version` 加 1。
+2. 运行 `python3 -I release/tools/build_problems.py` 重新生成 `PROBLEM.md` 和索引，一起提交。
+3. 校验：`python3 -I release/tools/build_problems.py --check`。链接只能指向仓库里存在的文件。
+
+已提交的解法用 `problem_revision`（提交哈希）固定它依据的题面，题目改版后用 `git show <problem_revision>:problems/<领域>/<题号>/PROBLEM.md` 仍能看到当时的输入和标准；题面变化不会把旧解法自动算作满足新标准。较大的修改请先开「题目讨论」issue。
+
 ## 审核与采纳
 
 四件事分开记录，互不代替：

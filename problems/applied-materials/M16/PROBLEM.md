@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M16-hbn-defect-emission/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M16 · hBN 负硼空位：直接面向亮态与辐射发射率的容错算法
 
-> 开放题 · 应用材料 · 二维缺陷与量子传感
+> 开放题 · 应用材料 · 二维缺陷与量子传感 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -10,7 +10,7 @@
 | 环节 | 内容 |
 |---|---|
 | 研究体系 | 六方氮化硼团簇中的带负电硼空位V_B⁻ |
-| 可观测量 | 光学活性激发态、／〈f／μ／i〉／²、跃迁频率与模型辐射发射率 |
+| 可观测量 | 光学活性激发态、\|〈f\|μ\|i〉\|²、跃迁频率与模型辐射发射率 |
 | 经典基线 | QDET+FCI/多参考响应、合适TDDFT，以及实验PL/ODMR资料 |
 | 量子方法的角色 | 偶极算符block encoding＋QPE，选择性采样具有较强跃迁振幅的态 |
 | 研发决策 | 判断缺陷候选是否具有足够强的光学跃迁，并识别需要实验进一步检验的亮态。 |
@@ -43,7 +43,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -62,15 +61,8 @@
 
 图解依据：[R1 · Simulating optically-active spin defects with a quantum computer](https://arxiv.org/html/2405.13115v1)；[R2 · Quantum simulations of materials on near-term quantum computers](https://arxiv.org/abs/2002.11173)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **算法按偶极跃迁强度选择光学活性态，比只按最低激发能筛选更贴近缺陷光学设计。**
 >

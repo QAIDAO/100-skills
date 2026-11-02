@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B29-retinal-photoisomerization/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B29 · 视黄醛光异构化：视觉第一步的非绝热动力学
 
-> 开放题 · 生物医药 · 光生物学 / 非绝热动力学
+> 开放题 · 生物医药 · 光生物学 / 非绝热动力学 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面

@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B25-fe-hydrogenase-embedding/execution/revision-3-input-closure/RESEARCH.md 生成，勿手改 -->
-
-> B25 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B25 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B25 revision3：原五驻点输入闭包与版本审计
 
@@ -12,7 +10,7 @@
 
 2014前驱作者机构公开 [接受稿](https://eprints.gla.ac.uk/95072/1/95072.pdf) 已保存5203381字节，SHA256 `25f82375fb8eb4e51b07ac710bd7ebaf37ad7efa747f78ee9d088114b05a4bac`，18页正文+16页SI。SI含FeGP/底物部分电荷表、His14电荷与质子化、PDB模型构建、MM与QM/MM设置、MD阶段及PES扫描。它提供真实模型数值资料，却没有2022五驻点坐标/轨道/积分。其PDF亦无附加嵌入文件。RSC候选suppdata路径403，不重复尝试；该候选路径来自出版商常见命名，未作为已读取/确切唯一官方文件。已读接受稿中的SI是独立作者机构公开来源。
 
-GitHub原arXiv编号repo检索0项；Zenodo正式DOI检索0项；Riverlane公开13repo元数据已保存。两候选README分别是2019量子hackathon与另一H2/QEC编译研究，不是该酶原输入；其余仓库只审名称/描述，没有搜索所有文件。这是有限定向检索，**不证明数据不存在**；期刊明示数据可向作者申请，本任务禁止联系作者，因此该途径未执行。全部请求与失败均见 fetch-log.json（本地证据，未随题库发布）。
+GitHub原arXiv编号repo检索0项；Zenodo正式DOI检索0项；Riverlane公开13repo元数据已保存。两候选README分别是2019量子hackathon与另一H2/QEC编译研究，不是该酶原输入；其余仓库只审名称/描述，没有搜索所有文件。这是有限定向检索，**不证明数据不存在**；期刊明示数据可向作者申请，本任务禁止联系作者，因此该途径未执行。全部请求与失败均见 fetch-log.json。
 
 ## 为何前驱不能替代后文
 
@@ -42,7 +40,7 @@ GitHub原arXiv编号repo检索0项；Zenodo正式DOI检索0项；Riverlane公开
 | 同积分CCSD/完整DLPNO减法与收敛日志 | 旧rev2仅算术核对打印表 | blocked |
 | TS/Hessian/NEB对应关系 | 方法描述，无原checkpoint/虚频记录 | blocked |
 
-完整结构化required/missing/evidence见 input-closure-audit.json（本地证据，未随题库发布）。通用DMET介绍不能被解释为该CAS带有bath；其他示例的singlet激发态也不能移用为氢化酶spin证据。表格能量不能唯一反推哈密顿量，也不能替代missing scalar energy。
+完整结构化required/missing/evidence见 input-closure-audit.json。通用DMET介绍不能被解释为该CAS带有bath；其他示例的singlet激发态也不能移用为氢化酶spin证据。表格能量不能唯一反推哈密顿量，也不能替代missing scalar energy。
 
 ## 最小可执行缺口与预算
 
@@ -54,4 +52,4 @@ GitHub原arXiv编号repo检索0项；Zenodo正式DOI检索0项；Riverlane公开
 
 ## 交付与复核
 
-GOAL.md（本地证据，未随题库发布）保留原五驻点目标；results.json（本地证据，未随题库发布）、summary.json（本地证据，未随题库发布）、版本对照（本地证据，未随题库发布）、来源审计（本地证据，未随题库发布）与hash清单已归档。qmmm-evidence-audit的选择文件inventory冻结8件实际源文件；通过verify-against只表示哈希/文件身份一致，不表示科学闭包。旧case、execution/LATEST与旧成果全部保护hash不变，共享索引未改。
+GOAL.md保留原五驻点目标；results.json、summary.json、版本对照、来源审计与hash清单已归档。qmmm-evidence-audit的选择文件inventory冻结8件实际源文件；通过verify-against只表示哈希/文件身份一致，不表示科学闭包。旧case、execution/LATEST与旧成果全部保护hash不变，共享索引未改。

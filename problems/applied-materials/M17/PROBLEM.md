@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M17-mof-carbon-capture/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M17 · MOF 碳捕集：从开放金属位结合能到吸附剂筛选
 
-> 开放题 · 应用材料 · 吸附分离与碳捕集
+> 开放题 · 应用材料 · 吸附分离与碳捕集 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -49,7 +49,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -68,7 +67,7 @@
 
 图解依据：[R1 · Quantum simulation of carbon capture in periodic metal-organic frameworks](https://arxiv.org/html/2510.02550v1)；[R2 · Modelling carbon capture on metal-organic frameworks with quantum computing](https://link.springer.com/article/10.1140/epjqt/s40507-022-00155-w)；[R3 · Ab initio carbon capture in open-site metal–organic frameworks](https://www.nature.com/articles/nchem.1432)；[R4 · Quantum simulation of CO2 chemisorption in an amine-functionalized metal-organic framework](https://arxiv.org/abs/2504.17453v2)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
 
 > Fe-MOF-74 的 28 比特 SQD 演示在缩小活性空间内接近 FCI；尚非定量预测真实吸附容量。

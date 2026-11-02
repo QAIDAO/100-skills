@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M09-group-iv-vacancy/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M09 · 金刚石 IV 族空位中心：筛选可光学操控的强关联缺陷
 
-> 开放题 · 应用材料 · 缺陷候选筛选
+> 开放题 · 应用材料 · 缺陷候选筛选 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · First-principles Studies of Strongly Correlated States in Defect Spin Qubits in Diamond](https://arxiv.org/abs/2008.13283)；[R2 · Quantum simulations of materials on near-term quantum computers](https://arxiv.org/abs/2002.11173)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **SiV/GeV/SnV/PbV类中性缺陷已有嵌入多体态预测，主要证据是经典材料计算。**
 >

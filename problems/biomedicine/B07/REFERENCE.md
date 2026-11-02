@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B07-protein-ligand-embedding/execution/public-source-v4/RESEARCH.md 生成，勿手改 -->
-
-> B07 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B07 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B07 原输入闭包审计 v4
 
@@ -22,7 +20,7 @@
 | 3dhk | 62 | 244 | 198 | 4023 | -0.16427200 |
 | 3dux | 58 | 210 | 170 | 4023 | -0.04179400 |
 
-AO计数由原元素/STO-3G壳层计量得到，不是新SCF。原文formal protein−1与实际拟合ESP电荷和不同，本轮保留每个原值。XYZ+ESP文本未显式标记单位和自旋；原B15在Å/闭壳层约定下9套RHF落入SI舍入窗，为该使用口径提供旁证，此处不重跑。B15原600CPU止损、第五配体环境未完成和派生CAS范围均保留，见原B15报告（本地证据，未随题库发布）。
+AO计数由原元素/STO-3G壳层计量得到，不是新SCF。原文formal protein−1与实际拟合ESP电荷和不同，本轮保留每个原值。XYZ+ESP文本未显式标记单位和自旋；原B15在Å/闭壳层约定下9套RHF落入SI舍入窗，为该使用口径提供旁证，此处不重跑。B15原600CPU止损、第五配体环境未完成和派生CAS范围均保留，见原B15报告。
 
 ## 原模型与能量组装边界
 
@@ -44,6 +42,6 @@ Tangelo本轮main固定commit `4b478a101cba28a58cc0ba17ad5ef110a737fce3`，468�
 
 ## 核验与最小下一步
 
-自写 audit_inputs.py（本地证据，未随题库发布） 97项通过：源包完整目录、静态TeX一致性、SI大小/MD5、五个真实输入逐行与B15一致、粒子计量、PDB有限坐标、正确commit→treeAPI绑定、实际raw blob身份及旧文件未改。未执行作者源码、pickle、SCF或量子线路。部分网页工具返回PMC挑战页，未交互挑战；普通未认证公开获取取得完整PMC正文。旧ACS拒绝没有绕过，官方SI从独立公开Figshare API取得。
+自写 audit_inputs.py 97项通过：源包完整目录、静态TeX一致性、SI大小/MD5、五个真实输入逐行与B15一致、粒子计量、PDB有限坐标、正确commit→treeAPI绑定、实际raw blob身份及旧文件未改。未执行作者源码、pickle、SCF或量子线路。部分网页工具返回PMC挑战页，未交互挑战；普通未认证公开获取取得完整PMC正文。旧ACS拒绝没有绕过，官方SI从独立公开Figshare API取得。
 
 最小可量子执行单元是作者实际单fragment的 h1/ERI/ecore、Nα/Nβ、orbital order、fragment/bath/frozen projector与同H经典参考。原CAS4e4o为8q、Ms0维36，取得这些后可另冻守粒子数线路、3seed、有限shot和资源协议，分别验收solver误差与分区RDM误差。完整binding还要配对原结构的全部分区能量张量、HF/常数及电荷修正；单片段通过不证明蛋白结合能准确。此处不发起后续后台任务，不改LATEST或共享汇总。

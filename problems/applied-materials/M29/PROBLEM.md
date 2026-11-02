@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M29-plutonium-hydride-corrosion/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M29 · 钚氢化物与氧化物：锕系腐蚀反应能的量子相位估计
 
-> 开放题 · 应用材料 · 核材料 / 锕系腐蚀
+> 开放题 · 应用材料 · 核材料 / 锕系腐蚀 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面

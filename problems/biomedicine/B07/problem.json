@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B07",
   "observable": "片段能量、静态结合能、嵌入与基组收敛",
+  "original_target_status": "incomplete",
   "quantum_role": "EWF嵌入→片段QPU采样→超算TrimSQD→能量合并",
   "reference_input": {
     "gaps": "作者含水体系（11608/12635 原子）、EWF 片段与 bath、积分均未公开。",
@@ -73,5 +74,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

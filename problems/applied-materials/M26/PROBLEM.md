@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M26-tadf-oled-emitters/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M26 · OLED 的 TADF 与磷光发光体：单三重态能隙与自旋轨道耦合
 
-> 开放题 · 应用材料 · 光电材料 / 有机发光
+> 开放题 · 应用材料 · 光电材料 / 有机发光 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面

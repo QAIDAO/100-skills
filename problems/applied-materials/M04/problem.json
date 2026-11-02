@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M04",
   "observable": "XAS截面σ(ω)、峰位、相对强度、谱权重和机理判别置信度",
+  "original_target_status": null,
   "quantum_role": "制备偶极激发态并时间演化，测相关函数，经典傅里叶变换得展宽谱",
   "reference_input": {
     "gaps": "7 原子坐标、去锂选择、簇电荷/自旋、AVAS 阈值、积分与偶极矩阵均未公开。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

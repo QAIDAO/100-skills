@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M16",
   "observable": "光学活性激发态、|〈f|μ|i〉|²、跃迁频率与模型辐射发射率",
+  "original_target_status": null,
   "quantum_role": "偶极算符block encoding＋QPE，选择性采样具有较强跃迁振幅的态",
   "reference_input": {
     "gaps": "有效一二体积分、三轴偶极算符与基态定义未公开；论文表 I 偶极列定义与寿命计算不一致。",
@@ -51,5 +52,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

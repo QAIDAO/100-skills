@@ -1,11 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F15-skqd-impurity-greens-functions/execution/orbital-response-r47/RESEARCH.md 生成，勿手改 -->
-
-> F15 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> F15 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # R47 来源与适用边界
 
-[固定原文v1](https://arxiv.org/html/2609.09147v1)；详细公式、Table1与引用绑定见 source protocol（本地证据，未随题库发布） 与 citations/schema（本地证据，未随题库发布）。
-
+[固定原文v1](https://arxiv.org/html/2609.09147v1)；详细公式、Table1与引用绑定见 source protocol 与 citations/schema。
 
 HF rotation可由公开Eq4–10重建；原缺作者旋转假设不再成立。HF传播保留物理counterterm htilde=diag(eHF)−2P，并加完整U Nup Ndown。Bare是非相互作用orbital basis，不是旧site-product。
 
@@ -16,5 +13,3 @@ HF rotation可由公开Eq4–10重建；原缺作者旋转假设不再成立。H
 完整addition/removal GF的原χnorm是1−n与n，总权重1；未反射/归一化谱代替removal。Ritz有限Lanczos poles不称完整3920 ED谱；独立只在6频点directsolve。单起点投影eigsh仅给返回Ritz对残差，不证明全对称sector最低根。
 
 本轮是source-defined功能模拟，不是作者未舍入数据逐bit复现、native编译、噪声/QPU或DMFT自洽。保留所有技术/精度负门；没有量子优势结论。
-
-结果（本地证据，未随题库发布） · 全部切片（本地证据，未随题库发布） · 统计（本地证据，未随题库发布） · 全部门（本地证据，未随题库发布） · 四阶段原JSON（本地证据，未随题库发布） · 成本（本地证据，未随题库发布） · 旧失败（本地证据，未随题库发布）

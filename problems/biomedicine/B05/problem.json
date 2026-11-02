@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B05",
   "observable": "沿反应坐标的电子能曲线、相对势垒",
+  "original_target_status": "incomplete",
   "quantum_role": "FAST-VQE与SAT门约简；经典结构与环境处理",
   "reference_input": {
     "gaps": "每帧的嵌入积分与能量常数未公开。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }
