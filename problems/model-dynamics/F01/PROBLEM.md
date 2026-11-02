@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F01-hubbard-antiferromagnet/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F01 · 二维 Hubbard 反铁磁关联：为铜氧化物机制提供可控基准
 
-> 开放题 · 材料模型与动力学 · 强关联模型与磁性
+> 开放题 · 材料模型与动力学 · 强关联模型与磁性 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · A cold-atom Fermi–Hubbard antiferromagnet](https://www.nature.com/articles/nature22362)；[R2 · Solutions of the Two-Dimensional Hubbard Model: Benchmarks and Results from a Wide Range of Numerical Algorithms](https://doi.org/10.1103/PhysRevX.5.041041)；[R3 · A neutral-atom Hubbard quantum simulator in the cryogenic regime](https://www.nature.com/articles/s41586-025-09112-w)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 文献核查截至 2026-10-04。优先级：重点储备（编辑判断）；证据：硬件演示。本档案是文献研究和试点设计，未运行复现实验。
 

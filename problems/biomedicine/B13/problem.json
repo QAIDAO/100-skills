@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B13",
   "observable": "PCET驱动力、重组能、供受体距离分布、kH/kD及温度依赖",
+  "original_target_status": "incomplete",
   "quantum_role": "拟以高精度电子求解器修正局部PES，再用核动力学/PCET理论求KIE",
   "reference_input": {
     "gaps": "2018 年 122 原子 QM/MM 的 WT/突变体采样模型未公开；参照发现未配对电子主要在碳骨架而非铁上，活性空间的化学身份待核。",
@@ -81,5 +82,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

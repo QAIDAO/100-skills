@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B03-p450nor-electrostatics/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B03 · P450nor：直接估计活性中心与环境的静电相互作用
 
-> 开放题 · 生物医药 · 生物无机 / 相互作用能
+> 开放题 · 生物医药 · 生物无机 / 相互作用能 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Estimation of electrostatic interaction energies on a trapped-ion quantum computer](https://arxiv.org/abs/2312.14739)；[R2 · Accurate non-covalent interaction energies on noisy intermediate-scale quantum computers via second-order symmetry-adapted perturbation theory](https://pubs.rsc.org/en/content/articlepdf/2023/sc/d2sc05896k)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 更新：2026-10-04｜近期验证｜证据：硬件演示
 > 本文为文献研究与试点建议；未执行计算复现、硬件实验或生物实验。优先级是编辑判断。

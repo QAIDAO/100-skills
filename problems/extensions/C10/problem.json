@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C10",
   "observable": "计量守恒、路线可行率、相对最优成本差距和包含调参的时间",
+  "original_target_status": null,
   "quantum_role": "反应整数用量及启用变量→QUBO惩罚→D-Wave/SA采样→经典修复与原约束验收",
   "reference_input": {
     "gaps": "原 100/12 个实例的完整计量、成本参数与 USPTO 子网络导出未公开。",
@@ -51,5 +52,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

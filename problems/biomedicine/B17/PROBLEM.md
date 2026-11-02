@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B17-sulfonyl-fluoride-dynamics/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B17 · 磺酰氟共价药：哈密顿量动力学作为反应性特征
 
-> 开放题 · 生物医药 · 反应性预测 / 量子特征
+> 开放题 · 生物医药 · 反应性预测 / 量子特征 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -45,7 +45,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -64,15 +63,8 @@
 
 图解依据：[R1 · Circuit Depth Reduction for Executable Hamiltonian Dynamics of Covalent Inhibitor Reactivity on Quantum Hardware](https://arxiv.org/abs/2412.15804v4)；[R2 · CovAngelo: A hybrid quantum-classical computing platform for accurate and scalable drug discovery](https://arxiv.org/html/2604.10487v1)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 更新：2026-10-04｜探索观察｜证据：硬件演示
 > 本文为文献研究与试点建议；未执行计算复现、硬件实验或生物实验。优先级是编辑判断。

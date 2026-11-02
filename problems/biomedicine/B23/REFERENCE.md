@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B23-therapeutic-sequence-design/execution/public-input-v3.1/RESEARCH.md 生成，勿手改 -->
-
-> B23 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B23 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B23 public-input-v3：公开模型闭包推进
 
@@ -46,7 +44,6 @@ R1 SI PMC下载响应为HTML（21318 bytes）而非PDF；Springer CDN DNS失败�
 
 仅申请上述“一轮匿名64位QUBO+既有采样record”即可开启原H能源复核；未取得前停止数值采样，不重复1/5统计审计。旧文件与LATEST不修改。
 
-
 # B23 identity-v2：commit→tree 独立绑定
 
 保留REPORT.md、manifest.json及全部旧冻结文件。上一版直接取递归trees/main响应sha作为commit，证据链不充分。本次通过`/repos/tucs7/WS-MOQA/commits/main`独立确认commit确为`ed013d4b5b61589178bc7dd62c40f9effbcaf0f3`；commit对象明确root tree为`0c0103e3492c4bbacf9638d4ca7a1742e44cdb21`。
@@ -56,7 +53,6 @@ R1 SI PMC下载响应为HTML（21318 bytes）而非PDF；Springer CDN DNS失败�
 因此原commit标签值正确，原推导方法不足，已补齐；旧递归响应sha本身不是root-tree身份，不能据其字段名独立推定对象类型。公开35文件blob校验仍有效。原目标incomplete，量子/经典采样/模型预测0；科学结论未改变。
 
 证据：campaign sources/commit-main.json、sources/root-tree.json、audit_git_binding_v2.py与git-binding-v2.json。新版完整性清单为manifest.identity-v2.json，包含旧manifest与新增证据。未覆盖冻结旧版，也未晋升LATEST。
-
 
 ## 父级独立检查
 

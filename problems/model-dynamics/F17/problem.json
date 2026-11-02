@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F17",
   "observable": "内区本征值、边界振幅、未来外区匹配得到的相移和截面",
+  "original_target_status": "incomplete",
   "quantum_role": "候选QPU求有限体积内的多电子本征态与边界系数；经典端保留外区传播和截面重建。",
   "reference_input": {
     "items": [
@@ -58,5 +59,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

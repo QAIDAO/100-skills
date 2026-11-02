@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B19",
   "observable": "轨道占据、相关能/相对能、选轨误差、线路资源",
+  "original_target_status": "incomplete",
   "quantum_role": "化学选轨→UCCSD/HEA→理想/硬件分级验证",
   "reference_input": {
     "gaps": "七套优化坐标、电荷/自旋/基组、各 CAS 积分与能量扣除约定未公开。",
@@ -58,5 +59,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

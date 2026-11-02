@@ -1,15 +1,12 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B17-sulfonyl-fluoride-dynamics/execution/cas8-sensitivity-r42/RESEARCH.md 生成，勿手改 -->
-
-> B17 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B17 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # R42 B17 方法与来源
 
 完整公开几何、参考HF与exact A2框架沿用R40/R41；本轮direct inactive-core JK与64×64 plain ERI变换，无SCF重启、DF或完整AO四指标缓存。CAS8与CAS6冻结核心还原比较保留常数和观测量。H arithmetic audit认证保存算术与输入，CAS8 fermion/operator action必须另验，不能由CAS6 pilot替代。
 
-若执行动力学，参考为expm_multiply的经典指数作用数值方法，对照block Strang产品公式；不能称ED、量子优势或浮点全局严格证书。原文可核来源、冻结版本及实际输入见upstream-bindings.json（本地证据，未随题库发布）和results.json（本地证据，未随题库发布）；原作者labels/split缺失，原应用仍0完成。
+若执行动力学，参考为expm_multiply的经典指数作用数值方法，对照block Strang产品公式；不能称ED、量子优势或浮点全局严格证书。原文可核来源、冻结版本及实际输入见upstream-bindings.json和results.json；原作者labels/split缺失，原应用仍0完成。
 
 历史量子组件证据指向R41真实细步长轨迹；独立端点只核实际端点，不冒称29点独立复现。原R40三项失败单列保留，不因新定义或大CAS追认。
-
 
 ## 条件性路线选择
 

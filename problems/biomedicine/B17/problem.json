@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B17",
   "observable": "时间相关特征、下游反应性预测误差、截断误差界",
+  "original_target_status": "incomplete",
   "quantum_role": "哈密顿量项截断→Clifford分解与变换→硬件转译→经典ML",
   "reference_input": {
     "gaps": "DMET 哈密顿量、观测量系数、初态与 GSK 保密子集未公开，仅凭 XYZ 不能唯一重建原模型。",
@@ -62,5 +63,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

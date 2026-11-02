@@ -6,6 +6,7 @@
   "has_reference": false,
   "id": "M29",
   "observable": "各物种总能、O₂ 解离反应能、与 CASCI/CASSCF 的偏差（mHa）",
+  "original_target_status": null,
   "quantum_role": "DFT 结构与片段截取→AVAS/CASSCF 活性空间→统计 QPE（单辅助比特，以经典变分编译代替受控时间演化，QCELS 取相位）或 QCM4 矩方法→与 CASCI/CASSCF 对照",
   "reference_input": null,
   "scale": "硬件实验最多 19 比特（18 个系统比特加 1 个辅助比特），活性空间至 (10e,10o)；Pu₂O₃ 的 QPE 到 (2e,8o)、QCM4 到 (2e,6o)；高自旋基态算不动时改用单重态",
@@ -32,5 +33,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

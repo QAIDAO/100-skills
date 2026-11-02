@@ -6,6 +6,7 @@
   "has_reference": false,
   "id": "F23",
   "observable": "动态结构因子 S(q,ω)、q=π 与 q=π/2 处的峰位与线宽、谱权重、量子 Fisher 信息",
+  "original_target_status": null,
   "quantum_role": "Heisenberg 链参数→绝热态制备线路→在单个格点施加局域扰动，再做 Trotter 时间演化，测推迟格林函数→经典傅里叶变换得 S(q,ω)→与非弹性中子散射谱按 MSE、SSIM、量子 Fisher 信息比较",
   "reference_input": {
     "gaps": "论文未随文公开量子线路、硬件原始计数与所用实验谱的数字化数据；交换常数 J 与实验谱的能量归一化需自行从 Lake 等原文取得。",
@@ -58,5 +59,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

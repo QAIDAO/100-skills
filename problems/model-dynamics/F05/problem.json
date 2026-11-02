@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F05",
   "observable": "畴壁松弛、自旋密度、极化转移全计数统计",
+  "original_target_status": null,
   "quantum_role": "冷原子 Heisenberg 链或超导模拟器实现实时自旋演化。",
   "reference_input": {
     "gaps": "数据未给分箱坐标与分物种分布，作者统计量无法精确复现；50 站完整传播尚无参照。",
@@ -67,5 +68,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M27-perovskite-self-trapped-exciton/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M27 · 卤化物钙钛矿：自陷激子与缺陷的局域化和非辐射通道
 
-> 开放题 · 应用材料 · 光电材料 / 钙钛矿
+> 开放题 · 应用材料 · 光电材料 / 钙钛矿 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面

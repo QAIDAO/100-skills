@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B18",
   "observable": "质子密度、转移布居、电子—核纠缠、势垒与近似动力学量",
+  "original_target_status": "incomplete",
   "quantum_role": "NEO多组分哈密顿量、二次量子化演化；FNO/ADAPT与近似编译",
   "reference_input": {
     "gaps": "22 比特 Jordan–Wigner 到 18 比特的模式顺序、Clifford 变换与电子/质子数算符未公开，比特 0 不对应质子占据。",
@@ -67,5 +68,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

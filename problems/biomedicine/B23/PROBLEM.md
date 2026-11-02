@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B23-therapeutic-sequence-design/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B23 · 治疗性肽与抗体：序列空间的多目标候选搜索
 
-> 开放题 · 生物医药 · 治疗性序列设计
+> 开放题 · 生物医药 · 治疗性序列设计 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：优化与算法
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,7 +62,7 @@
 
 图解依据：[R1 · Extensive antibody search with whole spectrum black-box optimization](https://pmc.ncbi.nlm.nih.gov/articles/PMC10767033/)；[R2 · Quantum Annealing Designs Nonhemolytic Antimicrobial Peptides in a Discrete Latent Space](https://pmc.ncbi.nlm.nih.gov/articles/PMC10184305/)；[R3 · De Novo Design of Protein-Binding Peptides by Quantum Computing](https://arxiv.org/abs/2503.05458)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
 
 > 更新：2026-10-04｜重点储备｜证据：实验关联

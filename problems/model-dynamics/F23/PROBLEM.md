@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F23-kcuf3-neutron-dsf/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F23 · KCuF₃ 中子散射谱：用量子处理器计算动态结构因子并与实验对照
 
-> 开放题 · 材料模型与动力学 · 量子磁性 / 中子散射
+> 开放题 · 材料模型与动力学 · 量子磁性 / 中子散射 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面

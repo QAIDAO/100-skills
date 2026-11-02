@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F06-electron-phonon-peierls/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F06 · 电子—声子竞争与 Peierls 电荷序：混合求解和开放器件提案
 
-> 开放题 · 材料模型与动力学 · 电子—声子与极化子
+> 开放题 · 材料模型与动力学 · 电子—声子与极化子 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · A hybrid quantum-classical method for electron-phonon systems](https://www.nature.com/articles/s42005-023-01353-3)；[R2 · Steady-state Peierls transition in nanotube quantum simulator](https://www.nature.com/articles/s41534-022-00675-4)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 文献核查截至 2026-10-04。优先级：探索观察（编辑判断）；证据：经典验证。本档案是文献研究和试点设计，未运行复现实验。
 

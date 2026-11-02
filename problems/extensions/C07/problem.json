@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C07",
   "observable": "单重/三重态概率、积分反应产率、角向各向异性",
+  "original_target_status": "incomplete",
   "quantum_role": "酉扩张编码开放系统通道并测反应通量",
   "reference_input": {
     "items": [
@@ -56,5 +57,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "热身"
-  }
+  },
+  "version": 1
 }

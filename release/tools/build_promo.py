@@ -887,7 +887,7 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 <ul class="facts">
 <li>所有参照都在经典计算机上执行，不包含真机结果。</li>
 <li>按项目当前记录，原应用目标完成数为 0，这些题目都还开放着；我们不声称量子优势。</li>
-<li>原始数据与第三方数据集不随题库发布，每题的 evidence.json 记录来源文件的 SHA-256。</li>
+<li>原始数据与第三方数据集不随题库发布；题库只链接仓库里公开的文件，任何人都能从公开源重建。</li>
 </ul>
 </div>
 </div></section>

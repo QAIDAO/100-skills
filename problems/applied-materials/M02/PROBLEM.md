@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M02-diels-alder-barrier/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M02 · Diels–Alder 环加成势垒：把静态与动态关联接入合成路线判断
 
-> 开放题 · 应用材料 · 反应路径与聚合材料
+> 开放题 · 应用材料 · 反应路径与聚合材料 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -45,7 +45,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -64,15 +63,8 @@
 
 图解依据：[R1 · Simulation of a Diels-Alder Reaction on a Quantum Computer](https://arxiv.org/html/2403.08107v1)；[R2 · The variational quantum eigensolver self-consistent field method within a polarizable embedded framework](https://pubmed.ncbi.nlm.nih.gov/38533884/)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **最多8比特的混合流程演示了势垒计算；动态关联的经典修正是结果的一部分。**
 >

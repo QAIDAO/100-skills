@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M13-logical-chiral-catalysis/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M13 · 手性铁催化的 HPC＋逻辑比特流程：识别值得量子计算的少数构型
 
-> 开放题 · 应用材料 · 催化自动化与逻辑量子计算
+> 开放题 · 应用材料 · 催化自动化与逻辑量子计算 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -52,15 +52,8 @@
 
 图解依据：[R1 · End-to-End Quantum Simulation of a Chemical System](https://arxiv.org/html/2409.05835v1)；[R2 · Evaluating the evidence for exponential quantum advantage in ground-state quantum chemistry](https://www.nature.com/articles/s41467-023-37587-6)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **真实反应网络经过经典筛选后，只将一个很小的相关活性问题送入逻辑电路。**
 >

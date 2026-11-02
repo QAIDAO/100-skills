@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F11",
   "observable": "杂质格林函数、自能、单粒子谱 A(k,ω)",
+  "original_target_status": "incomplete",
   "quantum_role": "QPU 计算小 Anderson 杂质模型的态与响应；经典 DFT、降维、DMFT 自洽与重建材料谱。",
   "reference_input": {
     "gaps": "未舍入参数、原 qEOM 系数、DFT/Wannier/cRPA 与自洽 DMFT 数据未公开。",
@@ -68,5 +69,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

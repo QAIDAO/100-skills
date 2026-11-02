@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M10",
   "observable": "界面反应势垒、氧迁移/占位能差及速率模型的误差传播",
+  "original_target_status": "incomplete",
   "quantum_role": "QPE电子基态估计嵌入经典NEB/合金配置工作流",
   "reference_input": {
     "gaps": "公开坐标不含水、H、O，不能代表原析氢或腐蚀反应；正文与 SI 的原子数口径互相矛盾；MgAl 表面与 Nb 合金含氧构型、过渡态均未公开。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

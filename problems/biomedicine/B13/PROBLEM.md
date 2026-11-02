@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B13-lipoxygenase-pcet/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B13 · 脂氧合酶：PCET、氢隧穿与同位素效应
 
-> 开放题 · 生物医药 · 酶设计 / 核量子效应
+> 开放题 · 生物医药 · 酶设计 / 核量子效应 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -45,7 +45,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -64,15 +63,8 @@
 
 图解依据：[R1 · Fundamental Insights into Proton-Coupled Electron Transfer in Soybean Lipoxygenase from Quantum Mechanical/Molecular Mechanical Free Energy Simulations](https://pubmed.ncbi.nlm.nih.gov/29392938/)；[R2 · Temporal and spatial resolution of distal protein motions that activate hydrogen tunneling in soybean lipoxygenase](https://pmc.ncbi.nlm.nih.gov/articles/PMC10013837/)；[R3 · Nonadiabatic nuclear-electron dynamics: a quantum computing approach](https://arxiv.org/abs/2306.01671)；[R4 · Approximate quantum circuit compilation for proton-transfer kinetics on quantum processors](https://doi.org/10.1039/D5CP04097C)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 更新：2026-10-04｜重点储备｜证据：研究提案
 > 本文为文献研究与试点建议；未执行计算复现、硬件实验或生物实验。优先级是编辑判断。

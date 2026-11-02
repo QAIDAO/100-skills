@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B03",
   "observable": "静电相互作用能、一粒子约化密度矩阵",
+  "original_target_status": "incomplete",
   "quantum_role": "VQE准备局部电子态，以费米基旋转测量密度矩阵，再经典重建静电能",
   "reference_input": {
     "gaps": "原 4e4o 哈密顿量、广义静电 J、单体分割与初态未公开。",
@@ -58,5 +59,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

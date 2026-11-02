@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M20",
   "observable": "固定模型相对电子能、模型偏差与计算成本；材料稳定性仍需额外动力学证据",
+  "original_target_status": "incomplete",
   "quantum_role": "双因子化或双平面波QPE资源估算，为经典稳定性模型提供电子能校正",
   "reference_input": {
     "gaps": "同一笼内 bent 构型与过渡态坐标未公开，无法直接组装相对能。",
@@ -74,5 +75,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M12-half-mobius-molecule/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M12 · 半 Möbius 分子：把量子子空间计算接到真实分子表征
 
-> 开放题 · 应用材料 · 新型分子材料与拓扑
+> 开放题 · 应用材料 · 新型分子材料与拓扑 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -45,7 +45,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -64,15 +63,8 @@
 
 图解依据：[R1 · A molecule with half-Möbius topology](https://ora.ox.ac.uk/objects/uuid%3Aab54a73f-6ee8-4afa-8997-541e6de6cc5d/files/s70795b17p)；[R2 · Exploring pathways towards quantum advantage in quantum chemistry: the case of a molecule with half-Möbius topology](https://arxiv.org/html/2603.08696v2)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **已合成分子的电子拓扑研究与72–100比特扩展工作相互关联，但属于不同论文与不同证据层。**
 >

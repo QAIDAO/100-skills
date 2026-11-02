@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F02",
   "observable": "κ=∂n/∂μ、低能谱权重、多点自旋电荷关联",
+  "original_target_status": null,
   "quantum_role": "光晶格费米子模拟，测压缩率与动量相关调制谱。",
   "reference_input": {
     "gaps": "原始图像、位串与赝能隙谱的完整测量数据未公开。",
@@ -52,5 +53,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

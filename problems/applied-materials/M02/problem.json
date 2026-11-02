@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M02",
   "observable": "反应物到TS的电子活化能、轨道占据和环境诱导势垒变化",
+  "original_target_status": "incomplete",
   "quantum_role": "纠缠锻造制备关联信息，QSE扩展子空间，再经典微扰恢复动态关联",
   "reference_input": {
     "gaps": "原作者未拟合积分未公开；呋喃+乙烯极化环境对照的输入未整理。",
@@ -61,5 +62,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

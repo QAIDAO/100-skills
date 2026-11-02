@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F09",
   "observable": "核自旋 OTOC 曲线、平均 H–H 距离、平均二面角",
+  "original_target_status": "incomplete",
   "quantum_role": "超导 QPU 计算给定核自旋 Hamiltonian 的 OTOC，经典优化几何参数。",
   "reference_input": {
     "gaps": "原 9/15 核自旋完整网络与取向映射未整理；单个三自旋 OTOC 不能唯一反演两个 C–H 耦合。",
@@ -66,5 +67,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C02",
   "observable": "垂直电离能、指定键的多态势能切片、自旋和占据",
+  "original_target_status": "incomplete",
   "quantum_role": "多态VQE/QSE或容错求解为电子态与态间矩阵元提供接口",
   "reference_input": {
     "gaps": "原 FOMO 电子模型、坐标与基组设置未公开；作者开源代码不含本体系输入。",
@@ -52,5 +53,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

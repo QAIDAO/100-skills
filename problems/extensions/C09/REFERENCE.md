@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/C09-crystal-annealing/execution/public-periodic-r63/RESULTS.md 生成，勿手改 -->
-
-> C09 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> C09 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # C09 R63：准确周期 Kr 小模型与完整松弛评分
 
@@ -8,7 +6,7 @@
 
 ## 科学对象与模型身份
 
-准确 OpenKIM `LJ_Shifted_Bernardes_1958LowCutoff_Kr__MO_995724792024_004` 和 driver `LJ_Shifted__MD_498634107543_004`；ε=.014 eV、σ=3.65 Å、rc=9.91 Å，胞边5.653 Å、三轴周期、g2全8占据位。全部256配置、N0..8保留，无mu、数目罚项或origin pin。来源明细见准确取源（本地证据，未随题库发布）与SHA清单（本地证据，未随题库发布）；[NIST官方条目](https://www.ctcms.nist.gov/potentials/entry/1958--Bernardes-N--Kr/LJ_Shifted_Bernardes_1958LowCutoff_Kr__MO_995724792024_004.html)确认准确low-cutoff ID。原文为[arXiv v2](https://arxiv.org/abs/2307.03123v2)/[PRA](https://doi.org/10.1103/PhysRevA.109.032416)，本地论文（本地证据，未随题库发布）。
+准确 OpenKIM `LJ_Shifted_Bernardes_1958LowCutoff_Kr__MO_995724792024_004` 和 driver `LJ_Shifted__MD_498634107543_004`；ε=.014 eV、σ=3.65 Å、rc=9.91 Å，胞边5.653 Å、三轴周期、g2全8占据位。全部256配置、N0..8保留，无mu、数目罚项或origin pin。来源明细见准确取源与SHA清单；[NIST官方条目](https://www.ctcms.nist.gov/potentials/entry/1958--Bernardes-N--Kr/LJ_Shifted_Bernardes_1958LowCutoff_Kr__MO_995724792024_004.html)确认准确low-cutoff ID。原文为[arXiv v2](https://arxiv.org/abs/2307.03123v2)/[PRA](https://doi.org/10.1103/PhysRevA.109.032416)，本地论文。
 
 原compute严格 r²<rc²，常数energy shift而非force shift；物理能保留self-image、ordered-pair一半与所有cutoff内镜像，不采用minimum-image代替能量。不同格点J先聚合镜像再上截1eV，self线性项保留；连续raw势不cap。QUBO→Ising/globalphase与梯度两FD步长独立资格。准确source-definedFCC参考 -0.431986694916221 eV/胞，论文−.431との差 -0.0009866949162209981 eV，超过事前±.0005窗，`paper_pointwise_energy_reproduction=false`。没有调ε/cutoff/零点追论文数字；这是来源定义的新缩小实验，未逐点复现论文。
 
@@ -30,15 +28,13 @@
 | 7 | 8 | 8 | 6 | 0 |
 | 8 | 1 | 1 | 1 | 0 |
 
-
 | mask | optimizer_success | final_energy_eV | max_force_eV_per_A | force_gate | FCC_qualified |
 |---|---|---|---|---|---|
 | 46 | False | 3.7340929723807172 | 1.4958950219599985 | False | False |
 | 78 | True | -0.4319866949136111 | 1.029656254053428e-06 | False | False |
 | 165 | False | 1.9678392988896074 | 5.13389802154598 | False | False |
 
-
-完整每N CSV（本地证据，未随题库发布）、失败N4 CSV（本地证据，未随题库发布）保存status/message/源recordSHA；全部原始coords、optimizer status、次数、witness在完整库（本地证据，未随题库发布）和松弛结果（本地证据，未随题库发布），独立库审计（本地证据，未随题库发布）核原始初态及最终端点能/梯度与身份，不重跑BFGS。扰动起点仅核seed坐标，未另算jitter起点物理；有限96个坐标witness不是任意连续平移/Hessian证明，见审计范围澄清（本地证据，未随题库发布）。
+完整每N CSV、失败N4 CSV保存status/message/源recordSHA；全部原始coords、optimizer status、次数、witness在完整库和松弛结果，独立库审计核原始初态及最终端点能/梯度与身份，不重跑BFGS。扰动起点仅核seed坐标，未另算jitter起点物理；有限96个坐标witness不是任意连续平移/Hessian证明，见审计范围澄清。
 
 ## 量子提案、读出与公平比较
 
@@ -49,7 +45,6 @@
 | quantum | 0.21127750222059735 | 0.2028622257610588 | 0.9601695572359046 | 1603 | 8192 | 0.1872312577630794 | 0.20441143993285196 |
 | uniform_bits | 0.2734375 | 0.26171875 | 0.9571428571428572 | 2201 | 8192 | 0.2591878875763717 | 0.2783824742903712 |
 | uniform_N4 | 0.9999999999999998 | 0.9571428571428571 | 0.9571428571428573 | 7821 | 8192 | 0.9499920142792336 | 0.9590055593600185 |
-
 
 全bits uniform 的exact概率 0.26171875；N4 uniform 的exact概率 0.9571428571428571（额外N4信息、不同空间，不能与未限制N量子分母宣称同协议优势）。三条各8192独立PCG64流，baseline seed事前域分离；量子draw用实际fine-native概率，微小FP归一调整单列。P(N4)/条件比与无条件均报告，主门只用无条件。全库失败按false评分，库lookup不是新松弛计算。
 
@@ -62,12 +57,7 @@
 | fine_semantic_unconditional_relaxed_FCC | 0.20286222576117302 | 0.5 | >= | False |
 | Wilson95_lower | 0.1872312577630794 | 0.5 | >= | False |
 
-
 经典完整枚举+逐配置付费局部松弛是必要强参考；uniform仅提案分布参照。没有扫描T/seed/能标追门，没有量子优势结论。量子primitive/编译/IR/传播/真实native replay/readout/lookup组件费用完整保存，狭窄draw wall不是公平TTS。全量库先解出小问题不能被当成免费success oracle。此固定小模型的推荐路线是完整256枚举与已付费松弛库；量子P(N4)低于全bits uniform，条件成功率较高仍不能补偿无条件失败。
-
-（图：周期FCC模板与库，本地证据，未随题库发布）
-
-（图：概率与误差，本地证据，未随题库发布）
 
 ## 完整费用与失败边界
 
@@ -81,8 +71,7 @@
 | quantum-production | 4.56 | 4.01 | 113262592 | 7622454 |
 | quantum-audit | 6.859999999999999 | 6.47 | 122224640 | 1784152 |
 
-
-七stage合计CPU113.27s、累计wall92.30s、峰RSS122224640bytes、输出28632855bytes、scratch0bytes。CPU/累计wall求和，RSS峰值max；累计wall不是端到端并行延时。首次input audit完整运行但margin口径错误，完整性false，其0.55CPU/0.52wall仍计一次；修正版另stage封存、未变科学势/门。见修复记录（本地证据，未随题库发布）与资源总账（本地证据，未随题库发布）及独立核账（本地证据，未随题库发布）。monitor时间已包含，不二次相加；组件wall已包含parent stage。工程render/打包另列receipt，未冒充科学stage或记为0；完整历史生命周期未知。
+七stage合计CPU113.27s、累计wall92.30s、峰RSS122224640bytes、输出28632855bytes、scratch0bytes。CPU/累计wall求和，RSS峰值max；累计wall不是端到端并行延时。首次input audit完整运行但margin口径错误，完整性false，其0.55CPU/0.52wall仍计一次；修正版另stage封存、未变科学势/门。见修复记录与资源总账及独立核账。monitor时间已包含，不二次相加；组件wall已包含parent stage。工程render/打包另列receipt，未冒充科学stage或记为0；完整历史生命周期未知。
 
 | gate | fine_actual_once | conditional8192_physical_plan | actual_QPU_gate_executions |
 |---|---|---|---|
@@ -90,17 +79,16 @@
 | RZ | 140800 | 1153433600 | 0 |
 | CX | 179200 | 1468006400 | 0 |
 
-
 GP保存但无物理门；coarse原生计划未执行，fine实际一次native replay与8192假想曝光严格分开。实际QPU调用/物理shots=0。硬件连接/routing/noise/门时间/校准/容错unknown，T40无量纲不能换算20µs。该新周期小模型没有闭合原g4/g6、MoS2三体、实验晶相或工业CSP。原应用仍incomplete。
 
 ## 验收范围与可重建入口
 
-旧结果（本地证据，未随题库发布）仍`algorithm_pass`，只支持非周期empty/full编码传播；本轮不反转旧门。当前真实周期/非平凡竞争/全库结构身份/固定量子实验和全部误差成本若经独立交付核验齐备，可按事前R52范围复核（本地证据，未随题库发布）限定支持R4/R6 proven_scoped；不等于算法成功、论文逐点复现或原应用完成。LATEST/global由父线程另行核验晋升，本builder不修改。
+旧结果仍`algorithm_pass`，只支持非周期empty/full编码传播；本轮不反转旧门。当前真实周期/非平凡竞争/全库结构身份/固定量子实验和全部误差成本若经独立交付核验齐备，可按事前R52范围复核限定支持R4/R6 proven_scoped；不等于算法成功、论文逐点复现或原应用完成。LATEST/global由父线程另行核验晋升，本builder不修改。
 
-固定source与seed/门/失败政策见方法（本地证据，未随题库发布）、松弛设计（本地证据，未随题库发布）、量子设计（本地证据，未随题库发布）和ROOT（本地证据，未随题库发布）。全部七stage结果/合同/worker/manifest/receipt与源SHA由展示manifest递归绑定。重建命令见 REPRODUCE.md，属于未来有预算的独立复建，不指示原目录免费重跑。图仅依据保存JSON/CSV；两张PNG已经父级及独立实际目视通过并绑定精确SHA；PDF仅导出未目视。
+固定source与seed/门/失败政策见方法、松弛设计、量子设计和ROOT。全部七stage结果/合同/worker/manifest/receipt与源SHA由展示manifest递归绑定。重建命令见 REPRODUCE.md，属于未来有预算的独立复建，不指示原目录免费重跑。图仅依据保存JSON/CSV；两张PNG已经父级及独立实际目视通过并绑定精确SHA；PDF仅导出未目视。
 
 图中“Uniform all 256 bits”指8位占据变量的全部256个位串构型，并非256量子比特。
 
-渲染工程另列 CPU2.3400000000000003s、wall2.1799999999999997s、RSS220037120bytes、输出824428bytes、scratch0bytes，不并入七个科学stage。见工程receipt（本地证据，未随题库发布）与工程seal（本地证据，未随题库发布）。authoring/资料获取/打包完整生命周期未测。
+渲染工程另列 CPU2.3400000000000003s、wall2.1799999999999997s、RSS220037120bytes、输出824428bytes、scratch0bytes，不并入七个科学stage。见工程receipt与工程seal。authoring/资料获取/打包完整生命周期未测。
 
-R1–R8按独立范围复核（本地证据，未随题库发布）记限定proven_scoped；R4/R6证据包括真实非平凡周期/连续结构竞争、完整量子演化和误差/读出/付费成本，结果为科学负例，原应用仍incomplete。本固定路线closed_negative_result；晋升须最后独立delivery准入，未晋升LATEST/global。
+R1–R8按独立范围复核记限定proven_scoped；R4/R6证据包括真实非平凡周期/连续结构竞争、完整量子演化和误差/读出/付费成本，结果为科学负例，原应用仍incomplete。本固定路线closed_negative_result；晋升须最后独立delivery准入，未晋升LATEST/global。

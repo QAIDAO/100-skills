@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M15-electrolyte-fault-tolerant/execution/public-salt-qpe-v2/report.md 生成，勿手改 -->
-
-> M15 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> M15 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # M15：原公开盐分子输入与 QPE 组件验证
 
@@ -16,7 +14,7 @@
 
 ## 冻结协议与实际量子线路
 
-manifest（本地证据，未随题库发布） 在成功作业开始前冻结模型、轨道规则、1 mHa 能量门与 1 kcal/mol 派生能差门。基组采用论文列出的 STO-3G，常规 RHF 使用精确 Gaussian 积分，无 SCF density fitting。LiPF₆/PF₆⁻/Li⁺ 全空间分别 44/39/5 空间轨道、72/70/2 电子，固定 Mₛ=0 determinant 数分别约 3.14×10¹⁶、6.77×10⁹、25；没有进行前两者全电子 FCI。
+manifest 在成功作业开始前冻结模型、轨道规则、1 mHa 能量门与 1 kcal/mol 派生能差门。基组采用论文列出的 STO-3G，常规 RHF 使用精确 Gaussian 积分，无 SCF density fitting。LiPF₆/PF₆⁻/Li⁺ 全空间分别 44/39/5 空间轨道、72/70/2 电子，固定 Mₛ=0 determinant 数分别约 3.14×10¹⁶、6.77×10⁹、25；没有进行前两者全电子 FCI。
 
 量子模型统一为 canonical HOMO/LUMO CAS(2,2)：4 系统量子位、Nα=Nβ=1 的 4 维经典精确参考。其他占据轨道作为 inactive core，跨几何独立 canonical 排序；没有最大重叠轨道跟踪、FCI 选轨道或改几何。Li⁺ 的 HOMO 是 1s，两个分子与原子的冻结核芯处理不形成共享一致的解离轨道流形，这进一步限制化学解释。
 
@@ -44,14 +42,12 @@ PF₆⁻ 的 canonical HOMO 与前一个轨道能差仅 1.12×10⁻¹⁴ Ha，CA
 
 ## 成本、失败记录与交付
 
-成功主作业 wall 为 **15.37 s**，单 CPU，QPU 调用 0。首次作业在 LiPF₆ RHF 已收敛后因 PySCF `get_grad` API 缺显式 MO 参数退出 1；保留 attempt-1（本地证据，未随题库发布） 的 driver、manifest、原 SCF 日志与外部 job 记录，修复 API 后重新冻结相同科学协议，恢复完成 checkpoint，未重跑该 SCF。没有为通过门增加参数或放宽预算。
+成功主作业 wall 为 **15.37 s**，单 CPU，QPU 调用 0。首次作业在 LiPF₆ RHF 已收敛后因 PySCF `get_grad` API 缺显式 MO 参数退出 1；保留 attempt-1 的 driver、manifest、原 SCF 日志与外部 job 记录，修复 API 后重新冻结相同科学协议，恢复完成 checkpoint，未重跑该 SCF。没有为通过门增加参数或放宽预算。
 
-最终每次 14 位电路为 18 量子位、6419 CX；LiPF₆/PF₆⁻ 为 12959 u、depth 14231，Li⁺ 为 12953 u、depth 14225。raw driver counts 把初态 H/X 保留为 primitive；事后纯编译资源审计将这些也变成 u，CX/depth 不变，原结果与 driver 不修改。resource-ledger（本地证据，未随题库发布） 保存修正及完整 native QPY。完整量子态模拟针对 dense 受控 U；native 等价性在每端点首/末两个 5q 控制块做矩阵核验，未直接模拟全部 native CX 线路。
+最终每次 14 位电路为 18 量子位、6419 CX；LiPF₆/PF₆⁻ 为 12959 u、depth 14231，Li⁺ 为 12953 u、depth 14225。raw driver counts 把初态 H/X 保留为 primitive；事后纯编译资源审计将这些也变成 u，CX/depth 不变，原结果与 driver 不修改。resource-ledger 保存修正及完整 native QPY。完整量子态模拟针对 dense 受控 U；native 等价性在每端点首/末两个 5q 控制块做矩阵核验，未直接模拟全部 native CX 线路。
 
 读出总计 **248832 shots**，若每次执行 native 线路，对应约 **1.248×10⁹ CX、2.523×10⁹ u** 和 2737152 相位位测量。这是理想逻辑门预算，未发生硬件执行。每 14 位 QPE 使用 14 个经典构造的受控矩阵，等效基础 U 调用和为 16383；大幂矩阵被直接生成，不能把矩阵预言机当零成本可扩展实现。无硬件路由、噪声、Clifford+T 旋转合成、容错编码、光子资源或 magic-state factory 实测成本。这个组件不替代原作者全电子容错资源估计。
 
-同模型强基线是 4×4 精确经典对角化，算法验证没有量子优势结论。父级独立核验涵盖全部原坐标、PySCF 四根、九个完整终态/谱分布与 54 组计数随机流，见 m15-parent-audit（本地证据，未随题库发布）。运行和来源哈希、原始矩阵、轨道、SCF checkpoint、54 组计数、QPY、冻结失败与环境均归档；旧结果、LATEST 与共享汇总未修改。
+同模型强基线是 4×4 精确经典对角化，算法验证没有量子优势结论。父级独立核验涵盖全部原坐标、PySCF 四根、九个完整终态/谱分布与 54 组计数随机流，见 m15-parent-audit。运行和来源哈希、原始矩阵、轨道、SCF checkpoint、54 组计数、QPY、冻结失败与环境均归档；旧结果、LATEST 与共享汇总未修改。
 
 可执行下一步应先闭合目标还原态/断键端点、电荷/多重度、溶剂及电位条件，并检验包含整个简并轨道组的一致相关空间与基组收敛；随后才比较 scalable DF-qubitization。当前原公开几何已闭合，不应继续把“所有几何缺失”当下一步理由。
-
-完整结果（本地证据，未随题库发布） · 输入几何（本地证据，未随题库发布） · GOAL（本地证据，未随题库发布） · 来源输入审计（本地证据，未随题库发布） · 归档核验（本地证据，未随题库发布） · 来源与执行哈希（本地证据，未随题库发布）

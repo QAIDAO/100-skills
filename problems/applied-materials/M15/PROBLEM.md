@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M15-electrolyte-fault-tolerant/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M15 · 锂电电解液分子：还原稳定性与 SEI 初始反应的容错规划
 
-> 开放题 · 应用材料 · 电解液与界面反应
+> 开放题 · 应用材料 · 电解液与界面反应 · 题面版本 v1
 > 难度：前沿（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Fault-tolerant resource estimate for quantum chemical simulations: Case study on Li-ion battery electrolyte molecules](https://arxiv.org/html/2104.10653v2)；[R2 · Simulating key properties of lithium-ion batteries with a fault-tolerant quantum computer](https://arxiv.org/abs/2204.11890)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **电解液分子有硬件架构相关的容错成本研究；尚未由量子计算验证配方寿命改善。**
 >

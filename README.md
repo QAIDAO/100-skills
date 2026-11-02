@@ -65,7 +65,7 @@ python starters/B16/run.py
 
 - 现有参照全部来自经典计算机上的计算与模拟，不包含真机结果，也不声称量子优势。
 - 按项目当前记录，原应用目标完成数为 0：这些题目都还开放着。
-- 原始数据、大型数组和第三方数据集不随题库发布；相应内容标注为「本地证据，未随题库发布」，`evidence.json` 记录来源文件的 SHA-256。
+- 原始数据、大型数组和第三方数据集不随题库发布。参照报告正文里提到的结果文件与路径只作说明，题库本身不链接、也不依赖任何未公开的文件。
 
 ## 许可
 
@@ -73,7 +73,7 @@ python starters/B16/run.py
 
 ## 维护者说明
 
-`problems/` 与 `release/stats.json` 由 `release/tools/build_problems.py` 从维护者本地的研究目录确定性生成，不能手改。研究原件约 207G，不入库。
+题库的权威源就在 `problems/` 里，每题目录中的 `problem.json`（题面、难度标签、基准输入、版本号）、`BACKGROUND.md`（原案例说明）、`REFERENCE.md`（现有参照）和 SVG 图可以直接修改，改动走 PR；改了源要把该题 `version` 加 1。`PROBLEM.md`、各级 `INDEX.md` 与 `release/stats.json` 由 `python3 -I release/tools/build_problems.py` 只从这些公开文件确定性生成，不能手改；CI 用 `--check` 确认生成物与源同步、改过的题升了版本。维护者的研究原件（约 207G）不入库，构建不读取；新的研究结果整理成 `REFERENCE.md` 后和其他改动一样提交。
 
 展示页 `release/promo/index.html` 由 `release/tools/build_promo.py` 从 `problems/` 生成，同样不能手改；`release/tools/verify_promo.mjs` 做三种宽度的浏览器检查。首屏截图 `release/promo/preview.png` 不是自动产物，页面首屏变化后需要重新截取。
 

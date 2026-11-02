@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B08-covalent-btk/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B08 · 共价抑制剂：BTK反应势垒与磺酰氟反应性
 
-> 开放题 · 生物医药 · 共价药 / 化学反应性
+> 开放题 · 生物医药 · 共价药 / 化学反应性 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · CovAngelo: A hybrid quantum-classical computing platform for accurate and scalable drug discovery](https://arxiv.org/html/2604.10487v1)；[R2 · Circuit Depth Reduction for Executable Hamiltonian Dynamics of Covalent Inhibitor Reactivity on Quantum Hardware](https://arxiv.org/abs/2412.15804v4)；[R3 · A Hybrid Quantum Computing Pipeline for Real World Drug Discovery](https://arxiv.org/abs/2401.03759)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 更新：2026-10-04｜近期验证｜证据：硬件演示
 > 本文为文献研究与试点建议；未执行计算复现、硬件实验或生物实验。优先级是编辑判断。
@@ -98,7 +90,7 @@
 电子能势垒 ΔE‡=E_TS−E_R 用于机理比较；实验 kinact/KI 还包括结合、反应自由能和动力学，因此不能由ΔE‡直接推出。CovAngelo用MD、QM/QM/MM和DMET相关轨道处理环境与关联，量子求解器只接收片段。另一条路线用哈密顿量时间演化生成特征，再由经典机器学习预测反应性，最终表现必须独立验证特征的贡献。
 
 #### 已发表或预印本实际结果
-CovAngelo全文区分了平台支持、经典大体系计算和硬件验证：20比特Garnet设备上的示例实际上是8比特简化过渡态线路；“20倍”指FTQC算法T门估算改进。[R1] 磺酰氟论文v4展示8比特硬件哈密顿量动力学，通过项截断与线路分解降低深度，形成化学反应性预测流程。[R2] 前药论文覆盖共价断键与相互作用；后续全文核验和具体β-lapachone独立案例见B16（本地证据，未随题库发布），避免与本条BTK模型混用。[R3]
+CovAngelo全文区分了平台支持、经典大体系计算和硬件验证：20比特Garnet设备上的示例实际上是8比特简化过渡态线路；“20倍”指FTQC算法T门估算改进。[R1] 磺酰氟论文v4展示8比特硬件哈密顿量动力学，通过项截断与线路分解降低深度，形成化学反应性预测流程。[R2] 前药论文覆盖共价断键与相互作用；后续全文核验和具体β-lapachone独立案例见B16，避免与本条BTK模型混用。[R3]
 
 此外，CovAngelo正文§2.4.2 Table2列出化学选轨与优化选轨的真机VQE相对FCI能量偏差幅度分别为 **2.943 Ha和2.058 Ha**，远未达到化学精度。表注写ΔE=E_FCI−E_VQE，但表中正值对应相反相减的幅度，故这里按绝对偏差解读；不能将平台集成与高精度反应势垒的经典结果误认为真机已实现同等精度。[R1]
 

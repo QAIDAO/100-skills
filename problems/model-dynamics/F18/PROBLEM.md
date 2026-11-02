@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F18-nonlinear-multidimensional-spectroscopy/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F18 · 非线性二维光谱：用多时响应区分耦合、记忆与人口转移
 
-> 开放题 · 材料模型与动力学 · 多维光谱与光功能材料
+> 开放题 · 材料模型与动力学 · 多维光谱与光功能材料 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -43,7 +43,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -62,7 +61,7 @@
 
 图解依据：[R1 · Simulating Non-Markovian Dynamics in Multidimensional Electronic Spectroscopy via Quantum Algorithm](https://arxiv.org/html/2409.05548v1)；[R2 · A unified framework for efficient quantum simulation of nonlinear spectroscopy](https://arxiv.org/html/2604.16164v1)；[R3 · Nonlinear Molecular Electronic Spectroscopy via MCTDH Quantum Dynamics: From Exact to Approximate Expressions](https://mukamel.ps.uci.edu/publications/pdfs/1040.pdf)；[R4 · Nonlinear Spectroscopy via Generalized Quantum Phase Estimation](https://quantum-journal.org/papers/q-2025-08-07-1822/)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
 
 > 文献核查截至 2026-10-04。优先级：重点储备（编辑判断）；证据：经典验证。这里的应用价值指可迁移的研究任务，未证明工业收益。本次未执行论文计算复现。

@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M17",
   "observable": "平衡活性空间中的吸附能及其关联能贡献随NO阈值的收敛，对照实验估计36.8 kJ/mol；误差向等温线和选择性的传播",
+  "original_target_status": "incomplete",
   "quantum_role": "周期Wannier与MP2自然轨道降维后，先在缩小空间做QNP采样与SQD（求解器测试）；下一级在论文表2中NO阈值1e-4及以上、三体系平衡的活性空间上用SQD或相位估计求关联能贡献",
   "reference_input": {
     "gaps": "平衡空间（表 2）的 FCIDUMP 未公开，需自行导出；表 2 本身也是按 MP2 自然轨道阈值截断的结果，嵌入在 HF 中，不是完整周期体系。积分来自自旋限制 HF，只有单重态 FCIDUMP，Fe 高自旋与晶格磁序未纳入（三重态、五重态只有缩小空间，见论文 SI 表 S2）。Mg-MOF-74 只有 DFT，没有活性空间积分。计算值未含零点能与热校正，实验锚点的换算依赖 DFT 校正；等温线不在输入内。",
@@ -109,5 +110,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

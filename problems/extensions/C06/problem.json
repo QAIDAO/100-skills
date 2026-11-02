@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C06",
   "observable": "质子空间概率、时间相关函数、非谐振动峰",
+  "original_target_status": "incomplete",
   "quantum_role": "离散核坐标映射与量子逻辑演化；与电子结构计算串接",
   "reference_input": {
     "gaps": "128 点势能面、DAF 与精确坐标未公开；公开矩阵与出版版约 800 cm⁻¹ 的叙述不一致。",
@@ -51,5 +52,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

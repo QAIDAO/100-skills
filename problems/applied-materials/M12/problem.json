@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M12",
   "observable": "相对能、电子附着态/轨道特征、相关描述及空间收敛",
+  "original_target_status": "incomplete",
   "quantum_role": "SqDRIFT随机短时演化采样构造Krylov候选，经典子空间对角化",
   "reference_input": {
     "gaps": "原文 72 比特表面分子模型的积分未公开。",
@@ -62,5 +63,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

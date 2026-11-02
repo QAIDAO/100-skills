@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M09",
   "observable": "垂直激发能、态排序、多重度、对称性与候选间趋势",
+  "original_target_status": "incomplete",
   "quantum_role": "量子嵌入构造可由经典或未来QPU求解的有效哈密顿量",
   "reference_input": {
     "gaps": "四类中性 IV 族缺陷的有效一、二体积分、几何与屏蔽定义未取得。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

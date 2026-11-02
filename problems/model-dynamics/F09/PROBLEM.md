@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F09-nmr-structure-echoes/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # F09 · NMR 多体回波反演分子几何：把量子信号接回实验结构
 
-> 开放题 · 材料模型与动力学 · 谱学反演与分子结构
+> 开放题 · 材料模型与动力学 · 谱学反演与分子结构 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：凝聚态与动力学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Quantum computation of molecular geometry via many-body nuclear spin echoes](https://arxiv.org/html/2510.19550v1)；[R2 · Digital quantum simulation of NMR experiments](https://pmc.ncbi.nlm.nih.gov/articles/PMC10656062/)；[R3 · A verifiable quantum advantage](https://research.google/blog/a-verifiable-quantum-advantage/)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 文献核查截至 2026-10-04。优先级：近期验证（编辑判断）；证据：实验关联。本档案是文献研究和试点设计，未运行复现实验。
 

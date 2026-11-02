@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M06",
   "observable": "最低模型能量、有效低能样本、充电曲线与成功概率/成本",
+  "original_target_status": "incomplete",
   "quantum_role": "量子退火求含粒子数约束的离散优化；经典构造能量模型与重评分",
   "reference_input": {
     "gaps": "Fe²⁺/Fe³⁺ 是同一位点的标签，不是另外 32 个 Fe 位点。",
@@ -50,5 +51,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

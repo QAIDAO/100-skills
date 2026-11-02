@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C03",
   "observable": "受体布居、累计捕获概率、相干与振动敏感性",
+  "original_target_status": "incomplete",
   "quantum_role": "变分实时间演化/Trotter或量子通道模拟",
   "reference_input": {
     "gaps": "真实联噻吩二聚体几何、64 分子 MD 与原 5000 帧轨迹未公开。",
@@ -58,5 +59,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

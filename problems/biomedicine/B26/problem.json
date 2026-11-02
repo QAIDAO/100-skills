@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B26",
   "observable": "低能自旋阶梯、峰位置、自旋标签和结构间排序",
+  "original_target_status": "incomplete",
   "quantum_role": "经典交换参数→有效自旋模型编码→时间演化和模拟测量→经典自旋分辨谱恢复",
   "reference_input": {
     "items": [
@@ -59,5 +60,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

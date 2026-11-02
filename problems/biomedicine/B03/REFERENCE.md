@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B03-p450nor-electrostatics/execution/revision-5-input-closure/RESEARCH.md 生成，勿手改 -->
-
-> B03 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> B03 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # B03 revision5：原P450nor输入闭包
 

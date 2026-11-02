@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M19",
   "observable": "反应物、过渡态、产物的相对能和不同自旋态能差",
+  "original_target_status": null,
   "quantum_role": "AVAS活性空间与双因子化QPE能量估计，结合初态和容错资源模型",
   "reference_input": {
     "gaps": "原基准 UUID 对应的积分未取得，参照模型与原模型的一致性未闭合；溶剂与活性空间收敛未处理。",
@@ -65,5 +66,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

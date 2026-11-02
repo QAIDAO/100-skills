@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F16",
   "observable": "复数S矩阵、P(v′←v;E)、共振位置及宽度",
+  "original_target_status": "incomplete",
   "quantum_role": "以量子传播和受控态重叠估计所选通道关联；势能面、通道构造与傅里叶后处理在经典端。",
   "reference_input": {
     "items": [
@@ -63,5 +64,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "热身"
-  }
+  },
+  "version": 1
 }

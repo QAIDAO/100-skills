@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F07",
   "observable": "波包密度、电子态布居 Pα(t)、几何相位干涉",
+  "original_target_status": "incomplete",
   "quantum_role": "离子内部两能级表示电子态，两运动模表示选定核振动。",
   "reference_input": {
     "gaps": "丙二烯阳离子、丁三烯阳离子、吡嗪的完整振电参数未整理。",
@@ -61,5 +62,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

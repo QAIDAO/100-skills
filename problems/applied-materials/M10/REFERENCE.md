@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M10-corrosion-mg-niobium/execution/public-input-v2/RESEARCH.md 生成，勿手改 -->
-
-> M10 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> M10 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # M10 原公开输入闭包 v2
 
@@ -20,11 +18,11 @@
 
 最小0.5Ry原HDF5含36个spinless轨道、n_qb36、grid3×3×4、138个displacement，真实T/V/U及Pauli系数均有限numeric数组，h5py直接读取，不pickle。Notebook明确这是unphysically low cutoff的资源演示；没有物理Nα/Nβ、原波函数或匹配经典电子能。64Mg中性全电子768，即便假设Mg仅2价电子也是128，超过spinless36和假设扩spinful72的容量。任取N≤36可构造形式上的粒子扇区，却失去原物理体系；这里不执行。直接36q complex128fullvector还需1024GiB，但这不是所有compact算法不可行的证明。
 
-自写recompute_coefficients.py（本地证据，未随题库发布）按静态PEST公式和原XYZ/grid重算全部138项T/V与36项U。最大残差T3.82e−17、V6.25e−17、U3.20e−14Ha，独立确认bareMgZ12而非Mg2valence核势。初版把作者Atoms居中当成通常bbox居中，U差6.57733Ha，原失败脚本保留。查源码后使用其明确sum(abs(min,max))/2−max约定才通过；原坐标未改，没有根据电子能调模型。该源约定在全正轴不等于标准bbox居中，需保留以复现数值。
+自写recompute_coefficients.py按静态PEST公式和原XYZ/grid重算全部138项T/V与36项U。最大残差T3.82e−17、V6.25e−17、U3.20e−14Ha，独立确认bareMgZ12而非Mg2valence核势。初版把作者Atoms居中当成通常bbox居中，U差6.57733Ha，原失败脚本保留。查源码后使用其明确sum(abs(min,max))/2−max约定才通过；原坐标未改，没有根据电子能调模型。该源约定在全正轴不等于标准bbox居中，需保留以复现数值。
 
 ## 原模型不一致与仍缺输入
 
-正文写4×4×4 slab、1water、70total；SI叙述四层每层4×4Mg并加2water，若按64Mg计为70total；SI TableS.I却逐字写70Mg加2water，即76total。SI第6页本地渲染（本地证据，未随题库发布）已视觉确认，未静默修正。中/大模型main总原子数与SI literal Mg数量也不同：257total/26water与257Mg/26water；586total/99water/36OH与587Mg/100water。不能由这些互相冲突的计数唯一恢复结构，更不能摆放两个水冒充原几何。
+正文写4×4×4 slab、1water、70total；SI叙述四层每层4×4Mg并加2water，若按64Mg计为70total；SI TableS.I却逐字写70Mg加2water，即76total。SI第6页本地渲染已视觉确认，未静默修正。中/大模型main总原子数与SI literal Mg数量也不同：257total/26water与257Mg/26water；586total/99water/36OH与587Mg/100water。不能由这些互相冲突的计数唯一恢复结构，更不能摆放两个水冒充原几何。
 
 出版正文将主要模型称valence-only PP；**SI S-IV明确说明乐观资源估算未包含实际PP Hamiltonian实现，而把非PP H与价电子计数配用**。相应SELECT/PREPARE的PP成本也未纳入。仓库PEST裸核Z12系数已复算，不能把它简单换成128electron就称真实valenceH。原USPP/GTH/HGH参数文件、augmentation/nonlocal terms与对应原结构没有取得。正文/latestarxiv文字1Ry=2Ha，而静态代码0.5Ha/Ry，二者保留，不将文字错误静默用于cutoff重建或修算旧资源。
 

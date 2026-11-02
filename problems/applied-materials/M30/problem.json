@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M30",
   "observable": "增量相关能、空间截断误差及求解资源；局部催化反应势垒未报告",
+  "original_target_status": "incomplete",
   "quantum_role": "MI分解占据轨道，FNO压缩虚轨道，再由VQE或QPE求增量相关能；经典组合总能",
   "reference_input": {
     "gaps": "作者使用的孤立分子几何与无序处理未公开，参照的展开方式不是唯一选择。",
@@ -64,5 +65,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M08",
   "observable": "³A₂、¹E、¹A₁、³E的能隙、〈S²〉、简并子空间投影与扰动响应",
+  "original_target_status": "incomplete",
   "quantum_role": "嵌入有效哈密顿量上的VQE+QSE/多态变分，约束粒子数并做噪声缓解",
   "reference_input": {
     "gaps": "四轨道模型与 19 轨道完整模型的能隙差超过 0.05 eV，活性空间尚未收敛；4H-SiC 双空位输入未整理。",
@@ -71,5 +72,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

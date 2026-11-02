@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B16-prodrug-cleavage/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B16 · β-拉帕醌前药：碳碳断键与溶剂化自由能
 
-> 开放题 · 生物医药 · 前药设计 / 活化反应
+> 开放题 · 生物医药 · 前药设计 / 活化反应 · 题面版本 v1
 > 难度：热身（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 从这里开始
@@ -54,7 +54,6 @@ python starters/B16/run.py
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -73,15 +72,8 @@ python starters/B16/run.py
 
 图解依据：[R1 · A Hybrid Quantum Computing Pipeline for Real World Drug Discovery](https://arxiv.org/html/2401.03759v3)；[R2 · A Carbon-Carbon Bond Cleavage-Based Prodrug Activation Strategy Applied to β-Lapachone for Cancer-Specific Targeting](https://onlinelibrary.wiley.com/doi/10.1002/anie.202210001)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 更新：2026-10-04｜近期验证｜证据：硬件演示
 > 本文为文献研究与试点建议；未执行计算复现、硬件实验或生物实验。优先级是编辑判断。

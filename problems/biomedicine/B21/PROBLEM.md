@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B21-bpti-transition-paths/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B21 · BPTI 罕见构象转变：在构象网络上采样反应路径
 
-> 开放题 · 生物医药 · 构象动力学与路径采样
+> 开放题 · 生物医药 · 构象动力学与路径采样 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：优化与算法
 
 ## 题面
@@ -43,7 +43,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -62,7 +61,7 @@
 
 图解依据：[R1 · Sampling a rare protein transition with a hybrid classical-quantum computing algorithm](https://arxiv.org/html/2311.15891v1)；[R2 · Sampling rare conformational transitions with a quantum computer](https://pmc.ncbi.nlm.nih.gov/articles/PMC9522734/)；[R3 · Sampling a Rare Protein Transition Using Quantum Annealing](https://pubs.acs.org/doi/10.1021/acs.jctc.3c01174)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
 
 > 更新：2026-10-04｜近期验证｜证据：硬件演示

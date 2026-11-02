@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M18",
   "observable": "链长分布、指定序列/嵌段事件概率、分子量矩",
+  "original_target_status": "incomplete",
   "quantum_role": "将非幺正稀疏速率矩阵嵌入量子电路，为ODE求解提供oracle",
   "reference_input": {
     "gaps": "更长链与真实聚合条件下的速率参数未整理。",
@@ -69,5 +70,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

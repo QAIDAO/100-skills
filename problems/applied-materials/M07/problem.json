@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M07",
   "observable": "平均插锂电压、迁移电子势垒、分解反应能；温度性质另加自由能",
+  "original_target_status": "incomplete",
   "quantum_role": "以qubitization/QPE求周期材料基态能，经典组合成应用性质",
   "reference_input": {
     "gaps": "原文没有坐标、轨道或积分；完整配置中各核的位置相位无法从晶胞参数唯一确定。",
@@ -66,5 +67,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

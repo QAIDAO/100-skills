@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C13",
   "observable": "工序约束可行率、最大完工时间makespan、最优界及总运行时间",
+  "original_target_status": "incomplete",
   "quantum_role": "经典排程建模与分解→混合BQM/DQM/CQM服务→独立时间表验证",
   "reference_input": {
     "items": [
@@ -49,5 +50,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

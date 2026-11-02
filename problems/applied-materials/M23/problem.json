@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "M23",
   "observable": "单键断裂曲线、偶极矩、电荷与静电性质",
+  "original_target_status": "incomplete",
   "quantum_role": "VQE/q-UCCSD求基态与1-RDM，计算断键能和静电性质",
   "reference_input": {
     "gaps": "原 LiSH、Li₂S、H₂S 的几何、活性空间与积分未取得；LiH 只是方法接口验证，不能代替含硫体系。",
@@ -54,5 +55,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

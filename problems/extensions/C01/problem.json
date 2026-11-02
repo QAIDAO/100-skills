@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C01",
   "observable": "相对电子能、电子势垒、反应能、自旋与自然占据",
+  "original_target_status": "incomplete",
   "quantum_role": "VQE/ADAPT 或采样子空间求解指定几何的相关电子问题",
   "reference_input": {
     "gaps": "SI 中过渡态的 O2/O3 坐标完全重合，过渡态不能直接使用。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

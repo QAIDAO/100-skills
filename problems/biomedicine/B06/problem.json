@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B06",
   "observable": "相对结合自由能ΔΔG，统计误差及与实验偏差",
+  "original_target_status": "incomplete",
   "quantum_role": "AMBER/QUICK→QM/MM book-ending→LUCJ采样→SQD/extSQD→MBAR",
   "reference_input": {
     "gaps": "积分、能量 offset 与 bookending 采样数据未公开，作者接口按请求提供。",
@@ -58,5 +59,6 @@
   "track": {
     "background": "量子化学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

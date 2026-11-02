@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B01",
   "observable": "相对电子能、低能自旋态、各候选中间体排序",
+  "original_target_status": "incomplete",
   "quantum_role": "未来QPE/qubitization求强关联活性空间能量；经典负责结构、嵌入和反应路径",
   "reference_input": {
     "gaps": "Li 等 2019 指出该空间缺少代表性开壳层；不要与 113e76o 输入混用。",
@@ -57,5 +58,6 @@
   "track": {
     "background": "量子化学",
     "level": "前沿"
-  }
+  },
+  "version": 1
 }

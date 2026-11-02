@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/B02-p450-spin-metabolism/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # B02 · P450：药物代谢自旋态与活性空间选择
 
-> 开放题 · 生物医药 · 药物代谢 / 金属酶
+> 开放题 · 生物医药 · 药物代谢 / 金属酶 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Reliably assessing the electronic structure of cytochrome P450 on today’s classical computers and tomorrow’s quantum computers](https://doi.org/10.1073/pnas.2203533119)；[R2 · Reducing the runtime of fault-tolerant quantum simulations in chemistry through symmetry-compressed double factorization](https://arxiv.org/abs/2403.03502)；[R3 · Benchmarking the Impact of Active Space Selection on the VQE Pipeline for Quantum Drug Discovery](https://arxiv.org/abs/2512.18203)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > 更新：2026-10-04｜重点储备｜证据：资源估算
 > 本文为文献研究与试点建议；未执行计算复现、硬件实验或生物实验。优先级是编辑判断。
@@ -98,7 +90,7 @@ docs原B01指向SCDF资源研究，反应综述指向2022 PNAS。二者确实讨
 固定几何R下比较 ΔE_spin(R)=E_S₁(R)−E_S₂(R)，并扫描关键成断键坐标。经典部分负责QM/MM环境、轨道、积分和外围相关修正，量子部分仅求约定活性空间。若不同态用了不平衡的轨道或不同截断规则，即使各自能量收敛也可能得到错误能隙。自然轨道占据与自旋污染作为诊断量，不能自动替代实验谱。
 
 #### 文献结果与相关子例
-2022研究把高精度经典电子结构、DMRG与表面码量子资源联系起来，并公开几何、活性空间积分和资源程序，适合作为可重现基线。[R1] SCDF的主要收益是压缩哈密顿量与减少Toffoli需求，不是证明药物代谢快了同样倍数。[R2] 该基准的后续全文审计发现大药物主要为模拟，且跨CAS能量定义有待核口径，详见B19（本地证据，未随题库发布）。2025选轨基准涵盖洛伐他汀、奥司他韦、吗啡，比较UCCSD/硬件高效线路、模拟与QPU；它检验“哪些电子值得保留”，没有把这些已知药物重新发现。[R3]
+2022研究把高精度经典电子结构、DMRG与表面码量子资源联系起来，并公开几何、活性空间积分和资源程序，适合作为可重现基线。[R1] SCDF的主要收益是压缩哈密顿量与减少Toffoli需求，不是证明药物代谢快了同样倍数。[R2] 该基准的后续全文审计发现大药物主要为模拟，且跨CAS能量定义有待核口径，详见B19。2025选轨基准涵盖洛伐他汀、奥司他韦、吗啡，比较UCCSD/硬件高效线路、模拟与QPU；它检验“哪些电子值得保留”，没有把这些已知药物重新发现。[R3]
 
 #### 经典比较和不能跨越的边界
 必须同时报告轨道截断误差、基组误差、关联修正和求解器误差。用小CAS上的FCI验证线路，只能说明该小CAS内正确；扩大到真实活性中心之后还需DMRG/选态CI对照。药物样分子大，并不意味着所选活性空间难；单参考占优的实例可能更适合普通CC或局域相关方法。模型还未包括底物结合与构象概率时，不应输出代谢速率或酶选择性承诺。

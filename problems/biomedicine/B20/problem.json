@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B20",
   "observable": "离散目标函数、最优样本概率、晶体水覆盖、位置偏差和每个晶体水对应的预测水簇大小",
+  "original_target_status": null,
   "quantum_role": "经典3D-RISM→高斯密度拟合QUBO→门式量子优化→经典解码氧位置与晶体水比较",
   "reference_input": {
     "gaps": "各变量对应的候选水位点坐标、3D-RISM 格点与晶体水匹配定义未公开；其余复合物实例未公开。",
@@ -75,5 +76,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

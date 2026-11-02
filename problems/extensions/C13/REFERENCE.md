@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/C13-manufacturing-jobshop/execution/public-window-r62/RESULTS.md 生成，勿手改 -->
-
-> C13 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> C13 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # C13 R62：真实公开 11q 窗口的固定负结果
 
@@ -45,19 +43,15 @@ fine实际保存IR共356811条，其中3200条global记录不计实体硬件门�
 
 本小窗口优先采用20choice完整精确枚举，并保留完整约束和拼接验证。R61全柔性MILP仅MK01/MK02返回合法incumbent、都非最优，其约22s实现预算仍有限；这不表示强经典方法普遍失败。完整调度可后续资格化CP-SAT或专用经典LNS，不能把局部20choice证书称完整MK最优。XY one-hot mixer或有约束QAOA只能是未来另外事前冻结的假设：它们改变初态/动力学，未证实保留全部precedence/机器互斥，不能在本负结果后换路线追pass。
 
-本R62闭合的范围是公开文件定义11q组件的固定实验与负结果；物理原作者MK身份/BKS未认证。本次限定R4/R6证据经独立审计与资源复核齐备，按事前R52范围复核（本地证据，未随题库发布）支持proven_scoped。原算法与读出门仍fail，完整制造应用仍incomplete；限定证据齐备不等于算法成功或原应用完成。全部十实例quantum-LNS的完整Cmax改善、强经典同预算对照、边界与端到端成本尚缺；不得据此宣称“最优量子方案”、量子优势或全84任务完成。
+本R62闭合的范围是公开文件定义11q组件的固定实验与负结果；物理原作者MK身份/BKS未认证。本次限定R4/R6证据经独立审计与资源复核齐备，按事前R52范围复核支持proven_scoped。原算法与读出门仍fail，完整制造应用仍incomplete；限定证据齐备不等于算法成功或原应用完成。全部十实例quantum-LNS的完整Cmax改善、强经典同预算对照、边界与端到端成本尚缺；不得据此宣称“最优量子方案”、量子优势或全84任务完成。
 
 ## 来源与复核入口
 
-固定来源SchedulingLab commit ac4c3402312bfbeafcf4472d78be567d4e6b46ab；跨库一致资格不等于原作者ground truth。原始资料、方法文献与边界见 R61固定intake（本地证据，未随题库发布） 和 R61已交付基线（本地证据，未随题库发布）。本地新协议依据 root scope（本地证据，未随题库发布）、量子设计（本地证据，未随题库发布）、生产合同（本地证据，未随题库发布）。
+固定来源SchedulingLab commit ac4c3402312bfbeafcf4472d78be567d4e6b46ab；跨库一致资格不等于原作者ground truth。原始资料、方法文献与边界见 R61固定intake 和 R61已交付基线。本地新协议依据 root scope、量子设计、生产合同。
 
-数值来自 mapping result（本地证据，未随题库发布）、mapping独立审计（本地证据，未随题库发布）、quantum result（本地证据，未随题库发布）、原生账（本地证据，未随题库发布）。原封存材料只读，不改输入/source或旧gate。图表只读取保存JSON，不重跑科学。图PNG须实际目视后另绑记录；PDF仅导出。
+数值来自 mapping result、mapping独立审计、quantum result、原生账。原封存材料只读，不改输入/source或旧gate。图表只读取保存JSON，不重跑科学。图PNG须实际目视后另绑记录；PDF仅导出。
 
 ## 最终独立验收、图与保存费用
-
-（图：方法概率，本地证据，未随题库发布）
-
-（图：误差与费用，本地证据，未随题库发布）
 
 独立量子审计flags：{"audit_completed": true, "audit_integrity_passed": true, "independent_native_representation_qualified": true, "independent_algorithm_qualified": false, "independent_finite_readout_qualified": false, "joint_quantum_component_qualified": false}。它是保存材料及独立方法核验，不产生新物理shots。
 
@@ -70,6 +64,6 @@ fine实际保存IR共356811条，其中3200条global记录不计实体硬件门�
 
 本轮四stage合计CPU15.93s、累计wall14.19s、峰RSS87998464bytes、输出11326827bytes、scratch0bytes；累计wall不是并行端到端延时。独立resource review通过，费用不重复相加。R61历史13stage另保存，未把它称本轮实验成本；完整生命周期未知。图渲染工程费用需父级receipt另列。
 
-方法逐值CSV（本地证据，未随题库发布）、门逐值CSV（本地证据，未随题库发布）、量子组件费用（本地证据，未随题库发布）、原生数量（本地证据，未随题库发布）、四stage费用（本地证据，未随题库发布）。两张PNG已经父级及独立view_image实际目视通过并绑定精确SHA；PDF仅导出未目视。
+方法逐值CSV、门逐值CSV、量子组件费用、原生数量、四stage费用。两张PNG已经父级及独立view_image实际目视通过并绑定精确SHA；PDF仅导出未目视。
 
-渲染工程另列：CPU1.9300000000000002s、wall1.85s、RSS168017920bytes、输出416890bytes、scratch0bytes。它不并入四个科学stage，不代表全部生命周期。见工程receipt（本地证据，未随题库发布）与工程seal（本地证据，未随题库发布）。
+渲染工程另列：CPU1.9300000000000002s、wall1.85s、RSS168017920bytes、输出416890bytes、scratch0bytes。它不并入四个科学stage，不代表全部生命周期。见工程receipt与工程seal。

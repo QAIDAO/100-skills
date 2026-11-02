@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "C14",
   "observable": "最大飞行次数内进入指定区域的概率及估计误差",
+  "original_target_status": "incomplete",
   "quantum_role": "经典分布表→可逆距离/反应更新与历史保存→区域标记→QAE估计标记概率",
   "reference_input": {
     "items": [
@@ -49,5 +50,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

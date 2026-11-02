@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M12-half-mobius-molecule/execution/public-derived-cas-v3/RESEARCH.md 生成，勿手改 -->
-
-> M12 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> M12 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # M12：真实公开几何上的 8 比特派生实验
 
@@ -51,7 +49,7 @@ Dyson为保存的CI波函数在共享正交MO中的经典后处理，未在量�
 
 输入/运行入口：`tasks/_execution/2026-10-04/materials/m12-derived-cas-v1/run_chemistry.py`、`tasks/_execution/2026-10-04/materials/m12-derived-quantum-v1/run_quantum.py --input tasks/_execution/2026-10-04/materials/m12-derived-cas-v1/hamiltonian.npz`。已有terminal输出，正常审阅无需重跑。验证入口：`tasks/_execution/2026-10-04/materials/m12-derived-independent`、`tasks/_execution/2026-10-04/validation/derive_m12_attachment.py`。所有依赖于现有PySCF2.12.1/Qiskit1.4.5环境，不执行下载的作者代码。
 
-图表：m12-derived-evidence.png（本地证据，未随题库发布）。全文对应源文件与hash在manifest.json。旧public-geometry-input-v2保持不变。
+图表：m12-derived-evidence.png。全文对应源文件与hash在manifest.json。旧public-geometry-input-v2保持不变。
 
 ## 后续判断
 

@@ -1,6 +1,4 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/F12-quantum-assisted-afqmc/execution/orbital-shadow-ratio-diagnostics-r142/REPORT.md 生成，勿手改 -->
-
-> F12 的现有参照：本项目最新一轮研究报告。供对照与复用，不代表最优解。
+> F12 的现有参照：本项目最新一轮研究报告，由维护者从研究记录导入。供对照与复用，不代表最优解。原始结果、日志与中间文件未随题库发布，正文提到的文件名与路径只作说明。
 
 # F12 R142 保存比值误差诊断
 
@@ -59,4 +57,4 @@ R142两个阶段实际CPU合计3.802722s，RAW时长之和3.388103208s。R140/R1
 
 冻结前资源复核出现的hash口径不一致及修正保留于ADMISSION-ATTEMPTS.json，发生在科学运行前，不是科学失败；最终冻结输入与两个成功monitor通过。
 
-逐项检查（本地证据，未随题库发布） · 完整19目标/分组结果（本地证据，未随题库发布） · 规范原始数据（本地证据，未随题库发布） · 下一步（本地证据，未随题库发布） · [原论文v1](https://arxiv.org/html/2610.03103v1)
+[原论文v1](https://arxiv.org/html/2610.03103v1)

@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/M03-ptco-oxygen-reduction/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # M03 · Pt/Pt–Co 燃料电池催化：氧分子解离的嵌入量子化学
 
-> 开放题 · 应用材料 · 电催化与燃料电池
+> 开放题 · 应用材料 · 电催化与燃料电池 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：量子化学
 
 ## 题面
@@ -44,7 +44,6 @@
 
 - 原应用目标：未完成（incomplete）
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 
@@ -63,15 +62,8 @@
 
 图解依据：[R1 · Platinum-based Catalysts for Oxygen Reduction Reaction simulated with a Quantum Computer](https://arxiv.org/html/2307.15823v2)；[R2 · Quantum hardware calculations of the activation and dissociation of nitrogen on iron clusters and surfaces](https://pubmed.ncbi.nlm.nih.gov/38315092/)。解释性连线与图形布局由本库整理，未复制论文原图。
 
-[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg) · 机制图 PNG（本地证据，未随题库发布） · 流程图 PNG（本地证据，未随题库发布） · 图解说明 JSON（本地证据，未随题库发布）
+[机制图 SVG](mechanism.svg) · [流程图 SVG](workflow.svg)
 <!-- VISUALS:END -->
-
-
-
-
-
-
-
 
 > **Pt真机与Pt/Co模拟器展示流程；强相关和几何/动态关联误差决定后续价值。**
 >

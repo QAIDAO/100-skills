@@ -1,8 +1,8 @@
-<!-- 由 release/tools/build_problems.py 自 tasks/C10-reaction-network-pathways/README.md 与 tasks/catalog.json 生成，勿手改 -->
+<!-- 由 release/tools/build_problems.py 自同目录的 problem.json 与 BACKGROUND.md 生成，勿手改；改题请改这两个文件 -->
 
 # C10 · USPTO反应网络：采购与反应组合的最低成本路线
 
-> 开放题 · 交叉方向与算法 · 合成路线组合优化
+> 开放题 · 交叉方向与算法 · 合成路线组合优化 · 题面版本 v1
 > 难度：进阶（[分级说明](../../../starters/README.md#难度分级)） · 背景：优化与算法
 
 ## 题面
@@ -43,7 +43,6 @@
 
 - 原应用目标：状态未记录
 - 最新研究报告：[REFERENCE.md](REFERENCE.md)
-- 其余证据指针见 evidence.json（本地证据，未随题库发布）
 
 ### 原案例说明
 

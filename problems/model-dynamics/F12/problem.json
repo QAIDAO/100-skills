@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F12",
   "observable": "基态/原子化能、试探态约束偏差、重叠估计成本",
+  "original_target_status": "incomplete",
   "quantum_role": "量子电路提供试探波函数重叠信息；随机行走和大空间相关处理主要在经典端。",
   "reference_input": {
     "gaps": "周期金刚石小模型的输入未整理。",
@@ -67,5 +68,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

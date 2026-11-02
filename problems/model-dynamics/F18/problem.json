@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "F18",
   "observable": "三阶R(t₃,t₂,t₁)、二维谱交叉峰、等待时间依赖、谱扩散",
+  "original_target_status": null,
   "quantum_role": "量子候选电路实现多次光场作用、环境辅助演化与多时关联；经典端合并路径并生成频率谱。",
   "reference_input": {
     "gaps": "原文二维非线性谱的逐点收敛数据未公开。",
@@ -74,5 +75,6 @@
   "track": {
     "background": "凝聚态与动力学",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }

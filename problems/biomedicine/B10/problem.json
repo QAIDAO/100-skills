@@ -6,6 +6,7 @@
   "has_reference": true,
   "id": "B10",
   "observable": "格点能量、合法构象率、低能命中率、重建后RMSD与多样性",
+  "original_target_status": "incomplete",
   "quantum_role": "变分优化/QAOA编码格点转向与接触势",
   "reference_input": {
     "gaps": "10 残基血管紧张素的 22 比特模型输入未整理。",
@@ -66,5 +67,6 @@
   "track": {
     "background": "优化与算法",
     "level": "进阶"
-  }
+  },
+  "version": 1
 }
