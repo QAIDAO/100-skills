@@ -743,8 +743,8 @@ def warmup(problems: list[dict], stats: dict) -> str:
 <div class="start">
 <div>
 <ol class="steps">
-<li><span class="num">01</span><b>装环境</b><span>Python 3.10+，依赖固定版本，只用 CPU。</span></li>
-<li><span class="num">02</span><b>复现参照</b><span>脚本下载公开输入、校验哈希，跑完后逐项对照参照数字并打 ✓。</span></li>
+<li><span class="num">01</span><b>装环境</b><span>Python 3.12，依赖固定版本，只用 CPU。</span></li>
+<li><span class="num">02</span><b>复现参照</b><span>脚本下载公开输入、校验哈希，跑完后逐项对照参照数字；必需项缺失或超差都会失败。</span></li>
 <li><span class="num">03</span><b>往前一步，提交</b><span>从 starter 的「下一步」挑一个方向；结果不论好坏，用脚手架建目录提交。</span></li>
 </ol>
 <pre><code>uv pip install -r starters/requirements.txt
@@ -752,7 +752,7 @@ python {esc(demo["path"])}/run.py
 <span class="dim">…</span>
 <span class="ok">✓</span> E_CAS2[5] = -343.4792527（参照 -343.4792527）
 <span class="ok">✓</span> E_VQE[5] = -343.4792527（参照 -343.4792527）
-全部落在容差内：你已经复现了现有参照。</code></pre>
+全部必需指标落在容差内：你已经复现了现有参照。</code></pre>
 </div>
 <div>
 <ul class="warmlist">{items}</ul>
@@ -900,7 +900,7 @@ def page(problems: list[dict], stats: dict, version: str) -> str:
 <li><span class="num">02</span><h3>建目录、写解法</h3><p>脚手架建好 <code>solutions/&lt;题号&gt;/&lt;名字&gt;-&lt;短名&gt;/</code>，填写 SOLUTION.md 与 solution.json。只做一小部分也欢迎。</p></li>
 <li><span class="num">03</span><h3>校验后开 PR</h3><p>本地跑一遍校验器，用 <code>git commit -s</code> 签名提交，CI 会再检查一次。</p></li>
 </ol>
-<pre><code>python3 -I release/tools/new_solution.py B16 你的名字-短名
+<pre><code>python3 -I release/tools/new_solution.py B16 alice-shot-budget --author "王小明"
 python3 -I release/tools/check_submissions.py --root .</code></pre>
 <ol class="pipeline" aria-label="从提交到 skill">{pipeline}</ol>
 <ul class="credit">

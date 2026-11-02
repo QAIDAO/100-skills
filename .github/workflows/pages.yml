@@ -1,0 +1,61 @@
+name: pages
+
+# 展示页 release/promo/ 发布到 https://qaidao.github.io/100-skills/。
+# 只在 main 上展示页变化时触发；浏览器检查不过就不部署，线上保持上一版。PR 不触发，不接触发布权限。
+on:
+  push:
+    branches: [main]
+    paths:
+      - "release/promo/index.html"
+      - "release/promo/preview.png"
+      - "release/tools/verify_promo.mjs"
+      - ".github/workflows/pages.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: 安装 Playwright（固定版本）
+        run: |
+          mkdir -p "$RUNNER_TEMP/pw"
+          cd "$RUNNER_TEMP/pw"
+          npm init -y >/dev/null
+          npm install --no-audit --no-fund playwright@1.57.0
+          npx playwright install --with-deps chromium
+      - name: 浏览器检查
+        run: PLAYWRIGHT_MODULE="$RUNNER_TEMP/pw/node_modules/playwright/index.mjs" node release/tools/verify_promo.mjs release/promo/index.html "$RUNNER_TEMP/promo-check"
+      - name: 组装站点（只发布页面与截图，并记录来源提交）
+        run: |
+          mkdir _site
+          cp release/promo/index.html release/promo/preview.png _site/
+          echo "${GITHUB_SHA}" > _site/version.txt
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

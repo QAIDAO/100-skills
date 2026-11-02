@@ -1,10 +1,14 @@
 {
+  "schema_version": 2,
   "problem": "M17",
+  "problem_revision": "c3285e1",
   "title": "两级活性空间审计：缩小空间的吸附能取决于截取方式，母空间 FCIDUMP 还不能直接给出结合能",
   "authors": [
     "QAIDAO 维护者（Claude Code 协助）"
   ],
   "license": "Apache-2.0",
+  "contribution_type": "failure-analysis",
+  "scope": "在作者公开的 Fe-MOF-74 FCIDUMP 与 VASP 输出上审计缩小空间与母空间两级任务的截断、冻结芯与平衡性；不给出 Fe 位点的定量吸附排序，平衡活性空间的导出与关联修正仍开放",
   "method": {
     "family": "qpe-resource-estimate + vqe-reference",
     "quantum_component": "引用作者固定参数 QNP 线路在 8/20/28 比特缩小空间上的能量；对冻结芯 CAS 与 52/80/84 比特母空间估算相位估计资源（Pauli 1-范数 λ、qubitization 步数、HF 初态重叠）"
@@ -93,9 +97,15 @@
     }
   ],
   "reproducibility": {
-    "code": "solutions/M17/qaidao-two-level-audit/code/（m17_two_level.py、balanced_scan.py、check_l1.py）",
+    "code": [
+      "solutions/M17/qaidao-two-level-audit/code/m17_two_level.py",
+      "solutions/M17/qaidao-two-level-audit/code/balanced_scan.py",
+      "solutions/M17/qaidao-two-level-audit/code/check_l1.py"
+    ],
+    "command": "SRC=quantum_simulation_MOF（qcware/quantum_simulation_MOF@ad3c665 的克隆）；python -I code/m17_two_level.py $SRC data/results.json；python -I code/balanced_scan.py $SRC code data/balanced_scan.json；python -I code/check_l1.py $SRC code",
     "environment": "Python 3.12.13，PySCF 2.12.1，NumPy 1.26.4，SciPy 1.17.1，Qiskit 1.4.5；OMP_NUM_THREADS=8",
     "seeds": [],
+    "seeds_note": "FCI、CCSD(T)、MP2 与 λ 计算均为确定性的，没有随机初值或抽样。",
     "inputs": [
       {
         "name": "qcware/quantum_simulation_MOF@ad3c6658 fullci_reference_pyscf/singlet/FCIDUMP.CO2",
@@ -111,7 +121,7 @@
       },
       {
         "name": "qcware/quantum_simulation_MOF@ad3c6658 active_space_generation_vasp/、Fe-MOF-74-vasp/、Mg-MOF-74-vasp/ 的 OUTCAR",
-        "sha256": "见 git commit ad3c6658f3d32167b6c0462af2451e5b0e062c2a"
+        "git_commit": "ad3c6658f3d32167b6c0462af2451e5b0e062c2a"
       }
     ]
   },
@@ -120,5 +130,8 @@
     "qpu": false,
     "wall_time": "主流程 29.8 分钟（CPU 1562 秒，峰值 2.9 GB），平衡扫描约 1 分钟"
   },
-  "self_assessment": "inconclusive"
+  "claims": {
+    "conclusion": "inconclusive",
+    "milestone_status": "partial"
+  }
 }

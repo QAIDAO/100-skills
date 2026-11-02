@@ -1,11 +1,18 @@
 name: starters
 
-# 入门轨道的 starter 必须始终能复现参照数字；改动 starter 或入门示例解法时重跑。
+# 入门轨道的 starter 必须始终能复现参照数字；改动 starter、入门示例解法或本工作流时重跑，合并后在 main 上再跑一次。
 on:
   pull_request:
     paths:
       - "starters/**"
       - "solutions/B16/qaidao-vqe-shot-budget/**"
+      - ".github/workflows/starters.yml"
+  push:
+    branches: [main]
+    paths:
+      - "starters/**"
+      - "solutions/B16/qaidao-vqe-shot-budget/**"
+      - ".github/workflows/starters.yml"
   workflow_dispatch:
 
 permissions:
@@ -14,6 +21,7 @@ permissions:
 jobs:
   reproduce:
     runs-on: ubuntu-latest
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -21,7 +29,9 @@ jobs:
           python-version: "3.12"
       - name: 安装依赖
         run: pip install -r starters/requirements.txt
-      - name: B16
+      - name: 记录环境
+        run: python -c "import sys, numpy, scipy, pyscf; print(sys.version); print(numpy.__version__, scipy.__version__, pyscf.__version__)"
+      - name: B16（quick 模式，四项必需指标）
         run: python starters/B16/run.py
-      - name: B16 入门示例解法
-        run: python solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py
+      - name: B16 入门示例解法（按事先声明的判据验收）
+        run: python solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py --check --out "$RUNNER_TEMP/shot_budget.json"

@@ -1,10 +1,14 @@
 {
+  "schema_version": 2,
   "problem": "B16",
+  "problem_revision": "d0540d2",
   "title": "两比特 VQE 的测量预算：产物 5 达到化学精度要比 H₂O 多测约 60 倍",
   "authors": [
     "QAIDAO 维护者（Claude Code 协助）"
   ],
   "license": "Apache-2.0",
+  "contribution_type": "method-comparison",
+  "scope": "只研究 H₂O 与产物 5 在 CAS(2e,2o) 两比特 VQE 固定最优参数下的有限 shots 统计误差；不含 4、TS、溶剂与热校正，不回答 B16 的反应自由能与研发决策",
   "method": {
     "family": "vqe",
     "quantum_component": "CAS(2e,2o) 两比特 VQE（RY⊗RY→CX→RY⊗RY）在固定最优参数下按逐比特对易分组测量，多项分布抽样模拟有限 shots 的能量估计"
@@ -42,7 +46,11 @@
     }
   ],
   "reproducibility": {
-    "code": "solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py（依赖 starters/B16/run.py）",
+    "code": [
+      "solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py",
+      "starters/B16/run.py"
+    ],
+    "command": "python solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py",
     "environment": "Python 3.12.13；starters/requirements.txt（numpy 1.26.4、scipy 1.13.1、pyscf 2.12.1）",
     "seeds": [
       0,
@@ -50,6 +58,7 @@
       2,
       20261028
     ],
+    "uncertainty_note": "shots 阈值与标准差由每个 M 2000 次重复抽样统计得到，并与解析方差公式核对；所列数值本身是统计量，未再给二阶误差条。CASCI 基线是精确对角化，无统计误差。",
     "inputs": [
       {
         "name": "B16-qc.py",
@@ -63,5 +72,8 @@
     "qpu": false,
     "wall_time": "约 32 秒"
   },
-  "self_assessment": "inconclusive"
+  "claims": {
+    "conclusion": "inconclusive",
+    "milestone_status": "completed"
+  }
 }

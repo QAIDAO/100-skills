@@ -55,7 +55,7 @@
 - 环境：Python 3.12.13，依赖为 `starters/requirements.txt` 中固定的版本（numpy 1.26.4、scipy 1.13.1、pyscf 2.12.1）。
 - 输入：`c_c_bond/qc.py`，SHA-256 `2a5504d2f126378c22f9310b26e283834bfddd554798b4e71b32ec55a42769aa`。由 starter 自动下载并校验。
 - 随机种子：VQE 初值 0、1、2；测量抽样 20261028。
-- 命令（仓库根目录）：`python solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py`
+- 命令（仓库根目录）：`python solutions/B16/qaidao-vqe-shot-budget/code/shot_budget.py`。加 `--check --out "$TMPDIR/shot_budget.json"` 时不覆盖已提交结果，并按脚本里事先声明的判据（`ACCEPT`）验收：CASCI 差 ≤ 1e-6 Ha、分组相同、单次测量 σ 相对差 ≤ 1e-3（σ 对 VQE 末态误差是一阶敏感，跨平台约差 4e-5）、95% 预算每个基差 ≤ 1 次；σ 实测/解析、化学精度内比例、均值偏差都在 5 个抽样标准误以内。CI 每次改动都跑这一步。
 - 资源：Apple M5 笔记本 CPU，墙钟约 32 秒，主要花在产物 5 的 RHF 上。没有用 QPU，测量是按 Born 概率的多项分布抽样模拟的。
 - 输出：[`data/shot_budget.json`](data/shot_budget.json)，含 Pauli 系数、分组、每个 M 的解析与实测 σ。
 
