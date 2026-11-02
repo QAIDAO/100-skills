@@ -1,0 +1,48 @@
+name: 认领任务
+description: 认领 milestones/ 里的一个小任务，或提出新的可验收小任务
+title: "[任务] <任务 ID>: "
+labels: ["task"]
+body:
+  - type: markdown
+    attributes:
+      value: 认领规则见 CONTRIBUTING.md「认领任务」：认领不排他，约定更新日期，逾期无进展会询问后释放。
+  - type: input
+    id: task
+    attributes:
+      label: 任务 ID
+      description: 如 B16-M01；提新任务时写所属题号加 new
+      placeholder: B16-M01
+    validations:
+      required: true
+  - type: dropdown
+    id: action
+    attributes:
+      label: 类型
+      options:
+        - 认领
+        - 进展更新
+        - 提交完成（附 PR）
+        - 请求复现
+        - 提出新任务
+        - 释放认领
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: 范围与计划
+      description: 打算做到哪里、不做什么；用什么环境和资源
+    validations:
+      required: true
+  - type: input
+    id: next_update
+    attributes:
+      label: 下一次更新日期
+      placeholder: 2026-11-17
+    validations:
+      required: true
+  - type: textarea
+    id: links
+    attributes:
+      label: 相关链接
+      description: PR、分支、复现记录

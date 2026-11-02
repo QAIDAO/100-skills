@@ -12,6 +12,7 @@
 !/.github/
 !/release/
 !/starters/
+!/milestones/
 /starters/.cache/
 /starters/*/results.json
 .DS_Store

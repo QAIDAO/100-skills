@@ -4,7 +4,7 @@
 
 ## 1. 装环境（一次）
 
-需要 Python 3.10 及以上。推荐用 [uv](https://docs.astral.sh/uv/)：
+需要 Python 3.12（CI 用 3.12；3.10 以上通常也能跑，但数字只在 3.12 上核对过）。推荐用 [uv](https://docs.astral.sh/uv/)：
 
 ```bash
 uv venv .venv
@@ -29,13 +29,14 @@ python starters/B16/run.py
 脚本会下载该题的公开输入（固定版本，校验 SHA-256，缓存到 `starters/.cache/`），跑完经典基线和量子方法，最后逐项对照现有参照：
 
 ```text
-对照现有参照：
+对照现有参照（quick 模式）：
   ✓ E_CAS2[H2O] = -76.04512813（参照 -76.04512813，容差 1e-06 Ha）
   ...
-全部落在容差内：你已经复现了现有参照。
+  ·  E_CAS2[6]：跳过（加 --all 运行）
+全部必需指标落在容差内：你已经复现了现有参照。
 ```
 
-全部打 ✓，说明你的环境和参照一致，可以开始做自己的东西了。有 ✗ 时先核对依赖版本；还对不上，请开 issue 并贴出输出。
+默认的 quick 模式必须算出四项（H₂O 与产物 5 的 CASCI、VQE 能量）；任何一项缺失、不是有限数或超出容差都会失败，退出码为 1。标 · 的是 `--all` 才算的项。全部必需项打 ✓，说明你的环境和参照一致，可以开始做自己的东西了。有 ✗ 时先核对依赖版本；还对不上，请开 issue 并贴出输出。
 
 ## 3. 往前走一小步
 
@@ -44,10 +45,10 @@ python starters/B16/run.py
 ## 4. 提交
 
 ```bash
-python3 -I release/tools/new_solution.py B16 你的名字-短名
+python3 -I release/tools/new_solution.py B16 alice-shot-budget --author "王小明"
 ```
 
-脚手架会建好 `solutions/B16/你的名字-短名/`，填好题号，并把公开输入的 SHA-256 写进 `solution.json`。照着 `SOLUTION.md` 里的提示填写五节，然后运行校验、开 PR，流程见 [CONTRIBUTING.md](../CONTRIBUTING.md)。写法可以参考 [B16 入门示例解法](../solutions/B16/qaidao-vqe-shot-budget/SOLUTION.md)。
+目录名（这里是 `alice-shot-budget`）只用 ASCII 字母、数字、点、下划线和连字符，格式是 `<名字>-<短名>`；中文署名放在 `--author`。脚手架会建好 `solutions/B16/alice-shot-budget/`，填好题号、署名和所依据的题面版本，并把公开输入的 SHA-256 写进 `solution.json`。照着 `SOLUTION.md` 里的提示填写五节，然后运行校验、开 PR，流程见 [CONTRIBUTING.md](../CONTRIBUTING.md)。写法可以参考 [B16 入门示例解法](../solutions/B16/qaidao-vqe-shot-budget/SOLUTION.md)。
 
 ## 热身题与 starter
 
@@ -61,11 +62,11 @@ python3 -I release/tools/new_solution.py B16 你的名字-短名
 
 ## 写一个 starter
 
-给标着「欢迎认领」的热身题写 starter，是一份很好的第一份贡献。先开一个「题目讨论」issue 认领，避免撞车。一个 starter 包含：
+给标着「欢迎认领」的热身题写 starter，是一份很好的第一份贡献。先用「认领任务」issue 模板认领（规则见 [CONTRIBUTING.md](../CONTRIBUTING.md#认领任务)），避免撞车。一个 starter 包含：
 
 - `inputs.json`：公开输入的名字、说明、固定版本的下载地址和 SHA-256；
 - `run.py`：用 `_common.fetch_inputs` 下载并校验这些输入，跑通题面列出的一种经典基线和一个最小的量子方法，结果写进 `results.json`，最后调用 `_common.check` 对照参照；
-- `expected.json`：从该题 `REFERENCE.md` 摘出的参照数字和容差，每个数字都要能在 `REFERENCE.md` 里找到；
+- `expected.json`：从该题 `REFERENCE.md` 摘出的参照数字和容差，每个数字都要能在 `REFERENCE.md` 里找到；用 `profiles` 标明它在哪种运行模式下必须出现（默认模式 `quick`，慢开关 `full`），`_common.check` 会把当前模式的必需项缺失当作失败；
 - `README.md`：这道题在问什么、脚本做了什么、怎么读输出，以及三到五个「下一步」。
 
 要求：只用 `requirements.txt` 里的依赖（确需新依赖请在 PR 里说明）；默认运行在笔记本上几分钟内结束，慢的部分放在参数开关后面；不把第三方数据提交进仓库。合并后维护者会把这道题的 starter 写进 `release/tracks.json`。

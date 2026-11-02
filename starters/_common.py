@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import hashlib
 import json
+import math
 import urllib.request
 from pathlib import Path
 
@@ -31,19 +32,35 @@ def fetch(url: str, sha256: str, name: str) -> Path:
     return path
 
 
-def check(results: dict, expected_path: Path) -> bool:
-    """逐项对照 expected.json，打印每一项是否落在容差内，全部通过返回 True。"""
+def check(results: dict, expected_path: Path, profile: str = "quick") -> bool:
+    """逐项对照 expected.json，全部必需指标在容差内才返回 True。
+
+    每项的 profiles 列出它在哪些运行模式下必须出现（缺省为 quick 与 full）。
+    当前模式必需的指标缺失、不是有限实数或超差都算失败；其他模式的指标只标为跳过。
+    """
     expected = json.loads(expected_path.read_text(encoding="utf-8"))
-    ok = True
-    print("\n对照现有参照：")
+    ok, checked = True, 0
+    print(f"\n对照现有参照（{profile} 模式）：")
     for key, spec in expected["values"].items():
-        if key not in results:
-            print(f"  ·  {key}：本次未计算（{spec.get('note', '可加参数运行')}）")
+        required = profile in spec.get("profiles", ("quick", "full"))
+        got, want, tol = results.get(key), spec["value"], spec["tol"]
+        if got is None:
+            if required:
+                ok = False
+                print(f"  ✗ {key}：缺失（{profile} 模式必需）")
+            else:
+                print(f"  ·  {key}：跳过（{spec.get('note', '其他模式才计算')}）")
             continue
-        got, want, tol = results[key], spec["value"], spec["tol"]
+        if isinstance(got, bool) or not isinstance(got, (int, float)) or not math.isfinite(got):
+            ok = False
+            print(f"  ✗ {key} = {got!r}：不是有限实数")
+            continue
         good = abs(got - want) <= tol
         ok &= good
+        checked += 1
         mark = "✓" if good else "✗"
         print(f"  {mark} {key} = {got:.10g}（参照 {want:.10g}，容差 {tol:g} {spec.get('unit', '')}）")
-    print("\n全部落在容差内：你已经复现了现有参照。" if ok else "\n有数字超出容差，先检查环境版本和输入哈希。")
+    if checked == 0:
+        ok = False
+    print("\n全部必需指标落在容差内：你已经复现了现有参照。" if ok else "\n有必需指标缺失或超出容差，先检查环境版本和输入哈希。")
     return ok

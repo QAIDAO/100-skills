@@ -14,6 +14,7 @@ import hashlib
 import json
 import re
 import shutil
+import tempfile
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -301,13 +302,43 @@ def domain_index(label: str, rows: list[tuple[dict, dict]]) -> str:
     return "\n".join(out) + "\n"
 
 
+def check_paths(out: Path) -> None:
+    """缺源或输出位置危险时在动任何文件之前退出。"""
+    missing = [rel(p) for p in (TASKS / "catalog.json", TRACKS) if not p.is_file()]
+    if missing:
+        raise SystemExit(f"缺少源文件：{missing}；未改动 {out}")
+    target = out / "problems"
+    for src in (TASKS, ROOT / "release"):
+        if out == src or src in out.parents or target == src or target in src.parents:
+            raise SystemExit(f"输出目录 {out} 与源目录 {rel(src)} 重叠，拒绝写入")
+
+
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--out", required=True)
     out = Path(parser.parse_args().out).resolve()
+    check_paths(out)
+    out.mkdir(parents=True, exist_ok=True)
+    # 先在 out 内的临时目录完整生成，成功后再替换旧产物；中途失败旧产物不动。
+    staging = Path(tempfile.mkdtemp(prefix=".build-problems-", dir=out))
+    try:
+        build(staging)
+        target, old = out / "problems", staging / "old-problems"
+        if target.exists():
+            target.rename(old)
+        try:
+            (staging / "problems").rename(target)
+        except OSError:
+            if old.exists():
+                old.rename(target)
+            raise
+        (staging / "stats.json").replace(out / "stats.json")
+    finally:
+        shutil.rmtree(staging)
+
+
+def build(out: Path) -> None:
     problems_dir = out / "problems"
-    if problems_dir.exists():
-        shutil.rmtree(problems_dir)
     catalog = json.loads((TASKS / "catalog.json").read_text(encoding="utf-8"))
     tracks = json.loads(TRACKS.read_text(encoding="utf-8"))["problems"]
     missing = {c["id"] for c in catalog} ^ set(tracks)

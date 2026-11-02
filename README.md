@@ -6,7 +6,7 @@
 
 [![100 道开放题展示页首屏：左侧标题与统计，右侧 10×10 题板，一格一道题](release/promo/preview.png)](release/promo/index.html)
 
-[`release/promo/index.html`](release/promo/index.html) 是一页可以单独打开的展示页：100 道题按领域排成题板，点任意一格直接打开这道题。题库是「左列表 + 右详情」双栏：详情里有五段题面、验收标准和现有参照摘要，可按领域、难度筛选或搜索，用 ↑ ↓ 键逐题浏览，每题可用 `#p-<题号>` 直接链接。题板上带绿点的是热身题，「从热身题开始」一节给出 starter 的运行方式。在线版本见 [qaidao.github.io/100-skills](https://qaidao.github.io/100-skills/)，它从这里复制。
+[`release/promo/index.html`](release/promo/index.html) 是一页可以单独打开的展示页：100 道题按领域排成题板，点任意一格直接打开这道题。题库是「左列表 + 右详情」双栏：详情里有五段题面、验收标准和现有参照摘要，可按领域、难度筛选或搜索，用 ↑ ↓ 键逐题浏览，每题可用 `#p-<题号>` 直接链接。题板上带绿点的是热身题，「从热身题开始」一节给出 starter 的运行方式。在线版本见 [qaidao.github.io/100-skills](https://qaidao.github.io/100-skills/)：main 上的展示页一变，[pages 工作流](.github/workflows/pages.yml) 先跑浏览器检查，通过后自动发布；线上 `version.txt` 记着对应的提交。
 
 - **怎么打开**：直接访问 [qaidao.github.io/100-skills](https://qaidao.github.io/100-skills/)。GitHub 不渲染仓库里的 HTML，点开看到的是源码；也可以下载这个文件用浏览器打开，它是自包含的单文件。
 - **页面里的链接**：「在 GitHub 查看完整题面」「开 issue 讨论这道题」「提交解法」都指向本仓库，需要有仓库访问权限。
@@ -79,4 +79,4 @@ python starters/B16/run.py
 
 ## English
 
-**100-skills** publishes 100 open research problems in quantum and scientific computing, drawn from real R&D settings across drug discovery, applied materials, strongly correlated models and dynamics, and cross-cutting algorithms (optimization, quantum machine learning, linear solvers). Each problem states the physical system, the target observable, the classical baselines, the intended role of quantum methods, and the decision the result should support. It also gives five acceptance criteria and our existing reference runs (80 of 100, all classical computation or simulation, failures included). Contributions, including negative results, are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Accepted solutions will be distilled into reusable skills under `skills/`. Problem statements are currently in Chinese; English versions are planned for the next release. Content is CC BY 4.0; code is Apache-2.0.
+**100-skills** publishes 100 open research problems in quantum and scientific computing, drawn from real R&D settings across drug discovery, applied materials, strongly correlated models and dynamics, and cross-cutting algorithms (optimization, linear solvers, sampling). Each problem states the physical system, the target observable, the classical baselines, the intended role of quantum methods, and the decision the result should support. It also gives five acceptance criteria and our existing reference runs (76 of 100, all classical computation or simulation, failures included; none of the original application goals is solved yet). Contributions, including negative results, are welcome: see [CONTRIBUTING.md](CONTRIBUTING.md). Accepted solutions will be distilled into reusable skills under `skills/`. Problem statements are currently in Chinese; English versions are planned for the next release. Content is CC BY 4.0; code is Apache-2.0.

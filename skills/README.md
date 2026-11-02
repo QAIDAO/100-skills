@@ -8,18 +8,18 @@ v0.1.0 发布时还没有 skill，这份文档定下规则。
 
 同一方法族（`solution.json` 的 `method.family`）满足以下全部条件时，可以提出沉淀：
 
-1. 至少 2 份已采纳的解法，其中至少 1 份经过独立复现；
+1. 至少 2 份已采纳的解法（`review.json` 的 `status` 为 `accepted`；按 [CONTRIBUTING.md](../CONTRIBUTING.md#审核与采纳)，已采纳意味着已被非作者独立复现）；
 2. 覆盖至少 2 道题，或者同一道题上至少 2 组互相独立的输入；
 3. 已知的失败条件与适用边界有记录：负结果和局限同样是沉淀的原料；
 4. 提炼出的步骤能在一份未参与提炼的输入上复跑通过。
 
-由任何人开 issue 提出沉淀，列出来源解法；维护者确认条件后再开 PR。
+由任何人开 issue 提出沉淀，列出来源解法；维护者确认条件后再开 PR。格式检查（frontmatter、目录结构）与科学验证（第 4 条的留出输入复跑）分开记录，前者通过不代表后者通过。
 
 ## skill 结构
 
 ```text
 skills/<skill 名>/
-  SKILL.md        # frontmatter：name、description、allowed-tools；正文见下
+  SKILL.md        # frontmatter：name、description 必填（allowed-tools 可选）；正文见下
   scripts/        # 可选：从来源解法整理出的可执行代码
   examples/       # 可选：来源解法的小型输入与期望输出
 ```

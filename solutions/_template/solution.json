@@ -1,10 +1,14 @@
 {
+  "schema_version": 2,
   "problem": "<题号，如 B16>",
+  "problem_revision": "<所依据题面的本仓库提交哈希，git rev-parse --short HEAD>",
   "title": "<解法标题>",
   "authors": ["<你的名字>"],
   "license": "Apache-2.0",
+  "contribution_type": "<reproduction、baseline、method-comparison、failure-analysis、hardware-validation、input-curation 或 literature>",
+  "scope": "<本解法覆盖题面的哪一部分，明确不覆盖什么>",
   "method": {
-    "family": "<方法族，如 vqe、qpe、sqd、quantum-kernel、annealing>",
+    "family": "<方法族，如 vqe、qpe、sqd、krylov、annealing>",
     "quantum_component": "<量子部分做什么>"
   },
   "results": [
@@ -14,11 +18,16 @@
     {"method": "<经典方法>", "value": 0.0}
   ],
   "reproducibility": {
-    "code": "<代码路径或仓库链接加提交哈希>",
-    "environment": "<语言与依赖版本>",
+    "code": ["<仓库内代码路径；外部仓库写成 {\"repository\": URL, \"commit\": 哈希}>"],
+    "command": "<从仓库根目录运行的完整命令>",
+    "environment": "<语言与依赖的精确版本>",
     "seeds": [],
-    "inputs": [{"name": "<输入>", "sha256": "<哈希>"}]
+    "seeds_note": "<没有随机种子时说明为何是确定性的；有种子时删掉这一行>",
+    "inputs": [{"name": "<输入>", "url": "<下载地址>", "sha256": "<64 位哈希>"}]
   },
   "compute": {"hardware": "<CPU/GPU/QPU 型号>", "qpu": false, "wall_time": "<耗时>"},
-  "self_assessment": "<pass、fail 或 inconclusive>"
+  "claims": {
+    "conclusion": "<supported、refuted、inconclusive 或 not_applicable>",
+    "milestone_status": "<completed、partial 或 not_completed>"
+  }
 }

@@ -106,7 +106,7 @@ def main() -> None:
         print(f"\n电子能垒 E(TS) − E(4) = {results['barrier_CAS2']:.3f} kcal/mol（真空、CAS(2e,2o)，不含溶剂与热校正）")
 
     (HERE / "results.json").write_text(json.dumps(results, indent=2) + "\n", encoding="utf-8")
-    sys.exit(0 if check(results, HERE / "expected.json") else 1)
+    sys.exit(0 if check(results, HERE / "expected.json", "full" if args.all else "quick") else 1)
 
 
 if __name__ == "__main__":

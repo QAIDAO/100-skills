@@ -11,10 +11,39 @@ permissions:
 jobs:
   submissions:
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - name: 校验解法提交
+      - name: 校验工具自测
+        run: python3 -I release/tools/selftest.py
+      - name: 校验解法提交（结构、类型与证据完整性，不代表科学正确或已复现）
         run: python3 -I release/tools/check_submissions.py --root .
+
+  dco:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: 每个提交都要有 Signed-off-by
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          HEAD: ${{ github.event.pull_request.head.sha }}
+        run: |
+          missing=0
+          for c in $(git rev-list --no-merges "$BASE..$HEAD"); do
+            if ! git log -1 --format=%B "$c" | grep -qiE '^Signed-off-by: .+ <.+>$'; then
+              echo "::error::提交 $(git log -1 --format='%h %s' "$c") 缺少 Signed-off-by"
+              missing=1
+            fi
+          done
+          if [ "$missing" = 1 ]; then
+            echo "修复方法见 CONTRIBUTING.md「DCO 签名」：git rebase --signoff $BASE 后强推到你的分支。"
+            exit 1
+          fi
+          echo "全部提交已签名。"
